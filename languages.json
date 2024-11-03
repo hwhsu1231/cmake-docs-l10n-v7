@@ -1,0 +1,18 @@
+{
+  "ja_JP" : {
+    "crowdin" : "ja",
+    "readthedocs" : "ja"
+  },
+  "ru_RU" : {
+    "crowdin" : "ru",
+    "readthedocs" : "ru"
+  },
+  "zh_CN" : {
+    "crowdin" : "zh-CN",
+    "readthedocs" : "zh_CN"
+  },
+  "zh_TW" : {
+    "crowdin" : "zh-TW",
+    "readthedocs" : "zh_TW"
+  }
+}

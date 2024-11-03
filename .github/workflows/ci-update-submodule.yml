@@ -1,0 +1,100 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: ci-update-submodule
+
+on:
+  # Triggers the workflow based on a schedule.
+  schedule:
+    - cron: '0 0 1,15 * *'
+  # Triggers the workflow manually through the GitHub UI.
+  workflow_dispatch:
+    inputs:
+      SUBMODULE:
+        description: 'SUBMODULE input'
+        required: true
+        type: string
+        default: 'all'
+
+jobs:
+  precondition:
+    if: ${{ ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' ) ) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Secrets
+        shell: bash
+        run: |
+          SECRETS_EXIST=true
+          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
+            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
+            SECRETS_EXIST=false
+          fi
+          if [[ "${SECRETS_EXIST}" == "false" ]]; then
+            exit 1
+          fi
+      - name: Check Variables
+        shell: bash
+        run: |
+          VARIABLES_EXIST=true
+          if [[ -z "${{ vars.ACTOR_ID }}" ]]; then
+            echo "vars.ACTOR_ID is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
+            echo "vars.ACTOR_NAME is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_LOGIN }}" ]]; then
+            echo "vars.ACTOR_LOGIN is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ "${VARIABLES_EXIST}" == "false" ]]; then
+            exit 1
+          fi
+
+  get-matrix:
+    if: ${{ ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' ) ) }}
+    runs-on: 'ubuntu-latest'
+    outputs:
+      SUBMODULE_LIST: ${{ steps.gsl.outputs.SUBMODULE_LIST }}
+    steps:
+      - name: Checkout to '${{ github.ref }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          submodules: false
+      - name: Get the Submodule List from .gitmodules
+        id: gsl
+        shell: bash
+        run: |
+          SUBMODULE_LINES=$(git config --file .gitmodules --get-regexp path | awk '{print $2}')
+          SUBMODULE_LIST=$(echo "${SUBMODULE_LINES}" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "SUBMODULE_LIST=${SUBMODULE_LIST}" >> ${GITHUB_OUTPUT}
+          echo "SUBMODULE_LIST:"
+          echo "${SUBMODULE_LIST}" | jq "."
+
+  caller:
+    needs: [ 'precondition', 'get-matrix' ]
+    if: ${{ ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' ) ) }}
+    strategy:
+      matrix:
+        SUBMODULE: ${{ fromJSON(needs.get-matrix.outputs.SUBMODULE_LIST) }}
+      fail-fast: false
+    concurrency:
+      group: ${{ github.workflow }}-${{ matrix.SUBMODULE }}
+      cancel-in-progress: true
+    uses: ./.github/workflows/use-update-submodule.yml
+    with:
+      RUNNER: 'ubuntu-latest'
+      CHECKOUT: ${{ github.ref }}
+      SUBMODULE: ${{ matrix.SUBMODULE }}
+      CALLER_JOB: 'caller (${{ matrix.SUBMODULE }})'
+      ENABLE_JOB: true
+      ACTOR_ID: ${{ vars.ACTOR_ID }}
+      ACTOR_NAME: ${{ vars.ACTOR_NAME }}
+      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+    secrets:
+      ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}

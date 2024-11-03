@@ -1,0 +1,51 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: install-gettext
+
+description: Install Gettext
+
+inputs:
+  token:
+    required: false
+    description: xxx
+    default: '${{ github.token }}'
+
+runs:
+  using: composite
+  steps:
+    - name: Install Gettext by Apt (Linux)
+      if: ${{ runner.os == 'Linux' }}
+      shell: bash
+      run: |
+        sudo apt install gettext
+
+    - name: Install Gettext by Homebrew (macOS)
+      if: ${{ runner.os == 'macOS' }}
+      shell: bash
+      run: |
+        brew install gettext
+
+    # Refer to:
+    # - https://github.com/translate/translate/pull/5201
+    # - https://stackoverflow.com/a/40211150/16265240
+    - name: Install Gettext by Nuget (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      shell: powershell
+      run: |
+        nuget install Gettext.Tools -ExcludeVersion -OutputDirectory C:\nuget;
+        Add-Content $env:GITHUB_PATH "C:\nuget\Gettext.Tools\tools\bin"
+
+    - name: Check if Gettext is installed (Linux/macOS)
+      if: ${{ runner.os == 'Linux' || runner.os == 'macOS' }}
+      shell: bash
+      run: |
+        which xgettext
+        xgettext --version
+
+    - name: Check if Gettext is installed (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      shell: cmd
+      run: |
+        where xgettext
+        xgettext --version

@@ -1,0 +1,40 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: cmake-build-target
+
+description: Build the target with CMake
+
+inputs:
+  source-directory:   # [required]
+    required: true
+    description: 'The source directory of the CMake project.'
+  preset:             # [required]
+    required: true
+    description: 'The configure preset name of the CMake project.'
+  target:             # [required]
+    required: true
+    description: 'The build target of the CMake project.'
+
+runs:
+  using: composite
+  steps:
+    - name: Build the project (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      shell: cmd
+      run: |
+        echo Building the project...
+        echo.
+        echo cmake --build ${{ inputs.source-directory }}\out\build\${{ inputs.preset }} --target ${{ inputs.target }}
+        echo.
+        cmake --build ${{ inputs.source-directory }}\out\build\${{ inputs.preset }} --target ${{ inputs.target }}
+
+    - name: Build the project (Linux/macOS)
+      if: ${{ runner.os == 'Linux' || runner.os == 'macOS' }}
+      shell: bash
+      run: |
+        echo "Building the project..."
+        echo ""
+        echo "cmake --build ${{ inputs.source-directory }}/out/build/${{ inputs.preset }} --target ${{ inputs.target }}"
+        echo ""
+        cmake --build ${{ inputs.source-directory }}/out/build/${{ inputs.preset }} --target ${{ inputs.target }}

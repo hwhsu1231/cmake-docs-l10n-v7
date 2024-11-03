@@ -1,0 +1,4 @@
+[submodule "cmake/modules"]
+	path = cmake/modules
+	url = ../../hwhsu1231/l10n-cmake-modules.git
+	branch = master

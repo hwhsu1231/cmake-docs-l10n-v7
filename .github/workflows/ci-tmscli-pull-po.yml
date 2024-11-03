@@ -1,0 +1,158 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: ci-tmscli-pull-po
+
+on:
+  # Triggers the workflow based on a schedule.
+  schedule:
+    - cron: '0 8 * * 1'   # CRON_dev
+    - cron: '0 0 1 * *'   # CRON_v3
+  # Triggers the workflow manually through the GitHub UI.
+  workflow_dispatch:
+    inputs:
+      TYPE:
+        description: 'TYPE input'
+        required: true
+        type: choice
+        default: 'matrix'
+        options:
+          - 'matrix'
+          - 'single'
+      VERSION:
+        description: 'VERSION input (for single type)'
+        required: true
+        type: string
+        default: 'git-master'
+      VERSION_GROUP:
+        description: 'VERSION_GROUP input (for matrix type)'
+        required: true
+        type: choice
+        default: 'all'
+        options:
+          - 'all'
+          - 'dev'
+          - 'v3'
+      LANGUAGE:
+        description: 'LANGUAGE input'
+        required: true
+        type: string
+        default: 'all'
+      MODE_OF_UPDATE:
+        description: 'MODE_OF_UPDATE input'
+        required: true
+        type: choice
+        default: 'COMPARE'
+        options:
+          - 'COMPARE'
+          - 'ALWAYS'
+          - 'NEVER'
+
+env:
+  CRON_dev: '0 8 * * 1'
+  CRON_v3:  '0 0 1 * *'
+
+jobs:
+  precondition:
+    if: ${{ ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Secrets
+        shell: bash
+        run: |
+          SECRETS_EXIST=true
+          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
+            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
+            SECRETS_EXIST=false
+          fi
+          if [[ -z "${{ secrets.CROWDIN_PERSONAL_TOKEN }}" ]]; then
+            echo "secrets.CROWDIN_PERSONAL_TOKEN is missing."
+            SECRETS_EXIST=false
+          fi
+          if [[ "${SECRETS_EXIST}" == "false" ]]; then
+            exit 1
+          fi
+      - name: Check Variables
+        shell: bash
+        run: |
+          VARIABLES_EXIST=true
+          if [[ -z "${{ vars.ACTOR_ID }}" ]]; then
+            echo "vars.ACTOR_ID is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
+            echo "vars.ACTOR_NAME is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_LOGIN }}" ]]; then
+            echo "vars.ACTOR_LOGIN is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ "${VARIABLES_EXIST}" == "false" ]]; then
+            exit 1
+          fi
+
+  get-matrix:
+    if: ${{ ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+    runs-on: ubuntu-latest
+    outputs:
+      VERSION_LIST: ${{ steps.gvl.outputs.VERSION_LIST }}
+      LANGUAGE_LIST: ${{ steps.gll.outputs.LANGUAGE_LIST }}
+    steps:
+      - name: Checkout to '${{ github.ref }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - name: Get Outputs from Schedule Cron
+        if: ( github.event.schedule == 'schedule' )
+        id: gosc
+        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-outputs-from-schedule@source
+        with:
+          schedule: ${{ github.event.schedule }}
+      - name: Get VERSION_LIST from versions.json
+        id: gvl
+        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-version-list-from-versions-file@source
+        with:
+          type: ${{ inputs.TYPE || steps.gosc.outputs.TYPE }}
+          version: ${{ inputs.VERSION }}
+          version-group: ${{ inputs.VERSION_GROUP || steps.gosc.outputs.VERSION_GROUP }}
+          version-filter: 'tmscli'
+      - name: Get LANGUAGE_LIST from languages.json
+        id: gll
+        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-language-list-from-languages-file@source
+        with:
+          language: ${{ inputs.LANGUAGE || steps.gosc.outputs.LANGUAGE }}
+          all-in-one: 'true'
+
+  caller:
+    needs: [ 'precondition', 'get-matrix' ]
+    if: ${{ ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+    strategy:
+      matrix:
+        VERSION: ${{ fromJSON(needs.get-matrix.outputs.VERSION_LIST) }}
+        LANGUAGE: ${{ fromJSON(needs.get-matrix.outputs.LANGUAGE_LIST) }}
+      fail-fast: false
+    concurrency:
+      group: ${{ github.workflow }}-${{ matrix.VERSION }}-${{ matrix.LANGUAGE }}
+      cancel-in-progress: true
+    uses: ./.github/workflows/use-tmscli-pull-po.yml
+    with:
+      RUNNER: 'ubuntu-latest'
+      CHECKOUT: ${{ github.ref }}
+      VERSION: ${{ matrix.VERSION }}
+      LANGUAGE: ${{ matrix.LANGUAGE }}
+      MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
+      CALLER_JOB: 'caller (${{ matrix.VERSION }}, ${{ matrix.LANGUAGE }})'
+      ENABLE_JOB: true
+      ACTOR_ID: ${{ vars.ACTOR_ID }}
+      ACTOR_NAME: ${{ vars.ACTOR_NAME }}
+      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+    secrets:
+      ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+      CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}

@@ -1,0 +1,58 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: get-version-group-from-versions-file
+
+description: Get the Version Group from versions.json
+
+inputs:
+  version:
+    required: true    # [required]
+    description: 'The version to search for in the specified versions.json file.'
+  versions-file:
+    required: false
+    description: xxx
+    default: 'versions.json'
+  working-directory:
+    required: false
+    description: 'The root directory for running commands or locating files.'
+    default: '${{ github.workspace }}'
+
+outputs:
+  VERSION_GROUP:
+    value: ${{ steps.gvgv.outputs.VERSION_GROUP }}
+    description: xxx
+
+runs:
+  using: composite
+  steps:
+    - name: Get the Version Group from versions.json
+      id: gvgv
+      shell: bash
+      run: |
+        VERSION="${{ inputs.version }}"
+        VERSIONS_FILE=$(echo "${{ inputs.versions-file }}" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+        WORKING_DIRECTORY=$(echo "${{ inputs.working-directory }}" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+
+        cd ${WORKING_DIRECTORY}
+
+        VERSION_GROUPS=($(jq -r 'keys[]' "${VERSIONS_FILE}" | tr -d '\r'))
+        FOUND_GROUP=""
+        for VERSION_GROUP in ${VERSION_GROUPS[@]}; do
+          FILTER="[.${VERSION_GROUP}[] | select(.VERSION == \"${VERSION}\")] | length"
+          IS_IN_GROUP=$(jq "${FILTER}" "${VERSIONS_FILE}" | tr -d '\r')
+          if [[ "$IS_IN_GROUP" -gt 0 ]]; then
+            FOUND_GROUP="${VERSION_GROUP}"
+            break
+          fi
+        done
+
+        if [[ -n "${FOUND_GROUP}" ]]; then
+          echo "${VERSION} is in ${FOUND_GROUP}"
+        else
+          echo "${VERSION} is not found in any group"
+        fi
+
+        echo "VERSION_GROUP=${FOUND_GROUP}" >> ${GITHUB_OUTPUT}
+        echo "VERSION_GROUP:"
+        echo "${VERSION_GROUP}"

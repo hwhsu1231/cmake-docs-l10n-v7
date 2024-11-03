@@ -1,0 +1,171 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: use-deploy-gh-pages
+
+on:
+  workflow_call:
+    inputs:
+      RUNNER:
+        type: string
+        required: true
+      CHECKOUT:
+        type: string
+        required: true
+      VERSION:
+        type: string
+        required: true
+      LANGUAGE:
+        type: string
+        required: true
+      MODE_OF_UPDATE:
+        type: string
+        required: true
+      BASEURL_HREF:
+        type: string
+        required: true
+      CALLER_JOB:
+        type: string
+        required: true
+      ENABLE_JOB:
+        type: boolean
+        required: true
+      DEPLOY_HTML:
+        type: boolean
+        required: true
+      ACTOR_ID:
+        type: string
+        required: true
+      ACTOR_NAME:
+        type: string
+        required: true
+      ACTOR_LOGIN:
+        type: string
+        required: true
+    secrets:
+      ACTOR_GITHUB_TOKEN:
+        required: true
+
+jobs:
+  deploy-gh-pages:
+    if: ${{ inputs.ENABLE_JOB }}
+    runs-on: ${{ inputs.RUNNER }}
+    steps:
+      - name: Print Contexts/Inputs/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "[Inputs]"
+          echo "inputs.RUNNER = ${{ inputs.RUNNER }}"
+          echo "inputs.CHECKOUT = ${{ inputs.CHECKOUT }}"
+          echo "inputs.VERSION = ${{ inputs.VERSION }}"
+          echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
+          echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
+          echo "inputs.BASEURL_HREF = ${{ inputs.BASEURL_HREF }}"
+          echo "inputs.CALLER_JOB = ${{ inputs.CALLER_JOB }}"
+          echo "inputs.ENABLE_JOB = ${{ inputs.ENABLE_JOB }}"
+          echo "inputs.DEPLOY_HTML = ${{ inputs.DEPLOY_HTML }}"
+          echo "inputs.ACTOR_ID = ${{ inputs.ACTOR_ID }}"
+          echo "inputs.ACTOR_NAME = ${{ inputs.ACTOR_NAME }}"
+          echo "inputs.ACTOR_LOGIN = ${{ inputs.ACTOR_LOGIN }}"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+
+      - name: Checkout to '${{ inputs.CHECKOUT }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.CHECKOUT }}
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          submodules: true
+
+      - name: Install CMake
+        uses: ./.github/actions/install-cmake
+
+      - name: Install Conda
+        uses: ./.github/actions/install-conda
+
+      - name: Install Gettext
+        uses: ./.github/actions/install-gettext
+
+      - name: Get Other Caches from versions.json
+        id: gocv
+        uses: ./.github/actions/get-other-caches-from-versions-file
+        with:
+          version: ${{ inputs.VERSION }}
+          versions-file: 'versions.json'
+
+      - name: Configure the '${{ inputs.LANGUAGE }}' preset for '${{ inputs.VERSION }}' version
+        uses: ./.github/actions/cmake-configure-preset
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: ${{ inputs.LANGUAGE }}
+          cache-version: ${{ inputs.VERSION }}
+          cache-auto-depend: 'OFF'
+          cache-mode-of-update: ${{ inputs.MODE_OF_UPDATE }}
+          cache-baseurl-href: ${{ inputs.BASEURL_HREF }}
+          cache-version-compendium: ${{ steps.gocv.outputs.VERSION_COMPENDIUM }}
+          cache-version-of-python: ${{ steps.gocv.outputs.VERSION_OF_PYTHON }}
+          cache-version-of-sphinx: ${{ steps.gocv.outputs.VERSION_OF_SPHINX }}
+          cache-version-of-doxygen: ${{ steps.gocv.outputs.VERSION_OF_DOXYGEN }}
+          cache-version-of-proj: ${{ steps.gocv.outputs.VERSION_OF_PROJ }}
+
+      - name: Build the 'prepare_repositories' target
+        uses: ./.github/actions/cmake-build-target
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: ${{ inputs.LANGUAGE }}
+          target: 'prepare_repositories'
+
+      - name: Build the 'install_requirements' target
+        uses: ./.github/actions/cmake-build-target
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: ${{ inputs.LANGUAGE }}
+          target: 'install_requirements'
+
+      - name: Build the 'sphinx_update_pot' target
+        uses: ./.github/actions/cmake-build-target
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: ${{ inputs.LANGUAGE }}
+          target: 'sphinx_update_pot'
+
+      - name: Build the 'gettext_update_po' target
+        uses: ./.github/actions/cmake-build-target
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: ${{ inputs.LANGUAGE }}
+          target: 'gettext_update_po'
+
+      - name: Build the 'sphinx_build_docs' target
+        uses: ./.github/actions/cmake-build-target
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: ${{ inputs.LANGUAGE }}
+          target: 'sphinx_build_docs'
+
+      - name: Set up mutex for the 'gh-pages' branch
+        if: ${{ inputs.DEPLOY_HTML }}
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
+        with:
+          branch: mutex/gh-pages
+          repo-token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+
+      - name: Deploy to the 'gh-pages' branch
+        if: ${{ inputs.DEPLOY_HTML }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          git-config-name: ${{ inputs.ACTOR_NAME }}
+          git-config-email: ${{ inputs.ACTOR_ID }}+${{ inputs.ACTOR_LOGIN }}@users.noreply.github.com
+          branch: 'gh-pages'
+          folder: './out/html'
+          target-folder: '.'
+          single-commit: true
+          clean: false

@@ -1,0 +1,77 @@
+# https://github.com/apps/settings
+
+# See https://docs.github.com/en/rest/reference/repos#update-a-repository for all available settings.
+repository:
+  # # The name of the repository. Changing this will rename the repository
+  # name: cmake3-docs-l10n-draft2
+
+  # # A short description of the repository that will show up on GitHub
+  # description: Localization of CMake 3 Documentation
+
+  # # A URL with more information about the repository
+  # homepage: https://crowdin.com/project/cmake-docs/
+
+  # # A comma-separated list of topics to set on the repository
+  # topics: cmake, sphinx, crowdin, localization, translation, documentation
+
+  # # Either `true` to make the repository private, or `false` to make it public.
+  # private: false
+
+  # # Either `true` to enable issues for this repository, `false` to disable them.
+  # has_issues: true
+
+  # # Either `true` to enable projects for this repository, or `false` to disable them. 
+  # # If projects are disabled for the organization, passing `true` will cause an API error.
+  # has_projects: false
+
+  # # Either `true` to enable the wiki for this repository, `false` to disable it.
+  # has_wiki: false
+
+  # # Either `true` to enable downloads for this repository, `false` to disable them.
+  # has_downloads: true
+
+  # # Updates the default branch for this repository.
+  # default_branch: master
+
+  # # Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.
+  # allow_squash_merge: true
+
+  # # Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
+  # allow_merge_commit: false
+
+  # # Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
+  # allow_rebase_merge: true
+
+  # # Either `true` to enable automatic deletion of branches on merge, or `false` to disable
+  # delete_branch_on_merge: true
+
+  # # Either `true` to enable automated security fixes, or `false` to disable automated security fixes.
+  # enable_automated_security_fixes: false
+
+  # # Either `true` to enable vulnerability alerts, or `false` to disable vulnerability alerts.
+  # enable_vulnerability_alerts: false
+
+# Labels: define labels for Issues and Pull Requests
+# colors from: https://htmlcolorcodes.com/color-chart/
+labels:
+  - name: 'crowdin'
+    color: '#F1C40F'
+    description: PR upload pot to crowdin
+
+  - name: 'language'
+    color: '#33FF00'
+    description: Issue for language request
+
+# Milestones: define milestones for Issues and Pull Requests
+milestones:
+
+# Collaborators: give specific users access to this repository.
+# See https://docs.github.com/en/rest/reference/repos#add-a-repository-collaborator for available options
+collaborators:
+
+# See https://docs.github.com/en/rest/reference/teams#add-or-update-team-repository-permissions for available options
+teams:
+
+# https://docs.github.com/en/rest/reference/repos#update-branch-protection
+# Branch Protection settings. Set to null to disable
+branches:

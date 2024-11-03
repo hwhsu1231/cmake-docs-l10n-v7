@@ -1,0 +1,24 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: install-cmake
+
+description: Install CMake
+
+inputs:
+  cmake-version:
+    required: false
+    description: 'Specific version of CMake to install.'
+    default: ''
+  token:
+    required: false
+    description: xxx
+    default: '${{ github.token }}'
+
+runs:
+  using: composite
+  steps:
+    - name: Install CMake
+      uses: jwlawson/actions-setup-cmake@v2.0
+      with:
+        cmake-version: ${{ inputs.cmake-version }}

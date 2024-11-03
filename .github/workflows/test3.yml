@@ -1,0 +1,79 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: test3
+
+on:
+  workflow_dispatch:
+    inputs:
+      VERSION:
+        description: 'VERSION input (for single type)'
+        required: true
+        type: string
+        default: 'git-master'
+      VERSION_GROUP:
+        description: 'VERSION_GROUP input (for matrix type)'
+        required: true
+        type: choice
+        default: 'v3'
+        options:
+          - 'all'
+          - 'dev'
+          - 'v3'
+
+jobs:
+  single:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - 'windows-latest'
+          - 'macos-latest'
+          - 'ubuntu-latest'
+      fail-fast: false
+    steps:
+      - name: Checkout to '${{ github.ref }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          submodules: true
+
+      - name: Get VERSION_LIST from versions.json
+        id: gvl
+        shell: bash
+        run: |
+          VERSION_GROUP="${{ inputs.VERSION_GROUP }}"
+          if [[ ${VERSION_GROUP} == "all" ]]; then
+            VERSION_FILTER=""
+          else
+            VERSION_FILTER="\"${VERSION_GROUP}\""
+          fi
+          JQ_FILTER="[.[${VERSION_FILTER}] | map(.VERSION)] | add"
+          JQ_FILE="versions.json"
+          VERSION_LIST=$(jq -c "${JQ_FILTER}" "${JQ_FILE}")
+          echo "VERSION_LIST=${VERSION_LIST}" >> ${GITHUB_OUTPUT}
+          echo "VERSION_LIST:"
+          echo "${VERSION_LIST}" | jq "."
+
+      - name: Set the Label List for the Pull Request
+        id: sllpr
+        shell: bash
+        run: |
+          VERSION="${{ inputs.VERSION }}"
+          JQ_FILTER="[.[] | map(select(.VERSION_COMPENDIUM == \"\"))] | add | .[].VERSION"
+          JQ_FILE="versions.json"
+          # OUTPUT=$(jq -r "${JQ_FILTER}" "${JQ_FILE}" | tr -d '\r')
+          # echo "OUTPUT:"
+          # echo "${OUTPUT}"
+          # readarray -t CROWDIN_BRANCHES <<< "${OUTPUT}"
+          # CROWDIN_BRANCHES=$(jq -r "${JQ_FILTER}" "${JQ_FILE}" | tr -d '\r')
+          # CROWDIN_BRANCHES=($(jq -r '[.[] | map(select(.VERSION_COMPENDIUM == ""))] | add | .[].VERSION' versions.json | tr -d '\r'))
+          CROWDIN_BRANCHES=($(jq -r "${JQ_FILTER}" "${JQ_FILE}" | tr -d '\r'))
+          PULL_REQUEST_LABEL_LIST="gettext"
+          for CROWDIN_BRANCH in "${CROWDIN_BRANCHES[@]}"; do
+            if [[ "${VERSION}" == "${CROWDIN_BRANCH}" ]]; then
+              PULL_REQUEST_LABEL_LIST="${PULL_REQUEST_LABEL_LIST},crowdin"
+              break
+            fi
+          done
+          echo "PULL_REQUEST_LABEL_LIST: ${PULL_REQUEST_LABEL_LIST}"

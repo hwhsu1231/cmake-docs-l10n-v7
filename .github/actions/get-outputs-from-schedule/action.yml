@@ -1,0 +1,67 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: get-outputs-from-schedule
+
+description: Get Outputs from Schedule
+
+inputs:
+  schedule:
+    required: true
+    description: xxx
+
+outputs:
+  TYPE:
+    value: ${{ steps.gosc.outputs.TYPE }}
+    description: xxx
+  VERSION:
+    value: ${{ steps.gosc.outputs.VERSION }}
+    description: xxx
+  VERSION_GROUP:
+    value: ${{ steps.gosc.outputs.VERSION_GROUP }}
+    description: xxx
+  LANGUAGE:
+    value: ${{ steps.gosc.outputs.LANGUAGE }}
+    description: xxx
+
+runs:
+  using: composite
+  steps:
+    - name: Get Outputs from Schedule Cron
+      id: gosc
+      shell: bash
+      run: |
+        SCHEDULE="${{ inputs.schedule }}"
+
+        for CRON_VAR in $(env | grep '^CRON_' | cut -d'=' -f1); do
+          GROUP_NAME="${CRON_VAR/CRON_/}"
+          GROUP_CRON="${!CRON_VAR}"
+          if [[ "${SCHEDULE}" == "${GROUP_CRON}" ]]; then
+            VERSION_GROUP="${GROUP_NAME}"
+            break
+          fi
+        done
+        if [[ -z "${VERSION_GROUP}" ]]; then
+          echo "Error: No matching VERSION_GROUP found for the schedule '${SCHEDULE}'." >&2
+          exit 1
+        fi
+
+        TYPE="matrix"
+        VERSION=""
+        LANGUAGE="all"
+
+        echo "TYPE=${TYPE}" >> ${GITHUB_OUTPUT}
+        echo "TYPE:"
+        echo "${TYPE}"
+
+        echo "VERSION=${VERSION}" >> ${GITHUB_OUTPUT}
+        echo "VERSION:"
+        echo "${VERSION}"
+
+        echo "VERSION_GROUP=${VERSION_GROUP}" >> ${GITHUB_OUTPUT}
+        echo "VERSION_GROUP:"
+        echo "${VERSION_GROUP}"
+
+        echo "LANGUAGE=${LANGUAGE}" >> ${GITHUB_OUTPUT}
+        echo "LANGUAGE:"
+        echo "${LANGUAGE}"

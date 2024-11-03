@@ -1,0 +1,150 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: use-update-submodule
+
+on:
+  workflow_call:
+    inputs:
+      RUNNER:
+        type: string
+        required: true
+      CHECKOUT:
+        type: string
+        required: true
+      SUBMODULE:
+        type: string
+        required: true
+      CALLER_JOB:
+        type: string
+        required: true
+      ENABLE_JOB:
+        type: boolean
+        required: true
+      ACTOR_ID:
+        type: string
+        required: true
+      ACTOR_NAME:
+        type: string
+        required: true
+      ACTOR_LOGIN:
+        type: string
+        required: true
+    secrets:
+      ACTOR_GITHUB_TOKEN:
+        required: true
+
+jobs:
+  update-submodule:
+    runs-on: ${{ inputs.RUNNER }}
+    steps:
+      - name: Print Contexts/Inputs/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.run_id = ${{ github.run_id }}"
+          echo "[Inputs]"
+          echo "inputs.RUNNER = ${{ inputs.RUNNER }}"
+          echo "inputs.CHECKOUT = ${{ inputs.CHECKOUT }}"
+          echo "inputs.SUBMODULE = ${{ inputs.SUBMODULE }}"
+          echo "inputs.CALLER_JOB = ${{ inputs.CALLER_JOB }}"
+          echo "inputs.ENABLE_JOB = ${{ inputs.ENABLE_JOB }}"
+          echo "inputs.ACTOR_ID = ${{ inputs.ACTOR_ID }}"
+          echo "inputs.ACTOR_NAME = ${{ inputs.ACTOR_NAME }}"
+          echo "inputs.ACTOR_LOGIN = ${{ inputs.ACTOR_LOGIN }}"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+
+      - name: Checkout to '${{ inputs.CHECKOUT }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.CHECKOUT }}
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          submodules: false
+          fetch-depth: 0
+
+      - name: Get Old Commit of the Submodule '${{ inputs.SUBMODULE }}'
+        id: gocs
+        shell: bash
+        run: |
+          OLD_COMMIT=$(git submodule status -- ${{ inputs.SUBMODULE }} | awk '{print $1}' | sed 's/[^a-f0-9]//g')
+          echo "OLD_COMMIT=${OLD_COMMIT}" >> ${GITHUB_OUTPUT}
+          echo "OLD_COMMIT: ${OLD_COMMIT}"
+
+      - name: Update the Submodule '${{ inputs.SUBMODULE }}' from remote
+        shell: bash
+        run: |
+          git submodule update --init --remote ${{ inputs.SUBMODULE }}
+
+      - name: Get New Commit of the Submodule '${{ inputs.SUBMODULE }}'
+        id: gncs
+        shell: bash
+        run: |
+          NEW_COMMIT=$(git submodule status -- ${{ inputs.SUBMODULE }} | awk '{print $1}' | sed 's/[^a-f0-9]//g')
+          echo "NEW_COMMIT=${NEW_COMMIT}" >> ${GITHUB_OUTPUT}
+          echo "NEW_COMMIT: ${NEW_COMMIT}"
+
+      - name: Get Repository Url of the Submodule '${{ inputs.SUBMODULE }}'
+        id: grus
+        shell: bash
+        run: |
+          REPO_URL=$(git config --get submodule.${{ inputs.SUBMODULE }}.url)
+          echo "REPO_URL=${REPO_URL}" >> ${GITHUB_OUTPUT}
+          echo "REPO_URL: ${REPO_URL}"
+
+      - name: Get the Current Job's ID
+        id: gcji
+        uses: Tiryoh/gha-jobid-action@v1
+        with:
+          github_token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          job_name: '${{ inputs.CALLER_JOB }} / ${{ github.job }}'
+          per_page: 100
+
+      - name: Check Outputs of the Current Job's ID
+        shell: bash
+        run: |
+          echo "Current Job's URL = ${{ steps.gcji.outputs.html_url }}"
+          echo "Current Job's ID  = ${{ steps.gcji.outputs.job_id }}"
+
+      - name: Set up mutex for the 'source' branch
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
+        with:
+          branch: mutex/source
+          repo-token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+
+      - name: Add and Commit Changes
+        id: acc
+        uses: EndBug/add-and-commit@v9
+        with:
+          cwd: '.'
+          add: '.'
+          pull: '--rebase --autostash'
+          author_name: ${{ inputs.ACTOR_NAME }}
+          author_email: ${{ inputs.ACTOR_ID }}+${{ inputs.ACTOR_LOGIN }}@users.noreply.github.com
+          message: |
+            feat: update submodule '${{ inputs.SUBMODULE }}'
+
+            Update the submodule '${{ inputs.SUBMODULE }}' to its latest commit.
+
+            - Repository: ${{ steps.grus.outputs.REPO_URL }}
+            - Old commit: ${{ steps.gocs.outputs.OLD_COMMIT }}
+            - New commit: ${{ steps.gncs.outputs.NEW_COMMIT }}
+
+            Created by GitHub Workflows:
+
+            - File: ${{ github.server_url }}/${{ github.repository }}/actions/workflows/${{ github.workflow }}.yml
+            - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Job: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/${{ steps.gcji.outputs.job_id }}
+
+      - name: Check Outputs of the Commit
+        if: ${{ steps.acc.outputs.committed == 'true' }}
+        shell: bash
+        run: |
+          echo "Commit's SHA = ${{ steps.acc.outputs.commit_long_sha }}"
+          echo "Commit's URL = ${{ github.server_url }}/${{ github.repository }}/commit/${{ steps.acc.outputs.commit_long_sha }}"

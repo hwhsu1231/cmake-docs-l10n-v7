@@ -1,0 +1,38 @@
+name: Request a New Language
+description: Use this template for requesting a new language.
+title: "[lang] Request a New Language '<sphinx-lang-code>'"
+labels: ["lang"]
+assignees:
+  - hwhsu1231
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this language request!
+  - type: textarea
+    attributes:
+      label: Language Request
+      description: |
+        Examples:
+        - **Sphinx's Language Code:** `zh_CN`
+        - **Crowdin's Language Code:** `zh-CN`
+        - **Language Name:** Simplified Chinese
+        - **Localized Name:** 简体中文
+      value: |
+        - **Sphinx Code:** `<sphinx-language-code>`
+        - **Crowdin Code:** `<crowdin-language-code>`
+        - **Language Name:** <sphinx-language-name>
+        - **Localized Name:** <localized-name>
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I confirm that the requested language is not listed or not requested.
+          required: true
+        - label: I confirm that the requested language is available in [both Sphinx and Crowdin](https://github.com/hwhsu1231/s2clm).
+          required: true
+        - label: I agree to follow this project's [Code of Conduct](https://example.com).
+          required: true

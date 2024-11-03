@@ -1,0 +1,86 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: get-other-caches-from-versions-file
+
+description: Get Other Caches from versions.json
+
+inputs:
+  version:
+    required: true    # [required]
+    description: The version to search for in the specified versions.json file.
+  versions-file:
+    required: false
+    description: The path to the JSON file containing version data.
+    default: 'versions.json'
+  working-directory:
+    required: false
+    description: The directory from which to run commands or locale files.
+    default: '${{ github.workspace }}'
+
+outputs:
+  VERSION_COMPENDIUM:
+    value: ${{ steps.gocv.outputs.VERSION_COMPENDIUM }}
+    description: The VERSION_COMPENDIUM retrieved from versions.json, or '[default]' if not found.
+  VERSION_OF_PYTHON:
+    value: ${{ steps.gocv.outputs.VERSION_OF_PYTHON }}
+    description: The VERSION_OF_PYTHON retrieved from versions.json, or '[default]' if not found.
+  VERSION_OF_SPHINX:
+    value: ${{ steps.gocv.outputs.VERSION_OF_SPHINX }}
+    description: The VERSION_OF_SPHINX retrieved from versions.json, or '[default]' if not found.
+  VERSION_OF_DOXYGEN:
+    value: ${{ steps.gocv.outputs.VERSION_OF_DOXYGEN }}
+    description: The VERSION_OF_DOXYGEN retrieved from versions.json, or '[default]' if not found.
+  VERSION_OF_PROJ:
+    value: ${{ steps.gocv.outputs.VERSION_OF_PROJ }}
+    description: The VERSION_OF_PROJ retrieved from versions.json, or '[default]' if not found.
+
+runs:
+  using: composite
+  steps:
+    - name: Get the Version Group from versions.json
+      id: gvgv
+      uses: ./.github/actions/get-version-group-from-versions-file
+      with:
+        version: ${{ inputs.version }}
+        versions-file: ${{ inputs.versions-file }}
+        working-directory: ${{ inputs.working-directory }}
+
+    - name: Get Other Caches from versions.json
+      id: gocv
+      shell: bash
+      run: |
+        VERSION="${{ inputs.version }}"
+        VERSION_GROUP="${{ steps.gvgv.outputs.VERSION_GROUP }}"
+        VERSIONS_FILE=$(echo "${{ inputs.versions-file }}" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+        WORKING_DIRECTORY=$(echo "${{ inputs.working-directory }}" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+
+        cd ${WORKING_DIRECTORY}
+
+        CACHE_VERSIONS=(
+          "VERSION_COMPENDIUM"
+          "VERSION_OF_PYTHON"
+          "VERSION_OF_SPHINX"
+          "VERSION_OF_DOXYGEN"
+          "VERSION_OF_PROJ"
+        )
+
+        # Initialize all output variables with the default value
+        for CACHE_VERSION in "${CACHE_VERSIONS[@]}"; do
+          eval "${CACHE_VERSION}='[default]'"
+        done
+
+        # Read actual values from versions.json
+        for CACHE_VERSION in "${CACHE_VERSIONS[@]}"; do
+          FILTER=".${VERSION_GROUP}[] | select(.VERSION == \"${VERSION}\") | .${CACHE_VERSION}"
+          VALUE=$(jq -r "${FILTER}" "${VERSIONS_FILE}")
+          if [[ "${VALUE}" != "null" ]]; then
+            eval "${CACHE_VERSION}='${VALUE}'"
+          fi
+        done
+
+        # Set GitHub Actions outputs
+        for CACHE_VERSION in "${CACHE_VERSIONS[@]}"; do
+          eval "echo ${CACHE_VERSION}: \$$CACHE_VERSION"
+          eval "echo ${CACHE_VERSION}=\$${CACHE_VERSION} >> ${GITHUB_OUTPUT}"
+        done

@@ -1,0 +1,124 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: ci-tmscli-push-pot
+
+on:
+  # Triggers the workflow when a pull request is merged to the 'l10n' branch.
+  repository_dispatch:
+    types:
+      - pr-merged-to-l10n
+  # Triggers the workflow manually through the GitHub UI.
+  workflow_dispatch:
+    inputs:
+      TYPE:
+        description: 'TYPE input'
+        required: true
+        type: choice
+        default: 'matrix'
+        options:
+          - 'matrix'
+          - 'single'
+      VERSION:
+        description: 'VERSION input (for single type)'
+        required: true
+        type: string
+        default: 'git-master'
+      VERSION_GROUP:
+        description: 'VERSION_GROUP input (for matrix type)'
+        required: true
+        type: choice
+        default: 'all'
+        options:
+          - 'all'
+          - 'dev'
+          - 'v3'
+
+jobs:
+  precondition:
+    if: ${{ ( ( github.event_name == 'repository_dispatch' &&
+                github.event.action == 'pr-merged-to-l10n' &&
+                github.event.client_payload.CROWDIN == 'true' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Secrets
+        shell: bash
+        run: |
+          SECRETS_EXIST=true
+          if [[ -z "${{ secrets.CROWDIN_PERSONAL_TOKEN }}" ]]; then
+            echo "secrets.CROWDIN_PERSONAL_TOKEN is missing."
+            SECRETS_EXIST=false
+          fi
+          if [[ "${SECRETS_EXIST}" == "false" ]]; then
+            exit 1
+          fi
+      - name: Check Variables
+        shell: bash
+        run: |
+          VARIABLES_EXIST=true
+          if [[ -z "${{ vars.ACTOR_ID }}" ]]; then
+            echo "vars.ACTOR_ID is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
+            echo "vars.ACTOR_NAME is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_LOGIN }}" ]]; then
+            echo "vars.ACTOR_LOGIN is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ "${VARIABLES_EXIST}" == "false" ]]; then
+            exit 1
+          fi
+
+  get-matrix:
+    if: ${{ ( ( github.event_name == 'repository_dispatch' &&
+                github.event.action == 'pr-merged-to-l10n' &&
+                github.event.client_payload.CROWDIN == 'true' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+    runs-on: ubuntu-latest
+    outputs:
+      VERSION_LIST: ${{ steps.gvl.outputs.VERSION_LIST }}
+    steps:
+      - name: Checkout to '${{ github.ref }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - name: Get VERSION_LIST from versions.json
+        id: gvl
+        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-version-list-from-versions-file@source
+        with:
+          type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
+          version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
+          version-group: ${{ inputs.VERSION_GROUP }}
+          version-filter: 'tmscli'
+
+  caller:
+    needs: [ 'precondition', 'get-matrix' ]
+    if: ${{ ( ( github.event_name == 'repository_dispatch' &&
+                github.event.action == 'pr-merged-to-l10n' &&
+                github.event.client_payload.CROWDIN == 'true' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+    strategy:
+      matrix:
+        VERSION: ${{ fromJSON(needs.get-matrix.outputs.VERSION_LIST) }}
+      fail-fast: false
+    concurrency:
+      group: ${{ github.workflow }}-${{ matrix.VERSION }}
+      cancel-in-progress: true
+    uses: ./.github/workflows/use-tmscli-push-pot.yml
+    with:
+      RUNNER: 'ubuntu-latest'
+      CHECKOUT: ${{ github.ref }}
+      VERSION: ${{ matrix.VERSION }}
+      ENABLE_JOB: true
+      ACTOR_ID: ${{ vars.ACTOR_ID }}
+      ACTOR_NAME: ${{ vars.ACTOR_NAME }}
+      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+    secrets:
+      CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}

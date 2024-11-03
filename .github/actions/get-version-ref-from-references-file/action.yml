@@ -1,0 +1,48 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: get-version-ref-from-references-file
+
+description: Get the Version Reference from references.json
+
+inputs:
+  jq-filter:
+    required: true
+    description: xxx
+  jq-file:
+    required: true
+    description: xxx
+  working-directory:
+    required: false
+    description: xxx
+    default: ${{ github.workspace }}
+
+outputs:
+  VERSION_REF:
+    value: ${{ steps.gvi.outputs.VERSION_REF }}
+    description: xxx
+
+runs:
+  using: composite
+  steps:
+    # Refer to:
+    # - https://github.com/peter-evans/create-pull-request/issues/2634#issuecomment-1870136711
+    # - https://github.com/github/docs/issues/21529
+    # - https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings
+    - name: Get the Version Reference from references.json
+      id: gvi
+      shell: bash
+      run: |
+        JQ_FILTER="${{ inputs.jq-filter }}"
+        JQ_FILE=$(echo "${{ inputs.jq-file }}" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+        WORKING_DIRECTORY=$(echo "${{ inputs.working-directory }}" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+
+        cd ${WORKING_DIRECTORY}
+
+        VERSION_REF=$(jq "${JQ_FILTER}" "${JQ_FILE}")
+        DELIMITER="$(openssl rand -hex 8)"
+        echo "VERSION_REF<<${DELIMITER}"  >> ${GITHUB_OUTPUT}
+        echo "${VERSION_REF}"             >> ${GITHUB_OUTPUT}
+        echo "${DELIMITER}"               >> ${GITHUB_OUTPUT}
+        echo "VERSION_REF:"
+        echo "${VERSION_REF}"

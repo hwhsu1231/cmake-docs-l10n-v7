@@ -1,0 +1,104 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: use-deploy-po-version
+
+on:
+  workflow_call:
+    inputs:
+      RUNNER:
+        type: string
+        required: true
+      CHECKOUT:
+        type: string
+        required: true
+      VERSION:
+        type: string
+        required: true
+      CALLER_JOB:
+        type: string
+        required: true
+      ENABLE_JOB:
+        type: boolean
+        required: true
+      ACTOR_ID:
+        type: string
+        required: true
+      ACTOR_NAME:
+        type: string
+        required: true
+      ACTOR_LOGIN:
+        type: string
+        required: true
+    secrets:
+      ACTOR_GITHUB_TOKEN:
+        required: true
+
+jobs:
+  deploy-po-version:
+    if: ${{ inputs.ENABLE_JOB }}
+    runs-on: ${{ inputs.RUNNER }}
+    steps:
+      - name: Print Contexts/Inputs/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.repository.default_branch = ${{ github.event.repository.default_branch }}"
+          echo "[Inputs]"
+          echo "inputs.RUNNER = ${{ inputs.RUNNER }}"
+          echo "inputs.CHECKOUT = ${{ inputs.CHECKOUT }}"
+          echo "inputs.VERSION = ${{ inputs.VERSION }}"
+          echo "inputs.CALLER_JOB = ${{ inputs.CALLER_JOB }}"
+          echo "inputs.ENABLE_JOB = ${{ inputs.ENABLE_JOB }}"
+          echo "inputs.ACTOR_ID = ${{ inputs.ACTOR_ID }}"
+          echo "inputs.ACTOR_NAME = ${{ inputs.ACTOR_NAME }}"
+          echo "inputs.ACTOR_LOGIN = ${{ inputs.ACTOR_LOGIN }}"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+
+      - name: Checkout to '${{ inputs.CHECKOUT }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.CHECKOUT }}
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          submodules: true
+
+      - name: Install CMake
+        uses: ./.github/actions/install-cmake
+
+      - name: Configure the 'all' preset for '${{ inputs.VERSION }}' version
+        uses: ./.github/actions/cmake-configure-preset
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: 'all'
+          cache-version: ${{ inputs.VERSION }}
+
+      - name: Build the 'readthedocs_symlinks' target
+        uses: ./.github/actions/cmake-build-target
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: 'all'
+          target: 'readthedocs_symlinks'
+
+      - name: Remove 'l10n/${{ inputs.VERSION }}/locale/pot' directory
+        run: |
+          cd ${{ github.workspace }}
+          cmake -E rm -rf l10n/${{ inputs.VERSION }}/locale/pot
+
+      - name: Deploy to 'po/${{ inputs.VERSION }}' branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          git-config-name: ${{ inputs.ACTOR_NAME }}
+          git-config-email: ${{ inputs.ACTOR_ID }}+${{ inputs.ACTOR_LOGIN }}@users.noreply.github.com
+          branch: 'po/${{ inputs.VERSION }}'
+          folder: './l10n/${{ inputs.VERSION }}/locale'
+          target-folder: '.'
+          single-commit: true
+          clean: true

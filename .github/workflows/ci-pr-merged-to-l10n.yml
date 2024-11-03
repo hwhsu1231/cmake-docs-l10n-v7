@@ -1,0 +1,49 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: ci-pr-merged-to-l10n
+
+on:
+  workflow_dispatch:
+    inputs:
+      VERSION:
+        description: 'VERSION input'
+        required: true
+        type: string
+        default: 'git-master'
+      GETTEXT:
+        description: 'GETTEXT input'
+        required: true
+        type: choice
+        default: 'false'
+        options:
+          - 'true'
+          - 'false'
+      CROWDIN:
+        description: 'CROWDIN input'
+        required: true
+        type: choice
+        default: 'false'
+        options:
+          - 'true'
+          - 'false'
+
+jobs:
+  # For testing
+  dispatch:
+    if: ( github.event_name == 'workflow_dispatch' )
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch the 'pr-merged-to-l10n' event to the repository
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: pr-merged-to-l10n
+          client-payload: |
+            {
+              "TYPE" : "single",
+              "VERSION" : "${{ inputs.VERSION }}",
+              "LANGUAGE" : "all",
+              "GETTEXT" : "${{ inputs.GETTEXT }}",
+              "CROWDIN" : "${{ inputs.CROWDIN }}"
+            }

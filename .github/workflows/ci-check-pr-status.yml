@@ -1,0 +1,109 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: ci-check-pr-status
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  before-check:
+    runs-on: ubuntu-latest
+    outputs:
+      SCRIPT_CHANGE: ${{ steps.filter.outputs.script }}
+      DOCUMENT_CHANGE: ${{ steps.filter.outputs.document }}
+      WORKFLOW_CHANGE: ${{ steps.filter.outputs.workflow }}
+    steps:
+      - name: Print Contexts
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.pull_request.base.ref = ${{ github.event.pull_request.base.ref }}"
+          echo "github.event.pull_request.head.ref = ${{ github.event.pull_request.head.ref }}"
+          echo "github.base_ref = ${{ github.base_ref }}"
+          echo "github.head_ref = ${{ github.head_ref }}"
+          echo "github.event.before = ${{ github.event.before }}"
+          echo "github.sha = ${{ github.sha }}"
+      - name: Checkout to '${{ github.ref }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+      - name: Extract VERSION from Pull Request Title
+        id: evprt
+        shell: bash
+        run: |
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          VERSION_REGEX="pot\(([^)]+)\):"
+          if [[ $PR_TITLE =~ $VERSION_REGEX ]]; then
+            VERSION="${BASH_REMATCH[1]}"
+            echo "Extracted version: ${VERSION}"
+            echo "VERSION=${VERSION}" >> ${GITHUB_OUTPUT}
+          else
+            echo "Version format not found in PR title"
+            echo "VERSION=" >> ${GITHUB_OUTPUT}
+          fi
+      - name: Get the GitHub App's Token
+        id: ggat
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Filter Changes in the Pull Request
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          token: ${{ steps.ggat.outputs.token }}
+          filters: |
+            script:
+              - 'cmake/**/*.cmake'
+              - 'CMakeLists.txt'
+              - 'CMakePresets.json'
+            document:
+              - 'docs/ACKNOWLEDGEMENTS.md'
+              - 'docs/CONTRIBUTING.md'
+              - 'docs/MAINTAINING.md'
+              - 'README.md'
+            workflow:
+              - '.github/workflows/*.yml'
+      - name: Check Outputs of paths-filter
+        run: |
+          echo "steps.filter.outputs.script   = ${{ steps.filter.outputs.script }}"
+          echo "steps.filter.outputs.document = ${{ steps.filter.outputs.document }}"
+          echo "steps.filter.outputs.workflow = ${{ steps.filter.outputs.workflow }}"
+          echo "steps.filter.outputs.script_count   = ${{ steps.filter.outputs.script_count }}"
+          echo "steps.filter.outputs.document_count = ${{ steps.filter.outputs.document_count }}"
+          echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
+
+  check-crowdin-document:
+    needs: before-check
+    secrets: inherit
+    uses: ./.github/workflows/use-crowdin-document.yml
+    with:
+      CHECKOUT: ${{ github.ref }}
+      VERSION: 'check'
+      LANGUAGE: 'all'
+      CALLER_JOB: 'check-crowdin-document'
+      ENABLE_JOB: ${{ needs.before-check.outputs.DOCUMENT_CHANGE == 'true' }}
+
+  check-deploy-gh-pages:
+    needs: before-check
+    secrets: inherit
+    uses: ./.github/workflows/use-deploy-gh-pages.yml
+    with:
+      CHECKOUT: ${{ github.ref }}
+      VERSION: 'git-master'
+      LANGUAGE: 'all'
+      MODE_OF_UPDATE: 'COMPARE'
+      CALLER_JOB: 'check-deploy-gh-pages'
+      ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
+      DEPLOY_HTML: false

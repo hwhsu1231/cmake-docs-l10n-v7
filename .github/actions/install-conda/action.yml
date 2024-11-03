@@ -1,0 +1,40 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: install-conda
+
+description: Install Conda
+
+inputs:
+  conda-version:
+    required: false
+    description: 'Specific version of Conda to install.'
+    default: ''
+  token:
+    required: false
+    description: xxx
+    default: '${{ github.token }}'
+
+runs:
+  using: composite
+  steps:
+    - name: Install Conda
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        auto-activate-base: true
+        activate-environment: ""
+        miniconda-version: ${{ inputs.conda-version }}
+
+    - name: Check if Conda is installed (Linux/macOS)
+      if: ${{ runner.os == 'Linux' || runner.os == 'macOS' }}
+      shell: bash
+      run: |
+        which conda
+        conda --version
+
+    - name: Check if Conda is installed (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      shell: cmd
+      run: |
+        where conda
+        conda --version

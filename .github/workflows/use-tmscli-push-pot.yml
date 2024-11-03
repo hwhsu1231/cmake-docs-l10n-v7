@@ -1,0 +1,129 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: use-tmscli-push-pot
+
+on:
+  workflow_call:
+    inputs:
+      RUNNER:
+        type: string
+        required: true
+      CHECKOUT:
+        type: string
+        required: true
+      VERSION:
+        type: string
+        required: true
+      ENABLE_JOB:
+        type: boolean
+        required: true
+      ACTOR_ID:
+        type: string
+        required: true
+      ACTOR_NAME:
+        type: string
+        required: true
+      ACTOR_LOGIN:
+        type: string
+        required: true
+    secrets:
+      CROWDIN_PERSONAL_TOKEN:
+        required: true
+
+jobs:
+  tmscli-push-pot:
+    if: ${{ inputs.ENABLE_JOB }}
+    runs-on: ${{ inputs.RUNNER }}
+    steps:
+      - name: Print Contexts/Inputs/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "[Inputs]"
+          echo "inputs.RUNNER = ${{ inputs.RUNNER }}"
+          echo "inputs.CHECKOUT = ${{ inputs.CHECKOUT }}"
+          echo "inputs.VERSION = ${{ inputs.VERSION }}"
+          echo "inputs.ENABLE_JOB = ${{ inputs.ENABLE_JOB }}"
+          echo "inputs.ACTOR_ID = ${{ inputs.ACTOR_ID }}"
+          echo "inputs.ACTOR_NAME = ${{ inputs.ACTOR_NAME }}"
+          echo "inputs.ACTOR_LOGIN = ${{ inputs.ACTOR_LOGIN }}"
+          echo "[Secrets]"
+          echo "secrets.CROWDIN_PERSONAL_TOKEN = ${{ secrets.CROWDIN_PERSONAL_TOKEN }}"
+
+      - name: Checkout to '${{ inputs.CHECKOUT }}'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.CHECKOUT }}
+          submodules: true
+
+      # - name: Set up Environment Variables
+      #   shell: bash
+      #   run: |
+      #     echo "CROWDIN_PERSONAL_TOKEN=${{ secrets.CROWDIN_PERSONAL_TOKEN }}" >> ${GITHUB_ENV}
+
+      # - name: Check whether '${{ inputs.VERSION }}' version should be uploaded to Crowdin
+      #   shell: bash
+      #   run: |
+      #     VERSION="${{ inputs.VERSION }}"
+      #     FILTER=".v3 | map(select(.VERSION_COMPENDIUM == \"\")) | .[].VERSION"
+      #     OUTPUT=$(jq -r "${FILTER}" versions.json)
+      #     readarray -t CROWDIN_BRANCHES <<< "$OUTPUT"
+      #     VERSION_FOUND=false
+      #     for CROWDIN_BRANCH in "${CROWDIN_BRANCHES[@]}"; do
+      #       if [[ "${VERSION}" == "$CROWDIN_BRANCH" ]]; then
+      #         VERSION_FOUND=true
+      #         break
+      #       fi
+      #     done
+      #     echo "VERSION_FOUND: $VERSION_FOUND"
+      #     if [[ $VERSION_FOUND == "true" ]]; then
+      #       echo "'${{ inputs.VERSION }}' version should be uploaded to Crowdin."
+      #     else
+      #       echo "'${{ inputs.VERSION }}' version should NOT be uploaded to Crowdin."
+      #       exit 1
+      #     fi
+
+      - name: Install CMake
+        uses: ./.github/actions/install-cmake
+
+      - name: Install Gettext
+        uses: ./.github/actions/install-gettext
+
+      - name: Install Crowdin
+        uses: ./.github/actions/install-crowdin
+
+      - name: Get Other Caches from versions.json
+        id: gocv
+        uses: ./.github/actions/get-other-caches-from-versions-file
+        with:
+          version: ${{ inputs.VERSION }}
+          versions-file: 'versions.json'
+
+      - name: Configure the 'all' preset for '${{ inputs.VERSION }}' version
+        uses: ./.github/actions/cmake-configure-preset
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: 'all'
+          cache-version: ${{ inputs.VERSION }}
+          cache-auto-depend: 'OFF'
+          cache-version-compendium: ${{ steps.gocv.outputs.VERSION_COMPENDIUM }}
+          cache-version-of-python: ${{ steps.gocv.outputs.VERSION_OF_PYTHON }}
+          cache-version-of-sphinx: ${{ steps.gocv.outputs.VERSION_OF_SPHINX }}
+          cache-version-of-doxygen: ${{ steps.gocv.outputs.VERSION_OF_DOXYGEN }}
+          cache-version-of-proj: ${{ steps.gocv.outputs.VERSION_OF_PROJ }}
+
+      - name: Build the 'tmscli_push_pot' target
+        uses: ./.github/actions/cmake-build-target
+        with:
+          source-directory: ${{ github.workspace }}
+          preset: 'all'
+          target: 'tmscli_push_pot'
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
