@@ -1,11 +1,11 @@
 <div align="center">
   <picture>
-    <img width="100" height="100" src="docs/img/logo-cmake.svg">
+    <img width="100" height="100" src="img/logo-cmake.svg">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/img/logo-crowdin-white.svg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/img/logo-crowdin-dark.svg">
-    <img width="100" height="100" src="docs/img/logo-crowdin-dark.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="img/logo-crowdin-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="img/logo-crowdin-dark.svg">
+    <img width="100" height="100" src="img/logo-crowdin-dark.svg">
   </picture>
 </div>
 
@@ -31,12 +31,7 @@ Table of Contents
 <ul>
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#progress-of-translations">Progress of Translations</a></li>
-  <li><a href="#preview-translations">Preview Translations</a>
-    <ul>
-      <li><a href="#preview-in-local-build">Preview in Local Build</a></li>
-      <li><a href="#preview-in-gh-pages">Preview in GitHub Pages</a></li>
-    </ul>
-  </li>
+  <li><a href="#preview-translations">Preview Translations</a></li>
   <li><a href="#licenses">Licenses</a></li>
   <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
   <li><a href="#about-author">Maintainers List</a></li>
@@ -65,7 +60,7 @@ Introduction
   <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank"><img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" ></a><br />
   <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank"><img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg"></a>
   <a href="https://www.contributor-covenant.org/" title="Contributor Covenant: 2.1" target="_blank"><img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg"></a>
-  <a href="https://org-test.crowdin.com/cmake-docs" title="Crowdin Localized" target="_blank"><img alt="Crowdin Localized" src="https://badges.crowdin.net/cmake-docs-i18n/localized.svg" ></a>  
+  <a href="https://org-test.crowdin.com/cmake-docs" title="Crowdin Localized" target="_blank"><img alt="Crowdin Localized" src="https://badges.crowdin.net/cmake-docs-i18n/localized.svg" ></a>
 </div>
 <p></p>
 
@@ -84,11 +79,6 @@ Git Repository:
 - Gitee (mirror): https://gitee.com/hwhsu1231/cmake-docs-l10n
 - Gitea (mirror): https://gitea.com/hwhsu1231/cmake-docs-l10n
 - Codeberg (mirror): https://codeberg.org/hwhsu1231/cmake-docs-l10n
-
-Contributing and Maintaining Guidelines:
-
-- [Contributing Guidelines](./docs/CONTRIBUTING.md)
-- [Maintaining Guidelines](./docs/MAINTAINING.md)
 
 GitHub Worflows:
 
@@ -284,16 +274,6 @@ Progress of Translations
 <h2 id="preview-translations"><a href="#table-of-contents">
 Preview Translations
 </a></h2>
-
-<h3 id="preview-in-local-build"><a href="#table-of-contents">
-Preview in Local Build
-</a></h3>
-
-You can preview translations in Local Build. About how to build documentation locally, see this [section](docs/CONTRIBUTING.md#how-to-build-the-docs-locally) for details.
-
-<h3 id="preview-in-gh-pages"><a href="#table-of-contents">
-Preview in GitHub Pages
-</a></h3>
 
 You can preview translations in GitHub Pages:
 
