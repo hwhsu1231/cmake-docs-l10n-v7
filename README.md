@@ -32,8 +32,7 @@ Table of Contents
 <ul>
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#progress-of-translations">Progress of Translations</a></li>
-  <li><a href="#preview-translations">Preview Translations</a>
-  </li>
+  <li><a href="#preview-translations">Preview Translations</a></li>
   <li><a href="#licenses">Licenses</a></li>
   <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
   <li><a href="#about-author">Maintainers List</a></li>
