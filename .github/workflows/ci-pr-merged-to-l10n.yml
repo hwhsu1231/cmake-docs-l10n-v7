@@ -1,0 +1,66 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: ci-pr-merged-to-l10n
+
+on:
+  pull_request:
+    branches:
+      - l10n
+    types:
+      - closed
+
+jobs:
+  pr-merged-to-l10n:
+    if: ${{ ( github.event_name == 'pull_request' ) &&
+            ( github.event.pull_request.merged == true ) &&
+            ( contains(github.event.pull_request.labels.*.name, 'gettext') ||
+              contains(github.event.pull_request.labels.*.name, 'crowdin') ) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Contexts/Inputs/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.pull_request.base.ref = ${{ github.event.pull_request.base.ref }}"
+          echo "github.event.pull_request.head.ref = ${{ github.event.pull_request.head.ref }}"
+          echo "github.base_ref = ${{ github.base_ref }}"
+          echo "github.head_ref = ${{ github.head_ref }}"
+          echo "[Inputs]"
+          echo "[Secrets]"
+          echo "secrets.APP_ID = ${{ secrets.APP_ID }}"
+          echo "secrets.APP_PRIVATE_KEY = ${{ secrets.APP_PRIVATE_KEY }}"
+
+      - name: Extract VERSION from the Pull Request Title
+        id: evprt
+        run: |
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          VERSION_REGEX="pot\(([^)]+)\):"
+          if [[ $PR_TITLE =~ $VERSION_REGEX ]]; then
+            VERSION="${BASH_REMATCH[1]}"
+            echo "Extracted version: $VERSION"
+            echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          else
+            echo "Version format not found in PR title"
+            exit 1
+          fi
+
+      - name: Dispatch the 'pr-merged-to-l10n' event to the repository
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: pr-merged-to-l10n
+          client-payload: |
+            {
+              "TYPE" : "single",
+              "VERSION" : "${{ steps.evprt.outputs.VERSION }}",
+              "LANGUAGE" : "all",
+              "GETTEXT" : "${{ contains(github.event.pull_request.labels.*.name, 'gettext') }}",
+              "CROWDIN" : "${{ contains(github.event.pull_request.labels.*.name, 'crowdin') }}"
+            }
