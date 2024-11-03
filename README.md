@@ -389,7 +389,7 @@ You can contribute and support this project by doing any of the following:
 - Star the project on GitHub or other mirrors.
 - Submit issues or pull requests on GitHub if you found any bug.
 - Contribute your translations on Crowdin.
-- If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>. 
+- If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.
 
 It will inspire author to make more and more localization projects for open-source documentation.
 
