@@ -28,15 +28,3 @@ files:
   - source: /README.md
     translation: /README.%locale%.md
     languages_mapping: *global_languages_mapping
-
-  - source: /docs/ACKNOWLEDGEMENTS.md
-    translation: /docs/ACKNOWLEDGEMENTS.%locale%.md
-    languages_mapping: *global_languages_mapping
-
-  - source: /docs/CONTRIBUTING.md
-    translation: /docs/CONTRIBUTING.%locale%.md
-    languages_mapping: *global_languages_mapping
-
-  - source: /docs/MAINTAINING.md
-    translation: /docs/MAINTAINING.%locale%.md
-    languages_mapping: *global_languages_mapping
