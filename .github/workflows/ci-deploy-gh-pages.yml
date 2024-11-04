@@ -176,13 +176,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: 'refs/heads/gh-pages'
-      - name: Debug Conditions
-        run: |
-          echo "needs.precondition.result = ${{ needs.precondition.result }}"
-          echo "needs.get-matrix.result   = ${{ needs.get-matrix.result }}"
-          echo "needs.caller.result       = ${{ needs.caller.result }}"
-          echo "!contains(needs.*.result, 'failure')   = ${{ !contains(needs.*.result, 'failure') }}"
-          echo "!contains(needs.*.result, 'cancelled') = ${{ !contains(needs.*.result, 'cancelled') }}"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload Artifact
