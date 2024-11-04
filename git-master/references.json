@@ -1,0 +1,57 @@
+{
+  "po" : 
+  {
+    "ja_JP" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "ru_RU" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_CN" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_TW" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    }
+  },
+  "pot" : 
+  {
+    "branch" : "master",
+    "commit" : 
+    {
+      "date" : "2024-11-03 08:19:10 -0500",
+      "hash" : "f9f4ab55acebbe5689964469f15cc277e1394bfc",
+      "title" : "Merge topic 'path-resolver'"
+    }
+  },
+  "type" : "branch",
+  "version" : "git-master"
+}
