@@ -27,7 +27,7 @@ outputs:
 runs:
   using: composite
   steps:
-    - name: Get Outputs from Schedule Cron
+    - name: Get Outputs from Schedule
       id: gosc
       shell: bash
       run: |
