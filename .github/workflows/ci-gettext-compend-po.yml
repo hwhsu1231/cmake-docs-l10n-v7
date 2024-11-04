@@ -122,8 +122,8 @@ jobs:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
-            ( ( needs.get-matrix.outputs.VERSION_NUM != '0' ) &&
-              ( needs.get-matrix.outputs.LANGUAGE_NUM != '0' ) ) }}
+            ( needs.get-matrix.outputs.VERSION_NUM != '0' ) &&
+            ( needs.get-matrix.outputs.LANGUAGE_NUM != '0' ) }}
     strategy:
       matrix:
         VERSION: ${{ fromJSON(needs.get-matrix.outputs.VERSION_LIST) }}
