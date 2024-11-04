@@ -30,7 +30,7 @@ inputs:
 
 outputs:
   VERSION_NUM:
-    value: ${{ steps.gvlv.outupts.VERSION_NUM }}
+    value: ${{ steps.gvlv.outputs.VERSION_NUM }}
     description: xxx
   VERSION_LIST:
     value: ${{ steps.gvlv.outputs.VERSION_LIST }}
