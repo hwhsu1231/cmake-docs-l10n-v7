@@ -12,23 +12,23 @@ inputs:
 
 outputs:
   TYPE:
-    value: ${{ steps.gosc.outputs.TYPE }}
+    value: ${{ steps.gos.outputs.TYPE }}
     description: xxx
   VERSION:
-    value: ${{ steps.gosc.outputs.VERSION }}
+    value: ${{ steps.gos.outputs.VERSION }}
     description: xxx
   VERSION_GROUP:
-    value: ${{ steps.gosc.outputs.VERSION_GROUP }}
+    value: ${{ steps.gos.outputs.VERSION_GROUP }}
     description: xxx
   LANGUAGE:
-    value: ${{ steps.gosc.outputs.LANGUAGE }}
+    value: ${{ steps.gos.outputs.LANGUAGE }}
     description: xxx
 
 runs:
   using: composite
   steps:
     - name: Get Outputs from Schedule
-      id: gosc
+      id: gos
       shell: bash
       run: |
         SCHEDULE="${{ inputs.schedule }}"

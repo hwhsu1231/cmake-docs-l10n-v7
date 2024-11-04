@@ -30,14 +30,14 @@ inputs:
 
 outputs:
   VERSION_LIST:
-    value: ${{ steps.gvl.outputs.VERSION_LIST }}
+    value: ${{ steps.gvlv.outputs.VERSION_LIST }}
     description: xxx
 
 runs:
   using: composite
   steps:
     - name: Get VERSION_LIST from versions.json
-      id: gvl
+      id: gvlv
       shell: bash
       run: |
         TYPE="${{ inputs.type }}"

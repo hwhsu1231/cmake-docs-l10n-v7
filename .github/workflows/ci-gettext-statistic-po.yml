@@ -82,7 +82,7 @@ jobs:
             ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) }}
     runs-on: ubuntu-latest
     outputs:
-      VERSION_LIST: ${{ steps.gvl.outputs.VERSION_LIST }}
+      VERSION_LIST: ${{ steps.gvlv.outputs.VERSION_LIST }}
     steps:
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
@@ -90,17 +90,17 @@ jobs:
           ref: ${{ github.ref }}
       - name: Get Outputs from Schedule
         if: ${{ github.event.schedule == 'schedule' }}
-        id: gosc
+        id: gos
         uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-outputs-from-schedule@source
         with:
           schedule: ${{ github.event.schedule }}
       - name: Get VERSION_LIST from versions.json
-        id: gvl
+        id: gvlv
         uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-version-list-from-versions-file@source
         with:
-          type: ${{ inputs.TYPE || steps.gosc.outputs.TYPE }}
-          version: ${{ inputs.VERSION || steps.gosc.outputs.VERSION }}
-          version-group: ${{ inputs.VERSION_GROUP || steps.gosc.outputs.VERSION_GROUP }}
+          type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
+          version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
+          version-group: ${{ inputs.VERSION_GROUP || steps.gos.outputs.VERSION_GROUP }}
           version-filter: 'all'
 
   caller:

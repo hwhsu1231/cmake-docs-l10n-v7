@@ -39,7 +39,7 @@ jobs:
           submodules: true
 
       - name: Get VERSION_LIST from versions.json
-        id: gvl
+        id: gvlv
         shell: bash
         run: |
           VERSION_GROUP="${{ inputs.VERSION_GROUP }}"

@@ -24,14 +24,14 @@ inputs:
 
 outputs:
   LANGUAGE_LIST:
-    value: ${{ steps.gll.outputs.LANGUAGE_LIST }}
+    value: ${{ steps.glll.outputs.LANGUAGE_LIST }}
     description: xxx
 
 runs:
   using: composite
   steps:
     - name: Get LANGUAGE_LIST from languages.json
-      id: gll
+      id: glll
       shell: bash
       run: |
         LANGUAGE="${{ inputs.language }}"
