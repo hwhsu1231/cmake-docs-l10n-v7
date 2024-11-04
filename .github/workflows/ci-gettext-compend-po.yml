@@ -95,7 +95,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
       - name: Get Outputs from Schedule Cron
-        if: ( github.event.schedule == 'schedule' )
+        if: ${{ github.event_name == 'schedule' }}
         id: gosc
         uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-outputs-from-schedule@source
         with:
