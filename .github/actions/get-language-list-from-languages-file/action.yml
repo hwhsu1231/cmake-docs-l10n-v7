@@ -23,6 +23,9 @@ inputs:
     default: ${{ github.workspace }}
 
 outputs:
+  LANGUAGE_NUM:
+    value: ${{ steps.glll.outputs.LANGUAGE_NUM }}
+    description: xxx
   LANGUAGE_LIST:
     value: ${{ steps.glll.outputs.LANGUAGE_LIST }}
     description: xxx
@@ -71,6 +74,11 @@ runs:
             exit 1
           fi
         fi
+        LANGUAGE_NUM=$(jq "length" <<< "${LANGUAGE_LIST}")
+
+        echo "LANGUAGE_NUM=${LANGUAGE_NUM}" >> ${GITHUB_OUTPUT}
+        echo "LANGUAGE_NUM:"
+        echo "${LANGUAGE_NUM}"
 
         echo "LANGUAGE_LIST=${LANGUAGE_LIST}" >> ${GITHUB_OUTPUT}
         echo "LANGUAGE_LIST:"

@@ -29,6 +29,9 @@ inputs:
     default: ${{ github.workspace }}
 
 outputs:
+  VERSION_NUM:
+    value: ${{ steps.gvlv.outupts.VERSION_NUM }}
+    description: xxx
   VERSION_LIST:
     value: ${{ steps.gvlv.outputs.VERSION_LIST }}
     description: xxx
@@ -98,6 +101,11 @@ runs:
           echo "Error: Invalid TYPE value. (${TYPE})" >&2
           exit 1
         fi
+        VERSION_NUM=$(jq "length" <<< "${VERSION_LIST}")
+
+        echo "VERSION_NUM=${VERSION_NUM}" >> ${GITHUB_OUTPUT}
+        echo "VERSION_NUM:"
+        echo "${VERSION_NUM}"
 
         echo "VERSION_LIST=${VERSION_LIST}" >> ${GITHUB_OUTPUT}
         echo "VERSION_LIST:"
