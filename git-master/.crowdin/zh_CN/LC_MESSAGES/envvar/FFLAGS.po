@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-11-05 06:06\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/envvar/FFLAGS.pot\n"
+"X-Crowdin-File-ID: 12248\n"
+
+#: ../../../envvar/FFLAGS.rst:2
+msgid "FFLAGS"
+msgstr ""
+
+#: ../../../envvar/ENV_VAR.txt:1
+msgid "This is a CMake :ref:`Environment Variable <CMake Language Environment Variables>`. Its initial value is taken from the calling process environment."
+msgstr ""
+
+#: ../../../envvar/FFLAGS.rst:6
+msgid "Add default compilation flags to be used when compiling ``Fortran`` files."
+msgstr ""
+
+#: ../../../envvar/LANG_FLAGS.txt:1
+msgid "CMake uses this environment variable value, in combination with its own builtin default flags for the toolchain, to initialize and store the |CMAKE_LANG_FLAGS| cache entry. This occurs the first time a build tree is configured for language |LANG|. For any configuration run (including the first), the environment variable will be ignored if the |CMAKE_LANG_FLAGS| variable is already defined."
+msgstr ""
+
+#: ../../../envvar/FFLAGS.rst:12
+msgid "See also :variable:`CMAKE_Fortran_FLAGS_INIT <CMAKE_<LANG>_FLAGS_INIT>`."
+msgstr ""
+

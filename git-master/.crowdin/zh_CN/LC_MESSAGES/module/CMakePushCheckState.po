@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-18 11:42+0000\n"
+"PO-Revision-Date: 2024-11-05 06:05\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/module/CMakePushCheckState.pot\n"
+"X-Crowdin-File-ID: 10162\n"
+
+#: ../../../../Modules/CMakePushCheckState.cmake:6
+msgid "CMakePushCheckState"
+msgstr ""
+
+#: ../../../../Modules/CMakePushCheckState.cmake:10
+msgid "This module defines three macros: ``CMAKE_PUSH_CHECK_STATE()`` ``CMAKE_POP_CHECK_STATE()`` and ``CMAKE_RESET_CHECK_STATE()`` These macros can be used to save, restore and reset (i.e., clear contents) the state of the variables ``CMAKE_REQUIRED_FLAGS``, ``CMAKE_REQUIRED_DEFINITIONS``, ``CMAKE_REQUIRED_LINK_OPTIONS``, ``CMAKE_REQUIRED_LIBRARIES``, ``CMAKE_REQUIRED_LINK_DIRECTORIES``, ``CMAKE_REQUIRED_INCLUDES`` and ``CMAKE_EXTRA_INCLUDE_FILES`` used by the various Check-files coming with CMake, like e.g. ``check_function_exists()`` etc. The variable contents are pushed on a stack, pushing multiple times is supported.  This is useful e.g.  when executing such tests in a Find-module, where they have to be set, but after the Find-module has been executed they should have the same value as they had before."
+msgstr ""
+
+#: ../../../../Modules/CMakePushCheckState.cmake:24
+msgid "``CMAKE_PUSH_CHECK_STATE()`` macro receives optional argument ``RESET``. Whether it's specified, ``CMAKE_PUSH_CHECK_STATE()`` will set all ``CMAKE_REQUIRED_*`` variables to empty values, same as ``CMAKE_RESET_CHECK_STATE()`` call will do."
+msgstr ""
+
+#: ../../../../Modules/CMakePushCheckState.cmake:29
+msgid "Usage:"
+msgstr ""
+
+#: ../../../../Modules/CMakePushCheckState.cmake:31
+msgid "cmake_push_check_state(RESET)\n"
+"set(CMAKE_REQUIRED_DEFINITIONS -DSOME_MORE_DEF)\n"
+"check_function_exists(...)\n"
+"cmake_reset_check_state()\n"
+"set(CMAKE_REQUIRED_DEFINITIONS -DANOTHER_DEF)\n"
+"check_function_exists(...)\n"
+"cmake_pop_check_state()"
+msgstr ""
+

@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-29 09:06+0000\n"
+"PO-Revision-Date: 2024-11-02 16:11\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/release/dev/ctest-remove-declarative-script-mode.pot\n"
+"X-Crowdin-File-ID: 15881\n"
+"Language: ru_RU\n"
+
+#: ../../../release/dev/ctest-remove-declarative-script-mode.rst:2
+msgid "ctest-remove-declarative-script-mode"
+msgstr ""
+
+#: ../../../release/dev/ctest-remove-declarative-script-mode.rst:4
+msgid "CTest's declarative scripting mode has been removed.  This mode used to be triggered by a :option:`ctest -S` script which did not call any :ref:`CTest Commands` unless :variable:`CTEST_RUN_CURRENT_SCRIPT` was explicitly set to ``OFF``.  This feature was undocumented and was not covered by any unit tests."
+msgstr ""
+
+#: ../../../release/dev/ctest-remove-declarative-script-mode.rst:10
+msgid "The :variable:`CTEST_RUN_CURRENT_SCRIPT` variable no longer has any special meaning."
+msgstr ""
+
+#: ../../../release/dev/ctest-remove-declarative-script-mode.rst:13
+msgid "The :command:`ctest_run_script` command may no longer be called without any arguments."
+msgstr ""
+

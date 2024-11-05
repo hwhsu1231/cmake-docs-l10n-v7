@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-11-05 06:06\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/prop_gbl/PROPAGATE_TOP_LEVEL_INCLUDES_TO_TRY_COMPILE.pot\n"
+"X-Crowdin-File-ID: 12694\n"
+
+#: ../../../prop_gbl/PROPAGATE_TOP_LEVEL_INCLUDES_TO_TRY_COMPILE.rst:2
+msgid "PROPAGATE_TOP_LEVEL_INCLUDES_TO_TRY_COMPILE"
+msgstr ""
+
+#: ../../../prop_gbl/PROPAGATE_TOP_LEVEL_INCLUDES_TO_TRY_COMPILE.rst:6
+msgid "When this global property is set to true, the :variable:`CMAKE_PROJECT_TOP_LEVEL_INCLUDES` variable is propagated into :command:`try_compile` calls that use the :ref:`whole-project signature <Try Compiling Whole Projects>`. Calls to the :ref:`source file signature <Try Compiling Source Files>` are not affected by this property. ``PROPAGATE_TOP_LEVEL_INCLUDES_TO_TRY_COMPILE`` is unset by default."
+msgstr ""
+
+#: ../../../prop_gbl/PROPAGATE_TOP_LEVEL_INCLUDES_TO_TRY_COMPILE.rst:14
+msgid "For :ref:`dependency providers <dependency_providers_overview>` that want to be enabled in whole-project :command:`try_compile` calls, set this global property to true just before or after registering the provider. Note that all files listed in :variable:`CMAKE_PROJECT_TOP_LEVEL_INCLUDES` will need to be able to handle being included in such :command:`try_compile` calls, and it is the user's responsibility to ensure this."
+msgstr ""
+

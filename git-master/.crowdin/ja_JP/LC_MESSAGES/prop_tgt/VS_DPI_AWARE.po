@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-07-21 04:05\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/prop_tgt/VS_DPI_AWARE.pot\n"
+"X-Crowdin-File-ID: 11996\n"
+
+#: ../../../prop_tgt/VS_DPI_AWARE.rst:2
+msgid "VS_DPI_AWARE"
+msgstr ""
+
+#: ../../../prop_tgt/VS_DPI_AWARE.rst:6
+msgid "Set the Manifest Tool -> Input and Output -> DPI Awareness in the Visual Studio target project properties."
+msgstr ""
+
+#: ../../../prop_tgt/VS_DPI_AWARE.rst:9
+msgid "Valid values are ``PerMonitor``, ``ON``, or ``OFF``."
+msgstr ""
+
+#: ../../../prop_tgt/VS_DPI_AWARE.rst:11
+msgid "For example:"
+msgstr ""
+
+#: ../../../prop_tgt/VS_DPI_AWARE.rst:13
+msgid "add_executable(myproject myproject.cpp)\n"
+"set_property(TARGET myproject PROPERTY VS_DPI_AWARE \"PerMonitor\")"
+msgstr ""
+

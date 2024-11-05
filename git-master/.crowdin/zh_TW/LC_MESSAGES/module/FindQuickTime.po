@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-01 09:11+0000\n"
+"PO-Revision-Date: 2024-11-05 06:06\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/module/FindQuickTime.pot\n"
+"X-Crowdin-File-ID: 9174\n"
+
+#: ../../../../Modules/FindQuickTime.cmake:6
+msgid "FindQuickTime"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:8
+msgid "Locate QuickTime This module defines:"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:10
+msgid "``QUICKTIME_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:12
+msgid "``QUICKTIME_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:13
+msgid "if false, do not try to link to gdal"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:15
+msgid "``QUICKTIME_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:15
+msgid "where to find the headers"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:17
+msgid "``$QUICKTIME_DIR`` is an environment variable that would correspond to::"
+msgstr ""
+
+#: ../../../../Modules/FindQuickTime.cmake:19
+msgid "./configure --prefix=$QUICKTIME_DIR"
+msgstr ""
+

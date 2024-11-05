@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-11-05 06:07\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/prop_tgt/MACHO_COMPATIBILITY_VERSION.pot\n"
+"X-Crowdin-File-ID: 8814\n"
+
+#: ../../../prop_tgt/MACHO_COMPATIBILITY_VERSION.rst:2
+msgid "MACHO_COMPATIBILITY_VERSION"
+msgstr ""
+
+#: ../../../prop_tgt/MACHO_COMPATIBILITY_VERSION.rst:6
+msgid "What compatibility version number is this target for Mach-O binaries."
+msgstr ""
+
+#: ../../../prop_tgt/MACHO_COMPATIBILITY_VERSION.rst:8
+msgid "For shared libraries on Mach-O systems (e.g. macOS, iOS) the ``MACHO_COMPATIBILITY_VERSION`` property corresponds to the *compatibility version* and :prop_tgt:`MACHO_CURRENT_VERSION` corresponds to the *current version*.  These are both embedded in the shared library binary and can be checked with the ``otool -L <binary>`` command."
+msgstr ""
+
+#: ../../../prop_tgt/MACHO_COMPATIBILITY_VERSION.rst:14
+msgid "It should be noted that the :prop_tgt:`MACHO_CURRENT_VERSION` and ``MACHO_COMPATIBILITY_VERSION`` properties do not affect the file names or version-related symlinks that CMake generates for the library. The :prop_tgt:`VERSION` and :prop_tgt:`SOVERSION` target properties still control the file and symlink names.  The ``install_name`` is also still controlled by :prop_tgt:`SOVERSION`."
+msgstr ""
+
+#: ../../../prop_tgt/MACHO_COMPATIBILITY_VERSION.rst:21
+msgid "When :prop_tgt:`MACHO_CURRENT_VERSION` and ``MACHO_COMPATIBILITY_VERSION`` are not given, :prop_tgt:`VERSION` and :prop_tgt:`SOVERSION` are used for the version details to be embedded in the binaries respectively. The :prop_tgt:`MACHO_CURRENT_VERSION` and ``MACHO_COMPATIBILITY_VERSION`` properties only need to be given if the project needs to decouple the file and symlink naming from the version details embedded in the binaries (e.g. to match libtool conventions)."
+msgstr ""
+

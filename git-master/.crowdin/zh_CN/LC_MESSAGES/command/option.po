@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-11-05 06:05\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/command/option.pot\n"
+"X-Crowdin-File-ID: 9744\n"
+
+#: ../../../command/option.rst:2
+msgid "option"
+msgstr ""
+
+#: ../../../command/option.rst:4
+msgid "Provide a boolean option that the user can optionally select."
+msgstr ""
+
+#: ../../../command/option.rst:6
+msgid "option(<variable> \"<help_text>\" [value])"
+msgstr ""
+
+#: ../../../command/option.rst:10
+msgid "If no initial ``<value>`` is provided, boolean ``OFF`` is the default value. If ``<variable>`` is already set as a normal or cache variable, then the command does nothing (see policy :policy:`CMP0077`)."
+msgstr ""
+
+#: ../../../command/option.rst:14
+msgid "For options that depend on the values of other options, see the module help for :module:`CMakeDependentOption`."
+msgstr ""
+
+#: ../../../command/option.rst:17
+msgid "In CMake project mode, a boolean cache variable is created with the option value. In CMake script mode, a boolean variable is set with the option value."
+msgstr ""
+

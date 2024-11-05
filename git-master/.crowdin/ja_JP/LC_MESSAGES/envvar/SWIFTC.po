@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-07-21 04:05\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/envvar/SWIFTC.pot\n"
+"X-Crowdin-File-ID: 11852\n"
+
+#: ../../../envvar/SWIFTC.rst:2
+msgid "SWIFTC"
+msgstr ""
+
+#: ../../../envvar/ENV_VAR.txt:1
+msgid "This is a CMake :ref:`Environment Variable <CMake Language Environment Variables>`. Its initial value is taken from the calling process environment."
+msgstr ""
+
+#: ../../../envvar/SWIFTC.rst:8
+msgid "Preferred executable for compiling ``Swift`` language files. Will only be used by CMake on the first configuration to determine ``Swift`` compiler, after which the value for ``SWIFTC`` is stored in the cache as :variable:`CMAKE_Swift_COMPILER <CMAKE_<LANG>_COMPILER>`. For any configuration run (including the first), the environment variable will be ignored if the :variable:`CMAKE_Swift_COMPILER <CMAKE_<LANG>_COMPILER>` variable is defined."
+msgstr ""
+
+#: ../../../envvar/SWIFTC.rst:16
+msgid "Options that are required to make the compiler work correctly can be included; they can not be changed."
+msgstr ""
+
+#: ../../../envvar/SWIFTC.rst:19
+msgid "$ export SWIFTC=\"custom-compiler --arg1 --arg2\""
+msgstr ""
+

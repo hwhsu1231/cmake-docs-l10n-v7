@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-11-05 06:05\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/variable/CMAKE_MESSAGE_LOG_LEVEL.pot\n"
+"X-Crowdin-File-ID: 12576\n"
+
+#: ../../../variable/CMAKE_MESSAGE_LOG_LEVEL.rst:2
+msgid "CMAKE_MESSAGE_LOG_LEVEL"
+msgstr ""
+
+#: ../../../variable/CMAKE_MESSAGE_LOG_LEVEL.rst:6
+msgid "When set, this variable specifies the logging level used by the :command:`message` command.  Valid values are the same as those for the :option:`--log-level <cmake --log-level>` command line option of the :manual:`cmake(1)` program.  If this variable is set and the :option:`--log-level <cmake --log-level>` command line option is given, the command line option takes precedence."
+msgstr ""
+
+#: ../../../variable/CMAKE_MESSAGE_LOG_LEVEL.rst:13
+msgid "The main advantage to using this variable is to make a log level persist between CMake runs.  Setting it as a cache variable will ensure that subsequent CMake runs will continue to use the chosen log level."
+msgstr ""
+
+#: ../../../variable/CMAKE_MESSAGE_LOG_LEVEL.rst:17
+msgid "Projects should not set this variable, it is intended for users so that they may control the log level according to their own needs."
+msgstr ""
+
+#: ../../../variable/CMAKE_MESSAGE_LOG_LEVEL.rst:20
+msgid "See the :command:`cmake_language` :ref:`cmake_language <query_message_log_level>` command for a way to query the current message logging level."
+msgstr ""
+

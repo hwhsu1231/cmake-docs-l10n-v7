@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-07-21 04:06\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/variable/CMAKE_SIZEOF_VOID_P.pot\n"
+"X-Crowdin-File-ID: 12374\n"
+
+#: ../../../variable/CMAKE_SIZEOF_VOID_P.rst:2
+msgid "CMAKE_SIZEOF_VOID_P"
+msgstr ""
+
+#: ../../../variable/CMAKE_SIZEOF_VOID_P.rst:4
+msgid "Size of a ``void`` pointer."
+msgstr ""
+
+#: ../../../variable/CMAKE_SIZEOF_VOID_P.rst:6
+msgid "This is set to the size of a pointer on the target machine, and is determined when a compiled language is enabled.  If a 64-bit size is found, then the library search path is modified to look for 64-bit libraries first."
+msgstr ""
+

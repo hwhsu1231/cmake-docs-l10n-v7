@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 07:01+0000\n"
+"PO-Revision-Date: 2024-11-05 06:07\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: /git-master/locale/pot/LC_MESSAGES/envvar/ASM_DIALECT.pot\n"
+"X-Crowdin-File-ID: 11994\n"
+
+#: ../../../envvar/ASM_DIALECT.rst:2
+msgid "ASM<DIALECT>"
+msgstr ""
+
+#: ../../../envvar/ENV_VAR.txt:1
+msgid "This is a CMake :ref:`Environment Variable <CMake Language Environment Variables>`. Its initial value is taken from the calling process environment."
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:6
+msgid "Preferred executable for compiling a specific dialect of assembly language files. ``ASM<DIALECT>`` can be one of:"
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:9
+msgid "``ASM``"
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:10
+msgid "``ASM_NASM`` (Netwide Assembler)"
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:11
+msgid "``ASM_MASM`` (Microsoft Assembler)"
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:12
+msgid "``ASM_MARMASM`` (Microsoft ARM Assembler)"
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:13
+msgid "``ASM-ATT`` (Assembler AT&T)"
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:15
+msgid "Will only be used by CMake on the first configuration to determine ``ASM<DIALECT>`` compiler, after which the value for ``ASM<DIALECT>`` is stored in the cache as :variable:`CMAKE_ASM<DIALECT>_COMPILER <CMAKE_<LANG>_COMPILER>`. For subsequent configuration runs, the environment variable will be ignored in favor of :variable:`CMAKE_ASM<DIALECT>_COMPILER <CMAKE_<LANG>_COMPILER>`."
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:23
+msgid "Options that are required to make the compiler work correctly can be included; they can not be changed."
+msgstr ""
+
+#: ../../../envvar/ASM_DIALECT.rst:26
+msgid "$ export ASM=\"custom-compiler --arg1 --arg2\""
+msgstr ""
+
