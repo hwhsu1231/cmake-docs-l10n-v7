@@ -33,7 +33,7 @@ outputs:
 runs:
   using: composite
   steps:
-    - name: Get LANGUAGE_LIST from languages.json
+    - name: Get the Language List from languages.json
       id: glll
       shell: bash
       run: |

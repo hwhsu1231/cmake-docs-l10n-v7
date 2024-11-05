@@ -105,7 +105,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      - name: Get VERSION_LIST from versions.json
+      - name: Get the Version List from versions.json
         id: gvlv
         uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-version-list-from-versions-file@source
         with:
@@ -113,7 +113,7 @@ jobs:
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP }}
           version-filter: 'all'
-      - name: Get LANGUAGE_LIST from languages.json
+      - name: Get the Language List from languages.json
         id: glll
         uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-language-list-from-languages-file@source
         with:

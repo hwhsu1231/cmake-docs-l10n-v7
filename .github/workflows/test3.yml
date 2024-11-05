@@ -38,7 +38,7 @@ jobs:
           ref: ${{ github.ref }}
           submodules: true
 
-      - name: Get VERSION_LIST from versions.json
+      - name: Get the Version List from versions.json
         id: gvlv
         shell: bash
         run: |
