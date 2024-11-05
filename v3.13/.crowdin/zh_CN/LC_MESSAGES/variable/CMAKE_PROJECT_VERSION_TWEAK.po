@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-11-05 06:05\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/variable/CMAKE_PROJECT_VERSION_TWEAK.pot\n"
+"X-Crowdin-File-ID: 13913\n"
+"Language: zh_CN\n"
+
+#: ../../../variable/CMAKE_PROJECT_VERSION_TWEAK.rst:2
+msgid "CMAKE_PROJECT_VERSION_TWEAK"
+msgstr ""
+
+#: ../../../variable/CMAKE_PROJECT_VERSION_TWEAK.rst:4
+msgid "The tweak version of the top level project."
+msgstr ""
+
+#: ../../../variable/CMAKE_PROJECT_VERSION_TWEAK.rst:6
+msgid "This variable holds the tweak version of the project as specified in the top level CMakeLists.txt file by a :command:`project` command. Please see :variable:`CMAKE_PROJECT_VERSION` documentation for the behavior when multiple :command:`project` commands are used in the sources."
+msgstr ""
+

@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-11-05 06:06\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/prop_tgt/PUBLIC_HEADER.pot\n"
+"X-Crowdin-File-ID: 15677\n"
+"Language: zh_TW\n"
+
+#: ../../../prop_tgt/PUBLIC_HEADER.rst:2
+msgid "PUBLIC_HEADER"
+msgstr ""
+
+#: ../../../prop_tgt/PUBLIC_HEADER.rst:4
+msgid "Specify public header files in a :prop_tgt:`FRAMEWORK` shared library target."
+msgstr ""
+
+#: ../../../prop_tgt/PUBLIC_HEADER.rst:6
+msgid "Shared library targets marked with the :prop_tgt:`FRAMEWORK` property generate frameworks on macOS, iOS and normal shared libraries on other platforms. This property may be set to a list of header files to be placed in the ``Headers`` directory inside the framework folder.  On non-Apple platforms these headers may be installed using the ``PUBLIC_HEADER`` option to the ``install(TARGETS)`` command."
+msgstr ""
+

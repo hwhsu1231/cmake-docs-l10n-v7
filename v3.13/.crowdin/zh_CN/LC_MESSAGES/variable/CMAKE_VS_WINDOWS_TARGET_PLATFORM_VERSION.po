@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-11-05 06:05\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/variable/CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION.pot\n"
+"X-Crowdin-File-ID: 13473\n"
+"Language: zh_CN\n"
+
+#: ../../../variable/CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION.rst:2
+msgid "CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION"
+msgstr ""
+
+#: ../../../variable/CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION.rst:4
+msgid "Visual Studio Windows Target Platform Version."
+msgstr ""
+
+#: ../../../variable/CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION.rst:6
+msgid "When targeting Windows 10 and above Visual Studio 2015 and above support specification of a target Windows version to select a corresponding SDK. The :variable:`CMAKE_SYSTEM_VERSION` variable may be set to specify a version.  Otherwise CMake computes a default version based on the Windows SDK versions available.  The chosen Windows target version number is provided in ``CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION``.  If no Windows 10 SDK is available this value will be empty."
+msgstr ""
+
+#: ../../../variable/CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION.rst:14
+msgid "One may set a ``CMAKE_WINDOWS_KITS_10_DIR`` *environment variable* to an absolute path to tell CMake to look for Windows 10 SDKs in a custom location.  The specified directory is expected to contain ``Include/10.0.*`` directories."
+msgstr ""
+

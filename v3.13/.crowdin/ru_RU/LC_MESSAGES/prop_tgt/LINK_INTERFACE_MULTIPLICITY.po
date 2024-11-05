@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-08-15 00:21\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/prop_tgt/LINK_INTERFACE_MULTIPLICITY.pot\n"
+"X-Crowdin-File-ID: 14569\n"
+"Language: ru_RU\n"
+
+#: ../../../prop_tgt/LINK_INTERFACE_MULTIPLICITY.rst:2
+msgid "LINK_INTERFACE_MULTIPLICITY"
+msgstr ""
+
+#: ../../../prop_tgt/LINK_INTERFACE_MULTIPLICITY.rst:4
+msgid "Repetition count for STATIC libraries with cyclic dependencies."
+msgstr ""
+
+#: ../../../prop_tgt/LINK_INTERFACE_MULTIPLICITY.rst:6
+msgid "When linking to a STATIC library target with cyclic dependencies the linker may need to scan more than once through the archives in the strongly connected component of the dependency graph.  CMake by default constructs the link line so that the linker will scan through the component at least twice.  This property specifies the minimum number of scans if it is larger than the default.  CMake uses the largest value specified by any target in a component."
+msgstr ""
+

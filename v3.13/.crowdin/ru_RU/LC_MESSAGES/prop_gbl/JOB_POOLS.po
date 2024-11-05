@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-08-15 00:21\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/prop_gbl/JOB_POOLS.pot\n"
+"X-Crowdin-File-ID: 14959\n"
+"Language: ru_RU\n"
+
+#: ../../../prop_gbl/JOB_POOLS.rst:2
+msgid "JOB_POOLS"
+msgstr ""
+
+#: ../../../prop_gbl/JOB_POOLS.rst:4
+msgid "Ninja only: List of available pools."
+msgstr ""
+
+#: ../../../prop_gbl/JOB_POOLS.rst:6
+msgid "A pool is a named integer property and defines the maximum number of concurrent jobs which can be started by a rule assigned to the pool. The :prop_gbl:`JOB_POOLS` property is a semicolon-separated list of pairs using the syntax NAME=integer (without a space after the equality sign)."
+msgstr ""
+
+#: ../../../prop_gbl/JOB_POOLS.rst:11
+msgid "For instance:"
+msgstr ""
+
+#: ../../../prop_gbl/JOB_POOLS.rst:13
+msgid "set_property(GLOBAL PROPERTY JOB_POOLS two_jobs=2 ten_jobs=10)"
+msgstr ""
+
+#: ../../../prop_gbl/JOB_POOLS.rst:17
+msgid "Defined pools could be used globally by setting :variable:`CMAKE_JOB_POOL_COMPILE` and :variable:`CMAKE_JOB_POOL_LINK` or per target by setting the target properties :prop_tgt:`JOB_POOL_COMPILE` and :prop_tgt:`JOB_POOL_LINK`."
+msgstr ""
+
+#: ../../../prop_gbl/JOB_POOLS.rst:22
+msgid "If not set, this property uses the value of the :variable:`CMAKE_JOB_POOLS` variable."
+msgstr ""
+
+#: ../../../prop_gbl/JOB_POOLS.rst:25
+msgid "Build targets provided by CMake that are meant for individual interactive use, such as ``install``, are placed in the ``console`` pool automatically."
+msgstr ""
+

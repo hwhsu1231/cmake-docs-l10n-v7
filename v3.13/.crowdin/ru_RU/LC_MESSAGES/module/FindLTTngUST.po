@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-08-15 00:21\n"
+"Last-Translator: \n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/module/FindLTTngUST.pot\n"
+"X-Crowdin-File-ID: 15629\n"
+"Language: ru_RU\n"
+
+#: ../../../../Modules/FindLTTngUST.cmake:6
+msgid "FindLTTngUST"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:8
+msgid "This module finds the `LTTng-UST <http://lttng.org/>`__ library."
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:11
+msgid "Imported target"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:13
+msgid "This module defines the following :prop_tgt:`IMPORTED` target:"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:16
+msgid "``LTTng::UST``"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:16
+msgid "The LTTng-UST library, if found"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:19
+msgid "Result variables"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:21
+msgid "This module sets the following"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:23
+msgid "``LTTNGUST_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:24
+msgid "``TRUE`` if system has LTTng-UST"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:25
+msgid "``LTTNGUST_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:26
+msgid "The LTTng-UST include directories"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:27
+msgid "``LTTNGUST_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:28
+msgid "The libraries needed to use LTTng-UST"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:29
+msgid "``LTTNGUST_VERSION_STRING``"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:30
+msgid "The LTTng-UST version"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:31
+msgid "``LTTNGUST_HAS_TRACEF``"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:32
+msgid "``TRUE`` if the ``tracef()`` API is available in the system's LTTng-UST"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:98
+msgid "``LTTNGUST_HAS_TRACELOG``"
+msgstr ""
+
+#: ../../../../Modules/FindLTTngUST.cmake:34
+msgid "``TRUE`` if the ``tracelog()`` API is available in the system's LTTng-UST"
+msgstr ""
+

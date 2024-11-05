@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-11-05 06:05\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/policy/CMP0061.pot\n"
+"X-Crowdin-File-ID: 13329\n"
+"Language: zh_CN\n"
+
+#: ../../../policy/CMP0061.rst:2
+msgid "CMP0061"
+msgstr ""
+
+#: ../../../policy/CMP0061.rst:4
+msgid "CTest does not by default tell ``make`` to ignore errors (``-i``)."
+msgstr ""
+
+#: ../../../policy/CMP0061.rst:6
+msgid "The :command:`ctest_build` and :command:`build_command` commands no longer generate build commands for :ref:`Makefile Generators` with the ``-i`` option.  Previously this was done to help build as much of tested projects as possible.  However, this behavior is not consistent with other generators and also causes the return code of the ``make`` tool to be meaningless."
+msgstr ""
+
+#: ../../../policy/CMP0061.rst:13
+msgid "Of course users may still add this option manually by setting :variable:`CTEST_BUILD_COMMAND` or the ``MAKECOMMAND`` cache entry. See the :ref:`CTest Build Step` ``MakeCommand`` setting documentation for their effects."
+msgstr ""
+
+#: ../../../policy/CMP0061.rst:18
+msgid "The ``OLD`` behavior for this policy is to add ``-i`` to ``make`` calls in CTest.  The ``NEW`` behavior for this policy is to not add ``-i``."
+msgstr ""
+
+#: ../../../policy/CMP0061.rst:22
+msgid "This policy was introduced in CMake version 3.3.  Unlike most policies, CMake version |release| does *not* warn when this policy is not set and simply uses OLD behavior."
+msgstr ""
+
+#: ../../../policy/DEPRECATED.txt:2
+msgid "The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-policies(7)>` and may be removed in a future version of CMake."
+msgstr ""
+

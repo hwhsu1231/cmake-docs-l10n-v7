@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-08-15 00:20\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/variable/CMAKE_CACHE_PATCH_VERSION.pot\n"
+"X-Crowdin-File-ID: 15593\n"
+"Language: ja_JP\n"
+
+#: ../../../variable/CMAKE_CACHE_PATCH_VERSION.rst:2
+msgid "CMAKE_CACHE_PATCH_VERSION"
+msgstr ""
+
+#: ../../../variable/CMAKE_CACHE_PATCH_VERSION.rst:4
+msgid "Patch version of CMake used to create the ``CMakeCache.txt`` file"
+msgstr ""
+
+#: ../../../variable/CMAKE_CACHE_PATCH_VERSION.rst:6
+msgid "This stores the patch version of CMake used to write a CMake cache file.  It is only different when a different version of CMake is run on a previously created cache file."
+msgstr ""
+

@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-18 02:39+0000\n"
+"PO-Revision-Date: 2024-11-05 06:06\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Traditional\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: 40c7da21a45a5aec5bfee08f6c874e33\n"
+"X-Crowdin-Project-ID: 8\n"
+"X-Crowdin-Language: zh-TW\n"
+"X-Crowdin-File: /v3.13/locale/pot/LC_MESSAGES/generator/CodeBlocks.pot\n"
+"X-Crowdin-File-ID: 14333\n"
+"Language: zh_TW\n"
+
+#: ../../../generator/CodeBlocks.rst:2
+msgid "CodeBlocks"
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:4
+msgid "Generates CodeBlocks project files."
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:6
+msgid "Project files for CodeBlocks will be created in the top directory and in every subdirectory which features a CMakeLists.txt file containing a PROJECT() call.  Additionally a hierarchy of makefiles is generated into the build tree. The :variable:`CMAKE_CODEBLOCKS_EXCLUDE_EXTERNAL_FILES` variable may be set to ``ON`` to exclude any files which are located outside of the project root directory. The appropriate make program can build the project through the default make target.  A \"make install\" target is also provided."
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:17
+msgid "This \"extra\" generator may be specified as:"
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:20
+msgid "``CodeBlocks - MinGW Makefiles``"
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:20
+msgid "Generate with :generator:`MinGW Makefiles`."
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:23
+msgid "``CodeBlocks - NMake Makefiles``"
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:23
+msgid "Generate with :generator:`NMake Makefiles`."
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:26
+msgid "``CodeBlocks - NMake Makefiles JOM``"
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:26
+msgid "Generate with :generator:`NMake Makefiles JOM`."
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:29
+msgid "``CodeBlocks - Ninja``"
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:29
+msgid "Generate with :generator:`Ninja`."
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:31
+msgid "``CodeBlocks - Unix Makefiles``"
+msgstr ""
+
+#: ../../../generator/CodeBlocks.rst:32
+msgid "Generate with :generator:`Unix Makefiles`."
+msgstr ""
+
