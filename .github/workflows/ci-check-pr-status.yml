@@ -78,7 +78,7 @@ jobs:
   check-crowdin-document:
     needs: before-check
     secrets: inherit
-    uses: ./.github/workflows/use-crowdin-document.yml
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-document.yml
     with:
       CHECKOUT: ${{ github.ref }}
       VERSION: 'check'
@@ -89,7 +89,7 @@ jobs:
   check-deploy-gh-pages:
     needs: before-check
     secrets: inherit
-    uses: ./.github/workflows/use-deploy-gh-pages.yml
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml
     with:
       CHECKOUT: ${{ github.ref }}
       VERSION: 'git-master'

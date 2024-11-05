@@ -92,12 +92,12 @@ jobs:
       - name: Get Outputs from Schedule
         if: ${{ github.event.schedule == 'schedule' }}
         id: gos
-        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-outputs-from-schedule@source
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-outputs-from-schedule@main
         with:
           schedule: ${{ github.event.schedule }}
       - name: Get the Version List from versions.json
         id: gvlv
-        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-version-list-from-versions-file@source
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
           version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
@@ -117,7 +117,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}
       cancel-in-progress: true
-    uses: ./.github/workflows/use-gettext-statistic-po.yml
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-gettext-statistic-po.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}

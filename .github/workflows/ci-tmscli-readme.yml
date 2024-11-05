@@ -75,7 +75,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}
       cancel-in-progress: true
-    uses: ./.github/workflows/use-tmscli-readme.yml
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-tmscli-readme.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}

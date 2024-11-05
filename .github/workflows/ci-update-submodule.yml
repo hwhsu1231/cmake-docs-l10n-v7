@@ -68,7 +68,7 @@ jobs:
           submodules: false
       - name: Get the Submodule List from .gitmodules
         id: gsl
-        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-submodule-list-from-gitmodules-file@source
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-submodule-list-from-gitmodules-file@main
         with:
           submodule: ${{ inputs.SUBMODULE || 'all' }}
         # shell: bash
@@ -95,7 +95,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.SUBMODULE }}
       cancel-in-progress: true
-    uses: ./.github/workflows/use-update-submodule.yml
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-update-submodule.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}

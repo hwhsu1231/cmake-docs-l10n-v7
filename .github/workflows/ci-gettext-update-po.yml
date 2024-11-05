@@ -107,7 +107,7 @@ jobs:
           ref: ${{ github.ref }}
       - name: Get the Version List from versions.json
         id: gvlv
-        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-version-list-from-versions-file@source
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
@@ -115,7 +115,7 @@ jobs:
           version-filter: 'all'
       - name: Get the Language List from languages.json
         id: glll
-        uses: hwhsu1231/cmake-docs-l10n-v7/.github/actions/get-language-list-from-languages-file@source
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-language-list-from-languages-file@main
         with:
           language: ${{ inputs.LANGUAGE || github.event.client_payload.LANGUAGE }}
           all-in-one: 'true'
@@ -137,7 +137,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}-${{ matrix.LANGUAGE }}
       cancel-in-progress: true
-    uses: ./.github/workflows/use-gettext-update-po.yml
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-gettext-update-po.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
