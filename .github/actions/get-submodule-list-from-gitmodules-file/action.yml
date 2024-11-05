@@ -1,0 +1,70 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: get-submodule-list-from-gitmodules-file
+
+description: Get the Submodule List from .gitmodules
+
+inputs:
+  submodule:
+    required: true    # [required]
+    description: xxx
+  gitmodules-file:
+    required: false
+    description: xxx
+    default: '.gitmodules'
+  working-directory:
+    required: false
+    description: The directory from which to run commands or locale files.
+    default: ${{ github.workspace }}
+
+outputs:
+  SUBMODULE_NUM:
+    value: ${{ steps.glll.outputs.SUBMODULE_NUM }}
+    description: xxx
+  SUBMODULE_LIST:
+    value: ${{ steps.glll.outputs.SUBMODULE_LIST }}
+    description: xxx
+
+runs:
+  using: composite
+  steps:
+    - name: Get the Submodule List from .gitmodules
+      id: glll
+      shell: bash
+      run: |
+        SUBMODULE="${{ inputs.submodule }}"
+        GITMODULES_FILE="${{ inputs.gitmodules-file }}"
+        WORKING_DIRECTORY=$(echo "${{ inputs.working-directory }}" | sed 's#\\#/#g' | sed 's#^\([A-Za-z]\):#/\L\1#')
+
+        cd ${WORKING_DIRECTORY}
+
+        if [[ "${SUBMODULE}" == "all" ]]; then
+          SUBMODULE_LINES=$(git config --file ${GITMODULES_FILE} --get-regexp path | awk '{print $2}')
+          SUBMODULE_LIST=$(echo "${SUBMODULE_LINES}" | jq -R -s -c "split(\"\n\") | map(select(length > 0))")
+        else
+          SUBMODULE_LINES=($(git config --file ${GITMODULES_FILE} --get-regexp path | awk '{print $2}'))
+          FOUND_SUBMODULE=false
+          for SUBMODULE_LINE in ${SUBMODULE_LINES[@]}; do
+            if [[ "${SUBMODULE_LINE}" == "${SUBMODULE}" ]]; then
+              FOUND_SUBMODULE=true
+              SUBMODULE_LIST="[ \"${LANGUAGE}\" ]"
+              break
+            fi
+          done
+          if [[ "${FOUND_SUBMODULE}" == "true" ]]; then
+            echo "Submodule '${LANGUAGE}' is found in the list."
+          else
+            echo "Error: Submodule '${LANGUAGE}' is NOT found in the list." >&2
+            exit 1
+          fi
+        fi
+        SUBMODULE_NUM=$(jq "length" <<< "${SUBMODULE_LIST}")
+
+        echo "SUBMODULE_NUM=${SUBMODULE_NUM}" >> ${GITHUB_OUTPUT}
+        echo "SUBMODULE_NUM:"
+        echo "${SUBMODULE_NUM}"
+
+        echo "SUBMODULE_LIST=${SUBMODULE_LIST}" >> ${GITHUB_OUTPUT}
+        echo "SUBMODULE_LIST:"
+        echo "${SUBMODULE_LIST}" | jq "."
