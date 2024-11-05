@@ -125,19 +125,6 @@ jobs:
           language: ${{ inputs.LANGUAGE || steps.gos.outputs.LANGUAGE }}
           all-in-one: 'true'
 
-  print:
-    needs: [ 'precondition', 'get-matrix' ]
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Something
-        shell: bash
-        run: |
-          echo "needs.get-matrix.outputs.VERSION_NUM = ${{ needs.get-matrix.outputs.VERSION_NUM }}"
-          echo "needs.get-matrix.outputs.LANGUAGE_NUM = ${{ needs.get-matrix.outputs.LANGUAGE_NUM }}"
-
   caller:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( ( github.event_name == 'schedule' ) ||
