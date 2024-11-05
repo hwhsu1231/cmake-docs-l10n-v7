@@ -82,6 +82,7 @@ jobs:
             ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) }}
     runs-on: ubuntu-latest
     outputs:
+      VERSION_NUM: ${{ steps.gvlv.outputs.VERSION_NUM }}
       VERSION_LIST: ${{ steps.gvlv.outputs.VERSION_LIST }}
     steps:
       - name: Checkout to '${{ github.ref }}'
@@ -107,7 +108,8 @@ jobs:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( github.event_name == 'schedule' ) ||
             ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-            ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) }}
+            ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) &&
+            ( needs.get-matrix.outputs.VERSION_NUM != '0' ) }}
     strategy:
       matrix:
         VERSION: ${{ fromJSON(needs.get-matrix.outputs.VERSION_LIST) }}

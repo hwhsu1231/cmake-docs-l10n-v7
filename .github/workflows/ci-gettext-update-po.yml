@@ -96,7 +96,9 @@ jobs:
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ubuntu-latest
     outputs:
+      VERSION_NUM: ${{ steps.gvlv.outputs.VERSION_NUM }}
       VERSION_LIST: ${{ steps.gvlv.outputs.VERSION_LIST }}
+      LANGUAGE_NUM: ${{ steps.glll.outputs.LANGUAGE_NUM }}
       LANGUAGE_LIST: ${{ steps.glll.outputs.LANGUAGE_LIST }}
     steps:
       - name: Checkout to '${{ github.ref }}'
@@ -124,7 +126,9 @@ jobs:
                 github.event.action == 'pr-merged-to-l10n' &&
                 github.event.client_payload.GETTEXT == 'true' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
+            ( needs.get-matrix.outputs.VERSION_NUM != '0' ) &&
+            ( needs.get-matrix.outputs.LANGUAGE_NUM != '0' ) }}
     strategy:
       matrix:
         VERSION: ${{ fromJSON(needs.get-matrix.outputs.VERSION_LIST) }}
