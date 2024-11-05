@@ -52,12 +52,6 @@ jobs:
             echo "Version format not found in PR title"
             echo "VERSION=" >> ${GITHUB_OUTPUT}
           fi
-      - name: Get the GitHub App's Token
-        id: ggat
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Filter Changes in the Pull Request
         id: filter
         uses: dorny/paths-filter@v3
@@ -69,9 +63,6 @@ jobs:
               - 'CMakeLists.txt'
               - 'CMakePresets.json'
             document:
-              - 'docs/ACKNOWLEDGEMENTS.md'
-              - 'docs/CONTRIBUTING.md'
-              - 'docs/MAINTAINING.md'
               - 'README.md'
             workflow:
               - '.github/workflows/*.yml'
