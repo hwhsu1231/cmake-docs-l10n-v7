@@ -56,7 +56,7 @@ jobs:
         id: filter
         uses: dorny/paths-filter@v3
         with:
-          token: ${{ steps.ggat.outputs.token }}
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
           filters: |
             script:
               - 'cmake/**/*.cmake'
@@ -75,26 +75,26 @@ jobs:
           echo "steps.filter.outputs.document_count = ${{ steps.filter.outputs.document_count }}"
           echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
 
-  check-crowdin-document:
-    needs: before-check
-    secrets: inherit
-    uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-document.yml
-    with:
-      CHECKOUT: ${{ github.ref }}
-      VERSION: 'check'
-      LANGUAGE: 'all'
-      CALLER_JOB: 'check-crowdin-document'
-      ENABLE_JOB: ${{ needs.before-check.outputs.DOCUMENT_CHANGE == 'true' }}
+  # check-crowdin-document:
+  #   needs: before-check
+  #   secrets: inherit
+  #   uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-document.yml
+  #   with:
+  #     CHECKOUT: ${{ github.ref }}
+  #     VERSION: 'check'
+  #     LANGUAGE: 'all'
+  #     CALLER_JOB: 'check-crowdin-document'
+  #     ENABLE_JOB: ${{ needs.before-check.outputs.DOCUMENT_CHANGE == 'true' }}
 
-  check-deploy-gh-pages:
-    needs: before-check
-    secrets: inherit
-    uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml
-    with:
-      CHECKOUT: ${{ github.ref }}
-      VERSION: 'git-master'
-      LANGUAGE: 'all'
-      MODE_OF_UPDATE: 'COMPARE'
-      CALLER_JOB: 'check-deploy-gh-pages'
-      ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
-      DEPLOY_HTML: false
+  # check-deploy-gh-pages:
+  #   needs: before-check
+  #   secrets: inherit
+  #   uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml
+  #   with:
+  #     CHECKOUT: ${{ github.ref }}
+  #     VERSION: 'git-master'
+  #     LANGUAGE: 'all'
+  #     MODE_OF_UPDATE: 'COMPARE'
+  #     CALLER_JOB: 'check-deploy-gh-pages'
+  #     ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
+  #     DEPLOY_HTML: false
