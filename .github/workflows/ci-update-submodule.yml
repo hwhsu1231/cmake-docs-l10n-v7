@@ -58,6 +58,7 @@ jobs:
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: 'ubuntu-latest'
     outputs:
+      SUBMODULE_NUM: ${{ steps.gsl.outputs.SUBMODULE_NUM }}
       SUBMODULE_LIST: ${{ steps.gsl.outputs.SUBMODULE_LIST }}
     steps:
       - name: Checkout to '${{ github.ref }}'
@@ -71,6 +72,10 @@ jobs:
         run: |
           SUBMODULE_LINES=$(git config --file .gitmodules --get-regexp path | awk '{print $2}')
           SUBMODULE_LIST=$(echo "${SUBMODULE_LINES}" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          SUBMODULE_NUM=$(jq "length" <<< "${SUBMODULE_LIST}")
+          echo "SUBMODULE_NUM=${SUBMODULE_NUM}" >> ${GITHUB_OUTPUT}
+          echo "SUBMODULE_NUM:"
+          echo "${SUBMODULE_NUM}"
           echo "SUBMODULE_LIST=${SUBMODULE_LIST}" >> ${GITHUB_OUTPUT}
           echo "SUBMODULE_LIST:"
           echo "${SUBMODULE_LIST}" | jq "."
@@ -78,7 +83,8 @@ jobs:
   caller:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) &&
+            ( needs.get-matrix.outputs.SUBMODULE_NUM != '0' ) }}
     strategy:
       matrix:
         SUBMODULE: ${{ fromJSON(needs.get-matrix.outputs.SUBMODULE_LIST) }}
