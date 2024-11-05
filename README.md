@@ -159,17 +159,6 @@ GitHub Worflows:
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-check-pr-status.yml" >
-          <img
-            alt="ci-check-pr-status"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-check-pr-status.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Check PR's status before merging.</td>
-    </tr>
-    <tr>
-      <td>
         <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
           <img
             alt="ci-sphinx-update-pot"
@@ -235,17 +224,6 @@ GitHub Worflows:
       <td>
         Push README sources to and pull its translations from the Translation Management System by its CLI tool.
       </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-crowdin-contributor.yml">
-          <img
-            alt="ci-crowdin-contributor"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-crowdin-contributor.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Update Crowdin Contributors.</td>
     </tr>
     <tr>
       <td>
