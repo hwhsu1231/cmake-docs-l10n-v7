@@ -104,9 +104,8 @@ jobs:
         uses: ./.github/actions/get-other-caches-from-versions-file
         with:
           version: ${{ inputs.VERSION }}
-          versions-file: 'versions.json'
 
-      - name: Configure the 'all' preset for '${{ inputs.VERSION }}' version
+      - name: Configure the 'all' preset for the '${{ inputs.VERSION }}' version
         uses: ./.github/actions/cmake-configure-preset
         with:
           source-directory: ${{ github.workspace }}

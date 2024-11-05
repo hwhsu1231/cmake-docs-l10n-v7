@@ -79,7 +79,7 @@ jobs:
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
-      VERSION: 'repo'
+      VERSION: 'readme'
       LANGUAGE: ${{ inputs.LANGUAGE || 'all' }}
       CALLER_JOB: 'caller'
       ENABLE_JOB: true

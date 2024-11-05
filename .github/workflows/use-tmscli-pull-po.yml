@@ -167,7 +167,7 @@ jobs:
           author_name: ${{ inputs.ACTOR_NAME }}
           author_email: ${{ inputs.ACTOR_ID }}+${{ inputs.ACTOR_LOGIN }}@users.noreply.github.com
           message: |
-            tr(${{ inputs.VERSION }}): download ${{ inputs.LANGUAGE }} translations from Crowdin
+            tr(${{ inputs.VERSION }}): pull ${{ inputs.LANGUAGE }} translations from Crowdin
 
             ${{ steps.gtpp.outputs.CROWDIN_STATUS_PROGRESS }}
 

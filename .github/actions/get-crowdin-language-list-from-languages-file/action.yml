@@ -9,6 +9,14 @@ inputs:
   language:
     required: true    # [required]
     description: The language to fetch from the list, or 'all' to get all languages.
+  languages-file:
+    required: false
+    description: The filename of the languages.json.
+    default: 'languages.json'
+  working-directory:
+    required: false
+    description: The directory from which to run commands or locale files.
+    default: ${{ github.workspace }}
 
 outputs:
   CROWDIN_LANGUAGE_LIST:
