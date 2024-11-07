@@ -31,6 +31,7 @@ jobs:
             SECRETS_EXIST=false
           fi
           if [[ "${SECRETS_EXIST}" == "false" ]]; then
+            echo "Error: Some secrets are missing." >&2
             exit 1
           fi
       - name: Check Variables
@@ -50,6 +51,7 @@ jobs:
             VARIABLES_EXIST=false
           fi
           if [[ "${VARIABLES_EXIST}" == "false" ]]; then
+            echo "Error: Some variables are missing." >&2
             exit 1
           fi
 
