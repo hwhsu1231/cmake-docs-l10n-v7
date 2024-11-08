@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       SCRIPT_CHANGE: ${{ steps.filter.outputs.script }}
-      DOCUMENT_CHANGE: ${{ steps.filter.outputs.document }}
+      README_CHANGE: ${{ steps.filter.outputs.readme }}
       WORKFLOW_CHANGE: ${{ steps.filter.outputs.workflow }}
     steps:
       - name: Print Contexts
@@ -34,24 +34,17 @@ jobs:
           echo "github.head_ref = ${{ github.head_ref }}"
           echo "github.event.before = ${{ github.event.before }}"
           echo "github.sha = ${{ github.sha }}"
+          echo "[Secrets]"
+          echo ""
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      - name: Extract VERSION from Pull Request Title
-        id: evprt
-        shell: bash
-        run: |
-          PR_TITLE="${{ github.event.pull_request.title }}"
-          VERSION_REGEX="pot\(([^)]+)\):"
-          if [[ $PR_TITLE =~ $VERSION_REGEX ]]; then
-            VERSION="${BASH_REMATCH[1]}"
-            echo "Extracted version: ${VERSION}"
-            echo "VERSION=${VERSION}" >> ${GITHUB_OUTPUT}
-          else
-            echo "Version format not found in PR title"
-            echo "VERSION=" >> ${GITHUB_OUTPUT}
-          fi
+      - name: Get VERSION from the Pull Request Title
+        id: gvprt
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-from-pull-request-title@main
+        with:
+          pr-title: ${{ github.event.pull_request.title }}
       - name: Filter Changes in the Pull Request
         id: filter
         uses: dorny/paths-filter@v3
@@ -62,29 +55,29 @@ jobs:
               - 'cmake/**/*.cmake'
               - 'CMakeLists.txt'
               - 'CMakePresets.json'
-            document:
+            readme:
               - 'README.md'
             workflow:
               - '.github/workflows/*.yml'
       - name: Check Outputs of paths-filter
         run: |
           echo "steps.filter.outputs.script   = ${{ steps.filter.outputs.script }}"
-          echo "steps.filter.outputs.document = ${{ steps.filter.outputs.document }}"
+          echo "steps.filter.outputs.readme   = ${{ steps.filter.outputs.readme }}"
           echo "steps.filter.outputs.workflow = ${{ steps.filter.outputs.workflow }}"
           echo "steps.filter.outputs.script_count   = ${{ steps.filter.outputs.script_count }}"
-          echo "steps.filter.outputs.document_count = ${{ steps.filter.outputs.document_count }}"
+          echo "steps.filter.outputs.readme_count   = ${{ steps.filter.outputs.readme_count }}"
           echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
 
-  # check-crowdin-document:
+  # check-crowdin-readme:
   #   needs: before-check
   #   secrets: inherit
-  #   uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-document.yml
+  #   uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-readme.yml
   #   with:
   #     CHECKOUT: ${{ github.ref }}
   #     VERSION: 'check'
   #     LANGUAGE: 'all'
-  #     CALLER_JOB: 'check-crowdin-document'
-  #     ENABLE_JOB: ${{ needs.before-check.outputs.DOCUMENT_CHANGE == 'true' }}
+  #     CALLER_JOB: 'check-crowdin-readme'
+  #     ENABLE_JOB: ${{ needs.before-check.outputs.README_CHANGE == 'true' }}
 
   # check-deploy-gh-pages:
   #   needs: before-check
