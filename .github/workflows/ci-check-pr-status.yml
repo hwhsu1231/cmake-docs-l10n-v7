@@ -70,26 +70,38 @@ jobs:
           echo "steps.filter.outputs.readme_count   = ${{ steps.filter.outputs.readme_count }}"
           echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
 
-  # check-crowdin-readme:
-  #   needs: before-check
-  #   secrets: inherit
-  #   uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-readme.yml
-  #   with:
-  #     CHECKOUT: ${{ github.ref }}
-  #     VERSION: 'check'
-  #     LANGUAGE: 'all'
-  #     CALLER_JOB: 'check-crowdin-readme'
-  #     ENABLE_JOB: ${{ needs.before-check.outputs.README_CHANGE == 'true' }}
+  check-tmscli-readme:
+    needs: before-check
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-tmscli-readme.yml@main
+    with:
+      RUNNER: 'ubuntu-latest'
+      CHECKOUT: ${{ github.ref }}
+      VERSION: 'check'
+      LANGUAGE: 'all'
+      CALLER_JOB: 'check-tmscli-readme'
+      ENABLE_JOB: ${{ needs.before-check.outputs.README_CHANGE == 'true' }}
+      ACTOR_ID: ${{ vars.ACTOR_ID }}
+      ACTOR_NAME: ${{ vars.ACTOR_NAME }}
+      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+    secrets:
+      ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+      CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
 
-  # check-deploy-gh-pages:
-  #   needs: before-check
-  #   secrets: inherit
-  #   uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml
-  #   with:
-  #     CHECKOUT: ${{ github.ref }}
-  #     VERSION: 'git-master'
-  #     LANGUAGE: 'all'
-  #     MODE_OF_UPDATE: 'COMPARE'
-  #     CALLER_JOB: 'check-deploy-gh-pages'
-  #     ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
-  #     DEPLOY_HTML: false
+  check-deploy-gh-pages:
+    needs: before-check
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml@main
+    with:
+      RUNNER: 'ubuntu-latest'
+      CHECKOUT: ${{ github.ref }}
+      VERSION: 'git-master'
+      LANGUAGE: 'all'
+      MODE_OF_UPDATE: 'COMPARE'
+      BASEURL_HREF: 'https://hwhsu1231.github.io/cmake-docs-l10n-v7'
+      CALLER_JOB: 'check-deploy-gh-pages'
+      ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
+      DEPLOY_HTML: false
+      ACTOR_ID: ${{ vars.ACTOR_ID }}
+      ACTOR_NAME: ${{ vars.ACTOR_NAME }}
+      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+    secrets:
+      ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
