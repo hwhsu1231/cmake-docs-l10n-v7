@@ -37,7 +37,7 @@ jobs:
           echo "github.event.before = ${{ github.event.before }}"
           echo "github.sha = ${{ github.sha }}"
           echo "[Secrets]"
-          echo ""
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
         with:
