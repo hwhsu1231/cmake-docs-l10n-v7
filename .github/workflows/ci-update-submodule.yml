@@ -73,17 +73,6 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-submodule-list-from-gitmodules-file@main
         with:
           submodule: ${{ inputs.SUBMODULE || 'all' }}
-        # shell: bash
-        # run: |
-        #   SUBMODULE_LINES=$(git config --file .gitmodules --get-regexp path | awk '{print $2}')
-        #   SUBMODULE_LIST=$(echo "${SUBMODULE_LINES}" | jq -R -s -c 'split("\n") | map(select(length > 0))')
-        #   SUBMODULE_NUM=$(jq "length" <<< "${SUBMODULE_LIST}")
-        #   echo "SUBMODULE_NUM=${SUBMODULE_NUM}" >> ${GITHUB_OUTPUT}
-        #   echo "SUBMODULE_NUM:"
-        #   echo "${SUBMODULE_NUM}"
-        #   echo "SUBMODULE_LIST=${SUBMODULE_LIST}" >> ${GITHUB_OUTPUT}
-        #   echo "SUBMODULE_LIST:"
-        #   echo "${SUBMODULE_LIST}" | jq "."
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
