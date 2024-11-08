@@ -5,6 +5,8 @@ name: ci-check-pr-status
 
 on:
   pull_request:
+    branches:
+      - source
     types:
       - opened
       - synchronize
