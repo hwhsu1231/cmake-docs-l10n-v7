@@ -19,9 +19,11 @@ set(VERSION "git-master"
 
 set(AUTO_DEPEND ON
     CACHE BOOL "Enable automatic dependency management for specific build targets.")
+    # Possible values are "ON/OFF", "TRUE/FALSE", "true/false"...etc.
 
 set(REMOVE_REDUNDANT ON
     CACHE BOOL "Removing redundant files after building documentation.")
+    # Possible values are "ON/OFF", "TRUE/FALSE", "true/false"...etc.
 
 set(MODE_OF_UPDATE "NEVER"
     CACHE STRING "Mode of updating .pot/.po files.")
