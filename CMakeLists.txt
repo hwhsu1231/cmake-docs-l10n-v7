@@ -79,6 +79,10 @@ set(SPHINX_CONSOLE_LOCALE "en_US.UTF-8"
 
 set(GETTEXT_WRAP_WIDTH 79
     CACHE STRING "Gettext wrap width for .pot/.po files.")
+    # Possible values are positive integers.
+    # Passed to msgcat and msgmerge as --width=${GETTEXT_WRAP_WIDTH}.
+    # See https://www.gnu.org/software/gettext/manual/html_node/msgcat-Invocation.html
+    # and https://www.gnu.org/software/gettext/manual/html_node/msgmerge-Invocation.html for details.
 
 set(GETTEXT_ADDITIONAL_TARGETS "index,literal-block"
     CACHE STRING "Gettext additional targets for building the Sphinx documentation system.")

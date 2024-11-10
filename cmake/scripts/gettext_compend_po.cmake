@@ -43,9 +43,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     message(STATUS "Running 'msgcat' command to concatenate translations of '${VERSION_COMPENDIUM}' version for '${_LANGUAGE}' language...")
+    file(GLOB_RECURSE SRC_LOCALE_PO_FILES "${SRC_LOCALE_PO_DIR}/*.po")
     get_filename_component(SRC_COMPENDIUM_PO_DIR "${SRC_COMPEND_PO_FILE}" DIRECTORY)
     file(MAKE_DIRECTORY "${SRC_COMPENDIUM_PO_DIR}")
-    file(GLOB_RECURSE SRC_LOCALE_PO_FILES "${SRC_LOCALE_PO_DIR}/*.po")
     remove_cmake_message_indent()
     message("")
     message("msgcat:")
@@ -76,9 +76,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     message(STATUS "Running 'msgmerge' command to merge translations from '${VERSION_COMPENDIUM}' version...")
-    file(GLOB_RECURSE DST_LOCALE_PO_FILES "${DST_LOCALE_PO_DIR}/*.po")
     remove_cmake_message_indent()
     message("")
+    file(GLOB_RECURSE DST_LOCALE_PO_FILES "${DST_LOCALE_PO_DIR}/*.po")
     foreach(DST_LOCALE_PO_FILE ${DST_LOCALE_PO_FILES})
         string(REPLACE "${DST_LOCALE_PO_DIR}/" "" DST_PO_FILE_RELATIVE "${DST_LOCALE_PO_FILE}")
         set(DST_LOCALE_PO_FILE "${DST_LOCALE_PO_DIR}/${DST_PO_FILE_RELATIVE}")
