@@ -26,5 +26,5 @@ languages_mapping: &global_languages_mapping
 #
 files:
   - source: /locale/pot/**/*.pot
-    translation: /.crowdin/%locale%/**/%file_name%.po
+    translation: /.tmstmp/%locale%/**/%file_name%.po
     languages_mapping: *global_languages_mapping
