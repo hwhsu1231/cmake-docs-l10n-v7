@@ -43,11 +43,11 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     message(STATUS "Running 'msgcat' command to concatenate translations of '${VERSION_COMPENDIUM}' version for '${_LANGUAGE}' language...")
+    remove_cmake_message_indent()
+    message("")
     file(GLOB_RECURSE SRC_LOCALE_PO_FILES "${SRC_LOCALE_PO_DIR}/*.po")
     get_filename_component(SRC_COMPENDIUM_PO_DIR "${SRC_COMPEND_PO_FILE}" DIRECTORY)
     file(MAKE_DIRECTORY "${SRC_COMPENDIUM_PO_DIR}")
-    remove_cmake_message_indent()
-    message("")
     message("msgcat:")
     message("  --output-file ${SRC_COMPEND_PO_FILE}")
     message("  --use-first")
