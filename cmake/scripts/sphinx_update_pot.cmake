@@ -166,9 +166,9 @@ message("")
 message("From: ${DEFAULT_SPHINX_POT_FILE}")
 message("To:   ${PACKAGE_SPHINX_POT_FILE}")
 message("")
-update_sphinx_pot_from_src_to_dst(
-    IN_SRC_FILE     "${DEFAULT_SPHINX_POT_FILE}"
-    IN_DST_FILE     "${PACKAGE_SPHINX_POT_FILE}"
+update_sphinx_pot_from_def_to_pkg(
+    IN_DEF_FILE     "${DEFAULT_SPHINX_POT_FILE}"
+    IN_PKG_FILE     "${PACKAGE_SPHINX_POT_FILE}"
     IN_WRAP_WIDTH   "${GETTEXT_WRAP_WIDTH}")
 #[[
 if(EXISTS "${PACKAGE_SPHINX_POT_FILE}")
