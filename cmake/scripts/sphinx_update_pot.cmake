@@ -18,6 +18,7 @@ find_package(Sphinx     MODULE REQUIRED COMPONENTS Build)
 include(GitUtils)
 include(JsonUtils)
 include(LogUtils)
+include(GettextUtils)
 
 
 message(STATUS "Determining whether it is required to update .pot files...")
@@ -158,30 +159,35 @@ else()
     "    stderr:\n\n${ERR_VAR}")
     message(FATAL_ERROR "${FAILURE_REASON}")
 endif()
-set(DEFAULT_SPHINX_POT_PATH "${SPHINX_LIB_DIR}/locale/sphinx.pot")
-set(PACKAGE_SPHINX_POT_PATH "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/pot/LC_MESSAGES/sphinx.pot")
+set(DEFAULT_SPHINX_POT_FILE "${SPHINX_LIB_DIR}/locale/sphinx.pot")
+set(PACKAGE_SPHINX_POT_FILE "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/pot/LC_MESSAGES/sphinx.pot")
 remove_cmake_message_indent()
 message("")
-message("From: ${DEFAULT_SPHINX_POT_PATH}")
-message("To:   ${PACKAGE_SPHINX_POT_PATH}")
+message("From: ${DEFAULT_SPHINX_POT_FILE}")
+message("To:   ${PACKAGE_SPHINX_POT_FILE}")
 message("")
-if(EXISTS "${PACKAGE_SPHINX_POT_PATH}")
+update_sphinx_pot_from_src_to_dst(
+    IN_SRC_FILE     "${DEFAULT_SPHINX_POT_FILE}"
+    IN_DST_FILE     "${PACKAGE_SPHINX_POT_FILE}"
+    IN_WRAP_WIDTH   "${GETTEXT_WRAP_WIDTH}")
+#[[
+if(EXISTS "${PACKAGE_SPHINX_POT_FILE}")
     #
     # Concatenate the package 'sphinx.pot' with the default 'sphinx.pot'.
     #
     message("msgcat:")
     message("  --use-first")
     message("  --width        ${GETTEXT_WRAP_WIDTH}")
-    message("  --output-file  ${PACKAGE_SPHINX_POT_PATH}")
-    message("  [inputfile]    ${PACKAGE_SPHINX_POT_PATH}")
-    message("  [inputfile]    ${DEFAULT_SPHINX_POT_PATH}")
+    message("  --output-file  ${PACKAGE_SPHINX_POT_FILE}")
+    message("  [inputfile]    ${PACKAGE_SPHINX_POT_FILE}")
+    message("  [inputfile]    ${DEFAULT_SPHINX_POT_FILE}")
     execute_process(
         COMMAND ${Gettext_MSGCAT_EXECUTABLE}
                 --use-first
                 --width ${GETTEXT_WRAP_WIDTH}
-                --output-file ${PACKAGE_SPHINX_POT_PATH}
-                ${PACKAGE_SPHINX_POT_PATH}  # [inputfile]
-                ${DEFAULT_SPHINX_POT_PATH}  # [inputfile]
+                --output-file ${PACKAGE_SPHINX_POT_FILE}
+                ${PACKAGE_SPHINX_POT_FILE}  # [inputfile]
+                ${DEFAULT_SPHINX_POT_FILE}  # [inputfile]
         RESULT_VARIABLE RES_VAR
         OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
         ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
@@ -201,13 +207,13 @@ else()
     message("msgcat:")
     message("  --use-first")
     message("  --width        ${GETTEXT_WRAP_WIDTH}")
-    message("  --output-file  ${PACKAGE_SPHINX_POT_PATH}")
-    message("  [inputfile]    ${DEFAULT_SPHINX_POT_PATH}")
+    message("  --output-file  ${PACKAGE_SPHINX_POT_FILE}")
+    message("  [inputfile]    ${DEFAULT_SPHINX_POT_FILE}")
     execute_process(
         COMMAND ${Gettext_MSGCAT_EXECUTABLE}
                 --width ${GETTEXT_WRAP_WIDTH}
-                --output-file ${PACKAGE_SPHINX_POT_PATH}
-                ${DEFAULT_SPHINX_POT_PATH}
+                --output-file ${PACKAGE_SPHINX_POT_FILE}
+                ${DEFAULT_SPHINX_POT_FILE}
         RESULT_VARIABLE RES_VAR
         OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
         ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
@@ -221,6 +227,7 @@ else()
         message(FATAL_ERROR "${FAILURE_REASON}")
     endif()
 endif()
+#]]
 message("")
 restore_cmake_message_indent()
 
@@ -233,6 +240,11 @@ message("")
 message("From: ${SRC_POT_DIR}/")
 message("To:   ${DST_POT_DIR}/")
 message("")
+update_pot_from_src_to_dst(
+    IN_SRC_DIR      "${SRC_POT_DIR}"
+    IN_DST_DIR      "${DST_POT_DIR}"
+    IN_WRAP_WIDTH   "${GETTEXT_WRAP_WIDTH}")
+#[[
 file(GLOB_RECURSE SRC_POT_FILES "${SRC_POT_DIR}/*.pot")
 foreach(SRC_POT_FILE ${SRC_POT_FILES})
     string(REPLACE "${SRC_POT_DIR}/" "" SRC_POT_FILE_RELATIVE "${SRC_POT_FILE}")
@@ -300,6 +312,7 @@ foreach(SRC_POT_FILE ${SRC_POT_FILES})
     endif()
 endforeach()
 unset(SRC_POT_FILE)
+#]]
 message("")
 restore_cmake_message_indent()
 

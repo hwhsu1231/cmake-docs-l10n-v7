@@ -13,6 +13,7 @@ find_package(Git        MODULE REQUIRED)
 find_package(Gettext    MODULE REQUIRED COMPONENTS Msgcat Msgmerge)
 include(JsonUtils)
 include(LogUtils)
+include(GettextUtils)
 
 
 file(READ "${REFERENCES_JSON_PATH}" REFERENCES_JSON_CNT)
@@ -66,13 +67,19 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     message(STATUS "Running 'msgmerge/msgcat' command to update .po files for '${_LANGUAGE}' language...")
-    set(POT_DIR "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")
-    set(PO_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
+    set(LOCALE_POT_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")
+    set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
     remove_cmake_message_indent()
     message("")
-    message("From: ${POT_DIR}/")
-    message("To:   ${PO_DIR}/")
+    message("From: ${LOCALE_POT_DIR}/")
+    message("To:   ${LOCALE_PO_DIR}/")
     message("")
+    update_po_from_pot_in_locale(
+        IN_LOCALE_POT_DIR   "${LOCALE_POT_DIR}"
+        IN_LOCALE_PO_DIR    "${LOCALE_PO_DIR}"
+        IN_LANGUAGE         "${_LANGUAGE}"
+        IN_WRAP_WIDTH       "${GETTEXT_WRAP_WIDTH}")
+    #[[
     file(GLOB_RECURSE POT_FILES "${POT_DIR}/*.pot")
     foreach(POT_FILE ${POT_FILES})
         string(REPLACE "${POT_DIR}/" "" POT_FILE_RELATIVE "${POT_FILE}")
@@ -145,6 +152,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         endif()
     endforeach()
     unset(POT_FILE)
+    #]]
     message("")
     restore_cmake_message_indent()
 

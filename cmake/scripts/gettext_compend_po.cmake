@@ -42,7 +42,16 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Running 'msgcat' command to concatenate translations of '${VERSION_COMPENDIUM}' version for '${_LANGUAGE}' language...")
+    message(STATUS "Concatenating '${_LANGUAGE}' translations of '${SRC_VERSION}' version into a compendium file...")
+    remove_cmake_message_indent()
+    message("")
+    concat_po_from_locale_to_compendium(
+        IN_LOCALE_PO_DIR     "${SRC_LOCALE_PO_DIR}"
+        IN_COMPEND_PO_FILE   "${SRC_COMPEND_PO_FILE}"
+        IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}")
+    message("")
+    restore_cmake_message_indent()
+    #[[
     remove_cmake_message_indent()
     message("")
     file(GLOB_RECURSE SRC_LOCALE_PO_FILES "${SRC_LOCALE_PO_DIR}/*.po")
@@ -73,9 +82,21 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     endif()
     message("")
     restore_cmake_message_indent()
+    #]]
 
 
-    message(STATUS "Running 'msgmerge' command to merge translations from '${VERSION_COMPENDIUM}' version...")
+    message(STATUS "Merging '${_LANGUAGE}' translations of '${DST_VERSION}' version from the compendium file of '${SRC_VERSION}' version...")
+    remove_cmake_message_indent()
+    message("")
+    merge_po_from_compendium_to_locale(
+        IN_LANGUAGE          "${_LANGUAGE}"
+        IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}"
+        IN_COMPEND_PO_FILE   "${SRC_COMPEND_PO_FILE}"
+        IN_LOCALE_PO_DIR     "${DST_LOCALE_PO_DIR}"
+        IN_LOCALE_POT_DIR    "${DST_LOCALE_POT_DIR}")
+    message("")
+    restore_cmake_message_indent()
+    #[[
     remove_cmake_message_indent()
     message("")
     file(GLOB_RECURSE DST_LOCALE_PO_FILES "${DST_LOCALE_PO_DIR}/*.po")
@@ -115,5 +136,6 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     unset(DST_LOCALE_PO_FILE)
     message("")
     restore_cmake_message_indent()
+    #]]
 endforeach()
 unset(_LANGUAGE)

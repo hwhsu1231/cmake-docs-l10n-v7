@@ -13,7 +13,7 @@ find_package(Crowdin    MODULE REQUIRED)
 include(LogUtils)
 
 
-message(STATUS "Running 'crowdin upload sources' command to upload .pot files...")
+message(STATUS "Pusing sources for '${VERSION}' version to Translation Management System...")
 remove_cmake_message_indent()
 message("")
 execute_process(
