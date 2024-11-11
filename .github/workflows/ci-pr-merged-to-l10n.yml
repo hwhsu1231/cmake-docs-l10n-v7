@@ -11,11 +11,33 @@ on:
       - closed
 
 jobs:
+  print-for-debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Contexts/Inputs/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.pull_request.base.ref = ${{ github.event.pull_request.base.ref }}"
+          echo "github.event.pull_request.head.ref = ${{ github.event.pull_request.head.ref }}"
+          echo "github.event.pull_request.merged = ${{ github.event.pull_request.merged }}"
+          echo "github.base_ref = ${{ github.base_ref }}"
+          echo "github.head_ref = ${{ github.head_ref }}"
+          echo "[Inputs]"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+
   precondition:
     if: ${{ ( ( github.event_name == 'pull_request' ) &&
               ( github.event.pull_request.merged == 'true' ) &&
               ( contains(github.event.pull_request.labels.*.name, 'gettext') ||
-                contains(github.event.pull_request.labels.*.name, 'crowdin') ) ) }}
+                contains(github.event.pull_request.labels.*.name, 'tmscli') ) ) }}
     runs-on: ubuntu-latest
     steps:
       - name: Check Secrets
@@ -44,7 +66,7 @@ jobs:
     if: ${{ ( ( github.event_name == 'pull_request' ) &&
               ( github.event.pull_request.merged == 'true' ) &&
               ( contains(github.event.pull_request.labels.*.name, 'gettext') ||
-                contains(github.event.pull_request.labels.*.name, 'crowdin') ) ) }}
+                contains(github.event.pull_request.labels.*.name, 'tmscli') ) ) }}
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-pr-merged-to-l10n.yml@main
     with:
       RUNNER: 'ubuntu-latest'
