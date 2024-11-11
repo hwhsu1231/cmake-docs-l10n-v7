@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../guide/tutorial/index.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: ../../../guide/tutorial/index.rst:7
 msgid ""

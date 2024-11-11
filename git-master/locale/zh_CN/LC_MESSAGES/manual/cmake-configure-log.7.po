@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../manual/cmake-configure-log.7.rst:4
 msgid "cmake-configure-log(7)"
-msgstr ""
+msgstr "cmake-配置日志(7)"
 
 #: ../../../manual/cmake-configure-log.7.rst:9
 msgid "Contents"

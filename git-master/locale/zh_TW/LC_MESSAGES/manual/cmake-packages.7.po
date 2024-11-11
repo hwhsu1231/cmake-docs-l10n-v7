@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../manual/cmake-packages.7.rst:4
 msgid "cmake-packages(7)"
-msgstr ""
+msgstr "cmake-軟體包(7)"
 
 #: ../../../manual/cmake-packages.7.rst:7
 msgid "Contents"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../manual/cmake-packages.7.rst:11
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: ../../../manual/cmake-packages.7.rst:13
 msgid ""

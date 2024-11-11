@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:4
 msgid "cmake(1)"
-msgstr ""
+msgstr "cmake(1)"
 
 #: ../../../manual/cmake.1.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../manual/cmake.1.rst:11
 msgid ""
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:65
 msgid "Introduction to CMake Buildsystems"
-msgstr ""
+msgstr "CMake 建置系統介紹"
 
 #: ../../../manual/cmake.1.rst:67
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:84
 msgid "Source Tree"
-msgstr ""
+msgstr "來源樹"
 
 #: ../../../manual/cmake.1.rst:80
 msgid ""
@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:96
 msgid "Build Tree"
-msgstr ""
+msgstr "建置樹"
 
 #: ../../../manual/cmake.1.rst:87
 msgid ""
@@ -251,15 +251,15 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:168
 msgid "Command Line"
-msgstr ""
+msgstr "命令行"
 
 #: ../../../manual/cmake.1.rst:168
 msgid "Source Dir"
-msgstr ""
+msgstr "來源目錄"
 
 #: ../../../manual/cmake.1.rst:168
 msgid "Build Dir"
-msgstr ""
+msgstr "建置目錄"
 
 #: ../../../manual/cmake.1.rst:170
 msgid "``cmake -B build``"
@@ -343,7 +343,7 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:202
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../../../manual/OPTIONS_BUILD.txt:3
 msgid "Path to root directory of the CMake project to build."

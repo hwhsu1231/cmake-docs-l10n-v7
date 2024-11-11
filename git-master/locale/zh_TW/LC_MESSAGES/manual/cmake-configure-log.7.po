@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../manual/cmake-configure-log.7.rst:4
 msgid "cmake-configure-log(7)"
-msgstr ""
+msgstr "cmake-組態日誌(7)"
 
 #: ../../../manual/cmake-configure-log.7.rst:9
 msgid "Contents"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../manual/cmake-configure-log.7.rst:13
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: ../../../manual/cmake-configure-log.7.rst:15
 msgid ""

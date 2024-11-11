@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../manual/cmake-buildsystem.7.rst:4
 msgid "cmake-buildsystem(7)"
-msgstr ""
+msgstr "cmake-构建系统(7)"
 
 #: ../../../manual/cmake-buildsystem.7.rst:7
 msgid "Contents"

@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../../Modules/AndroidTestUtilities.cmake:13
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: ../../../../Modules/AndroidTestUtilities.cmake:15
 msgid ""

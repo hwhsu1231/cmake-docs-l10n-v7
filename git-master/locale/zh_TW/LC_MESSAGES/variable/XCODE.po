@@ -19,8 +19,8 @@ msgstr ""
 
 #: ../../../variable/XCODE.rst:2
 msgid "XCODE"
-msgstr ""
+msgstr "XCODE"
 
 #: ../../../variable/XCODE.rst:6
 msgid "``True`` when using :generator:`Xcode` generator."
-msgstr ""
+msgstr "當使用 :generator:`Xcode` 生成器時為 ``True``。"

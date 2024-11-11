@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../manual/cmake-commands.7.rst:4
 msgid "cmake-commands(7)"
-msgstr ""
+msgstr "cmake-命令(7)"
 
 #: ../../../manual/cmake-commands.7.rst:7
 msgid "Contents"
