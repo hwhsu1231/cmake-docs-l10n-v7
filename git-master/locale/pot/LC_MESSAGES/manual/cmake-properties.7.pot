@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 03:37+0000\n"
+"POT-Creation-Date: 2024-11-11 11:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,22 +45,22 @@ msgstr ""
 msgid "Properties on Source Files"
 msgstr ""
 
-#: ../../../manual/cmake-properties.7.rst:611
+#: ../../../manual/cmake-properties.7.rst:612
 msgid "Properties on Cache Entries"
 msgstr ""
 
-#: ../../../manual/cmake-properties.7.rst:626
+#: ../../../manual/cmake-properties.7.rst:627
 msgid "Properties on Installed Files"
 msgstr ""
 
-#: ../../../manual/cmake-properties.7.rst:640
+#: ../../../manual/cmake-properties.7.rst:641
 msgid "Deprecated Properties on Directories"
 msgstr ""
 
-#: ../../../manual/cmake-properties.7.rst:653
+#: ../../../manual/cmake-properties.7.rst:654
 msgid "Deprecated Properties on Targets"
 msgstr ""
 
-#: ../../../manual/cmake-properties.7.rst:667
+#: ../../../manual/cmake-properties.7.rst:668
 msgid "Deprecated Properties on Source Files"
 msgstr ""
