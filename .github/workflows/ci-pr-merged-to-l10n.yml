@@ -11,27 +11,6 @@ on:
       - closed
 
 jobs:
-  print-for-debug:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Contexts/Inputs
-        shell: bash
-        run: |
-          echo "[Contexts]"
-          echo "github.job = ${{ github.job }}"
-          echo "github.ref = ${{ github.ref }}"
-          echo "github.ref_name = ${{ github.ref_name }}"
-          echo "github.event.action = ${{ github.event.action }}"
-          echo "github.event.number = ${{ github.event.number }}"
-          echo "github.event_name = ${{ github.event_name }}"
-          echo "github.event.pull_request.base.ref = ${{ github.event.pull_request.base.ref }}"
-          echo "github.event.pull_request.head.ref = ${{ github.event.pull_request.head.ref }}"
-          echo "github.event.pull_request.merged = ${{ github.event.pull_request.merged }}"
-          echo "github.event.pull_request.labels.*.name = ${{ toJson(github.event.pull_request.labels.*.name) }}"
-          echo "github.base_ref = ${{ github.base_ref }}"
-          echo "github.head_ref = ${{ github.head_ref }}"
-          echo "[Inputs]"
-
   precondition:
     runs-on: ubuntu-latest
     steps:
@@ -44,9 +23,9 @@ jobs:
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.base_ref = ${{ github.base_ref }}"
           echo "github.head_ref = ${{ github.head_ref }}"
-          echo "github.event.action = ${{ github.event.action }}"
-          echo "github.event.number = ${{ github.event.number }}"
           echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.number = ${{ github.event.number }}"
+          echo "github.event.action = ${{ github.event.action }}"
           echo "github.event.pull_request.base.ref = ${{ github.event.pull_request.base.ref }}"
           echo "github.event.pull_request.head.ref = ${{ github.event.pull_request.head.ref }}"
           echo "github.event.pull_request.merged = ${{ github.event.pull_request.merged }}"
