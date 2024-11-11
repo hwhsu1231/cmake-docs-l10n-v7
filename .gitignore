@@ -1,4 +1,4 @@
 # Ignore the following directoreis/files
-.tmscli
+.tmstmp
 .compend
 /**/*.mo
