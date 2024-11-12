@@ -57,18 +57,6 @@ jobs:
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ubuntu-latest
     steps:
-      - name: Check Secrets
-        shell: bash
-        run: |
-          SECRETS_EXIST=true
-          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
-            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
-            SECRETS_EXIST=false
-          fi
-          if [[ "${SECRETS_EXIST}" == "false" ]]; then
-            echo "Error: Some secrets are missing." >&2
-            exit 1
-          fi
       - name: Check Variables
         shell: bash
         run: |
@@ -89,7 +77,19 @@ jobs:
             echo "Error: Some variables are missing." >&2
             exit 1
           fi
-      - name: Print Contexts/Inputs
+      - name: Check Secrets
+        shell: bash
+        run: |
+          SECRETS_EXIST=true
+          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
+            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
+            SECRETS_EXIST=false
+          fi
+          if [[ "${SECRETS_EXIST}" == "false" ]]; then
+            echo "Error: Some secrets are missing." >&2
+            exit 1
+          fi
+      - name: Print Contexts/Inputs/Variables/Secrets
         shell: bash
         run: |
           echo "[Contexts]"
@@ -108,6 +108,12 @@ jobs:
           echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
           echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
           echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
+          echo "[Variables]"
+          echo "vars.ACTOR_ID = ${{ vars.ACTOR_ID }}"
+          echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
+          echo "vars.ACTOR_LOGIN = ${{ vars.ACTOR_LOGIN }}"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'repository_dispatch' &&
