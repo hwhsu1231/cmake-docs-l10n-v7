@@ -90,6 +90,21 @@ jobs:
             echo "Error: Some variables are missing." >&2
             exit 1
           fi
+      - name: Print Contexts/Inputs
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.schedule = ${{ github.event.schedule }}"
+          echo "[Inputs]"
+          echo "inputs.TYPE = ${{ inputs.TYPE }}"
+          echo "inputs.VERSION = ${{ inputs.VERSION }}"
+          echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
+          echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
+          echo "inputs.DEPLOY_ONLY = ${{ inputs.DEPLOY_ONLY }}"
 
   get-matrix:
     if: ${{ ( github.event_name == 'schedule' ) ||
