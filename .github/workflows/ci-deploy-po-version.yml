@@ -45,6 +45,19 @@ jobs:
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ubuntu-latest
     steps:
+      - name: Print Contexts/Inputs
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.schedule = ${{ github.event.schedule }}"
+          echo "[Inputs]"
+          echo "inputs.TYPE = ${{ inputs.TYPE }}"
+          echo "inputs.VERSION = ${{ inputs.VERSION }}"
+          echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
       - name: Check Secrets
         shell: bash
         run: |
@@ -77,19 +90,6 @@ jobs:
             echo "Error: Some variables are missing." >&2
             exit 1
           fi
-      - name: Print Contexts/Inputs
-        shell: bash
-        run: |
-          echo "[Contexts]"
-          echo "github.job = ${{ github.job }}"
-          echo "github.ref = ${{ github.ref }}"
-          echo "github.ref_name = ${{ github.ref_name }}"
-          echo "github.event_name = ${{ github.event_name }}"
-          echo "github.event.schedule = ${{ github.event.schedule }}"
-          echo "[Inputs]"
-          echo "inputs.TYPE = ${{ inputs.TYPE }}"
-          echo "inputs.VERSION = ${{ inputs.VERSION }}"
-          echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'schedule' ) ||

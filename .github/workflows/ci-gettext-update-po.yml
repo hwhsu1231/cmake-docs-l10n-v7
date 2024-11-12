@@ -57,6 +57,31 @@ jobs:
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ubuntu-latest
     steps:
+      - name: Print Contexts/Inputs/Variables/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.client_payload.TYPE = ${{ github.event.client_payload.TYPE }}"
+          echo "github.event.client_payload.VERSION = ${{ github.event.client_payload.VERSION }}"
+          echo "github.event.client_payload.LANGUAGE = ${{ github.event.client_payload.LANGUAGE }}"
+          echo "github.event.client_payload.GETTEXT = ${{ github.event.client_payload.GETTEXT }}"
+          echo "github.event.client_payload.TMSCLI = ${{ github.event.client_payload.TMSCLI }}"
+          echo "[Inputs]"
+          echo "inputs.TYPE = ${{ inputs.TYPE }}"
+          echo "inputs.VERSION = ${{ inputs.VERSION }}"
+          echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
+          echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
+          echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
+          echo "[Variables]"
+          echo "vars.ACTOR_ID = ${{ vars.ACTOR_ID }}"
+          echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
+          echo "vars.ACTOR_LOGIN = ${{ vars.ACTOR_LOGIN }}"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
       - name: Check Variables
         shell: bash
         run: |
@@ -89,31 +114,6 @@ jobs:
             echo "Error: Some secrets are missing." >&2
             exit 1
           fi
-      - name: Print Contexts/Inputs/Variables/Secrets
-        shell: bash
-        run: |
-          echo "[Contexts]"
-          echo "github.job = ${{ github.job }}"
-          echo "github.ref = ${{ github.ref }}"
-          echo "github.ref_name = ${{ github.ref_name }}"
-          echo "github.event_name = ${{ github.event_name }}"
-          echo "github.event.client_payload.TYPE = ${{ github.event.client_payload.TYPE }}"
-          echo "github.event.client_payload.VERSION = ${{ github.event.client_payload.VERSION }}"
-          echo "github.event.client_payload.LANGUAGE = ${{ github.event.client_payload.LANGUAGE }}"
-          echo "github.event.client_payload.GETTEXT = ${{ github.event.client_payload.GETTEXT }}"
-          echo "github.event.client_payload.TMSCLI = ${{ github.event.client_payload.TMSCLI }}"
-          echo "[Inputs]"
-          echo "inputs.TYPE = ${{ inputs.TYPE }}"
-          echo "inputs.VERSION = ${{ inputs.VERSION }}"
-          echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
-          echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
-          echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
-          echo "[Variables]"
-          echo "vars.ACTOR_ID = ${{ vars.ACTOR_ID }}"
-          echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
-          echo "vars.ACTOR_LOGIN = ${{ vars.ACTOR_LOGIN }}"
-          echo "[Secrets]"
-          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'repository_dispatch' &&
