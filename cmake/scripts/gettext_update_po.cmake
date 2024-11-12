@@ -66,7 +66,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     endif()
 
 
-    message(STATUS "Running 'msgmerge/msgcat' command to update .po files for '${_LANGUAGE}' language...")
+    message(STATUS "Updating .po files for '${_LANGUAGE}' language...")
     set(LOCALE_POT_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")
     set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
     remove_cmake_message_indent()
@@ -79,80 +79,6 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         IN_LOCALE_PO_DIR    "${LOCALE_PO_DIR}"
         IN_LANGUAGE         "${_LANGUAGE}"
         IN_WRAP_WIDTH       "${GETTEXT_WRAP_WIDTH}")
-    #[[
-    file(GLOB_RECURSE POT_FILES "${POT_DIR}/*.pot")
-    foreach(POT_FILE ${POT_FILES})
-        string(REPLACE "${POT_DIR}/" "" POT_FILE_RELATIVE "${POT_FILE}")
-        string(REGEX REPLACE "\\.pot$" ".po" PO_FILE_RELATIVE "${POT_FILE_RELATIVE}")
-        set(PO_FILE "${PO_DIR}/${PO_FILE_RELATIVE}")
-        get_filename_component(PO_FILE_DIR "${PO_FILE}" DIRECTORY)
-        file(MAKE_DIRECTORY "${PO_FILE_DIR}")
-        if(EXISTS "${PO_FILE}")
-            #
-            # If the ${PO_FILE} exists, then merge it using msgmerge.
-            #
-            message("msgmerge:")
-            message("  --lang       ${_LANGUAGE}")
-            message("  --width      ${GETTEXT_WRAP_WIDTH}")
-            message("  --backup     off")
-            message("  --update")
-            message("  --force-po")
-            message("  --no-fuzzy-matching")
-            message("  [def.po]     ${PO_FILE}")
-            message("  [ref.pot]    ${POT_FILE}")
-            execute_process(
-                COMMAND ${Gettext_MSGMERGE_EXECUTABLE}
-                        --lang=${_LANGUAGE}
-                        --width=${GETTEXT_WRAP_WIDTH}
-                        --backup=off
-                        --update
-                        --force-po
-                        --no-fuzzy-matching
-                        ${PO_FILE}      # [def.po]
-                        ${POT_FILE}     # [ref.pot]
-                RESULT_VARIABLE RES_VAR
-                OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
-                ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-            if(RES_VAR EQUAL 0)
-            else()
-                string(APPEND FAILURE_REASON
-                "The command failed with fatal errors.\n\n"
-                "    result:\n\n${RES_VAR}\n\n"
-                "    stdout:\n\n${OUT_VAR}\n\n"
-                "    stderr:\n\n${ERR_VAR}")
-                message(FATAL_ERROR "${FAILURE_REASON}")
-            endif()
-        else()
-            #
-            # If the ${PO_FILE} doesn't exist, then create it using msgcat.
-            #
-            message("msgcat:")
-            message("  --lang         ${_LANGUAGE}")
-            message("  --width        ${GETTEXT_WRAP_WIDTH}")
-            message("  --output-file  ${PO_FILE}")
-            message("  [inputfile]    ${POT_FILE}")
-            execute_process(
-                COMMAND ${Gettext_MSGCAT_EXECUTABLE}
-                        --lang=${_LANGUAGE}
-                        --width=${GETTEXT_WRAP_WIDTH}
-                        --output-file=${PO_FILE}
-                        ${POT_FILE}
-                RESULT_VARIABLE RES_VAR
-                OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
-                ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-            if(RES_VAR EQUAL 0)
-            else()
-                string(APPEND FAILURE_REASON
-                "The command failed with fatal errors.\n\n"
-                "    result:\n\n${RES_VAR}\n\n"
-                "    stdout:\n\n${OUT_VAR}\n\n"
-                "    stderr:\n\n${ERR_VAR}")
-                message(FATAL_ERROR "${FAILURE_REASON}")
-            endif()
-        endif()
-    endforeach()
-    unset(POT_FILE)
-    #]]
     message("")
     restore_cmake_message_indent()
 

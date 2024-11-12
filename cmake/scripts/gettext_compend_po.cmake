@@ -51,38 +51,6 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}")
     message("")
     restore_cmake_message_indent()
-    #[[
-    remove_cmake_message_indent()
-    message("")
-    file(GLOB_RECURSE SRC_LOCALE_PO_FILES "${SRC_LOCALE_PO_DIR}/*.po")
-    get_filename_component(SRC_COMPENDIUM_PO_DIR "${SRC_COMPEND_PO_FILE}" DIRECTORY)
-    file(MAKE_DIRECTORY "${SRC_COMPENDIUM_PO_DIR}")
-    message("msgcat:")
-    message("  --output-file ${SRC_COMPEND_PO_FILE}")
-    message("  --use-first")
-    foreach(SRC_LOCALE_PO_FILE ${SRC_LOCALE_PO_FILES})
-    message("  ${SRC_LOCALE_PO_FILE}")
-    endforeach()
-    execute_process(
-        COMMAND ${Gettext_MSGCAT_EXECUTABLE}
-                --output-file ${SRC_COMPEND_PO_FILE}
-                --use-first
-                ${SRC_LOCALE_PO_FILES}
-        RESULT_VARIABLE RES_VAR
-        OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
-        ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-    if(RES_VAR EQUAL 0)
-    else()
-        string(APPEND FAILURE_REASON
-        "The command failed with fatal errors.\n\n"
-        "    result:\n\n${RES_VAR}\n\n"
-        "    stdout:\n\n${OUT_VAR}\n\n"
-        "    stderr:\n\n${ERR_VAR}")
-        message(FATAL_ERROR "${FAILURE_REASON}")
-    endif()
-    message("")
-    restore_cmake_message_indent()
-    #]]
 
 
     message(STATUS "Merging '${_LANGUAGE}' translations of '${DST_VERSION}' version from the compendium file of '${SRC_VERSION}' version...")
@@ -96,46 +64,5 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         IN_LOCALE_POT_DIR    "${DST_LOCALE_POT_DIR}")
     message("")
     restore_cmake_message_indent()
-    #[[
-    remove_cmake_message_indent()
-    message("")
-    file(GLOB_RECURSE DST_LOCALE_PO_FILES "${DST_LOCALE_PO_DIR}/*.po")
-    foreach(DST_LOCALE_PO_FILE ${DST_LOCALE_PO_FILES})
-        string(REPLACE "${DST_LOCALE_PO_DIR}/" "" DST_PO_FILE_RELATIVE "${DST_LOCALE_PO_FILE}")
-        string(REGEX REPLACE "\\.po$" ".pot" DST_POT_FILE_RELATIVE "${DST_PO_FILE_RELATIVE}")
-        set(DST_LOCALE_PO_FILE      "${DST_LOCALE_PO_DIR}/${DST_PO_FILE_RELATIVE}")
-        set(DST_LOCALE_POT_FILE     "${DST_LOCALE_POT_DIR}/${DST_POT_FILE_RELATIVE}")
-        message("msgmerge:")
-        message("  --lang           ${_LANGUAGE}")
-        message("  --width          ${GETTEXT_WRAP_WIDTH}")
-        message("  --compendium     ${SRC_COMPEND_PO_FILE}")
-        message("  --output-file    ${DST_LOCALE_PO_FILE}")
-        message("  [def.po]         ${DST_LOCALE_POT_FILE}")
-        message("  [ref.pot]        ${DST_LOCALE_POT_FILE}")
-        execute_process(
-            COMMAND ${Gettext_MSGMERGE_EXECUTABLE}
-                    --lang ${_LANGUAGE}
-                    --width ${GETTEXT_WRAP_WIDTH}
-                    --compendium ${SRC_COMPEND_PO_FILE}
-                    --output-file ${DST_LOCALE_PO_FILE}
-                    ${DST_LOCALE_POT_FILE}  # [def.po]
-                    ${DST_LOCALE_POT_FILE}  # [ref.pot]
-            RESULT_VARIABLE RES_VAR
-            OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
-            ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-        if(RES_VAR EQUAL 0)
-        else()
-            string(APPEND FAILURE_REASON
-            "The command failed with fatal errors.\n\n"
-            "    result:\n\n${RES_VAR}\n\n"
-            "    stdout:\n\n${OUT_VAR}\n\n"
-            "    stderr:\n\n${ERR_VAR}")
-            message(FATAL_ERROR "${FAILURE_REASON}")
-        endif()
-    endforeach()
-    unset(DST_LOCALE_PO_FILE)
-    message("")
-    restore_cmake_message_indent()
-    #]]
 endforeach()
 unset(_LANGUAGE)
