@@ -133,7 +133,7 @@ include(JsonUtils)
 include(LogUtils)
 
 #[============================================================[
-
+ Configure Sphinx verbose arguments based on verbosity level.
 #]============================================================]
 
 if(SPHINX_VERBOSE_LEVEL GREATER 0)
