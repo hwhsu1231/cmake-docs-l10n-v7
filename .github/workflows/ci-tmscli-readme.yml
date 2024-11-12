@@ -9,9 +9,6 @@ on:
     branches:
       - 'source'
     paths:
-      - 'docs/ACKNOWLEDGEMENTS.md'
-      - 'docs/CONTRIBUTING.md'
-      - 'docs/MAINTAINING.md'
       - 'README.md'
   # Triggers the workflow based on a schedule.
   schedule:
