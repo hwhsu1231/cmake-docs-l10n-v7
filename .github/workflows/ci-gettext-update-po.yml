@@ -89,6 +89,25 @@ jobs:
             echo "Error: Some variables are missing." >&2
             exit 1
           fi
+      - name: Print Contexts/Inputs
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.client_payload.TYPE = ${{ github.event.client_payload.TYPE }}"
+          echo "github.event.client_payload.VERSION = ${{ github.event.client_payload.VERSION }}"
+          echo "github.event.client_payload.LANGUAGE = ${{ github.event.client_payload.LANGUAGE }}"
+          echo "github.event.client_payload.GETTEXT = ${{ github.event.client_payload.GETTEXT }}"
+          echo "github.event.client_payload.TMSCLI = ${{ github.event.client_payload.TMSCLI }}"
+          echo "[Inputs]"
+          echo "inputs.TYPE = ${{ inputs.TYPE }}"
+          echo "inputs.VERSION = ${{ inputs.VERSION }}"
+          echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
+          echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
+          echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'repository_dispatch' &&
