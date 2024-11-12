@@ -12,7 +12,7 @@ on:
       - 'README.md'
   # Triggers the workflow based on a schedule.
   schedule:
-    - cron: '0 0 1 * *'
+    - cron: '0 0 * * 1'
   # Triggers the workflow manually through the GitHub UI.
   workflow_dispatch:
     inputs:
