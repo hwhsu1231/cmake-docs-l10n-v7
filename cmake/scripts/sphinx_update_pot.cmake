@@ -102,6 +102,23 @@ else()
 endif()
 
 
+message(STATUS "Removing directory '${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/'...")
+if(EXISTS "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
+    file(REMOVE_RECURSE "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
+    remove_cmake_message_indent()
+    message("")
+    message("Removed '${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/'.")
+    message("")
+    restore_cmake_message_indent()
+else()
+    remove_cmake_message_indent()
+    message("")
+    message("No need to removed '${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/'.")
+    message("")
+    restore_cmake_message_indent()
+endif()
+
+
 message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generate .pot files...")
 set(ENV_LANG                "${SPHINX_CONSOLE_LOCALE}")
 set(ENV_KEY_VALUE_LIST      LANG=${ENV_LANG})
