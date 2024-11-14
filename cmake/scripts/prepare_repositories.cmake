@@ -43,7 +43,7 @@ else()
 endif()
 
 
-message(STATUS "Creating and switching to the local branch 'current'...")
+message(STATUS "Creating and switching to the local branch 'current' of the 'docs' repository...")
 remove_cmake_message_indent()
 message("")
 execute_process(
