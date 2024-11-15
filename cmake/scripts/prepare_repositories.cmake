@@ -57,7 +57,7 @@ else()
                     --shallow-submodules
                     ${REMOTE_URL_OF_DOCS}
                     ${PROJ_OUT_REPO_DIR}
-            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+            WORKING_DIRECTORY ${CRFRTL_IN_LOCAL_PATH}
             ECHO_OUTPUT_VARIABLE
             ECHO_ERROR_VARIABLE
             COMMAND_ERROR_IS_FATAL ANY)
