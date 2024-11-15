@@ -505,10 +505,10 @@ add_custom_target(tmscli_pull_po
             -P ${PROJ_CMAKE_SCRIPTS_DIR}/tmscli_pull_po.cmake
     VERBATIM)
 
-add_custom_target(readthedocs_symlinks
+add_custom_target(create_rtd_symlinks
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/readthedocs_symlinks.cmake
+            -P ${PROJ_CMAKE_SCRIPTS_DIR}/create_rtd_symlinks.cmake
     VERBATIM)
 
 #[============================================================[
