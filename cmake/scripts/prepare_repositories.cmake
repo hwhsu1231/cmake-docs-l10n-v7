@@ -15,11 +15,11 @@ include(JsonUtils)
 include(LogUtils)
 
 
-message(STATUS "Running 'git clone' command to clone the 'docs' repository...")
+message(STATUS "Running 'git clone' command to clone the repository...")
+remove_cmake_message_indent()
+message("")
 if(NOT EXISTS "${PROJ_OUT_REPO_DIR}/.git")
     file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DIR}")
-    remove_cmake_message_indent()
-    message("")
     execute_process(
         COMMAND ${Git_EXECUTABLE} clone
                 --depth=1
@@ -32,18 +32,14 @@ if(NOT EXISTS "${PROJ_OUT_REPO_DIR}/.git")
         ECHO_OUTPUT_VARIABLE
         ECHO_ERROR_VARIABLE
         COMMAND_ERROR_IS_FATAL ANY)
-    message("")
-    restore_cmake_message_indent()
 else()
-    remove_cmake_message_indent()
-    message("")
-    message("The repository is already cloned to ${PROJ_OUT_REPO_DIR}")
-    message("")
-    restore_cmake_message_indent()
+    message("The repository is already cloned to '${PROJ_OUT_REPO_DIR}/'.")
 endif()
+message("")
+restore_cmake_message_indent()
 
 
-message(STATUS "Creating and switching to the local branch 'current' of the 'docs' repository...")
+message(STATUS "Creating and switching to the local branch 'current' of the repository...")
 remove_cmake_message_indent()
 message("")
 execute_process(
