@@ -33,7 +33,37 @@ if(NOT EXISTS "${PROJ_OUT_REPO_DIR}/.git")
         ECHO_ERROR_VARIABLE
         COMMAND_ERROR_IS_FATAL ANY)
 else()
-    message("The repository is already cloned to '${PROJ_OUT_REPO_DIR}/'.")
+    execute_process(
+        COMMAND ${Git_EXECUTABLE} remote
+        WORKING_DIRECTORY ${PROJ_OUT_REPO_DIR}
+        OUTPUT_VARIABLE REMOTE_NAME OUTPUT_STRIP_TRAILING_WHITESPACE)
+    execute_process(
+        COMMAND ${Git_EXECUTABLE} remote get-url ${REMOTE_NAME}
+        WORKING_DIRECTORY ${PROJ_OUT_REPO_DIR}
+        OUTPUT_VARIABLE CURRENT_REMOTE_URL OUTPUT_STRIP_TRAILING_WHITESPACE)
+    if (NOT "${REMOTE_URL_OF_DOCS}" STREQUAL "${CURRENT_REMOTE_URL}")
+        message("The remote URL has changed:")
+        message("")
+        message("REMOTE_URL_OF_DOCS = ${REMOTE_URL_OF_DOCS}")
+        message("CURRENT_REMOTE_URL = ${CURRENT_REMOTE_URL}")
+        message("")
+        file(REMOVE_RECURSE "${PROJ_OUT_REPO_DIR}")
+        file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DIR}")
+        execute_process(
+            COMMAND ${Git_EXECUTABLE} clone
+                    --depth=1
+                    --single-branch
+                    --recurse-submodules
+                    --shallow-submodules
+                    ${REMOTE_URL_OF_DOCS}
+                    ${PROJ_OUT_REPO_DIR}
+            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+            ECHO_OUTPUT_VARIABLE
+            ECHO_ERROR_VARIABLE
+            COMMAND_ERROR_IS_FATAL ANY)
+    else()
+        message("The repository is already cloned in '${PROJ_OUT_REPO_DIR}/'.")
+    endif()
 endif()
 message("")
 restore_cmake_message_indent()
