@@ -15,7 +15,7 @@ include(JsonUtils)
 include(LogUtils)
 
 
-message(STATUS "Running 'git clone' command to clone the repository...")
+message(STATUS "Cloning the repository to '${PROJ_OUT_REPO_DIR}/'...")
 remove_cmake_message_indent()
 message("")
 if(NOT EXISTS "${PROJ_OUT_REPO_DIR}/.git")
@@ -52,7 +52,7 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Running 'git clean -xfdf' command to remove untracked files/directories...")
+message(STATUS "Removing untracked files/directories of the repository...")
 remove_cmake_message_indent()
 message("")
 execute_process(
