@@ -15,61 +15,20 @@ include(JsonUtils)
 include(LogUtils)
 
 
-message(STATUS "Cloning the repository to '${PROJ_OUT_REPO_DIR}/'...")
+message(STATUS "Cloning the repository from remote to local...")
 remove_cmake_message_indent()
 message("")
-if(NOT EXISTS "${PROJ_OUT_REPO_DIR}/.git")
-    file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DIR}")
-    execute_process(
-        COMMAND ${Git_EXECUTABLE} clone
-                --depth=1
-                --single-branch
-                --recurse-submodules
-                --shallow-submodules
-                ${REMOTE_URL_OF_DOCS}
-                ${PROJ_OUT_REPO_DIR}
-        WORKING_DIRECTORY ${PROJ_OUT_REPO_DIR}
-        ECHO_OUTPUT_VARIABLE
-        ECHO_ERROR_VARIABLE
-        COMMAND_ERROR_IS_FATAL ANY)
-else()
-    execute_process(
-        COMMAND ${Git_EXECUTABLE} remote
-        WORKING_DIRECTORY ${PROJ_OUT_REPO_DIR}
-        OUTPUT_VARIABLE REMOTE_NAME OUTPUT_STRIP_TRAILING_WHITESPACE)
-    execute_process(
-        COMMAND ${Git_EXECUTABLE} remote get-url ${REMOTE_NAME}
-        WORKING_DIRECTORY ${PROJ_OUT_REPO_DIR}
-        OUTPUT_VARIABLE CURRENT_REMOTE_URL OUTPUT_STRIP_TRAILING_WHITESPACE)
-    if (NOT "${REMOTE_URL_OF_DOCS}" STREQUAL "${CURRENT_REMOTE_URL}")
-        message("The remote URL has changed:")
-        message("")
-        message("REMOTE_URL_OF_DOCS = ${REMOTE_URL_OF_DOCS}")
-        message("CURRENT_REMOTE_URL = ${CURRENT_REMOTE_URL}")
-        message("")
-        file(REMOVE_RECURSE "${PROJ_OUT_REPO_DIR}")
-        file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DIR}")
-        execute_process(
-            COMMAND ${Git_EXECUTABLE} clone
-                    --depth=1
-                    --single-branch
-                    --recurse-submodules
-                    --shallow-submodules
-                    ${REMOTE_URL_OF_DOCS}
-                    ${PROJ_OUT_REPO_DIR}
-            WORKING_DIRECTORY ${CRFRTL_IN_LOCAL_PATH}
-            ECHO_OUTPUT_VARIABLE
-            ECHO_ERROR_VARIABLE
-            COMMAND_ERROR_IS_FATAL ANY)
-    else()
-        message("The repository is already cloned in '${PROJ_OUT_REPO_DIR}/'.")
-    endif()
-endif()
+message("Remote URL: ${REMOTE_URL_OF_DOCS}")
+message("Local Path: ${PROJ_OUT_REPO_DIR}/")
+message("")
+clone_repository_from_remote_to_local(
+    IN_REMOTE_URL   "${REMOTE_URL_OF_DOCS}"
+    IN_LOCAL_PATH   "${PROJ_OUT_REPO_DIR}")
 message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Creating and switching to the local branch 'current' of the repository...")
+message(STATUS "Switching to the local branch 'current' of the repository...")
 remove_cmake_message_indent()
 message("")
 execute_process(
