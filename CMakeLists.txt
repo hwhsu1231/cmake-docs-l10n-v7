@@ -64,7 +64,7 @@ set(SPHINX_BUILDER "html"
     # Possible values are "html".
     # See https://www.sphinx-doc.org/en/master/usage/builders/index.html for details.
 
-set(SPHINX_JOB_NUMBER "1"
+set(SPHINX_JOB_NUMBER "4"
     CACHE STRING "")
     # Possible values are "auto", "1", "2",...etc.
     # See https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-j for details.
