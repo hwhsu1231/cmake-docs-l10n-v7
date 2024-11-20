@@ -27,6 +27,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         OUT_JSON_VALUE    _LANGUAGE_CROWDIN)
 
 
+    message(STATUS "Preparing to pull '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from TMS...")
     set(TMSTMP_PO_DIR   "${PROJ_L10N_VERSION_TMSTMP_DIR}/${_LANGUAGE}")
     set(TMSTMP_PO_FILE  "${PROJ_L10N_VERSION_TMSTMP_DIR}/${_LANGUAGE}.po")
     set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
@@ -44,7 +45,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Pulling '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from Crowdin...")
+    message(STATUS "Pulling '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from TMS...")
     remove_cmake_message_indent()
     message("")
     execute_process(

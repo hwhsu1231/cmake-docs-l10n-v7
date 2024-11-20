@@ -13,7 +13,7 @@ find_package(Crowdin    MODULE REQUIRED)
 include(LogUtils)
 
 
-message(STATUS "Pusing sources for '${VERSION}' version to Translation Management System...")
+message(STATUS "Pushing sources for '${VERSION}' version to TMS...")
 remove_cmake_message_indent()
 message("")
 execute_process(
