@@ -60,7 +60,7 @@ Table of Contents
   <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank"><img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" ></a><br />
   <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank"><img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg"></a>
   <a href="https://www.contributor-covenant.org/" title="Contributor Covenant: 2.1" target="_blank"><img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg"></a>
-  <a href="https://org-test.crowdin.com/cmake-docs-l10n" title="Crowdin Localized" target="_self"><img src="https://badges.crowdin.net/e/47e76415211d89e121457cb84e8147cb/localized.svg"></a>
+  <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" title="Crowdin Localized" target="_self"><img src="https://badges.crowdin.net/e/47e76415211d89e121457cb84e8147cb/localized.svg"></a>
 </div>
 
 <p></p>
@@ -77,7 +77,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th style="text-align: center; vertical-align: middle;">TMS</th>
         <th style="text-align: center; vertical-align: middle;">Crowdin</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <!-- Main -->
@@ -85,7 +85,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th style="text-align: center; vertical-align: middle;">Main</th>
         <th style="text-align: center; vertical-align: middle;">GitHub</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <!-- Mirror -->
@@ -93,43 +93,43 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th rowspan="8" style="text-align: center; vertical-align: middle;">Mirror</th>
         <th style="text-align: center; vertical-align: middle;">GitCode</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">GitFlic</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">GitLab</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">Gitee</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">Gitea</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">AtomGit</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">Codeberg</th>
         <td style="text-align: center; vertical-align: middle;" align="center">
-          <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+          <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
     </tbody>
@@ -256,56 +256,54 @@ GitHub Worflows:
 Progress of Translations
 </a></h2>
 
-<table align="center">
-  <thead>
-    <tr>
-      <th>Language<br />Code</th>
-      <th>Language Name<br />Localized Name</th>
-      <th>Translated<br />Proofread</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>ja_JP</code></td>
-      <td>Japanese<br />日本語</td>
-      <td>
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank"><img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-        <br />
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank"><img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td><code>ru_RU</code></td>
-      <td>Russian<br />Русский</td>
-      <td>
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank"><img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-        <br />
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank"><img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td><code>zh_CN</code></td>
-      <td>Simplified Chinese<br />简体中文</td>
-      <td>
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank"><img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-        <br />
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank"><img alt="zh-CN proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-      </td>
-    </tr>
-    <tr>
-      <td><code>zh_TW</code></td>
-      <td>Traditional Chinese<br />繁體中文</td>
-      <td>
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank"><img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-        <br />
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank"><img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Language<br />Code</th>
+        <th>Language Name<br />Localized Name</th>
+        <th>Translated<br />Proofread</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>ja_JP</code></td>
+        <td>Japanese<br />日本語</td>
+        <td>
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank"><img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a><br />
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank"><img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td><code>ru_RU</code></td>
+        <td>Russian<br />Русский</td>
+        <td>
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank"><img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a><br />
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank"><img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td><code>zh_CN</code></td>
+        <td>Simplified Chinese<br />简体中文</td>
+        <td>
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank"><img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a><br />
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank"><img alt="zh-CN proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td><code>zh_TW</code></td>
+        <td>Traditional Chinese<br />繁體中文</td>
+        <td>
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank"><img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a><br />
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank"><img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" /></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div align="center">
-  <a href="https://org-test.crowdin.com/cmake-docs-l10n"><img src="https://badges.awesome-crowdin.com/translation-200032566-8.png"></a>
+  <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7"><img src="https://badges.awesome-crowdin.com/translation-200032566-8.png"></a>
 </div>
 
 <h2 id="preview-translations"><a href="#table-of-contents">
@@ -314,28 +312,30 @@ Preview Translations
 
 You can preview translations in GitHub Pages:
 
-<table align="center">
-  <tbody>
-    <tr>
-      <th>Language</th>
-      <th>Crowdin Versions</th>
-    </tr>
-    <tr>
-      <td><code>zh_CN</code></td>
-      <td>
-        <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_CN/git-master">git-master</a>
-        <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_CN/latest">latest</a>
-      </td>
-    </tr>
-    <tr>
-      <td><code>zh_TW</code></td>
-      <td>
-        <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_TW/git-master">git-master</a>
-        <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_TW/latest">latest</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <table>
+    <tbody>
+      <tr>
+        <th>Language</th>
+        <th>Crowdin Versions</th>
+      </tr>
+      <tr>
+        <td><code>zh_CN</code></td>
+        <td>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_CN/git-master">git-master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_CN/latest">latest</a>
+        </td>
+      </tr>
+      <tr>
+        <td><code>zh_TW</code></td>
+        <td>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_TW/git-master">git-master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_TW/latest">latest</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 You can switch to other available versions by version switcher.
 
@@ -345,7 +345,7 @@ Licenses
 
 All the script files (<code>CMakeLists.txt</code> and <code>.cmake</code> files) and workflow files (<code>.yml</code> files inside <code>.github/workflows/</code> directory) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
 
-All the translation files (`.po` and `.pot` files inside `l10n/` directory) are owned by the upstream, and are subject to its copyright and license.
+All the translation files (<code>.po</code> and <code>.pot</code> files inside <code>l10n/</code> directory) are owned by the upstream, and are subject to its copyright and license.
 
 <h2 id="translation-disclaimer"><a href="#table-of-contents">
 Translation Disclaimer
@@ -359,62 +359,64 @@ Maintainers List
 
 This project is created and currently maintained by the author, Haowei Hsu.
 
-<table align="center">
-  <thead>
-    <tr>
-      <th>Language</th>
-      <th>Member</th>
-      <th>Role</th>
-      <th>Contact Info</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="4"><code>zh_CN</code></td>
-    </tr>
-    <tr>
-      <td>Haowei Hsu</td>
-      <td>Language Coordinator</td>
-      <td>
-        Crowdin: <a href="https://crowdin.com/profile/hwhsu1231">hwhsu1231</a><br/>
-        GitHub: <a href="https://github.com/hwhsu1231">hwhsu1231</a><br/>
-        Gitee: <a href="https://gitee.com/hwhsu1231">hwhsu1231</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Xxx Yyy</td>
-      <td>Proofreader</td>
-      <td>xxxyyy@example.com</td>
-    </tr>
-    <tr>
-      <td>Xxx Yyy</td>
-      <td>Proofreader</td>
-      <td>xxxyyy@example.com</td>
-    </tr>
-    <tr>
-      <td rowspan="4"><code>zh_TW</code></td>
-    </tr>
-    <tr>
-      <td>Haowei Hsu</td>
-      <td>Language Coordinator</td>
-      <td>
-        Crowdin: <a href="https://crowdin.com/profile/hwhsu1231">hwhsu1231</a><br/>
-        GitHub: <a href="https://github.com/hwhsu1231">hwhsu1231</a><br/>
-        Gitee: <a href="https://gitee.com/hwhsu1231">hwhsu1231</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Xxx Yyy</td>
-      <td>Proofreader</td>
-      <td>xxxyyy@example.com</td>
-    </tr>
-    <tr>
-      <td>Xxx Yyy</td>
-      <td>Proofreader</td>
-      <td>xxxyyy@example.com</td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Language</th>
+        <th>Member</th>
+        <th>Role</th>
+        <th>Contact Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4"><code>zh_CN</code></td>
+      </tr>
+      <tr>
+        <td>Haowei Hsu</td>
+        <td>Language Coordinator</td>
+        <td>
+          Crowdin: <a href="https://crowdin.com/profile/hwhsu1231">hwhsu1231</a><br/>
+          GitHub: <a href="https://github.com/hwhsu1231">hwhsu1231</a><br/>
+          Gitee: <a href="https://gitee.com/hwhsu1231">hwhsu1231</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Xxx Yyy</td>
+        <td>Proofreader</td>
+        <td>xxxyyy@example.com</td>
+      </tr>
+      <tr>
+        <td>Xxx Yyy</td>
+        <td>Proofreader</td>
+        <td>xxxyyy@example.com</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><code>zh_TW</code></td>
+      </tr>
+      <tr>
+        <td>Haowei Hsu</td>
+        <td>Language Coordinator</td>
+        <td>
+          Crowdin: <a href="https://crowdin.com/profile/hwhsu1231">hwhsu1231</a><br/>
+          GitHub: <a href="https://github.com/hwhsu1231">hwhsu1231</a><br/>
+          Gitee: <a href="https://gitee.com/hwhsu1231">hwhsu1231</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Xxx Yyy</td>
+        <td>Proofreader</td>
+        <td>xxxyyy@example.com</td>
+      </tr>
+      <tr>
+        <td>Xxx Yyy</td>
+        <td>Proofreader</td>
+        <td>xxxyyy@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h2 id="support-this-project"><a href="#table-of-contents">
 Support this Project
@@ -454,64 +456,66 @@ Sponsorship
 
 Alternatively, you can sponsor the author through the following platforms and e-payments:
 
-<table align="center">
-  <tbody>
-    <!-- Row 1 -->
-    <tr>
-      <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Patreon</th>
-      <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Afdian</th>
-    </tr>
-    <!-- Row 2 -->
-    <tr>
-      <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
-        <a href="https://www.patreon.com/hwhsu1231" target="_blank">
-          <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon">
-        </a>
-      </td>
-      <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
-        <a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
-          <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian">
-        </a>
-      </td>
-    </tr>
-    <!-- Row 3 -->
-    <tr>
-      <th colspan="2" style="text-align: center; vertical-align: middle; width: 100%;">
-        <a href="https://www.paypal.com" target="_blank">PayPal</a>
-      </th>
-    </tr>
-    <!-- Row 4 -->
-    <tr>
-      <td colspan="2" style="text-align: center; vertical-align: middle; width: 100%;" align="center">
-        <a href="https://www.paypal.me/hwhsu1231" target="_blank">
-          <img width="250" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-paypal.png">
-        </a>
-      </td>
-    </tr>
-    <!-- Row 5 -->
-    <tr>
-      <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
-        <a href="https://global.alipay.com/" target="_blank">Alipay</a>
-      </th>
-      <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
-        <a href="https://www.jkopay.com/" target="_blank">Jkopay</a>
-      </th>
-    </tr>
-    <!-- Row 6 -->
-    <tr>
-      <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
-        <a href="https://qr.alipay.com/fkx18294jx1hzzilce3rfc8" target="_blank">
-          <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-alipay.png">
-        </a>
-      </td>
-      <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
-        <a href="https://www.jkopay.com/transfer?j=Transfer:909173642" target="_blank">
-          <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-jkopay.png">
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <table>
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Patreon</th>
+        <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Afdian</th>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+          <a href="https://www.patreon.com/hwhsu1231" target="_blank">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon">
+          </a>
+        </td>
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+          <a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian">
+          </a>
+        </td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <th colspan="2" style="text-align: center; vertical-align: middle; width: 100%;">
+          <a href="https://www.paypal.com" target="_blank">PayPal</a>
+        </th>
+      </tr>
+      <!-- Row 4 -->
+      <tr>
+        <td colspan="2" style="text-align: center; vertical-align: middle; width: 100%;" align="center">
+          <a href="https://www.paypal.me/hwhsu1231" target="_blank">
+            <img width="250" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-paypal.png">
+          </a>
+        </td>
+      </tr>
+      <!-- Row 5 -->
+      <tr>
+        <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
+          <a href="https://global.alipay.com/" target="_blank">Alipay</a>
+        </th>
+        <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
+          <a href="https://www.jkopay.com/" target="_blank">Jkopay</a>
+        </th>
+      </tr>
+      <!-- Row 6 -->
+      <tr>
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+          <a href="https://qr.alipay.com/fkx18294jx1hzzilce3rfc8" target="_blank">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-alipay.png">
+          </a>
+        </td>
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+          <a href="https://www.jkopay.com/transfer?j=Transfer:909173642" target="_blank">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-jkopay.png">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h2 id="contributors-list"><a href="#table-of-contents">
 Contributors List
