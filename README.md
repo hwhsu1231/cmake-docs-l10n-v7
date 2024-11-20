@@ -63,203 +63,195 @@ Introduction
   <a href="https://www.contributor-covenant.org/" title="Contributor Covenant: 2.1" target="_blank"><img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg"></a>
   <a href="https://org-test.crowdin.com/cmake-docs-l10n" title="Crowdin Localized" target="_self"><img src="https://badges.crowdin.net/e/47e76415211d89e121457cb84e8147cb/localized.svg"></a>
 </div>
+
 <p></p>
 
 This is a localization project for CMake Documentation.
 
 The translations are contributed in Crowdin Project and downloaded automatically in Git Repository.
 
-<!--
-Crowdin Project: https://org-test.crowdin.com/cmake-docs
-
-Git Repository:
-
-- GitHub (main): https://github.com/hwhsu1231/cmake-docs-l10n
-- GitCode (mirror): https://gitcode.com/hwhsu1231/cmake-docs-l10n
-- GitFlic (mirror): https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n
-- GitLab (mirror): https://gitlab.com/hwhsu1231/cmake-docs-l10n
-- Gitee (mirror): https://gitee.com/hwhsu1231/cmake-docs-l10n
-- Gitea (mirror): https://gitea.com/hwhsu1231/cmake-docs-l10n
-- Codeberg (mirror): https://codeberg.org/hwhsu1231/cmake-docs-l10n
--->
-
-<table align="center">
-  <tbody>
-    <!-- TMS -->
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">TMS</th>
-      <th style="text-align: center; vertical-align: middle;">Crowdin</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://org-test.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <!-- Main -->
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">Main</th>
-      <th style="text-align: center; vertical-align: middle;">GitHub</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <!-- Mirror -->
-    <tr>
-      <th rowspan="8" style="text-align: center; vertical-align: middle;">Mirror</th>
-      <th style="text-align: center; vertical-align: middle;">GitCode</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">GitFlic</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">GitLab</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">Gitee</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">Gitea</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">AtomGit</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">Codeberg</th>
-      <td style="text-align: center; vertical-align: middle;" align="center">
-        <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
+  <table>
+    <tbody>
+      <!-- TMS -->
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">TMS</th>
+        <th style="text-align: center; vertical-align: middle;">Crowdin</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://org-test.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <!-- Main -->
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">Main</th>
+        <th style="text-align: center; vertical-align: middle;">GitHub</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <!-- Mirror -->
+      <tr>
+        <th rowspan="8" style="text-align: center; vertical-align: middle;">Mirror</th>
+        <th style="text-align: center; vertical-align: middle;">GitCode</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">GitFlic</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">GitLab</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">Gitee</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">Gitea</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">AtomGit</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+      <tr>
+        <th style="text-align: center; vertical-align: middle;">Codeberg</th>
+        <td style="text-align: center; vertical-align: middle;" align="center">
+          <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 GitHub Worflows:
 
 <p></p>
-<table align="center">
-  <tbody>
-    <tr>
-      <th>Status Badges</th>
-      <th>Purpose</th>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
-          <img
-            alt="ci-sphinx-update-pot"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Update .pot files by Sphinx documentation tool.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml" >
-          <img
-            alt="ci-gettext-update-po"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Update .po files by Gettext toolkit.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml">
-          <img
-            alt="ci-gettext-compend-po"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Update .po files from the compendium file of other version by Gettext toolkit.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml">
-          <img
-            alt="ci-tmscli-push-pot"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Push .pot files to Translation Management System by its CLI tool.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml">
-          <img
-            alt="ci-tmscli-pull-po"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Pull .pot files from Translation Management System by its CLI tool.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml">
-          <img
-            alt="ci-tmscli-readme"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>
-        Push README sources to and pull its translations from the Translation Management System by its CLI tool.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml">
-          <img
-            alt="ci-deploy-gh-pages"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Build and deploy the documents to <code>gh-pages</code> branch, and then publish to GitHub Pages.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml">
-          <img
-            alt="ci-deploy-po-version"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Deploy .po files to <code>po/${VERSION}</code> branch.</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml">
-          <img
-            alt="ci-update-submodule"
-            src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml/badge.svg"
-            />
-        </a>
-      </td>
-      <td>Update each of the submodules to their latest commit.</td>
-    </tr>
-  </tbody>
-</table>
+
+<div align="center">
+  <table>
+    <tbody>
+      <tr>
+        <th>Status Badges</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
+            <img
+              alt="ci-sphinx-update-pot"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Update .pot files by Sphinx documentation tool.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml" >
+            <img
+              alt="ci-gettext-update-po"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Update .po files by Gettext toolkit.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml">
+            <img
+              alt="ci-gettext-compend-po"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Update .po files from the compendium file of other version by Gettext toolkit.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml">
+            <img
+              alt="ci-tmscli-push-pot"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Push .pot files to Translation Management System by its CLI tool.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml">
+            <img
+              alt="ci-tmscli-pull-po"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Pull .pot files from Translation Management System by its CLI tool.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml">
+            <img
+              alt="ci-tmscli-readme"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>
+          Push README sources to and pull its translations from the Translation Management System by its CLI tool.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml">
+            <img
+              alt="ci-deploy-gh-pages"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Build and deploy the documents to <code>gh-pages</code> branch, and then publish to GitHub Pages.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml">
+            <img
+              alt="ci-deploy-po-version"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Deploy .po files to <code>po/${VERSION}</code> branch.</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml">
+            <img
+              alt="ci-update-submodule"
+              src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml/badge.svg"
+              />
+          </a>
+        </td>
+        <td>Update each of the submodules to their latest commit.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h2 id="progress-of-translations"><a href="#table-of-contents">
 Progress of Translations
