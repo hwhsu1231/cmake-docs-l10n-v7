@@ -157,7 +157,7 @@ GitHub Worflows:
               />
           </a>
         </td>
-        <td>Update .pot files by Sphinx documentation tool.</td>
+        <td>Update <code>.pot</code> files by Sphinx documentation tool.</td>
       </tr>
       <tr>
         <td>
@@ -168,7 +168,7 @@ GitHub Worflows:
               />
           </a>
         </td>
-        <td>Update .po files by Gettext toolkit.</td>
+        <td>Update <code>.po</code> files by Gettext toolkit.</td>
       </tr>
       <tr>
         <td>
@@ -179,7 +179,7 @@ GitHub Worflows:
               />
           </a>
         </td>
-        <td>Update .po files from the compendium file of other version by Gettext toolkit.</td>
+        <td>Update <code>.po</code> files from the compendium file of other version by Gettext toolkit.</td>
       </tr>
       <tr>
         <td>
@@ -190,7 +190,7 @@ GitHub Worflows:
               />
           </a>
         </td>
-        <td>Push .pot files to Translation Management System by its CLI tool.</td>
+        <td>Push <code>.pot</code> files to Translation Management System by its CLI tool.</td>
       </tr>
       <tr>
         <td>
@@ -201,7 +201,7 @@ GitHub Worflows:
               />
           </a>
         </td>
-        <td>Pull .pot files from Translation Management System by its CLI tool.</td>
+        <td>Pull <code>.pot</code> files from Translation Management System by its CLI tool.</td>
       </tr>
       <tr>
         <td>
@@ -236,7 +236,7 @@ GitHub Worflows:
               />
           </a>
         </td>
-        <td>Deploy .po files to <code>po/${VERSION}</code> branch.</td>
+        <td>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
       </tr>
       <tr>
         <td>
