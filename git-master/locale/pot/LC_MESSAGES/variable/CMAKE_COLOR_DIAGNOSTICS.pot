@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-11-21 10:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "CMAKE_COLOR_DIAGNOSTICS"
 msgstr ""
 
 #: ../../../variable/CMAKE_COLOR_DIAGNOSTICS.rst:6
-msgid "Enable color diagnostics throughout."
+msgid "Enable color diagnostics throughout the generated build system."
 msgstr ""
 
 #: ../../../variable/CMAKE_COLOR_DIAGNOSTICS.rst:8
@@ -82,4 +82,10 @@ msgid ""
 "If the :envvar:`CMAKE_COLOR_DIAGNOSTICS` environment variable is set, its "
 "value is used.  Otherwise, ``CMAKE_COLOR_DIAGNOSTICS`` is not defined by "
 "default."
+msgstr ""
+
+#: ../../../variable/CMAKE_COLOR_DIAGNOSTICS.rst:39
+msgid ""
+"See the :envvar:`CLICOLOR` and :envvar:`CLICOLOR_FORCE` environment "
+"variables to control color output from CMake command-line tools."
 msgstr ""
