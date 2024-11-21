@@ -117,6 +117,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <!-- Main -->
       <tr>
@@ -124,6 +125,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th rowspan="1" style="text-align: center; vertical-align: middle;">GitHub</th>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+        </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
+            <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
+          </a>
         </td>
       </tr>
       <!-- Mirror -->
@@ -133,42 +139,49 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
         <th rowspan="1" style="text-align: center; vertical-align: middle;">GitFlic</th>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
         <th rowspan="1" style="text-align: center; vertical-align: middle;">GitLab</th>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
         <th rowspan="1" style="text-align: center; vertical-align: middle;">Gitee</th>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
         <th rowspan="1" style="text-align: center; vertical-align: middle;">Gitea</th>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
         <th rowspan="1" style="text-align: center; vertical-align: middle;">AtomGit</th>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
         <th rowspan="1" style="text-align: center; vertical-align: middle;">Codeberg</th>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
     </tbody>
   </table>
