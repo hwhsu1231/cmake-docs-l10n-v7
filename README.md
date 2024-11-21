@@ -64,7 +64,8 @@ Introduction
   </a>
   <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" title="GitHub Repo Size" target="_blank">
     <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=blue" />
-  </a>
+  </a><br />
+  <!-- Newline -->
   <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
     <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
   </a>
@@ -430,7 +431,8 @@ Support this Project
 You can contribute and support this project by doing any of the following:
 
 - Star the project on GitHub or other mirrors.
-- Submit issues or pull requests on GitHub if you found any bug.
+- Submit issues on GitHub/GitCode/GitFlic if you found any bug.
+- Feel free to submit pull requests on GitHub if you know how to fix the bug.
 - Contribute your translations on Crowdin.
 - If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.
 
@@ -471,12 +473,12 @@ Alternatively, you can sponsor the author through the following platforms and e-
       </tr>
       <!-- Row 2 -->
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://www.patreon.com/hwhsu1231" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon">
           </a>
         </td>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian">
           </a>
@@ -490,7 +492,7 @@ Alternatively, you can sponsor the author through the following platforms and e-
       </tr>
       <!-- Row 4 -->
       <tr>
-        <td colspan="2" style="text-align: center; vertical-align: middle; width: 100%;" align="center">
+        <td colspan="2" style="text-align: center; vertical-align: middle; width: 100%;">
           <a href="https://www.paypal.me/hwhsu1231" target="_blank">
             <img width="250" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-paypal.png">
           </a>
@@ -507,12 +509,12 @@ Alternatively, you can sponsor the author through the following platforms and e-
       </tr>
       <!-- Row 6 -->
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://qr.alipay.com/fkx18294jx1hzzilce3rfc8" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-alipay.png">
           </a>
         </td>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://www.jkopay.com/transfer?j=Transfer:909173642" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-jkopay.png">
           </a>
