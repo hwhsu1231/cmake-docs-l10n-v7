@@ -80,9 +80,8 @@ jobs:
       LANGUAGE: 'all'
       CALLER_JOB: 'check-tmscli-readme'
       ENABLE_JOB: ${{ needs.before-check.outputs.README_CHANGE == 'true' }}
-      ACTOR_ID: ${{ vars.ACTOR_ID }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
-      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+      ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
@@ -100,8 +99,7 @@ jobs:
       CALLER_JOB: 'check-deploy-gh-pages'
       ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
       DEPLOY_HTML: false
-      ACTOR_ID: ${{ vars.ACTOR_ID }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
-      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+      ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}

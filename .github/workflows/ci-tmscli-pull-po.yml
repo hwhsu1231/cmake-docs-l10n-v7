@@ -75,9 +75,8 @@ jobs:
           echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
           echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
           echo "[Variables]"
-          echo "vars.ACTOR_ID = ${{ vars.ACTOR_ID }}"
           echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
-          echo "vars.ACTOR_LOGIN = ${{ vars.ACTOR_LOGIN }}"
+          echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
           echo "[Secrets]"
           echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
           echo "secrets.CROWDIN_PERSONAL_TOKEN = ${{ secrets.CROWDIN_PERSONAL_TOKEN }}"
@@ -85,16 +84,12 @@ jobs:
         shell: bash
         run: |
           VARIABLES_EXIST=true
-          if [[ -z "${{ vars.ACTOR_ID }}" ]]; then
-            echo "vars.ACTOR_ID is missing."
-            VARIABLES_EXIST=false
-          fi
           if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
             echo "vars.ACTOR_NAME is missing."
             VARIABLES_EXIST=false
           fi
-          if [[ -z "${{ vars.ACTOR_LOGIN }}" ]]; then
-            echo "vars.ACTOR_LOGIN is missing."
+          if [[ -z "${{ vars.ACTOR_EMAIL }}" ]]; then
+            echo "vars.ACTOR_EMAIL is missing."
             VARIABLES_EXIST=false
           fi
           if [[ "${VARIABLES_EXIST}" == "false" ]]; then
@@ -178,9 +173,8 @@ jobs:
       MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
       CALLER_JOB: 'caller (${{ matrix.VERSION }}, ${{ matrix.LANGUAGE }})'
       ENABLE_JOB: true
-      ACTOR_ID: ${{ vars.ACTOR_ID }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
-      ACTOR_LOGIN: ${{ vars.ACTOR_LOGIN }}
+      ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
