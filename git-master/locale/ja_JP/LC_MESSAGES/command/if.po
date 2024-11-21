@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2024-11-21 10:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -413,14 +413,16 @@ msgstr ""
 
 #: ../../../command/if.rst:393
 msgid ""
-"Compares the two paths component-by-component.  Only if every component of "
-"both paths match will the two paths compare equal.  Multiple path separators "
-"are effectively collapsed into a single separator, but note that backslashes "
-"are not converted to forward slashes.  No other :ref:`path normalization "
-"<Normalization>` is performed."
+"Lexicographically compares two CMake paths component-by-component without "
+"accessing the filesystem. Only if every component of both paths match will "
+"the two paths compare equal.  Multiple path separators are effectively "
+"collapsed into a single separator, but note that backslashes are not "
+"converted to forward slashes. No other :ref:`path normalization "
+"<Normalization>` is performed. Trailing slashes are preserved, thus ``/a/b`` "
+"and ``/a/b/`` are not equal."
 msgstr ""
 
-#: ../../../command/if.rst:399
+#: ../../../command/if.rst:401
 msgid ""
 "Component-wise comparison is superior to string-based comparison due to the "
 "handling of multiple path separators.  In the following example, the "
@@ -428,7 +430,7 @@ msgid ""
 "``STREQUAL``:"
 msgstr ""
 
-#: ../../../command/if.rst:404
+#: ../../../command/if.rst:406
 msgid ""
 "# comparison is TRUE\n"
 "if (\"/a//b/c\" PATH_EQUAL \"/a/b/c\")\n"
@@ -441,15 +443,15 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../command/if.rst:416
+#: ../../../command/if.rst:418
 msgid "See :ref:`cmake_path(COMPARE) <Path COMPARE>` for more details."
 msgstr ""
 
-#: ../../../command/if.rst:419
+#: ../../../command/if.rst:421
 msgid "Variable Expansion"
 msgstr ""
 
-#: ../../../command/if.rst:421
+#: ../../../command/if.rst:423
 msgid ""
 "The if command was written very early in CMake's history, predating the ``${}"
 "`` variable evaluation syntax, and for convenience evaluates variables named "
@@ -458,58 +460,58 @@ msgid ""
 "arguments.  Therefore code like"
 msgstr ""
 
-#: ../../../command/if.rst:427
+#: ../../../command/if.rst:429
 msgid ""
 "set(var1 OFF)\n"
 "set(var2 \"var1\")\n"
 "if(${var2})"
 msgstr ""
 
-#: ../../../command/if.rst:433
+#: ../../../command/if.rst:435
 msgid "appears to the if command as"
 msgstr ""
 
-#: ../../../command/if.rst:435
+#: ../../../command/if.rst:437
 msgid "if(var1)"
 msgstr ""
 
-#: ../../../command/if.rst:439
+#: ../../../command/if.rst:441
 msgid ""
 "and is evaluated according to the ``if(<variable>)`` case documented above.  "
 "The result is ``OFF`` which is false.  However, if we remove the ``${}`` "
 "from the example then the command sees"
 msgstr ""
 
-#: ../../../command/if.rst:443
+#: ../../../command/if.rst:445
 msgid "if(var2)"
 msgstr ""
 
-#: ../../../command/if.rst:447
+#: ../../../command/if.rst:449
 msgid ""
 "which is true because ``var2`` is defined to ``var1`` which is not a false "
 "constant."
 msgstr ""
 
-#: ../../../command/if.rst:450
+#: ../../../command/if.rst:452
 msgid ""
 "Automatic evaluation applies in the other cases whenever the above-"
 "documented condition syntax accepts ``<variable|string>``:"
 msgstr ""
 
-#: ../../../command/if.rst:453
+#: ../../../command/if.rst:455
 msgid ""
 "The left hand argument to `MATCHES`_ is first checked to see if it is a "
 "defined variable.  If so, the variable's value is used, otherwise the "
 "original value is used."
 msgstr ""
 
-#: ../../../command/if.rst:457
+#: ../../../command/if.rst:459
 msgid ""
 "If the left hand argument to `MATCHES`_ is missing it returns false without "
 "error"
 msgstr ""
 
-#: ../../../command/if.rst:460
+#: ../../../command/if.rst:462
 msgid ""
 "Both left and right hand arguments to `LESS`_, `GREATER`_, `EQUAL`_, "
 "`LESS_EQUAL`_, and `GREATER_EQUAL`_, are independently tested to see if they "
@@ -517,7 +519,7 @@ msgid ""
 "original value is used."
 msgstr ""
 
-#: ../../../command/if.rst:465
+#: ../../../command/if.rst:467
 msgid ""
 "Both left and right hand arguments to `STRLESS`_, `STRGREATER`_, "
 "`STREQUAL`_, `STRLESS_EQUAL`_, and `STRGREATER_EQUAL`_ are independently "
@@ -525,7 +527,7 @@ msgid ""
 "are used otherwise the original value is used."
 msgstr ""
 
-#: ../../../command/if.rst:470
+#: ../../../command/if.rst:472
 msgid ""
 "Both left and right hand arguments to `VERSION_LESS`_, `VERSION_GREATER`_, "
 "`VERSION_EQUAL`_, `VERSION_LESS_EQUAL`_, and `VERSION_GREATER_EQUAL`_ are "
@@ -533,28 +535,28 @@ msgid ""
 "defined values are used otherwise the original value is used."
 msgstr ""
 
-#: ../../../command/if.rst:476
+#: ../../../command/if.rst:478
 msgid ""
 "The left hand argument to `IN_LIST`_ is tested to see if it is a defined "
 "variable.  If so, the variable's value is used, otherwise the original value "
 "is used."
 msgstr ""
 
-#: ../../../command/if.rst:480
+#: ../../../command/if.rst:482
 msgid ""
 "The right hand argument to `NOT`_ is tested to see if it is a boolean "
 "constant.  If so, the value is used, otherwise it is assumed to be a "
 "variable and it is dereferenced."
 msgstr ""
 
-#: ../../../command/if.rst:484
+#: ../../../command/if.rst:486
 msgid ""
 "The left and right hand arguments to `AND`_ and `OR`_ are independently "
 "tested to see if they are boolean constants.  If so, they are used as such, "
 "otherwise they are assumed to be variables and are dereferenced."
 msgstr ""
 
-#: ../../../command/if.rst:488
+#: ../../../command/if.rst:490
 msgid ""
 "To prevent ambiguity, potential variable or keyword names can be specified "
 "in a :ref:`Quoted Argument` or a :ref:`Bracket Argument`. A quoted or "
@@ -562,7 +564,7 @@ msgid ""
 "dereferenced or interpreted. See policy :policy:`CMP0054`."
 msgstr ""
 
-#: ../../../command/if.rst:495
+#: ../../../command/if.rst:497
 msgid ""
 "There is no automatic evaluation for environment or cache :ref:`Variable "
 "References`.  Their values must be referenced as ``$ENV{<name>}`` or "
@@ -570,18 +572,18 @@ msgid ""
 "``<variable|string>``."
 msgstr ""
 
-#: ../../../command/if.rst:501
+#: ../../../command/if.rst:503
 msgid "See also"
 msgstr ""
 
-#: ../../../command/if.rst:503
+#: ../../../command/if.rst:505
 msgid ":command:`else`"
 msgstr ""
 
-#: ../../../command/if.rst:504
+#: ../../../command/if.rst:506
 msgid ":command:`elseif`"
 msgstr ""
 
-#: ../../../command/if.rst:505
+#: ../../../command/if.rst:507
 msgid ":command:`endif`"
 msgstr ""
