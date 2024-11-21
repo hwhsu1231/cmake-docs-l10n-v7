@@ -109,9 +109,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
-            <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
-          </a>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" target="_blank">Issues</a>
         </td>
       </tr>
       <!-- Mirror -->
