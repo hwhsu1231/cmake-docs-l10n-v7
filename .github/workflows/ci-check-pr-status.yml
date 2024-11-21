@@ -42,11 +42,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      - name: Get VERSION from the Pull Request Title
-        id: gvprt
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-from-pull-request-title@main
-        with:
-          pr-title: ${{ github.event.pull_request.title }}
+      # - name: Get VERSION from the Pull Request Title
+      #   id: gvprt
+      #   uses: hwhsu1231/ci-sphinx/.github/actions/get-version-from-pull-request-title@main
+      #   with:
+      #     pr-title: ${{ github.event.pull_request.title }}
       - name: Filter Changes in the Pull Request
         id: filter
         uses: dorny/paths-filter@v3
