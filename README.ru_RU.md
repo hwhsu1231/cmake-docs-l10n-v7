@@ -76,7 +76,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th style="text-align: center; vertical-align: middle;">TMS</th>
         <th style="text-align: center; vertical-align: middle;">Crowdin</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
@@ -84,7 +84,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th style="text-align: center; vertical-align: middle;">Main</th>
         <th style="text-align: center; vertical-align: middle;">GitHub</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
@@ -92,43 +92,43 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th rowspan="8" style="text-align: center; vertical-align: middle;">Mirror</th>
         <th style="text-align: center; vertical-align: middle;">GitCode</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">GitFlic</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">GitLab</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">Gitee</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">Gitea</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">AtomGit</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
       <tr>
         <th style="text-align: center; vertical-align: middle;">Codeberg</th>
-        <td style="text-align: center; vertical-align: middle;" align="center">
+        <td style="text-align: center; vertical-align: middle;">
           <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
       </tr>
