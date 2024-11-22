@@ -413,12 +413,12 @@ This project is created and currently maintained by the author, Haowei Hsu.
       <tr>
         <td rowspan="1">Xxx Yyy</td>
         <td rowspan="1">Proofreader</td>
-        <td rowspan="1">xxxyyy@example.com</td>
+        <td rowspan="1">xxxyyy</td>
       </tr>
       <tr>
         <td rowspan="1">Xxx Yyy</td>
         <td rowspan="1">Proofreader</td>
-        <td rowspan="1">xxxyyy@example.com</td>
+        <td rowspan="1">xxxyyy</td>
       </tr>
     </tbody>
   </table>
@@ -456,12 +456,12 @@ Alternatively, you can sponsor the author through the following platforms and e-
       <tr>
         <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://www.patreon.com/hwhsu1231" target="_blank">
-            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon" />
           </a>
         </td>
         <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
-            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian" />
           </a>
         </td>
       </tr>
@@ -475,7 +475,7 @@ Alternatively, you can sponsor the author through the following platforms and e-
       <tr>
         <td colspan="2" style="text-align: center; vertical-align: middle; width: 100%;">
           <a href="https://www.paypal.me/hwhsu1231" target="_blank">
-            <img width="250" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-paypal.png">
+            <img width="250" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-paypal.png" />
           </a>
         </td>
       </tr>
@@ -492,12 +492,12 @@ Alternatively, you can sponsor the author through the following platforms and e-
       <tr>
         <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://qr.alipay.com/fkx18294jx1hzzilce3rfc8" target="_blank">
-            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-alipay.png">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-alipay.png" />
           </a>
         </td>
         <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
           <a href="https://www.jkopay.com/transfer?j=Transfer:909173642" target="_blank">
-            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-jkopay.png">
+            <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-jkopay.png" />
           </a>
         </td>
       </tr>
