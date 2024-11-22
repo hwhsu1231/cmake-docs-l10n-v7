@@ -442,25 +442,6 @@ It will inspire author to make more and more localization projects for open-sour
 Sponsorship
 </a></h2>
 
-<!-- You can sponsor the author in the following platforms: -->
-
-<!-- <table align="center">
-  <tbody>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">Patreon</th>
-      <td style="text-align: center; vertical-align: middle;">
-        <a href="https://www.patreon.com/hwhsu1231" target="_blank"><img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patream">
-      </td>
-    </tr>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">Afdian</th>
-      <td style="text-align: center; vertical-align: middle;">
-        <a href="https://www.afdian.com/a/hwhsu1231" target="_blank"><img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian">
-      </td>
-    </tr>
-  </tbody>
-</table> -->
-
 Alternatively, you can sponsor the author through the following platforms and e-payments:
 
 <div align="center">
