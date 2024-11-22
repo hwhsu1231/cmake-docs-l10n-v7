@@ -55,11 +55,6 @@ message("")
 restore_cmake_message_indent()
 
 
-file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
-    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
-    "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
-
-
 if(NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
