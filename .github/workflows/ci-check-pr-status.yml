@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - source
+      - l10n
     types:
       - opened
       - synchronize
@@ -71,7 +72,7 @@ jobs:
           echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
 
   check-tmscli-readme:
-    needs: before-check
+    needs: [ 'before-check' ]
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-tmscli-readme.yml@main
     with:
       RUNNER: 'ubuntu-latest'
@@ -87,7 +88,7 @@ jobs:
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
 
   check-deploy-gh-pages:
-    needs: before-check
+    needs: [ 'before-check' ]
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml@main
     with:
       RUNNER: 'ubuntu-latest'
