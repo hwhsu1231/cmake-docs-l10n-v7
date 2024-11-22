@@ -403,22 +403,12 @@ This project is created and currently maintained by the author, Haowei Hsu.
       </tr>
       <!-- zh_TW -->
       <tr>
-        <td rowspan="4"><code>zh_TW</code></td>
+        <td rowspan="2"><code>zh_TW</code></td>
       </tr>
       <tr>
         <td rowspan="1">Haowei Hsu</td>
         <td rowspan="1">Language Coordinator</td>
         <td rowspan="1"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
-      </tr>
-      <tr>
-        <td rowspan="1">Xxx Yyy</td>
-        <td rowspan="1">Proofreader</td>
-        <td rowspan="1">xxxyyy</td>
-      </tr>
-      <tr>
-        <td rowspan="1">Xxx Yyy</td>
-        <td rowspan="1">Proofreader</td>
-        <td rowspan="1">xxxyyy</td>
       </tr>
     </tbody>
   </table>
