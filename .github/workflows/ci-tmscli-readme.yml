@@ -10,6 +10,8 @@ on:
       - 'source'
     paths:
       - 'README.md'
+      - 'languages.json'
+      - 'crowdin.yml'
   # Triggers the workflow based on a schedule.
   schedule:
     - cron: '0 0 * * 1'
