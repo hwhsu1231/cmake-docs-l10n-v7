@@ -16,14 +16,16 @@ include(LogUtils)
 
 
 message(STATUS "Cloning the repository from remote to local...")
+set(REMOTE_URL  "${REMOTE_URL_OF_DOCS}")
+set(LOCAL_PATH  "${PROJ_OUT_REPO_DIR}")
 remove_cmake_message_indent()
 message("")
-message("Remote URL: ${REMOTE_URL_OF_DOCS}")
-message("Local Path: ${PROJ_OUT_REPO_DIR}/")
+message("REMOTE_URL: ${REMOTE_URL}")
+message("LOCAL_PATH: ${LOCAL_PATH}/")
 message("")
 clone_repository_from_remote_to_local(
-    IN_REMOTE_URL   "${REMOTE_URL_OF_DOCS}"
-    IN_LOCAL_PATH   "${PROJ_OUT_REPO_DIR}")
+    IN_REMOTE_URL   "${REMOTE_URL}"
+    IN_LOCAL_PATH   "${LOCAL_PATH}")
 message("")
 restore_cmake_message_indent()
 

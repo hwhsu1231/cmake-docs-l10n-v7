@@ -83,13 +83,15 @@ execute_process(
 message("")
 restore_cmake_message_indent()
 message(STATUS "Copying the configuration file 'conf.py'...")
-file(COPY_FILE
-    "${PROJ_OUT_REPO_SPHINX_DIR}/build/conf.py"
-    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
+set(SRC_CONF_PY_FILE    "${PROJ_OUT_REPO_SPHINX_DIR}/build/conf.py")
+set(DST_CONF_PY_FILE    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_OUT_REPO_SPHINX_DIR}/build/conf.py")
-message("To:   ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
+message("From: ${SRC_CONF_PY_FILE}")
+message("To:   ${DST_CONF_PY_FILE}")
+file(COPY_FILE
+    "${SRC_CONF_PY_FILE}"
+    "${DST_CONF_PY_FILE}")
 message("")
 restore_cmake_message_indent()
 
