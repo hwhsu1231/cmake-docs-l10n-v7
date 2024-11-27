@@ -124,8 +124,6 @@ endif()
 
 
 message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generate .pot files...")
-set(ENV_LANG                "${SPHINX_CONSOLE_LOCALE}")
-set(ENV_KEY_VALUE_LIST      LANG=${ENV_LANG})
 remove_cmake_message_indent()
 message("")
 execute_process(

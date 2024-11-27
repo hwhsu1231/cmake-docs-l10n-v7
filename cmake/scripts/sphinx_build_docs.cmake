@@ -62,8 +62,6 @@ if(NOT LANGUAGE STREQUAL "all")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
-    set(ENV_LANG                "${SPHINX_CONSOLE_LOCALE}")
-    set(ENV_KEY_VALUE_LIST      LANG=${ENV_LANG})
     remove_cmake_message_indent()
     message("")
     execute_process(
