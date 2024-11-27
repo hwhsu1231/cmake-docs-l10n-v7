@@ -43,9 +43,6 @@ set(REMOTE_URL_OF_L10N "https://github.com/hwhsu1231/cmake-docs-l10n-v7.git"
 
 set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"
     CACHE STRING "Remote URL of the 'docs' repository.")
-    # Possible values are:
-    # - https://github.com/Kitware/CMake.git
-    # - https://gitlab.kitware.com/cmake/cmake.git
 
 set(BASEURL_HREF "https://hwhsu1231.github.io/cmake-docs-l10n-v7"
     CACHE STRING "Base URL of the deployed documentation.")
