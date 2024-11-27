@@ -1,15 +1,15 @@
 #
 # Your Crowdin credentials
 #
-"project_id" : "8"
-"api_token_env" : CROWDIN_PERSONAL_TOKEN
-"base_path" : "."
-"base_url" : "https://org-test.crowdin.com"
+project_id : "8"
+api_token : "CROWDIN_PERSONAL_TOKEN"
+base_path : "."
+base_url : "https://org-test.crowdin.com"
 
 #
 # Choose file structure in Crowdin
 #
-"preserve_hierarchy" : true
+preserve_hierarchy : true
 
 #
 # Use YAML anchor to implement the global languages mapping
