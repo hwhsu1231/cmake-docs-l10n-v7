@@ -74,9 +74,6 @@ set(SPHINX_VERBOSE_LEVEL "1"
     # Possible values are "0", "1", "2", and "3".
     # See https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-v for details.
 
-set(SPHINX_CONSOLE_LOCALE "en_US.UTF-8"
-    CACHE STRING "Locale setting for the console.")
-
 set(GETTEXT_WRAP_WIDTH 79
     CACHE STRING "Gettext wrap width for .pot/.po files.")
     # Possible values are positive integers.
@@ -326,7 +323,6 @@ message(STATUS "VERSION_OF_SPHINX             = ${VERSION_OF_SPHINX} (CACHE: $CA
 message(STATUS "SPHINX_BUILDER                = ${SPHINX_BUILDER}")
 message(STATUS "SPHINX_JOB_NUMBER             = ${SPHINX_JOB_NUMBER}")
 message(STATUS "SPHINX_VERBOSE_LEVEL          = ${SPHINX_VERBOSE_LEVEL}")
-message(STATUS "SPHINX_CONSOLE_LOCALE         = ${SPHINX_CONSOLE_LOCALE}")
 message(STATUS "GETTEXT_WRAP_WIDTH            = ${GETTEXT_WRAP_WIDTH}")
 message(STATUS "GETTEXT_ADDITIONAL_TARGETS    = ${GETTEXT_ADDITIONAL_TARGETS}")
 message(STATUS "---------- Directory-Related Variables ----------")
@@ -392,6 +388,7 @@ string(REPLACE ";" "\\\\;" LANGUAGE_LIST "${LANGUAGE_LIST}")
 #]============================================================]
 
 set(SCRIPT_MODE_ENV
+    LANG=en_US.UTF-8
     PYTHONNOUSERSITE=1)
 
 #[============================================================[
@@ -415,7 +412,6 @@ set(SCRIPT_MODE_CACHE
     -D SPHINX_BUILDER=${SPHINX_BUILDER}
     -D SPHINX_JOB_NUMBER=${SPHINX_JOB_NUMBER}
     -D SPHINX_VERBOSE_LEVEL=${SPHINX_VERBOSE_LEVEL}
-    -D SPHINX_CONSOLE_LOCALE=${SPHINX_CONSOLE_LOCALE}
     -D GETTEXT_WRAP_WIDTH=${GETTEXT_WRAP_WIDTH}
     -D GETTEXT_ADDITIONAL_TARGETS=${GETTEXT_ADDITIONAL_TARGETS}
     # [Directory-Related Variables]
