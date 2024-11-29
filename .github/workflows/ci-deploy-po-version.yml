@@ -134,46 +134,52 @@ jobs:
         with:
           language: 'all'
           all-in-one: 'false'
-      - name: Get the Matrix
+      - name: Get the MATRIX from the JSON Lists
         id: gm
-        shell: bash
-        run: |
-          # Get the JSON list from Inputs.
-          VERSION_LIST='${{ steps.gvlv.outputs.VERSION_LIST }}'
-          ALL_IN_ONE_LIST='${{ steps.gaio.outputs.ALL_IN_ONE_LIST }}'
-          LANGUAGE_LIST='${{ steps.glll.outputs.LANGUAGE_LIST }}'
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-lists@main
+        with:
+          matrix-type: 'version-language'
+          version-list: ${{ steps.gvlv.outputs.VERSION_LIST }}
+          allinone-list: ${{ steps.gaio.outputs.ALLINONE_LIST }}
+          language-list: ${{ steps.glll.outputs.LANGUAGE_LIST }}
+        # shell: bash
+        # run: |
+        #   # Get the JSON list from Inputs.
+        #   VERSION_LIST='${{ steps.gvlv.outputs.VERSION_LIST }}'
+        #   ALLINONE_LIST='${{ steps.gaio.outputs.ALLINONE_LIST }}'
+        #   LANGUAGE_LIST='${{ steps.glll.outputs.LANGUAGE_LIST }}'
 
-          # Convert the JSON list to the Bash array.
-          VERSION_ARRAY=($(echo "$VERSION_LIST" | jq -r '.[]'))
-          ALL_IN_ONE_ARRAY=($(echo "$ALL_IN_ONE_LIST" | jq -r '.[]'))
-          LANGUAGE_ARRAY=($(echo "$LANGUAGE_LIST" | jq -r '.[]'))
+        #   # Convert the JSON list to the Bash array.
+        #   VERSION_ARRAY=($(echo "$VERSION_LIST" | jq -r '.[]'))
+        #   ALLINONE_ARRAY=($(echo "$ALLINONE_LIST" | jq -r '.[]'))
+        #   LANGUAGE_ARRAY=($(echo "$LANGUAGE_LIST" | jq -r '.[]'))
 
-          # Initialize the Matrix
-          MATRIX_ARRAY=()
+        #   # Initialize the Matrix
+        #   MATRIX_ARRAY=()
 
-          # Iterate through the indices of VERSION_ARRAY
-          for INDEX in "${!VERSION_ARRAY[@]}"; do
-            VERSION="${VERSION_ARRAY[${INDEX}]}"
-            ALL_IN_ONE="${ALL_IN_ONE_ARRAY[${INDEX}]}"
-            if [[ "${ALL_IN_ONE}" == "true" ]]; then
-              MATRIX_ARRAY+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"all\"}")
-            else
-              for LANGUAGE in "${LANGUAGE_ARRAY[@]}"; do
-                MATRIX_ARRAY+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"${LANGUAGE}\"}")
-              done
-            fi
-          done
+        #   # Generate a full matrix with VERSION and LANGUAGE combinations
+        #   for INDEX in "${!VERSION_ARRAY[@]}"; do
+        #     VERSION="${VERSION_ARRAY[${INDEX}]}"
+        #     ALLINONE="${ALLINONE_ARRAY[${INDEX}]}"
+        #     if [[ "${ALLINONE}" == "true" ]]; then
+        #       MATRIX_ARRAY+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"all\"}")
+        #     else
+        #       for LANGUAGE in "${LANGUAGE_ARRAY[@]}"; do
+        #         MATRIX_ARRAY+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"${LANGUAGE}\"}")
+        #       done
+        #     fi
+        #   done
 
-          echo "MATRIX_ARRAY:"
-          echo "${MATRIX_ARRAY[@]}"
+        #   echo "MATRIX_ARRAY:"
+        #   echo "${MATRIX_ARRAY[@]}"
 
-          # Convert the matrix to JSON format.
-          MATRIX=$(printf '%s\n' "${MATRIX_ARRAY[@]}" | jq -c -s '.')
+        #   # Convert the matrix to JSON format.
+        #   MATRIX=$(printf '%s\n' "${MATRIX_ARRAY[@]}" | jq -c -s '.')
 
-          # Output and Print the Matrix.
-          echo "MATRIX=${MATRIX}" >> ${GITHUB_OUTPUT}
-          echo "MATRIX:"
-          echo "${MATRIX}" | jq .
+        #   # Output and Print the Matrix.
+        #   echo "MATRIX=${MATRIX}" >> ${GITHUB_OUTPUT}
+        #   echo "MATRIX:"
+        #   echo "${MATRIX}" | jq .
 
   # caller:
   #   needs: [ 'precondition', 'get-matrix' ]
