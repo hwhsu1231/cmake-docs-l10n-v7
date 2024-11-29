@@ -178,7 +178,7 @@ jobs:
           # 輸出矩陣
           echo "MATRIX=$MATRIX_JSON" >> $GITHUB_OUTPUT
           echo "Generated Job Matrix:"
-          echo "$MATRIX_JSON"
+          echo "$MATRIX_JSON" | jq .
 
   # caller:
   #   needs: [ 'precondition', 'get-matrix' ]
