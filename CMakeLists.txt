@@ -17,6 +17,9 @@ set(VERSION "git-master"
     CACHE STRING "Current version for the documentation.")
     # Possible values are "git-master", "latest", and "vX.Y".
 
+set(COMPENDIUM "git-master"
+    CACHE STRING "Version of compendium that the current version merges translations from.")
+
 set(AUTO_DEPEND ON
     CACHE BOOL "Enable automatic dependency management for specific build targets.")
     # Possible values are "ON/OFF", "TRUE/FALSE", "true/false"...etc.
@@ -46,9 +49,6 @@ set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"
 
 set(BASEURL_HREF "https://hwhsu1231.github.io/cmake-docs-l10n-v7"
     CACHE STRING "Base URL of the deployed documentation.")
-
-set(COMPENDIUM "git-master"
-    CACHE STRING "Version of compendium that the current version merges translations from.")
 
 set(VERSION_OF_PYTHON "[default]"
     CACHE STRING "Python version to install.")
@@ -307,6 +307,7 @@ configure_file(
 message(STATUS "---------- Cache Variables ----------")
 message(STATUS "LANGUAGE                      = ${LANGUAGE}")
 message(STATUS "VERSION                       = ${VERSION}")
+message(STATUS "COMPENDIUM                    = ${COMPENDIUM}")
 message(STATUS "AUTO_DEPEND                   = ${AUTO_DEPEND}")
 message(STATUS "REMOVE_REDUNDANT              = ${REMOVE_REDUNDANT}")
 message(STATUS "MODE_OF_UPDATE                = ${MODE_OF_UPDATE}")
@@ -314,7 +315,6 @@ message(STATUS "MODE_OF_INSTALL               = ${MODE_OF_INSTALL}")
 message(STATUS "REMOTE_URL_OF_L10N            = ${REMOTE_URL_OF_L10N}")
 message(STATUS "REMOTE_URL_OF_DOCS            = ${REMOTE_URL_OF_DOCS}")
 message(STATUS "BASEURL_HREF                  = ${BASEURL_HREF}")
-message(STATUS "COMPENDIUM            = ${COMPENDIUM}")
 message(STATUS "VERSION_OF_PYTHON             = ${VERSION_OF_PYTHON} (CACHE: $CACHE{VERSION_OF_PYTHON})")
 message(STATUS "VERSION_OF_SPHINX             = ${VERSION_OF_SPHINX} (CACHE: $CACHE{VERSION_OF_SPHINX})")
 message(STATUS "SPHINX_BUILDER                = ${SPHINX_BUILDER}")
