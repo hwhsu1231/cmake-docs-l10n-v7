@@ -133,7 +133,6 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-language-list-from-languages-file@main
         with:
           language: 'all'
-          all-in-one: 'false'
       - name: Get the MATRIX from the JSON Lists
         id: gm
         uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-lists@main
