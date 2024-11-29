@@ -151,7 +151,7 @@ jobs:
           MATRIX=()
 
           # 遍歷所有版本
-          for index in "${!VERSION_ARRAY[@]}"; do
+          for INDEX in "${!VERSION_ARRAY[@]}"; do
             VERSION="${VERSION_ARRAY[${INDEX}]}"
             ALL_IN_ONE="${ALL_IN_ONE_ARRAY[${INDEX}]}"
             if [[ "${ALL_IN_ONE}" == "true" ]]; then
