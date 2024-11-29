@@ -138,6 +138,7 @@ jobs:
         id: gm
         shell: bash
         run: |
+          # Get the JSON list inputs.
           VERSION_LIST='${{ steps.gvlv.outputs.VERSION_LIST }}'
           ALL_IN_ONE_LIST='${{ steps.gaio.outputs.ALL_IN_ONE_LIST }}'
           LANGUAGE_LIST='${{ steps.glll.outputs.LANGUAGE_LIST }}'
