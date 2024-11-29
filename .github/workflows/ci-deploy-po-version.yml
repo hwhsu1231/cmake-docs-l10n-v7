@@ -138,17 +138,17 @@ jobs:
         id: gm
         shell: bash
         run: |
-          # Get the JSON list inputs.
+          # Get the JSON list from Inputs.
           VERSION_LIST='${{ steps.gvlv.outputs.VERSION_LIST }}'
           ALL_IN_ONE_LIST='${{ steps.gaio.outputs.ALL_IN_ONE_LIST }}'
           LANGUAGE_LIST='${{ steps.glll.outputs.LANGUAGE_LIST }}'
 
-          # Convert JSON list to Bash array.
+          # Convert the JSON list to the Bash array.
           VERSION_ARRAY=($(echo "$VERSION_LIST" | jq -r '.[]'))
           ALL_IN_ONE_ARRAY=($(echo "$ALL_IN_ONE_LIST" | jq -r '.[]'))
           LANGUAGE_ARRAY=($(echo "$LANGUAGE_LIST" | jq -r '.[]'))
 
-          # Initialize the matrix
+          # Initialize the Matrix
           MATRIX=()
 
           # 遍歷所有版本
