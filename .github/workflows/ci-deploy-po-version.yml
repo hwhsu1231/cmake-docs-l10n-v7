@@ -139,9 +139,9 @@ jobs:
         shell: bash
         run: |
           # 定義輸入數據
-          VERSION_LIST=${{ steps.gvlv.outputs.VERSION_LIST }}
-          ALL_IN_ONE_LIST=${{ steps.gaio.outputs.ALL_IN_ONE_LIST }}
-          LANGUAGE_LIST=${{ steps.glll.outputs.LANGUAGE_LIST }}
+          VERSION_LIST="${{ steps.gvlv.outputs.VERSION_LIST }}"
+          ALL_IN_ONE_LIST="${{ steps.gaio.outputs.ALL_IN_ONE_LIST }}"
+          LANGUAGE_LIST="${{ steps.glll.outputs.LANGUAGE_LIST }}"
 
           # 將 JSON 轉為 Bash 陣列
           VERSION_ARRAY=($(echo "$VERSION_LIST" | jq -r '.[]'))
