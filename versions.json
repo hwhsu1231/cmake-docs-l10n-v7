@@ -3,169 +3,169 @@
     {
       "VERSION" : "git-master",
       "VERSION_COMPENDIUM" : "",
-      "ALL_IN_ONE" : false
+      "ALLINONE" : false
     }
   ],
   "v3" : [
     {
       "VERSION" : "latest",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.30",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.29",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.28",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.27",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.26",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.25",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.24",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.23",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.22",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.21",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.20",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.19",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.18",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.17",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.16",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.15",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.14",
       "VERSION_COMPENDIUM" : "git-master",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.13",
       "VERSION_COMPENDIUM" : "",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.12",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.11",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.10",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.9",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.8",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.7",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.6",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.5",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.4",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.3",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.2",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.1",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     },
     {
       "VERSION" : "v3.0",
       "VERSION_COMPENDIUM" : "v3.13",
-      "ALL_IN_ONE" : true
+      "ALLINONE" : true
     }
   ]
 }
