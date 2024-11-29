@@ -134,6 +134,46 @@ jobs:
         with:
           language: 'all'
           all-in-one: 'false'
+      - name: Generate Job Matrix
+        id: generate
+        shell: bash
+        run: |
+          # 定義輸入數據
+          VERSION_LIST=${{ steps.gvlv.outputs.VERSION_LIST }}
+          ALL_IN_ONE_LIST=${{ steps.gaio.outputs.ALL_IN_ONE_LIST }}
+          LANGUAGE_LIST=${{ steps.glll.outputs.LANGUAGE_LIST }}
+
+          # 將 JSON 轉為 Bash 陣列
+          VERSION_ARRAY=($(echo "$VERSION_LIST" | jq -r '.[]'))
+          ALL_IN_ONE_ARRAY=($(echo "$ALL_IN_ONE_LIST" | jq -r '.[]'))
+          LANGUAGE_ARRAY=($(echo "$LANGUAGE_LIST" | jq -r '.[]'))
+
+          # 初始化矩陣列表
+          MATRIX=()
+
+          # 遍歷所有版本
+          for i in "${!VERSION_ARRAY[@]}"; do
+            VERSION="${VERSION_ARRAY[$i]}"
+            ALL_IN_ONE="${ALL_IN_ONE_ARRAY[$i]}"
+
+            if [[ "$ALL_IN_ONE" == "true" ]]; then
+              # 如果 ALL_IN_ONE 為 true，加入 (VERSION, all)
+              MATRIX+=("{\"VERSION\":\"$VERSION\",\"LANGUAGE\":\"all\"}")
+            else
+              # 如果 ALL_IN_ONE 為 false，加入每個語言的組合
+              for LANGUAGE in "${LANGUAGE_ARRAY[@]}"; do
+                MATRIX+=("{\"VERSION\":\"$VERSION\",\"LANGUAGE\":\"$LANGUAGE\"}")
+              done
+            fi
+          done
+
+          # 將矩陣轉為 JSON 格式
+          MATRIX_JSON=$(printf '%s\n' "${MATRIX[@]}" | jq -c -s '.')
+
+          # 輸出矩陣
+          echo "MATRIX=$MATRIX_JSON" >> $GITHUB_OUTPUT
+          echo "Generated Job Matrix:"
+          echo "$MATRIX_JSON"
 
   # caller:
   #   needs: [ 'precondition', 'get-matrix' ]
