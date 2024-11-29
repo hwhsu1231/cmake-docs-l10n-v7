@@ -164,11 +164,14 @@ jobs:
             fi
           done
 
+          echo "MATRIX:"
+          echo "${MATRIX[@]}"
+
           # Convert the matrix to JSON format.
           MATRIX_JSON=$(printf '%s\n' "${MATRIX[@]}" | jq -c -s '.')
 
           # Print the matrix.
-          echo "MATRIX=${MATRIX_JSON}" >> $GITHUB_OUTPUT
+          echo "MATRIX=${MATRIX_JSON}" >> ${GITHUB_OUTPUT}
           echo "Generated Job Matrix:"
           echo "${MATRIX_JSON}" | jq .
 
