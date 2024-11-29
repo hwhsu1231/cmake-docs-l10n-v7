@@ -47,7 +47,7 @@ set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"
 set(BASEURL_HREF "https://hwhsu1231.github.io/cmake-docs-l10n-v7"
     CACHE STRING "Base URL of the deployed documentation.")
 
-set(VERSION_COMPENDIUM "git-master"
+set(COMPENDIUM "git-master"
     CACHE STRING "Version of compendium that the current version merges translations from.")
 
 set(VERSION_OF_PYTHON "[default]"
@@ -314,7 +314,7 @@ message(STATUS "MODE_OF_INSTALL               = ${MODE_OF_INSTALL}")
 message(STATUS "REMOTE_URL_OF_L10N            = ${REMOTE_URL_OF_L10N}")
 message(STATUS "REMOTE_URL_OF_DOCS            = ${REMOTE_URL_OF_DOCS}")
 message(STATUS "BASEURL_HREF                  = ${BASEURL_HREF}")
-message(STATUS "VERSION_COMPENDIUM            = ${VERSION_COMPENDIUM}")
+message(STATUS "COMPENDIUM            = ${COMPENDIUM}")
 message(STATUS "VERSION_OF_PYTHON             = ${VERSION_OF_PYTHON} (CACHE: $CACHE{VERSION_OF_PYTHON})")
 message(STATUS "VERSION_OF_SPHINX             = ${VERSION_OF_SPHINX} (CACHE: $CACHE{VERSION_OF_SPHINX})")
 message(STATUS "SPHINX_BUILDER                = ${SPHINX_BUILDER}")
@@ -403,7 +403,7 @@ set(SCRIPT_MODE_CACHE
     -D REMOTE_URL_OF_L10N=${REMOTE_URL_OF_L10N}
     -D REMOTE_URL_OF_DOCS=${REMOTE_URL_OF_DOCS}
     -D BASEURL_HREF=${BASEURL_HREF}
-    -D VERSION_COMPENDIUM=${VERSION_COMPENDIUM}
+    -D COMPENDIUM=${COMPENDIUM}
     -D VERSION_OF_PYTHON=${VERSION_OF_PYTHON}
     -D VERSION_OF_SPHINX=${VERSION_OF_SPHINX}
     -D SPHINX_BUILDER=${SPHINX_BUILDER}

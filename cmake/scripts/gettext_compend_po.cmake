@@ -13,8 +13,8 @@ find_package(Gettext    MODULE REQUIRED COMPONENTS Msgcat Msgmerge)
 include(LogUtils)
 
 
-if (VERSION_COMPENDIUM STREQUAL VERSION OR
-    VERSION_COMPENDIUM STREQUAL "")
+if (COMPENDIUM STREQUAL VERSION OR
+    COMPENDIUM STREQUAL "")
     message(STATUS "No need to merge translations from compendium.")
     return()
 endif()
@@ -24,7 +24,7 @@ if(NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
-    set(SRC_VERSION         "${VERSION_COMPENDIUM}")
+    set(SRC_VERSION         "${COMPENDIUM}")
     set(SRC_LOCALE_PO_DIR   "${PROJ_L10N_DIR}/${SRC_VERSION}/locale/${_LANGUAGE}")
     set(SRC_COMPEND_PO_FILE "${PROJ_L10N_DIR}/${SRC_VERSION}/.compend/${_LANGUAGE}.po")
     set(DST_VERSION         "${VERSION}")
