@@ -149,31 +149,31 @@ jobs:
           LANGUAGE_ARRAY=($(echo "$LANGUAGE_LIST" | jq -r '.[]'))
 
           # Initialize the Matrix
-          MATRIX=()
+          MATRIX_ARRAY=()
 
-          # 遍歷所有版本
+          # Iterate through the indices of VERSION_ARRAY
           for INDEX in "${!VERSION_ARRAY[@]}"; do
             VERSION="${VERSION_ARRAY[${INDEX}]}"
             ALL_IN_ONE="${ALL_IN_ONE_ARRAY[${INDEX}]}"
             if [[ "${ALL_IN_ONE}" == "true" ]]; then
-              MATRIX+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"all\"}")
+              MATRIX_ARRAY+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"all\"}")
             else
               for LANGUAGE in "${LANGUAGE_ARRAY[@]}"; do
-                MATRIX+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"${LANGUAGE}\"}")
+                MATRIX_ARRAY+=("{\"VERSION\":\"${VERSION}\",\"LANGUAGE\":\"${LANGUAGE}\"}")
               done
             fi
           done
 
-          echo "MATRIX:"
-          echo "${MATRIX[@]}"
+          echo "MATRIX_ARRAY:"
+          echo "${MATRIX_ARRAY[@]}"
 
           # Convert the matrix to JSON format.
-          MATRIX_JSON=$(printf '%s\n' "${MATRIX[@]}" | jq -c -s '.')
+          MATRIX=$(printf '%s\n' "${MATRIX_ARRAY[@]}" | jq -c -s '.')
 
-          # Print the matrix.
-          echo "MATRIX=${MATRIX_JSON}" >> ${GITHUB_OUTPUT}
-          echo "Generated Job Matrix:"
-          echo "${MATRIX_JSON}" | jq .
+          # Output and Print the Matrix.
+          echo "MATRIX=${MATRIX}" >> ${GITHUB_OUTPUT}
+          echo "MATRIX:"
+          echo "${MATRIX}" | jq .
 
   # caller:
   #   needs: [ 'precondition', 'get-matrix' ]
