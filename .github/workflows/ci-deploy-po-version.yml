@@ -133,6 +133,7 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-language-list-from-languages-file@main
         with:
           language: 'all'
+          all-in-one: 'false'
 
   # caller:
   #   needs: [ 'precondition', 'get-matrix' ]
