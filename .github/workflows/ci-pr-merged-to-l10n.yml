@@ -19,8 +19,8 @@ on:
         options:
           - 'true'
           - 'false'
-      CROWDIN:
-        description: 'CROWDIN input'
+      TMSCLI:
+        description: 'TMSCLI input'
         required: true
         type: choice
         default: 'false'
@@ -45,5 +45,5 @@ jobs:
               "VERSION" : "${{ inputs.VERSION }}",
               "LANGUAGE" : "all",
               "GETTEXT" : "${{ inputs.GETTEXT }}",
-              "CROWDIN" : "${{ inputs.CROWDIN }}"
+              "TMSCLI" : "${{ inputs.TMSCLI }}"
             }
