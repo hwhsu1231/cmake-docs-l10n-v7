@@ -140,7 +140,6 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-language-list-from-languages-file@main
         with:
           language: ${{ inputs.LANGUAGE || github.event.client_payload.LANGUAGE }}
-          all-in-one: 'true'
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]

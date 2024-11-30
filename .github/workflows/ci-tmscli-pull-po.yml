@@ -147,7 +147,6 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-language-list-from-languages-file@main
         with:
           language: ${{ inputs.LANGUAGE || steps.gos.outputs.LANGUAGE }}
-          all-in-one: 'true'
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
