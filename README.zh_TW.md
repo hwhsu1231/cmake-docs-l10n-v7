@@ -463,12 +463,12 @@ Alternatively, you can sponsor the author through the following platforms and e-
       </tr>
       <!-- Row 2 -->
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
           <a href="https://www.patreon.com/hwhsu1231" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon" />
           </a>
         </td>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
           <a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian" />
           </a>
@@ -482,7 +482,7 @@ Alternatively, you can sponsor the author through the following platforms and e-
       </tr>
       <!-- Row 4 -->
       <tr>
-        <td colspan="2" style="text-align: center; vertical-align: middle; width: 100%;">
+        <td colspan="2" style="text-align: center; vertical-align: middle; width: 100%;" align="center">
           <a href="https://www.paypal.me/hwhsu1231" target="_blank">
             <img width="250" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-paypal.png" />
           </a>
@@ -499,12 +499,12 @@ Alternatively, you can sponsor the author through the following platforms and e-
       </tr>
       <!-- Row 6 -->
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
           <a href="https://qr.alipay.com/fkx18294jx1hzzilce3rfc8" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-alipay.png" />
           </a>
         </td>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">
+        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
           <a href="https://www.jkopay.com/transfer?j=Transfer:909173642" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-qrcode-jkopay.png" />
           </a>
