@@ -123,23 +123,15 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-outputs-from-schedule@main
         with:
           schedule: ${{ github.event.schedule }}
-      - name: Get the VERSION_LIST from versions.json
-        id: gvlv
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
+      - name: Get VERSION_LIST and ALLINONE_LIST from versions.json
+        id: gvav
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-allinone-list-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
           version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP || steps.gos.outputs.VERSION_GROUP }}
           version-filter: 'all'
-      - name: Get the ALLINONE_LIST from versions.json
-        id: gaio
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-all-in-one-list-from-versions-file@main
-        with:
-          type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
-          version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
-          version-group: ${{ inputs.VERSION_GROUP || steps.gos.outputs.VERSION_GROUP }}
-          version-filter: 'all'
-      - name: Get the LANGUAGE_LIST from languages.json
+      - name: Get LANGUAGE_LIST from languages.json
         id: glll
         uses: hwhsu1231/ci-sphinx/.github/actions/get-language-list-from-languages-file@main
         with:
@@ -149,17 +141,15 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-lists@main
         with:
           matrix-type: 'version-language'
-          version-list: ${{ steps.gvlv.outputs.VERSION_LIST }}
-          allinone-list: ${{ steps.gaio.outputs.ALLINONE_LIST }}
+          version-list: ${{ steps.gvav.outputs.VERSION_LIST }}
+          allinone-list: ${{ steps.gvav.outputs.ALLINONE_LIST }}
           language-list: ${{ steps.glll.outputs.LANGUAGE_LIST }}
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
-            ( needs.get-matrix.outputs.VERSION_NUM != '0' ) &&
-            ( needs.get-matrix.outputs.LANGUAGE_NUM != '0' ) }}
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false

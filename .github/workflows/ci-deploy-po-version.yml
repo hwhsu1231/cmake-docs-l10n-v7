@@ -110,9 +110,9 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-outputs-from-schedule@main
         with:
           schedule: ${{ github.event.schedule }}
-      - name: Get the Version List from versions.json
+      - name: Get VERSION_LIST and ALLINONE_LIST from versions.json
         id: gvlv
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-allinone-list-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
           version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
