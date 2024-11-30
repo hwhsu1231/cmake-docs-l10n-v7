@@ -160,12 +160,13 @@ jobs:
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-sphinx-update-pot.yml@main
     with:
       RUNNER: 'ubuntu-latest'
+      CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
       LANGUAGE: ${{ matrix.LANGUAGE }}
       MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
+      CREATE_PR: true
       CALLER_JOB: 'caller (${{ matrix.VERSION }}, ${{ matrix.LANGUAGE }})'
       ENABLE_JOB: true
-      CREATE_PR: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:

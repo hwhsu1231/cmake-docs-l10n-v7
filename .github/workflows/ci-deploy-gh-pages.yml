@@ -167,9 +167,9 @@ jobs:
       LANGUAGE: ${{ matrix.LANGUAGE }}
       MODE_OF_UPDATE: 'NEVER'
       BASEURL_HREF: 'https://hwhsu1231.github.io/cmake-docs-l10n-v7'
+      DEPLOY_HTML: true
       CALLER_JOB: 'caller (${{ matrix.VERSION }}, ${{ matrix.LANGUAGE }})'
       ENABLE_JOB: true
-      DEPLOY_HTML: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
@@ -188,7 +188,7 @@ jobs:
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ubuntu-latest
-    # https://stackoverflow.com/questions/75319573/failing-to-deploy-github-pages-because-of-write-permission
+    # See: https://stackoverflow.com/a/76883315
     permissions:
       id-token: write
       pages: write
