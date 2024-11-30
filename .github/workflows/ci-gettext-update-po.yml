@@ -162,9 +162,7 @@ jobs:
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     strategy:
-      matrix:
-        VERSION: ${{ fromJSON(needs.get-matrix.outputs.VERSION_LIST) }}
-        LANGUAGE: ${{ fromJSON(needs.get-matrix.outputs.LANGUAGE_LIST) }}
+      matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}-${{ matrix.LANGUAGE }}
