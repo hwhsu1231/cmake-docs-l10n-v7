@@ -111,10 +111,7 @@ jobs:
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ubuntu-latest
     outputs:
-      VERSION_NUM: ${{ steps.gvlv.outputs.VERSION_NUM }}
-      VERSION_LIST: ${{ steps.gvlv.outputs.VERSION_LIST }}
-      LANGUAGE_NUM: ${{ steps.glll.outputs.LANGUAGE_NUM }}
-      LANGUAGE_LIST: ${{ steps.glll.outputs.LANGUAGE_LIST }}
+      MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
     steps:
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
@@ -164,9 +161,7 @@ jobs:
             ( needs.get-matrix.outputs.VERSION_NUM != '0' ) &&
             ( needs.get-matrix.outputs.LANGUAGE_NUM != '0' ) }}
     strategy:
-      matrix:
-        VERSION: ${{ fromJSON(needs.get-matrix.outputs.VERSION_LIST) }}
-        LANGUAGE: ${{ fromJSON(needs.get-matrix.outputs.LANGUAGE_LIST) }}
+      matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}-${{ matrix.LANGUAGE }}
