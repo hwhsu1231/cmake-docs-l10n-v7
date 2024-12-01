@@ -33,11 +33,6 @@ on:
           - 'all'
           - 'dev'
           - 'v3'
-      LANGUAGE:
-        description: 'LANGUAGE input'
-        required: true
-        type: string
-        default: 'all'
       MODE_OF_UPDATE:
         description: 'MODE_OF_UPDATE input'
         required: true
@@ -155,7 +150,6 @@ jobs:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
-      LANGUAGE: 'all'
       MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
       CREATE_PR: true
       CALLER_JOB: 'caller (${{ matrix.VERSION }})'
