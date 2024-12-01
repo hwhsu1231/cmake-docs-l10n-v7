@@ -155,7 +155,7 @@ jobs:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
-      LANGUAGE: ${{ matrix.LANGUAGE }}
+      LANGUAGE: 'all'
       MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
       CREATE_PR: true
       CALLER_JOB: 'caller (${{ matrix.VERSION }})'
