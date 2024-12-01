@@ -64,7 +64,6 @@ jobs:
           echo "inputs.TYPE = ${{ inputs.TYPE }}"
           echo "inputs.VERSION = ${{ inputs.VERSION }}"
           echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
-          echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
           echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
           echo "[Variables]"
           echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
