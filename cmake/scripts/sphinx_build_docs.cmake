@@ -62,6 +62,19 @@ if(NOT LANGUAGE STREQUAL "all")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
+    if (CMAKE_HOST_LINUX)
+        set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
+        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+    elseif (CMAKE_HOST_APPLE)
+        set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
+        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+    elseif (CMAKE_HOST_WIN32)
+        set(ENV_PATH                "${PROJ_VENV_DIR}/bin;$ENV{PATH}")
+        string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
+        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+    else()
+        message(FATAL_ERROR "Invalid OS platform.")
+    endif()
     remove_cmake_message_indent()
     message("")
     execute_process(
@@ -78,7 +91,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}               # <configdir>, where conf.py locates.
                 ${PROJ_OUT_REPO_DOCS_SOURCE_DIR}                  # <sourcedir>, where index.rst locates.
                 ${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}   # <outputdir>, where .html generates.
-        ENCODING AUTO
+        WORKING_DIRECTORY ${PROJ_OUT_REPO_DOCS_DIR}
         ECHO_OUTPUT_VARIABLE
         ECHO_ERROR_VARIABLE
         RESULT_VARIABLE RES_VAR
