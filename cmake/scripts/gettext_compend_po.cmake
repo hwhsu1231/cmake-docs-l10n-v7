@@ -11,6 +11,7 @@ message(STATUS "-------------------- ${SCRIPT_NAME} --------------------")
 set(CMAKE_MODULE_PATH   "${PROJ_CMAKE_MODULES_DIR}")
 find_package(Gettext    MODULE REQUIRED COMPONENTS Msgcat Msgmerge)
 include(LogUtils)
+include(GettextUtils)
 
 
 if (COMPENDIUM STREQUAL VERSION OR
