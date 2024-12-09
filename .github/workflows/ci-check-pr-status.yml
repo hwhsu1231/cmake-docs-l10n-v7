@@ -97,6 +97,7 @@ jobs:
       LANGUAGE: 'all'
       MODE_OF_UPDATE: 'COMPARE'
       BASEURL_HREF: 'https://hwhsu1231.github.io/cmake-docs-l10n-v7'
+      SPHINX_BUILDER: 'html'
       CALLER_JOB: 'check-deploy-gh-pages'
       ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
       DEPLOY_HTML: false
