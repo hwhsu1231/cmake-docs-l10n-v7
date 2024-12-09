@@ -48,14 +48,11 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Pulling '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from TMS...")
     remove_cmake_message_indent()
     message("")
-    message("ENV{CROWDIN_PERSONAL_TOKEN} = $ENV{CROWDIN_PERSONAL_TOKEN}")
-    message("")
     execute_process(
         COMMAND ${Crowdin_EXECUTABLE} download
                 --language=${_LANGUAGE_CROWDIN}
                 --branch=${VERSION}
                 --config=${TMS_CONFIG_FILE_PATH}
-                --token=$ENV{CROWDIN_PERSONAL_TOKEN}
                 --export-only-approved
                 --no-progress
                 --verbose
