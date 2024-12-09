@@ -131,7 +131,7 @@ jobs:
         with:
           type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
-          version-group: ${{ inputs.VERSION_GROUP }}
+          version-group: ${{ inputs.VERSION_GROUP || 'all' }}
           version-filter: 'all'
       - name: Get LANGUAGE_LIST from languages.json
         id: glll
