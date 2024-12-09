@@ -4,7 +4,7 @@
 project_id : "8"
 api_token : CROWDIN_PERSONAL_TOKEN
 base_path : "."
-base_url : "https://org-test.crowdin.com"
+base_url : "https://org-test.api.crowdin.com"
 
 #
 # Choose file structure in Crowdin
