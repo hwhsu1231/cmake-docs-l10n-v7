@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2024-12-01 05:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -867,27 +867,28 @@ msgid ""
 "                   [WORKING_DIRECTORY dir]\n"
 "                   [COMMENT comment]\n"
 "                   [VERBATIM]\n"
-"                   [COMMAND_EXPAND_LISTS])"
+"                   [COMMAND_EXPAND_LISTS]\n"
+"                   [USES_TERMINAL])"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:604
+#: ../../../command/add_custom_command.rst:605
 msgid ""
 "This defines a new command that will be associated with building the "
 "specified ``<target>``.  The ``<target>`` must be defined in the current "
 "directory; targets defined in other directories may not be specified."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:608
+#: ../../../command/add_custom_command.rst:609
 msgid ""
 "When the command will happen is determined by which of the following is "
 "specified:"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:616
+#: ../../../command/add_custom_command.rst:617
 msgid "``PRE_BUILD``"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:612
+#: ../../../command/add_custom_command.rst:613
 msgid ""
 "This option has unique behavior for the :ref:`Visual Studio Generators`. "
 "When using one of the Visual Studio generators, the command will run before "
@@ -897,39 +898,39 @@ msgid ""
 "Visual Studio generator is being used."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:621
+#: ../../../command/add_custom_command.rst:622
 msgid "``PRE_LINK``"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:619
+#: ../../../command/add_custom_command.rst:620
 msgid ""
 "Run after sources have been compiled but before linking the binary or "
 "running the librarian or archiver tool of a static library. This is not "
 "defined for targets created by the :command:`add_custom_target` command."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:624
+#: ../../../command/add_custom_command.rst:625
 msgid "``POST_BUILD``"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:624
+#: ../../../command/add_custom_command.rst:625
 msgid "Run after all other rules within the target have been executed."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:626
+#: ../../../command/add_custom_command.rst:627
 msgid ""
 "Projects should always specify one of the above three keywords when using "
 "the ``TARGET`` form.  See policy :policy:`CMP0175`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:629
+#: ../../../command/add_custom_command.rst:630
 msgid ""
 "All other keywords shown in the signature above have the same meaning as "
 "they do for the :command:`add_custom_command(OUTPUT)` form of the command. "
 "At least one ``COMMAND`` must be given, see policy :policy:`CMP0175`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:634
+#: ../../../command/add_custom_command.rst:635
 msgid ""
 "Because generator expressions can be used in custom commands, it is possible "
 "to define ``COMMAND`` lines or whole custom commands which evaluate to empty "
@@ -938,29 +939,29 @@ msgid ""
 "configuration and no \"empty-string-command\" will be added."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:641
+#: ../../../command/add_custom_command.rst:642
 msgid "This allows adding individual build events for every configuration."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:643
+#: ../../../command/add_custom_command.rst:644
 msgid "Support for target-dependent generator expressions."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:646
+#: ../../../command/add_custom_command.rst:647
 msgid "The ``<target>`` may be an :ref:`ALIAS target <Alias Targets>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:650
+#: ../../../command/add_custom_command.rst:651
 msgid "Examples: Build Events"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:652
+#: ../../../command/add_custom_command.rst:653
 msgid ""
 "A ``POST_BUILD`` event may be used to post-process a binary after linking. "
 "For example, the code:"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:655
+#: ../../../command/add_custom_command.rst:656
 msgid ""
 "add_executable(myExe myExe.c)\n"
 "add_custom_command(\n"
@@ -970,19 +971,19 @@ msgid ""
 "  VERBATIM)"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:664
+#: ../../../command/add_custom_command.rst:665
 msgid ""
 "will run ``someHasher`` to produce a ``.hash`` file next to the executable "
 "after linking."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:667
+#: ../../../command/add_custom_command.rst:668
 msgid ""
 "One may use generator expressions to specify per-configuration byproducts. "
 "For example, the code:"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:671
+#: ../../../command/add_custom_command.rst:672
 msgid ""
 "add_library(myPlugin MODULE myPlugin.c)\n"
 "add_custom_command(\n"
@@ -994,28 +995,28 @@ msgid ""
 "add_executable(myExe myExe.c \"myPlugin-hash-$<CONFIG>.c\")"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:682
+#: ../../../command/add_custom_command.rst:683
 msgid ""
 "will run ``someHasher`` after linking ``myPlugin``, e.g. to produce a ``.c`` "
 "file containing code to check the hash of ``myPlugin`` that the ``myExe`` "
 "executable can use to verify it before loading."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:687
+#: ../../../command/add_custom_command.rst:688
 msgid "Ninja Multi-Config"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:691
+#: ../../../command/add_custom_command.rst:692
 msgid ""
 "``add_custom_command`` supports the :generator:`Ninja Multi-Config` "
 "generator's cross-config capabilities. See the generator documentation for "
 "more information."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:696
+#: ../../../command/add_custom_command.rst:697
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:698
+#: ../../../command/add_custom_command.rst:699
 msgid ":command:`add_custom_target`"
 msgstr ""

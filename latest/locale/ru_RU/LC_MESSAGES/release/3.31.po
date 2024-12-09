@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2024-12-01 05:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -513,4 +513,23 @@ msgid ""
 "The :command:`cmake_parse_arguments(PARSE_ARGV)` command now defines a "
 "variable for an empty string after a single-value keyword. See policy :"
 "policy:`CMP0174`."
+msgstr ""
+
+#: ../../../release/3.31.rst:262
+msgid "Updates"
+msgstr ""
+
+#: ../../../release/3.31.rst:264
+msgid "Changes made since CMake 3.31.0 include the following."
+msgstr ""
+
+#: ../../../release/3.31.rst:267
+msgid "3.31.1"
+msgstr ""
+
+#: ../../../release/3.31.rst:269
+msgid ""
+"This version made no changes to documented features or interfaces. Some "
+"implementation updates were made to support ecosystem changes and/or fix "
+"regressions."
 msgstr ""
