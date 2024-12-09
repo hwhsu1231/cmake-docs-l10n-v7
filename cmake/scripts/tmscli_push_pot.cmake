@@ -16,10 +16,13 @@ include(LogUtils)
 message(STATUS "Pushing sources for '${VERSION}' version to TMS...")
 remove_cmake_message_indent()
 message("")
+message("ENV{CROWDIN_PERSONAL_TOKEN} = $ENV{CROWDIN_PERSONAL_TOKEN}")
+message("")
 execute_process(
     COMMAND ${Crowdin_EXECUTABLE} upload sources
-            --branch ${VERSION}
-            --config ${TMS_CONFIG_FILE_PATH}
+            --branch=${VERSION}
+            --config=${TMS_CONFIG_FILE_PATH}
+            --token=$ENV{CROWDIN_PERSONAL_TOKEN}
             --no-progress
             --verbose
     WORKING_DIRECTORY ${PROJ_L10N_VERSION_DIR}
