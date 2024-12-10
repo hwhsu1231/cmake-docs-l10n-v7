@@ -52,55 +52,55 @@ Table of Contents
 </a></h2>
 
 <div align="center">
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/stargazers" title="GitHub Stars" target="_blank">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/network/members" title="GitHub Forks" target="_blank">
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/graphs/contributors" title="GitHub Contributors" target="_blank">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" title="GitHub Repo Size" target="_blank">
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=blue" />
-  </a><br />
-  <!-- Newline -->
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
-    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank">
-    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" />
-  </a><br />
-  <!-- Newline -->
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/stargazers" title="GitHub Stars" target="_blank">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/network/members" title="GitHub Forks" target="_blank">
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/graphs/contributors" title="GitHub Contributors" target="_blank">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" title="GitHub Repo Size" target="_blank">
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=blue" />
-  </a><br />
-  
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
-    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
-  </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank">
-    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" />
-  </a><br />
-  
-  <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
-    <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" />
-  </a>
-  <a href="https://www.contributor-covenant.org/" title="Contributor Covenant" target="_blank">
-    <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" />
-  </a>
-  <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" title="Crowdin Localized" target="_blank">
-    <img alt="Crowdin Localized" src="https://badges.crowdin.net/e/47e76415211d89e121457cb84e8147cb/localized.svg" />
-  </a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/stargazers" title="GitHub Stars" target="_blank">
+  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/network/members" title="GitHub Forks" target="_blank">
+  <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/graphs/contributors" title="GitHub Contributors" target="_blank">
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" title="GitHub Repo Size" target="_blank">
+  <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=blue" />
+</a><br />
+<!-- Newline -->
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
+  <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank">
+  <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" />
+</a><br />
+<!-- Newline -->
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/stargazers" title="GitHub Stars" target="_blank">
+  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/network/members" title="GitHub Forks" target="_blank">
+  <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/graphs/contributors" title="GitHub Contributors" target="_blank">
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" title="GitHub Repo Size" target="_blank">
+  <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=blue" />
+</a><br />
+
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
+  <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
+</a>
+<a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank">
+  <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" />
+</a><br />
+
+<a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
+  <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" />
+</a>
+<a href="https://www.contributor-covenant.org/" title="Contributor Covenant" target="_blank">
+  <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" />
+</a>
+<a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" title="Crowdin Localized" target="_blank">
+  <img alt="Crowdin Localized" src="https://badges.crowdin.net/e/47e76415211d89e121457cb84e8147cb/localized.svg" />
+</a>
 </div>
 
 <p></p>
