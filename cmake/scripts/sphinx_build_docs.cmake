@@ -64,12 +64,19 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
     if (CMAKE_HOST_LINUX)
         set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+        set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{LD_LIBRARY_PATH}")
+        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH}
+                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
     elseif (CMAKE_HOST_APPLE)
         set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+        set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{LD_LIBRARY_PATH}")
+        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH}
+                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
     elseif (CMAKE_HOST_WIN32)
-        set(ENV_PATH                "${PROJ_VENV_DIR}/bin;$ENV{PATH}")
+        set(ENV_PATH                "${PROJ_VENV_DIR}/Library/bin"
+                                    "${PROJ_VENV_DIR}/Scripts"
+                                    "${PROJ_VENV_DIR}"
+                                    "$ENV{PATH}")
         string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
         set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
     else()
