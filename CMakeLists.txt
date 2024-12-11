@@ -9,55 +9,55 @@ project(cmake-docs-l10n NONE)
 #]============================================================]
 
 set(LANGUAGE "all"
-    CACHE STRING "Language Code for the documentation.")
+    CACHE STRING "The language code for the documentation.")
     # Possible values are "all" and languages listed in languages.json.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language for details.
 
 set(VERSION "git-master"
-    CACHE STRING "Current version for the documentation.")
+    CACHE STRING "The current version for the documentation.")
     # Possible values are "git-master", "latest", and "vX.Y".
 
 set(COMPENDIUM "git-master"
-    CACHE STRING "Version of compendium that the current version merges translations from.")
+    CACHE STRING "The version of compendium from which the current version will merge translations.")
 
 set(AUTO_DEPEND ON
     CACHE BOOL "Enable automatic dependency management for specific build targets.")
     # Possible values are "ON/OFF", "TRUE/FALSE", "true/false"...etc.
 
 set(REMOVE_REDUNDANT ON
-    CACHE BOOL "Removing redundant files after building documentation.")
+    CACHE BOOL "Remove redundant files after building documentation.")
     # Possible values are "ON/OFF", "TRUE/FALSE", "true/false"...etc.
 
 set(MODE_OF_UPDATE "NEVER"
-    CACHE STRING "Mode of updating .pot/.po files.")
+    CACHE STRING "The mode of updating .pot/.po files.")
     # Possible values are "NEVER", "COMPARE", and "ALWAYS".
     # 1) NEVER:   Update .pot/.po files only if the current reference is missing.
     # 2) COMPARE: Update .pot/.po files only if the current reference is different than the latest one.
     # 3) ALWAYS:  Update .pot/.po files even if the current reference is the same as    the latest one.
 
 set(MODE_OF_INSTALL "COMPARE"
-    CACHE STRING "Mode of installing the requirements.")
+    CACHE STRING "The mode of installing the requirements.")
     # Possible values are "COMPARE" and "ALWAYS".
     # 1) COMPARE: Install the requirements only if the current reference is different than the previous one.
     # 2) ALWAYS:  Install the requirements even if the current reference is the same as    the previous one.
 
 set(REMOTE_URL_OF_L10N "https://github.com/hwhsu1231/cmake-docs-l10n-v7.git"
-    CACHE STRING "Remote URL of the 'l10n' repository.")
+    CACHE STRING "The remote URL of the 'l10n' repository.")
 
 set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"
-    CACHE STRING "Remote URL of the 'docs' repository.")
+    CACHE STRING "The remote URL of the 'docs' repository.")
 
 set(BASEURL_HREF "file://${CMAKE_SOURCE_DIR}/out/html"
-    CACHE STRING "Base URL of the deployed documentation.")
+    CACHE STRING "The base URL of the deployed documentation.")
 
 set(VERSION_OF_PYTHON "[default]"
-    CACHE STRING "Python version to install.")
+    CACHE STRING "The Python version to install.")
 
 set(VERSION_OF_SPHINX "[default]"
-    CACHE STRING "Sphinx version to install.")
+    CACHE STRING "The Sphinx version to install.")
 
 set(SPHINX_BUILDER "html"
-    CACHE STRING "Builder for the Sphinx documentation system.")
+    CACHE STRING "The builder for the Sphinx documentation system.")
     # Possible values are "html".
     # See https://www.sphinx-doc.org/en/master/usage/builders/index.html for details.
 
