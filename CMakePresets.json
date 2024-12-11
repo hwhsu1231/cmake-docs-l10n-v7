@@ -9,10 +9,7 @@
     {
       "name" : "default",
       "hidden" : true,
-      "binaryDir" : "${sourceDir}/out/build/${presetName}",
-      "cacheVariables" : {
-        "BASEURL_HREF" : "file://${sourceDir}/out/html"
-      }
+      "binaryDir" : "${sourceDir}/out/build/${presetName}"
     },
     {
       "name" : "all",
