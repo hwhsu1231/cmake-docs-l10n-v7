@@ -47,9 +47,6 @@ set(REMOTE_URL_OF_L10N "https://github.com/hwhsu1231/cmake-docs-l10n-v7.git"
 set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"
     CACHE STRING "The remote URL of the 'docs' repository.")
 
-set(BASEURL_HREF "file://${PROJECT_SOURCE_DIR}/out/html"
-    CACHE STRING "The base URL of the deployed documentation.")
-
 set(SPHINX_BUILDER "html"
     CACHE STRING "The builder for the Sphinx documentation system.")
     # Possible values are "html".
@@ -78,11 +75,14 @@ set(GETTEXT_ADDITIONAL_TARGETS "index,literal-block"
     # A comma-separated list
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_additional_targets for details.
 
+set(BASEURL_HREF "file://${PROJECT_SOURCE_DIR}/out/html"
+    CACHE STRING "The base URL of the deployed documentation.")
+
 set(VERSION_OF_PYTHON "[default]"
-    CACHE STRING "The Python version to install.")
+    CACHE STRING "The version of Python to install.")
 
 set(VERSION_OF_SPHINX "[default]"
-    CACHE STRING "The Sphinx version to install.")
+    CACHE STRING "The version of Sphinx to install.")
 
 #[============================================================[
   Directory-Related Variables.
@@ -314,12 +314,12 @@ message(STATUS "MODE_OF_UPDATE                = ${MODE_OF_UPDATE}")
 message(STATUS "MODE_OF_INSTALL               = ${MODE_OF_INSTALL}")
 message(STATUS "REMOTE_URL_OF_L10N            = ${REMOTE_URL_OF_L10N}")
 message(STATUS "REMOTE_URL_OF_DOCS            = ${REMOTE_URL_OF_DOCS}")
-message(STATUS "BASEURL_HREF                  = ${BASEURL_HREF}")
 message(STATUS "SPHINX_BUILDER                = ${SPHINX_BUILDER}")
 message(STATUS "SPHINX_JOB_NUMBER             = ${SPHINX_JOB_NUMBER}")
 message(STATUS "SPHINX_VERBOSE_LEVEL          = ${SPHINX_VERBOSE_LEVEL}")
 message(STATUS "GETTEXT_WRAP_WIDTH            = ${GETTEXT_WRAP_WIDTH}")
 message(STATUS "GETTEXT_ADDITIONAL_TARGETS    = ${GETTEXT_ADDITIONAL_TARGETS}")
+message(STATUS "BASEURL_HREF                  = ${BASEURL_HREF}")
 message(STATUS "VERSION_OF_PYTHON             = ${VERSION_OF_PYTHON} (CACHE: $CACHE{VERSION_OF_PYTHON})")
 message(STATUS "VERSION_OF_SPHINX             = ${VERSION_OF_SPHINX} (CACHE: $CACHE{VERSION_OF_SPHINX})")
 message(STATUS "---------- Directory-Related Variables ----------")
@@ -403,12 +403,12 @@ set(SCRIPT_MODE_CACHE
     -D MODE_OF_INSTALL=${MODE_OF_INSTALL}
     -D REMOTE_URL_OF_L10N=${REMOTE_URL_OF_L10N}
     -D REMOTE_URL_OF_DOCS=${REMOTE_URL_OF_DOCS}
-    -D BASEURL_HREF=${BASEURL_HREF}
     -D SPHINX_BUILDER=${SPHINX_BUILDER}
     -D SPHINX_JOB_NUMBER=${SPHINX_JOB_NUMBER}
     -D SPHINX_VERBOSE_LEVEL=${SPHINX_VERBOSE_LEVEL}
     -D GETTEXT_WRAP_WIDTH=${GETTEXT_WRAP_WIDTH}
     -D GETTEXT_ADDITIONAL_TARGETS=${GETTEXT_ADDITIONAL_TARGETS}
+    -D BASEURL_HREF=${BASEURL_HREF}
     -D VERSION_OF_PYTHON=${VERSION_OF_PYTHON}
     -D VERSION_OF_SPHINX=${VERSION_OF_SPHINX}
     # [Directory-Related Variables]
