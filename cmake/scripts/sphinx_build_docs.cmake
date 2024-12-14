@@ -139,7 +139,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     if(SPHINX_BUILDER MATCHES "^html$")
-        message(STATUS "Coying 'version_switch.js' file to the html output directory...")
+        message(STATUS "Configuring 'version_switch.js' file to the html output directory...")
         set(PROTOCOLS "file:///" "https://")
         foreach(PROTOCOL ${PROTOCOLS})
             string(REGEX REPLACE "${PROTOCOL}" "" BASEURL ${BASEURL_HREF})
