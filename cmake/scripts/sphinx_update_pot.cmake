@@ -126,21 +126,22 @@ endif()
 message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generate .pot files...")
 if (CMAKE_HOST_LINUX)
     set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-    set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
 elseif (CMAKE_HOST_APPLE)
     set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-    set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
 elseif (CMAKE_HOST_WIN32)
     set(ENV_PATH                "${PROJ_VENV_DIR}/bin;$ENV{PATH}")
     string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
-    set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
 else()
     message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
 endif()
 remove_cmake_message_indent()
 message("")
 execute_process(
-    COMMAND ${CMAKE_COMMAND} -E env ${ENV_KEY_VALUE_LIST}
+    COMMAND ${CMAKE_COMMAND} -E env
+            ${ENV_VARS_OF_SYSTEM}
             ${Sphinx_BUILD_EXECUTABLE}
             -b gettext
             -D version=${VERSION}                               # Specify 'Project-Id-Version' in .pot files.
