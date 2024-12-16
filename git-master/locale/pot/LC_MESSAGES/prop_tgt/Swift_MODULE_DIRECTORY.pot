@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-16 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,19 +37,12 @@ msgstr ""
 
 #: ../../../prop_tgt/Swift_MODULE_DIRECTORY.rst:16
 msgid ""
-"This property does not currently provide a way to express per-config module "
-"directories, so use with multi-config generators is problematic:"
+"The property value may use :manual:`generator expressions <cmake-generator-"
+"expressions(7)>`. Multi-configuration generators (:generator:`Ninja Multi-"
+"Config`) append a per-configuration subdirectory to the specified directory "
+"unless a generator expression is used."
 msgstr ""
 
-#: ../../../prop_tgt/Swift_MODULE_DIRECTORY.rst:19
-msgid ""
-"The :generator:`Xcode` generator does not implement the property at all."
-msgstr ""
-
-#: ../../../prop_tgt/Swift_MODULE_DIRECTORY.rst:21
-msgid ""
-"The :generator:`Ninja Multi-Config` generator implements this property, but "
-"module files generated for different build configurations have the same "
-"path, which can lead to subtle problems when building more than one "
-"configuration."
+#: ../../../prop_tgt/Swift_MODULE_DIRECTORY.rst:24
+msgid "The :generator:`Xcode` generator ignores this property."
 msgstr ""

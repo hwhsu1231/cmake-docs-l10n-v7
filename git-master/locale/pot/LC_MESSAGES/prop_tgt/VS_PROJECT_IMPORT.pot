@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-16 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,18 @@ msgstr ""
 
 #: ../../../prop_tgt/VS_PROJECT_IMPORT.rst:8
 msgid ""
-"Adds to a generated Visual Studio project one or more semicolon-delimited "
-"paths to .props files needed when building projects from some NuGet "
-"packages. For example, ``my_packages_path/MyPackage.1.0.0/build/MyPackage."
-"props``."
+"Adds to a generated Visual Studio project one or more paths to ``.props`` "
+"files needed when building projects from some NuGet packages."
+msgstr ""
+
+#: ../../../prop_tgt/VS_PROJECT_IMPORT.rst:11
+msgid "For example:"
+msgstr ""
+
+#: ../../../prop_tgt/VS_PROJECT_IMPORT.rst:13
+msgid ""
+"set_property(TARGET myTarget PROPERTY VS_PROJECT_IMPORT\n"
+"  \"my_packages_path/PackageA.1.0.0/build/PackageA.props\"\n"
+"  \"my_packages_path/PackageB.1.0.0/build/PackageB.props\"\n"
+")"
 msgstr ""
