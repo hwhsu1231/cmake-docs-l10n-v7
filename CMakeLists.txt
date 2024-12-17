@@ -248,19 +248,6 @@ elseif (VERSION MATCHES "^latest$")
     set(VERSION_OF_SPHINX     "6.2")
 elseif (VERSION MATCHES  "^v([0-9]+)\\.([0-9]+)$")
     string(SUBSTRING "${VERSION}" 1 -1 VERSION_NO_V)
-    # if (VERSION_NO_V VERSION_LESS "3.9")        # For v3.0~v3.8
-    #     set(VERSION_OF_PYTHON     "3.6")
-    #     set(VERSION_OF_SPHINX     "1.6")
-    # elseif (VERSION_NO_V VERSION_LESS "3.19")   # For v3.9~v3.18
-    #     set(VERSION_OF_PYTHON     "3.6")
-    #     set(VERSION_OF_SPHINX     "2.4")
-    # elseif (VERSION_NO_V VERSION_LESS "3.28")   # For v3.19~v3.27
-    #     set(VERSION_OF_PYTHON     "3.10")
-    #     set(VERSION_OF_SPHINX     "5.3")
-    # else()                                      # For v3.28~
-    #     set(VERSION_OF_PYTHON     "3.10")
-    #     set(VERSION_OF_SPHINX     "6.2")
-    # endif()
     if     (VERSION_NO_V VERSION_GREATER_EQUAL "3.28")  # For v3.28~
         set(VERSION_OF_PYTHON     "3.10")
         set(VERSION_OF_SPHINX     "6.2")
