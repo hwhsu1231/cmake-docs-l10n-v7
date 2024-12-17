@@ -143,10 +143,9 @@ remove_cmake_message_indent()
 message("")
 execute_process(
     COMMAND ${Conda_EXECUTABLE} install
-            python=${VERSION_OF_PYTHON}
-            sphinx=${VERSION_OF_SPHINX}
+            conda-forge::python=${VERSION_OF_PYTHON}
+            conda-forge::sphinx=${VERSION_OF_SPHINX}
             --prefix ${PROJ_VENV_DIR}
-            --channel conda-forge
             --yes
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
