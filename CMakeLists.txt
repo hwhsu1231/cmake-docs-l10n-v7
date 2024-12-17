@@ -63,10 +63,17 @@ set(GETTEXT_WRAP_WIDTH 79
     # See https://www.gnu.org/software/gettext/manual/html_node/msgcat-Invocation.html
     # and https://www.gnu.org/software/gettext/manual/html_node/msgmerge-Invocation.html for details.
 
+set(GETTEXT_COMPACT "False"
+    CACHE STRING "Gettext")
+    # Possible values are "True/False", "1/0",...etc.
+    # Passed to sphinx-build as -Dgettext_compact=${GETTEXT_COMPACT}.
+    # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_compact for details.
+
 set(GETTEXT_ADDITIONAL_TARGETS "index,literal-block"
     CACHE STRING "Gettext additional targets for building the Sphinx documentation system.")
     # Possible values are "index", "literal-block", "doctest-block", "raw", and "image".
     # A comma-separated list
+    # Passed to sphinx-build as -Dgettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_additional_targets for details.
 
 set(REMOTE_URL_OF_L10N "https://github.com/hwhsu1231/cmake-docs-l10n-v7.git"
@@ -316,6 +323,7 @@ message(STATUS "SPHINX_BUILDER                = ${SPHINX_BUILDER}")
 message(STATUS "SPHINX_JOB_NUMBER             = ${SPHINX_JOB_NUMBER}")
 message(STATUS "SPHINX_VERBOSE_LEVEL          = ${SPHINX_VERBOSE_LEVEL}")
 message(STATUS "GETTEXT_WRAP_WIDTH            = ${GETTEXT_WRAP_WIDTH}")
+message(STATUS "GETTEXT_COMPACT               = ${GETTEXT_COMPACT}")
 message(STATUS "GETTEXT_ADDITIONAL_TARGETS    = ${GETTEXT_ADDITIONAL_TARGETS}")
 message(STATUS "REMOTE_URL_OF_L10N            = ${REMOTE_URL_OF_L10N}")
 message(STATUS "REMOTE_URL_OF_DOCS            = ${REMOTE_URL_OF_DOCS}")
@@ -405,6 +413,7 @@ set(SCRIPT_MODE_CACHE
     -D SPHINX_JOB_NUMBER=${SPHINX_JOB_NUMBER}
     -D SPHINX_VERBOSE_LEVEL=${SPHINX_VERBOSE_LEVEL}
     -D GETTEXT_WRAP_WIDTH=${GETTEXT_WRAP_WIDTH}
+    -D GETTEXT_COMPACT=${GETTEXT_COMPACT}
     -D GETTEXT_ADDITIONAL_TARGETS=${GETTEXT_ADDITIONAL_TARGETS}
     -D REMOTE_URL_OF_L10N=${REMOTE_URL_OF_L10N}
     -D REMOTE_URL_OF_DOCS=${REMOTE_URL_OF_DOCS}

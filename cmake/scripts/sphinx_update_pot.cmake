@@ -145,7 +145,7 @@ execute_process(
             ${Sphinx_BUILD_EXECUTABLE}
             -b gettext
             -D version=${VERSION}                               # Specify 'Project-Id-Version' in .pot files.
-            -D gettext_compact=0
+            -D gettext_compact=${GETTEXT_COMPACT}
             -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
             -j ${SPHINX_JOB_NUMBER}
             ${SPHINX_VERBOSE_ARGS}

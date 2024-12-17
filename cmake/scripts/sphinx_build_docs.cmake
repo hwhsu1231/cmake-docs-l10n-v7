@@ -90,7 +90,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -b ${SPHINX_BUILDER}
                 -D locale_dirs=${LOCALE_TO_SOURCE_DIR}            # Relative to <sourcedir>.
                 -D language=${_LANGUAGE}
-                -D gettext_compact=0
+                -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
                 -A versionswitch=1
                 -j ${SPHINX_JOB_NUMBER}
