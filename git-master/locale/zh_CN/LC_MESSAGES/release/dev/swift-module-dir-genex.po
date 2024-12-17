@@ -17,17 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:2
-msgid "CMAKE_AIX_SHARED_LIBRARY_ARCHIVE"
+#: ../../../release/dev/swift-module-dir-genex.rst:2
+msgid "swift-module-dir-genex"
 msgstr ""
 
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:6
-msgid "On AIX, enable or disable creation of shared library archives."
-msgstr ""
-
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:8
+#: ../../../release/dev/swift-module-dir-genex.rst:4
 msgid ""
-"This variable initializes the :prop_tgt:`AIX_SHARED_LIBRARY_ARCHIVE` target "
-"property on non-imported ``SHARED`` library targets as they are created by :"
-"command:`add_library`.  See that target property for details."
+"The :prop_tgt:`Swift_MODULE_DIRECTORY` target property now supports :manual:"
+"`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""

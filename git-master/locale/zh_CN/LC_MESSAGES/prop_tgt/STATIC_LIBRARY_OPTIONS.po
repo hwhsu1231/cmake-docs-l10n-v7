@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-16 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,4 +70,37 @@ msgid ""
 "option string is parsed using the :command:`separate_arguments` "
 "``UNIX_COMMAND`` mode. For example, ``\"SHELL:-option A\" \"SHELL:-option "
 "B\"`` becomes ``-option A -option B``."
+msgstr ""
+
+#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:2
+msgid "Handling Archiver Driver Differences"
+msgstr ""
+
+#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:6
+msgid ""
+"To pass options to the archiver tool, each compiler driver has its own "
+"syntax. The ``ARCHIVER:`` prefix and ``,`` separator can be used to specify, "
+"in a portable way, options to pass to the archiver tool. ``ARCHIVER:`` is "
+"replaced by the appropriate driver option and ``,`` by the appropriate "
+"driver separator. The driver prefix and driver separator are given by the "
+"values of the :variable:`CMAKE_<LANG>_ARCHIVER_WRAPPER_FLAG` and :variable:"
+"`CMAKE_<LANG>_ARCHIVER_WRAPPER_FLAG_SEP` variables."
+msgstr ""
+
+#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:14
+msgid ""
+"The ``ARCHIVER:`` prefix can be specified as part of a ``SHELL:`` prefix "
+"expression."
+msgstr ""
+
+#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:17
+msgid ""
+"The ``ARCHIVER:`` prefix supports, as an alternative syntax, specification "
+"of arguments using the ``SHELL:`` prefix and space as separator."
+msgstr ""
+
+#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:22
+msgid ""
+"Specifying the ``SHELL:`` prefix anywhere other than at the beginning of the "
+"``ARCHIVER:`` prefix is not supported."
 msgstr ""
