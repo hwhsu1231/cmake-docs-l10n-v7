@@ -12,19 +12,17 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../release/dev/ExternalProject-install-jobserver.rst:2
-msgid "ExternalProject-install-jobserver"
+#: ../../../variable/CMAKE_DEBUGGER_WORKING_DIRECTORY.rst:2
+msgid "CMAKE_DEBUGGER_WORKING_DIRECTORY"
 msgstr ""
 
-#: ../../../release/dev/ExternalProject-install-jobserver.rst:4
+#: ../../../variable/CMAKE_DEBUGGER_WORKING_DIRECTORY.rst:6
 msgid ""
-"The :module:`ExternalProject` module's :command:`ExternalProject_Add` "
-"command gained an ``INSTALL_JOB_SERVER_AWARE`` option to enable integration "
-"of the GNU Make job server when using an explicit ``INSTALL_COMMAND`` with :"
-"ref:`Makefile Generators`."
+"This variable is used to initialize the :prop_tgt:"
+"`DEBUGGER_WORKING_DIRECTORY` property on each target as it is created.  See "
+"that target property for additional information."
 msgstr ""
