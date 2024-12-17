@@ -31,15 +31,15 @@ set(REMOVE_REDUNDANT ON
 set(MODE_OF_UPDATE "NEVER"
     CACHE STRING "The mode of updating .pot/.po files.")
     # Possible values are "NEVER", "COMPARE", and "ALWAYS".
-    # 1) NEVER:   Update .pot/.po files only if the current reference is missing.
-    # 2) COMPARE: Update .pot/.po files only if the current reference is different than the latest one.
-    # 3) ALWAYS:  Update .pot/.po files even if the current reference is the same as    the latest one.
+    # (1) NEVER:    Update .pot/.po files only if the current reference is missing.
+    # (2) COMPARE:  Update .pot/.po files only if the current reference is different than the latest one.
+    # (3) ALWAYS:   Update .pot/.po files even if the current reference is the same as    the latest one.
 
 set(MODE_OF_INSTALL "COMPARE"
     CACHE STRING "The mode of installing the requirements.")
     # Possible values are "COMPARE" and "ALWAYS".
-    # 1) COMPARE: Install the requirements only if the current reference is different than the previous one.
-    # 2) ALWAYS:  Install the requirements even if the current reference is the same as    the previous one.
+    # (1) COMPARE:  Install the requirements only if the current reference is different than the previous one.
+    # (2) ALWAYS:   Install the requirements even if the current reference is the same as    the previous one.
 
 set(SPHINX_BUILDER "html"
     CACHE STRING "The builder for the Sphinx documentation system.")
@@ -75,7 +75,7 @@ set(REMOTE_URL_OF_L10N "https://github.com/hwhsu1231/cmake-docs-l10n-v7.git"
 set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"
     CACHE STRING "The remote URL of the 'docs' repository.")
 
-set(BASEURL_HREF "file://${PROJECT_SOURCE_DIR}/out/html"
+set(BASEURL_HREF "file://${PROJECT_SOURCE_DIR}/out/$CACHE{SPHINX_BUILDER}"
     CACHE STRING "The base URL of the deployed documentation.")
 
 set(VERSION_OF_PYTHON "[default]"
