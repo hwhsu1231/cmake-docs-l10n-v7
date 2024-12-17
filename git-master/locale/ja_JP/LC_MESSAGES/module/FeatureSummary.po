@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-16 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -436,30 +436,74 @@ msgid "``<enabled>`` can be a list of conditions."
 msgstr ""
 
 #: ../../../../Modules/FeatureSummary.cmake:630
+msgid ""
+"Full :ref:`Condition Syntax` is now supported for ``<enabled>``. See policy :"
+"policy:`CMP0183`."
+msgstr ""
+
+#: ../../../../Modules/FeatureSummary.cmake:634
 msgid "Example for setting the info for a feature:"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:632
+#: ../../../../Modules/FeatureSummary.cmake:636
 msgid ""
 "option(WITH_FOO \"Help for foo\" ON)\n"
-"add_feature_info(Foo WITH_FOO \"The Foo feature provides very cool stuff.\")"
+"add_feature_info(Foo WITH_FOO \"this feature provides very cool stuff\")"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:661
+#: ../../../../Modules/FeatureSummary.cmake:641
+msgid "Example for setting feature info based on a list of conditions:"
+msgstr ""
+
+#: ../../../../Modules/FeatureSummary.cmake:643
+msgid ""
+"option(WITH_FOO \"Help for foo\" ON)\n"
+"option(WITH_BAR \"Help for bar\" OFF)\n"
+"add_feature_info(\n"
+"  FooBar\n"
+"  \"WITH_FOO;NOT WITH_BAR\"\n"
+"  \"this feature is enabled when WITH_FOO is ON and WITH_BAR turned OFF\"\n"
+")"
+msgstr ""
+
+#: ../../../../Modules/FeatureSummary.cmake:653
+msgid "Example for setting feature info depending on a full condition syntax:"
+msgstr ""
+
+#: ../../../../Modules/FeatureSummary.cmake:655
+msgid ""
+"Unlike semicolon-separated list of conditions, this enables using entire "
+"condition syntax as being the ``if`` clause argument, such as grouping "
+"conditions with parens and similar."
+msgstr ""
+
+#: ../../../../Modules/FeatureSummary.cmake:659
+msgid ""
+"option(WITH_FOO \"Help for foo\" ON)\n"
+"option(WITH_BAR \"Help for bar\" ON)\n"
+"option(WITH_BAZ \"Help for baz\" OFF)\n"
+"add_feature_info(\n"
+"  FooBarBaz\n"
+"  \"WITH_FOO AND (WITH_BAR OR WITH_BAZ)\"\n"
+"  \"this feature is enabled when the entire condition is true\"\n"
+")"
+msgstr ""
+
+#: ../../../../Modules/FeatureSummary.cmake:714
 msgid "Legacy Macros"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:663
+#: ../../../../Modules/FeatureSummary.cmake:716
 msgid ""
 "The following macros are provided for compatibility with previous CMake "
 "versions:"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:670
+#: ../../../../Modules/FeatureSummary.cmake:723
 msgid "set_package_info(<name> <description> [ <url> [<purpose>] ])"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:672
+#: ../../../../Modules/FeatureSummary.cmake:725
 msgid ""
 "Use this macro to set up information about the named package, which can then "
 "be displayed via ``feature_summary()``.  This can be done either directly in "
@@ -468,37 +512,37 @@ msgid ""
 "added automatically by the ``find_package()`` command."
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:702
+#: ../../../../Modules/FeatureSummary.cmake:755
 msgid "set_feature_info(<name> <description> [<url>])"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:704
+#: ../../../../Modules/FeatureSummary.cmake:757
 msgid "Does the same as::"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:706
+#: ../../../../Modules/FeatureSummary.cmake:759
 msgid "set_package_info(<name> <description> <url>)"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:718
+#: ../../../../Modules/FeatureSummary.cmake:771
 msgid "print_enabled_features()"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:720
-#: ../../../../Modules/FeatureSummary.cmake:739
+#: ../../../../Modules/FeatureSummary.cmake:773
+#: ../../../../Modules/FeatureSummary.cmake:792
 msgid "Does the same as"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:722
+#: ../../../../Modules/FeatureSummary.cmake:775
 msgid ""
 "feature_summary(WHAT ENABLED_FEATURES DESCRIPTION \"Enabled features:\")"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:737
+#: ../../../../Modules/FeatureSummary.cmake:790
 msgid "print_disabled_features()"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:741
+#: ../../../../Modules/FeatureSummary.cmake:794
 msgid ""
 "feature_summary(WHAT DISABLED_FEATURES DESCRIPTION \"Disabled features:\")"
 msgstr ""
