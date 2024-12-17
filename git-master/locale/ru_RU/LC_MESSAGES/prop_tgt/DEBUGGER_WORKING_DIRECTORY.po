@@ -17,17 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:2
-msgid "CMAKE_AIX_SHARED_LIBRARY_ARCHIVE"
+#: ../../../prop_tgt/DEBUGGER_WORKING_DIRECTORY.rst:2
+msgid "DEBUGGER_WORKING_DIRECTORY"
 msgstr ""
 
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:6
-msgid "On AIX, enable or disable creation of shared library archives."
-msgstr ""
-
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:8
+#: ../../../prop_tgt/DEBUGGER_WORKING_DIRECTORY.rst:6
 msgid ""
-"This variable initializes the :prop_tgt:`AIX_SHARED_LIBRARY_ARCHIVE` target "
-"property on non-imported ``SHARED`` library targets as they are created by :"
-"command:`add_library`.  See that target property for details."
+"Sets the local debugger working directory for C++ targets. The property "
+"value may use :manual:`generator expressions <cmake-generator-"
+"expressions(7)>`. This property is initialized by the value of the variable :"
+"variable:`CMAKE_DEBUGGER_WORKING_DIRECTORY` if it is set when a target is "
+"created."
 msgstr ""

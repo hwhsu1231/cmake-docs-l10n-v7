@@ -17,17 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:2
-msgid "CMAKE_AIX_SHARED_LIBRARY_ARCHIVE"
+#: ../../../release/dev/FindGDAL-deprecate.rst:2
+msgid "FindGDAL-deprecate"
 msgstr ""
 
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:6
-msgid "On AIX, enable or disable creation of shared library archives."
-msgstr ""
-
-#: ../../../variable/CMAKE_AIX_SHARED_LIBRARY_ARCHIVE.rst:8
+#: ../../../release/dev/FindGDAL-deprecate.rst:4
 msgid ""
-"This variable initializes the :prop_tgt:`AIX_SHARED_LIBRARY_ARCHIVE` target "
-"property on non-imported ``SHARED`` library targets as they are created by :"
-"command:`add_library`.  See that target property for details."
+"The :module:`FindGDAL` module is now deprecated in favor of upstream GDAL's "
+"official CMake package configuration file. Port projects to the latter by "
+"calling ``find_package(GDAL CONFIG)``.  For further details, see `GDAL's "
+"documentation on CMake integration <https://gdal.org/en/latest/development/"
+"cmake.html>`_."
 msgstr ""

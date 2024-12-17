@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-16 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -852,9 +852,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:434
 msgid ""
-"If the component ``Development`` is requested, it is **strongly** "
-"recommended to also include the component ``Interpreter`` to get expected "
-"result."
+"If the component ``Development`` is requested (or one of its sub-components) "
+"and is not found or the wrong artifacts are returned, including also the "
+"component ``Interpreter`` may be helpful."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:471
