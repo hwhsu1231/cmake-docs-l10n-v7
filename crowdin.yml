@@ -14,7 +14,7 @@ preserve_hierarchy : true
 #
 # Use YAML anchor to implement the global languages mapping
 #
-languages_mapping: &global_languages_mapping
+languages_mapping: &languages_mapping
   locale:
     ja:     ja_JP
     ru:     ru_RU
@@ -27,4 +27,4 @@ languages_mapping: &global_languages_mapping
 files:
   - source: /README.md
     translation: /README.%locale%.md
-    languages_mapping: *global_languages_mapping
+    languages_mapping: *languages_mapping
