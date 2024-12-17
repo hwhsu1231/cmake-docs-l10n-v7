@@ -112,7 +112,6 @@ message("")
 execute_process(
     COMMAND ${Conda_EXECUTABLE} create
             --prefix ${PROJ_VENV_DIR}
-            --channel conda-forge
             --yes
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
@@ -145,6 +144,7 @@ execute_process(
     COMMAND ${Conda_EXECUTABLE} install
             conda-forge::python=${VERSION_OF_PYTHON}
             conda-forge::sphinx=${VERSION_OF_SPHINX}
+            --channel conda-forge
             --prefix ${PROJ_VENV_DIR}
             --yes
     ECHO_OUTPUT_VARIABLE
