@@ -124,14 +124,16 @@ endif()
 
 
 message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generate .pot files...")
-if (CMAKE_HOST_LINUX)
+if (CMAKE_HOST_UNIX)
     set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
-elseif (CMAKE_HOST_APPLE)
-    set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
+    set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
 elseif (CMAKE_HOST_WIN32)
-    set(ENV_PATH                "${PROJ_VENV_DIR}/bin;$ENV{PATH}")
+    set(ENV_PATH                "${PROJ_VENV_DIR}/Library/bin"
+                                "${PROJ_VENV_DIR}/Scripts"
+                                "${PROJ_VENV_DIR}"
+                                "$ENV{PATH}")
     string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
 else()

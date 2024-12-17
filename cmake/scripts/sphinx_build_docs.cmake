@@ -62,15 +62,10 @@ if(NOT LANGUAGE STREQUAL "all")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
-    if (CMAKE_HOST_LINUX)
+    if (CMAKE_HOST_UNIX)
         set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-        set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{LD_LIBRARY_PATH}")
-        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH}
-                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
-    elseif (CMAKE_HOST_APPLE)
-        set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-        set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{LD_LIBRARY_PATH}")
-        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH}
+        set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
                                     LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
     elseif (CMAKE_HOST_WIN32)
         set(ENV_PATH                "${PROJ_VENV_DIR}/Library/bin"
@@ -78,14 +73,15 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                                     "${PROJ_VENV_DIR}"
                                     "$ENV{PATH}")
         string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
-        set(ENV_KEY_VALUE_LIST      PATH=${ENV_PATH})
+        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
     else()
         message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
     endif()
     remove_cmake_message_indent()
     message("")
     execute_process(
-        COMMAND ${CMAKE_COMMAND} -E env ${ENV_KEY_VALUE_LIST}
+        COMMAND ${CMAKE_COMMAND} -E env
+                ${ENV_VARS_OF_SYSTEM}
                 ${Sphinx_BUILD_EXECUTABLE}
                 -b ${SPHINX_BUILDER}
                 -D locale_dirs=${LOCALE_TO_SOURCE_DIR}            # Relative to <sourcedir>.
