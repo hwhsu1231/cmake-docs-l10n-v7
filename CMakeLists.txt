@@ -15,10 +15,11 @@ set(LANGUAGE "all"
 
 set(VERSION "git-master"
     CACHE STRING "The current version for the documentation.")
-    # Possible values are "git-master", "latest", and "vX.Y".
+    # Possible values are versions listed in versions.json.
 
 set(COMPENDIUM "git-master"
     CACHE STRING "The version of compendium from which the current version will merge translations.")
+    # Possible values are NULL and versions listed in versions.json.
 
 set(AUTO_DEPEND ON
     CACHE BOOL "Enable automatic dependency management for specific build targets.")
@@ -63,9 +64,9 @@ set(GETTEXT_WRAP_WIDTH 79
     # See https://www.gnu.org/software/gettext/manual/html_node/msgcat-Invocation.html
     # and https://www.gnu.org/software/gettext/manual/html_node/msgmerge-Invocation.html for details.
 
-set(GETTEXT_COMPACT "False"
+set(GETTEXT_COMPACT "0"
     CACHE STRING "Gettext")
-    # Possible values are "True/False", "1/0",...etc.
+    # Possible values are "1/0",...etc.
     # Passed to sphinx-build as -Dgettext_compact=${GETTEXT_COMPACT}.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_compact for details.
 
@@ -240,13 +241,13 @@ endif()
   Set VERSION_OF_XXX to $CACHE{VERSION_OF_XX} if it's not "[default]".
 #]============================================================]
 
-if (VERSION MATCHES "^git-master$")
+if     (VERSION MATCHES       "^git-master$")
     set(VERSION_OF_PYTHON     "3.10")
     set(VERSION_OF_SPHINX     "6.2")
-elseif (VERSION MATCHES "^latest$")
+elseif (VERSION MATCHES       "^latest$")
     set(VERSION_OF_PYTHON     "3.10")
     set(VERSION_OF_SPHINX     "6.2")
-elseif (VERSION MATCHES  "^v([0-9]+)\\.([0-9]+)$")
+elseif (VERSION MATCHES       "^v([0-9]+)\\.([0-9]+)$")
     string(SUBSTRING "${VERSION}" 1 -1 VERSION_NO_V)
     if     (VERSION_NO_V VERSION_GREATER_EQUAL "3.28")  # For v3.28~
         set(VERSION_OF_PYTHON     "3.10")

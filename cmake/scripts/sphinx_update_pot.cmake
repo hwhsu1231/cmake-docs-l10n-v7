@@ -65,18 +65,35 @@ restore_cmake_message_indent()
 
 
 message(STATUS "Generating the configuration file 'conf.py' by configuring project(CMakeHelp)...")
+if (CMAKE_HOST_UNIX)
+    set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
+    set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
+elseif (CMAKE_HOST_WIN32)
+    set(ENV_PATH                "${PROJ_VENV_DIR}/Library/bin"
+                                "${PROJ_VENV_DIR}/Scripts"
+                                "${PROJ_VENV_DIR}"
+                                "$ENV{PATH}")
+    string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
+else()
+    message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
+endif()
 remove_cmake_message_indent()
 message("")
 execute_process(
-    COMMAND ${CMAKE_COMMAND}
+    COMMAND ${CMAKE_COMMAND} -E env
+            ${ENV_VARS_OF_SYSTEM}
+            ${CMAKE_COMMAND}
             -S ${PROJ_OUT_REPO_SPHINX_DIR}
             -B ${PROJ_OUT_REPO_SPHINX_DIR}/build
             # Enable SPHINX_HTML option to configure conf.py.in into conf.py.
             -D SPHINX_HTML=ON
-            # Since find_program(SPHINX_EXECUTABLE) of CMake repo doesn't support to
-            # find sphinx-build inside the virtual environment currently, I have to
-            # specify it in advanced.
-            -D SPHINX_EXECUTABLE=${Sphinx_BUILD_EXECUTABLE}
+            # # Since find_program(SPHINX_EXECUTABLE) of CMake repo doesn't support to
+            # # find sphinx-build inside the virtual environment currently, I have to
+            # # specify it in advanced.
+            # -D SPHINX_EXECUTABLE=${Sphinx_BUILD_EXECUTABLE}
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
     COMMAND_ERROR_IS_FATAL ANY)
