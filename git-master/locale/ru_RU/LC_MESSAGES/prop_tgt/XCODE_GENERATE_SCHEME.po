@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-20 06:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,5 +148,9 @@ msgid ":prop_tgt:`XCODE_SCHEME_LAUNCH_MODE`"
 msgstr ""
 
 #: ../../../prop_tgt/XCODE_GENERATE_SCHEME.rst:48
+msgid ":prop_tgt:`XCODE_SCHEME_LLDB_INIT_FILE`"
+msgstr ""
+
+#: ../../../prop_tgt/XCODE_GENERATE_SCHEME.rst:49
 msgid ":prop_tgt:`XCODE_SCHEME_WORKING_DIRECTORY`"
 msgstr ""
