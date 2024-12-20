@@ -131,7 +131,8 @@ jobs:
                 github.event.action == 'pr-merged-to-l10n' &&
                 github.event.client_payload.TMSCLI == 'true' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
+            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false

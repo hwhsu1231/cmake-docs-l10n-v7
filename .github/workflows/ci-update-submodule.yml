@@ -78,7 +78,8 @@ jobs:
   caller:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) &&
+            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false
