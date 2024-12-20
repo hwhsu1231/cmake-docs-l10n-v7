@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-20 06:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,34 +64,35 @@ msgstr ""
 #: ../../../command/try_run.rst:42
 msgid ""
 "Try building an executable from one or more source files.  Build success "
-"returns ``TRUE`` and build failure returns ``FALSE`` in "
-"``<compileResultVar>``. If the build succeeds, this runs the executable and "
-"stores the exit code in ``<runResultVar>``.  If the executable was built, "
-"but failed to run, then ``<runResultVar>`` will be set to "
-"``FAILED_TO_RUN``.  See command :command:`try_compile` for documentation of "
-"options common to both commands, and for information on how the test project "
-"is constructed to build the source file."
+"returns boolean ``true`` and build failure returns boolean ``false`` in "
+"``<compileResultVar>`` (cached unless ``NO_CACHE`` is specified). If the "
+"build succeeds, this runs the executable and stores the exit code in "
+"``<runResultVar>`` (cached unless ``NO_CACHE`` is specified). If the "
+"executable was built, but failed to run, then ``<runResultVar>`` will be set "
+"to ``FAILED_TO_RUN``.  See command :command:`try_compile` for documentation "
+"of options common to both commands, and for information on how the test "
+"project is constructed to build the source file."
 msgstr ""
 
-#: ../../../command/try_run.rst:51
+#: ../../../command/try_run.rst:52
 msgid ""
 "One or more source files must be provided. Additionally, one of ``SOURCES`` "
 "and/or ``SOURCE_FROM_*`` must precede other keywords."
 msgstr ""
 
-#: ../../../command/try_run.rst:54
+#: ../../../command/try_run.rst:55
 msgid ""
 "This command records a :ref:`configure-log try_run event <try_run configure-"
 "log event>` if the ``NO_LOG`` option is not specified."
 msgstr ""
 
-#: ../../../command/try_run.rst:59
+#: ../../../command/try_run.rst:60
 msgid ""
 "This command supports an alternate signature for CMake older than 3.25. The "
 "signature above is recommended for clarity."
 msgstr ""
 
-#: ../../../command/try_run.rst:62
+#: ../../../command/try_run.rst:63
 msgid ""
 "try_run(<runResultVar> <compileResultVar>\n"
 "        <bindir> <srcfile|SOURCES srcfile...>\n"
@@ -112,27 +113,27 @@ msgid ""
 "        )"
 msgstr ""
 
-#: ../../../command/try_run.rst:85
+#: ../../../command/try_run.rst:86
 msgid "Options"
 msgstr ""
 
-#: ../../../command/try_run.rst:87
+#: ../../../command/try_run.rst:88
 msgid "The options specific to ``try_run`` are:"
 msgstr ""
 
-#: ../../../command/try_run.rst:90
+#: ../../../command/try_run.rst:91
 msgid "``COMPILE_OUTPUT_VARIABLE <var>``"
 msgstr ""
 
-#: ../../../command/try_run.rst:90
+#: ../../../command/try_run.rst:91
 msgid "Report the compile step build output in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:96
+#: ../../../command/try_run.rst:97
 msgid "``OUTPUT_VARIABLE <var>``"
 msgstr ""
 
-#: ../../../command/try_run.rst:93
+#: ../../../command/try_run.rst:94
 msgid ""
 "Report the compile build output and the output from running the executable "
 "in the given variable.  This option exists for legacy reasons and is only "
@@ -140,81 +141,81 @@ msgid ""
 "``COMPILE_OUTPUT_VARIABLE`` and ``RUN_OUTPUT_VARIABLE`` instead."
 msgstr ""
 
-#: ../../../command/try_run.rst:99
+#: ../../../command/try_run.rst:100
 msgid "``RUN_OUTPUT_VARIABLE <var>``"
 msgstr ""
 
-#: ../../../command/try_run.rst:99
+#: ../../../command/try_run.rst:100
 msgid "Report the output from running the executable in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:104
+#: ../../../command/try_run.rst:105
 msgid "``RUN_OUTPUT_STDOUT_VARIABLE <var>``"
 msgstr ""
 
-#: ../../../command/try_run.rst:104
+#: ../../../command/try_run.rst:105
 msgid ""
 "Report the output of stdout from running the executable in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:109
+#: ../../../command/try_run.rst:110
 msgid "``RUN_OUTPUT_STDERR_VARIABLE <var>``"
 msgstr ""
 
-#: ../../../command/try_run.rst:109
+#: ../../../command/try_run.rst:110
 msgid ""
 "Report the output of stderr from running the executable in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:116
+#: ../../../command/try_run.rst:117
 msgid "``WORKING_DIRECTORY <var>``"
 msgstr ""
 
-#: ../../../command/try_run.rst:114
+#: ../../../command/try_run.rst:115
 msgid ""
 "Run the executable in the given directory. If no ``WORKING_DIRECTORY`` is "
 "specified, the executable will run in ``<bindir>`` or the current build "
 "directory."
 msgstr ""
 
-#: ../../../command/try_run.rst:119
+#: ../../../command/try_run.rst:120
 msgid "``ARGS <args>...``"
 msgstr ""
 
-#: ../../../command/try_run.rst:119
+#: ../../../command/try_run.rst:120
 msgid "Additional arguments to pass to the executable when running it."
 msgstr ""
 
-#: ../../../command/try_run.rst:122
+#: ../../../command/try_run.rst:123
 msgid "Other Behavior Settings"
 msgstr ""
 
-#: ../../../command/try_run.rst:124
+#: ../../../command/try_run.rst:125
 msgid ""
 "Set variable :variable:`CMAKE_TRY_COMPILE_CONFIGURATION` to choose a build "
 "configuration:"
 msgstr ""
 
-#: ../../../command/try_run.rst:127
+#: ../../../command/try_run.rst:128
 msgid "For multi-config generators, this selects which configuration to build."
 msgstr ""
 
-#: ../../../command/try_run.rst:129
+#: ../../../command/try_run.rst:130
 msgid ""
 "For single-config generators, this sets :variable:`CMAKE_BUILD_TYPE` in the "
 "test project."
 msgstr ""
 
-#: ../../../command/try_run.rst:133
+#: ../../../command/try_run.rst:134
 msgid "Behavior when Cross Compiling"
 msgstr ""
 
-#: ../../../command/try_run.rst:135
+#: ../../../command/try_run.rst:136
 msgid ""
 "Use ``CMAKE_CROSSCOMPILING_EMULATOR`` when running cross-compiled binaries."
 msgstr ""
 
-#: ../../../command/try_run.rst:138
+#: ../../../command/try_run.rst:139
 msgid ""
 "When cross compiling, the executable compiled in the first step usually "
 "cannot be run on the build host.  The ``try_run`` command checks the :"
@@ -227,26 +228,26 @@ msgid ""
 "it had been run on its actual target platform. These cache entries are:"
 msgstr ""
 
-#: ../../../command/try_run.rst:150
+#: ../../../command/try_run.rst:151
 msgid "``<runResultVar>``"
 msgstr ""
 
-#: ../../../command/try_run.rst:150
+#: ../../../command/try_run.rst:151
 msgid "Exit code if the executable were to be run on the target platform."
 msgstr ""
 
-#: ../../../command/try_run.rst:155
+#: ../../../command/try_run.rst:156
 msgid "``<runResultVar>__TRYRUN_OUTPUT``"
 msgstr ""
 
-#: ../../../command/try_run.rst:153
+#: ../../../command/try_run.rst:154
 msgid ""
 "Output from stdout and stderr if the executable were to be run on the target "
 "platform.  This is created only if the ``RUN_OUTPUT_VARIABLE`` or "
 "``OUTPUT_VARIABLE`` option was used."
 msgstr ""
 
-#: ../../../command/try_run.rst:157
+#: ../../../command/try_run.rst:158
 msgid ""
 "In order to make cross compiling your project easier, use ``try_run`` only "
 "if really required.  If you use ``try_run``, use the "

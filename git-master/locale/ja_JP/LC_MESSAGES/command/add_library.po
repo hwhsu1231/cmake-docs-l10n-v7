@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-20 06:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,55 +43,59 @@ msgstr ""
 msgid "The optional ``<type>`` specifies the type of library to be created:"
 msgstr ""
 
-#: ../../../command/add_library.rst:23
+#: ../../../command/add_library.rst:24
 msgid "``STATIC``"
 msgstr ""
 
 #: ../../../command/add_library.rst:23
-msgid "An archive of object files for use when linking other targets."
+msgid ""
+"A :ref:`Static Library <Static Libraries>`: an archive of object files for "
+"use when linking other targets."
 msgstr ""
 
-#: ../../../command/add_library.rst:27
+#: ../../../command/add_library.rst:29
 msgid "``SHARED``"
 msgstr ""
 
-#: ../../../command/add_library.rst:26
+#: ../../../command/add_library.rst:27
 msgid ""
-"A dynamic library that may be linked by other targets and loaded at runtime."
+"A :ref:`Shared Library <Shared Libraries>`: a dynamic library that may be "
+"linked by other targets and loaded at runtime."
 msgstr ""
 
-#: ../../../command/add_library.rst:31
+#: ../../../command/add_library.rst:34
 msgid "``MODULE``"
 msgstr ""
 
-#: ../../../command/add_library.rst:30
+#: ../../../command/add_library.rst:32
 msgid ""
-"A plugin that may not be linked by other targets, but may be dynamically "
-"loaded at runtime using dlopen-like functionality."
+"A :ref:`Module Library <Module Libraries>`: a plugin that may not be linked "
+"by other targets, but may be dynamically loaded at runtime using dlopen-like "
+"functionality."
 msgstr ""
 
-#: ../../../command/add_library.rst:33
+#: ../../../command/add_library.rst:36
 msgid ""
 "If no ``<type>`` is given the default is ``STATIC`` or ``SHARED`` based on "
 "the value of the :variable:`BUILD_SHARED_LIBS` variable."
 msgstr ""
 
-#: ../../../command/add_library.rst:36 ../../../command/add_library.rst:181
-#: ../../../command/add_library.rst:257
+#: ../../../command/add_library.rst:39 ../../../command/add_library.rst:184
+#: ../../../command/add_library.rst:260
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/add_library.rst:39 ../../../command/add_library.rst:185
+#: ../../../command/add_library.rst:42 ../../../command/add_library.rst:188
 msgid "``EXCLUDE_FROM_ALL``"
 msgstr ""
 
-#: ../../../command/add_library.rst:39 ../../../command/add_library.rst:184
+#: ../../../command/add_library.rst:42 ../../../command/add_library.rst:187
 msgid ""
 "Set the :prop_tgt:`EXCLUDE_FROM_ALL` target property automatically. See "
 "documentation of that target property for details."
 msgstr ""
 
-#: ../../../command/add_library.rst:42
+#: ../../../command/add_library.rst:45
 msgid ""
 "The ``<name>`` corresponds to the logical target name and must be globally "
 "unique within a project.  The actual file name of the library built is "
@@ -99,20 +103,20 @@ msgid ""
 "a`` or ``<name>.lib``)."
 msgstr ""
 
-#: ../../../command/add_library.rst:47
+#: ../../../command/add_library.rst:50
 msgid ""
 "Source arguments to ``add_library`` may use \"generator expressions\" with "
 "the syntax ``$<...>``.  See the :manual:`cmake-generator-expressions(7)` "
 "manual for available expressions."
 msgstr ""
 
-#: ../../../command/add_library.rst:52
+#: ../../../command/add_library.rst:55
 msgid ""
 "The source files can be omitted if they are added later using :command:"
 "`target_sources`."
 msgstr ""
 
-#: ../../../command/add_library.rst:56
+#: ../../../command/add_library.rst:59
 msgid ""
 "For ``SHARED`` and ``MODULE`` libraries the :prop_tgt:"
 "`POSITION_INDEPENDENT_CODE` target property is set to ``ON`` automatically. "
@@ -120,13 +124,13 @@ msgid ""
 "property to create an macOS Framework."
 msgstr ""
 
-#: ../../../command/add_library.rst:62
+#: ../../../command/add_library.rst:65
 msgid ""
 "A ``STATIC`` library may be marked with the :prop_tgt:`FRAMEWORK` target "
 "property to create a static Framework."
 msgstr ""
 
-#: ../../../command/add_library.rst:66
+#: ../../../command/add_library.rst:69
 msgid ""
 "If a library does not export any symbols, it must not be declared as a "
 "``SHARED`` library.  For example, a Windows resource DLL or a managed C++/"
@@ -135,7 +139,7 @@ msgid ""
 "an associated import library on Windows."
 msgstr ""
 
-#: ../../../command/add_library.rst:72
+#: ../../../command/add_library.rst:75
 msgid ""
 "By default the library file will be created in the build tree directory "
 "corresponding to the source tree directory in which the command was "
@@ -146,37 +150,37 @@ msgid ""
 "``<name>`` part of the final file name."
 msgstr ""
 
-#: ../../../command/add_library.rst:80
+#: ../../../command/add_library.rst:83
 msgid ""
 "See the :manual:`cmake-buildsystem(7)` manual for more on defining "
 "buildsystem properties."
 msgstr ""
 
-#: ../../../command/add_library.rst:83
+#: ../../../command/add_library.rst:86
 msgid ""
 "See also :prop_sf:`HEADER_FILE_ONLY` on what to do if some sources are pre-"
 "processed, and you want to have the original sources reachable from within "
 "IDE."
 msgstr ""
 
-#: ../../../command/add_library.rst:89
+#: ../../../command/add_library.rst:92
 msgid ""
 "On platforms that do not support shared libraries, ``add_library`` now fails "
 "on calls creating ``SHARED`` libraries instead of automatically converting "
 "them to ``STATIC`` libraries as before. See policy :policy:`CMP0164`."
 msgstr ""
 
-#: ../../../command/add_library.rst:95
+#: ../../../command/add_library.rst:98
 msgid "Object Libraries"
 msgstr ""
 
-#: ../../../command/add_library.rst:101
+#: ../../../command/add_library.rst:104
 msgid ""
 "Add an :ref:`Object Library <Object Libraries>` to compile source files "
 "without archiving or linking their object files into a library."
 msgstr ""
 
-#: ../../../command/add_library.rst:104
+#: ../../../command/add_library.rst:107
 msgid ""
 "Other targets created by ``add_library`` or :command:`add_executable` may "
 "reference the objects using an expression of the form :genex:`$"
@@ -184,13 +188,13 @@ msgid ""
 "is the object library name.  For example:"
 msgstr ""
 
-#: ../../../command/add_library.rst:109
+#: ../../../command/add_library.rst:112
 msgid ""
 "add_library(... $<TARGET_OBJECTS:objlib> ...)\n"
 "add_executable(... $<TARGET_OBJECTS:objlib> ...)"
 msgstr ""
 
-#: ../../../command/add_library.rst:114
+#: ../../../command/add_library.rst:117
 msgid ""
 "will include objlib's object files in a library and an executable along with "
 "those compiled from their own sources.  Object libraries may contain only "
@@ -203,23 +207,23 @@ msgid ""
 "objlib\\> <TARGET_OBJECTS>`."
 msgstr ""
 
-#: ../../../command/add_library.rst:124
+#: ../../../command/add_library.rst:127
 msgid ""
 "Object libraries can be linked to with :command:`target_link_libraries`."
 msgstr ""
 
-#: ../../../command/add_library.rst:128
+#: ../../../command/add_library.rst:131
 msgid "Interface Libraries"
 msgstr ""
 
-#: ../../../command/add_library.rst:134
+#: ../../../command/add_library.rst:137
 msgid ""
 "Add an :ref:`Interface Library <Interface Libraries>` target that may "
 "specify usage requirements for dependents but does not compile sources and "
 "does not produce a library artifact on disk."
 msgstr ""
 
-#: ../../../command/add_library.rst:138
+#: ../../../command/add_library.rst:141
 msgid ""
 "An interface library with no source files is not included as a target in the "
 "generated buildsystem.  However, it may have properties set on it and it may "
@@ -227,48 +231,48 @@ msgid ""
 "populated on an interface target using the commands:"
 msgstr ""
 
-#: ../../../command/add_library.rst:144
+#: ../../../command/add_library.rst:147
 msgid ":command:`set_property`,"
 msgstr ""
 
-#: ../../../command/add_library.rst:145
+#: ../../../command/add_library.rst:148
 msgid ":command:`target_link_libraries(INTERFACE)`,"
 msgstr ""
 
-#: ../../../command/add_library.rst:146
+#: ../../../command/add_library.rst:149
 msgid ":command:`target_link_options(INTERFACE)`,"
 msgstr ""
 
-#: ../../../command/add_library.rst:147
+#: ../../../command/add_library.rst:150
 msgid ":command:`target_include_directories(INTERFACE)`,"
 msgstr ""
 
-#: ../../../command/add_library.rst:148
+#: ../../../command/add_library.rst:151
 msgid ":command:`target_compile_options(INTERFACE)`,"
 msgstr ""
 
-#: ../../../command/add_library.rst:149
+#: ../../../command/add_library.rst:152
 msgid ":command:`target_compile_definitions(INTERFACE)`, and"
 msgstr ""
 
-#: ../../../command/add_library.rst:150
+#: ../../../command/add_library.rst:153
 msgid ":command:`target_sources(INTERFACE)`,"
 msgstr ""
 
-#: ../../../command/add_library.rst:152
+#: ../../../command/add_library.rst:155
 msgid ""
 "and then it is used as an argument to :command:`target_link_libraries` like "
 "any other target."
 msgstr ""
 
-#: ../../../command/add_library.rst:155
+#: ../../../command/add_library.rst:158
 msgid ""
 "An interface library can have :prop_tgt:`PUBLIC_HEADER` and :prop_tgt:"
 "`PRIVATE_HEADER` properties.  The headers specified by those properties can "
 "be installed using the :command:`install(TARGETS)` command."
 msgstr ""
 
-#: ../../../command/add_library.rst:166
+#: ../../../command/add_library.rst:169
 msgid ""
 "Add an :ref:`Interface Library <Interface Libraries>` target with source "
 "files (in addition to usage requirements and properties as documented by "
@@ -277,7 +281,7 @@ msgid ""
 "command:`target_sources` with the ``PRIVATE`` or ``PUBLIC`` keywords."
 msgstr ""
 
-#: ../../../command/add_library.rst:173
+#: ../../../command/add_library.rst:176
 msgid ""
 "If an interface library has source files (i.e. the :prop_tgt:`SOURCES` "
 "target property is set), or header sets (i.e. the :prop_tgt:`HEADER_SETS` "
@@ -287,7 +291,7 @@ msgid ""
 "custom commands created by the :command:`add_custom_command` command."
 msgstr ""
 
-#: ../../../command/add_library.rst:188
+#: ../../../command/add_library.rst:191
 msgid ""
 "In most command signatures where the ``INTERFACE`` keyword appears, the "
 "items listed after it only become part of that target's usage requirements "
@@ -298,11 +302,11 @@ msgid ""
 "`INTERFACE_SOURCES` target property."
 msgstr ""
 
-#: ../../../command/add_library.rst:199
+#: ../../../command/add_library.rst:202
 msgid "Imported Libraries"
 msgstr ""
 
-#: ../../../command/add_library.rst:205
+#: ../../../command/add_library.rst:208
 msgid ""
 "Add an :ref:`IMPORTED library target <Imported Targets>` called ``<name>``. "
 "The target name may be referenced like any target built within the project, "
@@ -310,15 +314,15 @@ msgid ""
 "created, and below."
 msgstr ""
 
-#: ../../../command/add_library.rst:210
+#: ../../../command/add_library.rst:213
 msgid "The ``<type>`` must be one of:"
 msgstr ""
 
-#: ../../../command/add_library.rst:243
+#: ../../../command/add_library.rst:246
 msgid "``STATIC``, ``SHARED``, ``MODULE``, ``UNKNOWN``"
 msgstr ""
 
-#: ../../../command/add_library.rst:213
+#: ../../../command/add_library.rst:216
 msgid ""
 "References a library file located outside the project.  The :prop_tgt:"
 "`IMPORTED_LOCATION` target property (or its per-configuration variant :"
@@ -326,7 +330,7 @@ msgid ""
 "library file on disk:"
 msgstr ""
 
-#: ../../../command/add_library.rst:218
+#: ../../../command/add_library.rst:221
 msgid ""
 "For a ``SHARED`` library on most non-Windows platforms, the main library "
 "file is the ``.so`` or ``.dylib`` file used by both linkers and dynamic "
@@ -337,7 +341,7 @@ msgid ""
 "the :prop_tgt:`IMPORTED_NO_SONAME` target property should be set."
 msgstr ""
 
-#: ../../../command/add_library.rst:227
+#: ../../../command/add_library.rst:230
 msgid ""
 "For a ``SHARED`` library on Windows, the :prop_tgt:`IMPORTED_IMPLIB` target "
 "property (or its per-configuration variant :prop_tgt:"
@@ -347,12 +351,12 @@ msgid ""
 "the :genex:`TARGET_RUNTIME_DLLS` generator expression)."
 msgstr ""
 
-#: ../../../command/add_library.rst:235
+#: ../../../command/add_library.rst:238
 msgid ""
 "Additional usage requirements may be specified in ``INTERFACE_*`` properties."
 msgstr ""
 
-#: ../../../command/add_library.rst:238
+#: ../../../command/add_library.rst:241
 msgid ""
 "An ``UNKNOWN`` library type is typically only used in the implementation of :"
 "ref:`Find Modules`.  It allows the path to an imported library (often found "
@@ -361,11 +365,11 @@ msgid ""
 "static library and a DLL's import library both have the same file extension."
 msgstr ""
 
-#: ../../../command/add_library.rst:251
+#: ../../../command/add_library.rst:254
 msgid "``OBJECT``"
 msgstr ""
 
-#: ../../../command/add_library.rst:246
+#: ../../../command/add_library.rst:249
 msgid ""
 "References a set of object files located outside the project. The :prop_tgt:"
 "`IMPORTED_OBJECTS` target property (or its per-configuration variant :"
@@ -374,43 +378,43 @@ msgid ""
 "``INTERFACE_*`` properties."
 msgstr ""
 
-#: ../../../command/add_library.rst:255
+#: ../../../command/add_library.rst:258
 msgid "``INTERFACE``"
 msgstr ""
 
-#: ../../../command/add_library.rst:254
+#: ../../../command/add_library.rst:257
 msgid ""
 "Does not reference any library or object files on disk, but may specify "
 "usage requirements in ``INTERFACE_*`` properties."
 msgstr ""
 
-#: ../../../command/add_library.rst:259
+#: ../../../command/add_library.rst:262
 msgid "``GLOBAL``"
 msgstr ""
 
-#: ../../../command/add_library.rst:260
+#: ../../../command/add_library.rst:263
 msgid "Make the target name globally visible."
 msgstr ""
 
-#: ../../../command/add_library.rst:262
+#: ../../../command/add_library.rst:265
 msgid ""
 "No rules are generated to build imported targets, and the :prop_tgt:"
 "`IMPORTED` target property is ``True``.  Imported libraries are useful for "
 "convenient reference from commands like :command:`target_link_libraries`."
 msgstr ""
 
-#: ../../../command/add_library.rst:266
+#: ../../../command/add_library.rst:269
 msgid ""
 "Details about the imported library are specified by setting properties whose "
 "names begin in ``IMPORTED_`` and ``INTERFACE_``.  See documentation of such "
 "properties for more information."
 msgstr ""
 
-#: ../../../command/add_library.rst:271
+#: ../../../command/add_library.rst:274
 msgid "Alias Libraries"
 msgstr ""
 
-#: ../../../command/add_library.rst:277
+#: ../../../command/add_library.rst:280
 msgid ""
 "Creates an :ref:`Alias Target <Alias Targets>`, such that ``<name>`` can be "
 "used to refer to ``<target>`` in subsequent commands.  The ``<name>`` does "
@@ -418,13 +422,13 @@ msgid ""
 "may not be an ``ALIAS``."
 msgstr ""
 
-#: ../../../command/add_library.rst:282
+#: ../../../command/add_library.rst:285
 msgid ""
 "An ``ALIAS`` can target a ``GLOBAL`` :ref:`Imported Target <Imported "
 "Targets>`"
 msgstr ""
 
-#: ../../../command/add_library.rst:285
+#: ../../../command/add_library.rst:288
 msgid ""
 "An ``ALIAS`` can target a non-``GLOBAL`` Imported Target. Such alias is "
 "scoped to the directory in which it is created and below. The :prop_tgt:"
@@ -432,7 +436,7 @@ msgid ""
 "or not."
 msgstr ""
 
-#: ../../../command/add_library.rst:291
+#: ../../../command/add_library.rst:294
 msgid ""
 "``ALIAS`` targets can be used as linkable targets and as targets to read "
 "properties from.  They can also be tested for existence with the regular :"
@@ -443,10 +447,10 @@ msgid ""
 "exported."
 msgstr ""
 
-#: ../../../command/add_library.rst:300
+#: ../../../command/add_library.rst:303
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/add_library.rst:302
+#: ../../../command/add_library.rst:305
 msgid ":command:`add_executable`"
 msgstr ""

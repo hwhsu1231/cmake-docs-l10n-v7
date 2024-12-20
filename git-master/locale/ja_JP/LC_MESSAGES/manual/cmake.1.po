@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-20 06:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -503,92 +503,117 @@ msgid ""
 "`CMAKE_INSTALL_PREFIX` variable. Must be an absolute path."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:124
+#: ../../../manual/OPTIONS_BUILD.txt:126
+msgid "Specify an alternate project file name."
+msgstr ""
+
+#: ../../../manual/OPTIONS_BUILD.txt:128
+msgid ""
+"This determines the top-level file processed by CMake when configuring a "
+"project, and the file processed by :command:`add_subdirectory`."
+msgstr ""
+
+#: ../../../manual/OPTIONS_BUILD.txt:131
+msgid ""
+"By default, this is ``CMakeLists.txt``. If set to anything else, "
+"``CMakeLists.txt`` will be used as a fallback whenever the specified file "
+"cannot be found within a project subdirectory."
+msgstr ""
+
+#: ../../../manual/OPTIONS_BUILD.txt:137
+msgid ""
+"This feature is intended for temporary use by developers during an "
+"incremental transition and not for publication of a final product. CMake "
+"will always emit a warning when the project file is anything other than "
+"``CMakeLists.txt``."
+msgstr ""
+
+#: ../../../manual/OPTIONS_BUILD.txt:143
 msgid "Suppress developer warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:126
+#: ../../../manual/OPTIONS_BUILD.txt:145
 msgid ""
 "Suppress warnings that are meant for the author of the ``CMakeLists.txt`` "
 "files. By default this will also turn off deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:132
+#: ../../../manual/OPTIONS_BUILD.txt:151
 msgid "Enable developer warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:134
+#: ../../../manual/OPTIONS_BUILD.txt:153
 msgid ""
 "Enable warnings that are meant for the author of the ``CMakeLists.txt`` "
 "files. By default this will also turn on deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:139
+#: ../../../manual/OPTIONS_BUILD.txt:158
 msgid "Enable deprecated functionality warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:141
+#: ../../../manual/OPTIONS_BUILD.txt:160
 msgid ""
 "Enable warnings for usage of deprecated functionality, that are meant for "
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:146
+#: ../../../manual/OPTIONS_BUILD.txt:165
 msgid "Suppress deprecated functionality warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:148
+#: ../../../manual/OPTIONS_BUILD.txt:167
 msgid ""
 "Suppress warnings for usage of deprecated functionality, that are meant for "
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:153
+#: ../../../manual/OPTIONS_BUILD.txt:172
 msgid ""
 "Treat CMake warnings as errors. ``<what>`` must be one of the following:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:159 ../../../manual/OPTIONS_BUILD.txt:173
+#: ../../../manual/OPTIONS_BUILD.txt:178 ../../../manual/OPTIONS_BUILD.txt:192
 msgid "``dev``"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:156
+#: ../../../manual/OPTIONS_BUILD.txt:175
 msgid "Make developer warnings errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:158
+#: ../../../manual/OPTIONS_BUILD.txt:177
 msgid ""
 "Make warnings that are meant for the author of the ``CMakeLists.txt`` files "
 "errors. By default this will also turn on deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:164 ../../../manual/OPTIONS_BUILD.txt:176
+#: ../../../manual/OPTIONS_BUILD.txt:183 ../../../manual/OPTIONS_BUILD.txt:195
 msgid "``deprecated``"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:162
+#: ../../../manual/OPTIONS_BUILD.txt:181
 msgid "Make deprecated macro and function warnings errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:164
+#: ../../../manual/OPTIONS_BUILD.txt:183
 msgid ""
 "Make warnings for usage of deprecated macros and functions, that are meant "
 "for the author of the ``CMakeLists.txt`` files, errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:169
+#: ../../../manual/OPTIONS_BUILD.txt:188
 msgid ""
 "Do not treat CMake warnings as errors. ``<what>`` must be one of the "
 "following:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:172
+#: ../../../manual/OPTIONS_BUILD.txt:191
 msgid ""
 "Make warnings that are meant for the author of the ``CMakeLists.txt`` files "
 "not errors. By default this will also turn off deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:176
+#: ../../../manual/OPTIONS_BUILD.txt:195
 msgid ""
 "Make warnings for usage of deprecated macros and functions, that are meant "
 "for the author of the ``CMakeLists.txt`` files, not errors."

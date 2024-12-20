@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-20 06:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,8 +35,8 @@ msgstr ""
 
 #: ../../../command/add_executable.rst:17
 msgid ""
-"Add an executable target called ``<name>`` to be built from the source files "
-"listed in the command invocation."
+"Add an :ref:`executable <Executables>` target called ``<name>`` to be built "
+"from the source files listed in the command invocation."
 msgstr ""
 
 #: ../../../command/add_executable.rst:20
