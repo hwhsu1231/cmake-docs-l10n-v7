@@ -15,9 +15,9 @@ find_package(Git        MODULE REQUIRED)
 find_package(Gettext    MODULE REQUIRED COMPONENTS Msgcat Msgmerge)
 find_package(Python     MODULE REQUIRED COMPONENTS Interpreter)
 find_package(Sphinx     MODULE REQUIRED COMPONENTS Build)
+include(LogUtils)
 include(GitUtils)
 include(JsonUtils)
-include(LogUtils)
 include(GettextUtils)
 
 

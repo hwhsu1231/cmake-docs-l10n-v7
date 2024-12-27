@@ -9,8 +9,8 @@ message(STATUS "-------------------- ${SCRIPT_NAME} --------------------")
 
 
 set(CMAKE_MODULE_PATH   "${PROJ_CMAKE_MODULES_DIR}")
-include(JsonUtils)
 include(LogUtils)
+include(JsonUtils)
 
 
 if(CMAKE_HOST_WIN32)

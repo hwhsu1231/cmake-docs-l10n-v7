@@ -11,9 +11,9 @@ message(STATUS "-------------------- ${SCRIPT_NAME} --------------------")
 set(CMAKE_MODULE_PATH   "${PROJ_CMAKE_MODULES_DIR}")
 find_package(Git        MODULE REQUIRED)
 find_package(Conda      MODULE REQUIRED)
+include(LogUtils)
 include(GitUtils)
 include(JsonUtils)
-include(LogUtils)
 
 
 message(STATUS "Determining which reference to switch to...")

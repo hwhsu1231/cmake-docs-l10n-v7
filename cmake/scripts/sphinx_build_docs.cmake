@@ -13,8 +13,8 @@ set(Sphinx_ROOT_DIR     "${PROJ_VENV_DIR}")
 find_package(Git        MODULE REQUIRED)
 find_package(Gettext    MODULE REQUIRED COMPONENTS Msgcat Msgmerge)
 find_package(Sphinx     MODULE REQUIRED COMPONENTS Build)
-include(JsonUtils)
 include(LogUtils)
+include(JsonUtils)
 include(GettextUtils)
 
 
