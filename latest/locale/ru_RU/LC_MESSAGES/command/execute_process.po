@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2024-12-31 17:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,7 +248,7 @@ msgid ""
 "default behavior when this option is not present."
 msgstr ""
 
-#: ../../../command/execute_process.rst:168
+#: ../../../command/execute_process.rst:169
 msgid "``ENCODING <name>``"
 msgstr ""
 
@@ -314,34 +314,34 @@ msgstr ""
 msgid "This is the default.  See policy :policy:`CMP0176`."
 msgstr ""
 
-#: ../../../command/execute_process.rst:168
+#: ../../../command/execute_process.rst:169
 msgid "``UTF8``"
 msgstr ""
 
 #: ../../../command/execute_process.rst:166
 msgid ""
 "Use the UTF-8 codepage.  Use of this name is discouraged in favor of "
-"``UTF-8`` to match the `UTF-8 RFC <https://www.ietf.org/rfc/rfc3629>`_ "
-"naming convention."
+"``UTF-8`` to match the `UTF-8 RFC <https://datatracker.ietf.org/doc/html/"
+"rfc3629>`_ naming convention."
 msgstr ""
 
-#: ../../../command/execute_process.rst:182
+#: ../../../command/execute_process.rst:183
 msgid "``COMMAND_ERROR_IS_FATAL <ANY|LAST>``"
 msgstr ""
 
-#: ../../../command/execute_process.rst:173
+#: ../../../command/execute_process.rst:174
 msgid ""
 "The option following ``COMMAND_ERROR_IS_FATAL`` determines the behavior when "
 "an error is encountered:"
 msgstr ""
 
-#: ../../../command/execute_process.rst:176
+#: ../../../command/execute_process.rst:177
 msgid ""
 "``ANY`` If any of the commands in the list of commands fail, the "
 "``execute_process()`` command halts with an error."
 msgstr ""
 
-#: ../../../command/execute_process.rst:180
+#: ../../../command/execute_process.rst:181
 msgid ""
 "``LAST`` If the last command in the list of commands fails, the "
 "``execute_process()`` command halts with an error.  Commands earlier in the "
