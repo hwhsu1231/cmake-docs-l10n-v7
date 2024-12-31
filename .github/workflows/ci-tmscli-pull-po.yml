@@ -125,6 +125,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
+      MATRIX_NUM: ${{ steps.gmjl.outputs.MATRIX_NUM }}
     steps:
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
