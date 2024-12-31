@@ -249,18 +249,22 @@ elseif (VERSION MATCHES       "^latest$")
     set(VERSION_OF_SPHINX     "6.2")
 elseif (VERSION MATCHES       "^v([0-9]+)\\.([0-9]+)$")
     string(SUBSTRING "${VERSION}" 1 -1 VERSION_NO_V)
-    if     (VERSION_NO_V VERSION_GREATER_EQUAL "3.28")  # For v3.28~
-        set(VERSION_OF_PYTHON     "3.10")
-        set(VERSION_OF_SPHINX     "6.2")
-    elseif (VERSION_NO_V VERSION_GREATER_EQUAL "3.19")  # For v3.19~v3.27
-        set(VERSION_OF_PYTHON     "3.10")
-        set(VERSION_OF_SPHINX     "5.3")
-    elseif (VERSION_NO_V VERSION_GREATER_EQUAL "3.9")   # For v3.9~v3.18
-        set(VERSION_OF_PYTHON     "3.6")
-        set(VERSION_OF_SPHINX     "2.4")
-    elseif (VERSION_NO_V VERSION_GREATER_EQUAL "3.0")   # For v3.0~v3.8
-        set(VERSION_OF_PYTHON     "3.6")
-        set(VERSION_OF_SPHINX     "1.6")
+    if     (VERSION_NO_V VERSION_LESS_EQUAL     "3.31" AND
+            VERSION_NO_V VERSION_GREATER_EQUAL  "3.28")     #[[ For v3.28~v3.31 ]]
+        set(VERSION_OF_PYTHON   "3.10")     #[[ Install the '3.10' version of Python. ]]
+        set(VERSION_OF_SPHINX   "6.2")      #[[ Install the '6.2' version of Sphinx.  ]]
+    elseif (VERSION_NO_V VERSION_LESS_EQUAL     "3.27" AND
+            VERSION_NO_V VERSION_GREATER_EQUAL  "3.19")     #[[ For v3.19~v3.27 ]]
+        set(VERSION_OF_PYTHON   "3.10")     #[[ Install the '3.10' version of Python. ]]
+        set(VERSION_OF_SPHINX   "5.3")      #[[ Install the '5.3' version of Sphinx.  ]]
+    elseif (VERSION_NO_V VERSION_LESS_EQUAL     "3.18" AND
+            VERSION_NO_V VERSION_GREATER_EQUAL  "3.9")      #[[ For v3.9~v3.18 ]]
+        set(VERSION_OF_PYTHON   "3.6")      #[[ Install the '3.6' version of Python. ]]
+        set(VERSION_OF_SPHINX   "2.4")      #[[ Install the '2.4' version of Sphinx. ]]
+    elseif (VERSION_NO_V VERSION_LESS_EQUAL     "3.8" AND
+            VERSION_NO_V VERSION_GREATER_EQUAL  "3.0")      #[[ For v3.0~v3.8 ]]
+        set(VERSION_OF_PYTHON   "3.6")      #[[ Install the '3.6' version of Python. ]]
+        set(VERSION_OF_SPHINX   "1.6")      #[[ Install the '1.6' version of Sphinx. ]]
     else()
         message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
     endif()
