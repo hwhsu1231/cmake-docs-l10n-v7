@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-31 17:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "Provides a macro to check if a header file can be included in ``CXX``."
 msgstr ""
 
 #: ../../../../Modules/CheckIncludeFileCXX.cmake:12
-msgid "CHECK_INCLUDE_FILE_CXX(<include> <variable> [<flags>])"
+msgid "check_include_file_cxx(<include> <variable> [<flags>])"
 msgstr ""
 
 #: ../../../../Modules/CheckIncludeFileCXX.cmake:16

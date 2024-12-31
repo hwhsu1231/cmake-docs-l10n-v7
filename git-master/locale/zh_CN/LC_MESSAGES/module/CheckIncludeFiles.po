@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-31 17:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../Modules/CheckIncludeFiles.cmake:13
-msgid "CHECK_INCLUDE_FILES(\"<includes>\" <variable> [LANGUAGE <language>])"
+msgid "check_include_files(\"<includes>\" <variable> [LANGUAGE <language>])"
 msgstr ""
 
 #: ../../../../Modules/CheckIncludeFiles.cmake:17

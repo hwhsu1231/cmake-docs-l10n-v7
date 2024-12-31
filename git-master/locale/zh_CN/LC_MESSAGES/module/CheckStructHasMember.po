@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2024-12-31 17:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,20 +27,34 @@ msgstr ""
 
 #: ../../../../Modules/CheckStructHasMember.cmake:12
 msgid ""
-"CHECK_STRUCT_HAS_MEMBER(<struct> <member> <header> <variable>\n"
+"check_struct_has_member(<struct> <member> <headers> <variable>\n"
 "                        [LANGUAGE <language>])"
 msgstr ""
 
-#: ../../../../Modules/CheckStructHasMember.cmake:19
+#: ../../../../Modules/CheckStructHasMember.cmake:17
 msgid ""
-"<struct> - the name of the struct or class you are interested in\n"
-"<member> - the member which existence you want to check\n"
-"<header> - the header(s) where the prototype should be declared\n"
-"<variable> - variable to store the result\n"
-"<language> - the compiler to use (C or CXX)"
+"Check that the struct or class ``<struct>`` has the specified ``<member>`` "
+"after including the given header(s) ``<headers>`` where the prototype should "
+"be declared. Specify the list of header files in one argument as a semicolon-"
+"separated list. The result is stored in an internal cache variable "
+"``<variable>``."
+msgstr ""
+
+#: ../../../../Modules/CheckStructHasMember.cmake:23
+msgid "The options are:"
+msgstr ""
+
+#: ../../../../Modules/CheckStructHasMember.cmake:27
+msgid "``LANGUAGE <language>``"
 msgstr ""
 
 #: ../../../../Modules/CheckStructHasMember.cmake:26
+msgid ""
+"Use the ``<language>`` compiler to perform the check. Acceptable values are "
+"``C`` and ``CXX``. If not specified, it defaults to ``C``."
+msgstr ""
+
+#: ../../../../Modules/CheckStructHasMember.cmake:30
 msgid ""
 "The following variables may be set before calling this macro to modify the "
 "way the check is run:"
@@ -123,12 +137,14 @@ msgid ""
 "associated with the check will be suppressed."
 msgstr ""
 
-#: ../../../../Modules/CheckStructHasMember.cmake:44
-msgid "Example:"
+#: ../../../../Modules/CheckStructHasMember.cmake:48
+msgid "Example"
 msgstr ""
 
-#: ../../../../Modules/CheckStructHasMember.cmake:46
+#: ../../../../Modules/CheckStructHasMember.cmake:50
 msgid ""
-"CHECK_STRUCT_HAS_MEMBER(\"struct timeval\" tv_sec sys/select.h\n"
+"include(CheckStructHasMember)\n"
+"\n"
+"check_struct_has_member(\"struct timeval\" tv_sec sys/select.h\n"
 "                        HAVE_TIMEVAL_TV_SEC LANGUAGE C)"
 msgstr ""
