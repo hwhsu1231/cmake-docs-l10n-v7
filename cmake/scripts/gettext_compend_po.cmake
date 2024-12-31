@@ -47,9 +47,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     remove_cmake_message_indent()
     message("")
     concat_po_from_locale_to_compendium(
-        IN_LOCALE_PO_DIR     "${SRC_LOCALE_PO_DIR}"
-        IN_COMPEND_PO_FILE   "${SRC_COMPEND_PO_FILE}"
-        IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}")
+        IN_LOCALE_PO_DIR          "${SRC_LOCALE_PO_DIR}"
+        IN_COMPEND_PO_FILE        "${SRC_COMPEND_PO_FILE}"
+        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}")
     message("")
     restore_cmake_message_indent()
 
@@ -57,12 +57,13 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Merging '${_LANGUAGE}' translations of '${DST_VERSION}' version from the compendium file of '${SRC_VERSION}' version...")
     remove_cmake_message_indent()
     message("")
-    merge_po_from_compendium_to_locale(
-        IN_LANGUAGE          "${_LANGUAGE}"
-        IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}"
-        IN_COMPEND_PO_FILE   "${SRC_COMPEND_PO_FILE}"
-        IN_LOCALE_PO_DIR     "${DST_LOCALE_PO_DIR}"
-        IN_LOCALE_POT_DIR    "${DST_LOCALE_POT_DIR}")
+    merge_po_from_src_to_dst_with_compendium(
+        IN_LANGUAGE               "${_LANGUAGE}"
+        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}"
+        IN_SRC_COMPEND_PO_FILE    "${SRC_COMPEND_PO_FILE}"
+        IN_SRC_LOCALE_PO_DIR      "${SRC_LOCALE_PO_DIR}"
+        IN_DST_LOCALE_PO_DIR      "${DST_LOCALE_PO_DIR}"
+        IN_DST_LOCALE_POT_DIR     "${DST_LOCALE_POT_DIR}")
     message("")
     restore_cmake_message_indent()
 endforeach()
