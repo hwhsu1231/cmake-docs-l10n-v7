@@ -28,7 +28,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     message(STATUS "Preparing to pull '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from TMS...")
-    set(TMSTMP_PO_DIR   "${PROJ_L10N_VERSION_TMSTMP_DIR}/${_LANGUAGE}")
+    set(TMSCLI_PO_DIR   "${PROJ_L10N_VERSION_TMSCLI_DIR}/${_LANGUAGE}")
     set(COMPEND_PO_FILE "${PROJ_L10N_VERSION_COMPEND_DIR}/${_LANGUAGE}.po")
     set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
     set(LOCALE_POT_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")
@@ -37,7 +37,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message("_LANGUAGE            = ${_LANGUAGE}")
     message("_LANGUAGE_CROWDIN    = ${_LANGUAGE_CROWDIN}")
     message("TMS_CONFIG_FILE_PATH = ${TMS_CONFIG_FILE_PATH}")
-    message("TMSTMP_PO_DIR        = ${TMSTMP_PO_DIR}")
+    message("TMSCLI_PO_DIR        = ${TMSCLI_PO_DIR}")
     message("COMPEND_PO_FILE      = ${COMPEND_PO_FILE}")
     message("LOCALE_PO_DIR        = ${LOCALE_PO_DIR}")
     message("LOCALE_POT_DIR       = ${LOCALE_POT_DIR}")
@@ -69,7 +69,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message("")
     concat_po_from_locale_to_compendium(
         IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}"
-        IN_LOCALE_PO_DIR     "${TMSTMP_PO_DIR}"
+        IN_LOCALE_PO_DIR     "${TMSCLI_PO_DIR}"
         IN_COMPEND_PO_FILE   "${COMPEND_PO_FILE}")
     message("")
     restore_cmake_message_indent()
@@ -82,7 +82,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         IN_LANGUAGE               "${_LANGUAGE}"
         IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}"
         IN_SRC_COMPEND_PO_FILE    "${COMPEND_PO_FILE}"
-        IN_SRC_LOCALE_PO_DIR      "${TMSTMP_PO_DIR}"
+        IN_SRC_LOCALE_PO_DIR      "${TMSCLI_PO_DIR}"
         IN_DST_LOCALE_PO_DIR      "${LOCALE_PO_DIR}"
         IN_DST_LOCALE_POT_DIR     "${LOCALE_POT_DIR}")
     message("")
