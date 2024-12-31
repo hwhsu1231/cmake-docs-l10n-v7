@@ -2,7 +2,7 @@
   "dev" : [
     {
       "VERSION" : "git-master",
-      "ALLINONE" : false,
+      "ALLINONE" : true,
       "COMPENDIUM" : ""
     }
   ],
