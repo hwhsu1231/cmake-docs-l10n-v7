@@ -64,7 +64,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Concatenating '${_LANGUAGE}' translations of '${VERSION}' version into a compendium file...")
+    message(STATUS "Concatenating '${_LANGUAGE}' translations of 'tmstmp' into a compendium file...")
     remove_cmake_message_indent()
     message("")
     concat_po_from_locale_to_compendium(
@@ -75,16 +75,30 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Merging '${_LANGUAGE}' translations of '${VERSION}' version from the compendium file...")
+    message(STATUS "Merging '${_LANGUAGE}' translations of 'locale' from 'tmstmp' with the compendium file...")
     remove_cmake_message_indent()
     message("")
-    merge_po_from_compendium_to_locale(
-        IN_LANGUAGE          "${_LANGUAGE}"
-        IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}"
-        IN_COMPEND_PO_FILE   "${TMSTMP_PO_FILE}"
-        IN_LOCALE_PO_DIR     "${LOCALE_PO_DIR}"
-        IN_LOCALE_POT_DIR    "${LOCALE_POT_DIR}")
+    merge_po_from_src_to_dst_with_compendium(
+        IN_LANGUAGE               "${_LANGUAGE}"
+        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}"
+        IN_SRC_COMPEND_PO_FILE    "${TMSTMP_PO_FILE}"
+        IN_SRC_LOCALE_PO_DIR      "${TMSTMP_PO_DIR}"
+        IN_DST_LOCALE_PO_DIR      "${LOCALE_PO_DIR}"
+        IN_DST_LOCALE_POT_DIR     "${LOCALE_POT_DIR}")
     message("")
     restore_cmake_message_indent()
+
+
+    # message(STATUS "Merging '${_LANGUAGE}' translations of '${VERSION}' version from the compendium file...")
+    # remove_cmake_message_indent()
+    # message("")
+    # merge_po_from_compendium_to_locale(
+    #     IN_LANGUAGE          "${_LANGUAGE}"
+    #     IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}"
+    #     IN_COMPEND_PO_FILE   "${TMSTMP_PO_FILE}"
+    #     IN_LOCALE_PO_DIR     "${LOCALE_PO_DIR}"
+    #     IN_LOCALE_POT_DIR    "${LOCALE_POT_DIR}")
+    # message("")
+    # restore_cmake_message_indent()
 endforeach()
 unset(_LANGUAGE)
