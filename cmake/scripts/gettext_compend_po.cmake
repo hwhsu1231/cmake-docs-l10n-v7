@@ -54,7 +54,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Merging '${_LANGUAGE}' translations of '${DST_VERSION}' version from the compendium file of '${SRC_VERSION}' version...")
+    message(STATUS "Merging '${_LANGUAGE}' translations of '${DST_VERSION}' version from '${SRC_VERSION}' version with the compendium file...")
     remove_cmake_message_indent()
     message("")
     merge_po_from_src_to_dst_with_compendium(
