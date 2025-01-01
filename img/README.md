@@ -28,10 +28,4 @@
     <td><a href="https://support.crowdin.com/using-logo/">Link</a></td>
     <td></td>
   </tr>
-  <tr>
-    <td>guide-add-new-language.png</td>
-    <td><img src="./guide-add-new-language.png" alt="guide-crowdin-add-new-language" width="100"/></td>
-    <td></td>
-    <td></td>
-  </tr>
 </table>
