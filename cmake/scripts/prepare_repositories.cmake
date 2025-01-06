@@ -69,7 +69,7 @@ restore_cmake_message_indent()
 if(VERSION_TYPE STREQUAL "branch")
     message(STATUS "Getting the latest commit of the branch '${BRANCH_NAME}' from the remote...")
     get_git_latest_commit_on_branch_name(
-        IN_REPO_PATH        "${PROJ_OUT_REPO_DIR}"
+        IN_LOCAL_PATH       "${PROJ_OUT_REPO_DIR}"
         IN_SOURCE_TYPE      "remote"
         IN_BRANCH_NAME      "${BRANCH_NAME}"
         OUT_COMMIT_HASH     LATEST_COMMIT_HASH)
@@ -100,7 +100,7 @@ if(VERSION_TYPE STREQUAL "branch")
 elseif(VERSION_TYPE STREQUAL "tag")
     message(STATUS "Getting the latest tag of '${TAG_PATTERN}' from the remote...")
     get_git_latest_tag_on_tag_pattern(
-        IN_REPO_PATH        "${PROJ_OUT_REPO_DIR}"
+        IN_LOCAL_PATH       "${PROJ_OUT_REPO_DIR}"
         IN_SOURCE_TYPE      "remote"
         IN_TAG_PATTERN      "${TAG_PATTERN}"
         IN_TAG_SUFFIX       "${TAG_SUFFIX}"

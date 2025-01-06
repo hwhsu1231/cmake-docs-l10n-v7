@@ -19,7 +19,7 @@ include(JsonUtils)
 message(STATUS "Determining which reference to switch to...")
 file(READ "${REFERENCES_JSON_PATH}" REFERENCES_JSON_CNT)
 get_reference_of_latest_from_repo_and_current_from_json(
-    IN_REPO_PATH                    "${PROJ_OUT_REPO_DIR}"
+    IN_LOCAL_PATH                   "${PROJ_OUT_REPO_DIR}"
     IN_JSON_CNT                     "${REFERENCES_JSON_CNT}"
     IN_VERSION_TYPE                 "${VERSION_TYPE}"
     IN_BRANCH_NAME                  "${BRANCH_NAME}"
@@ -63,7 +63,7 @@ message(STATUS "Switching to the reference '${SWITCH_POT_REFERENCE}' on the loca
 remove_cmake_message_indent()
 message("")
 switch_to_git_reference_on_branch(
-    IN_REPO_PATH    "${PROJ_OUT_REPO_DIR}"
+    IN_LOCAL_PATH   "${PROJ_OUT_REPO_DIR}"
     IN_REFERENCE    "${SWITCH_POT_REFERENCE}"
     IN_BRANCH       "current")
 message("")

@@ -24,8 +24,8 @@ include(GettextUtils)
 message(STATUS "Determining whether it is required to update .pot files...")
 file(READ "${REFERENCES_JSON_PATH}" REFERENCES_JSON_CNT)
 get_reference_of_latest_from_repo_and_current_from_json(
+    IN_LOCAL_PATH                   "${PROJ_OUT_REPO_DIR}"
     IN_JSON_CNT                     "${REFERENCES_JSON_CNT}"
-    IN_REPO_PATH                    "${PROJ_OUT_REPO_DIR}"
     IN_VERSION_TYPE                 "${VERSION_TYPE}"
     IN_BRANCH_NAME                  "${BRANCH_NAME}"
     IN_TAG_PATTERN                  "${TAG_PATTERN}"

@@ -132,8 +132,8 @@ set(STATISTIC_TXT_PATH              "${PROJ_L10N_VERSION_DIR}/statistic.txt")
 #]============================================================]
 
 set(CMAKE_MODULE_PATH   "${PROJ_CMAKE_MODULES_DIR}")
-include(JsonUtils)
 include(LogUtils)
+include(JsonUtils)
 
 #[============================================================[
   Prepare LOCALE_TO_SOURCE_DIR.
@@ -292,7 +292,7 @@ find_package(Crowdin    MODULE QUIET)
 
 create_git_worktree_for_l10n_branch(
     IN_REMOTE_URL       "${REMOTE_URL_OF_L10N}"
-    IN_REPO_PATH        "${PROJ_SOURCE_DIR}"
+    IN_LOCAL_PATH       "${PROJ_SOURCE_DIR}"
     IN_WORKTREE_PATH    "${PROJ_L10N_DIR}")
 
 #[============================================================[
