@@ -16,7 +16,7 @@ CMake 文件的在地化
 <details><summary><strong>Switch Languages</strong></summary>
 <p></p>
 <ul>
-  <li><a href="./README.md"><code>en_US</code> : English</a></li>
+  <li><a href="./README.md"><code>en_US</code> : English (Default)</a></li>
   <li><a href="./README.ja_JP.md"><code>ja_JP</code> : 日本語</a></li>
   <li><a href="./README.ru_RU.md"><code>ru_RU</code> : Русский</a></li>
   <li><a href="./README.zh_CN.md"><code>zh_CN</code> : 简体中文</a></li>
@@ -119,6 +119,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Header -->
         <th rowspan="1" style="text-align: center; vertical-align: middle;">Issues</th>
       </tr>
       <!-- Main -->
@@ -128,6 +129,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" target="_blank">Link</a>
         </td>
@@ -139,6 +141,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
@@ -146,6 +149,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
@@ -153,6 +157,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
@@ -160,6 +165,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
@@ -167,6 +173,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
@@ -174,6 +181,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
@@ -181,6 +189,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
+        <!-- Issues Link -->
         <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
       </tr>
     </tbody>
@@ -386,7 +395,7 @@ Licenses
 
 All the script files (<code>CMakeLists.txt</code> and <code>.cmake</code> files) and workflow files (<code>.yml</code> files inside <code>.github/workflows/</code> directory) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
 
-All the translation files (<code>.po</code> and <code>.pot</code> files inside <code>l10n/</code> directory) are owned by the upstream, and are subject to its copyright and license.
+All the translation files (<code>.po</code> and <code>.pot</code> files inside the <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/tree/l10n">l10n</a> branch) are owned by the upstream, and are subject to its copyright and license.
 
 <h2 id="translation-disclaimer"><a href="#table-of-contents">
 Translation Disclaimer
