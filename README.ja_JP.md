@@ -119,7 +119,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <th rowspan="1" style="text-align: center; vertical-align: middle;">Issues</th>
       </tr>
       <!-- Main -->
       <tr>
@@ -129,7 +129,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <td rowspan="1" style="text-align: center; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" target="_blank">Issues</a>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" target="_blank">Link</a>
         </td>
       </tr>
       <!-- Mirror -->
