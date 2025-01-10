@@ -63,54 +63,8 @@ message("UPDATE_POT_REQUIRED    = ${UPDATE_POT_REQUIRED}")
 message("")
 restore_cmake_message_indent()
 
-#[[
-if (VERSION VERSION_GREATER "3.8")
-    message(STATUS "Copying 'cmake.py' file to ${PROJ_OUT_REPO_SPHINX_DIR}/...")
-    file(COPY_FILE
-        "${PROJ_CMAKE_TEMPLATES_DIR}/cmake.py"
-        "${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
-    remove_cmake_message_indent()
-    message("")
-    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/cmake.py")
-    message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
-    message("")
-    restore_cmake_message_indent()
-    message(STATUS "Copying 'colors.py' file to ${PROJ_OUT_REPO_SPHINX_DIR}/...")
-    file(COPY_FILE
-        "${PROJ_CMAKE_TEMPLATES_DIR}/colors.py"
-        "${PROJ_OUT_REPO_SPHINX_DIR}/colors.py")
-    remove_cmake_message_indent()
-    message("")
-    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/colors.py")
-    message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/colors.py")
-    message("")
-    restore_cmake_message_indent()
-else()
-    message(STATUS "Copying 'cmake.py' file to ${PROJ_OUT_REPO_SPHINX_DIR}/...")
-    file(COPY_FILE
-        "${PROJ_CMAKE_TEMPLATES_DIR}/3.8/cmake.py"
-        "${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
-    remove_cmake_message_indent()
-    message("")
-    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/3.8/cmake.py")
-    message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
-    message("")
-    restore_cmake_message_indent()
-endif()
-message(STATUS "Copying 'cmake.css' file to ${PROJ_OUT_REPO_SPHINX_DIR}/static/...")
-file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/cmake.css"
-    "${PROJ_OUT_REPO_SPHINX_DIR}/static/cmake.css")
-remove_cmake_message_indent()
-message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/cmake.css")
-message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/static/cmake.css")
-message("")
-restore_cmake_message_indent()
-#]]
 
-
-message(STATUS "Copying 'layout.html' file to ${PROJ_OUT_REPO_SPHINX_DIR}/templates/...")
+message(STATUS "Copying 'templates/layout.html' file...")
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/layout.html"
     "${PROJ_OUT_REPO_SPHINX_DIR}/templates/layout.html")
