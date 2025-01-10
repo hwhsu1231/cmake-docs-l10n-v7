@@ -63,6 +63,86 @@ message("UPDATE_POT_REQUIRED    = ${UPDATE_POT_REQUIRED}")
 message("")
 restore_cmake_message_indent()
 
+#[[
+if (VERSION VERSION_GREATER "3.8")
+    message(STATUS "Copying 'cmake.py' file to ${PROJ_OUT_REPO_SPHINX_DIR}/...")
+    file(COPY_FILE
+        "${PROJ_CMAKE_TEMPLATES_DIR}/cmake.py"
+        "${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
+    remove_cmake_message_indent()
+    message("")
+    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/cmake.py")
+    message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
+    message("")
+    restore_cmake_message_indent()
+    message(STATUS "Copying 'colors.py' file to ${PROJ_OUT_REPO_SPHINX_DIR}/...")
+    file(COPY_FILE
+        "${PROJ_CMAKE_TEMPLATES_DIR}/colors.py"
+        "${PROJ_OUT_REPO_SPHINX_DIR}/colors.py")
+    remove_cmake_message_indent()
+    message("")
+    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/colors.py")
+    message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/colors.py")
+    message("")
+    restore_cmake_message_indent()
+else()
+    message(STATUS "Copying 'cmake.py' file to ${PROJ_OUT_REPO_SPHINX_DIR}/...")
+    file(COPY_FILE
+        "${PROJ_CMAKE_TEMPLATES_DIR}/3.8/cmake.py"
+        "${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
+    remove_cmake_message_indent()
+    message("")
+    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/3.8/cmake.py")
+    message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/cmake.py")
+    message("")
+    restore_cmake_message_indent()
+endif()
+message(STATUS "Copying 'cmake.css' file to ${PROJ_OUT_REPO_SPHINX_DIR}/static/...")
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/cmake.css"
+    "${PROJ_OUT_REPO_SPHINX_DIR}/static/cmake.css")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/cmake.css")
+message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/static/cmake.css")
+message("")
+restore_cmake_message_indent()
+#]]
+
+
+message(STATUS "Copying 'layout.html' file to ${PROJ_OUT_REPO_SPHINX_DIR}/templates/...")
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/layout.html"
+    "${PROJ_OUT_REPO_SPHINX_DIR}/templates/layout.html")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/layout.html")
+message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/templates/layout.html")
+message("")
+restore_cmake_message_indent()
+
+
+message(STATUS "Adding 'html_theme_options' configuration to 'conf.py.in' file...")
+set(HTML_THEME_OPTIONS_FILE "${PROJ_CMAKE_TEMPLATES_DIR}/html_theme_options.txt")
+set(SPHINX_CONF_PY_IN_PATH  "${PROJ_OUT_REPO_SPHINX_DIR}/conf.py.in")
+file(READ "${SPHINX_CONF_PY_IN_PATH}" SPHINX_CONF_PY_CONTENT)
+string(REGEX MATCH "html_theme_options[ ]*=[ ]*\{" HTML_THEME_OPTIONS_DEFINED "${SPHINX_CONF_PY_CONTENT}")
+if (NOT HTML_THEME_OPTIONS_DEFINED)
+    file(READ "${HTML_THEME_OPTIONS_FILE}" HTML_THEME_OPTIONS_CONTENT)
+    file(APPEND "${SPHINX_CONF_PY_IN_PATH}" "\n${HTML_THEME_OPTIONS_CONTENT}")
+    remove_cmake_message_indent()
+    message("")
+    message("'html_theme_options' appended to ${SPHINX_CONF_PY_IN_PATH}.")
+    message("")
+    restore_cmake_message_indent()
+else()
+    remove_cmake_message_indent()
+    message("")
+    message("'html_theme_options' already defined in ${SPHINX_CONF_PY_IN_PATH}.")
+    message("")
+    restore_cmake_message_indent()
+endif()
+
 
 message(STATUS "Generating the configuration file 'conf.py' by configuring project(CMakeHelp)...")
 if (CMAKE_HOST_UNIX)
@@ -99,6 +179,8 @@ execute_process(
     COMMAND_ERROR_IS_FATAL ANY)
 message("")
 restore_cmake_message_indent()
+
+
 message(STATUS "Copying the configuration file 'conf.py'...")
 set(SRC_CONF_PY_FILE    "${PROJ_OUT_REPO_SPHINX_DIR}/build/conf.py")
 set(DST_CONF_PY_FILE    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
