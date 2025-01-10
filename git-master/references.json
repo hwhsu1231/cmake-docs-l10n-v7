@@ -47,8 +47,8 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2024-12-31 00:10:59 -0500",
-      "hash" : "f99a933dfd158e944bd7e04116f2b614655455b5",
+      "date" : "2025-01-10 00:06:22 -0500",
+      "hash" : "db740c72ca1092ceadbde4fc6d00399672d1adda",
       "title" : "CMake Nightly Date Stamp"
     }
   },
