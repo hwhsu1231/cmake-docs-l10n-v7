@@ -1,4 +1,3 @@
-
 html_theme_options = {
     'footerbgcolor':    '#00182d',
     'footertextcolor':  '#ffffff',
