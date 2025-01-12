@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.25)
 project(cmake-docs-l10n NONE)
 
 #[============================================================[
-  Cache Variables.
+# Cache Variables.
 #]============================================================]
 
 set(LANGUAGE "all"
@@ -93,7 +93,7 @@ set(VERSION_OF_SPHINX "[default]"
     CACHE STRING "The version of Sphinx to install.")
 
 #[============================================================[
-  Directory-Related Variables.
+# Directory-Related Variables.
 #]============================================================]
 
 set(PROJ_SOURCE_DIR                 "${PROJECT_SOURCE_DIR}")
@@ -117,7 +117,7 @@ set(PROJ_L10N_VERSION_TMSCLI_DIR    "${PROJ_L10N_VERSION_DIR}/.tmscli")
 set(PROJ_L10N_VERSION_COMPEND_DIR   "${PROJ_L10N_VERSION_DIR}/.compend")
 
 #[============================================================[
-  Configuration Files.
+# Configuration Files.
 #]============================================================]
 
 set(LANGUAGES_JSON_PATH             "${PROJ_SOURCE_DIR}/languages.json")
@@ -128,7 +128,7 @@ set(TMS_CONFIG_FILE_PATH            "${PROJ_L10N_VERSION_DIR}/crowdin.yml")
 set(STATISTIC_TXT_PATH              "${PROJ_L10N_VERSION_DIR}/statistic.txt")
 
 #[============================================================[
-  Include CMake modules.
+# Include CMake modules.
 #]============================================================]
 
 set(CMAKE_MODULE_PATH   "${PROJ_CMAKE_MODULES_DIR}")
@@ -136,7 +136,7 @@ include(LogUtils)
 include(JsonUtils)
 
 #[============================================================[
-  Prepare LOCALE_TO_SOURCE_DIR.
+# Prepare LOCALE_TO_SOURCE_DIR.
 #]============================================================]
 
 file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
@@ -144,7 +144,7 @@ file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
     "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
 
 #[============================================================[
-  Configure Sphinx verbose arguments based on verbosity level.
+# Configure Sphinx verbose arguments based on verbosity level.
 #]============================================================]
 
 if(SPHINX_VERBOSE_LEVEL GREATER 0)
@@ -160,7 +160,7 @@ else()
 endif()
 
 #[============================================================[
-  Read LANGUAGE_LIST from languages.json.
+# Read LANGUAGE_LIST from languages.json.
 #]============================================================]
 
 file(READ "${LANGUAGES_JSON_PATH}"  LANGUAGES_JSON_CNT)
@@ -169,18 +169,18 @@ get_members_of_json_object(
     OUT_MEMBER_NAMES    LANGUAGE_LIST)
 
 #[============================================================[
-  Validate the VERSION cache variable.
-  - For "git-master":
-    - Set VERSION_TYPE    to "branch"
-    - Set BRANCH_NAME     to "master"
-  - For "latest":
-    - Set VERSION_TYPE    to "tag"
-    - Set TAG_PATTERN     to "^v([0-9]+)\\.([0-9]+)\\.([0-9]+)(-rc[1-9][0-9]*)?$"
-    - Set TAG_SUFFIX      to "-rc"
-  - For "vX.Y":
-    - Set VERSION_TYPE    to "tag"
-    - Set TAG_PATTERN     to "^vX\\.Y\\.([0-9]+)(-rc[1-9][0-9]*)?$"
-    - Set TAG_SUFFIX      to "-rc"
+# Validate the VERSION cache variable.
+# - For "git-master":
+#   - Set VERSION_TYPE    to "branch"
+#   - Set BRANCH_NAME     to "master"
+# - For "latest":
+#   - Set VERSION_TYPE    to "tag"
+#   - Set TAG_PATTERN     to "^v([0-9]+)\\.([0-9]+)\\.([0-9]+)(-rc[1-9][0-9]*)?$"
+#   - Set TAG_SUFFIX      to "-rc"
+# - For "vX.Y":
+#   - Set VERSION_TYPE    to "tag"
+#   - Set TAG_PATTERN     to "^vX\\.Y\\.([0-9]+)(-rc[1-9][0-9]*)?$"
+#   - Set TAG_SUFFIX      to "-rc"
 #]============================================================]
 
 if (VERSION MATCHES     "^git-master$")
@@ -200,7 +200,7 @@ else()
 endif()
 
 #[============================================================[
-  Validate the LANGUAGE cache variable.
+# Validate the LANGUAGE cache variable.
 #]============================================================]
 
 set(LANGUAGE_IS_VALID FALSE)
@@ -219,7 +219,7 @@ if(NOT LANGUAGE_IS_VALID)
 endif()
 
 #[============================================================[
-  Validate the MODE_OF_UPDATE cache variable.
+# Validate the MODE_OF_UPDATE cache variable.
 #]============================================================]
 
 if (NOT MODE_OF_UPDATE STREQUAL "COMPARE" AND
@@ -229,7 +229,7 @@ if (NOT MODE_OF_UPDATE STREQUAL "COMPARE" AND
 endif()
 
 #[============================================================[
-  Validate the MODE_OF_INSTALL cache variable.
+# Validate the MODE_OF_INSTALL cache variable.
 #]============================================================]
 
 if (NOT MODE_OF_INSTALL STREQUAL "COMPARE" AND
@@ -238,8 +238,8 @@ if (NOT MODE_OF_INSTALL STREQUAL "COMPARE" AND
 endif()
 
 #[============================================================[
-  Initialize VERSION_OF_XXX if CACHE{VERSION_OF_XXX} is "[default]".
-  Set VERSION_OF_XXX to $CACHE{VERSION_OF_XX} if it's not "[default]".
+# Initialize VERSION_OF_XXX if CACHE{VERSION_OF_XXX} is "[default]".
+# Set VERSION_OF_XXX to $CACHE{VERSION_OF_XX} if it's not "[default]".
 #]============================================================]
 
 if     (VERSION MATCHES       "^git-master$")
@@ -278,7 +278,7 @@ if(NOT "$CACHE{VERSION_OF_SPHINX}" STREQUAL "[default]")
 endif()
 
 #[============================================================[
-  Check prerequisites.
+# Check prerequisites.
 #]============================================================]
 
 find_package(Git        MODULE QUIET)
@@ -287,7 +287,7 @@ find_package(Gettext    MODULE QUIET)
 find_package(Crowdin    MODULE QUIET)
 
 #[============================================================[
-  Create Git Worktree for 'l10n' branch in ${PROJ_L10N_DIR}.
+# Create Git Worktree for 'l10n' branch in ${PROJ_L10N_DIR}.
 #]============================================================]
 
 create_git_worktree_for_l10n_branch(
@@ -296,7 +296,7 @@ create_git_worktree_for_l10n_branch(
     IN_WORKTREE_PATH    "${PROJ_L10N_DIR}")
 
 #[============================================================[
-  Initialize ${REFERENCES_JSON_PATH}.
+# Initialize ${REFERENCES_JSON_PATH}.
 #]============================================================]
 
 init_references_json_file(
@@ -316,7 +316,7 @@ configure_file(
     COPYONLY)
 
 #[============================================================[
-  Print Information.
+# Print Information.
 #]============================================================]
 
 message(STATUS "---------- Cache Variables ----------")
@@ -392,13 +392,13 @@ message(STATUS "Crowdin_EXECUTABLE            = ${Crowdin_EXECUTABLE}")
 message(STATUS "----------------------------------------")
 
 #[============================================================[
-  Escape ';' characters for list variables.
+# Escape ';' characters for list variables.
 #]============================================================]
 
 string(REPLACE ";" "\\\\;" LANGUAGE_LIST "${LANGUAGE_LIST}")
 
 #[============================================================[
-  Environment variables passed to script mode.
+# Environment variables passed to script mode.
 #]============================================================]
 
 set(SCRIPT_MODE_ENV
@@ -466,7 +466,7 @@ set(SCRIPT_MODE_CACHE
     -D TAG_SUFFIX=${TAG_SUFFIX})
 
 #[============================================================[
-  Fundamental targets.
+# Fundamental Targets.
 #]============================================================]
 
 add_custom_target(prepare_repositories
@@ -500,7 +500,7 @@ add_custom_target(sphinx_build_docs
     VERBATIM)
 
 #[============================================================[
-  Optional targets.
+# Optional Targets.
 #]============================================================]
 
 add_custom_target(gettext_statistic_po
@@ -534,7 +534,7 @@ add_custom_target(create_rtd_symlinks
     VERBATIM)
 
 #[============================================================[
-  Add dependencies for targets.
+# Add dependencies for targets.
 #]============================================================]
 
 if(AUTO_DEPEND)
