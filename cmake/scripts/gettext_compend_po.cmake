@@ -25,6 +25,11 @@ if(NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
+    if (_LANGUAGE STREQUAL "en_US")
+        continue()
+    endif()
+
+
     set(SRC_VERSION         "${COMPENDIUM}")
     set(SRC_LOCALE_PO_DIR   "${PROJ_L10N_DIR}/${SRC_VERSION}/locale/${_LANGUAGE}")
     set(SRC_COMPEND_PO_FILE "${PROJ_L10N_DIR}/${SRC_VERSION}/.compend/${_LANGUAGE}.po")

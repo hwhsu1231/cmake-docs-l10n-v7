@@ -21,6 +21,11 @@ if(NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
+    if (_LANGUAGE STREQUAL "en_US")
+        continue()
+    endif()
+
+
     message(STATUS "Determining whether it is required to update .po files...")
     get_reference_of_pot_and_po_from_json(
         IN_JSON_CNT                     "${REFERENCES_JSON_CNT}"

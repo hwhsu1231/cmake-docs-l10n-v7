@@ -21,6 +21,11 @@ if(NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
+    if (_LANGUAGE STREQUAL "en_US")
+        continue()
+    endif()
+
+
     get_json_value_by_dot_notation(
         IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
         IN_DOT_NOTATION   ".${_LANGUAGE}.crowdin"

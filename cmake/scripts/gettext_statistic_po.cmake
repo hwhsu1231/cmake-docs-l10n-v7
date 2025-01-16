@@ -17,6 +17,11 @@ include(GettextUtils)
 
 set(STATISTIC_TXT_CNT "")
 foreach(_LANGUAGE ${LANGUAGE_LIST})
+    if (_LANGUAGE STREQUAL "en_US")
+        continue()
+    endif()
+
+
     message(STATUS "Counting the percentage for '${_LANGUAGE}' language...")
     remove_cmake_message_indent()
     message("")

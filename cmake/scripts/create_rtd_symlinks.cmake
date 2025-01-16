@@ -42,6 +42,11 @@ message(STATUS "Creating ReadTheDocs symlinks for language directories...")
 remove_cmake_message_indent()
 message("")
 foreach(_LANGUAGE ${LANGUAGE_LIST})
+    if (_LANGUAGE STREQUAL "en_US")
+        continue()
+    endif()
+
+
     get_json_value_by_dot_notation(
         IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
         IN_DOT_NOTATION   ".${_LANGUAGE}.readthedocs"
