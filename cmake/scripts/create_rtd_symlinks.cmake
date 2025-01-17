@@ -13,17 +13,17 @@ include(LogUtils)
 include(JsonUtils)
 
 
-if(CMAKE_HOST_WIN32)
+if (CMAKE_HOST_WIN32)
     execute_process(
         COMMAND net session
         RESULT_VARIABLE RES_VAR
         OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
         ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-    if(RES_VAR EQUAL 0)
+    if (RES_VAR EQUAL 0)
         # It's adiministrator privileges.
     else()
         find_program(SUDO_COMMAND gsudo)
-        if(NOT SUDO_COMMAND)
+        if (NOT SUDO_COMMAND)
             message(FATAL_ERROR "Failed to find gsudo.")
         endif()
     endif()
@@ -33,7 +33,7 @@ endif()
 
 
 file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
-if(NOT LANGUAGE STREQUAL "all")
+if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 
@@ -51,7 +51,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
         IN_DOT_NOTATION   ".${_LANGUAGE}.readthedocs"
         OUT_JSON_VALUE    _LANGUAGE_READTHEDOCS)
-    if("${_LANGUAGE}" STREQUAL "${_LANGUAGE_READTHEDOCS}")
+    if ("${_LANGUAGE}" STREQUAL "${_LANGUAGE_READTHEDOCS}")
         message("No need to create ReadTheDocs symlink for language directory '${_LANGUAGE}'.")
     else()
         if (NOT EXISTS "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
@@ -66,7 +66,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
             RESULT_VARIABLE RES_VAR
             OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
             ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-        if(RES_VAR EQUAL 0)
+        if (RES_VAR EQUAL 0)
             message("Created ReadTheDocs symlink '${_LANGUAGE_READTHEDOCS}' for language directory '${_LANGUAGE}'.")
         else()
             string(APPEND FAILURE_REASON

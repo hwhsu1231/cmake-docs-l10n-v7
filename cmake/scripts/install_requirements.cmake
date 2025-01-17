@@ -30,16 +30,16 @@ get_reference_of_latest_from_repo_and_current_from_json(
     OUT_LATEST_REFERENCE            LATEST_POT_REFERENCE
     OUT_CURRENT_OBJECT              CURRENT_POT_OBJECT
     OUT_CURRENT_REFERENCE           CURRENT_POT_REFERENCE)
-if(MODE_OF_UPDATE STREQUAL "COMPARE")
-    if(NOT CURRENT_POT_REFERENCE STREQUAL LATEST_POT_REFERENCE)
+if (MODE_OF_UPDATE STREQUAL "COMPARE")
+    if (NOT CURRENT_POT_REFERENCE STREQUAL LATEST_POT_REFERENCE)
         set(SWITCH_POT_REFERENCE    "${LATEST_POT_REFERENCE}")
     else()
         set(SWITCH_POT_REFERENCE    "${CURRENT_POT_REFERENCE}")
     endif()
-elseif(MODE_OF_UPDATE STREQUAL "ALWAYS")
+elseif (MODE_OF_UPDATE STREQUAL "ALWAYS")
     set(SWITCH_POT_REFERENCE        "${LATEST_POT_REFERENCE}")
-elseif(MODE_OF_UPDATE STREQUAL "NEVER")
-    if(NOT CURRENT_POT_REFERENCE)
+elseif (MODE_OF_UPDATE STREQUAL "NEVER")
+    if (NOT CURRENT_POT_REFERENCE)
         set(SWITCH_POT_REFERENCE    "${LATEST_POT_REFERENCE}")
     else()
         set(SWITCH_POT_REFERENCE    "${CURRENT_POT_REFERENCE}")
@@ -72,18 +72,18 @@ restore_cmake_message_indent()
 
 message(STATUS "Determining whether to install the requirements...")
 set(CURRENT_REFERENCE "${SWITCH_POT_REFERENCE}")
-if(EXISTS "${PREV_REFERENCE_TXT_PATH}")
+if (EXISTS "${PREV_REFERENCE_TXT_PATH}")
     file(READ "${PREV_REFERENCE_TXT_PATH}" PREVIOUS_REFERENCE)
 else()
     set(PREVIOUS_REFERENCE "")
 endif()
-if(MODE_OF_INSTALL STREQUAL "COMPARE")
-    if(NOT CURRENT_REFERENCE STREQUAL PREVIOUS_REFERENCE)
+if (MODE_OF_INSTALL STREQUAL "COMPARE")
+    if (NOT CURRENT_REFERENCE STREQUAL PREVIOUS_REFERENCE)
         set(INSTALL_REQUIRED    ON)
     else()
         set(INSTALL_REQUIRED    OFF)
     endif()
-elseif(MODE_OF_INSTALL STREQUAL "ALWAYS")
+elseif (MODE_OF_INSTALL STREQUAL "ALWAYS")
     set(INSTALL_REQUIRED        ON)
 else()
     message(FATAL_ERROR "Invalid MODE_OF_INSTALL value. (${MODE_OF_INSTALL})")
@@ -98,7 +98,7 @@ message("")
 restore_cmake_message_indent()
 
 
-if(NOT INSTALL_REQUIRED)
+if (NOT INSTALL_REQUIRED)
     message(STATUS "No need to install the requirements.")
     return()
 else()
@@ -118,8 +118,8 @@ execute_process(
     RESULT_VARIABLE RES_VAR
     OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
     ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-if(RES_VAR EQUAL 0)
-    if(ERR_VAR)
+if (RES_VAR EQUAL 0)
+    if (ERR_VAR)
         string(APPEND WARNING_REASON
         "The command succeeded with warnings.\n\n"
         "    result:\n\n${RES_VAR}\n\n"
@@ -152,8 +152,8 @@ execute_process(
     RESULT_VARIABLE RES_VAR
     OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
     ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-if(RES_VAR EQUAL 0)
-    if(ERR_VAR)
+if (RES_VAR EQUAL 0)
+    if (ERR_VAR)
         string(APPEND WARNING_REASON
         "The command succeeded with warnings.\n\n"
         "    result:\n\n${RES_VAR}\n\n"

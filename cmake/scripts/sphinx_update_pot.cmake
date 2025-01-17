@@ -35,16 +35,16 @@ get_reference_of_latest_from_repo_and_current_from_json(
     OUT_LATEST_REFERENCE            LATEST_POT_REFERENCE
     OUT_CURRENT_OBJECT              CURRENT_POT_OBJECT
     OUT_CURRENT_REFERENCE           CURRENT_POT_REFERENCE)
-if(MODE_OF_UPDATE STREQUAL "COMPARE")
-    if(NOT CURRENT_POT_REFERENCE STREQUAL LATEST_POT_REFERENCE)
+if (MODE_OF_UPDATE STREQUAL "COMPARE")
+    if (NOT CURRENT_POT_REFERENCE STREQUAL LATEST_POT_REFERENCE)
         set(UPDATE_POT_REQUIRED     ON)
     else()
         set(UPDATE_POT_REQUIRED     OFF)
     endif()
-elseif(MODE_OF_UPDATE STREQUAL "ALWAYS")
+elseif (MODE_OF_UPDATE STREQUAL "ALWAYS")
     set(UPDATE_POT_REQUIRED         ON)
-elseif(MODE_OF_UPDATE STREQUAL "NEVER")
-    if(NOT CURRENT_POT_REFERENCE)
+elseif (MODE_OF_UPDATE STREQUAL "NEVER")
+    if (NOT CURRENT_POT_REFERENCE)
         set(UPDATE_POT_REQUIRED     ON)
     else()
         set(UPDATE_POT_REQUIRED     OFF)
@@ -77,11 +77,12 @@ restore_cmake_message_indent()
 
 
 message(STATUS "Adding 'html_theme_options' configuration to 'conf.py.in' file...")
-set(HTML_THEME_OPTIONS_FILE "${PROJ_CMAKE_TEMPLATES_DIR}/html_theme_options.txt")
-set(SPHINX_CONF_PY_IN_PATH  "${PROJ_OUT_REPO_SPHINX_DIR}/conf.py.in")
-file(READ "${SPHINX_CONF_PY_IN_PATH}" SPHINX_CONF_PY_CONTENT)
-string(REGEX MATCH "html_theme_options[ ]*=[ ]*\{" HTML_THEME_OPTIONS_DEFINED "${SPHINX_CONF_PY_CONTENT}")
-if (NOT HTML_THEME_OPTIONS_DEFINED)
+set(HTML_THEME_OPTIONS_FILE   "${PROJ_CMAKE_TEMPLATES_DIR}/html_theme_options.txt")
+set(SPHINX_CONF_PY_IN_PATH    "${PROJ_OUT_REPO_SPHINX_DIR}/conf.py.in")
+set(HTML_THEME_OPTIONS_REGEX  "html_theme_options[ ]*=[ ]*[\{][^\}]*[\}]")
+file(READ "${SPHINX_CONF_PY_IN_PATH}" SPHINX_CONF_PY_IN_CNT)
+string(REGEX MATCH "${HTML_THEME_OPTIONS_REGEX}" HTML_THEME_OPTIONS_DICT "${SPHINX_CONF_PY_IN_CNT}")
+if (NOT HTML_THEME_OPTIONS_DICT)
     file(READ "${HTML_THEME_OPTIONS_FILE}" HTML_THEME_OPTIONS_CONTENT)
     file(APPEND "${SPHINX_CONF_PY_IN_PATH}" "\n${HTML_THEME_OPTIONS_CONTENT}")
     remove_cmake_message_indent()
@@ -149,7 +150,7 @@ message("")
 restore_cmake_message_indent()
 
 
-if(NOT UPDATE_POT_REQUIRED)
+if (NOT UPDATE_POT_REQUIRED)
     message(STATUS "No need to update .pot files.")
     return()
 else()
@@ -158,7 +159,7 @@ endif()
 
 
 message(STATUS "Removing directory '${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/'...")
-if(EXISTS "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
+if (EXISTS "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
     file(REMOVE_RECURSE "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
     remove_cmake_message_indent()
     message("")
@@ -213,8 +214,8 @@ execute_process(
     RESULT_VARIABLE RES_VAR
     OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
     ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-if(RES_VAR EQUAL 0)
-    if(ERR_VAR)
+if (RES_VAR EQUAL 0)
+    if (ERR_VAR)
         string(APPEND WARNING_REASON
         "The command succeeded with warnings.\n\n"
         "    result:\n\n${RES_VAR}\n\n"
@@ -238,7 +239,7 @@ execute_process(
     RESULT_VARIABLE RES_VAR
     OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
     ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-if(RES_VAR EQUAL 0)
+if (RES_VAR EQUAL 0)
     get_filename_component(SPHINX_LIB_DIR "${OUT_VAR}" DIRECTORY)
 else()
     string(APPEND FAILURE_REASON

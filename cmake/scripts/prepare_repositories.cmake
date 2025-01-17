@@ -52,7 +52,7 @@ execute_process(
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
     COMMAND_ERROR_IS_FATAL ANY)
-if(EXISTS "${PROJ_OUT_REPO_DIR}/.gitmodules")
+if (EXISTS "${PROJ_OUT_REPO_DIR}/.gitmodules")
     message("")
     execute_process(
         COMMAND ${Git_EXECUTABLE} submodule foreach --recursive
@@ -66,7 +66,7 @@ message("")
 restore_cmake_message_indent()
 
 
-if(VERSION_TYPE STREQUAL "branch")
+if (VERSION_TYPE STREQUAL "branch")
     message(STATUS "Getting the latest commit of the branch '${BRANCH_NAME}' from the remote...")
     get_git_latest_commit_on_branch_name(
         IN_LOCAL_PATH       "${PROJ_OUT_REPO_DIR}"
@@ -97,7 +97,7 @@ if(VERSION_TYPE STREQUAL "branch")
         COMMAND_ERROR_IS_FATAL ANY)
     message("")
     restore_cmake_message_indent()
-elseif(VERSION_TYPE STREQUAL "tag")
+elseif (VERSION_TYPE STREQUAL "tag")
     message(STATUS "Getting the latest tag of '${TAG_PATTERN}' from the remote...")
     get_git_latest_tag_on_tag_pattern(
         IN_LOCAL_PATH       "${PROJ_OUT_REPO_DIR}"

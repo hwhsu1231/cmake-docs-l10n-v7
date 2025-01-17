@@ -17,7 +17,7 @@ include(GettextUtils)
 
 
 file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
-if(NOT LANGUAGE STREQUAL "all")
+if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})

@@ -1,4 +1,8 @@
 {
+  "en_US" : {
+    "crowdin" : "en",
+    "readthedocs" : "en"
+  },
   "ja_JP" : {
     "crowdin" : "ja",
     "readthedocs" : "ja"

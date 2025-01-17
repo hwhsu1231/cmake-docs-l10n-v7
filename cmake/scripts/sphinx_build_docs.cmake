@@ -19,7 +19,7 @@ include(GettextUtils)
 
 
 message(STATUS "Removing directory '${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/'...")
-if(EXISTS "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
+if (EXISTS "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
     file(REMOVE_RECURSE "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
     remove_cmake_message_indent()
     message("")
@@ -38,7 +38,7 @@ endif()
 
 
 message(STATUS "Copying .po files to the local repository...")
-if(NOT LANGUAGE STREQUAL "all")
+if (NOT LANGUAGE STREQUAL "all")
     set(PO_SRC_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/${LANGUAGE}")
     set(PO_DST_DIR  "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/${LANGUAGE}")
 else()
@@ -57,7 +57,7 @@ message("")
 restore_cmake_message_indent()
 
 
-if(NOT LANGUAGE STREQUAL "all")
+if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
@@ -100,8 +100,8 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         RESULT_VARIABLE RES_VAR
         OUTPUT_VARIABLE OUT_VAR OUTPUT_STRIP_TRAILING_WHITESPACE
         ERROR_VARIABLE  ERR_VAR ERROR_STRIP_TRAILING_WHITESPACE)
-    if(RES_VAR EQUAL 0)
-        if(ERR_VAR)
+    if (RES_VAR EQUAL 0)
+        if (ERR_VAR)
             string(APPEND WARNING_REASON
             "The command succeeded but had some warnings.\n\n"
             "    result:\n\n${RES_VAR}\n\n"
@@ -119,7 +119,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    if(REMOVE_REDUNDANT)
+    if (REMOVE_REDUNDANT)
         message(STATUS "Removing redundant files/directories...")
         file(REMOVE_RECURSE "${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/.doctrees/")
         file(REMOVE         "${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/.buildinfo")
@@ -134,12 +134,12 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     endif()
 
 
-    if(SPHINX_BUILDER MATCHES "^html$")
+    if (SPHINX_BUILDER MATCHES "^html$")
         message(STATUS "Configuring 'version_switch.js' file to the html output directory...")
         set(PROTOCOLS "file:///" "https://")
         foreach(PROTOCOL ${PROTOCOLS})
             string(REGEX REPLACE "${PROTOCOL}" "" BASEURL ${BASEURL_HREF})
-            if(NOT "${BASEURL}" STREQUAL "${BASEURL_HREF}")
+            if (NOT "${BASEURL}" STREQUAL "${BASEURL_HREF}")
                 break()
             endif()
         endforeach()
