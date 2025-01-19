@@ -13,159 +13,159 @@
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.30",
+      "VERSION" : "3.30",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.29",
+      "VERSION" : "3.29",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.28",
+      "VERSION" : "3.28",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.27",
+      "VERSION" : "3.27",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.26",
+      "VERSION" : "3.26",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.25",
+      "VERSION" : "3.25",
       "COMPENDIUM" : "git-master",
       "ALLINONE" : true
     },
     {
-      "VERSION" : "v3.24",
+      "VERSION" : "3.24",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.23",
+      "VERSION" : "3.23",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.22",
+      "VERSION" : "3.22",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.21",
+      "VERSION" : "3.21",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.20",
+      "VERSION" : "3.20",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.19",
+      "VERSION" : "3.19",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.18",
+      "VERSION" : "3.18",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.17",
+      "VERSION" : "3.17",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.16",
+      "VERSION" : "3.16",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.15",
+      "VERSION" : "3.15",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.14",
+      "VERSION" : "3.14",
       "ALLINONE" : true,
       "COMPENDIUM" : "git-master"
     },
     {
-      "VERSION" : "v3.13",
+      "VERSION" : "3.13",
       "ALLINONE" : true,
       "COMPENDIUM" : ""
     },
     {
-      "VERSION" : "v3.12",
+      "VERSION" : "3.12",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.11",
+      "VERSION" : "3.11",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.10",
+      "VERSION" : "3.10",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.9",
+      "VERSION" : "3.9",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.8",
+      "VERSION" : "3.8",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.7",
+      "VERSION" : "3.7",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.6",
+      "VERSION" : "3.6",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.5",
+      "VERSION" : "3.5",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.4",
+      "VERSION" : "3.4",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.3",
+      "VERSION" : "3.3",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.2",
+      "VERSION" : "3.2",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.1",
+      "VERSION" : "3.1",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     },
     {
-      "VERSION" : "v3.0",
+      "VERSION" : "3.0",
       "ALLINONE" : true,
-      "COMPENDIUM" : "v3.13"
+      "COMPENDIUM" : "3.13"
     }
   ]
 }
