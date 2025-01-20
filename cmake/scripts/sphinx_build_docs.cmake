@@ -180,6 +180,11 @@ endforeach()
 unset(_LANGUAGE)
 
 
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/switchers.js"
+    "${PROJ_OUT_BUILDER_DIR}/switchers.js")
+
+
 message(STATUS "The '${SPHINX_BUILDER}' documentation is built succesfully!")
 remove_cmake_message_indent()
 message("")

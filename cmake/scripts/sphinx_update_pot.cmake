@@ -191,9 +191,6 @@ endif()
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/html_context.py"
     "${PROJ_OUT_REPO_SPHINX_DIR}/html_context.py")
-file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/switchers.js"
-    "${PROJ_OUT_BUILDER_DIR}/switchers.js")
 
 
 if (NOT UPDATE_POT_REQUIRED)
