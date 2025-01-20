@@ -1,6 +1,16 @@
 {
   "po" : 
   {
+    "en_US" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
     "ja_JP" : 
     {
       "branch" : "master",
