@@ -1,6 +1,16 @@
 {
   "po" : 
   {
+    "en_US" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
     "ja_JP" : 
     {
       "branch" : "master",
@@ -47,8 +57,8 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2024-12-31 00:10:59 -0500",
-      "hash" : "f99a933dfd158e944bd7e04116f2b614655455b5",
+      "date" : "2025-01-20 00:04:35 -0500",
+      "hash" : "4b56e7526a91eed757b23bcd913710a3f32b3d89",
       "title" : "CMake Nightly Date Stamp"
     }
   },

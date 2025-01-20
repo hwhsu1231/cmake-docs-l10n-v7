@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,4 +31,13 @@ msgid ""
 "When run in :option:`cmake -P` script mode, CMake sets this variable to the "
 "full path of the script file.  When run to configure a ``CMakeLists.txt`` "
 "file, this variable is not set."
+msgstr ""
+
+#: ../../../variable/CMAKE_SCRIPT_MODE_FILE.rst:12
+msgid "See Also"
+msgstr ""
+
+#: ../../../variable/CMAKE_SCRIPT_MODE_FILE.rst:14
+msgid ""
+"The :prop_gbl:`CMAKE_ROLE` global property provides the current running mode."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -873,11 +873,43 @@ msgid ""
 "requirements."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:444
-msgid "Commands"
+#: ../../../../Modules/FindPython2.cmake:466
+msgid "``Python2_ARTIFACTS_PREFIX``"
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:446
+msgid ""
+"Define a custom prefix which will be used for the definition of all the "
+"result variables, targets, and commands. By using this variable, this module "
+"supports multiple calls in the same directory with different version/"
+"component requirements. For example, in case of cross-compilation, "
+"development components are needed but the native python interpreter can also "
+"be required:"
+msgstr ""
+
+#: ../../../../Modules/FindPython2.cmake:453
+msgid ""
+"find_package(Python2 COMPONENTS Development)\n"
+"\n"
+"set(Python2_ARTIFACTS_PREFIX \"_HOST\")\n"
+"find_package(Python2 COMPONENTS Interpreter)\n"
+"\n"
+"# Here Python2_HOST_EXECUTABLE and Python2_HOST::Interpreter artifacts are "
+"defined"
+msgstr ""
+
+#: ../../../../Modules/FindPython2.cmake:464
+msgid ""
+"For consistency with standard behavior of modules, the various standard "
+"``_FOUND`` variables (i.e. without the custom prefix) are also defined by "
+"each call to the :command:`find_package` command."
+msgstr ""
+
+#: ../../../../Modules/FindPython2.cmake:469
+msgid "Commands"
+msgstr ""
+
+#: ../../../../Modules/FindPython2.cmake:471
 msgid ""
 "This module defines the command ``Python2_add_library`` (when :prop_gbl:"
 "`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
@@ -886,17 +918,17 @@ msgid ""
 "Python module naming rules::"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:452
+#: ../../../../Modules/FindPython2.cmake:477
 msgid ""
 "Python2_add_library (<name> [STATIC | SHARED | MODULE]\n"
 "                     <source1> [<source2> ...])"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:455
+#: ../../../../Modules/FindPython2.cmake:480
 msgid "If library type is not specified, ``MODULE`` is assumed."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:457
+#: ../../../../Modules/FindPython2.cmake:482
 msgid ""
 "For ``MODULE`` type, the :prop_tgt:`DEBUG_POSTFIX` target property is "
 "initialized with the value of ``Python2_DEBUG_POSTFIX`` variable if defined."

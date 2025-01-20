@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1057,11 +1057,43 @@ msgid ""
 "requirements."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:561
-msgid "Commands"
+#: ../../../../Modules/FindPython3.cmake:583
+msgid "``Python3_ARTIFACTS_PREFIX``"
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:563
+msgid ""
+"Define a custom prefix which will be used for the definition of all the "
+"result variables, targets, and commands. By using this variable, this module "
+"supports multiple calls in the same directory with different version/"
+"component requirements. For example, in case of cross-compilation, "
+"development components are needed but the native python interpreter can also "
+"be required:"
+msgstr ""
+
+#: ../../../../Modules/FindPython3.cmake:570
+msgid ""
+"find_package(Python3 COMPONENTS Development)\n"
+"\n"
+"set(Python3_ARTIFACTS_PREFIX \"_HOST\")\n"
+"find_package(Python3 COMPONENTS Interpreter)\n"
+"\n"
+"# Here Python3_HOST_EXECUTABLE and Python3_HOST::Interpreter artifacts are "
+"defined"
+msgstr ""
+
+#: ../../../../Modules/FindPython3.cmake:581
+msgid ""
+"For consistency with standard behavior of modules, the various standard "
+"``_FOUND`` variables (i.e. without the custom prefix) are also defined by "
+"each call to the :command:`find_package` command."
+msgstr ""
+
+#: ../../../../Modules/FindPython3.cmake:586
+msgid "Commands"
+msgstr ""
+
+#: ../../../../Modules/FindPython3.cmake:588
 msgid ""
 "This module defines the command ``Python3_add_library`` (when :prop_gbl:"
 "`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
@@ -1071,24 +1103,24 @@ msgid ""
 "Python module naming rules::"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:570
+#: ../../../../Modules/FindPython3.cmake:595
 msgid ""
 "Python3_add_library (<name> [STATIC | SHARED | MODULE [USE_SABI <version>] "
 "[WITH_SOABI]]\n"
 "                     <source1> [<source2> ...])"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:573
+#: ../../../../Modules/FindPython3.cmake:598
 msgid "If the library type is not specified, ``MODULE`` is assumed."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:575
+#: ../../../../Modules/FindPython3.cmake:600
 msgid ""
 "For ``MODULE`` library type, if option ``WITH_SOABI`` is specified, the "
 "module suffix will include the ``Python3_SOABI`` value, if any."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:579
+#: ../../../../Modules/FindPython3.cmake:604
 msgid ""
 "For ``MODULE`` type, if the option ``USE_SABI`` is specified, the "
 "preprocessor definition ``Py_LIMITED_API`` will be specified, as "
@@ -1101,13 +1133,13 @@ msgid ""
 "equivalent to ``3.2``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:589
+#: ../../../../Modules/FindPython3.cmake:614
 msgid ""
 "When option ``WITH_SOABI`` is also specified,  the module suffix will "
 "include the ``Python3_SOSABI`` value, if any."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:592
+#: ../../../../Modules/FindPython3.cmake:617
 msgid ""
 "For ``MODULE`` type, the :prop_tgt:`DEBUG_POSTFIX` target property is "
 "initialized with the value of ``Python3_DEBUG_POSTFIX`` variable if defined."

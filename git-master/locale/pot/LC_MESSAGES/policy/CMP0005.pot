@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,18 @@ msgstr ""
 msgid "CMP0005"
 msgstr ""
 
-#: ../../../policy/CMP0005.rst:4
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0005.rst:7
 msgid "Preprocessor definition values are now escaped automatically."
 msgstr ""
 
-#: ../../../policy/CMP0005.rst:6
+#: ../../../policy/CMP0005.rst:9
 msgid ""
 "This policy determines whether or not CMake should generate escaped "
 "preprocessor definition values added via add_definitions.  CMake versions "
@@ -36,7 +43,7 @@ msgid ""
 "escapes already in an attempt to work around limitations in earlier versions."
 msgstr ""
 
-#: ../../../policy/CMP0005.rst:15
+#: ../../../policy/CMP0005.rst:18
 msgid ""
 "The ``OLD`` behavior for this policy is to place definition values given to "
 "add_definitions directly in the generated build rules without attempting to "
@@ -46,16 +53,10 @@ msgid ""
 "escaping implementation."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

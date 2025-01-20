@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,45 +31,76 @@ msgstr ""
 
 #: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:11
 msgid ""
+"This property takes a :ref:`semicolon-separated-list <CMake Language Lists>` "
+"of the following values:"
+msgstr ""
+
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:14
+msgid "``LINKER``: treat the linker warnings as errors."
+msgstr ""
+
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:15
+msgid ""
+"``DRIVER``: treat the compiler warnings as errors when used to drive the "
+"link step. See the :prop_tgt:`COMPILE_WARNING_AS_ERROR` target property for "
+"more information."
+msgstr ""
+
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:19
+msgid ""
+"Moreover, for consistency with the :prop_tgt:`COMPILE_WARNING_AS_ERROR` "
+"target property, a boolean value can be specified:"
+msgstr ""
+
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:22
+msgid "``True`` value: this is equivalent to ``LINKER`` and ``DRIVER`` values."
+msgstr ""
+
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:23
+msgid "``False`` value: deactivate this feature for the target."
+msgstr ""
+
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:25
+msgid ""
 "This property is not implemented for all linkers.  It is silently ignored if "
 "there is no implementation for the linker being used.  The currently "
 "implemented :variable:`compiler linker IDs "
 "<CMAKE_<LANG>_COMPILER_LINKER_ID>` are:"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:16
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:30
 msgid "``AIX``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:17
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:31
 msgid "``AppleClang``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:18
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:32
 msgid "``GNU``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:19
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:33
 msgid "``GNUgold``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:20
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:34
 msgid "``LLD``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:21
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:35
 msgid "``MOLD``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:22
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:36
 msgid "``MSVC``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:23
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:37
 msgid "``Solaris``"
 msgstr ""
 
-#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:25
+#: ../../../prop_tgt/LINK_WARNING_AS_ERROR.rst:39
 msgid ""
 "This property is initialized by the value of the variable :variable:"
 "`CMAKE_LINK_WARNING_AS_ERROR` if it is set when a target is created."

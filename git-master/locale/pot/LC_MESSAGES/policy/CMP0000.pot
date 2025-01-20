@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,18 @@ msgstr ""
 msgid "CMP0000"
 msgstr ""
 
-#: ../../../policy/CMP0000.rst:4
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0000.rst:7
 msgid "A minimum required CMake version must be specified."
 msgstr ""
 
-#: ../../../policy/CMP0000.rst:6
+#: ../../../policy/CMP0000.rst:9
 msgid ""
 "CMake requires that projects specify the version of CMake to which they have "
 "been written.  This policy has been put in place so users trying to build "
@@ -35,11 +42,11 @@ msgid ""
 "your main ``CMakeLists.txt`` file:"
 msgstr ""
 
-#: ../../../policy/CMP0000.rst:15
+#: ../../../policy/CMP0000.rst:18
 msgid "cmake_minimum_required(VERSION <major>.<minor>)"
 msgstr ""
 
-#: ../../../policy/CMP0000.rst:17
+#: ../../../policy/CMP0000.rst:20
 msgid ""
 "where ``<major>.<minor>`` is the version of CMake you want to support (such "
 "as ``3.14``).  The command will ensure that at least the given version of "
@@ -47,7 +54,7 @@ msgid ""
 "See documentation of :command:`cmake_minimum_required` for details."
 msgstr ""
 
-#: ../../../policy/CMP0000.rst:23
+#: ../../../policy/CMP0000.rst:26
 msgid ""
 "Note that the command invocation must appear in the ``CMakeLists.txt`` file "
 "itself; a call in an included file is not sufficient.  The ``OLD`` behavior "
@@ -55,16 +62,10 @@ msgid ""
 "issue an error instead of a warning."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

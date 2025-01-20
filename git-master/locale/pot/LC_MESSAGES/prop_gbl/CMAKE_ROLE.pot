@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,10 +59,18 @@ msgstr ""
 msgid "Running in CTest script mode."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_ROLE.rst:21
+#: ../../../prop_gbl/CMAKE_ROLE.rst:22
 msgid "``CPACK``"
 msgstr ""
 
 #: ../../../prop_gbl/CMAKE_ROLE.rst:22
 msgid "Running in CPack."
+msgstr ""
+
+#: ../../../prop_gbl/CMAKE_ROLE.rst:25
+msgid "See Also"
+msgstr ""
+
+#: ../../../prop_gbl/CMAKE_ROLE.rst:27
+msgid "The :variable:`CMAKE_SCRIPT_MODE_FILE` variable."
 msgstr ""

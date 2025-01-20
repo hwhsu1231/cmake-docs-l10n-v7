@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,25 +26,25 @@ msgid "Check once if the function exists in system or specified library."
 msgstr ""
 
 #: ../../../../Modules/CheckLibraryExists.cmake:12
-msgid "CHECK_LIBRARY_EXISTS(LIBRARY FUNCTION LOCATION VARIABLE)"
+msgid "check_library_exists(<library> <function> <location> <variable>)"
 msgstr ""
 
-#: ../../../../Modules/CheckLibraryExists.cmake:18
+#: ../../../../Modules/CheckLibraryExists.cmake:16
 msgid ""
-"LIBRARY  - the name of the library you are looking for\n"
-"FUNCTION - the name of the function\n"
-"LOCATION - location where the library should be found\n"
-"VARIABLE - internal cache variable to store the result"
+"Check that the library ``<library>`` exists in the given location "
+"``<location>`` and has the specified ``<function>``. The result is stored in "
+"an internal cache variable ``<variable>``. If ``<location>`` is empty "
+"string, default directories are searched."
 msgstr ""
 
-#: ../../../../Modules/CheckLibraryExists.cmake:23
+#: ../../../../Modules/CheckLibraryExists.cmake:21
 msgid ""
 "Prefer using :module:`CheckSymbolExists` or :module:`CheckSourceCompiles` "
 "instead of this module for more robust detection if a function is available "
 "in a library."
 msgstr ""
 
-#: ../../../../Modules/CheckLibraryExists.cmake:27
+#: ../../../../Modules/CheckLibraryExists.cmake:25
 msgid ""
 "The following variables may be set before calling this macro to modify the "
 "way the check is run:"
@@ -114,4 +114,59 @@ msgstr ""
 msgid ""
 "If this variable evaluates to a boolean true value, all status messages "
 "associated with the check will be suppressed."
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:41
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:43
+msgid ""
+"This module can be useful for performing so-called sanity checks to verify "
+"that the specified library provides the expected functionality and is indeed "
+"the correct one being located."
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:47
+msgid ""
+"For example, to check if the ``curl`` library exists in the default paths "
+"and has the ``curl_easy_perform`` function:"
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:50
+msgid ""
+"include(CheckLibraryExists)\n"
+"check_library_exists(curl curl_easy_perform \"\" HAVE_LIBRARY_CURL)"
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:55
+msgid ""
+"To check if library exists in specific non-standard location and has a "
+"specified function:"
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:58
+msgid ""
+"include(CheckLibraryExists)\n"
+"check_library_exists(curl curl_easy_perform \"/opt/curl/lib\" "
+"HAVE_LIBRARY_CURL)"
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:63
+msgid ""
+"Also :ref:`IMPORTED library <add_library imported libraries>` (for example, "
+"from the ``find_package()`` call) can be used:"
+msgstr ""
+
+#: ../../../../Modules/CheckLibraryExists.cmake:66
+msgid ""
+"find_package(CURL)\n"
+"\n"
+"# ...\n"
+"\n"
+"if(TARGET CURL::libcurl)\n"
+"  include(CheckLibraryExists)\n"
+"  check_library_exists(CURL::libcurl curl_easy_perform \"\" "
+"HAVE_LIBRARY_CURL)\n"
+"endif()"
 msgstr ""
