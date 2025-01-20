@@ -57,10 +57,17 @@ message("")
 restore_cmake_message_indent()
 
 
+file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
 if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
+    get_json_value_by_dot_notation(
+        IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
+        IN_DOT_NOTATION   ".${_LANGUAGE}.langtag"
+        OUT_JSON_VALUE    _LANGTAG)
+
+
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
     if (CMAKE_HOST_UNIX)
         set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
@@ -84,16 +91,19 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 ${ENV_VARS_OF_SYSTEM}
                 ${Sphinx_BUILD_EXECUTABLE}
                 -b ${SPHINX_BUILDER}
-                -D locale_dirs=${LOCALE_TO_SOURCE_DIR}            # Relative to <sourcedir>.
+                -D version=${VERSION}
                 -D language=${_LANGUAGE}
+                -D locale_dirs=${LOCALE_TO_SOURCE_DIR}            # Relative to <sourcedir>.
                 -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
+                -D current_version=${VERSION}                     # Passed to html_context.py.
+                -D current_language=${_LANGTAG}                   # Passed to html_context.py.
                 -A versionswitch=1
                 -j ${SPHINX_JOB_NUMBER}
                 ${SPHINX_VERBOSE_ARGS}
                 -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}               # <configdir>, where conf.py locates.
                 ${PROJ_OUT_REPO_DOCS_SOURCE_DIR}                  # <sourcedir>, where index.rst locates.
-                ${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}   # <outputdir>, where .html generates.
+                ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}    # <outputdir>, where .html generates.
         WORKING_DIRECTORY ${PROJ_OUT_REPO_DOCS_DIR}
         ECHO_OUTPUT_VARIABLE
         ECHO_ERROR_VARIABLE
@@ -121,51 +131,51 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
     if (REMOVE_REDUNDANT)
         message(STATUS "Removing redundant files/directories...")
-        file(REMOVE_RECURSE "${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/.doctrees/")
-        file(REMOVE         "${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/.buildinfo")
-        file(REMOVE         "${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/objects.inv")
+        file(REMOVE_RECURSE "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/.doctrees/")
+        file(REMOVE         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/.buildinfo")
+        file(REMOVE         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/objects.inv")
         remove_cmake_message_indent()
         message("")
-        message("Removed '${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/.doctrees/'.")
-        message("Removed '${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/.buildinfo'.")
-        message("Removed '${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/objects.inv'.")
+        message("Removed '${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/.doctrees/'.")
+        message("Removed '${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/.buildinfo'.")
+        message("Removed '${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/objects.inv'.")
         message("")
         restore_cmake_message_indent()
     endif()
 
 
-    if (SPHINX_BUILDER MATCHES "^html$")
-        message(STATUS "Configuring 'version_switch.js' file to the html output directory...")
-        set(PROTOCOLS "file:///" "https://")
-        foreach(PROTOCOL ${PROTOCOLS})
-            string(REGEX REPLACE "${PROTOCOL}" "" BASEURL ${BASEURL_HREF})
-            if (NOT "${BASEURL}" STREQUAL "${BASEURL_HREF}")
-                break()
-            endif()
-        endforeach()
-        unset(PROTOCOL)
-        set(LANGURL_HREF  "${BASEURL_HREF}/${_LANGUAGE}")
-        set(LANGURL       "${BASEURL}/${_LANGUAGE}")
-        set(LANGURL_RE    "${BASEURL}/${_LANGUAGE}")
-        string(REPLACE "." "\\." LANGURL_RE "${LANGURL_RE}")
-        string(REPLACE "/" "\\/" LANGURL_RE "${LANGURL_RE}")
-        remove_cmake_message_indent()
-        message("")
-        message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/version_switch.js.in")
-        message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/version_switch.js")
-        message("")
-        message("BASEURL_HREF = ${BASEURL_HREF}")
-        message("BASEURL      = ${BASEURL}")
-        message("LANGURL_HREF = ${LANGURL_HREF}")
-        message("LANGURL      = ${LANGURL}")
-        message("LANGURL_RE   = ${LANGURL_RE}")
-        message("")
-        restore_cmake_message_indent()
-        configure_file(
-            "${PROJ_CMAKE_TEMPLATES_DIR}/version_switch.js.in"
-            "${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/version_switch.js"
-            @ONLY)
-    endif()
+    # if (SPHINX_BUILDER MATCHES "^html$")
+    #     message(STATUS "Configuring 'version_switch.js' file to the html output directory...")
+    #     set(PROTOCOLS "file:///" "https://")
+    #     foreach(PROTOCOL ${PROTOCOLS})
+    #         string(REGEX REPLACE "${PROTOCOL}" "" BASEURL ${BASEURL_HREF})
+    #         if (NOT "${BASEURL}" STREQUAL "${BASEURL_HREF}")
+    #             break()
+    #         endif()
+    #     endforeach()
+    #     unset(PROTOCOL)
+    #     set(LANGURL_HREF  "${BASEURL_HREF}/${_LANGTAG}")
+    #     set(LANGURL       "${BASEURL}/${_LANGTAG}")
+    #     set(LANGURL_RE    "${BASEURL}/${_LANGTAG}")
+    #     string(REPLACE "." "\\." LANGURL_RE "${LANGURL_RE}")
+    #     string(REPLACE "/" "\\/" LANGURL_RE "${LANGURL_RE}")
+    #     remove_cmake_message_indent()
+    #     message("")
+    #     message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/version_switch.js.in")
+    #     message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/version_switch.js")
+    #     message("")
+    #     message("BASEURL_HREF = ${BASEURL_HREF}")
+    #     message("BASEURL      = ${BASEURL}")
+    #     message("LANGURL_HREF = ${LANGURL_HREF}")
+    #     message("LANGURL      = ${LANGURL}")
+    #     message("LANGURL_RE   = ${LANGURL_RE}")
+    #     message("")
+    #     restore_cmake_message_indent()
+    #     configure_file(
+    #         "${PROJ_CMAKE_TEMPLATES_DIR}/version_switch.js.in"
+    #         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/version_switch.js"
+    #         @ONLY)
+    # endif()
 endforeach()
 unset(_LANGUAGE)
 
@@ -174,7 +184,11 @@ message(STATUS "The '${SPHINX_BUILDER}' documentation is built succesfully!")
 remove_cmake_message_indent()
 message("")
 foreach(_LANGUAGE ${LANGUAGE_LIST})
-    message("${_LANGUAGE} : ${PROJ_OUT_BUILDER_DIR}/${_LANGUAGE}/${VERSION}/index.html")
+    get_json_value_by_dot_notation(
+        IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
+        IN_DOT_NOTATION   ".${_LANGUAGE}.langtag"
+        OUT_JSON_VALUE    _LANGTAG)
+    message("${_LANGUAGE} : ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/index.html")
 endforeach()
 message("")
 restore_cmake_message_indent()

@@ -147,7 +147,7 @@ file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
 # Configure Sphinx verbose arguments based on verbosity level.
 #]============================================================]
 
-if(SPHINX_VERBOSE_LEVEL GREATER 0)
+if (SPHINX_VERBOSE_LEVEL GREATER 0)
     set(SPHINX_VERBOSE_ARGS "-")
     math(EXPR REPEAT_COUNT "${SPHINX_VERBOSE_LEVEL} - 1")
     foreach(INDEX RANGE ${REPEAT_COUNT})
@@ -177,23 +177,24 @@ get_members_of_json_object(
 #   - Set VERSION_TYPE    to "tag"
 #   - Set TAG_PATTERN     to "^v([0-9]+)\\.([0-9]+)\\.([0-9]+)(-rc[1-9][0-9]*)?$"
 #   - Set TAG_SUFFIX      to "-rc"
-# - For "vX.Y":
+# - For "[MAJOR].[MINOR]":
 #   - Set VERSION_TYPE    to "tag"
-#   - Set TAG_PATTERN     to "^vX\\.Y\\.([0-9]+)(-rc[1-9][0-9]*)?$"
+#   - Set TAG_PATTERN     to "^v([MAJOR])\\.([MINOR])\\.([0-9]+)(-rc[1-9][0-9]*)?$"
 #   - Set TAG_SUFFIX      to "-rc"
 #]============================================================]
 
-if (VERSION MATCHES     "^git-master$")
+if     (VERSION MATCHES "^git-master$")
     set(VERSION_TYPE    "branch")
     set(BRANCH_NAME     "master")
-elseif(VERSION MATCHES  "^latest$")
+elseif (VERSION MATCHES "^latest$")
     set(VERSION_TYPE    "tag")
     set(TAG_PATTERN     "^v([0-9]+)\\.([0-9]+)\\.([0-9]+)(-rc[1-9][0-9]*)?$")
     set(TAG_SUFFIX      "-rc")
-elseif(VERSION MATCHES  "^v([0-9]+)\\.([0-9]+)$")
+elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
+    set(MAJOR           "${CMAKE_MATCH_1}")
+    set(MINOR           "${CMAKE_MATCH_2}")
     set(VERSION_TYPE    "tag")
-    string(REGEX REPLACE "\\." "\\\\." VERSION_ESCAPED "${VERSION}")
-    set(TAG_PATTERN     "^${VERSION_ESCAPED}\\.([0-9]+)(-rc[1-9][0-9]*)?$")
+    set(TAG_PATTERN     "^v(${MAJOR})\\.(${MINOR})\\.([0-9]+)(-rc[1-9][0-9]*)?$")
     set(TAG_SUFFIX      "-rc")
 else()
     message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
@@ -204,17 +205,17 @@ endif()
 #]============================================================]
 
 set(LANGUAGE_IS_VALID FALSE)
-if(LANGUAGE STREQUAL "all")
+if (LANGUAGE STREQUAL "all")
     set(LANGUAGE_IS_VALID TRUE)
 else()
     foreach(_LANGUAGE ${LANGUAGE_LIST})
-        if(LANGUAGE STREQUAL _LANGUAGE)
+        if (LANGUAGE STREQUAL _LANGUAGE)
             set(LANGUAGE_IS_VALID TRUE)
         endif()
     endforeach()
     unset(_LANGUAGE)
 endif()
-if(NOT LANGUAGE_IS_VALID)
+if (NOT LANGUAGE_IS_VALID)
     message(FATAL_ERROR "Invalid LANGUAGE value. (${LANGUAGE})")
 endif()
 
@@ -248,32 +249,31 @@ if     (VERSION MATCHES       "^git-master$")
 elseif (VERSION MATCHES       "^latest$")
     set(VERSION_OF_PYTHON     "3.10")
     set(VERSION_OF_SPHINX     "6.2")
-elseif (VERSION MATCHES       "^v([0-9]+)\\.([0-9]+)$")
-    string(SUBSTRING "${VERSION}" 1 -1 VERSION_NO_V)
-    if     (VERSION_NO_V VERSION_LESS_EQUAL     "3.31" AND
-            VERSION_NO_V VERSION_GREATER_EQUAL  "3.28")     #[[ For v3.28~v3.31 ]]
-        set(VERSION_OF_PYTHON   "3.10")     #[[ Install the '3.10' version of Python. ]]
-        set(VERSION_OF_SPHINX   "6.2")      #[[ Install the '6.2' version of Sphinx.  ]]
-    elseif (VERSION_NO_V VERSION_LESS_EQUAL     "3.27" AND
-            VERSION_NO_V VERSION_GREATER_EQUAL  "3.19")     #[[ For v3.19~v3.27 ]]
-        set(VERSION_OF_PYTHON   "3.10")     #[[ Install the '3.10' version of Python. ]]
-        set(VERSION_OF_SPHINX   "5.3")      #[[ Install the '5.3' version of Sphinx.  ]]
-    elseif (VERSION_NO_V VERSION_LESS_EQUAL     "3.18" AND
-            VERSION_NO_V VERSION_GREATER_EQUAL  "3.9")      #[[ For v3.9~v3.18 ]]
-        set(VERSION_OF_PYTHON   "3.6")      #[[ Install the '3.6' version of Python. ]]
-        set(VERSION_OF_SPHINX   "2.4")      #[[ Install the '2.4' version of Sphinx. ]]
-    elseif (VERSION_NO_V VERSION_LESS_EQUAL     "3.8" AND
-            VERSION_NO_V VERSION_GREATER_EQUAL  "3.0")      #[[ For v3.0~v3.8 ]]
-        set(VERSION_OF_PYTHON   "3.6")      #[[ Install the '3.6' version of Python. ]]
-        set(VERSION_OF_SPHINX   "1.6")      #[[ Install the '1.6' version of Sphinx. ]]
+elseif (VERSION MATCHES       "^([0-9]+)\\.([0-9]+)$")
+    if     (VERSION VERSION_LESS_EQUAL    "3.31" AND
+            VERSION VERSION_GREATER_EQUAL "3.28")     #[[ For 3.28~3.31 ]]
+        set(VERSION_OF_PYTHON   "3.10")   #[[ Install the '3.10' version of Python. ]]
+        set(VERSION_OF_SPHINX   "6.2")    #[[ Install the '6.2' version of Sphinx.  ]]
+    elseif (VERSION VERSION_LESS_EQUAL    "3.27" AND
+            VERSION VERSION_GREATER_EQUAL "3.19")     #[[ For 3.19~3.27 ]]
+        set(VERSION_OF_PYTHON   "3.10")   #[[ Install the '3.10' version of Python. ]]
+        set(VERSION_OF_SPHINX   "5.3")    #[[ Install the '5.3' version of Sphinx.  ]]
+    elseif (VERSION VERSION_LESS_EQUAL    "3.18" AND
+            VERSION VERSION_GREATER_EQUAL "3.9")      #[[ For 3.9~3.18 ]]
+        set(VERSION_OF_PYTHON   "3.6")    #[[ Install the '3.6' version of Python. ]]
+        set(VERSION_OF_SPHINX   "2.4")    #[[ Install the '2.4' version of Sphinx. ]]
+    elseif (VERSION VERSION_LESS_EQUAL    "3.8" AND
+            VERSION VERSION_GREATER_EQUAL "3.0")      #[[ For 3.0~3.8 ]]
+        set(VERSION_OF_PYTHON   "3.6")    #[[ Install the '3.6' version of Python. ]]
+        set(VERSION_OF_SPHINX   "1.6")    #[[ Install the '1.6' version of Sphinx. ]]
     else()
         message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
     endif()
 endif()
-if(NOT "$CACHE{VERSION_OF_PYTHON}" STREQUAL "[default]")
+if (NOT "$CACHE{VERSION_OF_PYTHON}" STREQUAL "[default]")
     set(VERSION_OF_PYTHON "$CACHE{VERSION_OF_PYTHON}")
 endif()
-if(NOT "$CACHE{VERSION_OF_SPHINX}" STREQUAL "[default]")
+if (NOT "$CACHE{VERSION_OF_SPHINX}" STREQUAL "[default]")
     set(VERSION_OF_SPHINX "$CACHE{VERSION_OF_SPHINX}")
 endif()
 
@@ -403,10 +403,11 @@ string(REPLACE ";" "\\\\;" LANGUAGE_LIST "${LANGUAGE_LIST}")
 
 set(SCRIPT_MODE_ENV
     LANG=en_US.UTF-8
+    LANGUAGE=en_US
     PYTHONNOUSERSITE=1)
 
 #[============================================================[
-  Cache variables passed to script mode.
+# Cache variables passed to script mode.
 #]============================================================]
 
 set(SCRIPT_MODE_CACHE
@@ -537,7 +538,7 @@ add_custom_target(create_rtd_symlinks
 # Add dependencies for targets.
 #]============================================================]
 
-if(AUTO_DEPEND)
+if (AUTO_DEPEND)
     add_dependencies(install_requirements   prepare_repositories)
     add_dependencies(sphinx_update_pot      install_requirements)
     add_dependencies(gettext_update_po      sphinx_update_pot)
