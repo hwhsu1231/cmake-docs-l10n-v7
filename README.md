@@ -346,7 +346,7 @@ You can preview translations in GitHub Pages:
         <th>Crowdin Versions</th>
       </tr>
       <tr>
-        <td><code>zh-cn</code></td>
+        <td><code>zh_CN</code></td>
         <td>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/git-master">git-master</a>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/latest">latest</a>
@@ -355,7 +355,7 @@ You can preview translations in GitHub Pages:
         </td>
       </tr>
       <tr>
-        <td><code>zh-tw</code></td>
+        <td><code>zh_TW</code></td>
         <td>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/git-master">git-master</a>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/latest">latest</a>
