@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-20 06:53+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgid ""
 "                [ENCODING <name>]\n"
 "                [ECHO_OUTPUT_VARIABLE]\n"
 "                [ECHO_ERROR_VARIABLE]\n"
-"                [COMMAND_ERROR_IS_FATAL <ANY|LAST>])"
+"                [COMMAND_ERROR_IS_FATAL <ANY|LAST|NONE>])"
 msgstr ""
 
 #: ../../../command/execute_process.rst:29
@@ -259,6 +259,7 @@ msgid ""
 msgstr ""
 
 #: ../../../command/execute_process.rst:144
+#: ../../../command/execute_process.rst:191
 msgid "``NONE``"
 msgstr ""
 
@@ -325,8 +326,8 @@ msgid ""
 "rfc3629>`_ naming convention."
 msgstr ""
 
-#: ../../../command/execute_process.rst:183
-msgid "``COMMAND_ERROR_IS_FATAL <ANY|LAST>``"
+#: ../../../command/execute_process.rst:198
+msgid "``COMMAND_ERROR_IS_FATAL <ANY|LAST|NONE>``"
 msgstr ""
 
 #: ../../../command/execute_process.rst:174
@@ -335,15 +336,38 @@ msgid ""
 "an error is encountered:"
 msgstr ""
 
-#: ../../../command/execute_process.rst:177
+#: ../../../command/execute_process.rst:179
+msgid "``ANY``"
+msgstr ""
+
+#: ../../../command/execute_process.rst:178
 msgid ""
-"``ANY`` If any of the commands in the list of commands fail, the "
+"If any of the commands in the list of commands fail, the "
 "``execute_process()`` command halts with an error."
 msgstr ""
 
-#: ../../../command/execute_process.rst:181
+#: ../../../command/execute_process.rst:185
+msgid "``LAST``"
+msgstr ""
+
+#: ../../../command/execute_process.rst:182
 msgid ""
-"``LAST`` If the last command in the list of commands fails, the "
-"``execute_process()`` command halts with an error.  Commands earlier in the "
-"list will not cause a fatal error."
+"If the last command in the list of commands fails, the ``execute_process()`` "
+"command halts with an error. Commands earlier in the list will not cause a "
+"fatal error."
+msgstr ""
+
+#: ../../../command/execute_process.rst:190
+msgid ""
+"Regardless of any of the commands failing, the ``execute_process()`` command "
+"will not halt with an error."
+msgstr ""
+
+#: ../../../command/execute_process.rst:195
+msgid ""
+"If not provided, the :variable:"
+"`CMAKE_EXECUTE_PROCESS_COMMAND_ERROR_IS_FATAL` variable is checked.  If the "
+"variable is not set, the default is ``NONE``. If ``RESULT_VARIABLE`` or "
+"``RESULTS_VARIABLE`` is supplied, :variable:"
+"`CMAKE_EXECUTE_PROCESS_COMMAND_ERROR_IS_FATAL` is ignored."
 msgstr ""

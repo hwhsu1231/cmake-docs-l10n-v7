@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,6 +132,15 @@ msgstr ""
 
 #: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:3
 msgid ""
+"Compatibility with versions of CMake older than 2.8.12 is removed. Calls to :"
+"command:`cmake_minimum_required(VERSION)` or :command:"
+"`cmake_policy(VERSION)` that do not specify at least 2.8.12 as their policy "
+"version (optionally via ``...<max>``) will produce an error in CMake 4.0 and "
+"above."
+msgstr ""
+
+#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:11
+msgid ""
 "Compatibility with versions of CMake older than 3.10 is deprecated. Calls "
 "to :command:`cmake_minimum_required(VERSION)` or :command:"
 "`cmake_policy(VERSION)` that do not specify at least 3.10 as their policy "
@@ -139,7 +148,7 @@ msgid ""
 "CMake 3.31 and above."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:11
+#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:19
 msgid ""
 "Compatibility with versions of CMake older than 3.5 is deprecated. Calls to :"
 "command:`cmake_minimum_required(VERSION)` or :command:"
@@ -148,7 +157,7 @@ msgid ""
 "CMake 3.27 and above."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:19
+#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:27
 msgid ""
 "Compatibility with versions of CMake older than 2.8.12 is deprecated. Calls "
 "to :command:`cmake_minimum_required(VERSION)` or :command:"

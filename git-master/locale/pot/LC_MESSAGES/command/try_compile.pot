@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-20 06:53+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -520,39 +520,87 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:338
 msgid ""
-"The current settings of :policy:`CMP0065` and :policy:`CMP0083` are "
-"propagated through to the generated test project."
+"Some policies are set automatically in the generated test project as needed "
+"to honor the state of the calling project:"
 msgstr ""
 
 #: ../../../command/try_compile.rst:341
+msgid ":policy:`CMP0065`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:342
+msgid ":policy:`CMP0083`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:343
+msgid ":policy:`CMP0091`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:344
+msgid ":policy:`CMP0104`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:345
+msgid ":policy:`CMP0123`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:346
+msgid ":policy:`CMP0126`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:347
+msgid ":policy:`CMP0128`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:348
+msgid ":policy:`CMP0136`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:349
+msgid ":policy:`CMP0141`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:350
+msgid ":policy:`CMP0155`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:351
+msgid ":policy:`CMP0157`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:352
+msgid ":policy:`CMP0181`"
+msgstr ""
+
+#: ../../../command/try_compile.rst:354
 msgid ""
 "The current setting of :policy:`CMP0181` policy is propagated through to the "
 "generated test project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:345
+#: ../../../command/try_compile.rst:358
 msgid ""
 "Set variable :variable:`CMAKE_TRY_COMPILE_CONFIGURATION` to choose a build "
 "configuration:"
 msgstr ""
 
-#: ../../../command/try_compile.rst:348
+#: ../../../command/try_compile.rst:361
 msgid "For multi-config generators, this selects which configuration to build."
 msgstr ""
 
-#: ../../../command/try_compile.rst:350
+#: ../../../command/try_compile.rst:363
 msgid ""
 "For single-config generators, this sets :variable:`CMAKE_BUILD_TYPE` in the "
 "test project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:353
+#: ../../../command/try_compile.rst:366
 msgid ""
 "Set the :variable:`CMAKE_TRY_COMPILE_TARGET_TYPE` variable to specify the "
 "type of target used for the source file signature."
 msgstr ""
 
-#: ../../../command/try_compile.rst:357
+#: ../../../command/try_compile.rst:370
 msgid ""
 "Set the :variable:`CMAKE_TRY_COMPILE_PLATFORM_VARIABLES` variable to specify "
 "variables that must be propagated into the test project.  This variable is "
@@ -561,100 +609,100 @@ msgid ""
 "project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:364
+#: ../../../command/try_compile.rst:377
 msgid ""
 "If :policy:`CMP0067` is set to ``NEW``, or any of the ``<LANG>_STANDARD``, "
 "``<LANG>_STANDARD_REQUIRED``, or ``<LANG>_EXTENSIONS`` options are used, "
 "then the language standard variables are honored:"
 msgstr ""
 
-#: ../../../command/try_compile.rst:369
+#: ../../../command/try_compile.rst:382
 msgid ":variable:`CMAKE_C_STANDARD`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:370
+#: ../../../command/try_compile.rst:383
 msgid ":variable:`CMAKE_C_STANDARD_REQUIRED`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:371
+#: ../../../command/try_compile.rst:384
 msgid ":variable:`CMAKE_C_EXTENSIONS`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:372
+#: ../../../command/try_compile.rst:385
 msgid ":variable:`CMAKE_CXX_STANDARD`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:373
+#: ../../../command/try_compile.rst:386
 msgid ":variable:`CMAKE_CXX_STANDARD_REQUIRED`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:374
+#: ../../../command/try_compile.rst:387
 msgid ":variable:`CMAKE_CXX_EXTENSIONS`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:375
+#: ../../../command/try_compile.rst:388
 msgid ":variable:`CMAKE_OBJC_STANDARD`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:376
+#: ../../../command/try_compile.rst:389
 msgid ":variable:`CMAKE_OBJC_STANDARD_REQUIRED`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:377
+#: ../../../command/try_compile.rst:390
 msgid ":variable:`CMAKE_OBJC_EXTENSIONS`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:378
+#: ../../../command/try_compile.rst:391
 msgid ":variable:`CMAKE_OBJCXX_STANDARD`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:379
+#: ../../../command/try_compile.rst:392
 msgid ":variable:`CMAKE_OBJCXX_STANDARD_REQUIRED`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:380
+#: ../../../command/try_compile.rst:393
 msgid ":variable:`CMAKE_OBJCXX_EXTENSIONS`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:381
+#: ../../../command/try_compile.rst:394
 msgid ":variable:`CMAKE_CUDA_STANDARD`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:382
+#: ../../../command/try_compile.rst:395
 msgid ":variable:`CMAKE_CUDA_STANDARD_REQUIRED`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:383
+#: ../../../command/try_compile.rst:396
 msgid ":variable:`CMAKE_CUDA_EXTENSIONS`"
 msgstr ""
 
-#: ../../../command/try_compile.rst:385
+#: ../../../command/try_compile.rst:398
 msgid ""
 "Their values are used to set the corresponding target properties in the "
 "generated project (unless overridden by an explicit option)."
 msgstr ""
 
-#: ../../../command/try_compile.rst:388
+#: ../../../command/try_compile.rst:401
 msgid ""
 "For the :generator:`Green Hills MULTI` generator, the GHS toolset and target "
 "system customization cache variables are also propagated into the test "
 "project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:393
+#: ../../../command/try_compile.rst:406
 msgid ""
 "The :variable:`CMAKE_TRY_COMPILE_NO_PLATFORM_VARIABLES` variable may be set "
 "to disable passing platform variables into the test project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:397
+#: ../../../command/try_compile.rst:410
 msgid ""
 "If :policy:`CMP0141` is set to ``NEW``, one can use :variable:"
 "`CMAKE_MSVC_DEBUG_INFORMATION_FORMAT` to specify the MSVC debug information "
 "format."
 msgstr ""
 
-#: ../../../command/try_compile.rst:402
+#: ../../../command/try_compile.rst:415
 msgid ""
 "If the :prop_gbl:`PROPAGATE_TOP_LEVEL_INCLUDES_TO_TRY_COMPILE` global "
 "property is set to true, :variable:`CMAKE_PROJECT_TOP_LEVEL_INCLUDES` is "
@@ -662,10 +710,10 @@ msgid ""
 "`whole-project signature <Try Compiling Whole Projects>`."
 msgstr ""
 
-#: ../../../command/try_compile.rst:409
+#: ../../../command/try_compile.rst:422
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/try_compile.rst:411
+#: ../../../command/try_compile.rst:424
 msgid ":command:`try_run`"
 msgstr ""

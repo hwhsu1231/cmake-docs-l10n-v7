@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake git-master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-01-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,22 +21,29 @@ msgstr ""
 msgid "CMP0003"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:4
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0003.rst:7
 msgid "Libraries linked via full path no longer produce linker search paths."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:6
+#: ../../../policy/CMP0003.rst:9
 msgid ""
 "This policy affects how libraries whose full paths are NOT known are found "
 "at link time, but was created due to a change in how CMake deals with "
 "libraries whose full paths are known.  Consider the code"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:12
+#: ../../../policy/CMP0003.rst:15
 msgid "target_link_libraries(myexe /path/to/libA.so)"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:14
+#: ../../../policy/CMP0003.rst:17
 msgid ""
 "CMake 2.4 and below implemented linking to libraries whose full paths are "
 "known by splitting them on the link line into separate components consisting "
@@ -44,11 +51,11 @@ msgid ""
 "produced something like"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:21
+#: ../../../policy/CMP0003.rst:24
 msgid "... -L/path/to -lA ..."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:23
+#: ../../../policy/CMP0003.rst:26
 msgid ""
 "in order to link to library A.  An analysis was performed to order multiple "
 "link directories such that the linker would find library A in the desired "
@@ -58,19 +65,19 @@ msgid ""
 "produces something like"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:32
+#: ../../../policy/CMP0003.rst:35
 msgid "... /path/to/libA.so ...."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:34
+#: ../../../policy/CMP0003.rst:37
 msgid "Unfortunately this change can break code like"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:38
+#: ../../../policy/CMP0003.rst:41
 msgid "target_link_libraries(myexe /path/to/libA.so B)"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:40
+#: ../../../policy/CMP0003.rst:43
 msgid ""
 "where ``B`` is meant to find ``/path/to/libB.so``.  This code is wrong "
 "because the user is asking the linker to find library B but has not provided "
@@ -80,7 +87,7 @@ msgid ""
 "library B to be found."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:47
+#: ../../../policy/CMP0003.rst:50
 msgid ""
 "In order to support projects depending on linker search paths added by "
 "linking to libraries with known full paths, the ``OLD`` behavior for this "
@@ -89,45 +96,45 @@ msgid ""
 "a link line such as"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:55
+#: ../../../policy/CMP0003.rst:58
 msgid "... -L/path/to /path/to/libA.so -lB ..."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:57
+#: ../../../policy/CMP0003.rst:60
 msgid ""
 "which will allow library B to be found as it was previously.  When this "
 "policy is set to NEW, CMake will produce a link line such as"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:62
+#: ../../../policy/CMP0003.rst:65
 msgid "... /path/to/libA.so -lB ..."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:64
+#: ../../../policy/CMP0003.rst:67
 msgid "which more accurately matches what the project specified."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:66
+#: ../../../policy/CMP0003.rst:69
 msgid ""
 "The setting for this policy used when generating the link line is that in "
 "effect when the target is created by an add_executable or add_library "
 "command.  For the example described above, the code"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:72
+#: ../../../policy/CMP0003.rst:75
 msgid ""
 "cmake_policy(SET CMP0003 OLD) # or cmake_policy(VERSION 2.4)\n"
 "add_executable(myexe myexe.c)\n"
 "target_link_libraries(myexe /path/to/libA.so B)"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:76
+#: ../../../policy/CMP0003.rst:79
 msgid ""
 "will work and suppress the warning for this policy.  It may also be updated "
 "to work with the corrected linking approach:"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:81
+#: ../../../policy/CMP0003.rst:84
 msgid ""
 "cmake_policy(SET CMP0003 NEW) # or cmake_policy(VERSION 2.6)\n"
 "link_directories(/path/to) # needed to find library B\n"
@@ -135,39 +142,33 @@ msgid ""
 "target_link_libraries(myexe /path/to/libA.so B)"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:86
+#: ../../../policy/CMP0003.rst:89
 msgid "Even better, library B may be specified with a full path:"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:90
+#: ../../../policy/CMP0003.rst:93
 msgid ""
 "add_executable(myexe myexe.c)\n"
 "target_link_libraries(myexe /path/to/libA.so /path/to/libB.so)"
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:93
+#: ../../../policy/CMP0003.rst:96
 msgid ""
 "When all items on the link line have known paths CMake does not check this "
 "policy so it has no effect."
 msgstr ""
 
-#: ../../../policy/CMP0003.rst:96
+#: ../../../policy/CMP0003.rst:99
 msgid ""
 "Note that the warning for this policy will be issued for at most one "
 "target.  This avoids flooding users with messages for every target when "
 "setting the policy once will probably fix all targets."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""
