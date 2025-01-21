@@ -13,11 +13,11 @@ set(LANGUAGE "all"
     # Possible values are "all" and languages listed in languages.json.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language for details.
 
-set(VERSION "git-master"
+set(VERSION "master"
     CACHE STRING "The current version for the documentation.")
     # Possible values are versions listed in versions.json.
 
-set(COMPENDIUM "git-master"
+set(COMPENDIUM "master"
     CACHE STRING "The version of compendium from which the current version will merge translations.")
     # Possible values are NULL and versions listed in versions.json.
 
@@ -170,7 +170,7 @@ get_members_of_json_object(
 
 #[============================================================[
 # Validate the VERSION cache variable.
-# - For "git-master":
+# - For "master":
 #   - Set VERSION_TYPE    to "branch"
 #   - Set BRANCH_NAME     to "master"
 # - For "latest":
@@ -183,7 +183,7 @@ get_members_of_json_object(
 #   - Set TAG_SUFFIX      to "-rc"
 #]============================================================]
 
-if     (VERSION MATCHES "^git-master$")
+if     (VERSION MATCHES "^master$")
     set(VERSION_TYPE    "branch")
     set(BRANCH_NAME     "master")
 elseif (VERSION MATCHES "^latest$")
@@ -243,7 +243,7 @@ endif()
 # Set VERSION_OF_XXX to $CACHE{VERSION_OF_XX} if it's not "[default]".
 #]============================================================]
 
-if     (VERSION MATCHES       "^git-master$")
+if     (VERSION MATCHES       "^master$")
     set(VERSION_OF_PYTHON     "3.10")
     set(VERSION_OF_SPHINX     "6.2")
 elseif (VERSION MATCHES       "^latest$")

@@ -8,12 +8,10 @@ const _CURRENT_LANGUAGE = CURRENT_LANGUAGE;
 const _SERVER_ROOT = document.documentElement.dataset.content_root || `${window.location.origin}`;
 const _SCRIPT_SRC = document.currentScript?.src || "";
 const _SCRIPT_DIR = _SCRIPT_SRC.substring(0, _SCRIPT_SRC.lastIndexOf("/"));
-// alert(`_SCRIPT_DIR: ${_SCRIPT_DIR}`);
-// alert(`_SERVER_ROOT: ${_SERVER_ROOT}`);
 
 // 所有版本和語言的選項
 const _ALL_VERSIONS = {
-  'git-master': 'git-master',
+  'master': 'git-master',
   'latest': 'latest release',
   '3.30': '3.30',
   '3.29': '3.29',

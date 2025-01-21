@@ -1,7 +1,7 @@
 {
   "dev" : [
     {
-      "VERSION" : "git-master",
+      "VERSION" : "master",
       "ALLINONE" : true,
       "COMPENDIUM" : ""
     }
@@ -10,92 +10,92 @@
     {
       "VERSION" : "latest",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.30",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.29",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.28",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.27",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.26",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.25",
-      "COMPENDIUM" : "git-master",
+      "COMPENDIUM" : "master",
       "ALLINONE" : true
     },
     {
       "VERSION" : "3.24",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.23",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.22",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.21",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.20",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.19",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.18",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.17",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.16",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.15",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.14",
       "ALLINONE" : true,
-      "COMPENDIUM" : "git-master"
+      "COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.13",

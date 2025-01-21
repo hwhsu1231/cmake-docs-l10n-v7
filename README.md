@@ -348,7 +348,7 @@ You can preview translations in GitHub Pages:
       <tr>
         <td><code>zh_CN</code></td>
         <td>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/git-master">git-master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/master">master</a>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/latest">latest</a>
           <span>…</span>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/3.0">3.0</a>
@@ -357,7 +357,7 @@ You can preview translations in GitHub Pages:
       <tr>
         <td><code>zh_TW</code></td>
         <td>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/git-master">git-master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/master">master</a>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/latest">latest</a>
           <span>…</span>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/3.0">3.0</a>

@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  const url_re = /@LANGURL_RE@\/(git-master|latest|(\d\.\d+))\/(.*)/;
+  const url_re = /@LANGURL_RE@\/(master|latest|(\d\.\d+))\/(.*)/;
   const all_versions = {
-    'git-master': 'git-master',
+    'master': 'git-master',
     'latest': 'latest release',
     '3.30': '3.30',
     '3.29': '3.29',
