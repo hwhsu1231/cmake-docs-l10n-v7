@@ -10,7 +10,7 @@ on:
         description: 'VERSION input'
         required: true
         type: string
-        default: 'git-master'
+        default: 'master'
       GETTEXT:
         description: 'GETTEXT input'
         required: true

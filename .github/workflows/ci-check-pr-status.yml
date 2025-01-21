@@ -93,7 +93,7 @@ jobs:
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
-      VERSION: 'git-master'
+      VERSION: 'master'
       LANGUAGE: 'all'
       MODE_OF_UPDATE: 'COMPARE'
       BASEURL_HREF: 'https://hwhsu1231.github.io/cmake-docs-l10n-v7'
