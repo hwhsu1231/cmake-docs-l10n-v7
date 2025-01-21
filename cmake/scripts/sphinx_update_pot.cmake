@@ -65,13 +65,14 @@ restore_cmake_message_indent()
 
 
 message(STATUS "Copying 'templates/layout.html' file...")
+file(MAKE_DIRECTORY "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates")
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/layout.html"
-    "${PROJ_OUT_REPO_SPHINX_DIR}/templates/layout.html")
+    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates/layout.html")
 remove_cmake_message_indent()
 message("")
 message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/layout.html")
-message("To:   ${PROJ_OUT_REPO_SPHINX_DIR}/templates/layout.html")
+message("To:   ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates/layout.html")
 message("")
 restore_cmake_message_indent()
 
@@ -98,8 +99,8 @@ execute_process(
     COMMAND ${CMAKE_COMMAND} -E env
             ${ENV_VARS_OF_SYSTEM}
             ${CMAKE_COMMAND}
-            -S ${PROJ_OUT_REPO_SPHINX_DIR}
-            -B ${PROJ_OUT_REPO_SPHINX_DIR}/build
+            -S ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}
+            -B ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/build
             # Enable SPHINX_HTML option to configure conf.py.in into conf.py.
             -D SPHINX_HTML=ON
             # # Since find_program(SPHINX_EXECUTABLE) of CMake repo doesn't support to
@@ -114,7 +115,7 @@ restore_cmake_message_indent()
 
 
 message(STATUS "Copying the configuration file 'conf.py'...")
-set(SRC_CONF_PY_FILE    "${PROJ_OUT_REPO_SPHINX_DIR}/build/conf.py")
+set(SRC_CONF_PY_FILE    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/build/conf.py")
 set(DST_CONF_PY_FILE    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
 remove_cmake_message_indent()
 message("")
@@ -188,9 +189,19 @@ if (OLD_EXTENSIONS_LIST)
 else()
     message(FATAL_ERROR "Failed to find 'extensions' list in: ${SPHINX_CONF_PY_FILE}")
 endif()
+
+
+message(STATUS "Copying 'html_context.py' extension file...")
+file(MAKE_DIRECTORY "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}")
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/html_context.py"
-    "${PROJ_OUT_REPO_SPHINX_DIR}/html_context.py")
+    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/html_context.py")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/html_context.py")
+message("To:   ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/html_context.py")
+message("")
+restore_cmake_message_indent()
 
 
 if (NOT UPDATE_POT_REQUIRED)
