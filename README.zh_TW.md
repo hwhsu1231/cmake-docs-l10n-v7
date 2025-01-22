@@ -368,19 +368,19 @@ You can preview translations in GitHub Pages:
       <tr>
         <td><code>zh_CN</code></td>
         <td>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_CN/git-master">git-master</a>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_CN/latest">latest</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/master">master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/latest">latest</a>
           <span>…</span>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_CN/v3.0">v3.0</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/3.0">3.0</a>
         </td>
       </tr>
       <tr>
         <td><code>zh_TW</code></td>
         <td>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_TW/git-master">git-master</a>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_TW/latest">latest</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/master">master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/latest">latest</a>
           <span>…</span>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh_TW/v3.0">v3.0</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/3.0">3.0</a>
         </td>
       </tr>
     </tbody>
