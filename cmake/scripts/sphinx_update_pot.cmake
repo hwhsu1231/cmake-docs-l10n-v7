@@ -109,7 +109,7 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying the configuration file 'conf.py'...")
+message(STATUS "Copying 'conf.py' to '${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/' directory...")
 set(SRC_CONF_PY_FILE    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/build/conf.py")
 set(DST_CONF_PY_FILE    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
 remove_cmake_message_indent()

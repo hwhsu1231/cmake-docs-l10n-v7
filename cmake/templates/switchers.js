@@ -3,11 +3,10 @@
 // 確認是否為本機檔案
 const _is_file_uri = (uri) => uri.startsWith("file:/");
 const _IS_LOCAL = _is_file_uri(window.location.href);
-const _CURRENT_VERSION  = CURRENT_VERSION;
-const _CURRENT_LANGUAGE = CURRENT_LANGUAGE;
-const _SERVER_ROOT = document.documentElement.dataset.content_root || `${window.location.origin}`;
-const _SCRIPT_SRC = document.currentScript?.src || "";
-const _SCRIPT_DIR = _SCRIPT_SRC.substring(0, _SCRIPT_SRC.lastIndexOf("/"));
+const _CURRENT_VERSION  = SWITCHERS_OPTIONS.CURRENT_VERSION;
+const _CURRENT_LANGUAGE = SWITCHERS_OPTIONS.CURRENT_LANGUAGE;
+const _HTML_BASEURL     = SWITCHERS_OPTIONS.HTML_BASEURL;
+const _SERVER_ROOT      = window.location.origin;
 
 // 所有版本和語言的選項
 const _ALL_VERSIONS = {
@@ -89,7 +88,7 @@ const _create_version_select = (versions) => {
             window.location.href = target_url;  // 目標存在，跳轉到目標頁面
           } else {
             console.error("Target file not found, redirecting to fallback.");
-            const fallbackUrl = `${_SCRIPT_DIR}/${_CURRENT_LANGUAGE}/${selected_version}/`;
+            const fallbackUrl = `${_HTML_BASEURL}/${_CURRENT_LANGUAGE}/${selected_version}/`;
             window.location.href = fallbackUrl;
           }
         } catch (error) {
@@ -137,7 +136,7 @@ const _create_language_select = (languages) => {
             window.location.href = target_url;  // 目標存在，跳轉到目標頁面
           } else {
             console.error("Target file not found, redirecting to fallback.");
-            const fallbackUrl = `${_SCRIPT_DIR}/${selected_language}/${_CURRENT_VERSION}/`;
+            const fallbackUrl = `${_HTML_BASEURL}/${selected_language}/${_CURRENT_VERSION}/`;
             window.location.href = fallbackUrl;
           }
         } catch (error) {

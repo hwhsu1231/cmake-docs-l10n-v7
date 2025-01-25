@@ -96,10 +96,10 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -D locale_dirs=${LOCALE_TO_SOURCE_DIR}            # Relative to <sourcedir>.
                 -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
-                -D switchers=1                                    # Passed to html_context in custom.py.
-                -D html_baseurl=${BASEURL_HREF}                   # Passed to html_context in custom.py.
-                -D current_version=${VERSION}                     # Passed to html_context in custom.py.
-                -D current_language=${_LANGTAG}                   # Passed to html_context in custom.py.
+                -D enable_switchers=1                             # Passed to custom.py.
+                -D current_version=${VERSION}                     # Passed to custom.py.
+                -D current_language=${_LANGTAG}                   # Passed to custom.py.
+                -D html_baseurl=${BASEURL_HREF}                   # Passed to custom.py.
                 -j ${SPHINX_JOB_NUMBER}
                 ${SPHINX_VERBOSE_ARGS}
                 -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}               # <configdir>, where conf.py locates.
