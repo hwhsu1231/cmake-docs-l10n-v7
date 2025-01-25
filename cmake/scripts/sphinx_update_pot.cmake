@@ -199,7 +199,7 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'switchers.js' file to the builder directory...")
+message(STATUS "Copying 'switchers.js' file to '${PROJ_OUT_BUILDER_DIR}/' directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/switchers.js"
@@ -220,7 +220,7 @@ else()
 endif()
 
 
-message(STATUS "Removing directory '${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/'...")
+message(STATUS "Removing '${PROJ_OUT_REPO_DOCS_LOCALE_DIR}/' directory...")
 if (EXISTS "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
     file(REMOVE_RECURSE "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
     remove_cmake_message_indent()
