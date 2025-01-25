@@ -343,7 +343,7 @@ You can preview translations in GitHub Pages:
     <tbody>
       <tr>
         <th>Language</th>
-        <th>Crowdin Versions</th>
+        <th>Version</th>
       </tr>
       <tr>
         <td><code>zh_CN</code></td>
