@@ -66,11 +66,11 @@ set(GETTEXT_WRAP_WIDTH 79
 
 set(GETTEXT_COMPACT "0"
     CACHE STRING "Gettext")
-    # Possible values are "1/0",...etc.
+    # Possible values are "1/0".
     # Passed to sphinx-build as -Dgettext_compact=${GETTEXT_COMPACT}.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_compact for details.
 
-set(GETTEXT_ADDITIONAL_TARGETS "index,literal-block"
+set(GETTEXT_ADDITIONAL_TARGETS "index,literal-block,raw"
     CACHE STRING "Gettext additional targets for building the Sphinx documentation system.")
     # Possible values are "index", "literal-block", "doctest-block", "raw", and "image".
     # A comma-separated list
@@ -270,6 +270,8 @@ elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
     else()
         message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
     endif()
+else()
+    message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
 endif()
 if (NOT "$CACHE{VERSION_OF_PYTHON}" STREQUAL "[default]")
     set(VERSION_OF_PYTHON "$CACHE{VERSION_OF_PYTHON}")

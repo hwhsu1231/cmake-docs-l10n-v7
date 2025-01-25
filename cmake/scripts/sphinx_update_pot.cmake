@@ -64,7 +64,7 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'templates/layout.html' file...")
+message(STATUS "Copying 'layout.html' file to '${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates' directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates")
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/layout.html"
@@ -101,12 +101,7 @@ execute_process(
             ${CMAKE_COMMAND}
             -S ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}
             -B ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/build
-            # Enable SPHINX_HTML option to configure conf.py.in into conf.py.
             -D SPHINX_HTML=ON
-            # # Since find_program(SPHINX_EXECUTABLE) of CMake repo doesn't support to
-            # # find sphinx-build inside the virtual environment currently, I have to
-            # # specify it in advanced.
-            # -D SPHINX_EXECUTABLE=${Sphinx_BUILD_EXECUTABLE}
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
     COMMAND_ERROR_IS_FATAL ANY)
@@ -157,14 +152,14 @@ else()
 endif()
 
 
-message(STATUS "Adding 'html_context' into 'extensions' list in 'conf.py' file...")
+message(STATUS "Adding 'custom' into 'extensions' list in 'conf.py' file...")
 set(SPHINX_CONF_PY_FILE "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
 file(READ "${SPHINX_CONF_PY_FILE}" SPHINX_CONF_PY_CNT)
 set(EXTENSIONS_LIST_REGEX "(extensions[ ]*=[ ]*[\[])([^\]]*[\]])")
 string(REGEX MATCH "${EXTENSIONS_LIST_REGEX}" OLD_EXTENSIONS_LIST "${SPHINX_CONF_PY_CNT}")
 if (OLD_EXTENSIONS_LIST)
-    if (NOT OLD_EXTENSIONS_LIST MATCHES "'html_context'")
-        string(REGEX REPLACE "${EXTENSIONS_LIST_REGEX}" "\\1'html_context',\\2" NEW_EXTENSIONS_LIST "${OLD_EXTENSIONS_LIST}")
+    if (NOT OLD_EXTENSIONS_LIST MATCHES "'custom'")
+        string(REGEX REPLACE "${EXTENSIONS_LIST_REGEX}" "\\1'custom',\\2" NEW_EXTENSIONS_LIST "${OLD_EXTENSIONS_LIST}")
         string(REGEX REPLACE "${EXTENSIONS_LIST_REGEX}" "${NEW_EXTENSIONS_LIST}" SPHINX_CONF_PY_CNT "${SPHINX_CONF_PY_CNT}")
         file(WRITE "${SPHINX_CONF_PY_FILE}" "${SPHINX_CONF_PY_CNT}")
         remove_cmake_message_indent()
@@ -181,7 +176,7 @@ if (OLD_EXTENSIONS_LIST)
     else()
         remove_cmake_message_indent()
         message("")
-        message("No need to add 'html_context' into 'extensions' list in:")
+        message("No need to add 'custom' into 'extensions' list in:")
         message("${SPHINX_CONF_PY_FILE}")
         message("")
         restore_cmake_message_indent()
@@ -191,15 +186,28 @@ else()
 endif()
 
 
-message(STATUS "Copying 'html_context.py' extension file...")
+message(STATUS "Copying 'custom.py' file to '${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/' directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/html_context.py"
-    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/html_context.py")
+    "${PROJ_CMAKE_TEMPLATES_DIR}/custom.py"
+    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/custom.py")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/html_context.py")
-message("To:   ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/html_context.py")
+message("From:  ${PROJ_CMAKE_TEMPLATES_DIR}/custom.py")
+message("To:    ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/custom.py")
+message("")
+restore_cmake_message_indent()
+
+
+message(STATUS "Copying 'switchers.js' file to the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/switchers.js"
+    "${PROJ_OUT_BUILDER_DIR}/switchers.js")
+remove_cmake_message_indent()
+message("")
+message("From:  ${PROJ_CMAKE_TEMPLATES_DIR}/switchers.js")
+message("To:    ${PROJ_OUT_BUILDER_DIR}/switchers.js")
 message("")
 restore_cmake_message_indent()
 
