@@ -199,15 +199,15 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'switchers.js' file to '${PROJ_OUT_BUILDER_DIR}/' directory...")
+message(STATUS "Copying 'flyout.js' file to the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/switchers.js"
-    "${PROJ_OUT_BUILDER_DIR}/switchers.js")
+    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js"
+    "${PROJ_OUT_BUILDER_DIR}/flyout.js")
 remove_cmake_message_indent()
 message("")
-message("From:  ${PROJ_CMAKE_TEMPLATES_DIR}/switchers.js")
-message("To:    ${PROJ_OUT_BUILDER_DIR}/switchers.js")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/flyout.js")
 message("")
 restore_cmake_message_indent()
 
