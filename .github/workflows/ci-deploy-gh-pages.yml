@@ -201,14 +201,31 @@ jobs:
         with:
           ref: 'refs/heads/gh-pages'
 
-      - name: Download all artifacts
+      - name: Download All Artifacts
         uses: actions/download-artifact@v4
         with:
           path: '.'
+          merge-multiple: true
+      - name: Set up mutex for the 'gh-pages' branch
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
+        with:
+          branch: mutex/gh-pages
+          repo-token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+      - name: Deploy to the 'gh-pages' branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          git-config-name: ${{ vars.ACTOR_NAME }}
+          git-config-email: ${{ vars.ACTOR_EMAIL }}
+          branch: 'gh-pages'
+          folder: '.'
+          target-folder: '.'
+          single-commit: true
+          clean: false
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload Artifact
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
