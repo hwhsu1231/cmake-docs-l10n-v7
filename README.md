@@ -180,85 +180,85 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <table>
     <thead>
       <tr>
-        <th colspan="2" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
+        <th colspan="2" align="center">GitHub Workflows</th>
       </tr>
       <tr>
-        <th colspan="1" style="text-align: right; vertical-align: middle;">Status Badges</th>
-        <th colspan="1" style="text-align: center; vertical-align: middle;">Purpose</th>
+        <th colspan="1" align="center">Status Badges</th>
+        <th colspan="1" align="center">Purpose</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td colspan="1" style="text-align: right; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
             <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="right">Update <code>.pot</code> files by Sphinx documentation generator.</td>
+        <td colspan="1" align="left">Update <code>.pot</code> files by Sphinx documentation generator.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml" >
             <img alt="ci-gettext-update-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Update <code>.po</code> files by Gettext toolkit.</td>
+        <td colspan="1" align="left">Update <code>.po</code> files by Gettext toolkit.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml">
             <img alt="ci-gettext-compend-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Update <code>.po</code> files from the compendium by Gettext toolkit.</td>
+        <td colspan="1" align="left">Update <code>.po</code> files from the compendium by Gettext toolkit.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml">
             <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Push <code>.pot</code> files to TMS by its CLI tool.</td>
+        <td colspan="1" align="left">Push <code>.pot</code> files to TMS by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml">
             <img alt="ci-tmscli-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
+        <td colspan="1" align="left">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml">
             <img alt="ci-tmscli-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Push README sources to and pull its translations from TMS by its CLI tool.</td>
+        <td colspan="1" align="left">Push README sources to and pull its translations from TMS by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml">
             <img alt="ci-deploy-gh-pages" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Deploy the built documents to <code>gh-pages</code> branch.</td>
+        <td colspan="1" align="left">Deploy the built documents to <code>gh-pages</code> branch.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml">
             <img alt="ci-deploy-po-version" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
+        <td colspan="1" align="left">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
       </tr>
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle;">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml">
             <img alt="ci-update-submodule" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Update each of the submodules to their latest commit.</td>
+        <td colspan="1" align="left">Update each of the submodules to their latest commit.</td>
       </tr>
     </tbody>
   </table>
