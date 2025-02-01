@@ -200,7 +200,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <table>
     <tbody>
       <tr>
-        <th colspan="2" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
+        <th colspan="2" align="right">GitHub Workflows</th>
       </tr>
       <tr>
         <th colspan="1" style="text-align: right; vertical-align: middle;">Status Badges</th>
