@@ -43,7 +43,7 @@ jobs:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs/Variables/Secrets
         shell: bash
@@ -96,7 +96,7 @@ jobs:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
       MATRIX_NUM: ${{ steps.gmjl.outputs.MATRIX_NUM }}
@@ -141,7 +141,7 @@ jobs:
       cancel-in-progress: true
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-po-version.yml@main
     with:
-      RUNNER: 'ubuntu-latest'
+      RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
       CALLER_JOB: 'caller (${{ matrix.VERSION }})'

@@ -208,7 +208,7 @@ jobs:
           ref: 'refs/heads/gh-pages'
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
 
-      - name: Download All Build Artifacts
+      - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
           merge-multiple: true

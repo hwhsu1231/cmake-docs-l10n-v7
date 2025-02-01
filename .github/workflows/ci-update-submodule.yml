@@ -20,7 +20,7 @@ jobs:
   precondition:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Check Secrets
         shell: bash
@@ -54,7 +54,7 @@ jobs:
   get-matrix:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
-    runs-on: 'ubuntu-latest'
+    runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
       MATRIX_NUM: ${{ steps.gmjl.outputs.MATRIX_NUM }}
@@ -89,7 +89,7 @@ jobs:
       cancel-in-progress: true
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-update-submodule.yml@main
     with:
-      RUNNER: 'ubuntu-latest'
+      RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       SUBMODULE: ${{ matrix.SUBMODULE }}
       CALLER_JOB: 'caller (${{ matrix.SUBMODULE }})'
