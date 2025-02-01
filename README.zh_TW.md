@@ -212,7 +212,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" style="text-align: left; vertical-align: middle;">Update <code>.pot</code> files by Sphinx documentation generator.</td>
+        <td colspan="1" align="left">Update <code>.pot</code> files by Sphinx documentation generator.</td>
       </tr>
       <tr>
         <td colspan="1">
