@@ -107,7 +107,7 @@ jobs:
           ref: ${{ github.ref }}
           submodules: false
       - name: Get Outputs from Schedule
-        if: ${{ github.event.schedule == 'schedule' }}
+        if: ${{ github.event_name == 'schedule' }}
         id: gos
         uses: hwhsu1231/ci-sphinx/.github/actions/get-outputs-from-schedule@main
         with:
