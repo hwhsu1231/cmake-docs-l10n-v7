@@ -235,9 +235,10 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
+          name: 'github-pages'
+          path: '.'
       - name: Deploy Pages Artifact
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: github-pages
+          artifact_name: 'github-pages'
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
