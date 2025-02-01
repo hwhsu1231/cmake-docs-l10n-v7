@@ -216,7 +216,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Push <code>.pot</code> files to Translation Management System by its CLI tool.</td>
+        <td colspan="1">Push <code>.pot</code> files to TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -224,7 +224,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-tmscli-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Pull <code>.pot</code> files from Translation Management System by its CLI tool.</td>
+        <td colspan="1">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -232,7 +232,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-tmscli-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Push README sources to and pull its translations from the Translation Management System by its CLI tool.</td>
+        <td colspan="1">Push README sources to and pull its translations from TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -240,7 +240,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-deploy-gh-pages" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Build and deploy the documents to <code>gh-pages</code> branch, and then publish to GitHub Pages.</td>
+        <td colspan="1">Deploy the built documents to <code>gh-pages</code> branch.</td>
       </tr>
       <tr>
         <td colspan="1">
