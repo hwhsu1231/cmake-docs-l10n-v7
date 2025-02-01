@@ -183,8 +183,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th colspan="2" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
       </tr>
       <tr>
-        <th colspan="1">Status Badges</th>
-        <th colspan="1">Purpose</th>
+        <th colspan="1" style="text-align: center; vertical-align: middle;">Status Badges</th>
+        <th colspan="1" style="text-align: center; vertical-align: middle;">Purpose</th>
       </tr>
       <tr>
         <td colspan="1">
@@ -192,7 +192,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Update <code>.pot</code> files by Sphinx documentation generator.</td>
+        <td colspan="1" style="text-align: left; vertical-align: middle;">Update <code>.pot</code> files by Sphinx documentation generator.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -208,7 +208,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-gettext-compend-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Update <code>.po</code> files from the compendium file of other version by Gettext toolkit.</td>
+        <td colspan="1">Update <code>.po</code> files from the compendium by Gettext toolkit.</td>
       </tr>
       <tr>
         <td colspan="1">
