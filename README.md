@@ -187,7 +187,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th colspan="1" style="text-align: center; vertical-align: middle;">Purpose</th>
       </tr>
       <tr>
-        <td colspan="1">
+        <td colspan="1" align="left">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
             <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
