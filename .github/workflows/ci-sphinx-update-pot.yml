@@ -66,6 +66,7 @@ jobs:
           echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
           echo "inputs.MODE_OF_UPDATE = ${{ inputs.MODE_OF_UPDATE }}"
           echo "[Variables]"
+          echo "vars.RUNNER = ${{ vars.RUNNER }}"
           echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
           echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
           echo "[Secrets]"
@@ -74,6 +75,10 @@ jobs:
         shell: bash
         run: |
           VARIABLES_EXIST=true
+          if [[ -z "${{ vars.RUNNER }}" ]]; then
+            echo "vars.RUNNER is missing."
+            VARIABLES_EXIST=false
+          fi
           if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
             echo "vars.ACTOR_NAME is missing."
             VARIABLES_EXIST=false

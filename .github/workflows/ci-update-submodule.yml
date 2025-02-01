@@ -22,22 +22,30 @@ jobs:
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
-      - name: Check Secrets
+      - name: Print Contexts/Inputs/Variables/Secrets
         shell: bash
         run: |
-          SECRETS_EXIST=true
-          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
-            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
-            SECRETS_EXIST=false
-          fi
-          if [[ "${SECRETS_EXIST}" == "false" ]]; then
-            echo "Error: Some secrets are missing." >&2
-            exit 1
-          fi
-      - name: Check Variables
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.schedule = ${{ github.event.schedule }}"
+          echo "[Inputs]"
+          echo "[Variables]"
+          echo "vars.RUNNER = ${{ vars.RUNNER }}"
+          echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
+          echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+      - name: Check Required Variables
         shell: bash
         run: |
           VARIABLES_EXIST=true
+          if [[ -z "${{ vars.RUNNER }}" ]]; then
+            echo "vars.RUNNER is missing."
+            VARIABLES_EXIST=false
+          fi
           if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
             echo "vars.ACTOR_NAME is missing."
             VARIABLES_EXIST=false
@@ -48,6 +56,18 @@ jobs:
           fi
           if [[ "${VARIABLES_EXIST}" == "false" ]]; then
             echo "Error: Some variables are missing." >&2
+            exit 1
+          fi
+      - name: Check Required Secrets
+        shell: bash
+        run: |
+          SECRETS_EXIST=true
+          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
+            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
+            SECRETS_EXIST=false
+          fi
+          if [[ "${SECRETS_EXIST}" == "false" ]]; then
+            echo "Error: Some secrets are missing." >&2
             exit 1
           fi
 
