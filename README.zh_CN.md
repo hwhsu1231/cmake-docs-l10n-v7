@@ -224,7 +224,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-gettext-update-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update <code>.po</code> files by Gettext toolkit.</td>
+        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+          Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.
+        </td>
       </tr>
       <tr>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
@@ -232,7 +234,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-gettext-compend-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update <code>.po</code> files from the compendium by Gettext toolkit.</td>
+        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+          Update <code>.po</code> files from the compendium by Gettext toolkit.
+        </td>
       </tr>
       <tr>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
@@ -391,7 +395,7 @@ You can preview translations in GitHub Pages:
   </table>
 </div>
 
-You can switch to other available versions by version switcher.
+You can switch to other available versions/languages by switchers.
 
 <h2 id="licenses"><a href="#table-of-contents">
 Licenses
