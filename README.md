@@ -178,14 +178,16 @@ The translations are contributed in Crowdin Project and downloaded automatically
 
 <div align="center">
   <table>
-    <tbody>
+    <thead>
       <tr>
-        <th colspan="2" align="right">GitHub Workflows</th>
+        <th colspan="2" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
       </tr>
       <tr>
         <th colspan="1" style="text-align: right; vertical-align: middle;">Status Badges</th>
         <th colspan="1" style="text-align: center; vertical-align: middle;">Purpose</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
         <td colspan="1" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
