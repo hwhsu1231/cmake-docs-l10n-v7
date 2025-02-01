@@ -177,6 +177,18 @@ The translations are contributed in Crowdin Project and downloaded automatically
 </div>
 
 <div align="center">
+  <style>
+    /* CSS for table header alignment */
+    td.left-align {
+      text-align: left;
+    }
+    td.center-align {
+      text-align: center;
+    }
+    td.right-align {
+      text-align: right;
+    }
+  </style>
   <table>
     <thead>
       <tr>
@@ -189,12 +201,12 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </thead>
     <tbody>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" class="right-align">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
             <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update <code>.pot</code> files by Sphinx documentation generator.</td>
+        <td colspan="1" class="right-align">Update <code>.pot</code> files by Sphinx documentation generator.</td>
       </tr>
       <tr>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
