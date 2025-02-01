@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -596,7 +596,7 @@ msgid ""
 "`list(TRANSFORM)` command.  ``ACTION`` must be one of the following:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:511
+#: ../../../manual/cmake-generator-expressions.7.rst:506
 msgid ""
 ":command:`APPEND <list(TRANSFORM_APPEND)>`, :command:`PREPEND "
 "<list(TRANSFORM_APPEND)>`"
@@ -610,7 +610,7 @@ msgstr ""
 msgid "$<LIST:TRANSFORM,list,(APPEND|PREPEND),value[,SELECTOR]>"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:518
+#: ../../../manual/cmake-generator-expressions.7.rst:513
 msgid ""
 ":command:`TOLOWER <list(TRANSFORM_TOLOWER)>`, :command:`TOUPPER "
 "<list(TRANSFORM_TOLOWER)>`"
@@ -624,7 +624,7 @@ msgstr ""
 msgid "$<LIST:TRANSFORM,list,(TOLOWER|TOUPPER)[,SELECTOR]>"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:525
+#: ../../../manual/cmake-generator-expressions.7.rst:520
 msgid ":command:`STRIP <list(TRANSFORM_STRIP)>`"
 msgstr ""
 
@@ -636,7 +636,7 @@ msgstr ""
 msgid "$<LIST:TRANSFORM,list,STRIP[,SELECTOR]>"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:533
+#: ../../../manual/cmake-generator-expressions.7.rst:527
 msgid ":command:`REPLACE <list(TRANSFORM_REPLACE)>`:"
 msgstr ""
 
@@ -659,7 +659,7 @@ msgid ""
 "must be one of the following:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:544
+#: ../../../manual/cmake-generator-expressions.7.rst:539
 msgid "``AT``"
 msgstr ""
 
@@ -671,7 +671,7 @@ msgstr ""
 msgid "$<LIST:TRANSFORM,list,ACTION,AT,index[,index...]>"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:552
+#: ../../../manual/cmake-generator-expressions.7.rst:546
 msgid "``FOR``"
 msgstr ""
 
@@ -685,7 +685,7 @@ msgstr ""
 msgid "$<LIST:TRANSFORM,list,ACTION,FOR,start,stop[,step]>"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:559
+#: ../../../manual/cmake-generator-expressions.7.rst:554
 msgid "``REGEX``"
 msgstr ""
 
@@ -742,7 +742,7 @@ msgid ""
 "sorting:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:610
+#: ../../../manual/cmake-generator-expressions.7.rst:608
 msgid "``STRING``"
 msgstr ""
 
@@ -752,7 +752,7 @@ msgid ""
 "``COMPARE`` option is not given."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:613
+#: ../../../manual/cmake-generator-expressions.7.rst:612
 msgid "``FILE_BASENAME``"
 msgstr ""
 
@@ -760,7 +760,7 @@ msgstr ""
 msgid "Sorts a list of file paths by their basenames."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:621
+#: ../../../manual/cmake-generator-expressions.7.rst:615
 msgid "``NATURAL``"
 msgstr ""
 
@@ -780,7 +780,7 @@ msgid ""
 "insensitive sort mode:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:628
+#: ../../../manual/cmake-generator-expressions.7.rst:626
 msgid "``SENSITIVE``"
 msgstr ""
 
@@ -790,7 +790,7 @@ msgid ""
 "behavior if the ``CASE`` option is not given."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:632
+#: ../../../manual/cmake-generator-expressions.7.rst:630
 msgid "``INSENSITIVE``"
 msgstr ""
 
@@ -804,7 +804,7 @@ msgstr ""
 msgid "To control the sort order, one of the ``ORDER`` options can be given:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:638
+#: ../../../manual/cmake-generator-expressions.7.rst:636
 msgid "``ASCENDING``"
 msgstr ""
 
@@ -814,7 +814,7 @@ msgid ""
 "``ORDER`` option is not given."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:641
+#: ../../../manual/cmake-generator-expressions.7.rst:640
 msgid "``DESCENDING``"
 msgstr ""
 
@@ -1768,7 +1768,7 @@ msgid ""
 "are:"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:5
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:1
 msgid "``DEFAULT``"
 msgstr ""
 
@@ -1780,7 +1780,7 @@ msgid ""
 "target properties."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:22
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:7
 msgid "``WHOLE_ARCHIVE``"
 msgstr ""
 
@@ -1825,7 +1825,7 @@ msgstr ""
 msgid "MSYS."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:65
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:24
 msgid "``FRAMEWORK``"
 msgstr ""
 
@@ -1895,7 +1895,7 @@ msgid ""
 "the ``FRAMEWORK`` features."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:71
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:67
 msgid "``NEEDED_FRAMEWORK``"
 msgstr ""
 
@@ -1907,7 +1907,7 @@ msgid ""
 "``FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:77
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:73
 msgid "``REEXPORT_FRAMEWORK``"
 msgstr ""
 
@@ -1919,7 +1919,7 @@ msgid ""
 "linker constraints as ``FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:83
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:79
 msgid "``WEAK_FRAMEWORK``"
 msgstr ""
 
@@ -1930,7 +1930,7 @@ msgid ""
 "weak_framework`` option and has the same linker constraints as ``FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:89
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:85
 msgid "``NEEDED_LIBRARY``"
 msgstr ""
 
@@ -1942,7 +1942,7 @@ msgid ""
 "linker constraints as ``NEEDED_FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:95
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:91
 msgid "``REEXPORT_LIBRARY``"
 msgstr ""
 
@@ -1954,7 +1954,7 @@ msgid ""
 "same linker constraints as ``REEXPORT_FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:101
+#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:97
 msgid "``WEAK_LIBRARY``"
 msgstr ""
 
@@ -2109,7 +2109,7 @@ msgid ""
 "built-in group feature:"
 msgstr ""
 
-#: ../../../variable/LINK_GROUP_PREDEFINED_FEATURES.txt:22
+#: ../../../variable/LINK_GROUP_PREDEFINED_FEATURES.txt:1
 msgid "``RESCAN``"
 msgstr ""
 
@@ -2377,30 +2377,30 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:1840
 #: ../../../manual/cmake-generator-expressions.7.rst:1870
-#: ../../../manual/cmake-generator-expressions.7.rst:2042
-#: ../../../manual/cmake-generator-expressions.7.rst:2053
-#: ../../../manual/cmake-generator-expressions.7.rst:2064
-#: ../../../manual/cmake-generator-expressions.7.rst:2108
-#: ../../../manual/cmake-generator-expressions.7.rst:2119
-#: ../../../manual/cmake-generator-expressions.7.rst:2132
-#: ../../../manual/cmake-generator-expressions.7.rst:2141
-#: ../../../manual/cmake-generator-expressions.7.rst:2150
-#: ../../../manual/cmake-generator-expressions.7.rst:2186
-#: ../../../manual/cmake-generator-expressions.7.rst:2198
-#: ../../../manual/cmake-generator-expressions.7.rst:2212
-#: ../../../manual/cmake-generator-expressions.7.rst:2255
-#: ../../../manual/cmake-generator-expressions.7.rst:2266
-#: ../../../manual/cmake-generator-expressions.7.rst:2279
-#: ../../../manual/cmake-generator-expressions.7.rst:2288
-#: ../../../manual/cmake-generator-expressions.7.rst:2297
-#: ../../../manual/cmake-generator-expressions.7.rst:2325
-#: ../../../manual/cmake-generator-expressions.7.rst:2336
-#: ../../../manual/cmake-generator-expressions.7.rst:2349
-#: ../../../manual/cmake-generator-expressions.7.rst:2358
-#: ../../../manual/cmake-generator-expressions.7.rst:2367
-#: ../../../manual/cmake-generator-expressions.7.rst:2400
-#: ../../../manual/cmake-generator-expressions.7.rst:2409
-#: ../../../manual/cmake-generator-expressions.7.rst:2440
+#: ../../../manual/cmake-generator-expressions.7.rst:2034
+#: ../../../manual/cmake-generator-expressions.7.rst:2045
+#: ../../../manual/cmake-generator-expressions.7.rst:2056
+#: ../../../manual/cmake-generator-expressions.7.rst:2100
+#: ../../../manual/cmake-generator-expressions.7.rst:2111
+#: ../../../manual/cmake-generator-expressions.7.rst:2124
+#: ../../../manual/cmake-generator-expressions.7.rst:2133
+#: ../../../manual/cmake-generator-expressions.7.rst:2142
+#: ../../../manual/cmake-generator-expressions.7.rst:2178
+#: ../../../manual/cmake-generator-expressions.7.rst:2190
+#: ../../../manual/cmake-generator-expressions.7.rst:2204
+#: ../../../manual/cmake-generator-expressions.7.rst:2247
+#: ../../../manual/cmake-generator-expressions.7.rst:2258
+#: ../../../manual/cmake-generator-expressions.7.rst:2271
+#: ../../../manual/cmake-generator-expressions.7.rst:2280
+#: ../../../manual/cmake-generator-expressions.7.rst:2289
+#: ../../../manual/cmake-generator-expressions.7.rst:2317
+#: ../../../manual/cmake-generator-expressions.7.rst:2328
+#: ../../../manual/cmake-generator-expressions.7.rst:2341
+#: ../../../manual/cmake-generator-expressions.7.rst:2350
+#: ../../../manual/cmake-generator-expressions.7.rst:2359
+#: ../../../manual/cmake-generator-expressions.7.rst:2392
+#: ../../../manual/cmake-generator-expressions.7.rst:2401
+#: ../../../manual/cmake-generator-expressions.7.rst:2432
 msgid ""
 "Note that ``tgt`` is not added as a dependency of the target this expression "
 "is evaluated on."
@@ -2448,16 +2448,7 @@ msgid ""
 "evaluated."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1880
-msgid ""
-"Generator expressions for transitive interface properties, such as "
-"``$<TARGET_PROPERTY:target,INTERFACE_*>``, now correctly handle repeated "
-"evaluations within nested generator expressions. Previously, these repeated "
-"evaluations returned empty values due to an optimization for transitive "
-"closures. This change ensures consistent evaluation for non-union operations."
-msgstr ""
-
-#: ../../../manual/cmake-generator-expressions.7.rst:1891
+#: ../../../manual/cmake-generator-expressions.7.rst:1883
 msgid ""
 "Value of the property ``prop`` on the target for which the expression is "
 "being evaluated, or empty if the property is not set. Note that for "
@@ -2465,16 +2456,16 @@ msgid ""
 "consuming target rather than the target specifying the requirement."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1897
+#: ../../../manual/cmake-generator-expressions.7.rst:1889
 msgid "The expressions have special evaluation rules for some properties:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1915
+#: ../../../manual/cmake-generator-expressions.7.rst:1891
 msgid ""
 ":ref:`Target Build Specification Properties <Target Build Specification>`"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1900
+#: ../../../manual/cmake-generator-expressions.7.rst:1892
 msgid ""
 "These evaluate as a :ref:`semicolon-separated list <CMake Language Lists>` "
 "representing the union of the value on the target itself with the values of "
@@ -2482,7 +2473,7 @@ msgid ""
 "target's :prop_tgt:`LINK_LIBRARIES`:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1905
+#: ../../../manual/cmake-generator-expressions.7.rst:1897
 msgid ""
 "For :ref:`Target Compile Properties`, evaluation of corresponding usage "
 "requirements is transitive over the closure of the linked targets' :prop_tgt:"
@@ -2490,7 +2481,7 @@ msgid ""
 "`LINK_ONLY` generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1910
+#: ../../../manual/cmake-generator-expressions.7.rst:1902
 msgid ""
 "For :ref:`Target Link Properties`, evaluation of corresponding usage "
 "requirements is transitive over the closure of the linked targets' :prop_tgt:"
@@ -2498,15 +2489,15 @@ msgid ""
 "`LINK_ONLY` generator expression.  See policy :policy:`CMP0166`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1915
+#: ../../../manual/cmake-generator-expressions.7.rst:1907
 msgid "Evaluation of :prop_tgt:`LINK_LIBRARIES` itself is not transitive."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1932
+#: ../../../manual/cmake-generator-expressions.7.rst:1909
 msgid ":ref:`Target Usage Requirement Properties <Target Usage Requirements>`"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1918
+#: ../../../manual/cmake-generator-expressions.7.rst:1910
 msgid ""
 "These evaluate as a :ref:`semicolon-separated list <CMake Language Lists>` "
 "representing the union of the value on the target itself with the values of "
@@ -2514,14 +2505,14 @@ msgid ""
 "`INTERFACE_LINK_LIBRARIES`:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1923
+#: ../../../manual/cmake-generator-expressions.7.rst:1915
 msgid ""
 "For :ref:`Transitive Compile Properties`, evaluation is transitive over the "
 "closure of the target's :prop_tgt:`INTERFACE_LINK_LIBRARIES` *excluding* "
 "entries guarded by the :genex:`LINK_ONLY` generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1927
+#: ../../../manual/cmake-generator-expressions.7.rst:1919
 msgid ""
 "For :ref:`Transitive Link Properties`, evaluation is transitive over the "
 "closure of the target's :prop_tgt:`INTERFACE_LINK_LIBRARIES` *including* "
@@ -2529,20 +2520,20 @@ msgid ""
 "policy:`CMP0166`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1932
+#: ../../../manual/cmake-generator-expressions.7.rst:1924
 msgid ""
 "Evaluation of :prop_tgt:`INTERFACE_LINK_LIBRARIES` itself is not transitive."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1988
+#: ../../../manual/cmake-generator-expressions.7.rst:1926
 msgid ":ref:`Custom Transitive Properties`"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1937
+#: ../../../manual/cmake-generator-expressions.7.rst:1929
 msgid "These are processed during evaluation as follows:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1939
+#: ../../../manual/cmake-generator-expressions.7.rst:1931
 msgid ""
 "Evaluation of :genex:`$<TARGET_PROPERTY:tgt,PROP>` for some property "
 "``PROP``, named without an ``INTERFACE_`` prefix, checks the :prop_tgt:"
@@ -2552,7 +2543,7 @@ msgid ""
 "linked targets' :prop_tgt:`INTERFACE_LINK_LIBRARIES`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1947
+#: ../../../manual/cmake-generator-expressions.7.rst:1939
 msgid ""
 "If ``PROP`` is listed by one of those properties, then it evaluates as a :"
 "ref:`semicolon-separated list <CMake Language Lists>` representing the union "
@@ -2561,7 +2552,7 @@ msgid ""
 "`LINK_LIBRARIES`:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1953
+#: ../../../manual/cmake-generator-expressions.7.rst:1945
 msgid ""
 "If ``PROP`` is named by :prop_tgt:`TRANSITIVE_COMPILE_PROPERTIES`, "
 "evaluation of the corresponding ``INTERFACE_PROP`` is transitive over the "
@@ -2569,7 +2560,7 @@ msgid ""
 "excluding entries guarded by the :genex:`LINK_ONLY` generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1958
+#: ../../../manual/cmake-generator-expressions.7.rst:1950
 msgid ""
 "If ``PROP`` is named by :prop_tgt:`TRANSITIVE_LINK_PROPERTIES`, evaluation "
 "of the corresponding ``INTERFACE_PROP`` is transitive over the closure of "
@@ -2577,7 +2568,7 @@ msgid ""
 "guarded by the :genex:`LINK_ONLY` generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1963
+#: ../../../manual/cmake-generator-expressions.7.rst:1955
 msgid ""
 "Evaluation of :genex:`$<TARGET_PROPERTY:tgt,INTERFACE_PROP>` for some "
 "property ``INTERFACE_PROP``, named with an ``INTERFACE_`` prefix, checks "
@@ -2587,7 +2578,7 @@ msgid ""
 "`INTERFACE_LINK_LIBRARIES`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1970
+#: ../../../manual/cmake-generator-expressions.7.rst:1962
 msgid ""
 "If the corresponding ``PROP`` is listed by one of those properties, then "
 "``INTERFACE_PROP`` evaluates as a :ref:`semicolon-separated list <CMake "
@@ -2596,7 +2587,7 @@ msgid ""
 "prop_tgt:`INTERFACE_LINK_LIBRARIES`:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1977
+#: ../../../manual/cmake-generator-expressions.7.rst:1969
 msgid ""
 "If ``PROP`` is named by :prop_tgt:`TRANSITIVE_COMPILE_PROPERTIES`, "
 "evaluation of the corresponding ``INTERFACE_PROP`` is transitive over the "
@@ -2604,7 +2595,7 @@ msgid ""
 "entries guarded by the :genex:`LINK_ONLY` generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1982
+#: ../../../manual/cmake-generator-expressions.7.rst:1974
 msgid ""
 "If ``PROP`` is named by :prop_tgt:`TRANSITIVE_LINK_PROPERTIES`, evaluation "
 "of the corresponding ``INTERFACE_PROP`` is transitive over the closure of "
@@ -2612,17 +2603,17 @@ msgid ""
 "by the :genex:`LINK_ONLY` generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1987
+#: ../../../manual/cmake-generator-expressions.7.rst:1979
 msgid ""
 "If a ``PROP`` is named by both :prop_tgt:`TRANSITIVE_COMPILE_PROPERTIES` "
 "and :prop_tgt:`TRANSITIVE_LINK_PROPERTIES`, the latter takes precedence."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1998
+#: ../../../manual/cmake-generator-expressions.7.rst:1982
 msgid ":ref:`Compatible Interface Properties`"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:1991
+#: ../../../manual/cmake-generator-expressions.7.rst:1983
 msgid ""
 "These evaluate as a single value combined from the target itself, from "
 "targets named by the target's :prop_tgt:`LINK_LIBRARIES`, and from the "
@@ -2632,57 +2623,57 @@ msgid ""
 "``COMPATIBLE_INTERFACE_*`` property defining it."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2001
+#: ../../../manual/cmake-generator-expressions.7.rst:1993
 msgid "Target Artifacts"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2003
+#: ../../../manual/cmake-generator-expressions.7.rst:1995
 msgid ""
 "These expressions look up information about artifacts associated with a "
 "given target ``tgt``.  Unless otherwise stated, this can be any runtime "
 "artifact, namely:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2007
+#: ../../../manual/cmake-generator-expressions.7.rst:1999
 msgid "An executable target created by :command:`add_executable`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2008
+#: ../../../manual/cmake-generator-expressions.7.rst:2000
 msgid ""
 "A shared library target (``.so``, ``.dll`` but not their ``.lib`` import "
 "library) created by :command:`add_library`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2010
+#: ../../../manual/cmake-generator-expressions.7.rst:2002
 msgid "A static library target created by :command:`add_library`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2012
+#: ../../../manual/cmake-generator-expressions.7.rst:2004
 msgid ""
 "In the following, the phrase \"the ``tgt`` filename\" means the name of the "
 "``tgt`` binary file. This has to be distinguished from the phrase \"the "
 "target name\", which is just the string ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2018
+#: ../../../manual/cmake-generator-expressions.7.rst:2010
 msgid "Full path to the ``tgt`` binary file."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2020
+#: ../../../manual/cmake-generator-expressions.7.rst:2012
 msgid ""
 "Note that ``tgt`` is not added as a dependency of the target this expression "
 "is evaluated on, unless the expression is being used in :command:"
 "`add_custom_command` or :command:`add_custom_target`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2028
+#: ../../../manual/cmake-generator-expressions.7.rst:2020
 msgid ""
 "Base name of ``tgt``, i.e. ``$<TARGET_FILE_NAME:tgt>`` without prefix and "
 "suffix. For example, if the ``tgt`` filename is ``libbase.so``, the base "
 "name is ``base``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2032
+#: ../../../manual/cmake-generator-expressions.7.rst:2024
 msgid ""
 "See also the :prop_tgt:`OUTPUT_NAME`, :prop_tgt:`ARCHIVE_OUTPUT_NAME`, :"
 "prop_tgt:`LIBRARY_OUTPUT_NAME` and :prop_tgt:`RUNTIME_OUTPUT_NAME` target "
@@ -2691,60 +2682,60 @@ msgid ""
 "`LIBRARY_OUTPUT_NAME_<CONFIG>` and :prop_tgt:`RUNTIME_OUTPUT_NAME_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2039
-#: ../../../manual/cmake-generator-expressions.7.rst:2105
-#: ../../../manual/cmake-generator-expressions.7.rst:2183
-#: ../../../manual/cmake-generator-expressions.7.rst:2252
-#: ../../../manual/cmake-generator-expressions.7.rst:2322
-#: ../../../manual/cmake-generator-expressions.7.rst:2437
+#: ../../../manual/cmake-generator-expressions.7.rst:2031
+#: ../../../manual/cmake-generator-expressions.7.rst:2097
+#: ../../../manual/cmake-generator-expressions.7.rst:2175
+#: ../../../manual/cmake-generator-expressions.7.rst:2244
+#: ../../../manual/cmake-generator-expressions.7.rst:2314
+#: ../../../manual/cmake-generator-expressions.7.rst:2429
 msgid ""
 "The :prop_tgt:`<CONFIG>_POSTFIX` and :prop_tgt:`DEBUG_POSTFIX` target "
 "properties can also be considered."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2049
+#: ../../../manual/cmake-generator-expressions.7.rst:2041
 msgid "Prefix of the ``tgt`` filename (such as ``lib``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2051
-#: ../../../manual/cmake-generator-expressions.7.rst:2264
+#: ../../../manual/cmake-generator-expressions.7.rst:2043
+#: ../../../manual/cmake-generator-expressions.7.rst:2256
 msgid "See also the :prop_tgt:`PREFIX` target property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2060
+#: ../../../manual/cmake-generator-expressions.7.rst:2052
 msgid "Suffix of the ``tgt`` filename (extension such as ``.so`` or ``.exe``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2062
-#: ../../../manual/cmake-generator-expressions.7.rst:2277
+#: ../../../manual/cmake-generator-expressions.7.rst:2054
+#: ../../../manual/cmake-generator-expressions.7.rst:2269
 msgid "See also the :prop_tgt:`SUFFIX` target property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2069
+#: ../../../manual/cmake-generator-expressions.7.rst:2061
 msgid "The ``tgt`` filename."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2071
-#: ../../../manual/cmake-generator-expressions.7.rst:2078
-#: ../../../manual/cmake-generator-expressions.7.rst:2219
-#: ../../../manual/cmake-generator-expressions.7.rst:2226
-#: ../../../manual/cmake-generator-expressions.7.rst:2378
-#: ../../../manual/cmake-generator-expressions.7.rst:2385
-#: ../../../manual/cmake-generator-expressions.7.rst:2449
-#: ../../../manual/cmake-generator-expressions.7.rst:2458
-#: ../../../manual/cmake-generator-expressions.7.rst:2469
-#: ../../../manual/cmake-generator-expressions.7.rst:2479
-#: ../../../manual/cmake-generator-expressions.7.rst:2493
+#: ../../../manual/cmake-generator-expressions.7.rst:2063
+#: ../../../manual/cmake-generator-expressions.7.rst:2070
+#: ../../../manual/cmake-generator-expressions.7.rst:2211
+#: ../../../manual/cmake-generator-expressions.7.rst:2218
+#: ../../../manual/cmake-generator-expressions.7.rst:2370
+#: ../../../manual/cmake-generator-expressions.7.rst:2377
+#: ../../../manual/cmake-generator-expressions.7.rst:2441
+#: ../../../manual/cmake-generator-expressions.7.rst:2450
+#: ../../../manual/cmake-generator-expressions.7.rst:2461
+#: ../../../manual/cmake-generator-expressions.7.rst:2471
+#: ../../../manual/cmake-generator-expressions.7.rst:2485
 msgid ""
 "Note that ``tgt`` is not added as a dependency of the target this expression "
 "is evaluated on (see policy :policy:`CMP0112`)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2076
+#: ../../../manual/cmake-generator-expressions.7.rst:2068
 msgid "Directory of the ``tgt`` binary file."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2085
+#: ../../../manual/cmake-generator-expressions.7.rst:2077
 msgid ""
 "Full path to the linker import file. On DLL platforms, it would be the ``."
 "lib`` file. For executables on AIX, and for shared libraries on macOS, it "
@@ -2752,58 +2743,58 @@ msgid ""
 "the value of the :prop_tgt:`ENABLE_EXPORTS` property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2090
+#: ../../../manual/cmake-generator-expressions.7.rst:2082
 msgid ""
 "This expands to an empty string when there is no import file associated with "
 "the target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2097
+#: ../../../manual/cmake-generator-expressions.7.rst:2089
 msgid ""
 "Base name of the linker import file of the target ``tgt`` without prefix or "
 "suffix. For example, if the target file name is ``libbase.tbd``, the base "
 "name is ``base``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2101
+#: ../../../manual/cmake-generator-expressions.7.rst:2093
 msgid ""
 "See also the :prop_tgt:`OUTPUT_NAME` and :prop_tgt:`ARCHIVE_OUTPUT_NAME` "
 "target properties and their configuration specific variants :prop_tgt:"
 "`OUTPUT_NAME_<CONFIG>` and :prop_tgt:`ARCHIVE_OUTPUT_NAME_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2115
+#: ../../../manual/cmake-generator-expressions.7.rst:2107
 msgid "Prefix of the import file of the target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2117
-#: ../../../manual/cmake-generator-expressions.7.rst:2334
+#: ../../../manual/cmake-generator-expressions.7.rst:2109
+#: ../../../manual/cmake-generator-expressions.7.rst:2326
 msgid "See also the :prop_tgt:`IMPORT_PREFIX` target property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2126
+#: ../../../manual/cmake-generator-expressions.7.rst:2118
 msgid "Suffix of the import file of the target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2128
+#: ../../../manual/cmake-generator-expressions.7.rst:2120
 msgid ""
 "The suffix corresponds to the file extension (such as ``.lib`` or ``.tbd``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2130
-#: ../../../manual/cmake-generator-expressions.7.rst:2347
+#: ../../../manual/cmake-generator-expressions.7.rst:2122
+#: ../../../manual/cmake-generator-expressions.7.rst:2339
 msgid "See also the :prop_tgt:`IMPORT_SUFFIX` target property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2139
+#: ../../../manual/cmake-generator-expressions.7.rst:2131
 msgid "Name of the import file of the target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2148
+#: ../../../manual/cmake-generator-expressions.7.rst:2140
 msgid "Directory of the import file of the target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2155
+#: ../../../manual/cmake-generator-expressions.7.rst:2147
 msgid ""
 "File used when linking to the ``tgt`` target.  This will usually be the "
 "library that ``tgt`` represents (``.a``, ``.lib``, ``.so``), but for a "
@@ -2811,13 +2802,13 @@ msgid ""
 "associated with the DLL."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2160
+#: ../../../manual/cmake-generator-expressions.7.rst:2152
 msgid ""
 "On macOS, it could be the ``.tbd`` import file associated with the shared "
 "library, depending on the value of the :prop_tgt:`ENABLE_EXPORTS` property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2164
+#: ../../../manual/cmake-generator-expressions.7.rst:2156
 msgid ""
 "This generator expression is equivalent to :genex:"
 "`$<TARGET_LINKER_LIBRARY_FILE>` or :genex:`$<TARGET_LINKER_IMPORT_FILE>` "
@@ -2825,15 +2816,15 @@ msgid ""
 "the platform."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2173
+#: ../../../manual/cmake-generator-expressions.7.rst:2165
 msgid ""
 "Base name of file used to link the target ``tgt``, i.e. :genex:"
 "`$<TARGET_LINKER_FILE_NAME:tgt>` without prefix and suffix. For example, if "
 "target file name is ``libbase.a``, the base name is ``base``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2177
-#: ../../../manual/cmake-generator-expressions.7.rst:2246
+#: ../../../manual/cmake-generator-expressions.7.rst:2169
+#: ../../../manual/cmake-generator-expressions.7.rst:2238
 msgid ""
 "See also the :prop_tgt:`OUTPUT_NAME`, :prop_tgt:`ARCHIVE_OUTPUT_NAME`, and :"
 "prop_tgt:`LIBRARY_OUTPUT_NAME` target properties and their configuration "
@@ -2841,40 +2832,40 @@ msgid ""
 "`ARCHIVE_OUTPUT_NAME_<CONFIG>` and :prop_tgt:`LIBRARY_OUTPUT_NAME_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2193
+#: ../../../manual/cmake-generator-expressions.7.rst:2185
 msgid "Prefix of file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2195
+#: ../../../manual/cmake-generator-expressions.7.rst:2187
 msgid ""
 "See also the :prop_tgt:`PREFIX` and :prop_tgt:`IMPORT_PREFIX` target "
 "properties."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2205
+#: ../../../manual/cmake-generator-expressions.7.rst:2197
 msgid "Suffix of file used to link where ``tgt`` is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2207
+#: ../../../manual/cmake-generator-expressions.7.rst:2199
 msgid ""
 "The suffix corresponds to the file extension (such as \".so\" or \".lib\")."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2209
+#: ../../../manual/cmake-generator-expressions.7.rst:2201
 msgid ""
 "See also the :prop_tgt:`SUFFIX` and :prop_tgt:`IMPORT_SUFFIX` target "
 "properties."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2217
+#: ../../../manual/cmake-generator-expressions.7.rst:2209
 msgid "Name of file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2224
+#: ../../../manual/cmake-generator-expressions.7.rst:2216
 msgid "Directory of file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2233
+#: ../../../manual/cmake-generator-expressions.7.rst:2225
 msgid ""
 "File used when linking o the ``tgt`` target is done using directly the "
 "library, and not an import file. This will usually be the library that "
@@ -2882,35 +2873,35 @@ msgid ""
 "will be an empty string."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2242
+#: ../../../manual/cmake-generator-expressions.7.rst:2234
 msgid ""
 "Base name of library file used to link the target ``tgt``, i.e. :genex:"
 "`$<TARGET_LINKER_LIBRARY_FILE_NAME:tgt>` without prefix and suffix. For "
 "example, if target file name is ``libbase.a``, the base name is ``base``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2262
+#: ../../../manual/cmake-generator-expressions.7.rst:2254
 msgid "Prefix of the library file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2273
+#: ../../../manual/cmake-generator-expressions.7.rst:2265
 msgid "Suffix of the library file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2275
+#: ../../../manual/cmake-generator-expressions.7.rst:2267
 msgid ""
 "The suffix corresponds to the file extension (such as \".a\" or \".dylib\")."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2286
+#: ../../../manual/cmake-generator-expressions.7.rst:2278
 msgid "Name of the library file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2295
+#: ../../../manual/cmake-generator-expressions.7.rst:2287
 msgid "Directory of the library file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2304
+#: ../../../manual/cmake-generator-expressions.7.rst:2296
 msgid ""
 "File used when linking to the ``tgt`` target is done using an import file.  "
 "This will usually be the import file that ``tgt`` represents (``.lib``, ``."
@@ -2918,120 +2909,120 @@ msgid ""
 "string is returned."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2313
+#: ../../../manual/cmake-generator-expressions.7.rst:2305
 msgid ""
 "Base name of the import file used to link the target ``tgt``, i.e. :genex:"
 "`$<TARGET_LINKER_IMPORT_FILE_NAME:tgt>` without prefix and suffix. For "
 "example, if target file name is ``libbase.tbd``, the base name is ``base``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2317
+#: ../../../manual/cmake-generator-expressions.7.rst:2309
 msgid ""
 "See also the :prop_tgt:`OUTPUT_NAME` and :prop_tgt:`ARCHIVE_OUTPUT_NAME`, "
 "target properties and their configuration specific variants :prop_tgt:"
 "`OUTPUT_NAME_<CONFIG>` and :prop_tgt:`ARCHIVE_OUTPUT_NAME_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2332
+#: ../../../manual/cmake-generator-expressions.7.rst:2324
 msgid "Prefix of the import file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2343
+#: ../../../manual/cmake-generator-expressions.7.rst:2335
 msgid "Suffix of the import file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2345
+#: ../../../manual/cmake-generator-expressions.7.rst:2337
 msgid ""
 "The suffix corresponds to the file extension (such as \".lib\" or \".tbd\")."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2356
+#: ../../../manual/cmake-generator-expressions.7.rst:2348
 msgid "Name of the import file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2365
+#: ../../../manual/cmake-generator-expressions.7.rst:2357
 msgid "Directory of the import file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2372
+#: ../../../manual/cmake-generator-expressions.7.rst:2364
 msgid "File with soname (``.so.3``) where ``tgt`` is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2376
+#: ../../../manual/cmake-generator-expressions.7.rst:2368
 msgid "Name of file with soname (``.so.3``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2383
+#: ../../../manual/cmake-generator-expressions.7.rst:2375
 msgid "Directory of file with soname (``.so.3``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2392
+#: ../../../manual/cmake-generator-expressions.7.rst:2384
 msgid ""
 "Import file with soname (``.3.tbd``) where ``tgt`` is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2398
+#: ../../../manual/cmake-generator-expressions.7.rst:2390
 msgid "Name of the import file with soname (``.3.tbd``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2407
+#: ../../../manual/cmake-generator-expressions.7.rst:2399
 msgid "Directory of the import file with soname (``.3.tbd``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2416
+#: ../../../manual/cmake-generator-expressions.7.rst:2408
 msgid ""
 "Full path to the linker generated program database file (.pdb) where ``tgt`` "
 "is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2419
+#: ../../../manual/cmake-generator-expressions.7.rst:2411
 msgid ""
 "See also the :prop_tgt:`PDB_NAME` and :prop_tgt:`PDB_OUTPUT_DIRECTORY` "
 "target properties and their configuration specific variants :prop_tgt:"
 "`PDB_NAME_<CONFIG>` and :prop_tgt:`PDB_OUTPUT_DIRECTORY_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2427
+#: ../../../manual/cmake-generator-expressions.7.rst:2419
 msgid ""
 "Base name of the linker generated program database file (.pdb) where ``tgt`` "
 "is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2430
+#: ../../../manual/cmake-generator-expressions.7.rst:2422
 msgid ""
 "The base name corresponds to the target PDB file name (see "
 "``$<TARGET_PDB_FILE_NAME:tgt>``) without prefix and suffix. For example, if "
 "target file name is ``base.pdb``, the base name is ``base``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2434
+#: ../../../manual/cmake-generator-expressions.7.rst:2426
 msgid ""
 "See also the :prop_tgt:`PDB_NAME` target property and its configuration "
 "specific variant :prop_tgt:`PDB_NAME_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2447
+#: ../../../manual/cmake-generator-expressions.7.rst:2439
 msgid "Name of the linker generated program database file (.pdb)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2456
+#: ../../../manual/cmake-generator-expressions.7.rst:2448
 msgid "Directory of the linker generated program database file (.pdb)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2465
+#: ../../../manual/cmake-generator-expressions.7.rst:2457
 msgid ""
 "Full path to the bundle directory (``/path/to/my.app``, ``/path/to/my."
 "framework``, or ``/path/to/my.bundle``), where ``tgt`` is the name of a "
 "target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2476
+#: ../../../manual/cmake-generator-expressions.7.rst:2468
 msgid ""
 "Name of the bundle directory (``my.app``, ``my.framework``, or ``my."
 "bundle``), where ``tgt`` is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2486
+#: ../../../manual/cmake-generator-expressions.7.rst:2478
 msgid ""
 "Full path to the bundle content directory where ``tgt`` is the name of a "
 "target.  For the macOS SDK it leads to ``/path/to/my.app/Contents``, ``/path/"
@@ -3040,13 +3031,13 @@ msgid ""
 "path/to/my.bundle`` due to the flat bundle structure."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2500
+#: ../../../manual/cmake-generator-expressions.7.rst:2492
 msgid ""
 "List of objects resulting from building ``tgt``.  This would typically be "
 "used on :ref:`object library <Object Libraries>` targets."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2507
+#: ../../../manual/cmake-generator-expressions.7.rst:2499
 msgid ""
 "List of DLLs that the target depends on at runtime. This is determined by "
 "the locations of all the ``SHARED`` targets in the target's transitive "
@@ -3057,14 +3048,14 @@ msgid ""
 "always evaluates to an empty string**."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2515
+#: ../../../manual/cmake-generator-expressions.7.rst:2507
 msgid ""
 "This generator expression can be used to copy all of the DLLs that a target "
 "depends on into its output directory in a ``POST_BUILD`` custom command "
 "using the :option:`cmake -E copy -t <cmake-E copy>` command. For example:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2519
+#: ../../../manual/cmake-generator-expressions.7.rst:2511
 msgid ""
 "find_package(foo CONFIG REQUIRED) # package generated by install(EXPORT)\n"
 "\n"
@@ -3077,7 +3068,7 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2532
+#: ../../../manual/cmake-generator-expressions.7.rst:2524
 msgid ""
 ":ref:`Imported Targets` are supported only if they know the location of "
 "their ``.dll`` files.  An imported ``SHARED`` library must have :prop_tgt:"
@@ -3087,14 +3078,14 @@ msgid ""
 "and therefore will be ignored."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2539
+#: ../../../manual/cmake-generator-expressions.7.rst:2531
 msgid ""
 "On platforms that support runtime paths (``RPATH``), refer to the :prop_tgt:"
 "`INSTALL_RPATH` target property. On Apple platforms, refer to the :prop_tgt:"
 "`INSTALL_NAME_DIR` target property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2547
+#: ../../../manual/cmake-generator-expressions.7.rst:2539
 msgid ""
 "List of the directories which contain the DLLs that the target depends on at "
 "runtime (see :genex:`TARGET_RUNTIME_DLLS`). This is determined by the "
@@ -3105,37 +3096,37 @@ msgid ""
 "string**."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2554
+#: ../../../manual/cmake-generator-expressions.7.rst:2546
 msgid ""
 "This generator expression can e.g. be used to create a batch file using :"
 "command:`file(GENERATE)` which sets the PATH environment variable "
 "accordingly."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2558
+#: ../../../manual/cmake-generator-expressions.7.rst:2550
 msgid "Export And Install Expressions"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2562
+#: ../../../manual/cmake-generator-expressions.7.rst:2554
 msgid ""
 "Content of ``...`` when the property is exported using :command:"
 "`install(EXPORT)`, and empty otherwise."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2567
+#: ../../../manual/cmake-generator-expressions.7.rst:2559
 msgid ""
 "Content of ``...`` when the property is exported using :command:`export`, or "
 "when the target is used by another target in the same buildsystem. Expands "
 "to the empty string otherwise."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2575
+#: ../../../manual/cmake-generator-expressions.7.rst:2567
 msgid ""
 "Content of ``...`` when the target is used by another target in the same "
 "buildsystem. Expands to the empty string otherwise."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2580
+#: ../../../manual/cmake-generator-expressions.7.rst:2572
 msgid ""
 "Content of the install prefix when the target is exported via :command:"
 "`install(EXPORT)`, or when evaluated in the :prop_tgt:`INSTALL_NAME_DIR` "
@@ -3143,38 +3134,38 @@ msgid ""
 "`install(RUNTIME_DEPENDENCY_SET)`, and empty otherwise."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2585
+#: ../../../manual/cmake-generator-expressions.7.rst:2577
 msgid ""
 "Evaluates to the content of the install prefix in the code argument of :"
 "command:`install(CODE)` or the file argument of :command:`install(SCRIPT)`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2591
+#: ../../../manual/cmake-generator-expressions.7.rst:2583
 msgid "Multi-level Expression Evaluation"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2597
+#: ../../../manual/cmake-generator-expressions.7.rst:2589
 msgid ""
 "Content of ``expr`` evaluated as a generator expression in the current "
 "context. This enables consumption of generator expressions whose evaluation "
 "results itself in generator expressions."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2605
+#: ../../../manual/cmake-generator-expressions.7.rst:2597
 msgid ""
 "Content of ``expr`` evaluated as a generator expression in the context of "
 "``tgt`` target. This enables consumption of custom target properties that "
 "themselves contain generator expressions."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2609
+#: ../../../manual/cmake-generator-expressions.7.rst:2601
 msgid ""
 "Having the capability to evaluate generator expressions is very useful when "
 "you want to manage custom properties supporting generator expressions. For "
 "example:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2613
+#: ../../../manual/cmake-generator-expressions.7.rst:2605
 msgid ""
 "add_library(foo ...)\n"
 "\n"
@@ -3187,21 +3178,21 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2625
+#: ../../../manual/cmake-generator-expressions.7.rst:2617
 msgid ""
 "This naive implementation of the ``printFooKeys`` custom command is wrong "
 "because ``CUSTOM_KEYS`` target property is not evaluated and the content is "
 "passed as is (i.e. ``$<$<CONFIG:DEBUG>:FOO_EXTRA_THINGS>``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2629
+#: ../../../manual/cmake-generator-expressions.7.rst:2621
 msgid ""
 "To have the expected result (i.e. ``FOO_EXTRA_THINGS`` if config is "
 "``Debug``), it is required to evaluate the output of ``$<TARGET_PROPERTY:foo,"
 "CUSTOM_KEYS>``:"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2633
+#: ../../../manual/cmake-generator-expressions.7.rst:2625
 msgid ""
 "add_custom_target(printFooKeys\n"
 "  COMMAND ${CMAKE_COMMAND} -E\n"
@@ -3209,43 +3200,43 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2641
+#: ../../../manual/cmake-generator-expressions.7.rst:2633
 msgid "Escaped Characters"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2643
+#: ../../../manual/cmake-generator-expressions.7.rst:2635
 msgid ""
 "These expressions evaluate to specific string literals. Use them in place of "
 "the actual string literal where you need to prevent them from having their "
 "special meaning."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2649
+#: ../../../manual/cmake-generator-expressions.7.rst:2641
 msgid ""
 "A literal ``>``. Used for example to compare strings that contain a ``>``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2653
+#: ../../../manual/cmake-generator-expressions.7.rst:2645
 msgid ""
 "A literal ``,``. Used for example to compare strings which contain a ``,``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2657
+#: ../../../manual/cmake-generator-expressions.7.rst:2649
 msgid ""
 "A literal ``;``. Used to prevent list expansion on an argument with ``;``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2663
+#: ../../../manual/cmake-generator-expressions.7.rst:2655
 msgid ""
 "A literal ``\"``. Used to allow string literal quotes inside a generator "
 "expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2667
+#: ../../../manual/cmake-generator-expressions.7.rst:2659
 msgid "Deprecated Expressions"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:2671
+#: ../../../manual/cmake-generator-expressions.7.rst:2663
 msgid ""
 "Configuration name. Deprecated since CMake 3.0. Use :genex:`CONFIG` instead."
 msgstr ""

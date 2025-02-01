@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindFontconfig.cmake:16
+#: ../../../../Modules/FindFontconfig.cmake:15
 msgid "``Fontconfig::Fontconfig``"
 msgstr ""
 
@@ -77,7 +77,7 @@ msgstr ""
 msgid "where to find the Fontconfig headers."
 msgstr ""
 
-#: ../../../../Modules/FindFontconfig.cmake:109
+#: ../../../../Modules/FindFontconfig.cmake:31
 msgid "``Fontconfig_COMPILE_OPTIONS``"
 msgstr ""
 
