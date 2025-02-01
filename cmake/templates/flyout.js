@@ -10,7 +10,7 @@ const _ALL_LANGUAGES = [
 ];
 const _ALL_VERSIONS = [
   ["master", "master"],
-  ["stable", "stable"],
+  ["latest", "latest"],
   ["3.30", "3.30"],
   ["3.29", "3.29"],
   ["3.26", "3.26"],
@@ -55,6 +55,50 @@ const _CURRENT_LANGUAGE = SWITCHERS_OPTIONS.CURRENT_LANGUAGE;
 const _HTML_BASEURL     = SWITCHERS_OPTIONS.HTML_BASEURL;
 const _SERVER_ROOT      = window.location.origin;
 
+// function getTargetUrl(type, selectedValue) {
+//   const currentPath = window.location.pathname;
+//   let targetPath;
+//   if (type === "language") {
+//     targetPath = currentPath.replace(`/${_CURRENT_LANGUAGE}/`, `/${selectedValue}/`);
+//   } else if (type === "version") {
+//     targetPath = currentPath.replace(`/${_CURRENT_VERSION}/`, `/${selectedValue}/`);
+//   }
+//   return _IS_LOCAL ? `file://${targetPath}` : `${_SERVER_ROOT}${targetPath}`;
+// }
+
+async function getTargetUrl(type, selectedValue) {
+  const currentPath = window.location.pathname;
+  let targetPath;
+
+  if (type === "language") {
+    targetPath = currentPath.replace(`/${_CURRENT_LANGUAGE}/`, `/${selectedValue}/`);
+  } else if (type === "version") {
+    targetPath = currentPath.replace(`/${_CURRENT_VERSION}/`, `/${selectedValue}/`);
+  }
+
+  const targetUrl = _IS_LOCAL
+    ? `file://${targetPath}`
+    : `${_SERVER_ROOT}${targetPath}`;
+
+  // 如果是本地模式，直接返回
+  if (_IS_LOCAL) return targetUrl;
+
+  try {
+    // 檢查目標頁面是否存在
+    const response = await fetch(targetUrl, { method: "HEAD" });
+    if (response.ok) {
+      return targetUrl; // 目標存在，回傳該網址
+    } else {
+      console.warn("目標網址不存在，使用備用網址:", targetUrl);
+    }
+  } catch (error) {
+    console.error("檢查目標網址時出錯:", error);
+  }
+
+  // 返回預設備用網址
+  return `${_HTML_BASEURL}/${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/${type === "version" ? selectedValue : _CURRENT_VERSION}/index.html`;
+}
+
 // **跳轉邏輯**
 async function switchVersionOrLanguage(type, selectedValue) {
   const currentPath = window.location.pathname;
@@ -93,21 +137,40 @@ async function switchVersionOrLanguage(type, selectedValue) {
 // 生成語言與版本的 HTML 列表
 function createFlyout() {
   const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
-    <a href="javascript:void(0);"
+    <a href="#"
       title="${name}"
       class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
-      onclick="switchVersionOrLanguage('language', '${code}')">
+      onmouseover="getTargetUrl('language', '${code}').then(url => this.href = url)">
       ${code}
     </a>
   `).join("");
 
-  const sortedVersions = _ALL_VERSIONS.map(([version]) => `
-    <a href="javascript:void(0);"
-      class="${version === _CURRENT_VERSION ? "selected" : ""}"
-      onclick="switchVersionOrLanguage('version', '${version}')">
-      ${version}
+  // const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
+  //   <a href="javascript:void(0);"
+  //     title="${name}"
+  //     class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
+  //     onclick="switchVersionOrLanguage('language', '${code}')">
+  //     ${code}
+  //   </a>
+  // `).join("");
+
+  const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
+    <a href="#"
+      title="${name}"
+      class="${code === _CURRENT_VERSION ? "selected" : ""}"
+      onmouseover="getTargetUrl('version', '${code}').then(url => this.href = url)">
+      ${code}
     </a>
   `).join("");
+
+  // const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
+  //   <a href="javascript:void(0);"
+  //     title="${name}"
+  //     class="${code === _CURRENT_VERSION ? "selected" : ""}"
+  //     onclick="switchVersionOrLanguage('version', '${code}')">
+  //     ${code}
+  //   </a>
+  // `).join("");
 
   const sortedProjects = _ALL_PROJECTS.map(([project, link]) => `
     <a href="${link}">
