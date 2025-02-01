@@ -64,7 +64,7 @@ jobs:
           echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
           echo "[Secrets]"
           echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
-      - name: Check Variables
+      - name: Check Required Variables
         shell: bash
         run: |
           VARIABLES_EXIST=true
@@ -84,7 +84,7 @@ jobs:
             echo "Error: Some variables are missing." >&2
             exit 1
           fi
-      - name: Check Secrets
+      - name: Check Required Secrets
         shell: bash
         run: |
           SECRETS_EXIST=true
