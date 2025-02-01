@@ -56,7 +56,7 @@ jobs:
     if: ${{ ( github.event_name == 'schedule' ) ||
             ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
             ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) }}
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs/Variables/Secrets
         shell: bash
@@ -74,6 +74,7 @@ jobs:
           echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
           echo "inputs.DEPLOY_ONLY = ${{ inputs.DEPLOY_ONLY }}"
           echo "[Variables]"
+          echo "vars.RUNNER = ${{ vars.RUNNER }}"
           echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
           echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
           echo "[Secrets]"
@@ -82,6 +83,10 @@ jobs:
         shell: bash
         run: |
           VARIABLES_EXIST=true
+          if [[ -z "${{ vars.RUNNER }}" ]]; then
+            echo "vars.RUNNER is missing."
+            VARIABLES_EXIST=false
+          fi
           if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
             echo "vars.ACTOR_NAME is missing."
             VARIABLES_EXIST=false
@@ -111,7 +116,7 @@ jobs:
     if: ${{ ( github.event_name == 'schedule' ) ||
             ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
             ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) }}
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
       MATRIX_NUM: ${{ steps.gmjl.outputs.MATRIX_NUM }}
@@ -163,7 +168,7 @@ jobs:
       cancel-in-progress: true
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml@main
     with:
-      RUNNER: 'ubuntu-latest'
+      RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
       LANGUAGE: ${{ matrix.LANGUAGE }}
@@ -180,18 +185,19 @@ jobs:
 
   deploy:
     needs: [ 'caller', 'get-matrix', 'precondition' ]
-    # https://github.com/actions/runner/issues/1540
-    # https://github.com/actions/runner/issues/2205
-    # https://github.com/actions/runner/issues/2566
-    # https://github.com/actions/runner/issues/2566#issuecomment-1522574653
+    # Refer to:
+    # - https://github.com/actions/runner/issues/1540
+    # - https://github.com/actions/runner/issues/2205
+    # - https://github.com/actions/runner/issues/2566
+    # - https://github.com/actions/runner/issues/2566#issuecomment-1522574653
     if: ${{ ( always() ) &&
             ( !contains(needs.*.result, 'failure') ) &&
             ( !contains(needs.*.result, 'cancelled') ) &&
             ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
-    runs-on: ubuntu-latest
-    # See: https://stackoverflow.com/a/76883315
+    runs-on: ${{ vars.RUNNER }}
+    # Refer to: https://stackoverflow.com/a/76883315
     permissions:
       id-token: write
       pages: write
@@ -201,10 +207,9 @@ jobs:
         with:
           ref: 'refs/heads/gh-pages'
 
-      - name: Download All Artifacts
+      - name: Download All Build Artifacts
         uses: actions/download-artifact@v4
         with:
-          path: '.'
           merge-multiple: true
       - name: Set up mutex for the 'gh-pages' branch
         uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
@@ -214,23 +219,25 @@ jobs:
       - name: Deploy to the 'gh-pages' branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-          git-config-name: ${{ vars.ACTOR_NAME }}
-          git-config-email: ${{ vars.ACTOR_EMAIL }}
           branch: 'gh-pages'
           folder: '.'
           target-folder: '.'
           single-commit: true
           clean: false
+          git-config-name: ${{ vars.ACTOR_NAME }}
+          git-config-email: ${{ vars.ACTOR_EMAIL }}
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
           name: github-pages
-      - name: Deploy to GitHub Pages
+      - name: Deploy Pages Artifact
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
