@@ -183,7 +183,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th colspan="2" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
       </tr>
       <tr>
-        <th colspan="1" style="text-align: center; vertical-align: middle;">Status Badges</th>
+        <th colspan="1" style="text-align: right; vertical-align: middle;">Status Badges</th>
         <th colspan="1" style="text-align: center; vertical-align: middle;">Purpose</th>
       </tr>
       <tr>
