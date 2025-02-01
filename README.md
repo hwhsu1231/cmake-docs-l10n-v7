@@ -187,7 +187,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th colspan="1" style="text-align: center; vertical-align: middle;">Purpose</th>
       </tr>
       <tr>
-        <td colspan="1" align="left">
+        <td colspan="1">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
             <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
@@ -200,7 +200,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-gettext-update-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Update <code>.po</code> files by Gettext toolkit.</td>
+        <td colspan="1" align="left">Update <code>.po</code> files by Gettext toolkit.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -208,7 +208,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-gettext-compend-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Update <code>.po</code> files from the compendium by Gettext toolkit.</td>
+        <td colspan="1" align="left">Update <code>.po</code> files from the compendium by Gettext toolkit.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -216,7 +216,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Push <code>.pot</code> files to TMS by its CLI tool.</td>
+        <td colspan="1" align="left">Push <code>.pot</code> files to TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -224,7 +224,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-tmscli-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
+        <td colspan="1" align="left">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -232,7 +232,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-tmscli-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Push README sources to and pull its translations from TMS by its CLI tool.</td>
+        <td colspan="1" align="left">Push README sources to and pull its translations from TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -240,7 +240,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-deploy-gh-pages" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Deploy the built documents to <code>gh-pages</code> branch.</td>
+        <td colspan="1" align="left">Deploy the built documents to <code>gh-pages</code> branch.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -248,7 +248,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-deploy-po-version" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
+        <td colspan="1" align="left">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
       </tr>
       <tr>
         <td colspan="1">
@@ -256,7 +256,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-update-submodule" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1">Update each of the submodules to their latest commit.</td>
+        <td colspan="1" align="left">Update each of the submodules to their latest commit.</td>
       </tr>
     </tbody>
   </table>
