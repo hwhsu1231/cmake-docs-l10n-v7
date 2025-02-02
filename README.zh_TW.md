@@ -114,83 +114,83 @@ The translations are contributed in Crowdin Project and downloaded automatically
     <tbody>
       <!-- TMS -->
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">TMS</th>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">Crowdin</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">TMS</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Crowdin</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Header -->
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">Issues</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Issues</th>
       </tr>
       <!-- Main -->
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">Main</th>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">GitHub</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Main</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" target="_blank">Link</a>
         </td>
       </tr>
       <!-- Mirror -->
       <tr>
-        <th rowspan="7" style="text-align: center; vertical-align: middle;">Mirror</th>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">GitCode</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="7" align="center" style="text-align: center; vertical-align: middle;">Mirror</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitCode</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">GitFlic</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">GitLab</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitLab</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">Gitee</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Gitee</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">Gitea</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Gitea</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">AtomGit</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">AtomGit</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <tr>
-        <th rowspan="1" style="text-align: center; vertical-align: middle;">Codeberg</th>
-        <td rowspan="1" style="text-align: center; vertical-align: middle;">
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Codeberg</th>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
     </tbody>
   </table>
