@@ -15,9 +15,9 @@ on:
         description: 'TYPE input'
         required: true
         type: choice
-        default: 'matrix'
+        default: 'group'
         options:
-          - 'matrix'
+          - 'group'
           - 'single'
       VERSION:
         description: 'VERSION input (for single type)'
@@ -55,7 +55,7 @@ env:
 jobs:
   precondition:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
@@ -125,7 +125,7 @@ jobs:
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
@@ -168,7 +168,7 @@ jobs:
   caller:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
             ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) }}
     strategy:

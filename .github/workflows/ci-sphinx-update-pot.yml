@@ -15,10 +15,10 @@ on:
         description: 'TYPE input'
         required: true
         type: choice
-        default: 'matrix'
+        default: 'group'
         options:
           - 'single'
-          - 'matrix'
+          - 'group'
       VERSION:
         description: 'VERSION input (for single type)'
         required: true
@@ -106,8 +106,8 @@ jobs:
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
@@ -142,8 +142,8 @@ jobs:
   caller:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) &&
             ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}

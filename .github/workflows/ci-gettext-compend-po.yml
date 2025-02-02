@@ -15,17 +15,17 @@ on:
         description: 'TYPE input'
         required: true
         type: choice
-        default: 'matrix'
+        default: 'group'
         options:
-          - 'matrix'
           - 'single'
+          - 'group'
       VERSION:
         description: 'VERSION input (for single type)'
         required: true
         type: string
         default: 'v3.0'
       VERSION_GROUP:
-        description: 'VERSION_GROUP input (for matrix type)'
+        description: 'VERSION_GROUP input (for group type)'
         required: true
         type: choice
         default: 'all'
@@ -46,8 +46,8 @@ env:
 jobs:
   precondition:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs/Variables/Secrets
@@ -105,8 +105,8 @@ jobs:
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
@@ -148,8 +148,8 @@ jobs:
   caller:
     needs: [ 'precondition', 'get-matrix' ]
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) &&
             ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
             ( inputs.DEPLOY_ONLY != 'true' ) }}
     strategy:
