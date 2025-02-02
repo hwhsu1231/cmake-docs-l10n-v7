@@ -159,7 +159,8 @@ jobs:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
-            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) }}
+            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
+            ( inputs.DEPLOY_ONLY == 'false' ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false
