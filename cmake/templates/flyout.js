@@ -136,41 +136,41 @@ async function switchVersionOrLanguage(type, selectedValue) {
 
 // 生成語言與版本的 HTML 列表
 function createFlyout() {
-  const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
-    <a href="#"
-      title="${name}"
-      class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
-      onmouseover="getTargetUrl('language', '${code}').then(url => this.href = url)">
-      ${code}
-    </a>
-  `).join("");
-
   // const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
-  //   <a href="javascript:void(0);"
+  //   <a href="#"
   //     title="${name}"
   //     class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
-  //     onclick="switchVersionOrLanguage('language', '${code}')">
+  //     onmouseover="getTargetUrl('language', '${code}').then(url => this.href = url)">
   //     ${code}
   //   </a>
   // `).join("");
 
-  const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
-    <a href="#"
+  const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
+    <a href="javascript:void(0);"
       title="${name}"
-      class="${code === _CURRENT_VERSION ? "selected" : ""}"
-      onmouseover="getTargetUrl('version', '${code}').then(url => this.href = url)">
+      class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
+      onclick="switchVersionOrLanguage('language', '${code}')">
       ${code}
     </a>
   `).join("");
 
   // const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
-  //   <a href="javascript:void(0);"
+  //   <a href="#"
   //     title="${name}"
   //     class="${code === _CURRENT_VERSION ? "selected" : ""}"
-  //     onclick="switchVersionOrLanguage('version', '${code}')">
+  //     onmouseover="getTargetUrl('version', '${code}').then(url => this.href = url)">
   //     ${code}
   //   </a>
   // `).join("");
+
+  const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
+    <a href="javascript:void(0);"
+      title="${name}"
+      class="${code === _CURRENT_VERSION ? "selected" : ""}"
+      onclick="switchVersionOrLanguage('version', '${code}')">
+      ${code}
+    </a>
+  `).join("");
 
   const sortedProjects = _ALL_PROJECTS.map(([project, link]) => `
     <a href="${link}">
