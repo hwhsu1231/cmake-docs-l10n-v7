@@ -202,7 +202,7 @@ jobs:
           ref: ${{ github.ref }}
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
           submodules: false
-      - name: Download Build Artifacts
+      - name: Download and Merge Build Artifacts
         uses: actions/download-artifact@v4
         with:
           path: 'out/html'
