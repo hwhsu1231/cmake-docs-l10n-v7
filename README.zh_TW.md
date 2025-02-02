@@ -240,6 +240,16 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-statistic-po.yml">
+            <img alt="ci-gettext-statistic-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-statistic-po.yml/badge.svg" />
+          </a>
+        </td>
+        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+          Update statistic information of <code>.po</code> files by Gettext toolkit.
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml">
             <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
           </a>
