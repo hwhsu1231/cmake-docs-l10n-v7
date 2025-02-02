@@ -364,8 +364,8 @@ You can preview translations in GitHub Pages:
         <th align="center" style="text-align: center; vertical-align: middle;">Version</th>
       </tr>
       <tr>
-        <td><code>zh_CN</code></td>
-        <td>
+        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
+        <td align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/master">master</a>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/latest">latest</a>
           <span>…</span>
@@ -373,8 +373,8 @@ You can preview translations in GitHub Pages:
         </td>
       </tr>
       <tr>
-        <td><code>zh_TW</code></td>
-        <td>
+        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
+        <td align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/master">master</a>
           <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/latest">latest</a>
           <span>…</span>
@@ -420,21 +420,21 @@ This project is created and currently maintained by the author, Haowei Hsu.
     <tbody>
       <!-- zh_CN -->
       <tr>
-        <td rowspan="2"><code>zh_CN</code></td>
+        <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
       </tr>
       <tr>
-        <td rowspan="1">Haowei Hsu</td>
-        <td rowspan="1">Language Coordinator</td>
-        <td rowspan="1"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
       </tr>
       <!-- zh_TW -->
       <tr>
-        <td rowspan="2"><code>zh_TW</code></td>
+        <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
       </tr>
       <tr>
-        <td rowspan="1">Haowei Hsu</td>
-        <td rowspan="1">Language Coordinator</td>
-        <td rowspan="1"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
       </tr>
     </tbody>
   </table>
