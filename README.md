@@ -189,7 +189,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </thead>
     <tbody>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
             <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
@@ -199,7 +199,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml" >
             <img alt="ci-gettext-update-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
           </a>
@@ -209,7 +209,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml">
             <img alt="ci-gettext-compend-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
           </a>
@@ -219,7 +219,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-statistic-po.yml">
             <img alt="ci-gettext-statistic-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-statistic-po.yml/badge.svg" />
           </a>
@@ -229,7 +229,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml">
             <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
           </a>
@@ -237,7 +237,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Push <code>.pot</code> files to TMS by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml">
             <img alt="ci-tmscli-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml/badge.svg" />
           </a>
@@ -245,7 +245,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml">
             <img alt="ci-tmscli-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml/badge.svg" />
           </a>
@@ -253,7 +253,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Push README sources to and pull its translations from TMS by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml">
             <img alt="ci-deploy-gh-pages" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
           </a>
@@ -261,7 +261,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Deploy the built documents to <code>gh-pages</code> branch.</td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml">
             <img alt="ci-deploy-po-version" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
           </a>
@@ -269,7 +269,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
       </tr>
       <tr>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml">
             <img alt="ci-update-submodule" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml/badge.svg" />
           </a>
@@ -307,8 +307,8 @@ Progress of Translations
         </td>
       </tr>
       <tr>
-        <td><code>ru_RU</code></td>
-        <td>Russian<br />Русский</td>
+        <td align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
+        <td align="center" style="text-align: center; vertical-align: middle;">Russian<br />Русский</td>
         <td align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
             <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
@@ -319,9 +319,9 @@ Progress of Translations
         </td>
       </tr>
       <tr>
-        <td><code>zh_CN</code></td>
-        <td>Simplified Chinese<br />简体中文</td>
-        <td>
+        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
+        <td align="center" style="text-align: center; vertical-align: middle;">Simplified Chinese<br />简体中文</td>
+        <td align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
             <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
@@ -331,9 +331,9 @@ Progress of Translations
         </td>
       </tr>
       <tr>
-        <td><code>zh_TW</code></td>
-        <td>Traditional Chinese<br />繁體中文</td>
-        <td>
+        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
+        <td align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
+        <td align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
             <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
