@@ -297,7 +297,7 @@ Progress of Translations
       <tr>
         <td><code>ja_JP</code></td>
         <td>Japanese<br />日本語</td>
-        <td>
+        <td align="left" style="text-align: left; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
             <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
