@@ -156,11 +156,11 @@ jobs:
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
+    if: ${{ ( inputs.DEPLOY_ONLY == 'false' ) &&
             ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
-            ( inputs.DEPLOY_ONLY == 'false' ) }}
+            ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false
@@ -193,7 +193,10 @@ jobs:
     # - https://github.com/actions/runner/issues/2566#issuecomment-1522574653
     if: ${{ ( always() ) &&
             ( !contains(needs.*.result, 'failure') ) &&
-            ( !contains(needs.*.result, 'cancelled') ) }}
+            ( !contains(needs.*.result, 'cancelled') ) &&
+            ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Checkout to '${{ github.ref }}'
@@ -229,7 +232,10 @@ jobs:
     needs: [ 'merge' ]
     if: ${{ ( always() ) &&
             ( !contains(needs.*.result, 'failure') ) &&
-            ( !contains(needs.*.result, 'cancelled') ) }}
+            ( !contains(needs.*.result, 'cancelled') ) &&
+            ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     # Refer to: https://stackoverflow.com/a/76883315
     permissions:
