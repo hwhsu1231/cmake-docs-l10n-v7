@@ -183,8 +183,8 @@ jobs:
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
 
-  deploy:
-    needs: [ 'caller', 'get-matrix', 'precondition' ]
+  merge:
+    needs: [ 'caller' ]
     # Refer to:
     # - https://github.com/actions/runner/issues/1540
     # - https://github.com/actions/runner/issues/2205
@@ -192,15 +192,8 @@ jobs:
     # - https://github.com/actions/runner/issues/2566#issuecomment-1522574653
     if: ${{ ( always() ) &&
             ( !contains(needs.*.result, 'failure') ) &&
-            ( !contains(needs.*.result, 'cancelled') ) &&
-            ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'matrix' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+            ( !contains(needs.*.result, 'cancelled') ) }}
     runs-on: ${{ vars.RUNNER }}
-    # Refer to: https://stackoverflow.com/a/76883315
-    permissions:
-      id-token: write
-      pages: write
     steps:
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
@@ -208,7 +201,6 @@ jobs:
           ref: ${{ github.ref }}
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
           submodules: false
-
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
@@ -232,6 +224,23 @@ jobs:
           git-config-email: ${{ vars.ACTOR_EMAIL }}
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
 
+  deploy:
+    needs: [ 'merge' ]
+    if: ${{ ( always() ) &&
+            ( !contains(needs.*.result, 'failure') ) &&
+            ( !contains(needs.*.result, 'cancelled') ) }}
+    runs-on: ${{ vars.RUNNER }}
+    # Refer to: https://stackoverflow.com/a/76883315
+    permissions:
+      id-token: write
+      pages: write
+    steps:
+      - name: Checkout to 'refs/heads/gh-pages'
+        uses: actions/checkout@v4
+        with:
+          ref: 'refs/heads/gh-pages'
+          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          submodules: false
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
