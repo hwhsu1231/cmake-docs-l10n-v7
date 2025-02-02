@@ -288,16 +288,16 @@ Progress of Translations
   <table>
     <thead>
       <tr>
-        <th>Language<br />Code</th>
-        <th>Language Name<br />Localized Name</th>
-        <th>Translated<br />Proofread</th>
+        <th align="center" style="text-align: center; vertical-align: middle;">Language<br />Code</th>
+        <th align="center" style="text-align: center; vertical-align: middle;">Language Name<br />Localized Name</th>
+        <th align="center" style="text-align: center; vertical-align: middle;">Translated<br />Proofread</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><code>ja_JP</code></td>
-        <td>Japanese<br />日本語</td>
-        <td align="left" style="text-align: left; vertical-align: middle;">
+        <td align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
+        <td align="center" style="text-align: center; vertical-align: middle;">Japanese<br />日本語</td>
+        <td align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
             <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
@@ -309,7 +309,7 @@ Progress of Translations
       <tr>
         <td><code>ru_RU</code></td>
         <td>Russian<br />Русский</td>
-        <td>
+        <td align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
             <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
