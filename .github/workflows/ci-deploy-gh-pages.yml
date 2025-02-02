@@ -202,15 +202,17 @@ jobs:
       id-token: write
       pages: write
     steps:
-      - name: Checkout to 'refs/heads/gh-pages'
+      - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
         with:
-          ref: 'refs/heads/gh-pages'
+          ref: ${{ github.ref }}
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
+          submodules: false
 
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
+          path: 'out/html'
           merge-multiple: true
           github-token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       - name: Set up mutex for the 'gh-pages' branch
@@ -222,8 +224,10 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: 'gh-pages'
-          folder: '.'
+          folder: 'out/html'
+          target-folder: '.'
           single-commit: true
+          clean: false
           git-config-name: ${{ vars.ACTOR_NAME }}
           git-config-email: ${{ vars.ACTOR_EMAIL }}
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
