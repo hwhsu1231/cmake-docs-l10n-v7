@@ -195,7 +195,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          Update <code>.pot</code> files by Sphinx documentation generator.
+          Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.
         </td>
       </tr>
       <tr>
