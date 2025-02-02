@@ -360,8 +360,8 @@ You can preview translations in GitHub Pages:
   <table>
     <tbody>
       <tr>
-        <th>Language</th>
-        <th>Version</th>
+        <th align="center" style="text-align: center; vertical-align: middle;">Language</th>
+        <th align="center" style="text-align: center; vertical-align: middle;">Version</th>
       </tr>
       <tr>
         <td><code>zh_CN</code></td>
@@ -411,10 +411,10 @@ This project is created and currently maintained by the author, Haowei Hsu.
   <table>
     <thead>
       <tr>
-        <th rowspan="1">Language</th>
-        <th rowspan="1">Member</th>
-        <th rowspan="1">Role</th>
-        <th rowspan="1">Contact Info</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Member</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Role</th>
+        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Contact Info</th>
       </tr>
     </thead>
     <tbody>
