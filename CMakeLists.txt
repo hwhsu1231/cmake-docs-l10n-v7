@@ -8,19 +8,19 @@ project(cmake-docs-l10n NONE)
 # Cache Variables.
 #]============================================================]
 
-set(SOURCE "en_US"
-    CACHE STRING "The source language code of the documentation")
-
 set(LANGUAGE "all"
     CACHE STRING "The language code of the documentation.")
     # Possible values are "all" and languages listed in languages.json.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language for details.
 
+set(LANGUAGE_SOURCE "en_US"
+    CACHE STRING "The source language code of the documentation")
+
 set(VERSION "master"
     CACHE STRING "The current version of the documentation.")
     # Possible values are versions listed in versions.json.
 
-set(COMPENDIUM "master"
+set(VERSION_COMPENDIUM "master"
     CACHE STRING "The version of compendium from which the current version will merge translations.")
     # Possible values are NULL and versions listed in versions.json.
 
@@ -326,10 +326,10 @@ configure_file(
 #]============================================================]
 
 message(STATUS "---------- Cache Variables ----------")
-message(STATUS "SOURCE                          = ${SOURCE}")
 message(STATUS "LANGUAGE                        = ${LANGUAGE}")
+message(STATUS "LANGUAGE_SOURCE                 = ${LANGUAGE_SOURCE}")
 message(STATUS "VERSION                         = ${VERSION}")
-message(STATUS "COMPENDIUM                      = ${COMPENDIUM}")
+message(STATUS "VERSION_COMPENDIUM              = ${VERSION_COMPENDIUM}")
 message(STATUS "AUTO_DEPEND                     = ${AUTO_DEPEND}")
 message(STATUS "REMOVE_REDUNDANT                = ${REMOVE_REDUNDANT}")
 message(STATUS "MODE_OF_UPDATE                  = ${MODE_OF_UPDATE}")
@@ -419,10 +419,10 @@ set(SCRIPT_MODE_ENV
 
 set(SCRIPT_MODE_CACHE
     # [Cache Variables]
-    -D SOURCE=${SOURCE}
     -D LANGUAGE=${LANGUAGE}
+    -D LANGUAGE_SOURCE=${LANGUAGE_SOURCE}
     -D VERSION=${VERSION}
-    -D COMPENDIUM=${COMPENDIUM}
+    -D VERSION_COMPENDIUM=${VERSION_COMPENDIUM}
     -D AUTO_DEPEND=${AUTO_DEPEND}
     -D REMOVE_REDUNDANT=${REMOVE_REDUNDANT}
     -D MODE_OF_UPDATE=${MODE_OF_UPDATE}

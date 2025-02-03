@@ -42,7 +42,7 @@ message(STATUS "Creating ReadTheDocs symlinks for language directories...")
 remove_cmake_message_indent()
 message("")
 foreach(_LANGUAGE ${LANGUAGE_LIST})
-    if (_LANGUAGE STREQUAL "${SOURCE}")
+    if (_LANGUAGE STREQUAL "${LANGUAGE_SOURCE}")
         continue()
     endif()
 

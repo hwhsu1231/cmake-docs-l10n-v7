@@ -17,7 +17,7 @@ include(GettextUtils)
 
 set(STATISTIC_TXT_CNT "")
 foreach(_LANGUAGE ${LANGUAGE_LIST})
-    if (_LANGUAGE STREQUAL "${SOURCE}")
+    if (_LANGUAGE STREQUAL "${LANGUAGE_SOURCE}")
         continue()
     endif()
 
