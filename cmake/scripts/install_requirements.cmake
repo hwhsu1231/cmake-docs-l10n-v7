@@ -111,7 +111,7 @@ remove_cmake_message_indent()
 message("")
 execute_process(
     COMMAND ${Conda_EXECUTABLE} create
-            --prefix ${PROJ_VENV_DIR}
+            --prefix ${PROJ_CONDA_DIR}
             --yes
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
@@ -145,7 +145,7 @@ execute_process(
             conda-forge::python=${VERSION_OF_PYTHON}
             conda-forge::sphinx=${VERSION_OF_SPHINX}
             --channel conda-forge
-            --prefix ${PROJ_VENV_DIR}
+            --prefix ${PROJ_CONDA_DIR}
             --yes
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
@@ -171,7 +171,7 @@ message("")
 restore_cmake_message_indent()
 
 
-set(Python_ROOT_DIR     "${PROJ_VENV_DIR}")
+set(Python_ROOT_DIR     "${PROJ_CONDA_DIR}")
 find_package(Python     MODULE REQUIRED)
 message(STATUS "Running 'python -c \"import sys; print('\\n'.join(sys.path))\"' command to check python system paths...")
 remove_cmake_message_indent()
@@ -184,11 +184,11 @@ message("")
 restore_cmake_message_indent()
 
 
-set(Sphinx_ROOT_DIR     "${PROJ_VENV_DIR}")
+set(Sphinx_ROOT_DIR     "${PROJ_CONDA_DIR}")
 find_package(Sphinx     MODULE REQUIRED)
 
 
 file(WRITE "${PREV_REFERENCE_TXT_PATH}" "${CURRENT_REFERENCE}")
 execute_process(
-    COMMAND ${Conda_EXECUTABLE} list --export --prefix ${PROJ_VENV_DIR}
+    COMMAND ${Conda_EXECUTABLE} list --export --prefix ${PROJ_CONDA_DIR}
     OUTPUT_FILE "${PREV_PACKAGES_TXT_PATH}")

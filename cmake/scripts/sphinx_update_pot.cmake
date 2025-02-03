@@ -9,8 +9,8 @@ message(STATUS "-------------------- ${SCRIPT_NAME} --------------------")
 
 
 set(CMAKE_MODULE_PATH   "${PROJ_CMAKE_MODULES_DIR}")
-set(Sphinx_ROOT_DIR     "${PROJ_VENV_DIR}")
-set(Python_ROOT_DIR     "${PROJ_VENV_DIR}")
+set(Sphinx_ROOT_DIR     "${PROJ_CONDA_DIR}")
+set(Python_ROOT_DIR     "${PROJ_CONDA_DIR}")
 find_package(Git        MODULE REQUIRED)
 find_package(Gettext    MODULE REQUIRED COMPONENTS Msgcat Msgmerge)
 find_package(Python     MODULE REQUIRED COMPONENTS Interpreter)
@@ -79,14 +79,14 @@ restore_cmake_message_indent()
 
 message(STATUS "Generating the configuration file 'conf.py' by configuring project(CMakeHelp)...")
 if (CMAKE_HOST_UNIX)
-    set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-    set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
+    set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
                                 LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
 elseif (CMAKE_HOST_WIN32)
-    set(ENV_PATH                "${PROJ_VENV_DIR}/Library/bin"
-                                "${PROJ_VENV_DIR}/Scripts"
-                                "${PROJ_VENV_DIR}"
+    set(ENV_PATH                "${PROJ_CONDA_DIR}/Library/bin"
+                                "${PROJ_CONDA_DIR}/Scripts"
+                                "${PROJ_CONDA_DIR}"
                                 "$ENV{PATH}")
     string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
@@ -247,14 +247,14 @@ endif()
 
 message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generate .pot files...")
 if (CMAKE_HOST_UNIX)
-    set(ENV_PATH                "${PROJ_VENV_DIR}/bin:$ENV{PATH}")
-    set(ENV_LD_LIBRARY_PATH     "${PROJ_VENV_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
+    set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
                                 LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
 elseif (CMAKE_HOST_WIN32)
-    set(ENV_PATH                "${PROJ_VENV_DIR}/Library/bin"
-                                "${PROJ_VENV_DIR}/Scripts"
-                                "${PROJ_VENV_DIR}"
+    set(ENV_PATH                "${PROJ_CONDA_DIR}/Library/bin"
+                                "${PROJ_CONDA_DIR}/Scripts"
+                                "${PROJ_CONDA_DIR}"
                                 "$ENV{PATH}")
     string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})

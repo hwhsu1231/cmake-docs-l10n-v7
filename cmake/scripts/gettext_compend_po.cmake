@@ -25,7 +25,7 @@ if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
-    if (_LANGUAGE STREQUAL "en_US")
+    if (_LANGUAGE STREQUAL "${SOURCE}")
         continue()
     endif()
 
