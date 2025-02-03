@@ -87,17 +87,19 @@ async function getTargetUrl(type, selectedValue) {
 // 生成語言與版本的 HTML 列表
 function createFlyout() {
   const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
-    <a href="#" title="${name}" 
-       class="${code === _CURRENT_LANGUAGE ? "selected" : ""}" 
-       data-language="${code}">
+    <a href="#"
+      title="${name}"
+      class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
+      data-language="${code}">
       ${code}
     </a>
   `).join("");
 
   const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
-    <a href="#" title="${name}" 
-       class="${code === _CURRENT_VERSION ? "selected" : ""}" 
-       data-version="${code}">
+    <a href="#"
+      title="${name}"
+      class="${code === _CURRENT_VERSION ? "selected" : ""}"
+      data-version="${code}">
       ${code}
     </a>
   `).join("");
@@ -112,7 +114,6 @@ function createFlyout() {
     <div class="rtd-flyout">
       <span class="rtd-flyout-header">
         Language: ${_CURRENT_LANGUAGE} | Version: ${_CURRENT_VERSION}
-        <span class="fa fa-caret-down"></span>
       </span>
       <div class="rtd-flyout-content closed">
         <dl>
@@ -190,7 +191,7 @@ function addStyles() {
       padding: 5px;
       width: auto;
       min-width: 200px;
-      max-width: 300px;
+      max-width: 350px;
     }
 
     .rtd-flyout-header {
