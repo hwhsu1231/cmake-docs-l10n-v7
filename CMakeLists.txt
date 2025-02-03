@@ -8,13 +8,16 @@ project(cmake-docs-l10n NONE)
 # Cache Variables.
 #]============================================================]
 
+set(SOURCE "en_US"
+    CACHE STRING "The source language code of the documentation")
+
 set(LANGUAGE "all"
-    CACHE STRING "The language code for the documentation.")
+    CACHE STRING "The language code of the documentation.")
     # Possible values are "all" and languages listed in languages.json.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language for details.
 
 set(VERSION "master"
-    CACHE STRING "The current version for the documentation.")
+    CACHE STRING "The current version of the documentation.")
     # Possible values are versions listed in versions.json.
 
 set(COMPENDIUM "master"
@@ -101,7 +104,7 @@ set(PROJ_BINARY_DIR                 "${PROJECT_BINARY_DIR}")
 set(PROJ_CMAKE_MODULES_DIR          "${PROJ_SOURCE_DIR}/cmake/modules")
 set(PROJ_CMAKE_SCRIPTS_DIR          "${PROJ_SOURCE_DIR}/cmake/scripts")
 set(PROJ_CMAKE_TEMPLATES_DIR        "${PROJ_SOURCE_DIR}/cmake/templates")
-set(PROJ_VENV_DIR                   "${PROJ_SOURCE_DIR}/.venv")
+set(PROJ_CONDA_DIR                  "${PROJ_SOURCE_DIR}/.conda")
 set(PROJ_OUT_DIR                    "${PROJ_SOURCE_DIR}/out")
 set(PROJ_OUT_REPO_DIR               "${PROJ_OUT_DIR}/repo")
 set(PROJ_OUT_REPO_DOCS_DIR          "${PROJ_OUT_REPO_DIR}/Help")
@@ -121,8 +124,8 @@ set(PROJ_L10N_VERSION_COMPEND_DIR   "${PROJ_L10N_VERSION_DIR}/.compend")
 #]============================================================]
 
 set(LANGUAGES_JSON_PATH             "${PROJ_SOURCE_DIR}/languages.json")
-set(PREV_PACKAGES_TXT_PATH          "${PROJ_VENV_DIR}/prev/packages.txt")
-set(PREV_REFERENCE_TXT_PATH         "${PROJ_VENV_DIR}/prev/reference.txt")
+set(PREV_PACKAGES_TXT_PATH          "${PROJ_CONDA_DIR}/prev/packages.txt")
+set(PREV_REFERENCE_TXT_PATH         "${PROJ_CONDA_DIR}/prev/reference.txt")
 set(REFERENCES_JSON_PATH            "${PROJ_L10N_VERSION_DIR}/references.json")
 set(TMS_CONFIG_FILE_PATH            "${PROJ_L10N_VERSION_DIR}/crowdin.yml")
 set(STATISTIC_TXT_PATH              "${PROJ_L10N_VERSION_DIR}/statistic.txt")
@@ -323,6 +326,7 @@ configure_file(
 #]============================================================]
 
 message(STATUS "---------- Cache Variables ----------")
+message(STATUS "SOURCE                          = ${SOURCE}")
 message(STATUS "LANGUAGE                        = ${LANGUAGE}")
 message(STATUS "VERSION                         = ${VERSION}")
 message(STATUS "COMPENDIUM                      = ${COMPENDIUM}")
@@ -347,7 +351,7 @@ message(STATUS "PROJ_BINARY_DIR                 = ${PROJ_BINARY_DIR}")
 message(STATUS "PROJ_CMAKE_MODULES_DIR          = ${PROJ_CMAKE_MODULES_DIR}")
 message(STATUS "PROJ_CMAKE_SCRIPTS_DIR          = ${PROJ_CMAKE_SCRIPTS_DIR}")
 message(STATUS "PROJ_CMAKE_TEMPLATES_DIR        = ${PROJ_CMAKE_TEMPLATES_DIR}")
-message(STATUS "PROJ_VENV_DIR                   = ${PROJ_VENV_DIR}")
+message(STATUS "PROJ_CONDA_DIR                  = ${PROJ_CONDA_DIR}")
 message(STATUS "PROJ_OUT_DIR                    = ${PROJ_OUT_DIR}")
 message(STATUS "PROJ_OUT_REPO_DIR               = ${PROJ_OUT_REPO_DIR}")
 message(STATUS "PROJ_OUT_REPO_DOCS_DIR          = ${PROJ_OUT_REPO_DOCS_DIR}")
@@ -415,6 +419,7 @@ set(SCRIPT_MODE_ENV
 
 set(SCRIPT_MODE_CACHE
     # [Cache Variables]
+    -D SOURCE=${SOURCE}
     -D LANGUAGE=${LANGUAGE}
     -D VERSION=${VERSION}
     -D COMPENDIUM=${COMPENDIUM}
@@ -439,7 +444,7 @@ set(SCRIPT_MODE_CACHE
     -D PROJ_CMAKE_MODULES_DIR=${PROJ_CMAKE_MODULES_DIR}
     -D PROJ_CMAKE_SCRIPTS_DIR=${PROJ_CMAKE_SCRIPTS_DIR}
     -D PROJ_CMAKE_TEMPLATES_DIR=${PROJ_CMAKE_TEMPLATES_DIR}
-    -D PROJ_VENV_DIR=${PROJ_VENV_DIR}
+    -D PROJ_CONDA_DIR=${PROJ_CONDA_DIR}
     -D PROJ_OUT_DIR=${PROJ_OUT_DIR}
     -D PROJ_OUT_REPO_DIR=${PROJ_OUT_REPO_DIR}
     -D PROJ_OUT_REPO_DOCS_DIR=${PROJ_OUT_REPO_DOCS_DIR}
