@@ -42,29 +42,17 @@ const _ALL_VERSIONS = [
 ];
 const _ALL_PROJECTS = [
   ["Crowdin", "https://org-test.crowdin.com/cmake-docs-l10n"],
-  ["GitHub",  "https://github.com/hwhsu1231/cmake-docs-l10n-v7"],
+  ["GitHub", "https://github.com/hwhsu1231/cmake-docs-l10n-v7"],
   ["GitCode", "https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7"],
   ["GitFlic", "https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7"],
 ];
 
-// 
 const _is_file_uri = (uri) => uri.startsWith("file:/");
 const _IS_LOCAL = _is_file_uri(window.location.href);
-const _CURRENT_VERSION  = SWITCHERS_OPTIONS.CURRENT_VERSION;
+const _CURRENT_VERSION = SWITCHERS_OPTIONS.CURRENT_VERSION;
 const _CURRENT_LANGUAGE = SWITCHERS_OPTIONS.CURRENT_LANGUAGE;
-const _HTML_BASEURL     = SWITCHERS_OPTIONS.HTML_BASEURL;
-const _SERVER_ROOT      = window.location.origin;
-
-// function getTargetUrl(type, selectedValue) {
-//   const currentPath = window.location.pathname;
-//   let targetPath;
-//   if (type === "language") {
-//     targetPath = currentPath.replace(`/${_CURRENT_LANGUAGE}/`, `/${selectedValue}/`);
-//   } else if (type === "version") {
-//     targetPath = currentPath.replace(`/${_CURRENT_VERSION}/`, `/${selectedValue}/`);
-//   }
-//   return _IS_LOCAL ? `file://${targetPath}` : `${_SERVER_ROOT}${targetPath}`;
-// }
+const _HTML_BASEURL = SWITCHERS_OPTIONS.HTML_BASEURL;
+const _SERVER_ROOT = window.location.origin;
 
 async function getTargetUrl(type, selectedValue) {
   const currentPath = window.location.pathname;
@@ -80,14 +68,12 @@ async function getTargetUrl(type, selectedValue) {
     ? `file://${targetPath}`
     : `${_SERVER_ROOT}${targetPath}`;
 
-  // 如果是本地模式，直接返回
   if (_IS_LOCAL) return targetUrl;
 
   try {
-    // 檢查目標頁面是否存在
     const response = await fetch(targetUrl, { method: "HEAD" });
     if (response.ok) {
-      return targetUrl; // 目標存在，回傳該網址
+      return targetUrl;
     } else {
       console.warn("目標網址不存在，使用備用網址:", targetUrl);
     }
@@ -95,79 +81,23 @@ async function getTargetUrl(type, selectedValue) {
     console.error("檢查目標網址時出錯:", error);
   }
 
-  // 返回預設備用網址
   return `${_HTML_BASEURL}/${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/${type === "version" ? selectedValue : _CURRENT_VERSION}/index.html`;
-}
-
-// **跳轉邏輯**
-async function switchVersionOrLanguage(type, selectedValue) {
-  const currentPath = window.location.pathname;
-  let targetPath;
-
-  if (type === "language") {
-    targetPath = currentPath.replace(`/${_CURRENT_LANGUAGE}/`, `/${selectedValue}/`);
-  } else if (type === "version") {
-    targetPath = currentPath.replace(`/${_CURRENT_VERSION}/`, `/${selectedValue}/`);
-  }
-
-  const targetUrl = _IS_LOCAL
-    ? `file://${targetPath}`
-    : `${_SERVER_ROOT}${targetPath}`;
-
-  if (targetPath !== currentPath) {
-    if (_IS_LOCAL) {
-      window.location.href = targetUrl; // 直接跳轉
-    } else {
-      try {
-        const response = await fetch(targetUrl, { method: "HEAD" });
-        if (response.ok) {
-          window.location.href = targetUrl; // 目標存在，跳轉
-        } else {
-          console.error("Target file not found, redirecting to fallback.");
-          const fallbackUrl = `${_HTML_BASEURL}/${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/${type === "version" ? selectedValue : _CURRENT_VERSION}/index.html`;
-          window.location.href = fallbackUrl;
-        }
-      } catch (error) {
-        console.error("Error checking target URL:", error);
-      }
-    }
-  }
 }
 
 // 生成語言與版本的 HTML 列表
 function createFlyout() {
-  // const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
-  //   <a href="#"
-  //     title="${name}"
-  //     class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
-  //     onmouseover="getTargetUrl('language', '${code}').then(url => this.href = url)">
-  //     ${code}
-  //   </a>
-  // `).join("");
-
   const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
-    <a href="javascript:void(0);"
-      title="${name}"
-      class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
-      onclick="switchVersionOrLanguage('language', '${code}')">
+    <a href="#" title="${name}" 
+       class="${code === _CURRENT_LANGUAGE ? "selected" : ""}" 
+       data-language="${code}">
       ${code}
     </a>
   `).join("");
 
-  // const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
-  //   <a href="#"
-  //     title="${name}"
-  //     class="${code === _CURRENT_VERSION ? "selected" : ""}"
-  //     onmouseover="getTargetUrl('version', '${code}').then(url => this.href = url)">
-  //     ${code}
-  //   </a>
-  // `).join("");
-
   const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
-    <a href="javascript:void(0);"
-      title="${name}"
-      class="${code === _CURRENT_VERSION ? "selected" : ""}"
-      onclick="switchVersionOrLanguage('version', '${code}')">
+    <a href="#" title="${name}" 
+       class="${code === _CURRENT_VERSION ? "selected" : ""}" 
+       data-version="${code}">
       ${code}
     </a>
   `).join("");
@@ -225,6 +155,22 @@ function createFlyout() {
 
   header.addEventListener("click", toggleFlyout);
   document.addEventListener("click", closeFlyout);
+}
+
+// 頁面載入後更新所有 <a> 的 href
+async function updateLinks() {
+  const languageLinks = document.querySelectorAll("a[data-language]");
+  const versionLinks = document.querySelectorAll("a[data-version]");
+
+  for (const link of languageLinks) {
+    const langCode = link.getAttribute("data-language");
+    link.href = await getTargetUrl("language", langCode);
+  }
+
+  for (const link of versionLinks) {
+    const versionCode = link.getAttribute("data-version");
+    link.href = await getTargetUrl("version", versionCode);
+  }
 }
 
 // 加載 CSS
@@ -328,7 +274,8 @@ function addStyles() {
 }
 
 // 初始化
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   addStyles();
   createFlyout();
+  await updateLinks(); // 更新所有 <a> 的 href
 });
