@@ -3,169 +3,169 @@
     {
       "VERSION" : "master",
       "ALLINONE" : true,
-      "COMPENDIUM" : ""
+      "VERSION_COMPENDIUM" : ""
     }
   ],
   "v3" : [
     {
       "VERSION" : "latest",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.30",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.29",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.28",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.27",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.26",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.25",
-      "COMPENDIUM" : "master",
+      "VERSION_COMPENDIUM" : "master",
       "ALLINONE" : true
     },
     {
       "VERSION" : "3.24",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.23",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.22",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.21",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.20",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.19",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.18",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.17",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.16",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.15",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.14",
       "ALLINONE" : true,
-      "COMPENDIUM" : "master"
+      "VERSION_COMPENDIUM" : "master"
     },
     {
       "VERSION" : "3.13",
       "ALLINONE" : true,
-      "COMPENDIUM" : ""
+      "VERSION_COMPENDIUM" : ""
     },
     {
       "VERSION" : "3.12",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.11",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.10",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.9",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.8",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.7",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.6",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.5",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.4",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.3",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.2",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.1",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     },
     {
       "VERSION" : "3.0",
       "ALLINONE" : true,
-      "COMPENDIUM" : "3.13"
+      "VERSION_COMPENDIUM" : "3.13"
     }
   ]
 }
