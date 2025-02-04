@@ -25,7 +25,7 @@ on:
         type: string
         default: 'master'
       VERSION_GROUP:
-        description: 'VERSION_GROUP input (for matrix type)'
+        description: 'VERSION_GROUP input (for group type)'
         required: true
         type: choice
         default: 'all'
