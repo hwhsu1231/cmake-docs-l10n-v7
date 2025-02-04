@@ -65,6 +65,7 @@ jobs:
           echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
           echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
           echo "vars.CROWDIN_PROJECT_ID = ${{ vars.CROWDIN_PROJECT_ID }}"
+          echo "vars.CROWDIN_BASE_URL = ${{ vars.CROWDIN_BASE_URL }}"
           echo "[Secrets]"
           echo "secrets.CROWDIN_PERSONAL_TOKEN = ${{ secrets.CROWDIN_PERSONAL_TOKEN }}"
       - name: Check Required Variables
@@ -85,6 +86,10 @@ jobs:
           fi
           if [[ -z "${{ vars.CROWDIN_PROJECT_ID }}" ]]; then
             echo "vars.CROWDIN_PROJECT_ID is missing."
+            VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.CROWDIN_BASE_URL }}" ]]; then
+            echo "vars.CROWDIN_BASE_URL is missing."
             VARIABLES_EXIST=false
           fi
           if [[ "${VARIABLES_EXIST}" == "false" ]]; then
@@ -160,5 +165,6 @@ jobs:
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
       CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
+      CROWDIN_BASE_URL: ${{ vars.CROWDIN_BASE_URL }}
     secrets:
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
