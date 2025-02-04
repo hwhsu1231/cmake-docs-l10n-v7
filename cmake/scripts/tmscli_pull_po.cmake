@@ -16,6 +16,17 @@ include(JsonUtils)
 include(GettextUtils)
 
 
+if (NOT DEFINED ENV{CROWDIN_PROJECT_ID})
+    message(FATAL_ERROR "Not defined ENV{CROWDIN_PROJECT_ID}!")
+endif()
+if (NOT DEFINED ENV{CROWDIN_PERSONAL_TOKEN})
+    message(FATAL_ERROR "Not defined ENV{CROWDIN_PERSONAL_TOKEN}!")
+endif()
+if (NOT DEFINED ENV{CROWDIN_BASE_URL})
+    message(FATAL_ERROR "Not defined ENV{CROWDIN_BASE_URL}!")
+endif()
+
+
 file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
 if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")

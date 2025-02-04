@@ -13,6 +13,17 @@ find_package(Crowdin    MODULE REQUIRED)
 include(LogUtils)
 
 
+if (NOT DEFINED ENV{CROWDIN_PROJECT_ID})
+    message(FATAL_ERROR "ENV{CROWDIN_PROJECT_ID} is missing. ($ENV{CROWDIN_PROJECT_ID})")
+endif()
+if (NOT DEFINED ENV{CROWDIN_PERSONAL_TOKEN})
+    message(FATAL_ERROR "ENV{CROWDIN_PERSONAL_TOKEN} is missing. ($ENV{CROWDIN_PERSONAL_TOKEN})")
+endif()
+if (NOT DEFINED ENV{CROWDIN_BASE_URL})
+    message(FATAL_ERROR "ENV{CROWDIN_BASE_URL} is missing. ($ENV{CROWDIN_BASE_URL})")
+endif()
+
+
 message(STATUS "Pushing sources for '${VERSION}' version to TMS...")
 remove_cmake_message_indent()
 message("")
