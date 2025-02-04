@@ -313,13 +313,12 @@ init_references_json_file(
     IN_LANGUAGE         "${LANGUAGE_LIST}")
 
 #[============================================================[
-  Configure ${TMS_CONFIG_FILE_PATH}.
+  Initialize ${TMS_CONFIG_FILE_PATH}.
 #]============================================================]
 
-configure_file(
-    "${PROJ_CMAKE_TEMPLATES_DIR}/crowdin.yml.in"
-    "${TMS_CONFIG_FILE_PATH}"
-    COPYONLY)
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/crowdin.yml"
+    "${TMS_CONFIG_FILE_PATH}")
 
 #[============================================================[
 # Print Information.
