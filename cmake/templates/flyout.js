@@ -184,7 +184,7 @@ function addStyles() {
       background-color: #272725;
       color: rgb(252, 252, 252);
       font-family: Arial, sans-serif;
-      font-size: 1.0rem;
+      // font-size: 1.0rem;
       z-index: 5000;
       border-radius: 5px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -228,7 +228,7 @@ function addStyles() {
     }
 
     dt {
-      font-size: 1.0rem;
+      // font-size: 1.0rem;
       color: rgb(128, 128, 128);
       font-weight: bold;
       text-align: left;
@@ -255,7 +255,7 @@ function addStyles() {
       display: inline-block;
       border-radius: 3px;
       transition: background 0.3s;
-      font-size: 1.0rem;
+      // font-size: 1.0rem;
     }
 
     dd.options a:hover {
