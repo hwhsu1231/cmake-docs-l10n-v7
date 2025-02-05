@@ -57,6 +57,19 @@ message("")
 restore_cmake_message_indent()
 
 
+message(STATUS "Copying 'flyout.js' file to the root of the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js"
+    "${PROJ_OUT_BUILDER_DIR}/flyout.js")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/flyout.js")
+message("")
+restore_cmake_message_indent()
+
+
 file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
 if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
@@ -90,15 +103,19 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     if (CMAKE_HOST_UNIX)
         set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
         set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+        set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
         set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
+                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
+                                    PYTHONPATH=${ENV_PYTHONPATH})
     elseif (CMAKE_HOST_WIN32)
         set(ENV_PATH                "${PROJ_CONDA_DIR}/Library/bin"
                                     "${PROJ_CONDA_DIR}/Scripts"
                                     "${PROJ_CONDA_DIR}"
                                     "$ENV{PATH}")
+        set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
         string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
-        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
+        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                    PYTHONPATH=${ENV_PYTHONPATH})
     else()
         message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
     endif()
@@ -112,6 +129,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -D version=${VERSION}
                 -D language=${_LANGUAGE}
                 -D locale_dirs=${LOCALE_TO_SOURCE_DIR}            # Relative to <sourcedir>.
+                -D templates_path=${TMPLS_TO_CONFIG_DIR}          # Relative to <configdir>.
                 -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
                 -D enable_switchers=1                             # Passed to custom.py.

@@ -123,35 +123,35 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Adding 'html_theme_options' dictionary to 'conf.py' file...")
-set(DOCS_CONF_PY_PATH         "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
-set(HTML_THEME_OPTIONS_FILE   "${PROJ_CMAKE_TEMPLATES_DIR}/html_theme_options.txt")
-set(HTML_THEME_OPTIONS_REGEX  "html_theme_options[ ]*=[ ]*[\{][^\}]*[\}]")
-file(READ "${DOCS_CONF_PY_PATH}" DOCS_CONF_PY_CNT)
-file(READ "${HTML_THEME_OPTIONS_FILE}" NEW_HTML_THEME_OPTIONS_DICT)
-string(REGEX MATCH "${HTML_THEME_OPTIONS_REGEX}" OLD_HTML_THEME_OPTIONS_DICT "${DOCS_CONF_PY_CNT}")
-if (NOT OLD_HTML_THEME_OPTIONS_DICT)
-    file(APPEND "${DOCS_CONF_PY_PATH}" "\n${NEW_HTML_THEME_OPTIONS_DICT}")
-    remove_cmake_message_indent()
-    message("")
-    message("Added 'html_theme_options' dictionary to 'conf.py' file.")
-    message("${DOCS_CONF_PY_PATH}")
-    message("[NEW_HTML_THEME_OPTIONS_DICT_BEGIN]")
-    message("${NEW_HTML_THEME_OPTIONS_DICT}")
-    message("[NEW_HTML_THEME_OPTIONS_DICT_END]")
-    message("")
-    restore_cmake_message_indent()
-else()
-    remove_cmake_message_indent()
-    message("")
-    message("No need to append 'html_theme_options' dictionary to 'conf.py' file.")
-    message("${DOCS_CONF_PY_PATH}")
-    message("[OLD_HTML_THEME_OPTIONS_DICT_BEGIN]")
-    message("${OLD_HTML_THEME_OPTIONS_DICT}")
-    message("[OLD_HTML_THEME_OPTIONS_DICT_END]")
-    message("")
-    restore_cmake_message_indent()
-endif()
+# message(STATUS "Adding 'html_theme_options' dictionary to 'conf.py' file...")
+# set(DOCS_CONF_PY_PATH         "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
+# set(HTML_THEME_OPTIONS_FILE   "${PROJ_CMAKE_TEMPLATES_DIR}/html_theme_options.txt")
+# set(HTML_THEME_OPTIONS_REGEX  "html_theme_options[ ]*=[ ]*[\{][^\}]*[\}]")
+# file(READ "${DOCS_CONF_PY_PATH}" DOCS_CONF_PY_CNT)
+# file(READ "${HTML_THEME_OPTIONS_FILE}" NEW_HTML_THEME_OPTIONS_DICT)
+# string(REGEX MATCH "${HTML_THEME_OPTIONS_REGEX}" OLD_HTML_THEME_OPTIONS_DICT "${DOCS_CONF_PY_CNT}")
+# if (NOT OLD_HTML_THEME_OPTIONS_DICT)
+#     file(APPEND "${DOCS_CONF_PY_PATH}" "\n${NEW_HTML_THEME_OPTIONS_DICT}")
+#     remove_cmake_message_indent()
+#     message("")
+#     message("Added 'html_theme_options' dictionary to 'conf.py' file.")
+#     message("${DOCS_CONF_PY_PATH}")
+#     message("[NEW_HTML_THEME_OPTIONS_DICT_BEGIN]")
+#     message("${NEW_HTML_THEME_OPTIONS_DICT}")
+#     message("[NEW_HTML_THEME_OPTIONS_DICT_END]")
+#     message("")
+#     restore_cmake_message_indent()
+# else()
+#     remove_cmake_message_indent()
+#     message("")
+#     message("No need to append 'html_theme_options' dictionary to 'conf.py' file.")
+#     message("${DOCS_CONF_PY_PATH}")
+#     message("[OLD_HTML_THEME_OPTIONS_DICT_BEGIN]")
+#     message("${OLD_HTML_THEME_OPTIONS_DICT}")
+#     message("[OLD_HTML_THEME_OPTIONS_DICT_END]")
+#     message("")
+#     restore_cmake_message_indent()
+# endif()
 
 
 message(STATUS "Adding 'custom' into 'extensions' list in 'conf.py' file...")
@@ -205,19 +205,6 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'flyout.js' file to the builder directory...")
-file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
-file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js"
-    "${PROJ_OUT_BUILDER_DIR}/flyout.js")
-remove_cmake_message_indent()
-message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js")
-message("To:   ${PROJ_OUT_BUILDER_DIR}/flyout.js")
-message("")
-restore_cmake_message_indent()
-
-
 if (NOT UPDATE_POT_REQUIRED)
     message(STATUS "No need to update .pot files.")
     return()
@@ -249,19 +236,26 @@ message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generat
 if (CMAKE_HOST_UNIX)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
     set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
+                                LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
+                                PYTHONPATH=${ENV_PYTHONPATH})
 elseif (CMAKE_HOST_WIN32)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/Library/bin"
                                 "${PROJ_CONDA_DIR}/Scripts"
                                 "${PROJ_CONDA_DIR}"
                                 "$ENV{PATH}")
+    set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
     string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
-    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
+    string(REPLACE ";" "\\\\;"  ENV_PYTHONPATH "${ENV_PYTHONPATH}")
+    set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                PYTHONPATH=${ENV_PYTHONPATH})
 else()
     message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
 endif()
 remove_cmake_message_indent()
+message("")
+message("TMPLS_TO_SOURCE_DIR = ${TMPLS_TO_SOURCE_DIR}")
 message("")
 execute_process(
     COMMAND ${CMAKE_COMMAND} -E env
@@ -269,6 +263,7 @@ execute_process(
             ${Sphinx_BUILD_EXECUTABLE}
             -b gettext
             -D version=${VERSION}                               # Specify 'Project-Id-Version' in .pot files.
+            -D templates_path=${TMPLS_TO_SOURCE_DIR}            # Relative to <sourcedir>.
             -D gettext_compact=${GETTEXT_COMPACT}
             -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
             -j ${SPHINX_JOB_NUMBER}

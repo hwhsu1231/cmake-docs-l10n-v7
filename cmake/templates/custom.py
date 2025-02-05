@@ -9,6 +9,28 @@ DEFAULT_CONFIG_VALUES = {
     "html_baseurl"      : "",
 }
 
+# Custom html_theme_options
+CUSTOM_HTML_THEME_OPTIONS = {
+    'footerbgcolor':    '#00182d',
+    'footertextcolor':  '#ffffff',
+    'sidebarbgcolor':   '#e4ece8',
+    'sidebarbtncolor':  '#00a94f',
+    'sidebartextcolor': '#333333',
+    'sidebarlinkcolor': '#00a94f',
+    'relbarbgcolor':    '#00529b',
+    'relbartextcolor':  '#ffffff',
+    'relbarlinkcolor':  '#ffffff',
+    'bgcolor':          '#ffffff',
+    'textcolor':        '#444444',
+    'headbgcolor':      '#f2f2f2',
+    'headtextcolor':    '#003564',
+    'headlinkcolor':    '#3d8ff2',
+    'linkcolor':        '#2b63a8',
+    'visitedlinkcolor': '#2b63a8',
+    'codebgcolor':      '#eeeeee',
+    'codetextcolor':    '#333333',
+}
+
 def add_default_config_values(app):
     """
     Add default configuration values to the Sphinx app if not already defined.
@@ -24,17 +46,22 @@ def configure_html_context(app):
     """
     for key in DEFAULT_CONFIG_VALUES.keys():
         app.config.html_context[key] = getattr(app.config, key, "")
-    # app.config.html_context["enable_switchers"] = app.config.enable_switchers
-    # app.config.html_context["current_version"] = app.config.current_version
-    # app.config.html_context["current_language"] = app.config.current_language
-    # app.config.html_context["html_baseurl"] = app.config.html_baseurl
 
 def setup(app):
     """
     Sphinx extension entry point.
     """
     add_default_config_values(app)
+
+    # Clear the existing html_theme_options
+    app.config.html_theme_options = {}
+
+    # Set the custom theme options
+    app.config.html_theme_options.update(CUSTOM_HTML_THEME_OPTIONS)
+
+    # Connect to the builder-inited event to configure the HTML context
     app.connect("builder-inited", configure_html_context)
+
     return {
         "parallel_read_safe": True,
         "parallel_write_safe": True,
