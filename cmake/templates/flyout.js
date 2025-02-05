@@ -49,9 +49,9 @@ const _ALL_PROJECTS = [
 
 const _is_file_uri = (uri) => uri.startsWith("file:/");
 const _IS_LOCAL = _is_file_uri(window.location.href);
-const _CURRENT_VERSION = SWITCHERS_OPTIONS.CURRENT_VERSION;
-const _CURRENT_LANGUAGE = SWITCHERS_OPTIONS.CURRENT_LANGUAGE;
-const _HTML_BASEURL = SWITCHERS_OPTIONS.HTML_BASEURL;
+const _CURRENT_VERSION = CURRENT_OPTIONS.CURRENT_VERSION;
+const _CURRENT_LANGUAGE = CURRENT_OPTIONS.CURRENT_LANGUAGE;
+const _HTML_BASEURL = CURRENT_OPTIONS.HTML_BASEURL;
 const _SERVER_ROOT = window.location.origin;
 
 async function getTargetUrl(type, selectedValue) {

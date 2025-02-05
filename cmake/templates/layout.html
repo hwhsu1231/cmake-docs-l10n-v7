@@ -37,13 +37,7 @@
           href="{{ pathto('../latest-opensearch.xml', 1) }}"/>
   {%- endif %}
   {%- if enable_switchers %}
-    <script type="text/javascript">
-      var SWITCHERS_OPTIONS = {
-        CURRENT_VERSION   : '{{ current_version }}',
-        CURRENT_LANGUAGE  : '{{ current_language }}',
-        HTML_BASEURL      : '{{ html_baseurl }}'
-      };
-    </script>
+    <script type="text/javascript" src="{{ pathto('current.js', 1) }}"></script>
     <script type="text/javascript" src="{{ pathto('../../flyout.js', 1) }}"></script>
   {%- endif %}
 {{ super() }}

@@ -68,6 +68,24 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         OUT_JSON_VALUE    _LANGTAG)
 
 
+    set(CURRENT_VERSION   "${VERSION}")
+    set(CURRENT_LANGUAGE  "${_LANGTAG}")
+    set(HTML_BASEURL      "${BASEURL_HREF}")
+
+
+    message(STATUS "Configuring 'current.js' file to the builder directory...")
+    file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}")
+    configure_file(
+        "${PROJ_CMAKE_TEMPLATES_DIR}/current.js.in"
+        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
+    remove_cmake_message_indent()
+    message("")
+    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/current.js")
+    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
+    message("")
+    restore_cmake_message_indent()
+
+
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
     if (CMAKE_HOST_UNIX)
         set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
@@ -97,9 +115,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
                 -D enable_switchers=1                             # Passed to custom.py.
-                -D current_version=${VERSION}                     # Passed to custom.py.
-                -D current_language=${_LANGTAG}                   # Passed to custom.py.
-                -D html_baseurl=${BASEURL_HREF}                   # Passed to custom.py.
+                -D current_version=${CURRENT_VERSION}             # Passed to custom.py.
+                -D current_language=${CURRENT_LANGUAGE}           # Passed to custom.py.
+                -D html_baseurl=${HTML_BASEURL}                   # Passed to custom.py.
                 -j ${SPHINX_JOB_NUMBER}
                 ${SPHINX_VERBOSE_ARGS}
                 -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}               # <configdir>, where conf.py locates.
