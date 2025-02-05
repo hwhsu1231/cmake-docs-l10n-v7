@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindJPEG.cmake:18
+#: ../../../../Modules/FindJPEG.cmake:17
 msgid "``JPEG::JPEG``"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgstr ""
 msgid "the libraries needed to use JPEG."
 msgstr ""
 
-#: ../../../../Modules/FindJPEG.cmake:33
+#: ../../../../Modules/FindJPEG.cmake:31
 msgid "``JPEG_VERSION``"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 msgid "where to find the JPEG library (optimized)."
 msgstr ""
 
-#: ../../../../Modules/FindJPEG.cmake:45
+#: ../../../../Modules/FindJPEG.cmake:44
 msgid "``JPEG_LIBRARY_DEBUG``"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Obsolete variables"
 msgstr ""
 
-#: ../../../../Modules/FindJPEG.cmake:145
+#: ../../../../Modules/FindJPEG.cmake:53
 msgid "``JPEG_LIBRARY``"
 msgstr ""
 

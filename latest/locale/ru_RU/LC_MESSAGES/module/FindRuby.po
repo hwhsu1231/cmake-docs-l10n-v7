@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-31 17:46+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr ""
 msgid "include dirs to be used when using the ruby library"
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:35
+#: ../../../../Modules/FindRuby.cmake:34
 msgid "``Ruby_LIBRARIES``"
 msgstr ""
 
@@ -110,7 +110,7 @@ msgstr ""
 msgid "Ruby minor version."
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:44
+#: ../../../../Modules/FindRuby.cmake:43
 msgid "``Ruby_VERSION_PATCH``"
 msgstr ""
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid "same as Ruby_VERSION."
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:62
+#: ../../../../Modules/FindRuby.cmake:61
 msgid "``RUBY_FOUND``"
 msgstr ""
 
@@ -173,7 +173,7 @@ msgstr ""
 msgid "Hints"
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:510
+#: ../../../../Modules/FindRuby.cmake:69
 msgid "``Ruby_FIND_VIRTUALENV``"
 msgstr ""
 

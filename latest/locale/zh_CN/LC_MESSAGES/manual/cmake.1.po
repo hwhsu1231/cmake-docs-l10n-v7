@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "To generate a buildsystem with CMake, the following must be selected:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:84
+#: ../../../manual/cmake.1.rst:79
 msgid "Source Tree"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgid ""
 "dependencies as described in the :manual:`cmake-buildsystem(7)` manual."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:96
+#: ../../../manual/cmake.1.rst:86
 msgid "Build Tree"
 msgstr ""
 
@@ -149,7 +149,7 @@ msgid ""
 "supported, but discouraged."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:109
+#: ../../../manual/cmake.1.rst:98
 msgid "Generator"
 msgstr ""
 
@@ -197,7 +197,7 @@ msgstr ""
 msgid "$ cmake -S src -B build"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:144
+#: ../../../manual/cmake.1.rst:133
 msgid "``cmake [<options>] <path-to-source>``"
 msgstr ""
 
@@ -216,7 +216,7 @@ msgid ""
 "$ cmake ../src"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:156
+#: ../../../manual/cmake.1.rst:146
 msgid "``cmake [<options>] <path-to-existing-build>``"
 msgstr ""
 
@@ -548,7 +548,7 @@ msgid ""
 "Treat CMake warnings as errors. ``<what>`` must be one of the following:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:159 ../../../manual/OPTIONS_BUILD.txt:173
+#: ../../../manual/OPTIONS_BUILD.txt:155 ../../../manual/OPTIONS_BUILD.txt:171
 msgid "``dev``"
 msgstr ""
 
@@ -562,7 +562,7 @@ msgid ""
 "errors. By default this will also turn on deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:164 ../../../manual/OPTIONS_BUILD.txt:176
+#: ../../../manual/OPTIONS_BUILD.txt:161 ../../../manual/OPTIONS_BUILD.txt:175
 msgid "``deprecated``"
 msgstr ""
 
@@ -819,7 +819,7 @@ msgstr ""
 msgid "``<format>`` can be one of the following values."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:394
+#: ../../../manual/cmake.1.rst:392
 msgid "``human``"
 msgstr ""
 
@@ -829,7 +829,7 @@ msgid ""
 "format."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:468
+#: ../../../manual/cmake.1.rst:396
 msgid "``json-v1``"
 msgstr ""
 
@@ -862,7 +862,7 @@ msgstr ""
 msgid "The members are:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:418
+#: ../../../manual/cmake.1.rst:416
 msgid "``file``"
 msgstr ""
 
@@ -870,7 +870,7 @@ msgstr ""
 msgid "The full path to the CMake source file where the function was called."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:421
+#: ../../../manual/cmake.1.rst:420
 msgid "``line``"
 msgstr ""
 
@@ -878,7 +878,7 @@ msgstr ""
 msgid "The line in ``file`` where the function call begins."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:427
+#: ../../../manual/cmake.1.rst:423
 msgid "``line_end``"
 msgstr ""
 
@@ -890,7 +890,7 @@ msgid ""
 "the ``json-v1`` format."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:432
+#: ../../../manual/cmake.1.rst:429
 msgid "``defer``"
 msgstr ""
 
@@ -901,7 +901,7 @@ msgid ""
 "containing the deferred call ``<id>``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:435
+#: ../../../manual/cmake.1.rst:434
 msgid "``cmd``"
 msgstr ""
 
@@ -909,7 +909,7 @@ msgstr ""
 msgid "The name of the function that was called."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:438
+#: ../../../manual/cmake.1.rst:437
 msgid "``args``"
 msgstr ""
 
@@ -917,7 +917,7 @@ msgstr ""
 msgid "A string list of all function parameters."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:441
+#: ../../../manual/cmake.1.rst:440
 msgid "``time``"
 msgstr ""
 
@@ -925,7 +925,7 @@ msgstr ""
 msgid "Timestamp (seconds since epoch) of the function call."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:445
+#: ../../../manual/cmake.1.rst:443
 msgid "``frame``"
 msgstr ""
 
@@ -935,7 +935,7 @@ msgid ""
 "the  ``CMakeLists.txt`` being processed currently."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:450
+#: ../../../manual/cmake.1.rst:447
 msgid "``global_frame``"
 msgstr ""
 
@@ -966,8 +966,8 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:468 ../../../manual/cmake.1.rst:866
-#: ../../../manual/cmake.1.rst:903
+#: ../../../manual/cmake.1.rst:467 ../../../manual/cmake.1.rst:852
+#: ../../../manual/cmake.1.rst:900
 msgid "``version``"
 msgstr ""
 
@@ -1121,7 +1121,7 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:591 ../../../manual/cmake.1.rst:857
+#: ../../../manual/cmake.1.rst:590 ../../../manual/cmake.1.rst:857
 msgid "``major``"
 msgstr ""
 
@@ -1129,7 +1129,7 @@ msgstr ""
 msgid "An integer specifying the major version number."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:594 ../../../manual/cmake.1.rst:859
+#: ../../../manual/cmake.1.rst:593 ../../../manual/cmake.1.rst:859
 msgid "``minor``"
 msgstr ""
 
@@ -1137,7 +1137,7 @@ msgstr ""
 msgid "An integer specifying the minor version number."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:597 ../../../manual/cmake.1.rst:861
+#: ../../../manual/cmake.1.rst:596 ../../../manual/cmake.1.rst:861
 msgid "``patch``"
 msgstr ""
 
@@ -1470,7 +1470,7 @@ msgstr ""
 msgid "The cmake version suffix string."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:866
+#: ../../../manual/cmake.1.rst:865
 msgid "``isDirty``"
 msgstr ""
 
@@ -1478,7 +1478,7 @@ msgstr ""
 msgid "A bool that is set if the cmake build is from a dirty tree."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:887
+#: ../../../manual/cmake.1.rst:868
 msgid "``generators``"
 msgstr ""
 
@@ -1512,7 +1512,7 @@ msgstr ""
 msgid "``true`` if the generator supports platforms and ``false`` otherwise."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:883
+#: ../../../manual/cmake.1.rst:878
 msgid "``supportedPlatforms``"
 msgstr ""
 
@@ -1523,7 +1523,7 @@ msgid ""
 "<cmake -A>`).  The value is a list of platforms known to be supported."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:887
+#: ../../../manual/cmake.1.rst:885
 msgid "``extraGenerators``"
 msgstr ""
 
@@ -1533,7 +1533,7 @@ msgid ""
 "generator."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:903
+#: ../../../manual/cmake.1.rst:889
 msgid "``fileApi``"
 msgstr ""
 
@@ -1543,7 +1543,7 @@ msgid ""
 "available.  The value is a JSON object with one member:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:903
+#: ../../../manual/cmake.1.rst:893
 msgid "``requests``"
 msgstr ""
 
@@ -1553,7 +1553,7 @@ msgid ""
 "request is a JSON object with members:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:898
+#: ../../../manual/cmake.1.rst:897
 msgid "``kind``"
 msgstr ""
 
@@ -1567,7 +1567,7 @@ msgid ""
 "``minor`` members specifying non-negative integer version components."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:907
+#: ../../../manual/cmake.1.rst:905
 msgid "``serverMode``"
 msgstr ""
 
@@ -1577,7 +1577,7 @@ msgid ""
 "since CMake 3.20."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:912
+#: ../../../manual/cmake.1.rst:909
 msgid "``tls``"
 msgstr ""
 
@@ -1585,7 +1585,7 @@ msgstr ""
 msgid "``true`` if TLS support is enabled and ``false`` otherwise."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:917
+#: ../../../manual/cmake.1.rst:914
 msgid "``debugger``"
 msgstr ""
 
@@ -2372,7 +2372,7 @@ msgstr ""
 msgid "The following resources are available to get help using CMake:"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:6
+#: ../../../manual/LINKS.txt:3
 msgid "Home Page"
 msgstr ""
 
@@ -2384,7 +2384,7 @@ msgstr ""
 msgid "The primary starting point for learning about CMake."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:12
+#: ../../../manual/LINKS.txt:8
 msgid "Online Documentation and Community Resources"
 msgstr ""
 
@@ -2398,7 +2398,7 @@ msgid ""
 "this web page."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:17
+#: ../../../manual/LINKS.txt:14
 msgid "Discourse Forum"
 msgstr ""
 

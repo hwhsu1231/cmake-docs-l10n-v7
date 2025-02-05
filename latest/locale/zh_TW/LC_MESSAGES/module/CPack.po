@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -421,7 +421,7 @@ msgstr ""
 msgid "The following compression methods may take advantage of multiple cores:"
 msgstr ""
 
-#: ../../../../Modules/CPack.cmake:318
+#: ../../../../Modules/CPack.cmake:310
 msgid "``xz``"
 msgstr ""
 
@@ -437,7 +437,7 @@ msgid ""
 "``liblzma`` that supports parallel compression. Older versions did not."
 msgstr ""
 
-#: ../../../../Modules/CPack.cmake:324
+#: ../../../../Modules/CPack.cmake:320
 msgid "``zstd``"
 msgstr ""
 

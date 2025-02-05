@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/cmake_language.rst:129
+#: ../../../command/cmake_language.rst:120
 msgid "``DIRECTORY <dir>``"
 msgstr ""
 
@@ -193,7 +193,7 @@ msgid ""
 "the current directory or one of its ancestors."
 msgstr ""
 
-#: ../../../command/cmake_language.rst:135
+#: ../../../command/cmake_language.rst:131
 msgid "``ID <id>``"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgid ""
 "an earlier call that used ``ID_VAR`` to get the id."
 msgstr ""
 
-#: ../../../command/cmake_language.rst:140
+#: ../../../command/cmake_language.rst:137
 msgid "``ID_VAR <var>``"
 msgstr ""
 
@@ -361,8 +361,8 @@ msgid ""
 "when setting the provider:"
 msgstr ""
 
-#: ../../../command/cmake_language.rst:254
-#: ../../../command/cmake_language.rst:324
+#: ../../../command/cmake_language.rst:253
+#: ../../../command/cmake_language.rst:308
 msgid "``FIND_PACKAGE``"
 msgstr ""
 
@@ -370,8 +370,8 @@ msgstr ""
 msgid "The provider command accepts :command:`find_package` requests."
 msgstr ""
 
-#: ../../../command/cmake_language.rst:259
-#: ../../../command/cmake_language.rst:368
+#: ../../../command/cmake_language.rst:256
+#: ../../../command/cmake_language.rst:326
 msgid "``FETCHCONTENT_MAKEAVAILABLE_SERIAL``"
 msgstr ""
 

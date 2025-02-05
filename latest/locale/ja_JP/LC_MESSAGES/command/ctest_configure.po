@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/ctest_configure.rst:19
+#: ../../../command/ctest_configure.rst:17
 msgid "``BUILD <build-dir>``"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgid ""
 "`CTEST_BINARY_DIRECTORY` variable is used."
 msgstr ""
 
-#: ../../../command/ctest_configure.rst:23
+#: ../../../command/ctest_configure.rst:21
 msgid "``SOURCE <source-dir>``"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgid ""
 "`CTEST_SOURCE_DIRECTORY` variable is used."
 msgstr ""
 
-#: ../../../command/ctest_configure.rst:30
+#: ../../../command/ctest_configure.rst:25
 msgid "``APPEND``"
 msgstr ""
 
@@ -75,7 +75,7 @@ msgid ""
 "this command."
 msgstr ""
 
-#: ../../../command/ctest_configure.rst:33
+#: ../../../command/ctest_configure.rst:32
 msgid "``OPTIONS <options>``"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr ""
 msgid "Specify command-line arguments to pass to the configuration tool."
 msgstr ""
 
-#: ../../../command/ctest_configure.rst:37
+#: ../../../command/ctest_configure.rst:35
 msgid "``RETURN_VALUE <result-var>``"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgid ""
 "configuration tool."
 msgstr ""
 
-#: ../../../command/ctest_configure.rst:43
+#: ../../../command/ctest_configure.rst:39
 msgid "``CAPTURE_CMAKE_ERROR <result-var>``"
 msgstr ""
 
@@ -103,7 +103,7 @@ msgid ""
 "the command and prevent ctest from returning non-zero if an error occurs."
 msgstr ""
 
-#: ../../../command/ctest_configure.rst:49
+#: ../../../command/ctest_configure.rst:45
 msgid "``QUIET``"
 msgstr ""
 

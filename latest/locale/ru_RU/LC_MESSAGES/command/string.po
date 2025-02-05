@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Matches any single character"
 msgstr ""
 
-#: ../../../command/string.rst:136
+#: ../../../command/string.rst:133
 msgid "``\\<char>``"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgid ""
 "but allowed, e.g. ``\\a`` matches ``a``."
 msgstr ""
 
-#: ../../../command/string.rst:139
+#: ../../../command/string.rst:138
 msgid "``[ ]``"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgid ""
 "it the first character, e.g., ``[]ab]``."
 msgstr ""
 
-#: ../../../command/string.rst:142
+#: ../../../command/string.rst:141
 msgid "``[^ ]``"
 msgstr ""
 
@@ -209,7 +209,7 @@ msgid ""
 "``]``, make it the first character, e.g., ``[^]ab]``."
 msgstr ""
 
-#: ../../../command/string.rst:147
+#: ../../../command/string.rst:144
 msgid "``-``"
 msgstr ""
 
@@ -253,7 +253,7 @@ msgstr ""
 msgid "Matches a pattern on either side of the ``|``"
 msgstr ""
 
-#: ../../../command/string.rst:164
+#: ../../../command/string.rst:157
 msgid "``()``"
 msgstr ""
 
@@ -473,7 +473,7 @@ msgstr ""
 msgid "``SHA3_384``"
 msgstr ""
 
-#: ../../../command/string.rst:327
+#: ../../../command/string.rst:326
 msgid "``SHA3_512``"
 msgstr ""
 
@@ -542,7 +542,7 @@ msgid ""
 "The optional ``<format_string>`` may contain the following format specifiers:"
 msgstr ""
 
-#: ../../../command/string.rst:391
+#: ../../../command/string.rst:388
 msgid "``%%``"
 msgstr ""
 
@@ -550,7 +550,7 @@ msgstr ""
 msgid "A literal percent sign (%)."
 msgstr ""
 
-#: ../../../command/string.rst:394
+#: ../../../command/string.rst:393
 msgid "``%d``"
 msgstr ""
 
@@ -558,7 +558,7 @@ msgstr ""
 msgid "The day of the current month (01-31)."
 msgstr ""
 
-#: ../../../command/string.rst:397
+#: ../../../command/string.rst:396
 msgid "``%H``"
 msgstr ""
 
@@ -566,7 +566,7 @@ msgstr ""
 msgid "The hour on a 24-hour clock (00-23)."
 msgstr ""
 
-#: ../../../command/string.rst:400
+#: ../../../command/string.rst:399
 msgid "``%I``"
 msgstr ""
 
@@ -574,7 +574,7 @@ msgstr ""
 msgid "The hour on a 12-hour clock (01-12)."
 msgstr ""
 
-#: ../../../command/string.rst:403
+#: ../../../command/string.rst:402
 msgid "``%j``"
 msgstr ""
 
@@ -582,7 +582,7 @@ msgstr ""
 msgid "The day of the current year (001-366)."
 msgstr ""
 
-#: ../../../command/string.rst:406
+#: ../../../command/string.rst:405
 msgid "``%m``"
 msgstr ""
 
@@ -590,7 +590,7 @@ msgstr ""
 msgid "The month of the current year (01-12)."
 msgstr ""
 
-#: ../../../command/string.rst:411
+#: ../../../command/string.rst:408
 msgid "``%b``"
 msgstr ""
 
@@ -598,7 +598,7 @@ msgstr ""
 msgid "Abbreviated month name (e.g. Oct)."
 msgstr ""
 
-#: ../../../command/string.rst:416
+#: ../../../command/string.rst:413
 msgid "``%B``"
 msgstr ""
 
@@ -606,7 +606,7 @@ msgstr ""
 msgid "Full month name (e.g. October)."
 msgstr ""
 
-#: ../../../command/string.rst:419
+#: ../../../command/string.rst:418
 msgid "``%M``"
 msgstr ""
 
@@ -614,7 +614,7 @@ msgstr ""
 msgid "The minute of the current hour (00-59)."
 msgstr ""
 
-#: ../../../command/string.rst:424
+#: ../../../command/string.rst:421
 msgid "``%s``"
 msgstr ""
 
@@ -622,7 +622,7 @@ msgstr ""
 msgid "Seconds since midnight (UTC) 1-Jan-1970 (UNIX time)."
 msgstr ""
 
-#: ../../../command/string.rst:427
+#: ../../../command/string.rst:426
 msgid "``%S``"
 msgstr ""
 
@@ -630,7 +630,7 @@ msgstr ""
 msgid "The second of the current minute.  60 represents a leap second. (00-60)"
 msgstr ""
 
-#: ../../../command/string.rst:432
+#: ../../../command/string.rst:429
 msgid "``%f``"
 msgstr ""
 
@@ -638,7 +638,7 @@ msgstr ""
 msgid "The microsecond of the current second (000000-999999)."
 msgstr ""
 
-#: ../../../command/string.rst:435
+#: ../../../command/string.rst:434
 msgid "``%U``"
 msgstr ""
 
@@ -646,7 +646,7 @@ msgstr ""
 msgid "The week number of the current year (00-53)."
 msgstr ""
 
-#: ../../../command/string.rst:440
+#: ../../../command/string.rst:437
 msgid "``%V``"
 msgstr ""
 
@@ -654,7 +654,7 @@ msgstr ""
 msgid "The ISO 8601 week number of the current year (01-53)."
 msgstr ""
 
-#: ../../../command/string.rst:443
+#: ../../../command/string.rst:442
 msgid "``%w``"
 msgstr ""
 
@@ -662,7 +662,7 @@ msgstr ""
 msgid "The day of the current week. 0 is Sunday. (0-6)"
 msgstr ""
 
-#: ../../../command/string.rst:448
+#: ../../../command/string.rst:445
 msgid "``%a``"
 msgstr ""
 
@@ -670,7 +670,7 @@ msgstr ""
 msgid "Abbreviated weekday name (e.g. Fri)."
 msgstr ""
 
-#: ../../../command/string.rst:453
+#: ../../../command/string.rst:450
 msgid "``%A``"
 msgstr ""
 
@@ -678,7 +678,7 @@ msgstr ""
 msgid "Full weekday name (e.g. Friday)."
 msgstr ""
 
-#: ../../../command/string.rst:456
+#: ../../../command/string.rst:455
 msgid "``%y``"
 msgstr ""
 
@@ -686,7 +686,7 @@ msgstr ""
 msgid "The last two digits of the current year (00-99)."
 msgstr ""
 
-#: ../../../command/string.rst:459
+#: ../../../command/string.rst:458
 msgid "``%Y``"
 msgstr ""
 
@@ -694,7 +694,7 @@ msgstr ""
 msgid "The current year."
 msgstr ""
 
-#: ../../../command/string.rst:465
+#: ../../../command/string.rst:461
 msgid "``%z``"
 msgstr ""
 
@@ -704,7 +704,7 @@ msgid ""
 "``+hhmm`` or ``-hhmm``."
 msgstr ""
 
-#: ../../../command/string.rst:470
+#: ../../../command/string.rst:467
 msgid "``%Z``"
 msgstr ""
 

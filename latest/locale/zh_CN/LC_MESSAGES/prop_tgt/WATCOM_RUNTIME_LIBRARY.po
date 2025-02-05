@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "The allowed values are:"
 msgstr ""
 
-#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:2
+#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:1
 msgid "``SingleThreaded``"
 msgstr ""
 
@@ -41,7 +41,7 @@ msgid ""
 "runtime library."
 msgstr ""
 
-#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:6
+#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:4
 msgid "``SingleThreadedDLL``"
 msgstr ""
 
@@ -51,7 +51,7 @@ msgid ""
 "dynamically-linked runtime library. This is not available for Linux targets."
 msgstr ""
 
-#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:9
+#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:8
 msgid "``MultiThreaded``"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgid ""
 "statically-linked runtime library."
 msgstr ""
 
-#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:14
+#: ../../../prop_tgt/WATCOM_RUNTIME_LIBRARY-VALUES.txt:11
 msgid "``MultiThreadedDLL``"
 msgstr ""
 

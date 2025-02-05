@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,23 +64,23 @@ msgstr ""
 msgid "Unity builds are supported for the following languages:"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD.rst:36
+#: ../../../prop_tgt/UNITY_BUILD.rst:35
 msgid "``C``"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD.rst:39
+#: ../../../prop_tgt/UNITY_BUILD.rst:38
 msgid "``CXX``"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD.rst:42
+#: ../../../prop_tgt/UNITY_BUILD.rst:41
 msgid "``CUDA``"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD.rst:45
+#: ../../../prop_tgt/UNITY_BUILD.rst:44
 msgid "``OBJC``"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD.rst:48
+#: ../../../prop_tgt/UNITY_BUILD.rst:47
 msgid "``OBJCXX``"
 msgstr ""
 

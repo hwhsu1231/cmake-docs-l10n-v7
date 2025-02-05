@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "This \"extra\" generator may be specified as:"
 msgstr ""
 
-#: ../../../generator/Eclipse CDT4.rst:22
+#: ../../../generator/Eclipse CDT4.rst:21
 msgid "``Eclipse CDT4 - MinGW Makefiles``"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Generate with :generator:`MinGW Makefiles`."
 msgstr ""
 
-#: ../../../generator/Eclipse CDT4.rst:25
+#: ../../../generator/Eclipse CDT4.rst:24
 msgid "``Eclipse CDT4 - NMake Makefiles``"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Generate with :generator:`NMake Makefiles`."
 msgstr ""
 
-#: ../../../generator/Eclipse CDT4.rst:28
+#: ../../../generator/Eclipse CDT4.rst:27
 msgid "``Eclipse CDT4 - Ninja``"
 msgstr ""
 

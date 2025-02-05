@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid ""
 "generator-specific details of the toolset selection. Supported pairs are:"
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:49
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:43
 msgid "``cuda=<version>|<path>``"
 msgstr ""
 
@@ -110,7 +110,7 @@ msgid ""
 "`CMAKE_VS_PLATFORM_TOOLSET_CUDA_CUSTOM_DIR` variables."
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:63
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:51
 msgid "``fortran=<compiler>``"
 msgstr ""
 
@@ -120,7 +120,7 @@ msgid ""
 "Visual Studio Integration feature installed.  The value may be one of:"
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:58
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:57
 msgid "``ifort``"
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr ""
 msgid "Intel classic Fortran compiler."
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:61
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:60
 msgid "``ifx``"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgstr ""
 msgid "See the :variable:`CMAKE_VS_PLATFORM_TOOLSET_FORTRAN` variable."
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:69
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:65
 msgid "``host=<arch>``"
 msgstr ""
 
@@ -151,7 +151,7 @@ msgid ""
 "`CMAKE_VS_PLATFORM_TOOLSET_HOST_ARCHITECTURE` variable."
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:74
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:71
 msgid "``version=<version>``"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgid ""
 "`CMAKE_VS_PLATFORM_TOOLSET_VERSION` variable."
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:79
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:76
 msgid "``VCTargetsPath=<path>``"
 msgstr ""
 
@@ -190,7 +190,7 @@ msgstr ""
 msgid "Additional ``key=value`` pairs are available:"
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:102
+#: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:92
 msgid "``customFlagTableDir=<path>``"
 msgstr ""
 

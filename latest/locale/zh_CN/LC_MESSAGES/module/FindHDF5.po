@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgstr ""
 msgid "HDF5 was found on the system"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:57
+#: ../../../../Modules/FindHDF5.cmake:56
 msgid "``HDF5_VERSION``"
 msgstr ""
 
@@ -127,7 +127,7 @@ msgstr ""
 msgid "Required libraries for all requested bindings"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:67
+#: ../../../../Modules/FindHDF5.cmake:65
 msgid "``HDF5_HL_LIBRARIES``"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgstr ""
 msgid "Required libraries for the high level C++ bindings"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:98
+#: ../../../../Modules/FindHDF5.cmake:97
 msgid "``HDF5_Fortran_HL_LIBRARIES``"
 msgstr ""
 
@@ -299,7 +299,7 @@ msgstr ""
 msgid "path to the primary Fortran compiler which is also the HDF5 wrapper"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:115
+#: ../../../../Modules/FindHDF5.cmake:114
 msgid "``HDF5_DIFF_EXECUTABLE``"
 msgstr ""
 
@@ -367,7 +367,7 @@ msgstr ""
 msgid "High-level Fortran library."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:134
+#: ../../../../Modules/FindHDF5.cmake:133
 msgid "``hdf5::h5diff``"
 msgstr ""
 
@@ -385,7 +385,7 @@ msgid ""
 "and includes:"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:144
+#: ../../../../Modules/FindHDF5.cmake:141
 msgid "``HDF5_PREFER_PARALLEL``"
 msgstr ""
 
@@ -393,7 +393,7 @@ msgstr ""
 msgid "set ``true`` to prefer parallel HDF5 (by default, serial is preferred)"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:149
+#: ../../../../Modules/FindHDF5.cmake:146
 msgid "``HDF5_FIND_DEBUG``"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr ""
 msgid "Set ``true`` to get extra debugging output."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:1249
+#: ../../../../Modules/FindHDF5.cmake:151
 msgid "``HDF5_NO_FIND_PACKAGE_CONFIG_FILE``"
 msgstr ""
 

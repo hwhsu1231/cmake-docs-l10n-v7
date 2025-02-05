@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:68
+#: ../../../../Modules/GoogleTest.cmake:65
 msgid "``TARGET target``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgid ""
 "running the test."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:73
+#: ../../../../Modules/GoogleTest.cmake:70
 msgid "``SOURCES src1...``"
 msgstr ""
 
@@ -125,8 +125,8 @@ msgid ""
 "``target`` will be used to obtain the list of sources."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:79
-#: ../../../../Modules/GoogleTest.cmake:204
+#: ../../../../Modules/GoogleTest.cmake:75
+#: ../../../../Modules/GoogleTest.cmake:200
 msgid "``EXTRA_ARGS args...``"
 msgstr ""
 
@@ -140,8 +140,8 @@ msgstr ""
 msgid "Empty values in ``args...`` are preserved, see :policy:`CMP0178`."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:83
-#: ../../../../Modules/GoogleTest.cmake:208
+#: ../../../../Modules/GoogleTest.cmake:81
+#: ../../../../Modules/GoogleTest.cmake:206
 msgid "``WORKING_DIRECTORY dir``"
 msgstr ""
 
@@ -152,8 +152,8 @@ msgid ""
 "option is not provided, the current binary directory is used."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:88
-#: ../../../../Modules/GoogleTest.cmake:214
+#: ../../../../Modules/GoogleTest.cmake:85
+#: ../../../../Modules/GoogleTest.cmake:210
 msgid "``TEST_PREFIX prefix``"
 msgstr ""
 
@@ -164,8 +164,8 @@ msgid ""
 "multiple calls to ``gtest_add_test()`` but with different ``EXTRA_ARGS``."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:93
-#: ../../../../Modules/GoogleTest.cmake:219
+#: ../../../../Modules/GoogleTest.cmake:90
+#: ../../../../Modules/GoogleTest.cmake:216
 msgid "``TEST_SUFFIX suffix``"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgid ""
 "specified."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:100
+#: ../../../../Modules/GoogleTest.cmake:95
 msgid "``SKIP_DEPENDENCY``"
 msgstr ""
 
@@ -190,7 +190,7 @@ msgid ""
 "be used to prevent the dependency from being added."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:105
+#: ../../../../Modules/GoogleTest.cmake:102
 msgid "``TEST_LIST outVar``"
 msgstr ""
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "The path to the test executable or the name of a CMake target."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:138
+#: ../../../../Modules/GoogleTest.cmake:136
 msgid "``args``"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgid ""
 "for no arguments."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:143
+#: ../../../../Modules/GoogleTest.cmake:140
 msgid "``files...``"
 msgstr ""
 
@@ -325,7 +325,7 @@ msgid ""
 "below for further discussion and limitations)."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:198
+#: ../../../../Modules/GoogleTest.cmake:195
 msgid "``target``"
 msgstr ""
 
@@ -337,7 +337,7 @@ msgid ""
 "``EXTRA_ARGS``."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:228
+#: ../../../../Modules/GoogleTest.cmake:221
 msgid "``TEST_FILTER expr``"
 msgstr ""
 
@@ -350,7 +350,7 @@ msgid ""
 "printed test names that :program:`ctest` uses."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:234
+#: ../../../../Modules/GoogleTest.cmake:230
 msgid "``NO_PRETTY_TYPES``"
 msgstr ""
 
@@ -362,7 +362,7 @@ msgid ""
 "behavior."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:240
+#: ../../../../Modules/GoogleTest.cmake:236
 msgid "``NO_PRETTY_VALUES``"
 msgstr ""
 
@@ -374,7 +374,7 @@ msgid ""
 "behavior."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:244
+#: ../../../../Modules/GoogleTest.cmake:242
 msgid "``PROPERTIES name1 value1...``"
 msgstr ""
 
@@ -384,7 +384,7 @@ msgid ""
 "invocation of ``gtest_discover_tests()``."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:255
+#: ../../../../Modules/GoogleTest.cmake:246
 msgid "``TEST_LIST var``"
 msgstr ""
 
@@ -403,7 +403,7 @@ msgid ""
 "Such tests will still be defined and executed by ``ctest`` as normal though."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:275
+#: ../../../../Modules/GoogleTest.cmake:257
 msgid "``DISCOVERY_TIMEOUT num``"
 msgstr ""
 
@@ -428,7 +428,7 @@ msgid ""
 "been preserved."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:284
+#: ../../../../Modules/GoogleTest.cmake:277
 msgid "``XML_OUTPUT_DIR dir``"
 msgstr ""
 
@@ -441,7 +441,7 @@ msgid ""
 "when using parallel test execution."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:302
+#: ../../../../Modules/GoogleTest.cmake:286
 msgid "``DISCOVERY_MODE``"
 msgstr ""
 
@@ -465,7 +465,7 @@ msgid ""
 "modify each call site."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:307
+#: ../../../../Modules/GoogleTest.cmake:304
 msgid "``DISCOVERY_EXTRA_ARGS args...``"
 msgstr ""
 

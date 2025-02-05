@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 msgid "if false, do not try to link to PHYSFS"
 msgstr ""
 
-#: ../../../../Modules/FindPhysFS.cmake:15
+#: ../../../../Modules/FindPhysFS.cmake:14
 msgid "``PHYSFS_INCLUDE_DIR``"
 msgstr ""
 

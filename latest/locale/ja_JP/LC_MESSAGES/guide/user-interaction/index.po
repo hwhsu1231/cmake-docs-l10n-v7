@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,7 +126,7 @@ msgid ""
 "advised to use different directories for the source and the build."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:-1
+#: ../../../guide/user-interaction/index.rst:88
 msgid "Choosing source and binary directories"
 msgstr ""
 
@@ -347,7 +347,7 @@ msgid ""
 "to use."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:-1
+#: ../../../guide/user-interaction/index.rst:253
 msgid "Configuring a generator"
 msgstr ""
 
@@ -357,7 +357,7 @@ msgid ""
 "`cmake-gui(1)`."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:-1
+#: ../../../guide/user-interaction/index.rst:259
 msgid "Choosing a generator"
 msgstr ""
 
@@ -367,7 +367,7 @@ msgid ""
 "set an architecture to generate for."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:-1
+#: ../../../guide/user-interaction/index.rst:265
 msgid "Choosing an architecture for Visual Studio generators"
 msgstr ""
 
@@ -544,7 +544,7 @@ msgid ""
 "triggers a new dialog to set the value of the variable."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:-1
+#: ../../../guide/user-interaction/index.rst:368
 msgid "Editing a cache entry"
 msgstr ""
 
@@ -797,7 +797,7 @@ msgid ""
 "files."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:580
+#: ../../../guide/user-interaction/index.rst:574
 msgid "``all``"
 msgstr ""
 
@@ -810,7 +810,7 @@ msgid ""
 "Xcode and Visual Studio generators."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:585
+#: ../../../guide/user-interaction/index.rst:582
 msgid "``help``"
 msgstr ""
 
@@ -821,7 +821,7 @@ msgid ""
 "exact output is tool-specific."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:591
+#: ../../../guide/user-interaction/index.rst:587
 msgid "``clean``"
 msgstr ""
 
@@ -833,7 +833,7 @@ msgid ""
 "clean`` system."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:595
+#: ../../../guide/user-interaction/index.rst:593
 msgid "``test``"
 msgstr ""
 
@@ -843,7 +843,7 @@ msgid ""
 "provide CTest-based tests.  See also `Running Tests`_."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:600
+#: ../../../guide/user-interaction/index.rst:597
 msgid "``install``"
 msgstr ""
 
@@ -854,7 +854,7 @@ msgid ""
 "also `Software Installation`_."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:604
+#: ../../../guide/user-interaction/index.rst:602
 msgid "``package``"
 msgstr ""
 
@@ -864,7 +864,7 @@ msgid ""
 "the CMake files provide CPack-based packages."
 msgstr ""
 
-#: ../../../guide/user-interaction/index.rst:609
+#: ../../../guide/user-interaction/index.rst:606
 msgid "``package_source``"
 msgstr ""
 

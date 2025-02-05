@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,7 +219,7 @@ msgid ""
 "the ``FetchContent`` module."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:199
+#: ../../../../Modules/FetchContent.cmake:166
 #: ../../../../Modules/FetchContent.cmake:433
 msgid "``FIND_PACKAGE_ARGS``"
 msgstr ""
@@ -270,7 +270,7 @@ msgid ""
 "override project behavior."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:216
+#: ../../../../Modules/FetchContent.cmake:201
 #: ../../../../Modules/FetchContent.cmake:432
 msgid "``OVERRIDE_FIND_PACKAGE``"
 msgstr ""
@@ -298,7 +298,7 @@ msgid ""
 "``BYPASS_PROVIDER`` option."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:226
+#: ../../../../Modules/FetchContent.cmake:221
 #: ../../../../Modules/FetchContent.cmake:431
 msgid "``SYSTEM``"
 msgstr ""
@@ -312,7 +312,7 @@ msgid ""
 "for a more detailed discussion of the effects."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:235
+#: ../../../../Modules/FetchContent.cmake:231
 #: ../../../../Modules/FetchContent.cmake:430
 msgid "``EXCLUDE_FROM_ALL``"
 msgstr ""
@@ -555,7 +555,7 @@ msgid ""
 "how :command:`ExternalProject_Add` treats them:"
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:452
+#: ../../../../Modules/FetchContent.cmake:439
 msgid "``QUIET``"
 msgstr ""
 
@@ -578,7 +578,7 @@ msgid ""
 "level <cmake --log-level>`)."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:465
+#: ../../../../Modules/FetchContent.cmake:454
 msgid "``SUBBUILD_DIR``"
 msgstr ""
 
@@ -599,7 +599,7 @@ msgid ""
 "since there is no sub-build in that case."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:474
+#: ../../../../Modules/FetchContent.cmake:467
 msgid "``SOURCE_DIR``, ``BINARY_DIR``"
 msgstr ""
 
@@ -652,8 +652,8 @@ msgid ""
 "variables will be set in the scope of the caller:"
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:494
-#: ../../../../Modules/FetchContent.cmake:548
+#: ../../../../Modules/FetchContent.cmake:493
+#: ../../../../Modules/FetchContent.cmake:547
 msgid "``<lowercaseName>_SOURCE_DIR``"
 msgstr ""
 
@@ -662,8 +662,8 @@ msgstr ""
 msgid "The location where the populated content can be found upon return."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:498
-#: ../../../../Modules/FetchContent.cmake:551
+#: ../../../../Modules/FetchContent.cmake:496
+#: ../../../../Modules/FetchContent.cmake:550
 msgid "``<lowercaseName>_BINARY_DIR``"
 msgstr ""
 
@@ -725,7 +725,7 @@ msgid ""
 "behavioral aspects of how that is done)."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:545
+#: ../../../../Modules/FetchContent.cmake:544
 msgid "``<lowercaseName>_POPULATED``"
 msgstr ""
 
@@ -957,7 +957,7 @@ msgid ""
 "values:"
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:747
+#: ../../../../Modules/FetchContent.cmake:743
 msgid "``OPT_IN``"
 msgstr ""
 
@@ -969,7 +969,7 @@ msgid ""
 "``FETCHCONTENT_TRY_FIND_PACKAGE_MODE`` is not set."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:755
+#: ../../../../Modules/FetchContent.cmake:749
 msgid "``ALWAYS``"
 msgstr ""
 
@@ -983,7 +983,7 @@ msgid ""
 "after it."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:760
+#: ../../../../Modules/FetchContent.cmake:757
 msgid "``NEVER``"
 msgstr ""
 

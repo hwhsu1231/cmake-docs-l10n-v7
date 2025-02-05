@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` target:"
 msgstr ""
 
-#: ../../../../Modules/FindThreads.cmake:18
+#: ../../../../Modules/FindThreads.cmake:17
 msgid "``Threads::Threads``"
 msgstr ""
 
@@ -57,7 +57,7 @@ msgstr ""
 msgid "If a supported thread library was found."
 msgstr ""
 
-#: ../../../../Modules/FindThreads.cmake:29
+#: ../../../../Modules/FindThreads.cmake:27
 msgid "``CMAKE_THREAD_LIBS_INIT``"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr ""
 msgid "If the found thread library is pthread compatible."
 msgstr ""
 
-#: ../../../../Modules/FindThreads.cmake:36
+#: ../../../../Modules/FindThreads.cmake:35
 msgid "``CMAKE_HP_PTHREADS_INIT``"
 msgstr ""
 
