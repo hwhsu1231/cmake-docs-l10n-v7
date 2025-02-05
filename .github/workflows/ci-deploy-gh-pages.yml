@@ -156,7 +156,7 @@ jobs:
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
-    if: ${{ ( inputs.DEPLOY_ONLY == 'false' ) &&
+    if: ${{ ( inputs.DEPLOY_ONLY != 'true' ) &&
             ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
             ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
