@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,7 @@ msgstr ""
 msgid "modifiable single-machine data (``var``)"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:62
+#: ../../../../Modules/GNUInstallDirs.cmake:61
 msgid "``RUNSTATEDIR``"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgstr ""
 msgid "run-time variable data (``LOCALSTATEDIR/run``)"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:67
+#: ../../../../Modules/GNUInstallDirs.cmake:64
 msgid "``LIBDIR``"
 msgstr ""
 
@@ -212,7 +212,7 @@ msgstr ""
 msgid "man documentation (``DATAROOTDIR/man``)"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:84
+#: ../../../../Modules/GNUInstallDirs.cmake:83
 msgid "``DOCDIR``"
 msgstr ""
 

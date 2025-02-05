@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -175,6 +175,10 @@ msgstr ""
 msgid "So to the end of ``MathFunctions/CMakeLists.txt`` we add:"
 msgstr ""
 
+#: ../../../guide/tutorial/Installing and Testing.rst:103
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Installing and Testing.rst:107
 msgid "TODO 1: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -188,8 +192,18 @@ msgid ""
 "install(TARGETS ${installable_libs} DESTINATION lib)\n"
 msgstr ""
 
+#: ../../../guide/tutorial/Installing and Testing.rst:114 Testing.rst:130
+#: Testing.rst:148 Testing.rst:224 Testing.rst:247 Testing.rst:267
+#: Testing.rst:287 Testing.rst:309
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/Installing and Testing.rst:118
 msgid "and"
+msgstr ""
+
+#: ../../../guide/tutorial/Installing and Testing.rst:120
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Installing and Testing.rst:124
@@ -204,6 +218,10 @@ msgstr ""
 msgid ""
 "The install rules for the ``Tutorial`` executable and configured header file "
 "are similar. To the end of the top-level ``CMakeLists.txt`` we add:"
+msgstr ""
+
+#: ../../../guide/tutorial/Installing and Testing.rst:137
+msgid "<details><summary>TODO 3,4: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Installing and Testing.rst:141
@@ -292,6 +310,10 @@ msgid ""
 "command."
 msgstr ""
 
+#: ../../../guide/tutorial/Installing and Testing.rst:213
+msgid "<details><summary>TODO 5: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Installing and Testing.rst:217
 msgid "TODO 5: CMakeLists.txt"
 msgstr ""
@@ -313,6 +335,10 @@ msgid ""
 "form of a CTest test."
 msgstr ""
 
+#: ../../../guide/tutorial/Installing and Testing.rst:236
+msgid "<details><summary>TODO 6: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Installing and Testing.rst:240
 msgid "TODO 6: CMakeLists.txt"
 msgstr ""
@@ -329,6 +355,10 @@ msgid ""
 "verify that the output of the test contains certain strings. In this case, "
 "verifying that the usage message is printed when an incorrect number of "
 "arguments are provided."
+msgstr ""
+
+#: ../../../guide/tutorial/Installing and Testing.rst:256
+msgid "<details><summary>TODO 7: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Installing and Testing.rst:260
@@ -348,6 +378,10 @@ msgstr ""
 msgid ""
 "The next test we will add verifies the computed value is truly the square "
 "root."
+msgstr ""
+
+#: ../../../guide/tutorial/Installing and Testing.rst:274
+msgid "<details><summary>TODO 8: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Installing and Testing.rst:278
@@ -370,6 +404,10 @@ msgid ""
 "and verifies that the computed square root is correct for given input. For "
 "each invocation of ``do_test``, another test is added to the project with a "
 "name, input, and expected results based on the passed arguments."
+msgstr ""
+
+#: ../../../guide/tutorial/Installing and Testing.rst:299
+msgid "<details><summary>TODO 9: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Installing and Testing.rst:303

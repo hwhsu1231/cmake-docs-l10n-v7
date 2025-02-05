@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 05:00+0000\n"
+"POT-Creation-Date: 2025-02-01 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -340,8 +340,8 @@ msgid ""
 "them."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:241
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:320
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:238
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:317
 msgid "``INSTALL_DESTINATION <path>``"
 msgstr ""
 
@@ -353,8 +353,8 @@ msgid ""
 "``INSTALL_PREFIX`` or absolute."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:247
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:326
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:243
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:322
 msgid "``INSTALL_PREFIX <path>``"
 msgstr ""
 
@@ -366,7 +366,7 @@ msgid ""
 "passed, the :variable:`CMAKE_INSTALL_PREFIX` variable will be used instead."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:250
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:249
 msgid "``MACOS_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -374,7 +374,7 @@ msgstr ""
 msgid "File to include if the platform is macOS."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:253
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:252
 msgid "``IOS_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -382,7 +382,7 @@ msgstr ""
 msgid "File to include if the platform is iOS."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:256
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:255
 msgid "``IOS_SIMULATOR_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -390,7 +390,7 @@ msgstr ""
 msgid "File to include if the platform is iOS Simulator."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:261
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:258
 msgid "``IOS_CATALYST_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -398,7 +398,7 @@ msgstr ""
 msgid "File to include if the platform is iOS Catalyst."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:264
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:263
 msgid "``TVOS_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -406,7 +406,7 @@ msgstr ""
 msgid "File to include if the platform is tvOS."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:267
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:266
 msgid "``TVOS_SIMULATOR_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -414,7 +414,7 @@ msgstr ""
 msgid "File to include if the platform is tvOS Simulator."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:270
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:269
 msgid "``WATCHOS_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -422,7 +422,7 @@ msgstr ""
 msgid "File to include if the platform is watchOS."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:273
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:272
 msgid "``WATCHOS_SIMULATOR_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -430,7 +430,7 @@ msgstr ""
 msgid "File to include if the platform is watchOS Simulator."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:276
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:275
 msgid "``VISIONOS_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -438,7 +438,7 @@ msgstr ""
 msgid "File to include if the platform is visionOS."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:279
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:278
 msgid "``VISIONOS_SIMULATOR_INCLUDE_FILE <file>``"
 msgstr ""
 
@@ -446,8 +446,8 @@ msgstr ""
 msgid "File to include if the platform is visionOS Simulator."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:285
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:352
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:281
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:349
 msgid "``ERROR_VARIABLE <variable>``"
 msgstr ""
 
@@ -495,7 +495,7 @@ msgid ""
 "Apple-specific ``<PackageName>Config.cmake`` file."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:329
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:328
 msgid "``SINGLE_ARCHITECTURES <arch>...``"
 msgstr ""
 
@@ -504,7 +504,7 @@ msgid ""
 "Architectures provided by entries of ``SINGLE_ARCHITECTURE_INCLUDE_FILES``."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:335
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:331
 msgid "``SINGLE_ARCHITECTURE_INCLUDE_FILES <file>...``"
 msgstr ""
 
@@ -515,7 +515,7 @@ msgid ""
 "corresponding entry of ``SINGLE_ARCHITECTURES``."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:342
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:337
 msgid "``UNIVERSAL_ARCHITECTURES <arch>...``"
 msgstr ""
 
@@ -530,7 +530,7 @@ msgid ""
 "individually too."
 msgstr ""
 
-#: ../../../../Modules/CMakePackageConfigHelpers.cmake:347
+#: ../../../../Modules/CMakePackageConfigHelpers.cmake:344
 msgid "``UNIVERSAL_INCLUDE_FILE <file>``"
 msgstr ""
 
