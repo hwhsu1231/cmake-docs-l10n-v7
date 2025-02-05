@@ -113,9 +113,9 @@ jobs:
           fi
 
   get-matrix:
-    if: ${{ ( github.event_name == 'schedule' ) ||
-            ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
-            ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) }}
+    if: ${{ ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
+              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}

@@ -63,14 +63,14 @@ if (NOT LANGUAGE STREQUAL "all")
 endif()
 foreach(_LANGUAGE ${LANGUAGE_LIST})
     get_json_value_by_dot_notation(
-        IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
-        IN_DOT_NOTATION   ".${_LANGUAGE}.langtag"
-        OUT_JSON_VALUE    _LANGTAG)
+        IN_JSON_OBJECT      "${LANGUAGES_JSON_CNT}"
+        IN_DOT_NOTATION     ".${_LANGUAGE}.langtag"
+        OUT_JSON_VALUE      _LANGTAG)
 
 
-    set(CURRENT_VERSION   "${VERSION}")
-    set(CURRENT_LANGUAGE  "${_LANGTAG}")
-    set(HTML_BASEURL      "${BASEURL_HREF}")
+    set(CURRENT_VERSION     "${VERSION}")
+    set(CURRENT_LANGUAGE    "${_LANGTAG}")
+    set(HTML_BASEURL        "${BASEURL_HREF}")
 
 
     message(STATUS "Configuring 'current.js' file to the builder directory...")
