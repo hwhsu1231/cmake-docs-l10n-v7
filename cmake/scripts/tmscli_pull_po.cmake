@@ -16,15 +16,14 @@ include(JsonUtils)
 include(GettextUtils)
 
 
-if (NOT DEFINED ENV{CROWDIN_PROJECT_ID})
-    message(FATAL_ERROR "Not defined ENV{CROWDIN_PROJECT_ID}!")
-endif()
-if (NOT DEFINED ENV{CROWDIN_PERSONAL_TOKEN})
-    message(FATAL_ERROR "Not defined ENV{CROWDIN_PERSONAL_TOKEN}!")
-endif()
-if (NOT DEFINED ENV{CROWDIN_BASE_URL})
-    message(FATAL_ERROR "Not defined ENV{CROWDIN_BASE_URL}!")
-endif()
+message(STATUS "The followings are the required environment variables...")
+remove_cmake_message_indent()
+message("")
+message("ENV{CROWDIN_PROJECT_ID}      = $ENV{CROWDIN_PROJECT_ID}")
+message("ENV{CROWDIN_PERSONAL_TOKEN}  = $ENV{CROWDIN_PERSONAL_TOKEN}")
+message("ENV{CROWDIN_BASE_URL}        = $ENV{CROWDIN_BASE_URL}")
+message("")
+restore_cmake_message_indent()
 
 
 file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
