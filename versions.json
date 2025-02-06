@@ -3,7 +3,7 @@
     {
       "VERSION" : "master",
       "VERSION_COMPENDIUM" : "",
-      "LANGUAGE_ALLINONE" : false
+      "LANGUAGE_ALLINONE" : true
     }
   ],
   "v3" : [
