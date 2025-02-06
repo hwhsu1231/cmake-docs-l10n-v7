@@ -110,7 +110,7 @@ jobs:
       CHECKOUT: ${{ github.ref }}
       VERSION: 'readme'
       LANGUAGE: ${{ inputs.LANGUAGE || 'all' }}
-      SORUCE_LANGUAGE: 'en_US'
+      LANGUAGE_SOURCE: 'en_US'
       CALLER_JOB: 'caller'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
