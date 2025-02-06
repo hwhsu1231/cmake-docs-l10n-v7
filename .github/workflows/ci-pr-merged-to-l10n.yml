@@ -17,20 +17,20 @@ jobs:
       - name: Check Secrets
         shell: bash
         run: |
-          SECRETS_EXIST=true
+          REQUIRED_SECRETS_EXIST=true
           if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
             echo "secrets.ACTOR_GITHUB_TOKEN is missing."
-            SECRETS_EXIST=false
+            REQUIRED_SECRETS_EXIST=false
           fi
-          if [[ "${SECRETS_EXIST}" == "false" ]]; then
+          if [[ "${REQUIRED_SECRETS_EXIST}" == "false" ]]; then
             echo "Error: Some secrets are missing." >&2
             exit 1
           fi
       - name: Check Variables
         shell: bash
         run: |
-          VARIABLES_EXIST=true
-          if [[ "${VARIABLES_EXIST}" == "false" ]]; then
+          REQUIRED_VARIABLES_EXIST=true
+          if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
             echo "Error: Some variables are missing." >&2
             exit 1
           fi
