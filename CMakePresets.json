@@ -21,6 +21,15 @@
       }
     },
     {
+      "name" : "en_US",
+      "displayName" : "English",
+      "description" : "English",
+      "inherits" : "default",
+      "cacheVariables" : {
+        "LANGUAGE" : "en_US"
+      }
+    },
+    {
       "name" : "ja_JP",
       "displayName" : "Japanese",
       "description" : "日本語",
