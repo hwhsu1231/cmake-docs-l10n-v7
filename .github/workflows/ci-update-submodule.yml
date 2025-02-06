@@ -41,32 +41,32 @@ jobs:
       - name: Check Required Variables
         shell: bash
         run: |
-          VARIABLES_EXIST=true
+          REQUIRED_VARIABLES_EXIST=true
           if [[ -z "${{ vars.RUNNER }}" ]]; then
             echo "vars.RUNNER is missing."
-            VARIABLES_EXIST=false
+            REQUIRED_VARIABLES_EXIST=false
           fi
           if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
             echo "vars.ACTOR_NAME is missing."
-            VARIABLES_EXIST=false
+            REQUIRED_VARIABLES_EXIST=false
           fi
           if [[ -z "${{ vars.ACTOR_EMAIL }}" ]]; then
             echo "vars.ACTOR_EMAIL is missing."
-            VARIABLES_EXIST=false
+            REQUIRED_VARIABLES_EXIST=false
           fi
-          if [[ "${VARIABLES_EXIST}" == "false" ]]; then
+          if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
             echo "Error: Some variables are missing." >&2
             exit 1
           fi
       - name: Check Required Secrets
         shell: bash
         run: |
-          SECRETS_EXIST=true
+          REQUIRED_SECRETS_EXIST=true
           if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
             echo "secrets.ACTOR_GITHUB_TOKEN is missing."
-            SECRETS_EXIST=false
+            REQUIRED_SECRETS_EXIST=false
           fi
-          if [[ "${SECRETS_EXIST}" == "false" ]]; then
+          if [[ "${REQUIRED_SECRETS_EXIST}" == "false" ]]; then
             echo "Error: Some secrets are missing." >&2
             exit 1
           fi
