@@ -10,7 +10,7 @@
 </div>
 
 <h1 id="localization-of-cmake-documentation">
-CMake 文件的在地化
+Localization of CMake Documentation
 </h1>
 
 <details><summary><strong>Switch Languages</strong></summary>
@@ -48,7 +48,7 @@ Table of Contents
 </ul>
 
 <h2 id="introduction"><a href="#table-of-contents">
-介紹
+Introduction
 </a></h2>
 
 <div align="center">
