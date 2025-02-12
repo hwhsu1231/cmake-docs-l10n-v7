@@ -4,6 +4,12 @@
 name: ci-update-license-year
 
 on:
+  # Triggers the workflow when LICENSE changes are pushed to the 'source' branch.
+  push:
+    branches:
+      - 'source'
+    paths:
+      - 'LICENSE'
   # Triggers the workflow based on a schedule.
   schedule:
     - cron: '0 0 1 1 *'
@@ -12,7 +18,8 @@ on:
 
 jobs:
   precondition:
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
+    if: ${{ ( ( github.event_name == 'push' ) ||
+              ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
@@ -67,7 +74,8 @@ jobs:
 
   caller:
     needs: [ 'precondition' ]
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
+    if: ${{ ( ( github.event_name == 'push' ) ||
+              ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
     concurrency:
       group: ${{ github.workflow }}

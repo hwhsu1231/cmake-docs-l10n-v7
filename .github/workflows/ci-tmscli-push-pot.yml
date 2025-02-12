@@ -39,8 +39,7 @@ jobs:
     if: ${{ ( ( github.event_name == 'repository_dispatch' &&
                 github.event.action == 'pr-merged-to-l10n' &&
                 github.event.client_payload.TMSCLI == 'true' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs
@@ -114,8 +113,7 @@ jobs:
     if: ${{ ( ( github.event_name == 'repository_dispatch' &&
                 github.event.action == 'pr-merged-to-l10n' &&
                 github.event.client_payload.TMSCLI == 'true' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
@@ -143,12 +141,11 @@ jobs:
 
   caller:
     needs: [ 'get-matrix' ]
-    if: ${{ ( ( github.event_name == 'repository_dispatch' &&
+    if: ${{ ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
+            ( ( github.event_name == 'repository_dispatch' &&
                 github.event.action == 'pr-merged-to-l10n' &&
                 github.event.client_payload.TMSCLI == 'true' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
-            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false

@@ -54,8 +54,7 @@ env:
 jobs:
   precondition:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs/Variables/Secrets
@@ -114,8 +113,7 @@ jobs:
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
@@ -158,8 +156,7 @@ jobs:
     if: ${{ ( inputs.DEPLOY_ONLY != 'true' ) &&
             ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
             ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false
@@ -194,8 +191,7 @@ jobs:
             ( !contains(needs.*.result, 'failure') ) &&
             ( !contains(needs.*.result, 'cancelled') ) &&
             ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Checkout to '${{ github.ref }}'
@@ -233,8 +229,7 @@ jobs:
             ( !contains(needs.*.result, 'failure') ) &&
             ( !contains(needs.*.result, 'cancelled') ) &&
             ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     # Refer to: https://stackoverflow.com/a/76883315
     permissions:

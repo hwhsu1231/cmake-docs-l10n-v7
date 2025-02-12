@@ -55,8 +55,7 @@ env:
 jobs:
   precondition:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs/Variables/Secrets
@@ -130,8 +129,7 @@ jobs:
 
   get-matrix:
     if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) }}
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
       MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
@@ -171,10 +169,9 @@ jobs:
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'group' ) ||
-              ( github.event_name == 'workflow_dispatch' && inputs.TYPE == 'single' ) ) &&
-            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) }}
+    if: ${{ ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
+            ( ( github.event_name == 'schedule' ) ||
+              ( github.event_name == 'workflow_dispatch' ) ) }}
     strategy:
       matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
       fail-fast: false
