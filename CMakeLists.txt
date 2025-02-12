@@ -141,14 +141,10 @@ include(LogUtils)
 include(JsonUtils)
 
 #[============================================================[
-# Prepare LOCALE_TO_SOURCE_DIR.
-# Prepare TMPLS_TO_SOURCE_DIR.
-# Prepare TMPLS_TO_CONFIG_DIR.
+# Prepare TMPLS_TO_SOURCE_DIR  for 'sphinx_build_pot'  target.
+# Prepare TMPLS_TO_CONFIG_DIR  for 'sphinx_build_docs' target.
+# Prepare LOCALE_TO_SOURCE_DIR for 'sphinx_build_docs' taget.
 #]============================================================]
-
-file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
-    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
-    "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
 
 file(RELATIVE_PATH TMPLS_TO_SOURCE_DIR
     "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
@@ -157,6 +153,10 @@ file(RELATIVE_PATH TMPLS_TO_SOURCE_DIR
 file(RELATIVE_PATH TMPLS_TO_CONFIG_DIR
     "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}"
     "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
+
+file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
+    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
+    "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
 
 #[============================================================[
 # Configure Sphinx verbose arguments based on verbosity level.
@@ -386,9 +386,9 @@ message(STATUS "REFERENCES_JSON_PATH            = ${REFERENCES_JSON_PATH}")
 message(STATUS "TMS_CONFIG_FILE_PATH            = ${TMS_CONFIG_FILE_PATH}")
 message(STATUS "STATISTIC_TXT_PATH              = ${STATISTIC_TXT_PATH}")
 message(STATUS "---------- Other Variables ----------")
-message(STATUS "LOCALE_TO_SOURCE_DIR            = ${LOCALE_TO_SOURCE_DIR}")
 message(STATUS "TMPLS_TO_SOURCE_DIR             = ${TMPLS_TO_SOURCE_DIR}")
 message(STATUS "TMPLS_TO_CONFIG_DIR             = ${TMPLS_TO_CONFIG_DIR}")
+message(STATUS "LOCALE_TO_SOURCE_DIR            = ${LOCALE_TO_SOURCE_DIR}")
 message(STATUS "SPHINX_VERBOSE_ARGS             = ${SPHINX_VERBOSE_ARGS}")
 message(STATUS "LANGUAGE_LIST                   = ${LANGUAGE_LIST}")
 message(STATUS "VERSION_TYPE                    = ${VERSION_TYPE}")
@@ -483,9 +483,9 @@ set(SCRIPT_MODE_CACHE
     -D TMS_CONFIG_FILE_PATH=${TMS_CONFIG_FILE_PATH}
     -D STATISTIC_TXT_PATH=${STATISTIC_TXT_PATH}
     # [Other Variables]
-    -D LOCALE_TO_SOURCE_DIR=${LOCALE_TO_SOURCE_DIR}
     -D TMPLS_TO_SOURCE_DIR=${TMPLS_TO_SOURCE_DIR}
     -D TMPLS_TO_CONFIG_DIR=${TMPLS_TO_CONFIG_DIR}
+    -D LOCALE_TO_SOURCE_DIR=${LOCALE_TO_SOURCE_DIR}
     -D SPHINX_VERBOSE_ARGS=${SPHINX_VERBOSE_ARGS}
     -D LANGUAGE_LIST=${LANGUAGE_LIST}
     -D VERSION_TYPE=${VERSION_TYPE}

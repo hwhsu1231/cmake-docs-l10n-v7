@@ -17,8 +17,8 @@ on:
         type: choice
         default: 'group'
         options:
-          - 'group'
           - 'single'
+          - 'group'
       VERSION:
         description: 'VERSION input (for single type)'
         required: true

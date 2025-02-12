@@ -51,7 +51,7 @@ jobs:
   precondition:
     runs-on: ${{ vars.RUNNER }}
     steps:
-      - name: Print Contexts/Inputs
+      - name: Print Contexts/Inputs/Variables/Secrets
         shell: bash
         run: |
           echo "[Contexts]"

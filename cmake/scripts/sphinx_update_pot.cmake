@@ -65,19 +65,19 @@ restore_cmake_message_indent()
 
 
 message(STATUS "Copying 'layout.html' file to the sphinx templates directory...")
-file(MAKE_DIRECTORY "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates")
+file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/layout.html"
-    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates/layout.html")
+    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}/layout.html")
 remove_cmake_message_indent()
 message("")
 message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/layout.html")
-message("To:   ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/templates/layout.html")
+message("To:   ${PROJ_OUT_REPO_DOCS_TMPLS_DIR}/layout.html")
 message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Generating the configuration file 'conf.py' by configuring project(CMakeHelp)...")
+message(STATUS "Generating 'conf.py' file by configuring project(CMakeHelp)...")
 if (CMAKE_HOST_UNIX)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
     set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
@@ -109,7 +109,7 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'conf.py' to '${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/' directory...")
+message(STATUS "Copying 'conf.py' file to '${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/' directory...")
 set(SRC_CONF_PY_FILE    "${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/build/conf.py")
 set(DST_CONF_PY_FILE    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
 remove_cmake_message_indent()
@@ -254,8 +254,6 @@ else()
     message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
 endif()
 remove_cmake_message_indent()
-message("")
-message("TMPLS_TO_SOURCE_DIR = ${TMPLS_TO_SOURCE_DIR}")
 message("")
 execute_process(
     COMMAND ${CMAKE_COMMAND} -E env

@@ -179,42 +179,21 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         message("")
         restore_cmake_message_indent()
     endif()
-
-
-    # if (SPHINX_BUILDER MATCHES "^html$")
-    #     message(STATUS "Configuring 'version_switch.js' file to the html output directory...")
-    #     set(PROTOCOLS "file:///" "https://")
-    #     foreach(PROTOCOL ${PROTOCOLS})
-    #         string(REGEX REPLACE "${PROTOCOL}" "" BASEURL ${BASEURL_HREF})
-    #         if (NOT "${BASEURL}" STREQUAL "${BASEURL_HREF}")
-    #             break()
-    #         endif()
-    #     endforeach()
-    #     unset(PROTOCOL)
-    #     set(LANGURL_HREF  "${BASEURL_HREF}/${_LANGTAG}")
-    #     set(LANGURL       "${BASEURL}/${_LANGTAG}")
-    #     set(LANGURL_RE    "${BASEURL}/${_LANGTAG}")
-    #     string(REPLACE "." "\\." LANGURL_RE "${LANGURL_RE}")
-    #     string(REPLACE "/" "\\/" LANGURL_RE "${LANGURL_RE}")
-    #     remove_cmake_message_indent()
-    #     message("")
-    #     message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/version_switch.js.in")
-    #     message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/version_switch.js")
-    #     message("")
-    #     message("BASEURL_HREF = ${BASEURL_HREF}")
-    #     message("BASEURL      = ${BASEURL}")
-    #     message("LANGURL_HREF = ${LANGURL_HREF}")
-    #     message("LANGURL      = ${LANGURL}")
-    #     message("LANGURL_RE   = ${LANGURL_RE}")
-    #     message("")
-    #     restore_cmake_message_indent()
-    #     configure_file(
-    #         "${PROJ_CMAKE_TEMPLATES_DIR}/version_switch.js.in"
-    #         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/version_switch.js"
-    #         @ONLY)
-    # endif()
 endforeach()
 unset(_LANGUAGE)
+
+
+message(STATUS "Configuring 'index.html.in' file to the root of the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+configure_file(
+    "${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in"
+    "${PROJ_OUT_BUILDER_DIR}/index.html")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/index.html")
+message("")
+restore_cmake_message_indent()
 
 
 message(STATUS "The '${SPHINX_BUILDER}' documentation is built succesfully!")
