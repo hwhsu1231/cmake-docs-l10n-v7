@@ -4,10 +4,14 @@
 name: test-deploy
 
 on:
-  workflow_run:
-    workflows: ["test-build"]
+  # Triggers the workflow when ci-sphinx-build-docs is completed.
+  repository_dispatch:
     types:
-      - completed
+      - test-build
+  # workflow_run:
+  #   workflows: ["test-build"]
+  #   types:
+  #     - completed
 
 jobs:
   precondition:
@@ -61,4 +65,3 @@ jobs:
             echo "Error: Some secrets are missing." >&2
             exit 1
           fi
-
