@@ -65,3 +65,12 @@ jobs:
             echo "Error: Some secrets are missing." >&2
             exit 1
           fi
+
+  deploy:
+    runs-on: ${{ vars.RUNNER }}
+    steps:
+      - name: Read values from 'repository_dispatch' event
+        shell: bash
+        run: |
+          echo "github.event.client_payload.RUN_ID = ${{ github.event.client_payload.RUN_ID }}"
+          echo "github.event.client_payload.DEPLOY_ONLY = ${{ github.event.client_payload.DEPLOY_ONLY }}"
