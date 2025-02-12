@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index.rst:4
 msgid "Introduction"
-msgstr "介紹"
+msgstr ""
 
 #: ../../../index.rst:6
 msgid ""
@@ -63,23 +63,23 @@ msgstr ""
 
 #: ../../../index.rst:33
 msgid "Command-Line Tools"
-msgstr "命令行工具"
+msgstr ""
 
 #: ../../../index.rst:43
 msgid "Interactive Dialogs"
-msgstr "互動式對話框"
+msgstr ""
 
 #: ../../../index.rst:52
 msgid "Reference Manuals"
-msgstr "參考手冊"
+msgstr ""
 
 #: ../../../index.rst:82
 msgid "Guides"
-msgstr "指南"
+msgstr ""
 
 #: ../../../index.rst:96
 msgid "Release Notes"
-msgstr "發行備註"
+msgstr ""
 
 #: ../../../index.rst:106
 msgid "Index and Search"
