@@ -132,9 +132,9 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-outputs-from-schedule@main
         with:
           schedule: ${{ github.event.schedule }}
-      - name: Get VERSION_LIST and ALLINONE_LIST from versions.json
+      - name: Get VERSION_LIST from versions.json
         id: gvav
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-allinone-list-from-versions-file@main
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
           version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
@@ -151,7 +151,6 @@ jobs:
         with:
           matrix-type: 'version-language'
           version-list: ${{ steps.gvav.outputs.VERSION_LIST }}
-          allinone-list: ${{ steps.gvav.outputs.ALLINONE_LIST }}
           language-list: ${{ steps.glll.outputs.LANGUAGE_LIST }}
 
   caller:

@@ -128,7 +128,7 @@ jobs:
           submodules: false
       - name: Get VERSION_LIST from versions.json
         id: gvlv
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-allinone-list-from-versions-file@main
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
