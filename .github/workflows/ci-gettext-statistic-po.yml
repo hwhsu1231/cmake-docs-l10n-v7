@@ -40,8 +40,6 @@ env:
 
 jobs:
   precondition:
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs/Variables/Secrets
