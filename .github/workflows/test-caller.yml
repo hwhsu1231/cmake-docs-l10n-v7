@@ -7,14 +7,16 @@ on:
   # Triggers the workflow manually through the GitHub UI.
   workflow_dispatch:
     inputs:
-      CALLER_INPUT:
+      CALLER_CHOICE_INPUT:
+        description: xxx
+        type: choice
+        default: 'true'
+        options:
+          - 'true'
+          - 'false'
+      CALLER_BOOLEAN_INPUT:
         description: xxx
         type: boolean
-        # type: choice
-        # default: 'true'
-        # options:
-        #   - 'true'
-        #   - 'false'
 
 jobs:
   caller:
@@ -24,4 +26,4 @@ jobs:
       STRING_INPUT2: 'false'
       BOOLEAN_INPUT1: true
       BOOLEAN_INPUT2: false
-      BOOLEAN_INPUT3: ${{ inputs.CALLER_INPUT }}
+      BOOLEAN_INPUT3: ${{ inputs.CALLER_BOOLEAN_INPUT }}
