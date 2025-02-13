@@ -1,0 +1,17 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: test-caller
+
+on:
+  # Triggers the workflow manually through the GitHub UI.
+  workflow_dispatch:
+
+jobs:
+  caller:
+    uses: ./.github/workflows/test-callee.yml@main
+    with:
+      BOOLEAN_INPUT1: 'true'
+      BOOLEAN_INPUT2: 'false'
+      BOOLEAN_INPUT3: true
+      BOOLEAN_INPUT4: false
