@@ -3,19 +3,20 @@
 
 ```mermaid
 graph TD
-    A[Schedule at 00:00] -->|Trigger| B[gettext-statistic-po]
+    A[Schedule at 00:00]
+    A -->|Trigger| B[gettext-statistic-po]
     A -->|Trigger| C[tmscli-readme]
     A -->|Trigger| D[tmscli-pull-po]
-    
+
     E[Schedule at 04:00] -->|Trigger| F[gettext-compend-po]
-    
-    G[Schedule at 08:00] -->|Trigger| H[deploy-gh-pages]
-    G -->|Trigger| I[deploy-po-version]
-    G -->|Trigger| J[sphinx-update-pot]
-    
-    J -->|Create PR| K[PR to l10n branch]
-    K -->|PR Merged| L[tmscli-push-pot]
-    K -->|PR Merged| M[gettext-update-po]
+
+    H[Schedule at 08:00]
+    H -->|Trigger| I[sphinx-build-docs] -->|Trigger| J[deploy-gh-pages]
+    H -->|Trigger| G[deploy-po-version]
+    H -->|Trigger| K[sphinx-update-pot]
+    K -->|Create PR| L[PR to l10n branch]
+    L -->|PR Merged| M[tmscli-push-pot]
+    L -->|PR Merged| N[gettext-update-po]
 ```
 
 ### Plan 2
