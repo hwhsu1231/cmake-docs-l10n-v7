@@ -15,6 +15,9 @@ on:
       BOOLEAN_INPUT3:
         required: true
         type: boolean
+      BOOLEAN_INPUT4:
+        required: true
+        type: boolean
       STRING_INPUT1:
         required: true
         type: string
@@ -25,6 +28,12 @@ on:
         required: true
         type: string
       STRING_INPUT4:
+        required: true
+        type: string
+      STRING_INPUT5:
+        required: true
+        type: string
+      STRING_INPUT6:
         required: true
         type: string
 
@@ -38,28 +47,40 @@ jobs:
           echo "inputs.BOOLEAN_INPUT1             : ${{ inputs.BOOLEAN_INPUT1 }}"
           echo "inputs.BOOLEAN_INPUT2             : ${{ inputs.BOOLEAN_INPUT2 }}"
           echo "inputs.BOOLEAN_INPUT3             : ${{ inputs.BOOLEAN_INPUT3 }}"
+          echo "inputs.BOOLEAN_INPUT4             : ${{ inputs.BOOLEAN_INPUT4 }}"
           echo "inputs.STRING_INPUT1              : ${{ inputs.STRING_INPUT1 }}"
           echo "inputs.STRING_INPUT2              : ${{ inputs.STRING_INPUT2 }}"
           echo "inputs.STRING_INPUT3              : ${{ inputs.STRING_INPUT3 }}"
           echo "inputs.STRING_INPUT4              : ${{ inputs.STRING_INPUT4 }}"
+          echo "inputs.STRING_INPUT5              : ${{ inputs.STRING_INPUT5 }}"
+          echo "inputs.STRING_INPUT6              : ${{ inputs.STRING_INPUT6 }}"
           echo "!inputs.BOOLEAN_INPUT1            : ${{ !inputs.BOOLEAN_INPUT1 }}"
           echo "!inputs.BOOLEAN_INPUT2            : ${{ !inputs.BOOLEAN_INPUT2 }}"
           echo "!inputs.BOOLEAN_INPUT3            : ${{ !inputs.BOOLEAN_INPUT3 }}"
+          echo "!inputs.BOOLEAN_INPUT4            : ${{ !inputs.BOOLEAN_INPUT4 }}"
           echo "!inputs.STRING_INPUT1             : ${{ !inputs.STRING_INPUT1 }}"
           echo "!inputs.STRING_INPUT2             : ${{ !inputs.STRING_INPUT2 }}"
           echo "!inputs.STRING_INPUT3             : ${{ !inputs.STRING_INPUT3 }}"
           echo "!inputs.STRING_INPUT4             : ${{ !inputs.STRING_INPUT4 }}"
+          echo "!inputs.STRING_INPUT5             : ${{ !inputs.STRING_INPUT5 }}"
+          echo "!inputs.STRING_INPUT6             : ${{ !inputs.STRING_INPUT6 }}"
           echo "inputs.BOOLEAN_INPUT1 == 'true'   : ${{ inputs.BOOLEAN_INPUT1 == 'true' }}"
           echo "inputs.BOOLEAN_INPUT2 == 'true'   : ${{ inputs.BOOLEAN_INPUT2 == 'true' }}"
           echo "inputs.BOOLEAN_INPUT3 == 'true'   : ${{ inputs.BOOLEAN_INPUT3 == 'true' }}"
+          echo "inputs.BOOLEAN_INPUT4 == 'true'   : ${{ inputs.BOOLEAN_INPUT4 == 'true' }}"
           echo "inputs.STRING_INPUT1 == 'true'    : ${{ inputs.STRING_INPUT1 == 'true' }}"
           echo "inputs.STRING_INPUT2 == 'true'    : ${{ inputs.STRING_INPUT2 == 'true' }}"
           echo "inputs.STRING_INPUT3 == 'true'    : ${{ inputs.STRING_INPUT3 == 'true' }}"
           echo "inputs.STRING_INPUT4 == 'true'    : ${{ inputs.STRING_INPUT4 == 'true' }}"
+          echo "inputs.STRING_INPUT5 == 'true'    : ${{ inputs.STRING_INPUT5 == 'true' }}"
+          echo "inputs.STRING_INPUT6 == 'true'    : ${{ inputs.STRING_INPUT6 == 'true' }}"
           echo "inputs.BOOLEAN_INPUT1 == 'false'  : ${{ inputs.BOOLEAN_INPUT1 == 'false' }}"
           echo "inputs.BOOLEAN_INPUT2 == 'false'  : ${{ inputs.BOOLEAN_INPUT2 == 'false' }}"
           echo "inputs.BOOLEAN_INPUT3 == 'false'  : ${{ inputs.BOOLEAN_INPUT3 == 'false' }}"
+          echo "inputs.BOOLEAN_INPUT4 == 'false'  : ${{ inputs.BOOLEAN_INPUT4 == 'false' }}"
           echo "inputs.STRING_INPUT1 == 'false'   : ${{ inputs.STRING_INPUT1 == 'false' }}"
           echo "inputs.STRING_INPUT2 == 'false'   : ${{ inputs.STRING_INPUT2 == 'false' }}"
           echo "inputs.STRING_INPUT3 == 'false'   : ${{ inputs.STRING_INPUT3 == 'false' }}"
           echo "inputs.STRING_INPUT4 == 'false'   : ${{ inputs.STRING_INPUT4 == 'false' }}"
+          echo "inputs.STRING_INPUT5 == 'false'   : ${{ inputs.STRING_INPUT5 == 'false' }}"
+          echo "inputs.STRING_INPUT6 == 'false'   : ${{ inputs.STRING_INPUT6 == 'false' }}"
