@@ -290,6 +290,14 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-license-year.yml">
+            <img alt="ci-update-license-year" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-license-year.yml/badge.svg" />
+          </a>
+        </td>
+        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update LICENSE file to the latest year.</td>
+      </tr>
+      <tr>
+        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
           <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml">
             <img alt="ci-update-submodule" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml/badge.svg" />
           </a>
