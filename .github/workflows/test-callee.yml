@@ -8,10 +8,10 @@ on:
     inputs:
       STRING_INPUT1:
         required: true
-        type: boolean
+        type: string
       STRING_INPUT2:
         required: true
-        type: boolean
+        type: string
       BOOLEAN_INPUT1:
         required: true
         type: boolean
