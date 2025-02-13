@@ -6,16 +6,16 @@ name: test-callee
 on:
   workflow_call:
     inputs:
+      STRING_INPUT1:
+        required: true
+        type: boolean
+      STRING_INPUT2:
+        required: true
+        type: boolean
       BOOLEAN_INPUT1:
         required: true
         type: boolean
       BOOLEAN_INPUT2:
-        required: true
-        type: boolean
-      BOOLEAN_INPUT3:
-        required: true
-        type: boolean
-      BOOLEAN_INPUT4:
         required: true
         type: boolean
 
@@ -27,23 +27,23 @@ jobs:
         shell: bash
         run: |
           echo "[Test]"
+          echo "inputs.STRING_INPUT1              : ${{ inputs.STRING_INPUT1 }}"
+          echo "inputs.STRING_INPUT2              : ${{ inputs.STRING_INPUT2 }}"
           echo "inputs.BOOLEAN_INPUT1             : ${{ inputs.BOOLEAN_INPUT1 }}"
           echo "inputs.BOOLEAN_INPUT2             : ${{ inputs.BOOLEAN_INPUT2 }}"
-          echo "inputs.BOOLEAN_INPUT3             : ${{ inputs.BOOLEAN_INPUT3 }}"
-          echo "inputs.BOOLEAN_INPUT4             : ${{ inputs.BOOLEAN_INPUT4 }}"
+          echo "!inputs.STRING_INPUT1             : ${{ !inputs.STRING_INPUT1 }}"
+          echo "!inputs.STRING_INPUT2             : ${{ !inputs.STRING_INPUT2 }}"
           echo "!inputs.BOOLEAN_INPUT1            : ${{ !inputs.BOOLEAN_INPUT1 }}"
           echo "!inputs.BOOLEAN_INPUT2            : ${{ !inputs.BOOLEAN_INPUT2 }}"
-          echo "!inputs.BOOLEAN_INPUT3            : ${{ !inputs.BOOLEAN_INPUT3 }}"
-          echo "!inputs.BOOLEAN_INPUT4            : ${{ !inputs.BOOLEAN_INPUT4 }}"
+          echo "toJSON(inputs.STRING_INPUT1)      : ${{ toJSON(inputs.STRING_INPUT1) }}"
+          echo "toJSON(inputs.STRING_INPUT2)      : ${{ toJSON(inputs.STRING_INPUT2) }}"
           echo "toJSON(inputs.BOOLEAN_INPUT1)     : ${{ toJSON(inputs.BOOLEAN_INPUT1) }}"
           echo "toJSON(inputs.BOOLEAN_INPUT2)     : ${{ toJSON(inputs.BOOLEAN_INPUT2) }}"
-          echo "toJSON(inputs.BOOLEAN_INPUT3)     : ${{ toJSON(inputs.BOOLEAN_INPUT3) }}"
-          echo "toJSON(inputs.BOOLEAN_INPUT4)     : ${{ toJSON(inputs.BOOLEAN_INPUT4) }}"
+          echo "inputs.STRING_INPUT1 == 'true'    : ${{ inputs.STRING_INPUT1 == 'true' }}"
+          echo "inputs.STRING_INPUT2 == 'true'    : ${{ inputs.STRING_INPUT2 == 'true' }}"
           echo "inputs.BOOLEAN_INPUT1 == 'true'   : ${{ inputs.BOOLEAN_INPUT1 == 'true' }}"
           echo "inputs.BOOLEAN_INPUT2 == 'true'   : ${{ inputs.BOOLEAN_INPUT2 == 'true' }}"
-          echo "inputs.BOOLEAN_INPUT3 == 'true'   : ${{ inputs.BOOLEAN_INPUT3 == 'true' }}"
-          echo "inputs.BOOLEAN_INPUT4 == 'true'   : ${{ inputs.BOOLEAN_INPUT4 == 'true' }}"
+          echo "inputs.STRING_INPUT1 == 'false'   : ${{ inputs.STRING_INPUT1 == 'false' }}"
+          echo "inputs.STRING_INPUT2 == 'false'   : ${{ inputs.STRING_INPUT2 == 'false' }}"
           echo "inputs.BOOLEAN_INPUT1 == 'false'  : ${{ inputs.BOOLEAN_INPUT1 == 'false' }}"
           echo "inputs.BOOLEAN_INPUT2 == 'false'  : ${{ inputs.BOOLEAN_INPUT2 == 'false' }}"
-          echo "inputs.BOOLEAN_INPUT3 == 'false'  : ${{ inputs.BOOLEAN_INPUT3 == 'false' }}"
-          echo "inputs.BOOLEAN_INPUT4 == 'false'  : ${{ inputs.BOOLEAN_INPUT4 == 'false' }}"
