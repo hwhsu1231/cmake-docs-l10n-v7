@@ -4,7 +4,7 @@
 name: ci-deploy-gh-pages
 
 on:
-  # Triggers the workflow when 'sphinx-build-docs' is completed.
+  # Triggers the workflow when the 'sphinx-build-docs' workflow is completed.
   repository_dispatch:
     types:
       - sphinx-build-docs

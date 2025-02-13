@@ -90,20 +90,19 @@ jobs:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
 
-  check-deploy-gh-pages:
+  check-sphinx-build-docs:
     needs: [ 'before-check' ]
-    uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml@main
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-sphinx-build-docs.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
       VERSION: 'master'
       LANGUAGE: 'all'
       MODE_OF_UPDATE: 'COMPARE'
-      BASEURL_HREF: 'https://hwhsu1231.github.io/cmake-docs-l10n-v7'
+      BASEURL_HREF: ${{ vars.BASEURL_HREF }}
       SPHINX_BUILDER: 'html'
-      CALLER_JOB: 'check-deploy-gh-pages'
+      CALLER_JOB: 'check-sphinx-build-docs'
       ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
-      DEPLOY_HTML: false
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
