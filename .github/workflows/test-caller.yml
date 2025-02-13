@@ -9,11 +9,12 @@ on:
     inputs:
       CALLER_INPUT:
         description: xxx
-        type: choice
-        default: 'true'
-        options:
-          - 'true'
-          - 'false'
+        type: boolean
+        # type: choice
+        # default: 'true'
+        # options:
+        #   - 'true'
+        #   - 'false'
 
 jobs:
   caller:
