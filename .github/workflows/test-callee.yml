@@ -18,6 +18,9 @@ on:
       BOOLEAN_INPUT2:
         required: true
         type: boolean
+      BOOLEAN_INPUT3:
+        required: true
+        type: boolean
 
 jobs:
   test:
