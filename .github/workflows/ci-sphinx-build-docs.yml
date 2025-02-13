@@ -201,6 +201,6 @@ jobs:
           client-payload: |
             {
               "RUN_ID" : "${{ github.run_id }}",
-              "DEPLOY_ONLY" : "${{ 'false' || inputs.DEPLOY_ONLY }}",
+              "DEPLOY_ONLY" : "${{ inputs.DEPLOY_ONLY || 'false' }}",
               "DEPLOY_BRANCH" : "gh-pages"
             }
