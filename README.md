@@ -78,7 +78,7 @@ Introduction
   <a href="https://www.contributor-covenant.org/" title="Contributor Covenant" target="_blank">
     <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" />
   </a>
-  <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" title="Crowdin Localized" target="_blank">
+  <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" title="Crowdin Localized" target="_blank">
     <img alt="Crowdin Localized" src="https://badges.crowdin.net/e/47e76415211d89e121457cb84e8147cb/localized.svg" />
   </a>
 </div>
@@ -97,7 +97,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">TMS</th>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Crowdin</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Header -->
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Issues</th>
@@ -298,10 +298,10 @@ Progress of Translations
         <td align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
         <td align="center" style="text-align: center; vertical-align: middle;">Japanese<br />日本語</td>
         <td align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
             <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank">
             <img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a>
         </td>
@@ -310,10 +310,10 @@ Progress of Translations
         <td align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
         <td align="center" style="text-align: center; vertical-align: middle;">Russian<br />Русский</td>
         <td align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
             <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank">
             <img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a>
         </td>
@@ -322,10 +322,10 @@ Progress of Translations
         <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
         <td align="center" style="text-align: center; vertical-align: middle;">Simplified Chinese<br />简体中文</td>
         <td align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
             <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank">
             <img alt="zh-CN proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a>
         </td>
@@ -334,10 +334,10 @@ Progress of Translations
         <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
         <td align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
         <td align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
             <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a><br />
-          <a href="https://org-test.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank">
             <img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200032566-8.json" />
           </a>
         </td>
@@ -347,7 +347,7 @@ Progress of Translations
 </div>
 
 <div align="center">
-  <a href="https://org-test.crowdin.com/cmake-docs-l10n-v7"><img src="https://badges.awesome-crowdin.com/translation-200032566-8.png"></a>
+  <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img src="https://badges.awesome-crowdin.com/translation-200032566-8.png"></a>
 </div>
 
 <h2 id="preview-translations"><a href="#table-of-contents">
