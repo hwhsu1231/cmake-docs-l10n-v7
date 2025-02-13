@@ -12,6 +12,9 @@ on:
       STRING_INPUT2:
         required: true
         type: string
+      STRING_INPUT3:
+        required: true
+        type: string
       BOOLEAN_INPUT1:
         required: true
         type: boolean

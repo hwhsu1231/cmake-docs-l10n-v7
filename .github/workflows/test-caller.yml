@@ -24,6 +24,7 @@ jobs:
     with:
       STRING_INPUT1: 'true'
       STRING_INPUT2: 'false'
+      STRING_INPUT3: ${{ inputs.CALLER_BOOLEAN_INPUT }}
       BOOLEAN_INPUT1: true
       BOOLEAN_INPUT2: false
       BOOLEAN_INPUT3: ${{ inputs.CALLER_BOOLEAN_INPUT }}
