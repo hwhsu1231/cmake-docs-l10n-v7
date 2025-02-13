@@ -9,7 +9,7 @@ on:
 
 jobs:
   caller:
-    uses: ./.github/workflows/test-callee.yml@main
+    uses: ./.github/workflows/test-callee.yml
     with:
       BOOLEAN_INPUT1: 'true'
       BOOLEAN_INPUT2: 'false'
