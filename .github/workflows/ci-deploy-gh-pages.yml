@@ -4,57 +4,13 @@
 name: ci-deploy-gh-pages
 
 on:
-  # Triggers the workflow based on a schedule.
-  schedule:
-    - cron: '0 8 * * 1'   # CRON_dev
-    - cron: '0 8 1 * *'   # CRON_v3
-  # Triggers the workflow manually through the GitHub UI.
-  workflow_dispatch:
-    inputs:
-      TYPE:
-        description: 'TYPE input'
-        required: true
-        type: choice
-        default: 'group'
-        options:
-          - 'single'
-          - 'group'
-      VERSION:
-        description: 'VERSION input (for single type)'
-        required: true
-        type: string
-        default: 'master'
-      VERSION_GROUP:
-        description: 'VERSION_GROUP input (for group type)'
-        required: true
-        type: choice
-        default: 'all'
-        options:
-          - 'all'
-          - 'dev'
-          - 'v3'
-      LANGUAGE:
-        description: 'LANGUAGE input'
-        required: true
-        type: string
-        default: 'all'
-      DEPLOY_ONLY:
-        description: 'DEPLOY_ONLY input'
-        required: true
-        type: choice
-        default: 'false'
-        options:
-          - 'true'
-          - 'false'
-
-env:
-  CRON_dev: '0 8 * * 1'
-  CRON_v3:  '0 8 1 * *'
+  # Triggers the workflow when 'sphinx-build-docs' is completed.
+  repository_dispatch:
+    types:
+      - sphinx-build-docs
 
 jobs:
   precondition:
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Print Contexts/Inputs/Variables/Secrets
@@ -65,13 +21,10 @@ jobs:
           echo "github.ref = ${{ github.ref }}"
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.event_name = ${{ github.event_name }}"
-          echo "github.event.schedule = ${{ github.event.schedule }}"
+          echo "github.event.client_payload.RUN_ID = ${{ github.event.client_payload.RUN_ID }}"
+          echo "github.event.client_payload.DEPLOY_ONLY = ${{ github.event.client_payload.DEPLOY_ONLY }}"
+          echo "github.event.client_payload.DEPLOY_BRANCH = ${{ github.event.client_payload.DEPLOY_BRANCH }}"
           echo "[Inputs]"
-          echo "inputs.TYPE = ${{ inputs.TYPE }}"
-          echo "inputs.VERSION = ${{ inputs.VERSION }}"
-          echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
-          echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
-          echo "inputs.DEPLOY_ONLY = ${{ inputs.DEPLOY_ONLY }}"
           echo "[Variables]"
           echo "vars.RUNNER = ${{ vars.RUNNER }}"
           echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
@@ -111,148 +64,23 @@ jobs:
             exit 1
           fi
 
-  get-matrix:
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
-    runs-on: ${{ vars.RUNNER }}
-    outputs:
-      MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
-      MATRIX_NUM: ${{ steps.gmjl.outputs.MATRIX_NUM }}
-    steps:
-      - name: Checkout to '${{ github.ref }}'
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-          submodules: false
-      - name: Get Outputs from Schedule
-        if: ${{ github.event_name == 'schedule' }}
-        id: gos
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-outputs-from-schedule@main
-        with:
-          schedule: ${{ github.event.schedule }}
-      - name: Get VERSION_LIST from versions.json
-        id: gvav
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
-        with:
-          type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
-          version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
-          version-group: ${{ inputs.VERSION_GROUP || steps.gos.outputs.VERSION_GROUP }}
-          version-filter: 'all'
-      - name: Get LANGUAGE_LIST from languages.json
-        id: glll
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-language-list-from-languages-file@main
-        with:
-          language: ${{ inputs.LANGUAGE || steps.gos.outputs.LANGUAGE }}
-      - name: Get MATRIX from the JSON Lists
-        id: gmjl
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-lists@main
-        with:
-          matrix-type: 'version-language'
-          version-list: ${{ steps.gvav.outputs.VERSION_LIST }}
-          language-list: ${{ steps.glll.outputs.LANGUAGE_LIST }}
-
   caller:
-    needs: [ 'precondition', 'get-matrix' ]
-    if: ${{ ( inputs.DEPLOY_ONLY != 'true' ) &&
-            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
-            ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
-    strategy:
-      matrix: ${{ fromJSON(needs.get-matrix.outputs.MATRIX) }}
-      fail-fast: false
+    needs: [ 'precondition' ]
+    if: ${{ ( ( github.event_name == 'repository_dispatch' &&
+                github.event.action == 'sphinx-build-docs' ) ) }}
     concurrency:
-      group: ${{ github.workflow }}-${{ matrix.VERSION }}-${{ matrix.LANGUAGE }}
+      group: ${{ github.workflow }}
       cancel-in-progress: true
     uses: hwhsu1231/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
-      VERSION: ${{ matrix.VERSION }}
-      LANGUAGE: ${{ matrix.LANGUAGE }}
-      MODE_OF_UPDATE: 'NEVER'
-      BASEURL_HREF: 'https://hwhsu1231.github.io/cmake-docs-l10n-v7'
-      SPHINX_BUILDER: 'html'
-      DEPLOY_HTML: true
-      CALLER_JOB: 'caller (${{ matrix.VERSION }}, ${{ matrix.LANGUAGE }})'
+      RUN_ID: ${{ github.event.client_payload.RUN_ID }}
+      DEPLOY_ONLY: ${{ github.event.client_payload.DEPLOY_ONLY }}
+      DEPLOY_BRANCH: ${{ github.event.client_payload.DEPLOY_BRANCH }}
+      CALLER_JOB: 'caller'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-
-  merge:
-    needs: [ 'caller' ]
-    # Refer to:
-    # - https://github.com/actions/runner/issues/1540
-    # - https://github.com/actions/runner/issues/2205
-    # - https://github.com/actions/runner/issues/2566
-    # - https://github.com/actions/runner/issues/2566#issuecomment-1522574653
-    if: ${{ ( always() ) &&
-            ( !contains(needs.*.result, 'failure') ) &&
-            ( !contains(needs.*.result, 'cancelled') ) &&
-            ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
-    runs-on: ${{ vars.RUNNER }}
-    steps:
-      - name: Checkout to '${{ github.ref }}'
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-          submodules: false
-      - name: Download and Merge Build Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: 'out/html'
-          merge-multiple: true
-          github-token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-      - name: Set up mutex for the 'gh-pages' branch
-        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
-        with:
-          branch: mutex/gh-pages
-          repo-token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-      - name: Deploy to the 'gh-pages' branch
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: 'gh-pages'
-          folder: 'out/html'
-          target-folder: '.'
-          single-commit: true
-          clean: false
-          git-config-name: ${{ vars.ACTOR_NAME }}
-          git-config-email: ${{ vars.ACTOR_EMAIL }}
-          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-
-  deploy:
-    needs: [ 'merge' ]
-    if: ${{ ( always() ) &&
-            ( !contains(needs.*.result, 'failure') ) &&
-            ( !contains(needs.*.result, 'cancelled') ) &&
-            ( ( github.event_name == 'schedule' ) ||
-              ( github.event_name == 'workflow_dispatch' ) ) }}
-    runs-on: ${{ vars.RUNNER }}
-    # Refer to: https://stackoverflow.com/a/76883315
-    permissions:
-      id-token: write
-      pages: write
-    steps:
-      - name: Checkout to 'refs/heads/gh-pages'
-        uses: actions/checkout@v4
-        with:
-          ref: 'refs/heads/gh-pages'
-          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-          submodules: false
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: 'github-pages'
-          path: '.'
-      - name: Deploy Pages Artifact
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: 'github-pages'
-          token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
