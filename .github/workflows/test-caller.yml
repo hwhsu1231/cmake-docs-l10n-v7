@@ -7,6 +7,10 @@ on:
   # Triggers the workflow manually through the GitHub UI.
   workflow_dispatch:
     inputs:
+      CALLER_BOOLEAN_INPUT:
+        description: xxx
+        type: boolean
+        default: true
       CALLER_CHOICE_INPUT:
         description: xxx
         type: choice
@@ -14,17 +18,15 @@ on:
         options:
           - 'true'
           - 'false'
-      CALLER_BOOLEAN_INPUT:
-        description: xxx
-        type: boolean
 
 jobs:
   caller:
     uses: ./.github/workflows/test-callee.yml
     with:
-      STRING_INPUT1: 'true'
-      STRING_INPUT2: 'false'
-      STRING_INPUT3: ${{ inputs.CALLER_BOOLEAN_INPUT }}
       BOOLEAN_INPUT1: true
       BOOLEAN_INPUT2: false
       BOOLEAN_INPUT3: ${{ inputs.CALLER_BOOLEAN_INPUT }}
+      STRING_INPUT1: 'true'
+      STRING_INPUT2: 'false'
+      STRING_INPUT3: ${{ inputs.CALLER_BOOLEAN_INPUT }}
+      STRING_INPUT4: ${{ inputs.CALLER_CHOICE_INPUT }}
