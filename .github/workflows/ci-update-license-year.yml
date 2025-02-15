@@ -4,10 +4,10 @@
 name: ci-update-license-year
 
 on:
-  # Triggers the workflow when LICENSE changes are pushed to the 'source' branch.
+  # Triggers the workflow when LICENSE changes are pushed to the 'main' branch.
   push:
     branches:
-      - 'source'
+      - 'main'
     paths:
       - 'LICENSE'
   # Triggers the workflow based on a schedule.

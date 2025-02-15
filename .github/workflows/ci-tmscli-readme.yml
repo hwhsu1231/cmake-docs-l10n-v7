@@ -4,10 +4,10 @@
 name: ci-tmscli-readme
 
 on:
-  # Triggers the workflow when README changes are pushed to the 'source' branch.
+  # Triggers the workflow when README changes are pushed to the 'main' branch.
   push:
     branches:
-      - 'source'
+      - 'main'
     paths:
       - 'README.md'
       - 'languages.json'
