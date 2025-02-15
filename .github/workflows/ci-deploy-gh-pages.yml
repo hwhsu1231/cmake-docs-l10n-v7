@@ -21,6 +21,7 @@ jobs:
           echo "github.ref = ${{ github.ref }}"
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
           echo "github.event.client_payload.BUILD_RUN_ID = ${{ github.event.client_payload.BUILD_RUN_ID }}"
           echo "github.event.client_payload.DEPLOY_ONLY = ${{ github.event.client_payload.DEPLOY_ONLY }}"
           echo "github.event.client_payload.DEPLOY_BRANCH = ${{ github.event.client_payload.DEPLOY_BRANCH }}"

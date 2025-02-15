@@ -24,8 +24,8 @@ jobs:
           echo "github.job = ${{ github.job }}"
           echo "github.ref = ${{ github.ref }}"
           echo "github.ref_name = ${{ github.ref_name }}"
-          echo "github.run_id = ${{ github.run_id }}"
           echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
           echo "[Inputs]"
           echo "[Variables]"
           echo "vars.RUNNER = ${{ vars.RUNNER }}"
@@ -72,5 +72,5 @@ jobs:
       - name: Read values from 'repository_dispatch' event
         shell: bash
         run: |
-          echo "github.event.client_payload.RUN_ID = ${{ github.event.client_payload.RUN_ID }}"
+          echo "github.event.client_payload.BUILD_RUN_ID = ${{ github.event.client_payload.BUILD_RUN_ID }}"
           echo "github.event.client_payload.DEPLOY_ONLY = ${{ github.event.client_payload.DEPLOY_ONLY }}"

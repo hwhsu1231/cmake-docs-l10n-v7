@@ -50,6 +50,7 @@ jobs:
           echo "github.ref = ${{ github.ref }}"
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
           echo "github.event.client_payload.TYPE = ${{ github.event.client_payload.TYPE }}"
           echo "github.event.client_payload.VERSION = ${{ github.event.client_payload.VERSION }}"
           echo "github.event.client_payload.LANGUAGE = ${{ github.event.client_payload.LANGUAGE }}"
