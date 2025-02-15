@@ -40,7 +40,6 @@ Table of Contents
   <li><a href="#contributors-list">Contributors List</a>
     <ul>
       <li><a href="#code-contributors">Code Contributors</a></li>
-      <li><a href="#translation-contributors">Translation Contributors</a></li>
       <li><a href="#financial-contributors">Financial Contributors</a></li>
     </ul>
   </li>
@@ -538,12 +537,6 @@ Code Contributors
 </a></h3>
 
 <img alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=hwhsu1231/cmake-docs-l10n-v7&no_bot=true">
-
-<h3 id="translation-contributors"><a href="#table-of-contents">
-Translation Contributors
-</a></h3>
-
-See <a href="./docs/CROWDIN_CONTRIBUTORS.md">CROWDIN_CONTRIBUTORS</a>.
 
 <h3 id="financial-contributors"><a href="#table-of-contents">
 Financial Contributors
