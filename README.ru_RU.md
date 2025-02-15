@@ -40,7 +40,6 @@ Table of Contents
   <li><a href="#contributors-list">Contributors List</a>
     <ul>
       <li><a href="#code-contributors">Code Contributors</a></li>
-      <li><a href="#translation-contributors">Translation Contributors</a></li>
       <li><a href="#financial-contributors">Financial Contributors</a></li>
     </ul>
   </li>
@@ -446,6 +445,15 @@ This project is created and currently maintained by the author, Haowei Hsu.
       </tr>
     </thead>
     <tbody>
+      <!-- ru_RU -->
+      <tr>
+        <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
+      </tr>
+      <tr>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+      </tr>
       <!-- zh_CN -->
       <tr>
         <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
@@ -558,12 +566,6 @@ Code Contributors
 </a></h3>
 
 <img alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=hwhsu1231/cmake-docs-l10n-v7&no_bot=true">
-
-<h3 id="translation-contributors"><a href="#table-of-contents">
-Translation Contributors
-</a></h3>
-
-See <a href="./docs/CROWDIN_CONTRIBUTORS.md">CROWDIN_CONTRIBUTORS</a>.
 
 <h3 id="financial-contributors"><a href="#table-of-contents">
 Financial Contributors
