@@ -425,6 +425,15 @@ This project is created and currently maintained by the author, Haowei Hsu.
       </tr>
     </thead>
     <tbody>
+      <!-- ru_RU -->
+      <tr>
+        <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
+      </tr>
+      <tr>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+      </tr>
       <!-- zh_CN -->
       <tr>
         <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
