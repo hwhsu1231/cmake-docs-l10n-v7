@@ -28,9 +28,8 @@ on:
         description: 'VERSION_GROUP input (for group type)'
         required: true
         type: choice
-        default: 'all'
+        default: 'dev'
         options:
-          - 'all'
           - 'dev'
           - 'v3'
       LANGUAGE:
