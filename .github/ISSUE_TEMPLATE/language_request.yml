@@ -1,6 +1,6 @@
 name: Request a New Language
 description: Use this template for requesting a new language.
-title: "[lang] Request a New Language '<sphinx-lang-code>'"
+title: "[lang] Request a New Language '<language-code>'"
 labels: ["lang"]
 assignees:
   - hwhsu1231
@@ -20,8 +20,8 @@ body:
         - **Localized Name:** 繁體中文
         - **Discussion Group:**
       value: |
-        - **Language Code:** `<sphinx-language-code>`
-        - **Crowdin Code:** `<crowdin-language-code>`
+        - **Language Code:**
+        - **Crowdin Code:**
         - **Language Name:**
         - **Localized Name:**
         - **Discussion Group:**
