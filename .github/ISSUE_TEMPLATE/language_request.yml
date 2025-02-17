@@ -14,15 +14,16 @@ body:
       label: Language Request
       description: |
         Examples:
-        - **Sphinx's Language Code:** `zh_CN`
-        - **Crowdin's Language Code:** `zh-CN`
-        - **Language Name:** Simplified Chinese
-        - **Localized Name:** 简体中文
+        - **Language Code:** `zh_TW`
+        - **Crowdin Code:** `zh-TW`
+        - **Language Name:** Traditional Chinese
+        - **Localized Name:** 繁體中文
       value: |
-        - **Sphinx Code:** `<sphinx-language-code>`
+        - **Language Code:** `<sphinx-language-code>`
         - **Crowdin Code:** `<crowdin-language-code>`
-        - **Language Name:** <sphinx-language-name>
-        - **Localized Name:** <localized-name>
+        - **Language Name:**
+        - **Localized Name:**
+        - **Discussion Group:**
     validations:
       required: true
   - type: checkboxes
