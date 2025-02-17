@@ -18,6 +18,7 @@ body:
         - **Crowdin Code:** `zh-TW`
         - **Language Name:** Traditional Chinese
         - **Localized Name:** 繁體中文
+        - **Discussion Group:**
       value: |
         - **Language Code:** `<sphinx-language-code>`
         - **Crowdin Code:** `<crowdin-language-code>`
