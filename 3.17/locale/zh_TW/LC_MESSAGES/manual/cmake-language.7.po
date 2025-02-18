@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.17\n"
+"Project-Id-Version: CMake 3.17\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,6 +128,30 @@ msgstr ""
 msgid ""
 "A CMake Language source file consists of zero or more `Command Invocations`_ "
 "separated by newlines and optionally spaces and `Comments`_:"
+msgstr ""
+
+#: ../../../manual/cmake-language.7.rst:86
+#: ../../../manual/cmake-language.7.rst:113
+#: ../../../manual/cmake-language.7.rst:160
+#: ../../../manual/cmake-language.7.rst:180
+#: ../../../manual/cmake-language.7.rst:237
+#: ../../../manual/cmake-language.7.rst:300
+#: ../../../manual/cmake-language.7.rst:364
+#: ../../../manual/cmake-language.7.rst:436
+#: ../../../manual/cmake-language.7.rst:467
+msgid "\\begin{small}"
+msgstr ""
+
+#: ../../../manual/cmake-language.7.rst:98
+#: ../../../manual/cmake-language.7.rst:125
+#: ../../../manual/cmake-language.7.rst:167
+#: ../../../manual/cmake-language.7.rst:191
+#: ../../../manual/cmake-language.7.rst:248
+#: ../../../manual/cmake-language.7.rst:310
+#: ../../../manual/cmake-language.7.rst:374
+#: ../../../manual/cmake-language.7.rst:443
+#: ../../../manual/cmake-language.7.rst:475
+msgid "\\end{small}"
 msgstr ""
 
 #: ../../../manual/cmake-language.7.rst:102
