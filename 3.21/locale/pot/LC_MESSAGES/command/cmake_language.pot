@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.21\n"
+"Project-Id-Version: CMake 3.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -176,7 +177,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/cmake_language.rst:133
+#: ../../../command/cmake_language.rst:124
 msgid "``DIRECTORY <dir>``"
 msgstr ""
 
@@ -196,7 +197,7 @@ msgid ""
 "the current directory or one of its ancestors."
 msgstr ""
 
-#: ../../../command/cmake_language.rst:139
+#: ../../../command/cmake_language.rst:135
 msgid "``ID <id>``"
 msgstr ""
 
@@ -208,7 +209,7 @@ msgid ""
 "an earlier call that used ``ID_VAR`` to get the id."
 msgstr ""
 
-#: ../../../command/cmake_language.rst:144
+#: ../../../command/cmake_language.rst:141
 msgid "``ID_VAR <var>``"
 msgstr ""
 
