@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.23\n"
+"Project-Id-Version: CMake 3.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -351,7 +352,7 @@ msgid ""
 "caller:"
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:276
+#: ../../../../Modules/FetchContent.cmake:275
 msgid "``<lowercaseName>_POPULATED``"
 msgstr ""
 
@@ -359,7 +360,7 @@ msgstr ""
 msgid "This will always be set to ``TRUE`` by the call."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:279
+#: ../../../../Modules/FetchContent.cmake:278
 msgid "``<lowercaseName>_SOURCE_DIR``"
 msgstr ""
 
@@ -367,7 +368,7 @@ msgstr ""
 msgid "The location where the populated content can be found upon return."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:282
+#: ../../../../Modules/FetchContent.cmake:281
 msgid "``<lowercaseName>_BINARY_DIR``"
 msgstr ""
 
@@ -470,7 +471,7 @@ msgid ""
 "slightly modified from how :command:`ExternalProject_Add` treats them:"
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:347
+#: ../../../../Modules/FetchContent.cmake:341
 msgid "``QUIET``"
 msgstr ""
 
@@ -484,7 +485,7 @@ msgid ""
 "content details are provided directly."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:356
+#: ../../../../Modules/FetchContent.cmake:349
 msgid "``SUBBUILD_DIR``"
 msgstr ""
 
@@ -499,7 +500,7 @@ msgid ""
 "only affects the :command:`FetchContent_MakeAvailable` command."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:365
+#: ../../../../Modules/FetchContent.cmake:358
 msgid "``SOURCE_DIR``, ``BINARY_DIR``"
 msgstr ""
 

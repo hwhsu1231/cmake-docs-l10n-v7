@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.23\n"
+"Project-Id-Version: CMake 3.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -118,7 +119,7 @@ msgstr ""
 msgid "The following conventions are used in this command's documentation:"
 msgstr ""
 
-#: ../../../command/cmake_path.rst:85
+#: ../../../command/cmake_path.rst:83
 msgid "``<path-var>``"
 msgstr ""
 
@@ -128,7 +129,7 @@ msgid ""
 "input, the variable must exist and it is expected to hold a single path."
 msgstr ""
 
-#: ../../../command/cmake_path.rst:90
+#: ../../../command/cmake_path.rst:87
 msgid "``<input>``"
 msgstr ""
 
@@ -139,7 +140,7 @@ msgid ""
 "each command to see how this is interpreted."
 msgstr ""
 
-#: ../../../command/cmake_path.rst:93
+#: ../../../command/cmake_path.rst:92
 msgid "``<input>...``"
 msgstr ""
 
@@ -147,7 +148,7 @@ msgstr ""
 msgid "Zero or more string literal arguments."
 msgstr ""
 
-#: ../../../command/cmake_path.rst:97
+#: ../../../command/cmake_path.rst:95
 msgid "``<out-var>``"
 msgstr ""
 
@@ -171,7 +172,7 @@ msgid ""
 "root-name root-directory-separator (item-name directory-separator)* filename"
 msgstr ""
 
-#: ../../../command/cmake_path.rst:111
+#: ../../../command/cmake_path.rst:109
 msgid "``root-name``"
 msgstr ""
 
@@ -181,7 +182,7 @@ msgid ""
 "or ``\"//myserver\"``). It is optional."
 msgstr ""
 
-#: ../../../command/cmake_path.rst:116
+#: ../../../command/cmake_path.rst:113
 msgid "``root-directory-separator``"
 msgstr ""
 
@@ -192,7 +193,7 @@ msgid ""
 "name`` is an ``item-name``, then the path is relative."
 msgstr ""
 
-#: ../../../command/cmake_path.rst:131
+#: ../../../command/cmake_path.rst:118
 msgid "``item-name``"
 msgstr ""
 
@@ -222,7 +223,7 @@ msgid ""
 "separator``.  The ``()*`` characters are not part of the path."
 msgstr ""
 
-#: ../../../command/cmake_path.rst:136
+#: ../../../command/cmake_path.rst:133
 msgid "``directory-separator``"
 msgstr ""
 
@@ -233,7 +234,7 @@ msgid ""
 "separator.  In other words, ``/usr///////lib`` is the same as ``/usr/lib``."
 msgstr ""
 
-#: ../../../command/cmake_path.rst:161
+#: ../../../command/cmake_path.rst:142
 msgid "``filename``"
 msgstr ""
 

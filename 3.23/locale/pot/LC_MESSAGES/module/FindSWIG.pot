@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.23\n"
+"Project-Id-Version: CMake 3.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,7 +80,7 @@ msgstr ""
 msgid "SWIG executable version (result of ``swig -version``)."
 msgstr ""
 
-#: ../../../../Modules/FindSWIG.cmake:34
+#: ../../../../Modules/FindSWIG.cmake:32
 msgid "``SWIG_<lang>_FOUND``"
 msgstr ""
 
