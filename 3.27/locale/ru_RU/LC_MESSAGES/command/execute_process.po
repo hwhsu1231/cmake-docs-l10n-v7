@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgstr ""
 msgid "Options:"
 msgstr ""
 
-#: ../../../command/execute_process.rst:60
+#: ../../../command/execute_process.rst:42
 msgid "``COMMAND``"
 msgstr ""
 
@@ -110,7 +110,7 @@ msgid ""
 "``execute_process`` calls each with a single ``COMMAND`` argument."
 msgstr ""
 
-#: ../../../command/execute_process.rst:64
+#: ../../../command/execute_process.rst:62
 msgid "``WORKING_DIRECTORY``"
 msgstr ""
 
@@ -120,7 +120,7 @@ msgid ""
 "child processes."
 msgstr ""
 
-#: ../../../command/execute_process.rst:69
+#: ../../../command/execute_process.rst:66
 msgid "``TIMEOUT``"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgid ""
 "to a string mentioning the \"timeout\"."
 msgstr ""
 
-#: ../../../command/execute_process.rst:74
+#: ../../../command/execute_process.rst:71
 msgid "``RESULT_VARIABLE``"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgid ""
 "error condition."
 msgstr ""
 
-#: ../../../command/execute_process.rst:82
+#: ../../../command/execute_process.rst:76
 msgid "``RESULTS_VARIABLE <variable>``"
 msgstr ""
 
@@ -154,7 +154,7 @@ msgid ""
 "corresponding child or a string describing an error condition."
 msgstr ""
 
-#: ../../../command/execute_process.rst:86
+#: ../../../command/execute_process.rst:84
 msgid "``INPUT_FILE <file>``"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgid ""
 "process."
 msgstr ""
 
-#: ../../../command/execute_process.rst:90
+#: ../../../command/execute_process.rst:88
 msgid "``OUTPUT_FILE <file>``"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgid ""
 "process."
 msgstr ""
 
-#: ../../../command/execute_process.rst:94
+#: ../../../command/execute_process.rst:92
 msgid "``ERROR_FILE <file>``"
 msgstr ""
 
@@ -190,7 +190,7 @@ msgid ""
 "then it will be used for both standard output and standard error pipes."
 msgstr ""
 
-#: ../../../command/execute_process.rst:103
+#: ../../../command/execute_process.rst:100
 msgid "``OUTPUT_QUIET``, ``ERROR_QUIET``"
 msgstr ""
 
@@ -201,7 +201,7 @@ msgid ""
 "and ``ECHO_*_VARIABLE`` options are not affected."
 msgstr ""
 
-#: ../../../command/execute_process.rst:108
+#: ../../../command/execute_process.rst:105
 msgid "``OUTPUT_VARIABLE``, ``ERROR_VARIABLE``"
 msgstr ""
 
@@ -212,7 +212,7 @@ msgid ""
 "pipes their output will be merged in the order produced."
 msgstr ""
 
-#: ../../../command/execute_process.rst:117
+#: ../../../command/execute_process.rst:110
 msgid "``ECHO_OUTPUT_VARIABLE``, ``ECHO_ERROR_VARIABLE``"
 msgstr ""
 
@@ -236,7 +236,7 @@ msgid ""
 "the CMake process itself."
 msgstr ""
 
-#: ../../../command/execute_process.rst:131
+#: ../../../command/execute_process.rst:125
 msgid "``COMMAND_ECHO <where>``"
 msgstr ""
 
@@ -248,7 +248,7 @@ msgid ""
 "default behavior when this option is not present."
 msgstr ""
 
-#: ../../../command/execute_process.rst:156
+#: ../../../command/execute_process.rst:133
 msgid "``ENCODING <name>``"
 msgstr ""
 
@@ -258,7 +258,7 @@ msgid ""
 "Ignored on other platforms. Valid encoding names are:"
 msgstr ""
 
-#: ../../../command/execute_process.rst:142
+#: ../../../command/execute_process.rst:140
 msgid "``NONE``"
 msgstr ""
 
@@ -268,7 +268,7 @@ msgid ""
 "same way as CMake's internal encoding (UTF-8). This is the default."
 msgstr ""
 
-#: ../../../command/execute_process.rst:145
+#: ../../../command/execute_process.rst:144
 msgid "``AUTO``"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgstr ""
 msgid "Use the original equipment manufacturer (OEM) code page."
 msgstr ""
 
-#: ../../../command/execute_process.rst:156
+#: ../../../command/execute_process.rst:151
 msgid "``UTF8`` or ``UTF-8``"
 msgstr ""
 
@@ -308,7 +308,7 @@ msgid ""
 "ietf.org/rfc/rfc3629>`_ naming convention."
 msgstr ""
 
-#: ../../../command/execute_process.rst:170
+#: ../../../command/execute_process.rst:158
 msgid "``COMMAND_ERROR_IS_FATAL <ANY|LAST>``"
 msgstr ""
 

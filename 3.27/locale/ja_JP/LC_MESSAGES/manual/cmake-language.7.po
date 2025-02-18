@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,6 +128,30 @@ msgstr ""
 msgid ""
 "A CMake Language source file consists of zero or more `Command Invocations`_ "
 "separated by newlines and optionally spaces and `Comments`_:"
+msgstr ""
+
+#: ../../../manual/cmake-language.7.rst:86
+#: ../../../manual/cmake-language.7.rst:113
+#: ../../../manual/cmake-language.7.rst:160
+#: ../../../manual/cmake-language.7.rst:180
+#: ../../../manual/cmake-language.7.rst:237
+#: ../../../manual/cmake-language.7.rst:300
+#: ../../../manual/cmake-language.7.rst:364
+#: ../../../manual/cmake-language.7.rst:438
+#: ../../../manual/cmake-language.7.rst:469
+msgid "\\begin{small}"
+msgstr ""
+
+#: ../../../manual/cmake-language.7.rst:98
+#: ../../../manual/cmake-language.7.rst:125
+#: ../../../manual/cmake-language.7.rst:167
+#: ../../../manual/cmake-language.7.rst:191
+#: ../../../manual/cmake-language.7.rst:248
+#: ../../../manual/cmake-language.7.rst:310
+#: ../../../manual/cmake-language.7.rst:374
+#: ../../../manual/cmake-language.7.rst:445
+#: ../../../manual/cmake-language.7.rst:477
+msgid "\\end{small}"
 msgstr ""
 
 #: ../../../manual/cmake-language.7.rst:102
@@ -538,7 +562,7 @@ msgid ""
 "binding in the current scope:"
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:534
+#: ../../../manual/cmake-language.7.rst:533
 msgid "Block Scope"
 msgstr ""
 
@@ -547,7 +571,7 @@ msgid ""
 "The :command:`block` command may create a new scope for variable bindings."
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:541
+#: ../../../manual/cmake-language.7.rst:536
 msgid "Function Scope"
 msgstr ""
 
@@ -560,7 +584,7 @@ msgid ""
 "after the function returns."
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:552
+#: ../../../manual/cmake-language.7.rst:543
 msgid "Directory Scope"
 msgstr ""
 
@@ -579,7 +603,7 @@ msgid ""
 "current directory scope."
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:559
+#: ../../../manual/cmake-language.7.rst:554
 msgid "Persistent Cache"
 msgstr ""
 
@@ -637,7 +661,7 @@ msgid ""
 "differences:"
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:587
+#: ../../../manual/cmake-language.7.rst:585
 msgid "Scope"
 msgstr ""
 
@@ -647,7 +671,7 @@ msgid ""
 "cached."
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:591
+#: ../../../manual/cmake-language.7.rst:589
 msgid "References"
 msgstr ""
 
@@ -657,7 +681,7 @@ msgid ""
 "variable:`ENV` operator."
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:604
+#: ../../../manual/cmake-language.7.rst:593
 msgid "Initialization"
 msgstr ""
 
@@ -676,7 +700,7 @@ msgid ""
 "command in a modified environment."
 msgstr ""
 
-#: ../../../manual/cmake-language.7.rst:608
+#: ../../../manual/cmake-language.7.rst:606
 msgid "Inspection"
 msgstr ""
 

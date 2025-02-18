@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Supported values are:"
 msgstr ""
 
-#: ../../../prop_tgt/OBJC_STANDARD.rst:15
+#: ../../../prop_tgt/OBJC_STANDARD.rst:14
 msgid "``90``"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Objective C89/C90"
 msgstr ""
 
-#: ../../../prop_tgt/OBJC_STANDARD.rst:18
+#: ../../../prop_tgt/OBJC_STANDARD.rst:17
 msgid "``99``"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Objective C99"
 msgstr ""
 
-#: ../../../prop_tgt/OBJC_STANDARD.rst:21
+#: ../../../prop_tgt/OBJC_STANDARD.rst:20
 msgid "``11``"
 msgstr ""
 

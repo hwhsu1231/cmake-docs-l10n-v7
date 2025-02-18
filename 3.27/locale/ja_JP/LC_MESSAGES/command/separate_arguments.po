@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid ""
 "by the ``<mode>`` argument which must be one of the following keywords:"
 msgstr ""
 
-#: ../../../command/separate_arguments.rst:25
+#: ../../../command/separate_arguments.rst:21
 msgid "``UNIX_COMMAND``"
 msgstr ""
 
@@ -58,7 +58,7 @@ msgid ""
 "(``\\\"`` is ``\"``); there are no special escapes (``\\n`` is just ``n``)."
 msgstr ""
 
-#: ../../../command/separate_arguments.rst:32
+#: ../../../command/separate_arguments.rst:27
 msgid "``WINDOWS_COMMAND``"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgid ""
 "details."
 msgstr ""
 
-#: ../../../command/separate_arguments.rst:38
+#: ../../../command/separate_arguments.rst:34
 msgid "``NATIVE_COMMAND``"
 msgstr ""
 
@@ -81,7 +81,7 @@ msgid ""
 "Otherwise proceeds as in ``UNIX_COMMAND`` mode."
 msgstr ""
 
-#: ../../../command/separate_arguments.rst:58
+#: ../../../command/separate_arguments.rst:40
 msgid "``PROGRAM``"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgstr ""
 msgid "Second element of the list: ``\" -c main.c\"``"
 msgstr ""
 
-#: ../../../command/separate_arguments.rst:70
+#: ../../../command/separate_arguments.rst:60
 msgid "``SEPARATE_ARGS``"
 msgstr ""
 

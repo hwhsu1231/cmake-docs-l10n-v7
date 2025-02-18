@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid ""
 "used to tailor the external project behavior."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:122
+#: ../../../../Modules/ExternalProject.cmake:37
 msgid "**Directory Options:**"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgid ""
 "project."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:50
+#: ../../../../Modules/ExternalProject.cmake:47
 msgid "``PREFIX <dir>``"
 msgstr ""
 
@@ -81,7 +81,7 @@ msgid ""
 "here."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:53
+#: ../../../../Modules/ExternalProject.cmake:52
 msgid "``TMP_DIR <dir>``"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgstr ""
 msgid "Directory in which to store temporary files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:58
+#: ../../../../Modules/ExternalProject.cmake:55
 msgid "``STAMP_DIR <dir>``"
 msgstr ""
 
@@ -100,7 +100,7 @@ msgid ""
 "*Logging Options* below)."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:63
+#: ../../../../Modules/ExternalProject.cmake:60
 msgid "``LOG_DIR <dir>``"
 msgstr ""
 
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Directory in which to store the logs of each step."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:68
+#: ../../../../Modules/ExternalProject.cmake:65
 msgid "``DOWNLOAD_DIR <dir>``"
 msgstr ""
 
@@ -119,7 +119,7 @@ msgid ""
 "methods use ``SOURCE_DIR`` directly instead."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:83
+#: ../../../../Modules/ExternalProject.cmake:70
 msgid "``SOURCE_DIR <dir>``"
 msgstr ""
 
@@ -141,7 +141,7 @@ msgid ""
 "silently discard any previous contents of the source directory."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:87
+#: ../../../../Modules/ExternalProject.cmake:85
 msgid "``BINARY_DIR <dir>``"
 msgstr ""
 
@@ -151,7 +151,7 @@ msgid ""
 "``BUILD_IN_SOURCE`` is enabled."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:93
+#: ../../../../Modules/ExternalProject.cmake:89
 msgid "``INSTALL_DIR <dir>``"
 msgstr ""
 
@@ -207,7 +207,7 @@ msgid ""
 "point where ``ExternalProject_Add()`` is called."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:441
+#: ../../../../Modules/ExternalProject.cmake:124
 msgid "**Download Step Options:**"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgid ""
 "given) or a custom ``DOWNLOAD_COMMAND`` provided."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:135
+#: ../../../../Modules/ExternalProject.cmake:130
 msgid "``DOWNLOAD_COMMAND <cmd>...``"
 msgstr ""
 
@@ -231,11 +231,11 @@ msgid ""
 "string for ``<cmd>`` effectively disables the download step."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:276
+#: ../../../../Modules/ExternalProject.cmake:137
 msgid "*URL Download*"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:152
+#: ../../../../Modules/ExternalProject.cmake:138
 msgid "``URL <url1> [<url2>...]``"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Multiple URLs are allowed."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:162
+#: ../../../../Modules/ExternalProject.cmake:154
 msgid "``URL_HASH <algo>=<hashValue>``"
 msgstr ""
 
@@ -273,7 +273,7 @@ msgid ""
 "download that matches the specified hash."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:165
+#: ../../../../Modules/ExternalProject.cmake:164
 msgid "``URL_MD5 <md5>``"
 msgstr ""
 
@@ -281,7 +281,7 @@ msgstr ""
 msgid "Equivalent to ``URL_HASH MD5=<md5>``."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:171
+#: ../../../../Modules/ExternalProject.cmake:167
 msgid "``DOWNLOAD_NAME <fname>``"
 msgstr ""
 
@@ -293,7 +293,7 @@ msgid ""
 "internal to the ``ExternalProject`` module."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:184
+#: ../../../../Modules/ExternalProject.cmake:173
 msgid "``DOWNLOAD_EXTRACT_TIMESTAMP <bool>``"
 msgstr ""
 
@@ -310,7 +310,7 @@ msgid ""
 "policy :policy:`CMP0135`."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:195
+#: ../../../../Modules/ExternalProject.cmake:186
 msgid "``DOWNLOAD_NO_EXTRACT <bool>``"
 msgstr ""
 
@@ -324,7 +324,7 @@ msgid ""
 "``DOWNLOADED_FILE`` with the :command:`ExternalProject_Get_Property` command."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:199
+#: ../../../../Modules/ExternalProject.cmake:197
 msgid "``DOWNLOAD_NO_PROGRESS <bool>``"
 msgstr ""
 
@@ -334,7 +334,7 @@ msgid ""
 "given, download progress messages will be logged."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:202
+#: ../../../../Modules/ExternalProject.cmake:201
 msgid "``TIMEOUT <seconds>``"
 msgstr ""
 
@@ -342,7 +342,7 @@ msgstr ""
 msgid "Maximum time allowed for file download operations."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:207
+#: ../../../../Modules/ExternalProject.cmake:204
 msgid "``INACTIVITY_TIMEOUT <seconds>``"
 msgstr ""
 
@@ -350,7 +350,7 @@ msgstr ""
 msgid "Terminate the operation after a period of inactivity."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:212
+#: ../../../../Modules/ExternalProject.cmake:209
 msgid "``HTTP_USERNAME <username>``"
 msgstr ""
 
@@ -358,7 +358,7 @@ msgstr ""
 msgid "Username for the download operation if authentication is required."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:217
+#: ../../../../Modules/ExternalProject.cmake:214
 msgid "``HTTP_PASSWORD <password>``"
 msgstr ""
 
@@ -366,7 +366,7 @@ msgstr ""
 msgid "Password for the download operation if authentication is required."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:223
+#: ../../../../Modules/ExternalProject.cmake:219
 msgid "``HTTP_HEADER <header1> [<header2>...]``"
 msgstr ""
 
@@ -376,7 +376,7 @@ msgid ""
 "can be useful for accessing content in systems like AWS, etc."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:240
+#: ../../../../Modules/ExternalProject.cmake:225
 msgid "``TLS_VERIFY <bool>``"
 msgstr ""
 
@@ -399,7 +399,7 @@ msgid ""
 "but the user may have overridden this at a global level."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:246
+#: ../../../../Modules/ExternalProject.cmake:242
 msgid "``TLS_CAINFO <file>``"
 msgstr ""
 
@@ -411,7 +411,7 @@ msgid ""
 "`file(DOWNLOAD)`)"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:265
+#: ../../../../Modules/ExternalProject.cmake:248
 msgid "``NETRC <level>``"
 msgstr ""
 
@@ -422,7 +422,7 @@ msgid ""
 "will be used instead (see :command:`file(DOWNLOAD)`).  Valid levels are:"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:257
+#: ../../../../Modules/ExternalProject.cmake:256
 msgid "``IGNORED``"
 msgstr ""
 
@@ -430,7 +430,7 @@ msgstr ""
 msgid "The ``.netrc`` file is ignored. This is the default."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:261
+#: ../../../../Modules/ExternalProject.cmake:259
 msgid "``OPTIONAL``"
 msgstr ""
 
@@ -441,7 +441,7 @@ msgid ""
 "the URL."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:265
+#: ../../../../Modules/ExternalProject.cmake:263
 msgid "``REQUIRED``"
 msgstr ""
 
@@ -449,7 +449,7 @@ msgstr ""
 msgid "The ``.netrc`` file is required, and information in the URL is ignored."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:273
+#: ../../../../Modules/ExternalProject.cmake:267
 msgid "``NETRC_FILE <file>``"
 msgstr ""
 
@@ -465,7 +465,7 @@ msgstr ""
 msgid "Added support for `tbz2`, `.tar.xz`, `.txz`, and `.7z` extensions."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:406
+#: ../../../../Modules/ExternalProject.cmake:278
 msgid "*Git*"
 msgstr ""
 
@@ -475,7 +475,7 @@ msgid ""
 "used."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:291
+#: ../../../../Modules/ExternalProject.cmake:282
 msgid "``GIT_REPOSITORY <url>``"
 msgstr ""
 
@@ -493,7 +493,7 @@ msgid ""
 "fail.  Local filesystem remotes should always use absolute paths."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:317
+#: ../../../../Modules/ExternalProject.cmake:293
 msgid "``GIT_TAG <tag>``"
 msgstr ""
 
@@ -537,7 +537,7 @@ msgid ""
 "default Git branch name."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:321
+#: ../../../../Modules/ExternalProject.cmake:319
 msgid "``GIT_REMOTE_NAME <name>``"
 msgstr ""
 
@@ -547,7 +547,7 @@ msgid ""
 "defaults to ``origin``."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:329
+#: ../../../../Modules/ExternalProject.cmake:323
 msgid "``GIT_SUBMODULES <module>...``"
 msgstr ""
 
@@ -563,7 +563,7 @@ msgid ""
 "string then no submodules are initialized or updated."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:336
+#: ../../../../Modules/ExternalProject.cmake:331
 msgid "``GIT_SUBMODULES_RECURSE <bool>``"
 msgstr ""
 
@@ -574,7 +574,7 @@ msgid ""
 "default is on."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:344
+#: ../../../../Modules/ExternalProject.cmake:338
 msgid "``GIT_SHALLOW <bool>``"
 msgstr ""
 
@@ -586,7 +586,7 @@ msgid ""
 "by the ``GIT_TAG`` option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:355
+#: ../../../../Modules/ExternalProject.cmake:346
 msgid "``GIT_PROGRESS <bool>``"
 msgstr ""
 
@@ -601,7 +601,7 @@ msgid ""
 "projects are used."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:363
+#: ../../../../Modules/ExternalProject.cmake:357
 msgid "``GIT_CONFIG <option1> [<option2>...]``"
 msgstr ""
 
@@ -613,7 +613,7 @@ msgid ""
 "``key=value``."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:406
+#: ../../../../Modules/ExternalProject.cmake:365
 msgid "``GIT_REMOTE_UPDATE_STRATEGY <strategy>``"
 msgstr ""
 
@@ -624,7 +624,7 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:374
+#: ../../../../Modules/ExternalProject.cmake:372
 msgid "``CHECKOUT``"
 msgstr ""
 
@@ -634,7 +634,7 @@ msgid ""
 "``GIT_TAG``."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:387
+#: ../../../../Modules/ExternalProject.cmake:376
 msgid "``REBASE``"
 msgstr ""
 
@@ -651,7 +651,7 @@ msgid ""
 "situation, ``REBASE`` will silently be treated as ``CHECKOUT`` instead."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:398
+#: ../../../../Modules/ExternalProject.cmake:389
 msgid "``REBASE_CHECKOUT``"
 msgstr ""
 
@@ -677,11 +677,11 @@ msgid ""
 "builds resulting from conflicts during rebase operations."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:424
+#: ../../../../Modules/ExternalProject.cmake:408
 msgid "*Subversion*"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:410
+#: ../../../../Modules/ExternalProject.cmake:409
 msgid "``SVN_REPOSITORY <url>``"
 msgstr ""
 
@@ -689,7 +689,7 @@ msgstr ""
 msgid "URL of the Subversion repository."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:413
+#: ../../../../Modules/ExternalProject.cmake:412
 msgid "``SVN_REVISION -r<rev>``"
 msgstr ""
 
@@ -697,7 +697,7 @@ msgstr ""
 msgid "Revision to checkout from the Subversion repository."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:416
+#: ../../../../Modules/ExternalProject.cmake:415
 msgid "``SVN_USERNAME <username>``"
 msgstr ""
 
@@ -705,7 +705,7 @@ msgstr ""
 msgid "Username for the Subversion checkout and update."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:419
+#: ../../../../Modules/ExternalProject.cmake:418
 msgid "``SVN_PASSWORD <password>``"
 msgstr ""
 
@@ -713,7 +713,7 @@ msgstr ""
 msgid "Password for the Subversion checkout and update."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:424
+#: ../../../../Modules/ExternalProject.cmake:421
 msgid "``SVN_TRUST_CERT <bool>``"
 msgstr ""
 
@@ -724,11 +724,11 @@ msgid ""
 "checkout and update commands."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:431
+#: ../../../../Modules/ExternalProject.cmake:426
 msgid "*Mercurial*"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:428
+#: ../../../../Modules/ExternalProject.cmake:427
 msgid "``HG_REPOSITORY <url>``"
 msgstr ""
 
@@ -736,7 +736,7 @@ msgstr ""
 msgid "URL of the mercurial repository."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:431
+#: ../../../../Modules/ExternalProject.cmake:430
 msgid "``HG_TAG <tag>``"
 msgstr ""
 
@@ -744,11 +744,11 @@ msgstr ""
 msgid "Mercurial branch name, tag or commit id."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:441
+#: ../../../../Modules/ExternalProject.cmake:433
 msgid "*CVS*"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:435
+#: ../../../../Modules/ExternalProject.cmake:434
 msgid "``CVS_REPOSITORY <cvsroot>``"
 msgstr ""
 
@@ -756,7 +756,7 @@ msgstr ""
 msgid "CVSROOT of the CVS repository."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:438
+#: ../../../../Modules/ExternalProject.cmake:437
 msgid "``CVS_MODULE <mod>``"
 msgstr ""
 
@@ -764,7 +764,7 @@ msgstr ""
 msgid "Module to checkout from the CVS repository."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:441
+#: ../../../../Modules/ExternalProject.cmake:440
 msgid "``CVS_TAG <tag>``"
 msgstr ""
 
@@ -772,7 +772,7 @@ msgstr ""
 msgid "Tag to checkout from the CVS repository."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:486
+#: ../../../../Modules/ExternalProject.cmake:443
 msgid "**Update Step Options:**"
 msgstr ""
 
@@ -783,7 +783,7 @@ msgid ""
 "be checked if the ``GIT_TAG`` does not refer to a specific commit)."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:451
+#: ../../../../Modules/ExternalProject.cmake:448
 msgid "``UPDATE_COMMAND <cmd>...``"
 msgstr ""
 
@@ -794,7 +794,7 @@ msgid ""
 "expressions(7)>`."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:486
+#: ../../../../Modules/ExternalProject.cmake:453
 msgid "``UPDATE_DISCONNECTED <bool>``"
 msgstr ""
 
@@ -839,11 +839,11 @@ msgid ""
 "``download`` step.  See policy :policy:`CMP0114`."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:495
+#: ../../../../Modules/ExternalProject.cmake:488
 msgid "**Patch Step Options:**"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:495
+#: ../../../../Modules/ExternalProject.cmake:489
 msgid "``PATCH_COMMAND <cmd>...``"
 msgstr ""
 
@@ -857,7 +857,7 @@ msgid ""
 "updating to the new tag."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:611
+#: ../../../../Modules/ExternalProject.cmake:497
 msgid "**Configure Step Options:**"
 msgstr ""
 
@@ -868,7 +868,7 @@ msgid ""
 "overridden if required."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:515
+#: ../../../../Modules/ExternalProject.cmake:502
 msgid "``CONFIGURE_COMMAND <cmd>...``"
 msgstr ""
 
@@ -892,7 +892,7 @@ msgid ""
 "the command to execute."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:522
+#: ../../../../Modules/ExternalProject.cmake:517
 msgid "``CMAKE_COMMAND /.../cmake``"
 msgstr ""
 
@@ -905,7 +905,7 @@ msgid ""
 "``CONFIGURE_COMMAND``."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:528
+#: ../../../../Modules/ExternalProject.cmake:524
 msgid "``CMAKE_GENERATOR <gen>``"
 msgstr ""
 
@@ -917,7 +917,7 @@ msgid ""
 "``CONFIGURE_COMMAND`` option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:535
+#: ../../../../Modules/ExternalProject.cmake:530
 msgid "``CMAKE_GENERATOR_PLATFORM <platform>``"
 msgstr ""
 
@@ -928,7 +928,7 @@ msgid ""
 "the ``CMAKE_GENERATOR`` option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:540
+#: ../../../../Modules/ExternalProject.cmake:537
 msgid "``CMAKE_GENERATOR_TOOLSET <toolset>``"
 msgstr ""
 
@@ -939,7 +939,7 @@ msgid ""
 "the ``CMAKE_GENERATOR`` option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:547
+#: ../../../../Modules/ExternalProject.cmake:542
 msgid "``CMAKE_GENERATOR_INSTANCE <instance>``"
 msgstr ""
 
@@ -950,7 +950,7 @@ msgid ""
 "without the ``CMAKE_GENERATOR`` option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:557
+#: ../../../../Modules/ExternalProject.cmake:549
 msgid "``CMAKE_ARGS <arg>...``"
 msgstr ""
 
@@ -969,7 +969,7 @@ msgid ""
 "expressions(7)>`."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:569
+#: ../../../../Modules/ExternalProject.cmake:559
 msgid "``CMAKE_CACHE_ARGS <arg>...``"
 msgstr ""
 
@@ -983,7 +983,7 @@ msgid ""
 "C <cmake(1)>` command line option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:584
+#: ../../../../Modules/ExternalProject.cmake:571
 msgid "``CMAKE_CACHE_DEFAULT_ARGS <arg>...``"
 msgstr ""
 
@@ -1004,7 +1004,7 @@ msgid ""
 "customization cache variables are propagated into the external project."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:599
+#: ../../../../Modules/ExternalProject.cmake:586
 msgid "``SOURCE_SUBDIR <dir>``"
 msgstr ""
 
@@ -1024,7 +1024,7 @@ msgid ""
 "point to an alternative directory within the source tree."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:611
+#: ../../../../Modules/ExternalProject.cmake:601
 msgid "``CONFIGURE_HANDLED_BY_BUILD <bool>``"
 msgstr ""
 
@@ -1040,7 +1040,7 @@ msgid ""
 "needs to be rerun."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:666
+#: ../../../../Modules/ExternalProject.cmake:613
 msgid "**Build Step Options:**"
 msgstr ""
 
@@ -1066,7 +1066,7 @@ msgid ""
 "tool)."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:638
+#: ../../../../Modules/ExternalProject.cmake:630
 msgid "``BUILD_COMMAND <cmd>...``"
 msgstr ""
 
@@ -1081,7 +1081,7 @@ msgid ""
 "do nothing."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:645
+#: ../../../../Modules/ExternalProject.cmake:640
 msgid "``BUILD_IN_SOURCE <bool>``"
 msgstr ""
 
@@ -1094,7 +1094,7 @@ msgid ""
 "should not be specified if building in-source."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:655
+#: ../../../../Modules/ExternalProject.cmake:647
 msgid "``BUILD_ALWAYS <bool>``"
 msgstr ""
 
@@ -1110,7 +1110,7 @@ msgid ""
 "the sources in ``SOURCE_DIR``)."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:666
+#: ../../../../Modules/ExternalProject.cmake:657
 msgid "``BUILD_BYPRODUCTS <file>...``"
 msgstr ""
 
@@ -1124,7 +1124,7 @@ msgid ""
 "`add_custom_command`, which has additional documentation."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:714
+#: ../../../../Modules/ExternalProject.cmake:668
 msgid "**Install Step Options:**"
 msgstr ""
 
@@ -1136,7 +1136,7 @@ msgid ""
 "step. This can be overridden with custom install commands if required."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:687
+#: ../../../../Modules/ExternalProject.cmake:674
 msgid "``INSTALL_COMMAND <cmd>...``"
 msgstr ""
 
@@ -1156,7 +1156,7 @@ msgid ""
 "do nothing."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:698
+#: ../../../../Modules/ExternalProject.cmake:689
 msgid "``INSTALL_BYPRODUCTS <file>...``"
 msgstr ""
 
@@ -1197,7 +1197,7 @@ msgid ""
 "`CMAKE_INSTALL_MODE` environment variable changes from one run to another."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:750
+#: ../../../../Modules/ExternalProject.cmake:716
 msgid "**Test Step Options:**"
 msgstr ""
 
@@ -1207,7 +1207,7 @@ msgid ""
 "options are provided."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:729
+#: ../../../../Modules/ExternalProject.cmake:720
 msgid "``TEST_COMMAND <cmd>...``"
 msgstr ""
 
@@ -1223,7 +1223,7 @@ msgid ""
 "options altogether if the test step target is not needed."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:734
+#: ../../../../Modules/ExternalProject.cmake:731
 msgid "``TEST_BEFORE_INSTALL <bool>``"
 msgstr ""
 
@@ -1234,7 +1234,7 @@ msgid ""
 "install step."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:741
+#: ../../../../Modules/ExternalProject.cmake:736
 msgid "``TEST_AFTER_INSTALL <bool>``"
 msgstr ""
 
@@ -1247,7 +1247,7 @@ msgid ""
 "``TEST_AFTER_INSTALL`` are enabled, the latter is silently ignored."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:750
+#: ../../../../Modules/ExternalProject.cmake:743
 msgid "``TEST_EXCLUDE_FROM_MAIN <bool>``"
 msgstr ""
 
@@ -1260,7 +1260,7 @@ msgid ""
 "policy :policy:`CMP0114`."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:795
+#: ../../../../Modules/ExternalProject.cmake:752
 msgid "**Output Logging Options:**"
 msgstr ""
 
@@ -1272,7 +1272,7 @@ msgid ""
 "with step-specific file names."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:759
+#: ../../../../Modules/ExternalProject.cmake:758
 msgid "``LOG_DOWNLOAD <bool>``"
 msgstr ""
 
@@ -1280,7 +1280,7 @@ msgstr ""
 msgid "When enabled, the output of the download step is logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:762
+#: ../../../../Modules/ExternalProject.cmake:761
 msgid "``LOG_UPDATE <bool>``"
 msgstr ""
 
@@ -1288,7 +1288,7 @@ msgstr ""
 msgid "When enabled, the output of the update step is logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:767
+#: ../../../../Modules/ExternalProject.cmake:764
 msgid "``LOG_PATCH <bool>``"
 msgstr ""
 
@@ -1296,7 +1296,7 @@ msgstr ""
 msgid "When enabled, the output of the patch step is logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:770
+#: ../../../../Modules/ExternalProject.cmake:769
 msgid "``LOG_CONFIGURE <bool>``"
 msgstr ""
 
@@ -1304,7 +1304,7 @@ msgstr ""
 msgid "When enabled, the output of the configure step is logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:773
+#: ../../../../Modules/ExternalProject.cmake:772
 msgid "``LOG_BUILD <bool>``"
 msgstr ""
 
@@ -1312,7 +1312,7 @@ msgstr ""
 msgid "When enabled, the output of the build step is logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:776
+#: ../../../../Modules/ExternalProject.cmake:775
 msgid "``LOG_INSTALL <bool>``"
 msgstr ""
 
@@ -1320,7 +1320,7 @@ msgstr ""
 msgid "When enabled, the output of the install step is logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:779
+#: ../../../../Modules/ExternalProject.cmake:778
 msgid "``LOG_TEST <bool>``"
 msgstr ""
 
@@ -1328,7 +1328,7 @@ msgstr ""
 msgid "When enabled, the output of the test step is logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:785
+#: ../../../../Modules/ExternalProject.cmake:781
 msgid "``LOG_MERGED_STDOUTERR <bool>``"
 msgstr ""
 
@@ -1338,7 +1338,7 @@ msgid ""
 "being logged to files."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:795
+#: ../../../../Modules/ExternalProject.cmake:787
 msgid "``LOG_OUTPUT_ON_FAILURE <bool>``"
 msgstr ""
 
@@ -1352,7 +1352,7 @@ msgid ""
 "console."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:828
+#: ../../../../Modules/ExternalProject.cmake:797
 msgid "**Terminal Access Options:**"
 msgstr ""
 
@@ -1366,7 +1366,7 @@ msgid ""
 "to the terminal individually via the following options:"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:808
+#: ../../../../Modules/ExternalProject.cmake:807
 msgid "``USES_TERMINAL_DOWNLOAD <bool>``"
 msgstr ""
 
@@ -1374,7 +1374,7 @@ msgstr ""
 msgid "Give the download step access to the terminal."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:811
+#: ../../../../Modules/ExternalProject.cmake:810
 msgid "``USES_TERMINAL_UPDATE <bool>``"
 msgstr ""
 
@@ -1382,7 +1382,7 @@ msgstr ""
 msgid "Give the update step access to the terminal."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:816
+#: ../../../../Modules/ExternalProject.cmake:813
 msgid "``USES_TERMINAL_PATCH <bool>``"
 msgstr ""
 
@@ -1390,7 +1390,7 @@ msgstr ""
 msgid "Give the patch step access to the terminal."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:819
+#: ../../../../Modules/ExternalProject.cmake:818
 msgid "``USES_TERMINAL_CONFIGURE <bool>``"
 msgstr ""
 
@@ -1398,7 +1398,7 @@ msgstr ""
 msgid "Give the configure step access to the terminal."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:822
+#: ../../../../Modules/ExternalProject.cmake:821
 msgid "``USES_TERMINAL_BUILD <bool>``"
 msgstr ""
 
@@ -1406,7 +1406,7 @@ msgstr ""
 msgid "Give the build step access to the terminal."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:825
+#: ../../../../Modules/ExternalProject.cmake:824
 msgid "``USES_TERMINAL_INSTALL <bool>``"
 msgstr ""
 
@@ -1414,7 +1414,7 @@ msgstr ""
 msgid "Give the install step access to the terminal."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:828
+#: ../../../../Modules/ExternalProject.cmake:827
 msgid "``USES_TERMINAL_TEST <bool>``"
 msgstr ""
 
@@ -1422,11 +1422,11 @@ msgstr ""
 msgid "Give the test step access to the terminal."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:865
+#: ../../../../Modules/ExternalProject.cmake:830
 msgid "**Target Options:**"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:839
+#: ../../../../Modules/ExternalProject.cmake:831
 msgid "``DEPENDS <targets>...``"
 msgstr ""
 
@@ -1442,7 +1442,7 @@ msgid ""
 "``<targets>``."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:843
+#: ../../../../Modules/ExternalProject.cmake:841
 msgid "``EXCLUDE_FROM_ALL <bool>``"
 msgstr ""
 
@@ -1452,7 +1452,7 @@ msgid ""
 "target of the main build."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:851
+#: ../../../../Modules/ExternalProject.cmake:845
 msgid "``STEP_TARGETS <step-target>...``"
 msgstr ""
 
@@ -1466,7 +1466,7 @@ msgid ""
 "effects of this option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:865
+#: ../../../../Modules/ExternalProject.cmake:853
 msgid "``INDEPENDENT_STEP_TARGETS <step-target>...``"
 msgstr ""
 
@@ -1487,11 +1487,11 @@ msgid ""
 "effects of this option."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:889
+#: ../../../../Modules/ExternalProject.cmake:867
 msgid "**Miscellaneous Options:**"
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:873
+#: ../../../../Modules/ExternalProject.cmake:868
 msgid "``LIST_SEPARATOR <sep>``"
 msgstr ""
 
@@ -1504,8 +1504,8 @@ msgid ""
 "string in this case)."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:889
-#: ../../../../Modules/ExternalProject.cmake:947
+#: ../../../../Modules/ExternalProject.cmake:875
+#: ../../../../Modules/ExternalProject.cmake:943
 msgid "``COMMAND <cmd>...``"
 msgstr ""
 
@@ -1604,7 +1604,7 @@ msgid ""
 "in order."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:950
+#: ../../../../Modules/ExternalProject.cmake:949
 msgid "``COMMENT \"<text>...\"``"
 msgstr ""
 
@@ -1612,7 +1612,7 @@ msgstr ""
 msgid "Text to be printed when the custom step executes."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:953
+#: ../../../../Modules/ExternalProject.cmake:952
 msgid "``DEPENDEES <step>...``"
 msgstr ""
 
@@ -1620,7 +1620,7 @@ msgstr ""
 msgid "Other steps (custom or pre-defined) on which this step depends."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:956
+#: ../../../../Modules/ExternalProject.cmake:955
 msgid "``DEPENDERS <step>...``"
 msgstr ""
 
@@ -1629,7 +1629,7 @@ msgid ""
 "Other steps (custom or pre-defined) that depend on this new custom step."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:959
+#: ../../../../Modules/ExternalProject.cmake:958
 msgid "``DEPENDS <file>...``"
 msgstr ""
 
@@ -1637,7 +1637,7 @@ msgstr ""
 msgid "Files on which this custom step depends."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:976
+#: ../../../../Modules/ExternalProject.cmake:961
 msgid "``INDEPENDENT <bool>``"
 msgstr ""
 
@@ -1664,7 +1664,7 @@ msgid ""
 "external targets, but may depend on targets for other steps."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:987
+#: ../../../../Modules/ExternalProject.cmake:978
 msgid "``BYPRODUCTS <file>...``"
 msgstr ""
 
@@ -1678,7 +1678,7 @@ msgid ""
 "implement the custom step internally, which has additional documentation."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:991
+#: ../../../../Modules/ExternalProject.cmake:989
 msgid "``ALWAYS <bool>``"
 msgstr ""
 
@@ -1688,7 +1688,7 @@ msgid ""
 "run (i.e. that it is always considered out of date)."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:997
+#: ../../../../Modules/ExternalProject.cmake:993
 msgid "``EXCLUDE_FROM_MAIN <bool>``"
 msgstr ""
 
@@ -1700,7 +1700,7 @@ msgid ""
 "policy:`CMP0114`."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:1003
+#: ../../../../Modules/ExternalProject.cmake:999
 msgid "``WORKING_DIRECTORY <dir>``"
 msgstr ""
 
@@ -1712,7 +1712,7 @@ msgid ""
 "``ExternalProject_Add_Step()`` was called."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:1007
+#: ../../../../Modules/ExternalProject.cmake:1005
 msgid "``LOG <bool>``"
 msgstr ""
 
@@ -1722,7 +1722,7 @@ msgid ""
 "in the external project's ``LOG_DIR`` if supplied or ``STAMP_DIR``."
 msgstr ""
 
-#: ../../../../Modules/ExternalProject.cmake:1011
+#: ../../../../Modules/ExternalProject.cmake:1009
 msgid "``USES_TERMINAL <bool>``"
 msgstr ""
 

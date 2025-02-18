@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgid ""
 "following variables prior to calling ``check_objcxx_source_compiles()``"
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_FLAGS.txt:6
+#: ../../../module/CMAKE_REQUIRED_FLAGS.txt:1
 msgid "``CMAKE_REQUIRED_FLAGS``"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgid ""
 "compiler command before the contents of ``CMAKE_REQUIRED_FLAGS``."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_DEFINITIONS.txt:4
+#: ../../../module/CMAKE_REQUIRED_DEFINITIONS.txt:1
 msgid "``CMAKE_REQUIRED_DEFINITIONS``"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgid ""
 "``<resultVar>`` will also be added automatically."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_INCLUDES.txt:4
+#: ../../../module/CMAKE_REQUIRED_INCLUDES.txt:1
 msgid "``CMAKE_REQUIRED_INCLUDES``"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgid ""
 "the :prop_dir:`INCLUDE_DIRECTORIES` directory property will be ignored."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LINK_OPTIONS.txt:5
+#: ../../../module/CMAKE_REQUIRED_LINK_OPTIONS.txt:1
 msgid "``CMAKE_REQUIRED_LINK_OPTIONS``"
 msgstr ""
 
@@ -103,7 +103,7 @@ msgid ""
 "(see :command:`try_compile` for further details)."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LIBRARIES.txt:5
+#: ../../../module/CMAKE_REQUIRED_LIBRARIES.txt:1
 msgid "``CMAKE_REQUIRED_LIBRARIES``"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgid ""
 "further details)."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_QUIET.txt:5
+#: ../../../module/CMAKE_REQUIRED_QUIET.txt:1
 msgid "``CMAKE_REQUIRED_QUIET``"
 msgstr ""
 

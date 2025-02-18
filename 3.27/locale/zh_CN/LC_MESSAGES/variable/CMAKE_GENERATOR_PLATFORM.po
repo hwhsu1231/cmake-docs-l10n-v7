@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid ""
 "generator-specific details of the platform selection. Supported pairs are:"
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:74
+#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:49
 msgid "``version=<version>``"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "The ``<version>`` may be one of:"
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:61
+#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:59
 msgid "``10.0``"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgid ""
 "one.  This is supported by VS 2019 and above."
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:67
+#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:63
 msgid "``10.0.<build>.<increment>``"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgid ""
 "variable is set."
 msgstr ""
 
-#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:71
+#: ../../../variable/CMAKE_GENERATOR_PLATFORM.rst:69
 msgid "``8.1``"
 msgstr ""
 

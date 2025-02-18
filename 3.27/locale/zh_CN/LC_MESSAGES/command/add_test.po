@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr ""
 msgid "``add_test`` options are:"
 msgstr ""
 
-#: ../../../command/add_test.rst:35
+#: ../../../command/add_test.rst:29
 msgid "``COMMAND``"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgid ""
 "generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_test.rst:38
+#: ../../../command/add_test.rst:37
 msgid "``CONFIGURATIONS``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Restrict execution of the test only to the named configurations."
 msgstr ""
 
-#: ../../../command/add_test.rst:44
+#: ../../../command/add_test.rst:40
 msgid "``WORKING_DIRECTORY``"
 msgstr ""
 
@@ -96,7 +96,7 @@ msgid ""
 "manual:`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_test.rst:50
+#: ../../../command/add_test.rst:46
 msgid "``COMMAND_EXPAND_LISTS``"
 msgstr ""
 

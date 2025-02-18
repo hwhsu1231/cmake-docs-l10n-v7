@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -130,12 +130,22 @@ msgid ""
 "``MathFunctions/CMakeLists.txt``."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding System Introspection.rst:72
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding System Introspection.rst:76
 msgid "TODO 1: MathFunctions/CMakeLists.txt"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding System Introspection.rst:76
 msgid "  include(CheckCXXSourceCompiles)\n"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding System Introspection.rst:83
+#: Introspection.rst:104 Introspection.rst:124 Introspection.rst:142
+#: Introspection.rst:161
+msgid "</details>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding System Introspection.rst:87
@@ -145,6 +155,10 @@ msgid ""
 "code with the required dependency prior to the true source code compilation. "
 "The resulting variables ``HAVE_LOG`` and ``HAVE_EXP`` represent whether "
 "those dependencies are available."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding System Introspection.rst:93
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding System Introspection.rst:97
@@ -178,6 +192,10 @@ msgid ""
 "``HAVE_LOG`` and ``HAVE_EXP`` as ``PRIVATE`` compile definitions."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding System Introspection.rst:113
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding System Introspection.rst:117
 msgid "TODO 3: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -201,6 +219,10 @@ msgid ""
 "to include ``cmath``."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding System Introspection.rst:131
+msgid "<details><summary>TODO 4: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding System Introspection.rst:135
 msgid "TODO 4: MathFunctions/mysqrt.cxx"
 msgstr ""
@@ -216,6 +238,10 @@ msgid ""
 "If ``log`` and ``exp`` are available on the system, then use them to compute "
 "the square root in the ``mysqrt`` function. The ``mysqrt`` function in "
 "``MathFunctions/mysqrt.cxx`` will look as follows:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding System Introspection.rst:150
+msgid "<details><summary>TODO 5: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding System Introspection.rst:154

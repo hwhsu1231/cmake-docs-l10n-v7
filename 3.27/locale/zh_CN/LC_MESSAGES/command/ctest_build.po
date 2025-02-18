@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/ctest_build.rst:31
+#: ../../../command/ctest_build.rst:29
 msgid "``BUILD <build-dir>``"
 msgstr ""
 
@@ -67,7 +67,7 @@ msgid ""
 "`CTEST_BINARY_DIRECTORY` variable is used."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:38
+#: ../../../command/ctest_build.rst:33
 msgid "``APPEND``"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgid ""
 "appended to a ``.xml`` file produced by a previous call to this command."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:44
+#: ../../../command/ctest_build.rst:40
 msgid "``CONFIGURATION <config>``"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgid ""
 "command will be used, if any."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:51
+#: ../../../command/ctest_build.rst:46
 msgid "``PARALLEL_LEVEL <parallel>``"
 msgstr ""
 
@@ -102,7 +102,7 @@ msgid ""
 "will be checked."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:58
+#: ../../../command/ctest_build.rst:53
 msgid "``FLAGS <flags>``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgid ""
 "module:`ProcessorCount` module for an example."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:64
+#: ../../../command/ctest_build.rst:60
 msgid "``PROJECT_NAME <project-name>``"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "This value is no longer required."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:70
+#: ../../../command/ctest_build.rst:66
 msgid "``TARGET <target-name>``"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgid ""
 "ref:`Visual Studio Generators`)."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:73
+#: ../../../command/ctest_build.rst:72
 msgid "``NUMBER_ERRORS <num-err-var>``"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgstr ""
 msgid "Store the number of build errors detected in the given variable."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:76
+#: ../../../command/ctest_build.rst:75
 msgid "``NUMBER_WARNINGS <num-warn-var>``"
 msgstr ""
 
@@ -154,7 +154,7 @@ msgstr ""
 msgid "Store the number of build warnings detected in the given variable."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:79
+#: ../../../command/ctest_build.rst:78
 msgid "``RETURN_VALUE <result-var>``"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr ""
 msgid "Store the return value of the native build tool in the given variable."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:85
+#: ../../../command/ctest_build.rst:81
 msgid "``CAPTURE_CMAKE_ERROR <result-var>``"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgid ""
 "the command and prevent ctest from returning non-zero if an error occurs."
 msgstr ""
 
-#: ../../../command/ctest_build.rst:92
+#: ../../../command/ctest_build.rst:87
 msgid "``QUIET``"
 msgstr ""
 

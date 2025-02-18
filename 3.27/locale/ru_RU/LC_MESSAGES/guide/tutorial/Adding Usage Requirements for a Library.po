@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,6 +183,10 @@ msgid ""
 "`target_include_directories` with the ``INTERFACE`` keyword, as follows:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:94
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:98
 msgid "TODO 1: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -195,6 +199,12 @@ msgid ""
 "\n"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:105
+#: Library.rst:126 Library.rst:142 Library.rst:158 Library.rst:260
+#: Library.rst:281 Library.rst:298 Library.rst:315
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:109
 msgid ""
 "Now that we've specified usage requirements for ``MathFunctions`` we can "
@@ -204,6 +214,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:113
 msgid "Remove this line:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:115
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:119
@@ -220,6 +234,10 @@ msgstr ""
 msgid "And the lines:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:132
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:136
 msgid "TODO 3: CMakeLists.txt"
 msgstr ""
@@ -233,6 +251,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:146
 msgid "The remaining code looks like:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:148
+msgid "<details><summary>Click to show/hide the resulting code</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:152
@@ -370,6 +392,10 @@ msgid ""
 "``cxx_std_11``."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:249
+msgid "<details><summary>TODO 4: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:253
 msgid "TODO 4: CMakeLists.txt"
 msgstr ""
@@ -389,6 +415,10 @@ msgid ""
 "look like this:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:270
+msgid "<details><summary>TODO 5: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:274
 msgid "TODO 5: CMakeLists.txt"
 msgstr ""
@@ -405,6 +435,10 @@ msgstr ""
 msgid "this:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:287
+msgid "<details><summary>TODO 6: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:291
 msgid "TODO 6: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -415,6 +449,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:302
 msgid "and this:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:304
+msgid "<details><summary>TODO 7: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:308

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "The following variables may be set to influence this module's behavior:"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:23
+#: ../../../../Modules/FindLAPACK.cmake:22
 msgid "``BLA_STATIC``"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "if ``ON`` use static linkage"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:27
+#: ../../../../Modules/FindLAPACK.cmake:25
 msgid "``BLA_VENDOR``"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgid ""
 "the specified vendor.  If not set, all vendors are considered."
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:30
+#: ../../../../Modules/FindLAPACK.cmake:29
 msgid "``BLA_F95``"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 msgid "if ``ON`` tries to find the BLAS95/LAPACK95 interfaces"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:36
+#: ../../../../Modules/FindLAPACK.cmake:32
 msgid "``BLA_PREFER_PKGCONFIG``"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgid ""
 "if one is found that is preferred"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:43
+#: ../../../../Modules/FindLAPACK.cmake:38
 msgid "``BLA_PKGCONFIG_LAPACK``"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgid ""
 "just ``lapack``."
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:56
+#: ../../../../Modules/FindLAPACK.cmake:45
 msgid "``BLA_SIZEOF_INTEGER``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Search for a BLAS/LAPACK with 64-bit integer interfaces."
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:56
+#: ../../../../Modules/FindLAPACK.cmake:54
 msgid "``ANY``"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:66
+#: ../../../../Modules/FindLAPACK.cmake:63
 msgid "``LAPACK::LAPACK``"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgstr ""
 msgid "uncached list of required linker flags (excluding ``-l`` and ``-L``)."
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:78
+#: ../../../../Modules/FindLAPACK.cmake:77
 msgid "``LAPACK_LIBRARIES``"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgid ""
 "LAPACK"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:81
+#: ../../../../Modules/FindLAPACK.cmake:80
 msgid "``LAPACK95_LIBRARIES``"
 msgstr ""
 
@@ -184,7 +184,7 @@ msgid ""
 "LAPACK95"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:84
+#: ../../../../Modules/FindLAPACK.cmake:83
 msgid "``LAPACK95_FOUND``"
 msgstr ""
 

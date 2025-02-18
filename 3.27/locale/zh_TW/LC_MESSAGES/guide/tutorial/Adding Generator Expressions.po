@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,6 +166,10 @@ msgid ""
 "version ``3.15``:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:93
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:97
 msgid "TODO 1: CMakeLists.txt"
 msgstr ""
@@ -176,12 +180,21 @@ msgid ""
 "\n"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:103
+#: Expressions.rst:123 Expressions.rst:146 Expressions.rst:166
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:107
 msgid ""
 "Next we determine which compiler our system is currently using to build "
 "since warning flags vary based on the compiler we use. This is done with the "
 "``COMPILE_LANG_AND_ID`` generator expression. We set the result in the "
 "variables ``gcc_like_cxx`` and ``msvc_cxx`` as follows:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:112
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:116
@@ -204,6 +217,10 @@ msgid ""
 "our interface library."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:133
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:137
 msgid "TODO 3: CMakeLists.txt"
 msgstr ""
@@ -223,6 +240,10 @@ msgid ""
 "this, we wrap our flags in a generator expression using the "
 "``BUILD_INTERFACE`` condition. The resulting full code looks like the "
 "following:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:155
+msgid "<details><summary>TODO 4: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:159
