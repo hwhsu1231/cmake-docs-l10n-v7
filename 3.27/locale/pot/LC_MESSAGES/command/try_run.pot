@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -113,7 +114,7 @@ msgstr ""
 msgid "The options specific to ``try_run`` are:"
 msgstr ""
 
-#: ../../../command/try_run.rst:83
+#: ../../../command/try_run.rst:82
 msgid "``COMPILE_OUTPUT_VARIABLE <var>``"
 msgstr ""
 
@@ -121,7 +122,7 @@ msgstr ""
 msgid "Report the compile step build output in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:89
+#: ../../../command/try_run.rst:85
 msgid "``OUTPUT_VARIABLE <var>``"
 msgstr ""
 
@@ -133,7 +134,7 @@ msgid ""
 "``COMPILE_OUTPUT_VARIABLE`` and ``RUN_OUTPUT_VARIABLE`` instead."
 msgstr ""
 
-#: ../../../command/try_run.rst:92
+#: ../../../command/try_run.rst:91
 msgid "``RUN_OUTPUT_VARIABLE <var>``"
 msgstr ""
 
@@ -141,7 +142,7 @@ msgstr ""
 msgid "Report the output from running the executable in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:97
+#: ../../../command/try_run.rst:94
 msgid "``RUN_OUTPUT_STDOUT_VARIABLE <var>``"
 msgstr ""
 
@@ -150,7 +151,7 @@ msgid ""
 "Report the output of stdout from running the executable in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:102
+#: ../../../command/try_run.rst:99
 msgid "``RUN_OUTPUT_STDERR_VARIABLE <var>``"
 msgstr ""
 
@@ -159,7 +160,7 @@ msgid ""
 "Report the output of stderr from running the executable in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:109
+#: ../../../command/try_run.rst:104
 msgid "``WORKING_DIRECTORY <var>``"
 msgstr ""
 
@@ -170,7 +171,7 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../../../command/try_run.rst:112
+#: ../../../command/try_run.rst:111
 msgid "``ARGS <args>...``"
 msgstr ""
 
@@ -220,7 +221,7 @@ msgid ""
 "it had been run on its actual target platform. These cache entries are:"
 msgstr ""
 
-#: ../../../command/try_run.rst:143
+#: ../../../command/try_run.rst:142
 msgid "``<runResultVar>``"
 msgstr ""
 
@@ -228,7 +229,7 @@ msgstr ""
 msgid "Exit code if the executable were to be run on the target platform."
 msgstr ""
 
-#: ../../../command/try_run.rst:148
+#: ../../../command/try_run.rst:145
 msgid "``<runResultVar>__TRYRUN_OUTPUT``"
 msgstr ""
 

@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -96,7 +97,7 @@ msgstr ""
 msgid "The keys of the each document root mapping are:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:64
+#: ../../../manual/cmake-configure-log.7.rst:61
 msgid "``events``"
 msgstr ""
 
@@ -193,7 +194,7 @@ msgstr ""
 msgid "The keys common to all events are:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:122
+#: ../../../manual/cmake-configure-log.7.rst:121
 msgid "``kind``"
 msgstr ""
 
@@ -201,7 +202,7 @@ msgstr ""
 msgid "A string identifying the event kind and major version."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:128
+#: ../../../manual/cmake-configure-log.7.rst:124
 msgid "``backtrace``"
 msgstr ""
 
@@ -212,7 +213,7 @@ msgid ""
 "string specifying one location formatted as ``<file>:<line> (<function>)``."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:135
+#: ../../../manual/cmake-configure-log.7.rst:130
 msgid "``checks``"
 msgstr ""
 
@@ -265,7 +266,7 @@ msgstr ""
 msgid "The keys specific to ``message-v1`` mappings are:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:170
+#: ../../../manual/cmake-configure-log.7.rst:168
 msgid "``message``"
 msgstr ""
 
@@ -320,7 +321,7 @@ msgstr ""
 msgid "The keys specific to ``try_compile-v1`` mappings are:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:212
+#: ../../../manual/cmake-configure-log.7.rst:210
 msgid "``description``"
 msgstr ""
 
@@ -330,7 +331,7 @@ msgid ""
 "was used.  Its value is a string containing the description ``<text>``."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:226
+#: ../../../manual/cmake-configure-log.7.rst:214
 msgid "``directories``"
 msgstr ""
 
@@ -340,7 +341,7 @@ msgid ""
 "attempt.  It has the following keys:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:220
+#: ../../../manual/cmake-configure-log.7.rst:218
 msgid "``source``"
 msgstr ""
 
@@ -349,7 +350,7 @@ msgid ""
 "String specifying the source directory of the :command:`try_compile` project."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:226
+#: ../../../manual/cmake-configure-log.7.rst:222
 msgid "``binary``"
 msgstr ""
 
@@ -360,7 +361,7 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:232
+#: ../../../manual/cmake-configure-log.7.rst:228
 msgid "``cmakeVariables``"
 msgstr ""
 
@@ -372,7 +373,7 @@ msgid ""
 "variable names to their values."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:253
+#: ../../../manual/cmake-configure-log.7.rst:234
 msgid "``buildResult``"
 msgstr ""
 
@@ -382,8 +383,8 @@ msgid ""
 "following keys:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:240
-#: ../../../manual/cmake-configure-log.7.rst:306
+#: ../../../manual/cmake-configure-log.7.rst:238
+#: ../../../manual/cmake-configure-log.7.rst:304
 msgid "``variable``"
 msgstr ""
 
@@ -393,8 +394,8 @@ msgid ""
 "trying to build the test project."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:244
-#: ../../../manual/cmake-configure-log.7.rst:310
+#: ../../../manual/cmake-configure-log.7.rst:242
+#: ../../../manual/cmake-configure-log.7.rst:308
 msgid "``cached``"
 msgstr ""
 
@@ -405,8 +406,8 @@ msgid ""
 "CMake cache."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:249
-#: ../../../manual/cmake-configure-log.7.rst:319
+#: ../../../manual/cmake-configure-log.7.rst:246
+#: ../../../manual/cmake-configure-log.7.rst:312
 msgid "``stdout``"
 msgstr ""
 
@@ -417,8 +418,8 @@ msgid ""
 "output from both stdout and stderr."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:253
-#: ../../../manual/cmake-configure-log.7.rst:333
+#: ../../../manual/cmake-configure-log.7.rst:251
+#: ../../../manual/cmake-configure-log.7.rst:331
 msgid "``exitCode``"
 msgstr ""
 
@@ -481,7 +482,7 @@ msgid ""
 "`try_compile-v1 event`_, plus:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:333
+#: ../../../manual/cmake-configure-log.7.rst:300
 msgid "``runResult``"
 msgstr ""
 
@@ -511,7 +512,7 @@ msgid ""
 "stdout output."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:329
+#: ../../../manual/cmake-configure-log.7.rst:321
 msgid "``stderr``"
 msgstr ""
 
