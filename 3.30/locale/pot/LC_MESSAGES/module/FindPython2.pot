@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,7 @@ msgid ""
 "`CMAKE_ROLE` is ``PROJECT``."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:74
+#: ../../../../Modules/FindPython2.cmake:73
 msgid "``Python2::Interpreter``"
 msgstr ""
 
@@ -144,7 +144,7 @@ msgid ""
 "component is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:81
+#: ../../../../Modules/FindPython2.cmake:76
 msgid "``Python2::InterpreterDebug``"
 msgstr ""
 
@@ -155,7 +155,7 @@ msgid ""
 "variable is defined. The target is only defined on the ``Windows`` platform."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:88
+#: ../../../../Modules/FindPython2.cmake:83
 msgid "``Python2::InterpreterMultiConfig``"
 msgstr ""
 
@@ -166,7 +166,7 @@ msgid ""
 "defined only if the ``Interpreter`` component is found"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:91
+#: ../../../../Modules/FindPython2.cmake:90
 msgid "``Python2::Compiler``"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgid ""
 "is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:97
+#: ../../../../Modules/FindPython2.cmake:93
 msgid "``Python2::Module``"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgid ""
 "``Development.Module`` is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:101
+#: ../../../../Modules/FindPython2.cmake:99
 msgid "``Python2::Python``"
 msgstr ""
 
@@ -196,7 +196,7 @@ msgid ""
 "``Development.Embed`` is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:106
+#: ../../../../Modules/FindPython2.cmake:103
 msgid "``Python2::NumPy``"
 msgstr ""
 
@@ -232,7 +232,7 @@ msgid "System has the Python 2 interpreter."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:118
-#: ../../../../Modules/FindPython2.cmake:389
+#: ../../../../Modules/FindPython2.cmake:388
 msgid "``Python2_EXECUTABLE``"
 msgstr ""
 
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Path to the Python 2 interpreter."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:124
+#: ../../../../Modules/FindPython2.cmake:120
 msgid "``Python2_EXECUTABLE_DEBUG``"
 msgstr ""
 
@@ -250,7 +250,7 @@ msgid ""
 "``Windows`` platform."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:132
+#: ../../../../Modules/FindPython2.cmake:126
 msgid "``Python2_INTERPRETER``"
 msgstr ""
 
@@ -262,11 +262,11 @@ msgid ""
 "configuration)."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:140
+#: ../../../../Modules/FindPython2.cmake:134
 msgid "``Python2_INTERPRETER_ID``"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:140
+#: ../../../../Modules/FindPython2.cmake:135
 msgid "A short string unique to the interpreter. Possible values include:"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgstr ""
 msgid "PyPy"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:145
+#: ../../../../Modules/FindPython2.cmake:142
 msgid "``Python2_STDLIB``"
 msgstr ""
 
@@ -309,7 +309,7 @@ msgid ""
 "sysconfig.get_python_lib(plat_specific=False,standard_lib=True)``."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:150
+#: ../../../../Modules/FindPython2.cmake:147
 msgid "``Python2_STDARCH``"
 msgstr ""
 
@@ -323,7 +323,7 @@ msgid ""
 "``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=True)``."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:155
+#: ../../../../Modules/FindPython2.cmake:152
 msgid "``Python2_SITELIB``"
 msgstr ""
 
@@ -338,7 +338,7 @@ msgid ""
 "standard_lib=False)``."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:160
+#: ../../../../Modules/FindPython2.cmake:157
 msgid "``Python2_SITEARCH``"
 msgstr ""
 
@@ -362,7 +362,7 @@ msgid "System has the Python 2 compiler."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:164
-#: ../../../../Modules/FindPython2.cmake:392
+#: ../../../../Modules/FindPython2.cmake:391
 msgid "``Python2_COMPILER``"
 msgstr ""
 
@@ -370,16 +370,16 @@ msgstr ""
 msgid "Path to the Python 2 compiler. Only offered by IronPython."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:168
+#: ../../../../Modules/FindPython2.cmake:166
 msgid "``Python2_COMPILER_ID``"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:168
+#: ../../../../Modules/FindPython2.cmake:167
 msgid "A short string unique to the compiler. Possible values include:"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:173
-#: ../../../../Modules/FindPython2.cmake:397
+#: ../../../../Modules/FindPython2.cmake:170
+#: ../../../../Modules/FindPython2.cmake:394
 msgid "``Python2_DOTNET_LAUNCHER``"
 msgstr ""
 
@@ -388,7 +388,7 @@ msgstr ""
 msgid "The ``.Net`` interpreter. Only used by ``IronPython`` implementation."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:176
+#: ../../../../Modules/FindPython2.cmake:175
 msgid "``Python2_Development_FOUND``"
 msgstr ""
 
@@ -396,7 +396,7 @@ msgstr ""
 msgid "System has the Python 2 development artifacts."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:181
+#: ../../../../Modules/FindPython2.cmake:178
 msgid "``Python2_Development.Module_FOUND``"
 msgstr ""
 
@@ -404,7 +404,7 @@ msgstr ""
 msgid "System has the Python 2 development artifacts for Python module."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:186
+#: ../../../../Modules/FindPython2.cmake:183
 msgid "``Python2_Development.Embed_FOUND``"
 msgstr ""
 
@@ -412,7 +412,7 @@ msgstr ""
 msgid "System has the Python 2 development artifacts for Python embedding."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:189
+#: ../../../../Modules/FindPython2.cmake:188
 msgid "``Python2_INCLUDE_DIRS``"
 msgstr ""
 
@@ -420,7 +420,7 @@ msgstr ""
 msgid "The Python 2 include directories."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:195
+#: ../../../../Modules/FindPython2.cmake:191
 msgid "``Python2_DEBUG_POSTFIX``"
 msgstr ""
 
@@ -430,7 +430,7 @@ msgid ""
 "prop_tgt:`DEBUG_POSTFIX` target property."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:201
+#: ../../../../Modules/FindPython2.cmake:197
 msgid "``Python2_LINK_OPTIONS``"
 msgstr ""
 
@@ -488,7 +488,7 @@ msgstr ""
 msgid "Python 2 minor version."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:216
+#: ../../../../Modules/FindPython2.cmake:215
 msgid "``Python2_VERSION_PATCH``"
 msgstr ""
 
@@ -496,7 +496,7 @@ msgstr ""
 msgid "Python 2 patch version."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:221
+#: ../../../../Modules/FindPython2.cmake:218
 msgid "``Python2_PyPy_VERSION``"
 msgstr ""
 
@@ -504,7 +504,7 @@ msgstr ""
 msgid "Python 2 PyPy version."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:226
+#: ../../../../Modules/FindPython2.cmake:223
 msgid "``Python2_NumPy_FOUND``"
 msgstr ""
 
@@ -512,7 +512,7 @@ msgstr ""
 msgid "System has the NumPy."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:231
+#: ../../../../Modules/FindPython2.cmake:228
 msgid "``Python2_NumPy_INCLUDE_DIRS``"
 msgstr ""
 
@@ -520,7 +520,7 @@ msgstr ""
 msgid "The NumPy include directories."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:236
+#: ../../../../Modules/FindPython2.cmake:233
 msgid "``Python2_NumPy_VERSION``"
 msgstr ""
 
@@ -532,7 +532,7 @@ msgstr ""
 msgid "Hints"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:242
+#: ../../../../Modules/FindPython2.cmake:241
 msgid "``Python2_ROOT_DIR``"
 msgstr ""
 
@@ -540,7 +540,7 @@ msgstr ""
 msgid "Define the root directory of a Python 2 installation."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:253
+#: ../../../../Modules/FindPython2.cmake:244
 msgid "``Python2_USE_STATIC_LIBS``"
 msgstr ""
 
@@ -564,7 +564,7 @@ msgid ""
 "available on this platform."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:269
+#: ../../../../Modules/FindPython2.cmake:255
 msgid "``Python2_FIND_STRATEGY``"
 msgstr ""
 
@@ -592,7 +592,7 @@ msgstr ""
 msgid "See also ``Python2_FIND_UNVERSIONED_NAMES``."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:281
+#: ../../../../Modules/FindPython2.cmake:271
 msgid "``Python2_FIND_REGISTRY``"
 msgstr ""
 
@@ -617,7 +617,7 @@ msgstr ""
 msgid "``NEVER``: Never try to use registry."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:296
+#: ../../../../Modules/FindPython2.cmake:283
 msgid "``Python2_FIND_FRAMEWORK``"
 msgstr ""
 
@@ -638,7 +638,7 @@ msgid ""
 "`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:326
+#: ../../../../Modules/FindPython2.cmake:298
 msgid "``Python2_FIND_VIRTUALENV``"
 msgstr ""
 
@@ -684,7 +684,7 @@ msgid ""
 "result."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:361
+#: ../../../../Modules/FindPython2.cmake:328
 msgid "``Python2_FIND_IMPLEMENTATIONS``"
 msgstr ""
 
@@ -743,7 +743,7 @@ msgid ""
 "through the ``PATH`` variable."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:378
+#: ../../../../Modules/FindPython2.cmake:363
 msgid "``Python2_FIND_UNVERSIONED_NAMES``"
 msgstr ""
 
@@ -793,7 +793,7 @@ msgstr ""
 msgid "The path to the compiler."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:402
+#: ../../../../Modules/FindPython2.cmake:399
 msgid "``Python2_LIBRARY``"
 msgstr ""
 
@@ -804,7 +804,7 @@ msgid ""
 "``Python2_RUNTIME_LIBRARY_DIRS``."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:406
+#: ../../../../Modules/FindPython2.cmake:404
 msgid "``Python2_INCLUDE_DIR``"
 msgstr ""
 
@@ -814,7 +814,7 @@ msgid ""
 "compute the variable ``Python2_INCLUDE_DIRS``."
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:410
+#: ../../../../Modules/FindPython2.cmake:408
 msgid "``Python2_NumPy_INCLUDE_DIR``"
 msgstr ""
 
@@ -852,7 +852,7 @@ msgid ""
 "module behavior can be controlled with the following variable:"
 msgstr ""
 
-#: ../../../../Modules/FindPython2.cmake:441
+#: ../../../../Modules/FindPython2.cmake:432
 msgid "``Python2_ARTIFACTS_INTERACTIVE``"
 msgstr ""
 

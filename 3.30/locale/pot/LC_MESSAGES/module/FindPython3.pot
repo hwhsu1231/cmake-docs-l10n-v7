@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgid ""
 "`CMAKE_ROLE` is ``PROJECT``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:81
+#: ../../../../Modules/FindPython3.cmake:80
 msgid "``Python3::Interpreter``"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgid ""
 "component is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:88
+#: ../../../../Modules/FindPython3.cmake:83
 msgid "``Python3::InterpreterDebug``"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgid ""
 "variable is defined. The target is only defined on the ``Windows`` platform."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:95
+#: ../../../../Modules/FindPython3.cmake:90
 msgid "``Python3::InterpreterMultiConfig``"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgid ""
 "defined only if the ``Interpreter`` component is found"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:99
+#: ../../../../Modules/FindPython3.cmake:97
 msgid "``Python3::Compiler``"
 msgstr ""
 
@@ -184,7 +184,7 @@ msgid ""
 "is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:105
+#: ../../../../Modules/FindPython3.cmake:101
 msgid "``Python3::Module``"
 msgstr ""
 
@@ -194,7 +194,7 @@ msgid ""
 "``Development.Module`` is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:111
+#: ../../../../Modules/FindPython3.cmake:107
 msgid "``Python3::SABIModule``"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgid ""
 "Interface. Target defined if component ``Development.SABIModule`` is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:115
+#: ../../../../Modules/FindPython3.cmake:113
 msgid "``Python3::Python``"
 msgstr ""
 
@@ -214,7 +214,7 @@ msgid ""
 "``Development.Embed`` is found."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:120
+#: ../../../../Modules/FindPython3.cmake:117
 msgid "``Python3::NumPy``"
 msgstr ""
 
@@ -250,7 +250,7 @@ msgid "System has the Python 3 interpreter."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:132
-#: ../../../../Modules/FindPython3.cmake:499
+#: ../../../../Modules/FindPython3.cmake:498
 msgid "``Python3_EXECUTABLE``"
 msgstr ""
 
@@ -258,7 +258,7 @@ msgstr ""
 msgid "Path to the Python 3 interpreter."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:138
+#: ../../../../Modules/FindPython3.cmake:134
 msgid "``Python3_EXECUTABLE_DEBUG``"
 msgstr ""
 
@@ -268,7 +268,7 @@ msgid ""
 "platform."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:146
+#: ../../../../Modules/FindPython3.cmake:140
 msgid "``Python3_INTERPRETER``"
 msgstr ""
 
@@ -280,11 +280,11 @@ msgid ""
 "configuration)."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:154
+#: ../../../../Modules/FindPython3.cmake:148
 msgid "``Python3_INTERPRETER_ID``"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:154
+#: ../../../../Modules/FindPython3.cmake:149
 msgid "A short string unique to the interpreter. Possible values include:"
 msgstr ""
 
@@ -313,7 +313,7 @@ msgstr ""
 msgid "PyPy"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:158
+#: ../../../../Modules/FindPython3.cmake:156
 msgid "``Python3_STDLIB``"
 msgstr ""
 
@@ -325,7 +325,7 @@ msgstr ""
 msgid "Information returned by ``sysconfig.get_path('stdlib')``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:162
+#: ../../../../Modules/FindPython3.cmake:160
 msgid "``Python3_STDARCH``"
 msgstr ""
 
@@ -337,7 +337,7 @@ msgstr ""
 msgid "Information returned by ``sysconfig.get_path('platstdlib')``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:166
+#: ../../../../Modules/FindPython3.cmake:164
 msgid "``Python3_SITELIB``"
 msgstr ""
 
@@ -349,7 +349,7 @@ msgstr ""
 msgid "Information returned by ``sysconfig.get_path('purelib')``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:171
+#: ../../../../Modules/FindPython3.cmake:168
 msgid "``Python3_SITEARCH``"
 msgstr ""
 
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Information returned by ``sysconfig.get_path('platlib')``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:180
+#: ../../../../Modules/FindPython3.cmake:173
 msgid "``Python3_SOABI``"
 msgstr ""
 
@@ -376,7 +376,7 @@ msgid ""
 "suffix``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:190
+#: ../../../../Modules/FindPython3.cmake:182
 msgid "``Python3_SOSABI``"
 msgstr ""
 
@@ -402,7 +402,7 @@ msgid "System has the Python 3 compiler."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:194
-#: ../../../../Modules/FindPython3.cmake:502
+#: ../../../../Modules/FindPython3.cmake:501
 msgid "``Python3_COMPILER``"
 msgstr ""
 
@@ -410,16 +410,16 @@ msgstr ""
 msgid "Path to the Python 3 compiler. Only offered by IronPython."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:198
+#: ../../../../Modules/FindPython3.cmake:196
 msgid "``Python3_COMPILER_ID``"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:198
+#: ../../../../Modules/FindPython3.cmake:197
 msgid "A short string unique to the compiler. Possible values include:"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:203
-#: ../../../../Modules/FindPython3.cmake:507
+#: ../../../../Modules/FindPython3.cmake:200
+#: ../../../../Modules/FindPython3.cmake:504
 msgid "``Python3_DOTNET_LAUNCHER``"
 msgstr ""
 
@@ -436,7 +436,7 @@ msgstr ""
 msgid "System has the Python 3 development artifacts."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:212
+#: ../../../../Modules/FindPython3.cmake:209
 msgid "``Python3_Development.Module_FOUND``"
 msgstr ""
 
@@ -444,7 +444,7 @@ msgstr ""
 msgid "System has the Python 3 development artifacts for Python module."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:218
+#: ../../../../Modules/FindPython3.cmake:214
 msgid "``Python3_Development.SABIModule_FOUND``"
 msgstr ""
 
@@ -454,7 +454,7 @@ msgid ""
 "Stable Application Binary Interface."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:223
+#: ../../../../Modules/FindPython3.cmake:220
 msgid "``Python3_Development.Embed_FOUND``"
 msgstr ""
 
@@ -470,7 +470,7 @@ msgstr ""
 msgid "The Python 3 include directories."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:232
+#: ../../../../Modules/FindPython3.cmake:229
 msgid "``Python3_DEFINITIONS``"
 msgstr ""
 
@@ -478,7 +478,7 @@ msgstr ""
 msgid "The Python 3 preprocessor definitions."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:238
+#: ../../../../Modules/FindPython3.cmake:234
 msgid "``Python3_DEBUG_POSTFIX``"
 msgstr ""
 
@@ -488,7 +488,7 @@ msgid ""
 "prop_tgt:`DEBUG_POSTFIX` target property."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:244
+#: ../../../../Modules/FindPython3.cmake:240
 msgid "``Python3_LINK_OPTIONS``"
 msgstr ""
 
@@ -522,7 +522,7 @@ msgstr ""
 msgid "The Python 3 runtime library directories."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:254
+#: ../../../../Modules/FindPython3.cmake:252
 msgid "``Python3_SABI_LIBRARIES``"
 msgstr ""
 
@@ -530,7 +530,7 @@ msgstr ""
 msgid "The Python 3 libraries for the Stable Application Binary Interface."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:258
+#: ../../../../Modules/FindPython3.cmake:256
 msgid "``Python3_SABI_LIBRARY_DIRS``"
 msgstr ""
 
@@ -538,7 +538,7 @@ msgstr ""
 msgid "The Python 3 ``SABI`` library directories."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:262
+#: ../../../../Modules/FindPython3.cmake:260
 msgid "``Python3_RUNTIME_SABI_LIBRARY_DIRS``"
 msgstr ""
 
@@ -570,7 +570,7 @@ msgstr ""
 msgid "Python 3 minor version."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:271
+#: ../../../../Modules/FindPython3.cmake:270
 msgid "``Python3_VERSION_PATCH``"
 msgstr ""
 
@@ -578,7 +578,7 @@ msgstr ""
 msgid "Python 3 patch version."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:276
+#: ../../../../Modules/FindPython3.cmake:273
 msgid "``Python3_PyPy_VERSION``"
 msgstr ""
 
@@ -586,7 +586,7 @@ msgstr ""
 msgid "Python 3 PyPy version."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:281
+#: ../../../../Modules/FindPython3.cmake:278
 msgid "``Python3_NumPy_FOUND``"
 msgstr ""
 
@@ -594,7 +594,7 @@ msgstr ""
 msgid "System has the NumPy."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:286
+#: ../../../../Modules/FindPython3.cmake:283
 msgid "``Python3_NumPy_INCLUDE_DIRS``"
 msgstr ""
 
@@ -602,7 +602,7 @@ msgstr ""
 msgid "The NumPy include directories."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:291
+#: ../../../../Modules/FindPython3.cmake:288
 msgid "``Python3_NumPy_VERSION``"
 msgstr ""
 
@@ -614,7 +614,7 @@ msgstr ""
 msgid "Hints"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:297
+#: ../../../../Modules/FindPython3.cmake:296
 msgid "``Python3_ROOT_DIR``"
 msgstr ""
 
@@ -622,7 +622,7 @@ msgstr ""
 msgid "Define the root directory of a Python 3 installation."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:308
+#: ../../../../Modules/FindPython3.cmake:299
 msgid "``Python3_USE_STATIC_LIBS``"
 msgstr ""
 
@@ -646,7 +646,7 @@ msgid ""
 "available on this platform."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:363
+#: ../../../../Modules/FindPython3.cmake:310
 msgid "``Python3_FIND_ABI``"
 msgstr ""
 
@@ -737,7 +737,7 @@ msgid ""
 "except for the fourth one (``gil_disabled``)."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:379
+#: ../../../../Modules/FindPython3.cmake:365
 msgid "``Python3_FIND_STRATEGY``"
 msgstr ""
 
@@ -765,7 +765,7 @@ msgstr ""
 msgid "See also ``Python3_FIND_UNVERSIONED_NAMES``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:391
+#: ../../../../Modules/FindPython3.cmake:381
 msgid "``Python3_FIND_REGISTRY``"
 msgstr ""
 
@@ -790,7 +790,7 @@ msgstr ""
 msgid "``NEVER``: Never try to use registry."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:406
+#: ../../../../Modules/FindPython3.cmake:393
 msgid "``Python3_FIND_FRAMEWORK``"
 msgstr ""
 
@@ -811,7 +811,7 @@ msgid ""
 "`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:436
+#: ../../../../Modules/FindPython3.cmake:408
 msgid "``Python3_FIND_VIRTUALENV``"
 msgstr ""
 
@@ -857,7 +857,7 @@ msgid ""
 "result."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:471
+#: ../../../../Modules/FindPython3.cmake:438
 msgid "``Python3_FIND_IMPLEMENTATIONS``"
 msgstr ""
 
@@ -916,7 +916,7 @@ msgid ""
 "through the ``PATH`` variable."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:488
+#: ../../../../Modules/FindPython3.cmake:473
 msgid "``Python3_FIND_UNVERSIONED_NAMES``"
 msgstr ""
 
@@ -966,7 +966,7 @@ msgstr ""
 msgid "The path to the compiler."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:512
+#: ../../../../Modules/FindPython3.cmake:509
 msgid "``Python3_LIBRARY``"
 msgstr ""
 
@@ -977,7 +977,7 @@ msgid ""
 "``Python3_RUNTIME_LIBRARY_DIRS``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:519
+#: ../../../../Modules/FindPython3.cmake:514
 msgid "``Python3_SABI_LIBRARY``"
 msgstr ""
 
@@ -988,7 +988,7 @@ msgid ""
 "``Python3_SABI_LIBRARY_DIRS`` and ``Python3_RUNTIME_SABI_LIBRARY_DIRS``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:523
+#: ../../../../Modules/FindPython3.cmake:521
 msgid "``Python3_INCLUDE_DIR``"
 msgstr ""
 
@@ -998,7 +998,7 @@ msgid ""
 "compute the variable ``Python3_INCLUDE_DIRS``."
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:527
+#: ../../../../Modules/FindPython3.cmake:525
 msgid "``Python3_NumPy_INCLUDE_DIR``"
 msgstr ""
 
@@ -1036,7 +1036,7 @@ msgid ""
 "module behavior can be controlled with the following variable:"
 msgstr ""
 
-#: ../../../../Modules/FindPython3.cmake:558
+#: ../../../../Modules/FindPython3.cmake:549
 msgid "``Python3_ARTIFACTS_INTERACTIVE``"
 msgstr ""
 

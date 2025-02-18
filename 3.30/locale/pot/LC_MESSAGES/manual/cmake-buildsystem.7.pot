@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,7 +275,7 @@ msgid ""
 "arguments following it.  The scopes are:"
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:209
+#: ../../../manual/cmake-buildsystem.7.rst:207
 msgid "``PUBLIC``"
 msgstr ""
 
@@ -285,7 +285,7 @@ msgid ""
 "properties for `using <Target Usage Requirements_>`_ a target."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:213
+#: ../../../manual/cmake-buildsystem.7.rst:211
 msgid "``PRIVATE``"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgid ""
 "target."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:217
+#: ../../../manual/cmake-buildsystem.7.rst:215
 msgid "``INTERFACE``"
 msgstr ""
 
@@ -308,7 +308,7 @@ msgstr ""
 msgid "The commands are:"
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:236
+#: ../../../manual/cmake-buildsystem.7.rst:221
 msgid ":command:`target_compile_definitions`"
 msgstr ""
 
@@ -337,7 +337,7 @@ msgid ""
 "``INTERFACE_COMPILE_DEFINITIONS`` property."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:240
+#: ../../../manual/cmake-buildsystem.7.rst:238
 msgid ":command:`target_compile_options`"
 msgstr ""
 
@@ -347,7 +347,7 @@ msgid ""
 "`INTERFACE_COMPILE_OPTIONS` usage requirement properties."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:246
+#: ../../../manual/cmake-buildsystem.7.rst:242
 msgid ":command:`target_compile_features`"
 msgstr ""
 
@@ -357,7 +357,7 @@ msgid ""
 "`INTERFACE_COMPILE_FEATURES` usage requirement properties."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:259
+#: ../../../manual/cmake-buildsystem.7.rst:248
 msgid ":command:`target_include_directories`"
 msgstr ""
 
@@ -378,7 +378,7 @@ msgid ""
 "as ``INTERFACE_INCLUDE_DIRECTORIES`` on all targets."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:271
+#: ../../../manual/cmake-buildsystem.7.rst:261
 msgid ":command:`target_sources`"
 msgstr ""
 
@@ -397,7 +397,7 @@ msgid ""
 "requirement properties with the include directories containing the headers."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:277
+#: ../../../manual/cmake-buildsystem.7.rst:273
 msgid ":command:`target_precompile_headers`"
 msgstr ""
 
@@ -407,7 +407,7 @@ msgid ""
 "prop_tgt:`INTERFACE_PRECOMPILE_HEADERS` usage requirement properties."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:285
+#: ../../../manual/cmake-buildsystem.7.rst:279
 msgid ":command:`target_link_libraries`"
 msgstr ""
 
@@ -424,7 +424,7 @@ msgid ""
 "affect compilation and linking of a target."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:291
+#: ../../../manual/cmake-buildsystem.7.rst:287
 msgid ":command:`target_link_directories`"
 msgstr ""
 
@@ -434,7 +434,7 @@ msgid ""
 "`INTERFACE_LINK_DIRECTORIES` usage requirement properties."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:297
+#: ../../../manual/cmake-buildsystem.7.rst:293
 msgid ":command:`target_link_options`"
 msgstr ""
 
@@ -469,7 +469,7 @@ msgid ""
 "compiling a target."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:327
+#: ../../../manual/cmake-buildsystem.7.rst:320
 msgid ":prop_tgt:`COMPILE_DEFINITIONS`"
 msgstr ""
 
@@ -487,7 +487,7 @@ msgid ""
 "library targets."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:336
+#: ../../../manual/cmake-buildsystem.7.rst:329
 msgid ":prop_tgt:`COMPILE_OPTIONS`"
 msgstr ""
 
@@ -507,7 +507,7 @@ msgid ""
 "prop_tgt:`POSITION_INDEPENDENT_CODE` target property."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:343
+#: ../../../manual/cmake-buildsystem.7.rst:338
 msgid ":prop_tgt:`COMPILE_FEATURES`"
 msgstr ""
 
@@ -518,7 +518,7 @@ msgid ""
 "sources are compiled using a sufficient language standard level."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:352
+#: ../../../manual/cmake-buildsystem.7.rst:345
 msgid ":prop_tgt:`INCLUDE_DIRECTORIES`"
 msgstr ""
 
@@ -536,7 +536,7 @@ msgid ""
 "``INCLUDE_DIRECTORIES`` on all targets."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:359
+#: ../../../manual/cmake-buildsystem.7.rst:354
 msgid ":prop_tgt:`SOURCES`"
 msgstr ""
 
@@ -549,7 +549,7 @@ msgid ""
 "not include :ref:`File Sets`."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:365
+#: ../../../manual/cmake-buildsystem.7.rst:361
 msgid ":prop_tgt:`PRECOMPILE_HEADERS`"
 msgstr ""
 
@@ -559,7 +559,7 @@ msgid ""
 "target."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:371
+#: ../../../manual/cmake-buildsystem.7.rst:367
 msgid ":prop_tgt:`AUTOMOC_MACRO_NAMES`"
 msgstr ""
 
@@ -569,7 +569,7 @@ msgid ""
 "in the target needs to be processed by ``moc``."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:377
+#: ../../../manual/cmake-buildsystem.7.rst:373
 msgid ":prop_tgt:`AUTOUIC_OPTIONS`"
 msgstr ""
 
@@ -589,7 +589,7 @@ msgid ""
 "linking a target."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:399
+#: ../../../manual/cmake-buildsystem.7.rst:387
 msgid ":prop_tgt:`LINK_LIBRARIES`"
 msgstr ""
 
@@ -612,7 +612,7 @@ msgid ""
 "properties."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:406
+#: ../../../manual/cmake-buildsystem.7.rst:401
 msgid ":prop_tgt:`LINK_DIRECTORIES`"
 msgstr ""
 
@@ -623,7 +623,7 @@ msgid ""
 "with ``-L`` flags, or equivalent."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:415
+#: ../../../manual/cmake-buildsystem.7.rst:408
 msgid ":prop_tgt:`LINK_OPTIONS`"
 msgstr ""
 
@@ -638,7 +638,7 @@ msgstr ""
 msgid "Link options are automatically escaped for the shell."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:421
+#: ../../../manual/cmake-buildsystem.7.rst:417
 msgid ":prop_tgt:`LINK_DEPENDS`"
 msgstr ""
 
@@ -781,7 +781,7 @@ msgid ""
 "compiling consumers."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:524
+#: ../../../manual/cmake-buildsystem.7.rst:522
 msgid ":prop_tgt:`INTERFACE_COMPILE_DEFINITIONS`"
 msgstr ""
 
@@ -791,7 +791,7 @@ msgid ""
 "Typically these are used by the target's header files."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:527
+#: ../../../manual/cmake-buildsystem.7.rst:526
 msgid ":prop_tgt:`INTERFACE_COMPILE_OPTIONS`"
 msgstr ""
 
@@ -800,7 +800,7 @@ msgid ""
 "List of compile options for compiling sources in the target's consumers."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:535
+#: ../../../manual/cmake-buildsystem.7.rst:529
 msgid ":prop_tgt:`INTERFACE_COMPILE_FEATURES`"
 msgstr ""
 
@@ -812,7 +812,7 @@ msgid ""
 "sufficient language standard level."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:539
+#: ../../../manual/cmake-buildsystem.7.rst:537
 msgid ":prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES`"
 msgstr ""
 
@@ -822,7 +822,7 @@ msgid ""
 "Typically these are the locations of the target's header files."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:545
+#: ../../../manual/cmake-buildsystem.7.rst:541
 msgid ":prop_tgt:`INTERFACE_SYSTEM_INCLUDE_DIRECTORIES`"
 msgstr ""
 
@@ -834,7 +834,7 @@ msgid ""
 "in the target's consumers."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:548
+#: ../../../manual/cmake-buildsystem.7.rst:547
 msgid ":prop_tgt:`INTERFACE_SOURCES`"
 msgstr ""
 
@@ -842,7 +842,7 @@ msgstr ""
 msgid "List of source files to associate with the target's consumers."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:554
+#: ../../../manual/cmake-buildsystem.7.rst:550
 msgid ":prop_tgt:`INTERFACE_PRECOMPILE_HEADERS`"
 msgstr ""
 
@@ -852,7 +852,7 @@ msgid ""
 "target's consumers."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:560
+#: ../../../manual/cmake-buildsystem.7.rst:556
 msgid ":prop_tgt:`INTERFACE_AUTOMOC_MACRO_NAMES`"
 msgstr ""
 
@@ -862,7 +862,7 @@ msgid ""
 "in the target's consumers needs to be processed by ``moc``."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:566
+#: ../../../manual/cmake-buildsystem.7.rst:562
 msgid ":prop_tgt:`INTERFACE_AUTOUIC_OPTIONS`"
 msgstr ""
 
@@ -882,7 +882,7 @@ msgid ""
 "linking consumers."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:585
+#: ../../../manual/cmake-buildsystem.7.rst:576
 msgid ":prop_tgt:`INTERFACE_LINK_LIBRARIES`"
 msgstr ""
 
@@ -902,7 +902,7 @@ msgid ""
 "Targets`_,"
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:591
+#: ../../../manual/cmake-buildsystem.7.rst:587
 msgid ":prop_tgt:`INTERFACE_LINK_DIRECTORIES`"
 msgstr ""
 
@@ -912,7 +912,7 @@ msgid ""
 "are executables, shared libraries, or module libraries."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:597
+#: ../../../manual/cmake-buildsystem.7.rst:593
 msgid ":prop_tgt:`INTERFACE_LINK_OPTIONS`"
 msgstr ""
 
@@ -922,7 +922,7 @@ msgid ""
 "executables, shared libraries, or module libraries."
 msgstr ""
 
-#: ../../../manual/cmake-buildsystem.7.rst:603
+#: ../../../manual/cmake-buildsystem.7.rst:599
 msgid ":prop_tgt:`INTERFACE_LINK_DEPENDS`"
 msgstr ""
 

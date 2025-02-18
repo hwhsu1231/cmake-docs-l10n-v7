@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Packaging is performed using the following tools:"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:32
+#: ../../../cpack_gen/wix.rst:26
 msgid "``wix build``"
 msgstr ""
 
@@ -145,7 +145,7 @@ msgstr ""
 msgid "WiX Toolset v3"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:83
+#: ../../../cpack_gen/wix.rst:77
 msgid "``candle``"
 msgstr ""
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid ":variable:`CPACK_WIX_CANDLE_EXTRA_FLAGS <CPACK_WIX_<TOOL>_EXTRA_FLAGS>`"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:91
+#: ../../../cpack_gen/wix.rst:85
 msgid "``light``"
 msgstr ""
 
@@ -210,7 +210,7 @@ msgid ""
 "The value must be one of"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:116
+#: ../../../cpack_gen/wix.rst:115
 msgid "``4``"
 msgstr ""
 
@@ -685,7 +685,7 @@ msgid ""
 "installer:"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:462
+#: ../../../cpack_gen/wix.rst:456
 msgid "``perMachine``"
 msgstr ""
 
@@ -702,7 +702,7 @@ msgid ""
 "other than ``3``."
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:465
+#: ../../../cpack_gen/wix.rst:464
 msgid "``perUser``"
 msgstr ""
 
@@ -710,7 +710,7 @@ msgstr ""
 msgid "Not yet supported. This is reserved for future use."
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:489
+#: ../../../cpack_gen/wix.rst:467
 msgid "``NONE``"
 msgstr ""
 

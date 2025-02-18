@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid ""
 "own built-in types. The pre-defined linker types are:"
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:12
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:10
 msgid "``DEFAULT``"
 msgstr ""
 
@@ -51,7 +51,7 @@ msgid ""
 "prop_tgt:`LINKER_TYPE` target property not being set at all."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:23
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:14
 msgid "``SYSTEM``"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgid ""
 "Windows: ``MSVC``, ``GNU``, ``Clang``, ``NVIDIA``, and ``Swift`` compilers."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:34
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:25
 msgid "``LLD``"
 msgstr ""
 
@@ -99,7 +99,7 @@ msgid ""
 "like front-end, ``MSVC``, ``NVIDIA`` with MSVC-like front-end, and ``Swift``."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:41
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:36
 msgid "``BFD``"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgstr ""
 msgid "Windows: ``GNU``, ``Clang`` with GNU-like front-end."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:45
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:43
 msgid "``GOLD``"
 msgstr ""
 
@@ -128,7 +128,7 @@ msgid ""
 "``NVIDIA``, and ``Swift`` compilers."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:53
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:47
 msgid "``MOLD``"
 msgstr ""
 
@@ -144,7 +144,7 @@ msgid ""
 "the `sold linker`_)."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:57
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:55
 msgid "``SOLD``"
 msgstr ""
 
@@ -154,7 +154,7 @@ msgid ""
 "``Clang`` and ``AppleClang`` compilers."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:62
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:59
 msgid "``APPLE_CLASSIC``"
 msgstr ""
 
@@ -165,7 +165,7 @@ msgid ""
 "``AppleClang``, and ``Swift`` compilers."
 msgstr ""
 
-#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:67
+#: ../../../variable/LINKER_PREDEFINED_TYPES.txt:64
 msgid "``MSVC``"
 msgstr ""
 

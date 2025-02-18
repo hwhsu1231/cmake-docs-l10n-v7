@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,7 @@ msgstr ""
 msgid "This may be set to:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:90
+#: ../../../cpack_gen/rpm.rst:89
 msgid "``RPM-DEFAULT``"
 msgstr ""
 
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Tell ``rpmbuild`` to automatically generate the package file name."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:98
+#: ../../../cpack_gen/rpm.rst:92
 msgid "``<file-name>[.rpm]``"
 msgstr ""
 
@@ -386,7 +386,7 @@ msgstr ""
 msgid "Possible values are:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:256
+#: ../../../cpack_gen/rpm.rst:255
 msgid "``lzma``"
 msgstr ""
 
@@ -394,7 +394,7 @@ msgstr ""
 msgid "Lempel–Ziv–Markov chain algorithm"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:259
+#: ../../../cpack_gen/rpm.rst:258
 msgid "``xz``"
 msgstr ""
 
@@ -402,7 +402,7 @@ msgstr ""
 msgid "XZ Utils compression"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:262
+#: ../../../cpack_gen/rpm.rst:261
 msgid "``bzip2``"
 msgstr ""
 
@@ -775,7 +775,7 @@ msgstr ""
 msgid "list of path to be excluded."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:637 ../../../cpack_gen/rpm.rst:944
+#: ../../../cpack_gen/rpm.rst:626 ../../../cpack_gen/rpm.rst:941
 msgid "The following paths are excluded by default:"
 msgstr ""
 
@@ -902,7 +902,7 @@ msgid ""
 "paths."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:730
+#: ../../../cpack_gen/rpm.rst:719
 msgid ""
 "Regular expressions that are added by default were taken from ``brp-"
 "compress`` RPM macro:"

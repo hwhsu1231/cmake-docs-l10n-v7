@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,7 @@ msgstr ""
 msgid "True if zlib found."
 msgstr ""
 
-#: ../../../../Modules/FindZLIB.cmake:33
+#: ../../../../Modules/FindZLIB.cmake:29
 msgid "``ZLIB_VERSION``"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid "The following variables are provided for backward compatibility:"
 msgstr ""
 
-#: ../../../../Modules/FindZLIB.cmake:46
+#: ../../../../Modules/FindZLIB.cmake:43
 msgid "``ZLIB_VERSION_MAJOR``"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Superseded by ``ZLIB_VERSION``."
 msgstr ""
 
-#: ../../../../Modules/FindZLIB.cmake:51
+#: ../../../../Modules/FindZLIB.cmake:48
 msgid "``ZLIB_VERSION_MINOR``"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "The minor version of zlib."
 msgstr ""
 
-#: ../../../../Modules/FindZLIB.cmake:56
+#: ../../../../Modules/FindZLIB.cmake:53
 msgid "``ZLIB_VERSION_PATCH``"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr ""
 msgid "The patch version of zlib."
 msgstr ""
 
-#: ../../../../Modules/FindZLIB.cmake:61
+#: ../../../../Modules/FindZLIB.cmake:58
 msgid "``ZLIB_VERSION_TWEAK``"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 msgid "The tweak version of zlib."
 msgstr ""
 
-#: ../../../../Modules/FindZLIB.cmake:66
+#: ../../../../Modules/FindZLIB.cmake:63
 msgid "``ZLIB_VERSION_STRING``"
 msgstr ""
 
@@ -153,7 +153,7 @@ msgstr ""
 msgid "The minor version of zlib.  Superseded by ``ZLIB_VERSION_MINOR``."
 msgstr ""
 
-#: ../../../../Modules/FindZLIB.cmake:73
+#: ../../../../Modules/FindZLIB.cmake:72
 msgid "``ZLIB_PATCH_VERSION``"
 msgstr ""
 

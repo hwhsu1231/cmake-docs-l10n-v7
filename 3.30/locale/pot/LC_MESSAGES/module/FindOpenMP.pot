@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "The following variables may be set to influence this module's behavior:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:29
+#: ../../../../Modules/FindOpenMP.cmake:24
 msgid "``OpenMP_RUNTIME_MSVC``"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgid ""
 "Depending on the enabled components the following variables will be set:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:44
+#: ../../../../Modules/FindOpenMP.cmake:42
 msgid "``OpenMP_FOUND``"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgid ""
 "all enabled languages were detected."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:48
+#: ../../../../Modules/FindOpenMP.cmake:46
 msgid "``OpenMP_VERSION``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid "OpenMP compiler flags for ``<lang>``, separated by spaces."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:59
+#: ../../../../Modules/FindOpenMP.cmake:57
 msgid "``OpenMP_<lang>_INCLUDE_DIRS``"
 msgstr ""
 
@@ -149,7 +149,7 @@ msgid ""
 "Location of the individual libraries needed for OpenMP support in ``<lang>``."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:69
+#: ../../../../Modules/FindOpenMP.cmake:68
 msgid "``OpenMP_<lang>_LIBRARIES``"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr ""
 msgid "Additionally, the module provides :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:74
+#: ../../../../Modules/FindOpenMP.cmake:73
 msgid "``OpenMP::OpenMP_<lang>``"
 msgstr ""
 
@@ -182,7 +182,7 @@ msgstr ""
 msgid "Boolean indicating if OpenMP is accessible through ``omp_lib.h``."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:81
+#: ../../../../Modules/FindOpenMP.cmake:80
 msgid "``OpenMP_Fortran_HAVE_OMPLIB_MODULE``"
 msgstr ""
 
@@ -196,7 +196,7 @@ msgstr ""
 msgid "The module will also try to provide the OpenMP version variables:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:87
+#: ../../../../Modules/FindOpenMP.cmake:85
 msgid "``OpenMP_<lang>_SPEC_DATE``"
 msgstr ""
 
@@ -221,7 +221,7 @@ msgstr ""
 msgid "Minor version of OpenMP implemented by the ``<lang>`` compiler."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:94
+#: ../../../../Modules/FindOpenMP.cmake:93
 msgid "``OpenMP_<lang>_VERSION``"
 msgstr ""
 
