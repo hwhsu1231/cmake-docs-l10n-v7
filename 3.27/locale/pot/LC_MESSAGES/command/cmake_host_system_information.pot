@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,7 +58,7 @@ msgstr ""
 msgid "``<key>`` can be one of the following values:"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:31
+#: ../../../command/cmake_host_system_information.rst:30
 msgid "``NUMBER_OF_LOGICAL_CORES``"
 msgstr ""
 
@@ -65,7 +66,7 @@ msgstr ""
 msgid "Number of logical cores"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:34
+#: ../../../command/cmake_host_system_information.rst:33
 msgid "``NUMBER_OF_PHYSICAL_CORES``"
 msgstr ""
 
@@ -73,7 +74,7 @@ msgstr ""
 msgid "Number of physical cores"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:37
+#: ../../../command/cmake_host_system_information.rst:36
 msgid "``HOSTNAME``"
 msgstr ""
 
@@ -81,7 +82,7 @@ msgstr ""
 msgid "Hostname"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:40
+#: ../../../command/cmake_host_system_information.rst:39
 msgid "``FQDN``"
 msgstr ""
 
@@ -89,7 +90,7 @@ msgstr ""
 msgid "Fully qualified domain name"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:43
+#: ../../../command/cmake_host_system_information.rst:42
 msgid "``TOTAL_VIRTUAL_MEMORY``"
 msgstr ""
 
@@ -97,7 +98,7 @@ msgstr ""
 msgid "Total virtual memory in MiB [#mebibytes]_"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:46
+#: ../../../command/cmake_host_system_information.rst:45
 msgid "``AVAILABLE_VIRTUAL_MEMORY``"
 msgstr ""
 
@@ -105,7 +106,7 @@ msgstr ""
 msgid "Available virtual memory in MiB [#mebibytes]_"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:49
+#: ../../../command/cmake_host_system_information.rst:48
 msgid "``TOTAL_PHYSICAL_MEMORY``"
 msgstr ""
 
@@ -113,7 +114,7 @@ msgstr ""
 msgid "Total physical memory in MiB [#mebibytes]_"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:52
+#: ../../../command/cmake_host_system_information.rst:51
 msgid "``AVAILABLE_PHYSICAL_MEMORY``"
 msgstr ""
 
@@ -121,7 +122,7 @@ msgstr ""
 msgid "Available physical memory in MiB [#mebibytes]_"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:57
+#: ../../../command/cmake_host_system_information.rst:54
 msgid "``IS_64BIT``"
 msgstr ""
 
@@ -129,7 +130,7 @@ msgstr ""
 msgid "One if processor is 64Bit"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:62
+#: ../../../command/cmake_host_system_information.rst:59
 msgid "``HAS_FPU``"
 msgstr ""
 
@@ -137,7 +138,7 @@ msgstr ""
 msgid "One if processor has floating point unit"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:67
+#: ../../../command/cmake_host_system_information.rst:64
 msgid "``HAS_MMX``"
 msgstr ""
 
@@ -145,7 +146,7 @@ msgstr ""
 msgid "One if processor supports MMX instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:72
+#: ../../../command/cmake_host_system_information.rst:69
 msgid "``HAS_MMX_PLUS``"
 msgstr ""
 
@@ -153,7 +154,7 @@ msgstr ""
 msgid "One if processor supports Ext. MMX instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:77
+#: ../../../command/cmake_host_system_information.rst:74
 msgid "``HAS_SSE``"
 msgstr ""
 
@@ -161,7 +162,7 @@ msgstr ""
 msgid "One if processor supports SSE instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:82
+#: ../../../command/cmake_host_system_information.rst:79
 msgid "``HAS_SSE2``"
 msgstr ""
 
@@ -169,7 +170,7 @@ msgstr ""
 msgid "One if processor supports SSE2 instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:87
+#: ../../../command/cmake_host_system_information.rst:84
 msgid "``HAS_SSE_FP``"
 msgstr ""
 
@@ -177,7 +178,7 @@ msgstr ""
 msgid "One if processor supports SSE FP instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:92
+#: ../../../command/cmake_host_system_information.rst:89
 msgid "``HAS_SSE_MMX``"
 msgstr ""
 
@@ -185,7 +186,7 @@ msgstr ""
 msgid "One if processor supports SSE MMX instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:97
+#: ../../../command/cmake_host_system_information.rst:94
 msgid "``HAS_AMD_3DNOW``"
 msgstr ""
 
@@ -193,7 +194,7 @@ msgstr ""
 msgid "One if processor supports 3DNow instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:102
+#: ../../../command/cmake_host_system_information.rst:99
 msgid "``HAS_AMD_3DNOW_PLUS``"
 msgstr ""
 
@@ -201,7 +202,7 @@ msgstr ""
 msgid "One if processor supports 3DNow+ instructions"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:107
+#: ../../../command/cmake_host_system_information.rst:104
 msgid "``HAS_IA64``"
 msgstr ""
 
@@ -209,7 +210,7 @@ msgstr ""
 msgid "One if IA64 processor emulating x86"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:112
+#: ../../../command/cmake_host_system_information.rst:109
 msgid "``HAS_SERIAL_NUMBER``"
 msgstr ""
 
@@ -217,7 +218,7 @@ msgstr ""
 msgid "One if processor has serial number"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:117
+#: ../../../command/cmake_host_system_information.rst:114
 msgid "``PROCESSOR_SERIAL_NUMBER``"
 msgstr ""
 
@@ -225,7 +226,7 @@ msgstr ""
 msgid "Processor serial number"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:122
+#: ../../../command/cmake_host_system_information.rst:119
 msgid "``PROCESSOR_NAME``"
 msgstr ""
 
@@ -233,7 +234,7 @@ msgstr ""
 msgid "Human readable processor name"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:127
+#: ../../../command/cmake_host_system_information.rst:124
 msgid "``PROCESSOR_DESCRIPTION``"
 msgstr ""
 
@@ -241,7 +242,7 @@ msgstr ""
 msgid "Human readable full processor description"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:132
+#: ../../../command/cmake_host_system_information.rst:129
 msgid "``OS_NAME``"
 msgstr ""
 
@@ -249,7 +250,7 @@ msgstr ""
 msgid "See :variable:`CMAKE_HOST_SYSTEM_NAME`"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:137
+#: ../../../command/cmake_host_system_information.rst:134
 msgid "``OS_RELEASE``"
 msgstr ""
 
@@ -257,7 +258,7 @@ msgstr ""
 msgid "The OS sub-type e.g. on Windows ``Professional``"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:142
+#: ../../../command/cmake_host_system_information.rst:139
 msgid "``OS_VERSION``"
 msgstr ""
 
@@ -265,7 +266,7 @@ msgstr ""
 msgid "The OS build ID"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:147
+#: ../../../command/cmake_host_system_information.rst:144
 msgid "``OS_PLATFORM``"
 msgstr ""
 
@@ -273,7 +274,7 @@ msgstr ""
 msgid "See :variable:`CMAKE_HOST_SYSTEM_PROCESSOR`"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:153
+#: ../../../command/cmake_host_system_information.rst:149
 msgid "``DISTRIB_INFO``"
 msgstr ""
 
@@ -283,7 +284,7 @@ msgid ""
 "list of read variables"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:189
+#: ../../../command/cmake_host_system_information.rst:155
 msgid "``DISTRIB_<name>``"
 msgstr ""
 
@@ -487,7 +488,7 @@ msgid ""
 "\\SOFTWARE\\\\Kitware\")"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:312
+#: ../../../command/cmake_host_system_information.rst:310
 msgid "``VALUE_NAMES``"
 msgstr ""
 
@@ -497,7 +498,7 @@ msgid ""
 "is defined, it will be identified with the special name ``(default)``."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:315
+#: ../../../command/cmake_host_system_information.rst:314
 msgid "``SUBKEYS``"
 msgstr ""
 
@@ -505,7 +506,7 @@ msgstr ""
 msgid "Request the list of subkeys defined under ``<key>``."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:342
+#: ../../../command/cmake_host_system_information.rst:317
 msgid "``VALUE <name>``"
 msgstr ""
 
@@ -561,7 +562,7 @@ msgstr ""
 msgid "For all other types, an empty string is returned."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:388
+#: ../../../command/cmake_host_system_information.rst:344
 msgid "``VIEW``"
 msgstr ""
 
@@ -571,7 +572,7 @@ msgid ""
 "view is used."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:350
+#: ../../../command/cmake_host_system_information.rst:348
 msgid "``64``"
 msgstr ""
 
@@ -581,7 +582,7 @@ msgid ""
 "string."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:353
+#: ../../../command/cmake_host_system_information.rst:352
 msgid "``32``"
 msgstr ""
 
@@ -589,7 +590,7 @@ msgstr ""
 msgid "Query the 32bit registry."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:359
+#: ../../../command/cmake_host_system_information.rst:355
 msgid "``64_32``"
 msgstr ""
 
@@ -601,7 +602,7 @@ msgid ""
 "``32``) and merge the results (sorted and duplicates removed)."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:365
+#: ../../../command/cmake_host_system_information.rst:361
 msgid "``32_64``"
 msgstr ""
 
@@ -613,7 +614,7 @@ msgid ""
 "``64``) and merge the results (sorted and duplicates removed)."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:369
+#: ../../../command/cmake_host_system_information.rst:367
 msgid "``HOST``"
 msgstr ""
 
@@ -623,7 +624,7 @@ msgid ""
 "Windows`` and ``32`` on ``32bit Windows``."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:374
+#: ../../../command/cmake_host_system_information.rst:371
 msgid "``TARGET``"
 msgstr ""
 
@@ -633,7 +634,7 @@ msgid ""
 "`CMAKE_SIZEOF_VOID_P` variable. If not defined, fallback to ``HOST`` view."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:388
+#: ../../../command/cmake_host_system_information.rst:376
 msgid "``BOTH``"
 msgstr ""
 
@@ -666,7 +667,7 @@ msgstr ""
 msgid "``32bit``: ``32``"
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:392
+#: ../../../command/cmake_host_system_information.rst:390
 msgid "``SEPARATOR``"
 msgstr ""
 
@@ -676,7 +677,7 @@ msgid ""
 "specified, the character ``\\0`` is used."
 msgstr ""
 
-#: ../../../command/cmake_host_system_information.rst:395
+#: ../../../command/cmake_host_system_information.rst:394
 msgid "``ERROR_VARIABLE <result>``"
 msgstr ""
 

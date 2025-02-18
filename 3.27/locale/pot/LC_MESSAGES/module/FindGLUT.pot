@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.27\n"
+"Project-Id-Version: CMake 3.27\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,7 +33,7 @@ msgstr ""
 msgid "This module defines the :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:18
+#: ../../../../Modules/FindGLUT.cmake:17
 msgid "``GLUT::GLUT``"
 msgstr ""
 
@@ -48,7 +49,7 @@ msgstr ""
 msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:26
+#: ../../../../Modules/FindGLUT.cmake:25
 msgid "``GLUT_FOUND``"
 msgstr ""
 
@@ -56,7 +57,7 @@ msgstr ""
 msgid "True if ``glut`` was found."
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:31
+#: ../../../../Modules/FindGLUT.cmake:28
 msgid "``GLUT_INCLUDE_DIRS``"
 msgstr ""
 
@@ -64,7 +65,7 @@ msgstr ""
 msgid "Where to find GL/glut.h, etc."
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:34
+#: ../../../../Modules/FindGLUT.cmake:33
 msgid "``GLUT_LIBRARIES``"
 msgstr ""
 
@@ -83,7 +84,7 @@ msgid ""
 "but clients should not use these as results:"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:45 ../../../../Modules/FindGLUT.cmake:242
+#: ../../../../Modules/FindGLUT.cmake:43 ../../../../Modules/FindGLUT.cmake:61
 msgid "``GLUT_INCLUDE_DIR``"
 msgstr ""
 
@@ -93,7 +94,7 @@ msgid ""
 "``."
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:48
+#: ../../../../Modules/FindGLUT.cmake:47
 msgid "``GLUT_glut_LIBRARY``"
 msgstr ""
 
@@ -101,7 +102,7 @@ msgstr ""
 msgid "The full path to the glut library."
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:51
+#: ../../../../Modules/FindGLUT.cmake:50
 msgid "``GLUT_Xmu_LIBRARY``"
 msgstr ""
 
@@ -109,7 +110,7 @@ msgstr ""
 msgid "The full path to the Xmu library."
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:54
+#: ../../../../Modules/FindGLUT.cmake:53
 msgid "``GLUT_Xi_LIBRARY``"
 msgstr ""
 
