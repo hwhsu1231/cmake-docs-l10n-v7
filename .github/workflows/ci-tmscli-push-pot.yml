@@ -116,28 +116,28 @@ jobs:
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
-      MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
-      MATRIX_NUM: ${{ steps.gmjl.outputs.MATRIX_NUM }}
+      MATRIX: ${{ steps.gmja.outputs.MATRIX }}
+      MATRIX_NUM: ${{ steps.gmja.outputs.MATRIX_NUM }}
     steps:
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
           submodules: false
-      - name: Get VERSION_LIST from versions.json
+      - name: Get VERSION_ARRAY from versions.json
         id: gvlv
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-list-from-versions-file@main
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-array-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP }}
           version-filter: 'tmscli'
-      - name: Get MATRIX from the JSON Lists
-        id: gmjl
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-lists@main
+      - name: Get MATRIX from the JSON Arraies
+        id: gmja
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-arraies@main
         with:
           matrix-type: 'version'
-          version-list: ${{ steps.gvlv.outputs.VERSION_LIST }}
+          version-array: ${{ steps.gvlv.outputs.VERSION_ARRAY }}
 
   caller:
     needs: [ 'get-matrix' ]

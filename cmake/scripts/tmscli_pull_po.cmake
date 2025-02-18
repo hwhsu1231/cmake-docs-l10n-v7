@@ -38,11 +38,11 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
     get_json_value_by_dot_notation(
         IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
-        IN_DOT_NOTATION   ".${_LANGUAGE}.crowdin"
-        OUT_JSON_VALUE    _LANGUAGE_CROWDIN)
+        IN_DOT_NOTATION   ".${_LANGUAGE}.tmscli"
+        OUT_JSON_VALUE    _LANGUAGE_TMSCLI)
 
 
-    message(STATUS "Preparing to pull '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from TMS...")
+    message(STATUS "Preparing to pull '${_LANGUAGE_TMSCLI}' translations for '${VERSION}' version from Crowdin...")
     set(TMSCLI_PO_DIR   "${PROJ_L10N_VERSION_TMSCLI_DIR}/${_LANGUAGE}")
     set(COMPEND_PO_FILE "${PROJ_L10N_VERSION_COMPEND_DIR}/${_LANGUAGE}.po")
     set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
@@ -50,7 +50,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     remove_cmake_message_indent()
     message("")
     message("_LANGUAGE            = ${_LANGUAGE}")
-    message("_LANGUAGE_CROWDIN    = ${_LANGUAGE_CROWDIN}")
+    message("_LANGUAGE_TMSCLI     = ${_LANGUAGE_TMSCLI}")
     message("TMS_CONFIG_FILE_PATH = ${TMS_CONFIG_FILE_PATH}")
     message("TMSCLI_PO_DIR        = ${TMSCLI_PO_DIR}")
     message("COMPEND_PO_FILE      = ${COMPEND_PO_FILE}")
@@ -60,12 +60,12 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Pulling '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from TMS...")
+    message(STATUS "Pulling '${_LANGUAGE_TMSCLI}' translations for '${VERSION}' version from Crowdin...")
     remove_cmake_message_indent()
     message("")
     execute_process(
         COMMAND ${Crowdin_EXECUTABLE} download
-                --language=${_LANGUAGE_CROWDIN}
+                --language=${_LANGUAGE_TMSCLI}
                 --branch=${VERSION}
                 --config=${TMS_CONFIG_FILE_PATH}
                 --export-only-approved
@@ -79,7 +79,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Concatenating '${_LANGUAGE}' translations of '${VERSION}' verison from TMS into a compendium file...")
+    message(STATUS "Concatenating '${_LANGUAGE}' translations of '${VERSION}' verison from Crowdin into a compendium file...")
     remove_cmake_message_indent()
     message("")
     concat_po_from_locale_to_compendium(
@@ -90,7 +90,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Merging '${_LANGUAGE}' translations of '${VERSION}' verison from TMS with the compendium file...")
+    message(STATUS "Merging '${_LANGUAGE}' translations of '${VERSION}' verison from Crowdin with the compendium file...")
     remove_cmake_message_indent()
     message("")
     merge_po_from_src_to_dst_with_compendium(

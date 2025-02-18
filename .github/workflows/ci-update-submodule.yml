@@ -76,8 +76,8 @@ jobs:
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
-      MATRIX: ${{ steps.gmjl.outputs.MATRIX }}
-      MATRIX_NUM: ${{ steps.gmjl.outputs.MATRIX_NUM }}
+      MATRIX: ${{ steps.gmja.outputs.MATRIX }}
+      MATRIX_NUM: ${{ steps.gmja.outputs.MATRIX_NUM }}
     steps:
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
@@ -86,15 +86,15 @@ jobs:
           submodules: false
       - name: Get the Submodule List from .gitmodules
         id: gsl
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-submodule-list-from-gitmodules-file@main
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-submodule-array-from-gitmodules-file@main
         with:
           submodule: ${{ inputs.SUBMODULE || 'all' }}
-      - name: Get the MATRIX from the JSON Lists
-        id: gmjl
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-lists@main
+      - name: Get MATRIX from the JSON Arraies
+        id: gmja
+        uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-arraies@main
         with:
           matrix-type: 'submodule'
-          submodule-list: ${{ steps.gsl.outputs.SUBMODULE_LIST }}
+          submodule-list: ${{ steps.gsl.outputs.SUBMODULE_ARRAY }}
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
