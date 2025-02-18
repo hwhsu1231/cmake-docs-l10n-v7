@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,7 +57,7 @@ msgstr ""
 msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindCURL.cmake:30
+#: ../../../../Modules/FindCURL.cmake:29
 msgid "``CURL_FOUND``"
 msgstr ""
 
@@ -64,7 +65,7 @@ msgstr ""
 msgid "\"True\" if ``curl`` found."
 msgstr ""
 
-#: ../../../../Modules/FindCURL.cmake:33
+#: ../../../../Modules/FindCURL.cmake:32
 msgid "``CURL_INCLUDE_DIRS``"
 msgstr ""
 
@@ -72,7 +73,7 @@ msgstr ""
 msgid "where to find ``curl``/``curl.h``, etc."
 msgstr ""
 
-#: ../../../../Modules/FindCURL.cmake:36
+#: ../../../../Modules/FindCURL.cmake:35
 msgid "``CURL_LIBRARIES``"
 msgstr ""
 
@@ -80,7 +81,7 @@ msgstr ""
 msgid "List of libraries when using ``curl``."
 msgstr ""
 
-#: ../../../../Modules/FindCURL.cmake:39
+#: ../../../../Modules/FindCURL.cmake:38
 msgid "``CURL_VERSION_STRING``"
 msgstr ""
 

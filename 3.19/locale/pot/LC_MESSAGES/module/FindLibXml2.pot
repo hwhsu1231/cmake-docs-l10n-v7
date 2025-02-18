@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +41,7 @@ msgstr ""
 msgid "If the libxml2 library has been found"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:18
+#: ../../../../Modules/FindLibXml2.cmake:17
 msgid "``LibXml2::xmllint``"
 msgstr ""
 
@@ -106,7 +107,7 @@ msgstr ""
 msgid "path to the XML checking tool xmllint coming with LibXml2"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:38
+#: ../../../../Modules/FindLibXml2.cmake:37
 msgid "``LIBXML2_VERSION_STRING``"
 msgstr ""
 
@@ -122,7 +123,7 @@ msgstr ""
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:120
+#: ../../../../Modules/FindLibXml2.cmake:47
 msgid "``LIBXML2_LIBRARY``"
 msgstr ""
 

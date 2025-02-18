@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -84,7 +85,7 @@ msgstr ""
 msgid "Logical Operators"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:58
+#: ../../../manual/cmake-generator-expressions.7.rst:49
 msgid "``$<BOOL:string>``"
 msgstr ""
 
@@ -112,7 +113,7 @@ msgstr ""
 msgid "Otherwise evaluates to ``1``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:63
+#: ../../../manual/cmake-generator-expressions.7.rst:60
 msgid "``$<AND:conditions>``"
 msgstr ""
 
@@ -122,7 +123,7 @@ msgid ""
 "Evaluates to ``1`` if all conditions are ``1``. Otherwise evaluates to ``0``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:68
+#: ../../../manual/cmake-generator-expressions.7.rst:65
 msgid "``$<OR:conditions>``"
 msgstr ""
 
@@ -133,7 +134,7 @@ msgid ""
 "evaluates to ``0``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:71
+#: ../../../manual/cmake-generator-expressions.7.rst:70
 msgid "``$<NOT:condition>``"
 msgstr ""
 
@@ -145,7 +146,7 @@ msgstr ""
 msgid "String Comparisons"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:84
+#: ../../../manual/cmake-generator-expressions.7.rst:76
 msgid "``$<STREQUAL:string1,string2>``"
 msgstr ""
 
@@ -171,7 +172,7 @@ msgstr ""
 msgid "``1`` if ``value1`` and ``value2`` are numerically equal, else ``0``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:89
+#: ../../../manual/cmake-generator-expressions.7.rst:88
 msgid "``$<IN_LIST:string,list>``"
 msgstr ""
 
@@ -213,7 +214,7 @@ msgstr ""
 msgid "``1`` if ``v1`` is a version less than or equal to ``v2``, else ``0``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:101
+#: ../../../manual/cmake-generator-expressions.7.rst:99
 msgid "``$<VERSION_GREATER_EQUAL:v1,v2>``"
 msgstr ""
 
@@ -235,7 +236,7 @@ msgstr ""
 msgid "``1`` if ``target`` exists, else ``0``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:112
+#: ../../../manual/cmake-generator-expressions.7.rst:108
 msgid "``$<CONFIG:cfgs>``"
 msgstr ""
 
@@ -247,7 +248,7 @@ msgid ""
 "is evaluated on a property on an :prop_tgt:`IMPORTED` target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:117
+#: ../../../manual/cmake-generator-expressions.7.rst:114
 msgid "``$<PLATFORM_ID:platform_ids>``"
 msgstr ""
 
@@ -258,7 +259,7 @@ msgid ""
 "``0``. See also the :variable:`CMAKE_SYSTEM_NAME` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:122
+#: ../../../manual/cmake-generator-expressions.7.rst:119
 msgid "``$<C_COMPILER_ID:compiler_ids>``"
 msgstr ""
 
@@ -270,7 +271,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:127
+#: ../../../manual/cmake-generator-expressions.7.rst:124
 msgid "``$<CXX_COMPILER_ID:compiler_ids>``"
 msgstr ""
 
@@ -282,7 +283,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:132
+#: ../../../manual/cmake-generator-expressions.7.rst:129
 msgid "``$<CUDA_COMPILER_ID:compiler_ids>``"
 msgstr ""
 
@@ -294,7 +295,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:137
+#: ../../../manual/cmake-generator-expressions.7.rst:134
 msgid "``$<OBJC_COMPILER_ID:compiler_ids>``"
 msgstr ""
 
@@ -306,7 +307,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:142
+#: ../../../manual/cmake-generator-expressions.7.rst:139
 msgid "``$<OBJCXX_COMPILER_ID:compiler_ids>``"
 msgstr ""
 
@@ -318,7 +319,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:147
+#: ../../../manual/cmake-generator-expressions.7.rst:144
 msgid "``$<Fortran_COMPILER_ID:compiler_ids>``"
 msgstr ""
 
@@ -330,7 +331,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:152
+#: ../../../manual/cmake-generator-expressions.7.rst:149
 msgid "``$<ISPC_COMPILER_ID:compiler_ids>``"
 msgstr ""
 
@@ -342,7 +343,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:155
+#: ../../../manual/cmake-generator-expressions.7.rst:154
 msgid "``$<C_COMPILER_VERSION:version>``"
 msgstr ""
 
@@ -352,7 +353,7 @@ msgid ""
 "See also the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:158
+#: ../../../manual/cmake-generator-expressions.7.rst:157
 msgid "``$<CXX_COMPILER_VERSION:version>``"
 msgstr ""
 
@@ -363,11 +364,11 @@ msgid ""
 "``0``. See also the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:161
+#: ../../../manual/cmake-generator-expressions.7.rst:160
 msgid "``$<CUDA_COMPILER_VERSION:version>``"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:164
+#: ../../../manual/cmake-generator-expressions.7.rst:163
 msgid "``$<OBJC_COMPILER_VERSION:version>``"
 msgstr ""
 
@@ -377,7 +378,7 @@ msgid ""
 "``0``. See also the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:167
+#: ../../../manual/cmake-generator-expressions.7.rst:166
 msgid "``$<OBJCXX_COMPILER_VERSION:version>``"
 msgstr ""
 
@@ -387,7 +388,7 @@ msgid ""
 "``0``. See also the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:170
+#: ../../../manual/cmake-generator-expressions.7.rst:169
 msgid "``$<Fortran_COMPILER_VERSION:version>``"
 msgstr ""
 
@@ -397,7 +398,7 @@ msgid ""
 "``0``. See also the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:173
+#: ../../../manual/cmake-generator-expressions.7.rst:172
 msgid "``$<ISPC_COMPILER_VERSION:version>``"
 msgstr ""
 
@@ -407,7 +408,7 @@ msgid ""
 "``0``. See also the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:178
+#: ../../../manual/cmake-generator-expressions.7.rst:175
 msgid "``$<TARGET_POLICY:policy>``"
 msgstr ""
 
@@ -419,7 +420,7 @@ msgid ""
 "policies."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:188
+#: ../../../manual/cmake-generator-expressions.7.rst:180
 msgid "``$<COMPILE_FEATURES:features>``"
 msgstr ""
 
@@ -434,7 +435,7 @@ msgid ""
 "information on compile features and a list of supported compilers."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:226
+#: ../../../manual/cmake-generator-expressions.7.rst:192
 msgid "``$<COMPILE_LANG_AND_ID:language,compiler_ids>``"
 msgstr ""
 
@@ -489,7 +490,7 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:269
+#: ../../../manual/cmake-generator-expressions.7.rst:228
 msgid "``$<COMPILE_LANGUAGE:languages>``"
 msgstr ""
 
@@ -545,7 +546,7 @@ msgid ""
 "target_link_libraries(myapp myapp_c myapp_cxx)"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:310
+#: ../../../manual/cmake-generator-expressions.7.rst:273
 msgid "``$<LINK_LANG_AND_ID:language,compiler_ids>``"
 msgstr ""
 
@@ -596,7 +597,7 @@ msgid ""
 "of this generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:372
+#: ../../../manual/cmake-generator-expressions.7.rst:312
 msgid "``$<LINK_LANGUAGE:languages>``"
 msgstr ""
 
@@ -671,7 +672,7 @@ msgid ""
 "correctly add target ``libother`` as link dependency."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:379
+#: ../../../manual/cmake-generator-expressions.7.rst:374
 msgid "``$<DEVICE_LINK:list>``"
 msgstr ""
 
@@ -683,7 +684,7 @@ msgid ""
 "`CMP0105`. This expression can only be used to specify link options."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:385
+#: ../../../manual/cmake-generator-expressions.7.rst:381
 msgid "``$<HOST_LINK:list>``"
 msgstr ""
 
@@ -789,7 +790,7 @@ msgid ""
 "A literal ``,``. Used for example to compare strings which contain a ``,``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:442
+#: ../../../manual/cmake-generator-expressions.7.rst:441
 msgid "``$<SEMICOLON>``"
 msgstr ""
 
@@ -808,7 +809,7 @@ msgid ""
 "``0`` or ``1``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:454
+#: ../../../manual/cmake-generator-expressions.7.rst:452
 msgid "``$<condition:true_string>``"
 msgstr ""
 
@@ -818,7 +819,7 @@ msgid ""
 "to the empty string."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:458
+#: ../../../manual/cmake-generator-expressions.7.rst:456
 msgid "``$<IF:condition,true_string,false_string>``"
 msgstr ""
 
@@ -882,7 +883,7 @@ msgstr ""
 msgid "Content of ``string`` converted to lower case."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:484
+#: ../../../manual/cmake-generator-expressions.7.rst:483
 msgid "``$<UPPER_CASE:string>``"
 msgstr ""
 
@@ -890,7 +891,7 @@ msgstr ""
 msgid "Content of ``string`` converted to upper case."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:488
+#: ../../../manual/cmake-generator-expressions.7.rst:486
 msgid "``$<GENEX_EVAL:expr>``"
 msgstr ""
 
@@ -901,7 +902,7 @@ msgid ""
 "results itself in generator expressions."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:524
+#: ../../../manual/cmake-generator-expressions.7.rst:490
 msgid "``$<TARGET_GENEX_EVAL:tgt,expr>``"
 msgstr ""
 
@@ -970,7 +971,7 @@ msgstr ""
 msgid "Configuration name. Deprecated since CMake 3.0. Use ``CONFIG`` instead."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:534
+#: ../../../manual/cmake-generator-expressions.7.rst:533
 msgid "``$<PLATFORM_ID>``"
 msgstr ""
 
@@ -980,7 +981,7 @@ msgid ""
 "`CMAKE_SYSTEM_NAME` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:537
+#: ../../../manual/cmake-generator-expressions.7.rst:536
 msgid "``$<C_COMPILER_ID>``"
 msgstr ""
 
@@ -990,7 +991,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:540
+#: ../../../manual/cmake-generator-expressions.7.rst:539
 msgid "``$<CXX_COMPILER_ID>``"
 msgstr ""
 
@@ -1000,7 +1001,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:543
+#: ../../../manual/cmake-generator-expressions.7.rst:542
 msgid "``$<CUDA_COMPILER_ID>``"
 msgstr ""
 
@@ -1010,7 +1011,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:546
+#: ../../../manual/cmake-generator-expressions.7.rst:545
 msgid "``$<OBJC_COMPILER_ID>``"
 msgstr ""
 
@@ -1020,7 +1021,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:549
+#: ../../../manual/cmake-generator-expressions.7.rst:548
 msgid "``$<OBJCXX_COMPILER_ID>``"
 msgstr ""
 
@@ -1030,7 +1031,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:552
+#: ../../../manual/cmake-generator-expressions.7.rst:551
 msgid "``$<Fortran_COMPILER_ID>``"
 msgstr ""
 
@@ -1040,7 +1041,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:555
+#: ../../../manual/cmake-generator-expressions.7.rst:554
 msgid "``$<ISPC_COMPILER_ID>``"
 msgstr ""
 
@@ -1050,7 +1051,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:558
+#: ../../../manual/cmake-generator-expressions.7.rst:557
 msgid "``$<C_COMPILER_VERSION>``"
 msgstr ""
 
@@ -1060,7 +1061,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:561
+#: ../../../manual/cmake-generator-expressions.7.rst:560
 msgid "``$<CXX_COMPILER_VERSION>``"
 msgstr ""
 
@@ -1070,7 +1071,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:564
+#: ../../../manual/cmake-generator-expressions.7.rst:563
 msgid "``$<CUDA_COMPILER_VERSION>``"
 msgstr ""
 
@@ -1080,7 +1081,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:567
+#: ../../../manual/cmake-generator-expressions.7.rst:566
 msgid "``$<OBJC_COMPILER_VERSION>``"
 msgstr ""
 
@@ -1090,7 +1091,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:570
+#: ../../../manual/cmake-generator-expressions.7.rst:569
 msgid "``$<OBJCXX_COMPILER_VERSION>``"
 msgstr ""
 
@@ -1100,7 +1101,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:573
+#: ../../../manual/cmake-generator-expressions.7.rst:572
 msgid "``$<Fortran_COMPILER_VERSION>``"
 msgstr ""
 
@@ -1110,7 +1111,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:576
+#: ../../../manual/cmake-generator-expressions.7.rst:575
 msgid "``$<ISPC_COMPILER_VERSION>``"
 msgstr ""
 
@@ -1120,7 +1121,7 @@ msgid ""
 "`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:582
+#: ../../../manual/cmake-generator-expressions.7.rst:578
 msgid "``$<COMPILE_LANGUAGE>``"
 msgstr ""
 
@@ -1132,7 +1133,7 @@ msgid ""
 "portability of this generator expression."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:594
+#: ../../../manual/cmake-generator-expressions.7.rst:584
 msgid "``$<LINK_LANGUAGE>``"
 msgstr ""
 
@@ -1181,7 +1182,7 @@ msgid ""
 "just the string ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:614
+#: ../../../manual/cmake-generator-expressions.7.rst:611
 msgid "``$<TARGET_NAME_IF_EXISTS:tgt>``"
 msgstr ""
 
@@ -1212,7 +1213,7 @@ msgstr ""
 msgid "Full path to the ``tgt`` binary file."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:633
+#: ../../../manual/cmake-generator-expressions.7.rst:618
 msgid "``$<TARGET_FILE_BASE_NAME:tgt>``"
 msgstr ""
 
@@ -1240,7 +1241,7 @@ msgid ""
 "properties can also be considered."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:640
+#: ../../../manual/cmake-generator-expressions.7.rst:635
 msgid "``$<TARGET_FILE_PREFIX:tgt>``"
 msgstr ""
 
@@ -1252,7 +1253,7 @@ msgstr ""
 msgid "See also the :prop_tgt:`PREFIX` target property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:647
+#: ../../../manual/cmake-generator-expressions.7.rst:642
 msgid "``$<TARGET_FILE_SUFFIX:tgt>``"
 msgstr ""
 
@@ -1264,7 +1265,7 @@ msgstr ""
 msgid "See also the :prop_tgt:`SUFFIX` target property."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:652
+#: ../../../manual/cmake-generator-expressions.7.rst:649
 msgid "``$<TARGET_FILE_NAME:tgt>``"
 msgstr ""
 
@@ -1287,7 +1288,7 @@ msgid ""
 "is evaluated on (see policy :policy:`CMP0112`)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:657
+#: ../../../manual/cmake-generator-expressions.7.rst:654
 msgid "``$<TARGET_FILE_DIR:tgt>``"
 msgstr ""
 
@@ -1295,7 +1296,7 @@ msgstr ""
 msgid "Directory of the ``tgt`` binary file."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:662
+#: ../../../manual/cmake-generator-expressions.7.rst:659
 msgid "``$<TARGET_LINKER_FILE:tgt>``"
 msgstr ""
 
@@ -1307,7 +1308,7 @@ msgid ""
 "associated with the DLL."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:678
+#: ../../../manual/cmake-generator-expressions.7.rst:664
 msgid "``$<TARGET_LINKER_FILE_BASE_NAME:tgt>``"
 msgstr ""
 
@@ -1326,7 +1327,7 @@ msgid ""
 "`ARCHIVE_OUTPUT_NAME_<CONFIG>` and :prop_tgt:`LIBRARY_OUTPUT_NAME_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:686
+#: ../../../manual/cmake-generator-expressions.7.rst:680
 msgid "``$<TARGET_LINKER_FILE_PREFIX:tgt>``"
 msgstr ""
 
@@ -1340,7 +1341,7 @@ msgid ""
 "properties."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:696
+#: ../../../manual/cmake-generator-expressions.7.rst:688
 msgid "``$<TARGET_LINKER_FILE_SUFFIX:tgt>``"
 msgstr ""
 
@@ -1359,7 +1360,7 @@ msgid ""
 "properties."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:701
+#: ../../../manual/cmake-generator-expressions.7.rst:698
 msgid "``$<TARGET_LINKER_FILE_NAME:tgt>``"
 msgstr ""
 
@@ -1367,7 +1368,7 @@ msgstr ""
 msgid "Name of file used to link target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:706
+#: ../../../manual/cmake-generator-expressions.7.rst:703
 msgid "``$<TARGET_LINKER_FILE_DIR:tgt>``"
 msgstr ""
 
@@ -1383,7 +1384,7 @@ msgstr ""
 msgid "File with soname (``.so.3``) where ``tgt`` is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:713
+#: ../../../manual/cmake-generator-expressions.7.rst:710
 msgid "``$<TARGET_SONAME_FILE_NAME:tgt>``"
 msgstr ""
 
@@ -1391,7 +1392,7 @@ msgstr ""
 msgid "Name of file with soname (``.so.3``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:718
+#: ../../../manual/cmake-generator-expressions.7.rst:715
 msgid "``$<TARGET_SONAME_FILE_DIR:tgt>``"
 msgstr ""
 
@@ -1399,7 +1400,7 @@ msgstr ""
 msgid "Directory of with soname (``.so.3``)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:725
+#: ../../../manual/cmake-generator-expressions.7.rst:720
 msgid "``$<TARGET_PDB_FILE:tgt>``"
 msgstr ""
 
@@ -1416,7 +1417,7 @@ msgid ""
 "`PDB_NAME_<CONFIG>` and :prop_tgt:`PDB_OUTPUT_DIRECTORY_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:741
+#: ../../../manual/cmake-generator-expressions.7.rst:727
 msgid "``$<TARGET_PDB_FILE_BASE_NAME:tgt>``"
 msgstr ""
 
@@ -1439,7 +1440,7 @@ msgid ""
 "specific variant :prop_tgt:`PDB_NAME_<CONFIG>`."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:746
+#: ../../../manual/cmake-generator-expressions.7.rst:743
 msgid "``$<TARGET_PDB_FILE_NAME:tgt>``"
 msgstr ""
 
@@ -1447,7 +1448,7 @@ msgstr ""
 msgid "Name of the linker generated program database file (.pdb)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:751
+#: ../../../manual/cmake-generator-expressions.7.rst:748
 msgid "``$<TARGET_PDB_FILE_DIR:tgt>``"
 msgstr ""
 
@@ -1455,7 +1456,7 @@ msgstr ""
 msgid "Directory of the linker generated program database file (.pdb)."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:757
+#: ../../../manual/cmake-generator-expressions.7.rst:753
 msgid "``$<TARGET_BUNDLE_DIR:tgt>``"
 msgstr ""
 
@@ -1465,7 +1466,7 @@ msgid ""
 "bundle``) where ``tgt`` is the name of a target."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:766
+#: ../../../manual/cmake-generator-expressions.7.rst:759
 msgid "``$<TARGET_BUNDLE_CONTENT_DIR:tgt>``"
 msgstr ""
 
@@ -1477,7 +1478,7 @@ msgid ""
 "app``, ``my.framework``, or ``my.bundle`` due to the flat bundle structure."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:771
+#: ../../../manual/cmake-generator-expressions.7.rst:768
 msgid "``$<TARGET_PROPERTY:tgt,prop>``"
 msgstr ""
 
@@ -1485,7 +1486,7 @@ msgstr ""
 msgid "Value of the property ``prop`` on the target ``tgt``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:776
+#: ../../../manual/cmake-generator-expressions.7.rst:773
 msgid "``$<TARGET_PROPERTY:prop>``"
 msgstr ""
 
@@ -1497,7 +1498,7 @@ msgid ""
 "the requirement."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:781
+#: ../../../manual/cmake-generator-expressions.7.rst:778
 msgid "``$<INSTALL_PREFIX>``"
 msgstr ""
 
@@ -1512,7 +1513,7 @@ msgstr ""
 msgid "Output-Related Expressions"
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:788
+#: ../../../manual/cmake-generator-expressions.7.rst:786
 msgid "``$<TARGET_NAME:...>``"
 msgstr ""
 
@@ -1523,7 +1524,7 @@ msgid ""
 "name of a target- it may not contain generator expressions."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:795
+#: ../../../manual/cmake-generator-expressions.7.rst:790
 msgid "``$<LINK_ONLY:...>``"
 msgstr ""
 
@@ -1536,7 +1537,7 @@ msgid ""
 "to specify private link dependencies without other usage requirements."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:798
+#: ../../../manual/cmake-generator-expressions.7.rst:797
 msgid "``$<INSTALL_INTERFACE:...>``"
 msgstr ""
 
@@ -1546,7 +1547,7 @@ msgid ""
 "`install(EXPORT)`, and empty otherwise."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:802
+#: ../../../manual/cmake-generator-expressions.7.rst:800
 msgid "``$<BUILD_INTERFACE:...>``"
 msgstr ""
 
@@ -1557,7 +1558,7 @@ msgid ""
 "to the empty string otherwise."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:805
+#: ../../../manual/cmake-generator-expressions.7.rst:804
 msgid "``$<MAKE_C_IDENTIFIER:...>``"
 msgstr ""
 
@@ -1575,7 +1576,7 @@ msgstr ""
 msgid "List of objects resulting from build of ``objLib``."
 msgstr ""
 
-#: ../../../manual/cmake-generator-expressions.7.rst:817
+#: ../../../manual/cmake-generator-expressions.7.rst:809
 msgid "``$<SHELL_PATH:...>``"
 msgstr ""
 

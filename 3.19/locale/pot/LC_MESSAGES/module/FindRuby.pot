@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -117,7 +118,7 @@ msgstr ""
 msgid "Ruby minor version."
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:49
+#: ../../../../Modules/FindRuby.cmake:47
 msgid "``Ruby_VERSION_PATCH``"
 msgstr ""
 
@@ -167,7 +168,7 @@ msgstr ""
 msgid "same as Ruby_VERSION."
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:65
+#: ../../../../Modules/FindRuby.cmake:64
 msgid "``RUBY_FOUND``"
 msgstr ""
 
@@ -179,7 +180,7 @@ msgstr ""
 msgid "Hints"
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:71
+#: ../../../../Modules/FindRuby.cmake:70
 msgid "``Ruby_ROOT_DIR``"
 msgstr ""
 
@@ -187,7 +188,7 @@ msgstr ""
 msgid "Define the root directory of a Ruby installation."
 msgstr ""
 
-#: ../../../../Modules/FindRuby.cmake:529
+#: ../../../../Modules/FindRuby.cmake:73
 msgid "``Ruby_FIND_VIRTUALENV``"
 msgstr ""
 
