@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,7 +28,7 @@ msgid ""
 "the following acceptable values:"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_MODE.rst:28
+#: ../../../prop_tgt/UNITY_BUILD_MODE.rst:10
 msgid "``BATCH``"
 msgstr ""
 
@@ -57,7 +58,7 @@ msgid ""
 "                      )"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_MODE.rst:57
+#: ../../../prop_tgt/UNITY_BUILD_MODE.rst:30
 msgid "``GROUP``"
 msgstr ""
 

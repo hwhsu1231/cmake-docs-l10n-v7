@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,7 +73,7 @@ msgid ""
 "specify them.  The common options are:"
 msgstr ""
 
-#: ../../../command/install.rst:59
+#: ../../../command/install.rst:42
 msgid "``DESTINATION``"
 msgstr ""
 
@@ -105,7 +106,7 @@ msgid ""
 "a relative path."
 msgstr ""
 
-#: ../../../command/install.rst:66
+#: ../../../command/install.rst:61
 msgid "``PERMISSIONS``"
 msgstr ""
 
@@ -118,7 +119,7 @@ msgid ""
 "sense on certain platforms are ignored on those platforms."
 msgstr ""
 
-#: ../../../command/install.rst:84
+#: ../../../command/install.rst:68
 msgid "``CONFIGURATIONS``"
 msgstr ""
 
@@ -145,7 +146,7 @@ msgstr ""
 msgid "Note that ``CONFIGURATIONS`` appears BEFORE ``RUNTIME DESTINATION``."
 msgstr ""
 
-#: ../../../command/install.rst:94 ../../../command/install.rst:912
+#: ../../../command/install.rst:86 ../../../command/install.rst:909
 msgid "``COMPONENT``"
 msgstr ""
 
@@ -161,7 +162,7 @@ msgid ""
 "`CMAKE_INSTALL_DEFAULT_COMPONENT_NAME` variable."
 msgstr ""
 
-#: ../../../command/install.rst:100
+#: ../../../command/install.rst:96
 msgid "``EXCLUDE_FROM_ALL``"
 msgstr ""
 
@@ -171,7 +172,7 @@ msgid ""
 "installed as part of a component-specific installation"
 msgstr ""
 
-#: ../../../command/install.rst:105
+#: ../../../command/install.rst:102
 msgid "``RENAME``"
 msgstr ""
 
@@ -182,7 +183,7 @@ msgid ""
 "command."
 msgstr ""
 
-#: ../../../command/install.rst:109
+#: ../../../command/install.rst:107
 msgid "``OPTIONAL``"
 msgstr ""
 
@@ -237,7 +238,7 @@ msgid ""
 "installed:"
 msgstr ""
 
-#: ../../../command/install.rst:160 ../../../command/install.rst:233
+#: ../../../command/install.rst:151 ../../../command/install.rst:233
 msgid "``ARCHIVE``"
 msgstr ""
 
@@ -264,7 +265,7 @@ msgid ""
 "`ENABLE_EXPORTS` enabled."
 msgstr ""
 
-#: ../../../command/install.rst:168 ../../../command/install.rst:232
+#: ../../../command/install.rst:162 ../../../command/install.rst:232
 msgid "``LIBRARY``"
 msgstr ""
 
@@ -280,7 +281,7 @@ msgstr ""
 msgid "on macOS when marked as ``FRAMEWORK`` (see below)."
 msgstr ""
 
-#: ../../../command/install.rst:176 ../../../command/install.rst:231
+#: ../../../command/install.rst:170 ../../../command/install.rst:231
 msgid "``RUNTIME``"
 msgstr ""
 
@@ -296,7 +297,7 @@ msgid ""
 "accompanying import libraries are of kind ``ARCHIVE``)."
 msgstr ""
 
-#: ../../../command/install.rst:181
+#: ../../../command/install.rst:178
 msgid "``OBJECTS``"
 msgstr ""
 
@@ -304,7 +305,7 @@ msgstr ""
 msgid "Object files associated with *object libraries*."
 msgstr ""
 
-#: ../../../command/install.rst:185
+#: ../../../command/install.rst:183
 msgid "``FRAMEWORK``"
 msgstr ""
 
@@ -314,7 +315,7 @@ msgid ""
 "treated as ``FRAMEWORK`` targets on macOS."
 msgstr ""
 
-#: ../../../command/install.rst:189
+#: ../../../command/install.rst:187
 msgid "``BUNDLE``"
 msgstr ""
 
@@ -324,7 +325,7 @@ msgid ""
 "as ``BUNDLE`` targets on macOS."
 msgstr ""
 
-#: ../../../command/install.rst:197 ../../../command/install.rst:235
+#: ../../../command/install.rst:191 ../../../command/install.rst:235
 msgid "``PUBLIC_HEADER``"
 msgstr ""
 
@@ -338,7 +339,7 @@ msgid ""
 "prop_tgt:`PUBLIC_HEADER` for details."
 msgstr ""
 
-#: ../../../command/install.rst:201 ../../../command/install.rst:234
+#: ../../../command/install.rst:199 ../../../command/install.rst:234
 msgid "``PRIVATE_HEADER``"
 msgstr ""
 
@@ -348,7 +349,7 @@ msgid ""
 "prop_tgt:`PRIVATE_HEADER` for details."
 msgstr ""
 
-#: ../../../command/install.rst:205
+#: ../../../command/install.rst:203
 msgid "``RESOURCE``"
 msgstr ""
 
@@ -468,7 +469,7 @@ msgid ""
 "following additional arguments:"
 msgstr ""
 
-#: ../../../command/install.rst:305
+#: ../../../command/install.rst:264
 msgid "``NAMELINK_COMPONENT``"
 msgstr ""
 
@@ -531,7 +532,7 @@ msgid ""
 "details on creating versioned shared libraries."
 msgstr ""
 
-#: ../../../command/install.rst:316
+#: ../../../command/install.rst:307
 msgid "``NAMELINK_ONLY``"
 msgstr ""
 
@@ -551,7 +552,7 @@ msgid ""
 "namelink, but ``COMPONENT`` should generally be preferred."
 msgstr ""
 
-#: ../../../command/install.rst:329
+#: ../../../command/install.rst:318
 msgid "``NAMELINK_SKIP``"
 msgstr ""
 
@@ -579,7 +580,7 @@ msgid ""
 "top level:"
 msgstr ""
 
-#: ../../../command/install.rst:339
+#: ../../../command/install.rst:334
 msgid "``EXPORT``"
 msgstr ""
 
@@ -592,7 +593,7 @@ msgid ""
 "the name of the exported target."
 msgstr ""
 
-#: ../../../command/install.rst:346
+#: ../../../command/install.rst:341
 msgid "``INCLUDES DESTINATION``"
 msgstr ""
 
@@ -604,7 +605,7 @@ msgid ""
 "path is specified, it is treated as relative to the ``$<INSTALL_PREFIX>``."
 msgstr ""
 
-#: ../../../command/install.rst:357
+#: ../../../command/install.rst:348
 msgid "``RUNTIME_DEPENDENCY_SET``"
 msgstr ""
 
@@ -621,7 +622,7 @@ msgid ""
 "This keyword and the ``RUNTIME_DEPENDENCIES`` keyword are mutually exclusive."
 msgstr ""
 
-#: ../../../command/install.rst:389
+#: ../../../command/install.rst:359
 msgid "``RUNTIME_DEPENDENCIES``"
 msgstr ""
 
@@ -1406,7 +1407,7 @@ msgid ""
 "component, run ``cmake -DCOMPONENT=Development -P cmake_install.cmake``."
 msgstr ""
 
-#: ../../../command/install.rst:917
+#: ../../../command/install.rst:914
 msgid "``BUILD_TYPE``"
 msgstr ""
 
@@ -1417,7 +1418,7 @@ msgid ""
 "``cmake -DBUILD_TYPE=Debug -P cmake_install.cmake``."
 msgstr ""
 
-#: ../../../command/install.rst:921
+#: ../../../command/install.rst:919
 msgid "``DESTDIR``"
 msgstr ""
 
