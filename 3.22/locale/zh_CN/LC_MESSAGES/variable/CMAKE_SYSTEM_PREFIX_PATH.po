@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid ""
 "variables and locations that CMake searches, but they are subject to change:"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:29
+#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:26
 msgid "CrayLinuxEnvironment:"
 msgstr ""
 
@@ -67,7 +67,7 @@ msgstr ""
 msgid "``ENV{SYSROOT_DIR}/usr/local``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:32
+#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:31
 msgid "Darwin:"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgid ""
 "``ENV{SDKROOT}/usr`` When ``CMAKE_OSX_SYSROOT`` is not explicitly specified."
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:35
+#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:34
 msgid "OpenBSD:"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "``ENV{LOCALBASE}``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:38
+#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:37
 msgid "Unix:"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "``ENV{CONDA_PREFIX}`` when using a conda compiler"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:46
+#: ../../../variable/CMAKE_SYSTEM_PREFIX_PATH.rst:40
 msgid "Windows:"
 msgstr ""
 

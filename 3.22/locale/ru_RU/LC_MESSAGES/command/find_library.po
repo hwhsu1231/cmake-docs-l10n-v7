@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr ""
 msgid "Options include:"
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:46
+#: ../../../command/FIND_XXX.txt:40
 msgid "``NAMES``"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgid ""
 "packages can be found before those provided by distributions."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:51
+#: ../../../command/FIND_XXX.txt:48
 msgid "``HINTS``, ``PATHS``"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid ""
 "``ENV var`` sub-option reads paths from a system environment variable."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:55
+#: ../../../command/FIND_XXX.txt:53
 msgid "``PATH_SUFFIXES``"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgid ""
 "otherwise considered."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:58
+#: ../../../command/FIND_XXX.txt:57
 msgid "``DOC``"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Specify the documentation string for the ``<VAR>`` cache entry."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:74
+#: ../../../command/FIND_XXX.txt:60
 msgid "``NO_CACHE``"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgid ""
 "cost of repeated configure steps."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:81
+#: ../../../command/FIND_XXX.txt:76
 msgid "``REQUIRED``"
 msgstr ""
 
@@ -301,7 +301,7 @@ msgid ""
 "a per-call basis using options:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:22
+#: ../../../command/FIND_XXX_ROOT.txt:21
 msgid "``CMAKE_FIND_ROOT_PATH_BOTH``"
 msgstr ""
 
@@ -309,7 +309,7 @@ msgstr ""
 msgid "Search in the order described above."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:25
+#: ../../../command/FIND_XXX_ROOT.txt:24
 msgid "``NO_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
@@ -317,7 +317,7 @@ msgstr ""
 msgid "Do not use the :variable:`CMAKE_FIND_ROOT_PATH` variable."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:29
+#: ../../../command/FIND_XXX_ROOT.txt:27
 msgid "``ONLY_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgid ""
 "for this (see :command:`find_library` CMake documentation)."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSceneGraph.cmake:48
+#: ../../../../Modules/FindOpenSceneGraph.cmake:47
 msgid "``<MODULE>_DIR``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "``OSGDIR``"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSceneGraph.cmake:56
+#: ../../../../Modules/FindOpenSceneGraph.cmake:54
 msgid "``OSG_ROOT``"
 msgstr ""
 

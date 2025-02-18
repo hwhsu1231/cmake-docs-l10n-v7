@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgid ""
 "be one of the following:"
 msgstr ""
 
-#: ../../../command/get_property.rst:28
+#: ../../../command/get_property.rst:27
 msgid "``GLOBAL``"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Scope is unique and does not accept a name."
 msgstr ""
 
-#: ../../../command/get_property.rst:38
+#: ../../../command/get_property.rst:30
 msgid "``DIRECTORY``"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "``<dir>`` may reference a binary directory."
 msgstr ""
 
-#: ../../../command/get_property.rst:42
+#: ../../../command/get_property.rst:40
 msgid "``TARGET``"
 msgstr ""
 
@@ -86,7 +86,7 @@ msgid ""
 "`get_target_property` command."
 msgstr ""
 
-#: ../../../command/get_property.rst:65
+#: ../../../command/get_property.rst:44
 msgid "``SOURCE``"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgid ""
 "Directory scope can be overridden with one of the following sub-options:"
 msgstr ""
 
-#: ../../../command/get_property.rst:59
+#: ../../../command/get_property.rst:51
 msgid "``DIRECTORY <dir>``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgid ""
 "source directory."
 msgstr ""
 
-#: ../../../command/get_property.rst:62
+#: ../../../command/get_property.rst:61
 msgid "``TARGET_DIRECTORY <target>``"
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr ""
 msgid "See also the :command:`get_source_file_property` command."
 msgstr ""
 
-#: ../../../command/get_property.rst:70
+#: ../../../command/get_property.rst:67
 msgid "``INSTALL``"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgstr ""
 msgid "Scope must name one installed file path."
 msgstr ""
 
-#: ../../../command/get_property.rst:74
+#: ../../../command/get_property.rst:72
 msgid "``TEST``"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgid ""
 "command."
 msgstr ""
 
-#: ../../../command/get_property.rst:77
+#: ../../../command/get_property.rst:76
 msgid "``CACHE``"
 msgstr ""
 
@@ -154,7 +154,7 @@ msgstr ""
 msgid "Scope must name one cache entry."
 msgstr ""
 
-#: ../../../command/get_property.rst:80
+#: ../../../command/get_property.rst:79
 msgid "``VARIABLE``"
 msgstr ""
 

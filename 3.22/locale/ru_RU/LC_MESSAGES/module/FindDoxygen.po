@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 "This module looks for Doxygen and some optional tools it supports:"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:12
+#: ../../../../Modules/FindDoxygen.cmake:11
 msgid "``dot``"
 msgstr ""
 
@@ -37,7 +37,7 @@ msgid ""
 "graphs."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:15
+#: ../../../../Modules/FindDoxygen.cmake:14
 msgid "``mscgen``"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgid ""
 "by Doxygen's ``\\msc`` and ``\\mscfile`` commands."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:19
+#: ../../../../Modules/FindDoxygen.cmake:17
 msgid "``dia``"
 msgstr ""
 

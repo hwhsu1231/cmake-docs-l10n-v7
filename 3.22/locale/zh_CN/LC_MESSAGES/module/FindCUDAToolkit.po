@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Arguments"
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:84
+#: ../../../../Modules/FindCUDAToolkit.cmake:81
 msgid "``[<version>]``"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:91
+#: ../../../../Modules/FindCUDAToolkit.cmake:89
 msgid "``REQUIRED``"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgid ""
 "found."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:95
+#: ../../../../Modules/FindCUDAToolkit.cmake:93
 msgid "``QUIET``"
 msgstr ""
 
@@ -184,7 +184,7 @@ msgid ""
 "messages."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:99
+#: ../../../../Modules/FindCUDAToolkit.cmake:97
 msgid "``EXACT``"
 msgstr ""
 
@@ -752,7 +752,7 @@ msgstr ""
 msgid "Result variables"
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:409
+#: ../../../../Modules/FindCUDAToolkit.cmake:408
 msgid "``CUDAToolkit_FOUND``"
 msgstr ""
 
@@ -760,7 +760,7 @@ msgstr ""
 msgid "A boolean specifying whether or not the CUDA Toolkit was found."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:413
+#: ../../../../Modules/FindCUDAToolkit.cmake:411
 msgid "``CUDAToolkit_VERSION``"
 msgstr ""
 
@@ -770,7 +770,7 @@ msgid ""
 "version`` or ``version.txt``)."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:416
+#: ../../../../Modules/FindCUDAToolkit.cmake:415
 msgid "``CUDAToolkit_VERSION_MAJOR``"
 msgstr ""
 
@@ -778,7 +778,7 @@ msgstr ""
 msgid "The major version of the CUDA Toolkit."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:419
+#: ../../../../Modules/FindCUDAToolkit.cmake:418
 msgid "``CUDAToolkit_VERSION_MINOR``"
 msgstr ""
 
@@ -786,7 +786,7 @@ msgstr ""
 msgid "The minor version of the CUDA Toolkit."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:422
+#: ../../../../Modules/FindCUDAToolkit.cmake:421
 msgid "``CUDAToolkit_VERSION_PATCH``"
 msgstr ""
 
@@ -794,7 +794,7 @@ msgstr ""
 msgid "The patch version of the CUDA Toolkit."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:426
+#: ../../../../Modules/FindCUDAToolkit.cmake:424
 msgid "``CUDAToolkit_BIN_DIR``"
 msgstr ""
 
@@ -804,7 +804,7 @@ msgid ""
 "executable ``nvcc``."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:430
+#: ../../../../Modules/FindCUDAToolkit.cmake:428
 msgid "``CUDAToolkit_INCLUDE_DIRS``"
 msgstr ""
 
@@ -814,7 +814,7 @@ msgid ""
 "required to compile a project linking against CUDA."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:434
+#: ../../../../Modules/FindCUDAToolkit.cmake:432
 msgid "``CUDAToolkit_LIBRARY_DIR``"
 msgstr ""
 
@@ -824,7 +824,7 @@ msgid ""
 "Runtime library ``cudart``."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:440
+#: ../../../../Modules/FindCUDAToolkit.cmake:436
 msgid "``CUDAToolkit_LIBRARY_ROOT``"
 msgstr ""
 
@@ -834,7 +834,7 @@ msgid ""
 "version.txt."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:445
+#: ../../../../Modules/FindCUDAToolkit.cmake:442
 msgid "``CUDAToolkit_TARGET_DIR``"
 msgstr ""
 
@@ -845,7 +845,7 @@ msgid ""
 "the parent directory of ``CUDAToolkit_BIN_DIR``."
 msgstr ""
 
-#: ../../../../Modules/FindCUDAToolkit.cmake:976
+#: ../../../../Modules/FindCUDAToolkit.cmake:447
 msgid "``CUDAToolkit_NVCC_EXECUTABLE``"
 msgstr ""
 

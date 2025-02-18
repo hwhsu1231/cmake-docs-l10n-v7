@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -497,7 +497,7 @@ msgstr ""
 msgid "The QtXmlPatterns target"
 msgstr ""
 
-#: ../../../../Modules/FindQt4.cmake:283
+#: ../../../../Modules/FindQt4.cmake:282
 msgid "``Qt4::phonon``"
 msgstr ""
 
@@ -554,7 +554,7 @@ msgstr ""
 msgid "The minor version of Qt found."
 msgstr ""
 
-#: ../../../../Modules/FindQt4.cmake:1346
+#: ../../../../Modules/FindQt4.cmake:300
 msgid "``QT_VERSION_PATCH``"
 msgstr ""
 

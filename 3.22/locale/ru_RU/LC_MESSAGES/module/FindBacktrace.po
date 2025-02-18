@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid ""
 "library. This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindBacktrace.cmake:14
+#: ../../../../Modules/FindBacktrace.cmake:13
 msgid "``Backtrace_HEADER``"
 msgstr ""
 
@@ -59,7 +59,7 @@ msgstr ""
 msgid "The libraries (linker flags) needed to use ``backtrace(3)``, if any."
 msgstr ""
 
-#: ../../../../Modules/FindBacktrace.cmake:21
+#: ../../../../Modules/FindBacktrace.cmake:20
 msgid "``Backtrace_FOUND``"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgstr ""
 msgid "The external library providing backtrace, if any."
 msgstr ""
 
-#: ../../../../Modules/FindBacktrace.cmake:28
+#: ../../../../Modules/FindBacktrace.cmake:27
 msgid "``Backtrace_INCLUDE_DIR``"
 msgstr ""
 

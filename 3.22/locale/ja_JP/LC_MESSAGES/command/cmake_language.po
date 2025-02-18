@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,7 +177,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/cmake_language.rst:133
+#: ../../../command/cmake_language.rst:124
 msgid "``DIRECTORY <dir>``"
 msgstr ""
 
@@ -197,7 +197,7 @@ msgid ""
 "the current directory or one of its ancestors."
 msgstr ""
 
-#: ../../../command/cmake_language.rst:139
+#: ../../../command/cmake_language.rst:135
 msgid "``ID <id>``"
 msgstr ""
 
@@ -209,7 +209,7 @@ msgid ""
 "an earlier call that used ``ID_VAR`` to get the id."
 msgstr ""
 
-#: ../../../command/cmake_language.rst:144
+#: ../../../command/cmake_language.rst:141
 msgid "``ID_VAR <var>``"
 msgstr ""
 

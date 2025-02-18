@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgid ""
 "variables prior to calling ``check_objc_source_compiles()``:"
 msgstr ""
 
-#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:35
+#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:31
 msgid "``CMAKE_REQUIRED_FLAGS``"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgid ""
 "command before the contents of ``CMAKE_REQUIRED_FLAGS``."
 msgstr ""
 
-#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:40
+#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:37
 msgid "``CMAKE_REQUIRED_DEFINITIONS``"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgid ""
 "``<resultVar>`` will also be added automatically."
 msgstr ""
 
-#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:46
+#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:42
 msgid "``CMAKE_REQUIRED_INCLUDES``"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgid ""
 "directory property will be ignored."
 msgstr ""
 
-#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:50
+#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:48
 msgid "``CMAKE_REQUIRED_LINK_OPTIONS``"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid ""
 "(see :command:`try_compile` for further details)."
 msgstr ""
 
-#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:56
+#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:52
 msgid "``CMAKE_REQUIRED_LIBRARIES``"
 msgstr ""
 
@@ -107,7 +107,7 @@ msgid ""
 "further details)."
 msgstr ""
 
-#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:60
+#: ../../../../Modules/CheckOBJCSourceCompiles.cmake:58
 msgid "``CMAKE_REQUIRED_QUIET``"
 msgstr ""
 

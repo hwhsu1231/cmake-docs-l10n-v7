@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,7 @@ msgstr ""
 msgid "Run gcov and package a tar file for CDash.  The options are:"
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:40
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:37
 msgid "``TARBALL <tarfile>``"
 msgstr ""
 
@@ -78,7 +78,7 @@ msgid ""
 "build directory."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:54
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:42
 msgid "``TARBALL_COMPRESSION <option>``"
 msgstr ""
 
@@ -99,7 +99,7 @@ msgid ""
 "tar.gz``, ``.tgz``, ``.tar.bzip2``, ``.tbz``, ``.tar.xz``, and ``.txz``."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:58
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:56
 msgid "``SOURCE <source_dir>``"
 msgstr ""
 
@@ -109,7 +109,7 @@ msgid ""
 "of :variable:`CTEST_SOURCE_DIRECTORY`."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:62
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:60
 msgid "``BUILD <build_dir>``"
 msgstr ""
 
@@ -119,7 +119,7 @@ msgid ""
 "of :variable:`CTEST_BINARY_DIRECTORY`."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:66
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:64
 msgid "``GCOV_COMMAND <gcov_command>``"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgid ""
 "value of :variable:`CTEST_COVERAGE_COMMAND`."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:71
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:68
 msgid "``GCOV_OPTIONS <options>...``"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgid ""
 "option is just ``-b -x``."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:77
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:73
 msgid "``GLOB``"
 msgstr ""
 
@@ -150,7 +150,7 @@ msgid ""
 "search locations by reading TargetDirectories.txt."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:82
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:79
 msgid "``DELETE``"
 msgstr ""
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "Delete coverage files after they've been packaged into the .tar."
 msgstr ""
 
-#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:86
+#: ../../../../Modules/CTestCoverageCollectGCOV.cmake:84
 msgid "``QUIET``"
 msgstr ""
 
