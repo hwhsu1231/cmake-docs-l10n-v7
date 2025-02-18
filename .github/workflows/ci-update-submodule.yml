@@ -94,7 +94,7 @@ jobs:
         uses: hwhsu1231/ci-sphinx/.github/actions/get-matrix-from-json-arraies@main
         with:
           matrix-type: 'submodule'
-          submodule-list: ${{ steps.gsl.outputs.SUBMODULE_ARRAY }}
+          submodule-array: ${{ steps.gsl.outputs.SUBMODULE_ARRAY }}
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
