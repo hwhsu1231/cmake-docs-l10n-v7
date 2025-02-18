@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +37,7 @@ msgid ""
 "imported targets for each of these."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:22
+#: ../../../../Modules/FindVulkan.cmake:21
 msgid "``glslc``"
 msgstr ""
 
@@ -44,7 +45,7 @@ msgstr ""
 msgid "The SPIR-V compiler."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:25
+#: ../../../../Modules/FindVulkan.cmake:24
 msgid "``glslangValidator``"
 msgstr ""
 
@@ -52,7 +53,7 @@ msgstr ""
 msgid "The ``glslangValidator`` tool."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:28
+#: ../../../../Modules/FindVulkan.cmake:27
 msgid "``glslang``"
 msgstr ""
 
@@ -60,7 +61,7 @@ msgstr ""
 msgid "The SPIR-V generator library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:31
+#: ../../../../Modules/FindVulkan.cmake:30
 msgid "``shaderc_combined``"
 msgstr ""
 
@@ -68,7 +69,7 @@ msgstr ""
 msgid "The static library for Vulkan shader compilation."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:34
+#: ../../../../Modules/FindVulkan.cmake:33
 msgid "``SPIRV-Tools``"
 msgstr ""
 
@@ -76,7 +77,7 @@ msgstr ""
 msgid "Tools to process SPIR-V modules."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:37
+#: ../../../../Modules/FindVulkan.cmake:36
 msgid "``MoltenVK``"
 msgstr ""
 
@@ -84,7 +85,7 @@ msgstr ""
 msgid "On macOS, an additional component ``MoltenVK`` is available."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:42
+#: ../../../../Modules/FindVulkan.cmake:39
 msgid "``dxc``"
 msgstr ""
 
@@ -107,7 +108,7 @@ msgid ""
 "This module defines :prop_tgt:`IMPORTED` targets if Vulkan has been found:"
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:53
+#: ../../../../Modules/FindVulkan.cmake:52
 msgid "``Vulkan::Vulkan``"
 msgstr ""
 
@@ -115,7 +116,7 @@ msgstr ""
 msgid "The main Vulkan library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:58
+#: ../../../../Modules/FindVulkan.cmake:55
 msgid "``Vulkan::glslc``"
 msgstr ""
 
@@ -123,7 +124,7 @@ msgstr ""
 msgid "The GLSLC SPIR-V compiler, if it has been found."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:65
+#: ../../../../Modules/FindVulkan.cmake:60
 msgid "``Vulkan::Headers``"
 msgstr ""
 
@@ -134,7 +135,7 @@ msgid ""
 "Vulkan library dynamically."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:71
+#: ../../../../Modules/FindVulkan.cmake:67
 msgid "``Vulkan::glslangValidator``"
 msgstr ""
 
@@ -144,7 +145,7 @@ msgid ""
 "shaders into SPIR-V."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:77
+#: ../../../../Modules/FindVulkan.cmake:73
 msgid "``Vulkan::glslang``"
 msgstr ""
 
@@ -154,7 +155,7 @@ msgid ""
 "generator library (glslang)."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:83
+#: ../../../../Modules/FindVulkan.cmake:79
 msgid "``Vulkan::shaderc_combined``"
 msgstr ""
 
@@ -164,7 +165,7 @@ msgid ""
 "(shaderc_combined)."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:89
+#: ../../../../Modules/FindVulkan.cmake:85
 msgid "``Vulkan::SPIRV-Tools``"
 msgstr ""
 
@@ -174,7 +175,7 @@ msgid ""
 "Tools)."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:95
+#: ../../../../Modules/FindVulkan.cmake:91
 msgid "``Vulkan::MoltenVK``"
 msgstr ""
 
@@ -184,7 +185,7 @@ msgid ""
 "API over Apple Metal graphics framework. (MoltenVK)."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:100
+#: ../../../../Modules/FindVulkan.cmake:97
 msgid "``Vulkan::volk``"
 msgstr ""
 
@@ -192,7 +193,7 @@ msgstr ""
 msgid "Defined if SDK has the Vulkan meta-loader (volk)."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:105
+#: ../../../../Modules/FindVulkan.cmake:102
 msgid "``Vulkan::dxc_lib``"
 msgstr ""
 
@@ -200,7 +201,7 @@ msgstr ""
 msgid "Defined if SDK has the DirectX shader compiler library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:110
+#: ../../../../Modules/FindVulkan.cmake:107
 msgid "``Vulkan::dxc_exe``"
 msgstr ""
 
@@ -240,7 +241,7 @@ msgstr ""
 msgid "link against this library to use Vulkan"
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:125
+#: ../../../../Modules/FindVulkan.cmake:123
 msgid "``Vulkan_VERSION``"
 msgstr ""
 
@@ -248,7 +249,7 @@ msgstr ""
 msgid "value from ``vulkan/vulkan_core.h``"
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:129
+#: ../../../../Modules/FindVulkan.cmake:127
 msgid "``Vulkan_glslc_FOUND``"
 msgstr ""
 
@@ -256,7 +257,7 @@ msgstr ""
 msgid "True, if the SDK has the glslc executable."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:133
+#: ../../../../Modules/FindVulkan.cmake:131
 msgid "``Vulkan_glslangValidator_FOUND``"
 msgstr ""
 
@@ -264,7 +265,7 @@ msgstr ""
 msgid "True, if the SDK has the glslangValidator executable."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:137
+#: ../../../../Modules/FindVulkan.cmake:135
 msgid "``Vulkan_glslang_FOUND``"
 msgstr ""
 
@@ -272,7 +273,7 @@ msgstr ""
 msgid "True, if the SDK has the glslang library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:141
+#: ../../../../Modules/FindVulkan.cmake:139
 msgid "``Vulkan_shaderc_combined_FOUND``"
 msgstr ""
 
@@ -280,7 +281,7 @@ msgstr ""
 msgid "True, if the SDK has the shaderc_combined library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:145
+#: ../../../../Modules/FindVulkan.cmake:143
 msgid "``Vulkan_SPIRV-Tools_FOUND``"
 msgstr ""
 
@@ -288,7 +289,7 @@ msgstr ""
 msgid "True, if the SDK has the SPIRV-Tools library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:149
+#: ../../../../Modules/FindVulkan.cmake:147
 msgid "``Vulkan_MoltenVK_FOUND``"
 msgstr ""
 
@@ -296,7 +297,7 @@ msgstr ""
 msgid "True, if the SDK has the MoltenVK library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:154
+#: ../../../../Modules/FindVulkan.cmake:151
 msgid "``Vulkan_volk_FOUND``"
 msgstr ""
 
@@ -304,7 +305,7 @@ msgstr ""
 msgid "True, if the SDK has the volk library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:159
+#: ../../../../Modules/FindVulkan.cmake:156
 msgid "``Vulkan_dxc_lib_FOUND``"
 msgstr ""
 
@@ -312,7 +313,7 @@ msgstr ""
 msgid "True, if the SDK has the DirectX shader compiler library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:165
+#: ../../../../Modules/FindVulkan.cmake:161
 msgid "``Vulkan_dxc_exe_FOUND``"
 msgstr ""
 
@@ -356,7 +357,7 @@ msgstr ""
 msgid "the path to the glslangValidator tool"
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:179
+#: ../../../../Modules/FindVulkan.cmake:177
 msgid "``Vulkan_glslang_LIBRARY``"
 msgstr ""
 
@@ -364,7 +365,7 @@ msgstr ""
 msgid "Path to the glslang library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:183
+#: ../../../../Modules/FindVulkan.cmake:181
 msgid "``Vulkan_shaderc_combined_LIBRARY``"
 msgstr ""
 
@@ -372,7 +373,7 @@ msgstr ""
 msgid "Path to the shaderc_combined library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:187
+#: ../../../../Modules/FindVulkan.cmake:185
 msgid "``Vulkan_SPIRV-Tools_LIBRARY``"
 msgstr ""
 
@@ -380,7 +381,7 @@ msgstr ""
 msgid "Path to the SPIRV-Tools library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:192
+#: ../../../../Modules/FindVulkan.cmake:189
 msgid "``Vulkan_MoltenVK_LIBRARY``"
 msgstr ""
 
@@ -388,7 +389,7 @@ msgstr ""
 msgid "Path to the MoltenVK library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:197
+#: ../../../../Modules/FindVulkan.cmake:194
 msgid "``Vulkan_volk_LIBRARY``"
 msgstr ""
 
@@ -396,7 +397,7 @@ msgstr ""
 msgid "Path to the volk library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:202
+#: ../../../../Modules/FindVulkan.cmake:199
 msgid "``Vulkan_dxc_LIBRARY``"
 msgstr ""
 
@@ -404,7 +405,7 @@ msgstr ""
 msgid "Path to the DirectX shader compiler library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:207
+#: ../../../../Modules/FindVulkan.cmake:204
 msgid "``Vulkan_dxc_EXECUTABLE``"
 msgstr ""
 

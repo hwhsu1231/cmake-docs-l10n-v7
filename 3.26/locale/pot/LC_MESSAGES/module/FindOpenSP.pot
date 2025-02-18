@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,7 +33,7 @@ msgstr ""
 msgid "This will define the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:18
+#: ../../../../Modules/FindOpenSP.cmake:17
 msgid "``OpenSP_FOUND``"
 msgstr ""
 
@@ -40,7 +41,7 @@ msgstr ""
 msgid "True if (the requested version of) ``OpenSP`` is available"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:21
+#: ../../../../Modules/FindOpenSP.cmake:20
 msgid "``OpenSP_VERSION``"
 msgstr ""
 
@@ -48,7 +49,7 @@ msgstr ""
 msgid "The version of ``OpenSP``"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:24
+#: ../../../../Modules/FindOpenSP.cmake:23
 msgid "``OpenSP_VERSION_MAJOR``"
 msgstr ""
 
@@ -56,7 +57,7 @@ msgstr ""
 msgid "The major version of ``OpenSP``"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:27
+#: ../../../../Modules/FindOpenSP.cmake:26
 msgid "``OpenSP_VERSION_MINOR``"
 msgstr ""
 
@@ -64,7 +65,7 @@ msgstr ""
 msgid "The minor version of ``OpenSP``"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:30
+#: ../../../../Modules/FindOpenSP.cmake:29
 msgid "``OpenSP_VERSION_PATCH``"
 msgstr ""
 
@@ -72,7 +73,7 @@ msgstr ""
 msgid "The patch version of ``OpenSP``"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:33
+#: ../../../../Modules/FindOpenSP.cmake:32
 msgid "``OpenSP_INCLUDE_DIRS``"
 msgstr ""
 
@@ -80,7 +81,7 @@ msgstr ""
 msgid "The include dirs of ``OpenSP`` with its headers"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:38
+#: ../../../../Modules/FindOpenSP.cmake:35
 msgid "``OpenSP_LIBRARIES``"
 msgstr ""
 
@@ -91,7 +92,7 @@ msgid ""
 "OpenSP`` target"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:45
+#: ../../../../Modules/FindOpenSP.cmake:40
 msgid "``OpenSP_MULTI_BYTE``"
 msgstr ""
 
@@ -122,7 +123,7 @@ msgstr ""
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:59
+#: ../../../../Modules/FindOpenSP.cmake:58
 msgid "``OpenSP_INCLUDE_DIR``"
 msgstr ""
 
@@ -130,7 +131,7 @@ msgstr ""
 msgid "the OpenSP include directory"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:160
+#: ../../../../Modules/FindOpenSP.cmake:61
 msgid "``OpenSP_LIBRARY``"
 msgstr ""
 

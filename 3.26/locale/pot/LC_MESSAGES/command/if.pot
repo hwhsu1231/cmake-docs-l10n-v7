@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -101,7 +102,7 @@ msgstr ""
 msgid "Basic Expressions"
 msgstr ""
 
-#: ../../../command/if.rst:68
+#: ../../../command/if.rst:60
 msgid "``if(<constant>)``"
 msgstr ""
 
@@ -116,7 +117,7 @@ msgid ""
 "further below) and one of the following two forms applies."
 msgstr ""
 
-#: ../../../command/if.rst:76
+#: ../../../command/if.rst:70
 msgid "``if(<variable>)``"
 msgstr ""
 
@@ -129,7 +130,7 @@ msgid ""
 "``if(ENV{some_var})`` will always evaluate to false."
 msgstr ""
 
-#: ../../../command/if.rst:84
+#: ../../../command/if.rst:78
 msgid "``if(<string>)``"
 msgstr ""
 
@@ -152,7 +153,7 @@ msgstr ""
 msgid "Logic Operators"
 msgstr ""
 
-#: ../../../command/if.rst:92
+#: ../../../command/if.rst:91
 msgid "``if(NOT <condition>)``"
 msgstr ""
 
@@ -160,7 +161,7 @@ msgstr ""
 msgid "True if the condition is not true."
 msgstr ""
 
-#: ../../../command/if.rst:97
+#: ../../../command/if.rst:96
 msgid "``if(<cond1> AND <cond2>)``"
 msgstr ""
 
@@ -168,7 +169,7 @@ msgstr ""
 msgid "True if both conditions would be considered true individually."
 msgstr ""
 
-#: ../../../command/if.rst:102
+#: ../../../command/if.rst:101
 msgid "``if(<cond1> OR <cond2>)``"
 msgstr ""
 
@@ -176,7 +177,7 @@ msgstr ""
 msgid "True if either condition would be considered true individually."
 msgstr ""
 
-#: ../../../command/if.rst:108
+#: ../../../command/if.rst:104
 msgid "``if((condition) AND (condition OR (condition)))``"
 msgstr ""
 
@@ -192,7 +193,7 @@ msgstr ""
 msgid "Existence Checks"
 msgstr ""
 
-#: ../../../command/if.rst:117
+#: ../../../command/if.rst:115
 msgid "``if(COMMAND command-name)``"
 msgstr ""
 
@@ -201,7 +202,7 @@ msgid ""
 "True if the given name is a command, macro or function that can be invoked."
 msgstr ""
 
-#: ../../../command/if.rst:120
+#: ../../../command/if.rst:119
 msgid "``if(POLICY policy-id)``"
 msgstr ""
 
@@ -210,7 +211,7 @@ msgid ""
 "True if the given name is an existing policy (of the form ``CMP<NNNN>``)."
 msgstr ""
 
-#: ../../../command/if.rst:126
+#: ../../../command/if.rst:122
 msgid "``if(TARGET target-name)``"
 msgstr ""
 
@@ -221,7 +222,7 @@ msgid ""
 "`add_custom_target` command that has already been invoked (in any directory)."
 msgstr ""
 
-#: ../../../command/if.rst:131
+#: ../../../command/if.rst:128
 msgid "``if(TEST test-name)``"
 msgstr ""
 
@@ -231,7 +232,7 @@ msgid ""
 "`add_test` command."
 msgstr ""
 
-#: ../../../command/if.rst:150
+#: ../../../command/if.rst:135
 msgid "``if(DEFINED <name>|CACHE{<name>}|ENV{<name>})``"
 msgstr ""
 
@@ -261,7 +262,7 @@ msgstr ""
 msgid "Added support for ``CACHE{<name>}`` variables."
 msgstr ""
 
-#: ../../../command/if.rst:154
+#: ../../../command/if.rst:152
 msgid "``if(<variable|string> IN_LIST <variable>)``"
 msgstr ""
 
@@ -273,7 +274,7 @@ msgstr ""
 msgid "File Operations"
 msgstr ""
 
-#: ../../../command/if.rst:168
+#: ../../../command/if.rst:161
 msgid "``if(EXISTS path-to-file-or-directory)``"
 msgstr ""
 
@@ -290,7 +291,7 @@ msgstr ""
 msgid "False if the given path is an empty string."
 msgstr ""
 
-#: ../../../command/if.rst:176
+#: ../../../command/if.rst:170
 msgid "``if(file1 IS_NEWER_THAN file2)``"
 msgstr ""
 
@@ -304,7 +305,7 @@ msgid ""
 "file2."
 msgstr ""
 
-#: ../../../command/if.rst:182
+#: ../../../command/if.rst:178
 msgid "``if(IS_DIRECTORY path)``"
 msgstr ""
 
@@ -314,7 +315,7 @@ msgid ""
 "paths."
 msgstr ""
 
-#: ../../../command/if.rst:186
+#: ../../../command/if.rst:184
 msgid "``if(IS_SYMLINK file-name)``"
 msgstr ""
 
@@ -324,7 +325,7 @@ msgid ""
 "for full paths."
 msgstr ""
 
-#: ../../../command/if.rst:198
+#: ../../../command/if.rst:188
 msgid "``if(IS_ABSOLUTE path)``"
 msgstr ""
 
@@ -356,7 +357,7 @@ msgstr ""
 msgid "Comparisons"
 msgstr ""
 
-#: ../../../command/if.rst:210
+#: ../../../command/if.rst:205
 msgid "``if(<variable|string> MATCHES regex)``"
 msgstr ""
 
@@ -370,7 +371,7 @@ msgstr ""
 msgid "``()`` groups are captured in :variable:`CMAKE_MATCH_<n>` variables."
 msgstr ""
 
-#: ../../../command/if.rst:216
+#: ../../../command/if.rst:214
 msgid "``if(<variable|string> LESS <variable|string>)``"
 msgstr ""
 
@@ -380,7 +381,7 @@ msgid ""
 "that on the right."
 msgstr ""
 
-#: ../../../command/if.rst:222
+#: ../../../command/if.rst:220
 msgid "``if(<variable|string> GREATER <variable|string>)``"
 msgstr ""
 
@@ -390,7 +391,7 @@ msgid ""
 "than that on the right."
 msgstr ""
 
-#: ../../../command/if.rst:228
+#: ../../../command/if.rst:226
 msgid "``if(<variable|string> EQUAL <variable|string>)``"
 msgstr ""
 
@@ -400,7 +401,7 @@ msgid ""
 "that on the right."
 msgstr ""
 
-#: ../../../command/if.rst:235
+#: ../../../command/if.rst:232
 msgid "``if(<variable|string> LESS_EQUAL <variable|string>)``"
 msgstr ""
 
@@ -410,7 +411,7 @@ msgid ""
 "or equal to that on the right."
 msgstr ""
 
-#: ../../../command/if.rst:242
+#: ../../../command/if.rst:239
 msgid "``if(<variable|string> GREATER_EQUAL <variable|string>)``"
 msgstr ""
 
@@ -420,7 +421,7 @@ msgid ""
 "than or equal to that on the right."
 msgstr ""
 
-#: ../../../command/if.rst:248
+#: ../../../command/if.rst:246
 msgid "``if(<variable|string> STRLESS <variable|string>)``"
 msgstr ""
 
@@ -430,7 +431,7 @@ msgid ""
 "the string or variable on the right."
 msgstr ""
 
-#: ../../../command/if.rst:254
+#: ../../../command/if.rst:252
 msgid "``if(<variable|string> STRGREATER <variable|string>)``"
 msgstr ""
 
@@ -440,7 +441,7 @@ msgid ""
 "than the string or variable on the right."
 msgstr ""
 
-#: ../../../command/if.rst:260
+#: ../../../command/if.rst:258
 msgid "``if(<variable|string> STREQUAL <variable|string>)``"
 msgstr ""
 
@@ -450,7 +451,7 @@ msgid ""
 "the string or variable on the right."
 msgstr ""
 
-#: ../../../command/if.rst:267
+#: ../../../command/if.rst:264
 msgid "``if(<variable|string> STRLESS_EQUAL <variable|string>)``"
 msgstr ""
 
@@ -460,7 +461,7 @@ msgid ""
 "or equal to the string or variable on the right."
 msgstr ""
 
-#: ../../../command/if.rst:274
+#: ../../../command/if.rst:271
 msgid "``if(<variable|string> STRGREATER_EQUAL <variable|string>)``"
 msgstr ""
 
@@ -474,7 +475,7 @@ msgstr ""
 msgid "Version Comparisons"
 msgstr ""
 
-#: ../../../command/if.rst:285
+#: ../../../command/if.rst:281
 msgid "``if(<variable|string> VERSION_LESS <variable|string>)``"
 msgstr ""
 
@@ -488,19 +489,19 @@ msgid ""
 "component effectively truncates the string at that point."
 msgstr ""
 
-#: ../../../command/if.rst:293
+#: ../../../command/if.rst:289
 msgid "``if(<variable|string> VERSION_GREATER <variable|string>)``"
 msgstr ""
 
-#: ../../../command/if.rst:301
+#: ../../../command/if.rst:297
 msgid "``if(<variable|string> VERSION_EQUAL <variable|string>)``"
 msgstr ""
 
-#: ../../../command/if.rst:310
+#: ../../../command/if.rst:305
 msgid "``if(<variable|string> VERSION_LESS_EQUAL <variable|string>)``"
 msgstr ""
 
-#: ../../../command/if.rst:319
+#: ../../../command/if.rst:314
 msgid "``if(<variable|string> VERSION_GREATER_EQUAL <variable|string>)``"
 msgstr ""
 
@@ -508,7 +509,7 @@ msgstr ""
 msgid "Path Comparisons"
 msgstr ""
 
-#: ../../../command/if.rst:352
+#: ../../../command/if.rst:326
 msgid "``if(<variable|string> PATH_EQUAL <variable|string>)``"
 msgstr ""
 

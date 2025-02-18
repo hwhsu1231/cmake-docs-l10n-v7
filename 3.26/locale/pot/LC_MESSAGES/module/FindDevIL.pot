@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +35,7 @@ msgstr ""
 msgid "This module defines the :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:21
+#: ../../../../Modules/FindDevIL.cmake:20
 msgid "``DevIL::IL``"
 msgstr ""
 
@@ -42,7 +43,7 @@ msgstr ""
 msgid "Defined if the system has DevIL."
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:24
+#: ../../../../Modules/FindDevIL.cmake:23
 msgid "``DevIL::ILU``"
 msgstr ""
 
@@ -50,7 +51,7 @@ msgstr ""
 msgid "Defined if the system has DevIL Utilities."
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:27
+#: ../../../../Modules/FindDevIL.cmake:26
 msgid "``DevIL::ILUT``"
 msgstr ""
 
@@ -66,7 +67,7 @@ msgstr ""
 msgid "This module sets:"
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:37
+#: ../../../../Modules/FindDevIL.cmake:34
 msgid "``IL_LIBRARIES``"
 msgstr ""
 
@@ -76,7 +77,7 @@ msgid ""
 "library. This one has to be linked into the application."
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:43
+#: ../../../../Modules/FindDevIL.cmake:39
 msgid "``ILU_LIBRARIES``"
 msgstr ""
 
@@ -87,7 +88,7 @@ msgid ""
 "functionality it provides is not used."
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:48
+#: ../../../../Modules/FindDevIL.cmake:45
 msgid "``ILUT_LIBRARIES``"
 msgstr ""
 
@@ -97,7 +98,7 @@ msgid ""
 "with OpenGL. It is not strictly needed in applications."
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:51
+#: ../../../../Modules/FindDevIL.cmake:50
 msgid "``IL_INCLUDE_DIR``"
 msgstr ""
 
@@ -105,7 +106,7 @@ msgstr ""
 msgid "where to find the il.h, ilu.h and ilut.h files."
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:58
+#: ../../../../Modules/FindDevIL.cmake:53
 msgid "``DevIL_FOUND``"
 msgstr ""
 
@@ -117,7 +118,7 @@ msgid ""
 "the DevIL developers release it."
 msgstr ""
 
-#: ../../../../Modules/FindDevIL.cmake:139
+#: ../../../../Modules/FindDevIL.cmake:60
 msgid "``DevIL_ILUT_FOUND``"
 msgstr ""
 

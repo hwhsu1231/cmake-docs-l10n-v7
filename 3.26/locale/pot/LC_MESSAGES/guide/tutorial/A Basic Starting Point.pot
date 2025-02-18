@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -211,6 +212,10 @@ msgid ""
 "`cmake_minimum_required` to set the CMake version as follows:"
 msgstr ""
 
+#: ../../../guide/tutorial/A Basic Starting Point.rst:120
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/A Basic Starting Point.rst:124
 msgid "TODO 1: CMakeLists.txt"
 msgstr ""
@@ -221,10 +226,20 @@ msgid ""
 "\n"
 msgstr ""
 
+#: ../../../guide/tutorial/A Basic Starting Point.rst:130 Point.rst:147
+#: Point.rst:165 Point.rst:245 Point.rst:270 Point.rst:362 Point.rst:380
+#: Point.rst:405 Point.rst:425 Point.rst:441 Point.rst:459
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/A Basic Starting Point.rst:134
 msgid ""
 "The next step to make a basic project is to use the :command:`project` "
 "command as follows to set the project name:"
+msgstr ""
+
+#: ../../../guide/tutorial/A Basic Starting Point.rst:137
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/A Basic Starting Point.rst:141
@@ -239,6 +254,10 @@ msgstr ""
 msgid ""
 "The last command to call for a basic project is :command:`add_executable`. "
 "We call it as follows:"
+msgstr ""
+
+#: ../../../guide/tutorial/A Basic Starting Point.rst:154
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/A Basic Starting Point.rst:158
@@ -322,6 +341,10 @@ msgid ""
 "with ``std::stod`` in ``tutorial.cxx``. This looks like the following:"
 msgstr ""
 
+#: ../../../guide/tutorial/A Basic Starting Point.rst:234
+msgid "<details><summary>TODO 4: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/A Basic Starting Point.rst:238
 msgid "TODO 4: tutorial.cxx"
 msgstr ""
@@ -346,6 +369,10 @@ msgid ""
 "`CMAKE_CXX_STANDARD_REQUIRED` to ``True``. Make sure to add the :variable:"
 "`CMAKE_CXX_STANDARD` declarations above the call to :command:"
 "`add_executable`."
+msgstr ""
+
+#: ../../../guide/tutorial/A Basic Starting Point.rst:259
+msgid "<details><summary>TODO 6: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/A Basic Starting Point.rst:263
@@ -453,6 +480,10 @@ msgid ""
 "``Tutorial_VERSION_MINOR`` behind the scenes."
 msgstr ""
 
+#: ../../../guide/tutorial/A Basic Starting Point.rst:351
+msgid "<details><summary>TODO 7: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/A Basic Starting Point.rst:355
 msgid "TODO 7: CMakeLists.txt"
 msgstr ""
@@ -467,6 +498,10 @@ msgstr ""
 msgid ""
 "Then we used :command:`configure_file` to copy the input file with the "
 "specified CMake variables replaced:"
+msgstr ""
+
+#: ../../../guide/tutorial/A Basic Starting Point.rst:369
+msgid "<details><summary>TODO 8: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/A Basic Starting Point.rst:373
@@ -498,6 +533,10 @@ msgid ""
 "executable target should look for include files."
 msgstr ""
 
+#: ../../../guide/tutorial/A Basic Starting Point.rst:395
+msgid "<details><summary>TODO 9: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/A Basic Starting Point.rst:399
 msgid "TODO 9: CMakeLists.txt"
 msgstr ""
@@ -518,6 +557,10 @@ msgid ""
 "``TutorialConfig.h``."
 msgstr ""
 
+#: ../../../guide/tutorial/A Basic Starting Point.rst:415
+msgid "<details><summary>TODO 10: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/A Basic Starting Point.rst:419
 msgid "TODO 10: TutorialConfig.h.in"
 msgstr ""
@@ -536,6 +579,10 @@ msgid ""
 "file, ``TutorialConfig.h``."
 msgstr ""
 
+#: ../../../guide/tutorial/A Basic Starting Point.rst:432
+msgid "<details><summary>TODO 11: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/A Basic Starting Point.rst:436
 msgid "TODO 11: tutorial.cxx"
 msgstr ""
@@ -548,6 +595,10 @@ msgstr ""
 msgid ""
 "Finally, we print out the executable name and version number by updating "
 "``tutorial.cxx`` as follows:"
+msgstr ""
+
+#: ../../../guide/tutorial/A Basic Starting Point.rst:448
+msgid "<details><summary>TODO 12: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/A Basic Starting Point.rst:452

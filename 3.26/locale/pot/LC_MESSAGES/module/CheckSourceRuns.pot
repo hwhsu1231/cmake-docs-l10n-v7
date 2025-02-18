@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -77,7 +78,7 @@ msgid ""
 "variables prior to calling ``check_source_runs()``:"
 msgstr ""
 
-#: ../../../../Modules/CheckSourceRuns.cmake:58
+#: ../../../../Modules/CheckSourceRuns.cmake:54
 msgid "``CMAKE_REQUIRED_FLAGS``"
 msgstr ""
 
@@ -89,7 +90,7 @@ msgid ""
 "command before the contents of ``CMAKE_REQUIRED_FLAGS``."
 msgstr ""
 
-#: ../../../../Modules/CheckSourceRuns.cmake:63
+#: ../../../../Modules/CheckSourceRuns.cmake:60
 msgid "``CMAKE_REQUIRED_DEFINITIONS``"
 msgstr ""
 
@@ -100,7 +101,7 @@ msgid ""
 "``<resultVar>`` will also be added automatically."
 msgstr ""
 
-#: ../../../../Modules/CheckSourceRuns.cmake:69
+#: ../../../../Modules/CheckSourceRuns.cmake:65
 msgid "``CMAKE_REQUIRED_INCLUDES``"
 msgstr ""
 
@@ -112,7 +113,7 @@ msgid ""
 "will be ignored."
 msgstr ""
 
-#: ../../../../Modules/CheckSourceRuns.cmake:73
+#: ../../../../Modules/CheckSourceRuns.cmake:71
 msgid "``CMAKE_REQUIRED_LINK_OPTIONS``"
 msgstr ""
 
@@ -122,7 +123,7 @@ msgid ""
 "(see :command:`try_run` for further details)."
 msgstr ""
 
-#: ../../../../Modules/CheckSourceRuns.cmake:79
+#: ../../../../Modules/CheckSourceRuns.cmake:75
 msgid "``CMAKE_REQUIRED_LIBRARIES``"
 msgstr ""
 
@@ -134,7 +135,7 @@ msgid ""
 "details)."
 msgstr ""
 
-#: ../../../../Modules/CheckSourceRuns.cmake:83
+#: ../../../../Modules/CheckSourceRuns.cmake:81
 msgid "``CMAKE_REQUIRED_QUIET``"
 msgstr ""
 

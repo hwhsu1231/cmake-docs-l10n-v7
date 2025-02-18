@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,7 +62,7 @@ msgid ""
 "influences the way the message is handled:"
 msgstr ""
 
-#: ../../../command/message.rst:38
+#: ../../../command/message.rst:34
 msgid "``FATAL_ERROR``"
 msgstr ""
 
@@ -75,7 +76,7 @@ msgid ""
 "<CMake Exit Code>`."
 msgstr ""
 
-#: ../../../command/message.rst:41
+#: ../../../command/message.rst:40
 msgid "``SEND_ERROR``"
 msgstr ""
 
@@ -83,7 +84,7 @@ msgstr ""
 msgid "CMake Error, continue processing, but skip generation."
 msgstr ""
 
-#: ../../../command/message.rst:44
+#: ../../../command/message.rst:43
 msgid "``WARNING``"
 msgstr ""
 
@@ -91,7 +92,7 @@ msgstr ""
 msgid "CMake Warning, continue processing."
 msgstr ""
 
-#: ../../../command/message.rst:47
+#: ../../../command/message.rst:46
 msgid "``AUTHOR_WARNING``"
 msgstr ""
 
@@ -99,7 +100,7 @@ msgstr ""
 msgid "CMake Warning (dev), continue processing."
 msgstr ""
 
-#: ../../../command/message.rst:52
+#: ../../../command/message.rst:49
 msgid "``DEPRECATION``"
 msgstr ""
 
@@ -110,7 +111,7 @@ msgid ""
 "respectively, else no message."
 msgstr ""
 
-#: ../../../command/message.rst:55
+#: ../../../command/message.rst:54
 msgid "(none) or ``NOTICE``"
 msgstr ""
 
@@ -118,7 +119,7 @@ msgstr ""
 msgid "Important message printed to stderr to attract user's attention."
 msgstr ""
 
-#: ../../../command/message.rst:60
+#: ../../../command/message.rst:57
 msgid "``STATUS``"
 msgstr ""
 
@@ -129,7 +130,7 @@ msgid ""
 "informative."
 msgstr ""
 
-#: ../../../command/message.rst:66
+#: ../../../command/message.rst:62
 msgid "``VERBOSE``"
 msgstr ""
 
@@ -141,7 +142,7 @@ msgid ""
 "insight into what's happening."
 msgstr ""
 
-#: ../../../command/message.rst:72
+#: ../../../command/message.rst:68
 msgid "``DEBUG``"
 msgstr ""
 
@@ -153,7 +154,7 @@ msgid ""
 "project and will often be closely related to internal implementation details."
 msgstr ""
 
-#: ../../../command/message.rst:77
+#: ../../../command/message.rst:74
 msgid "``TRACE``"
 msgstr ""
 
@@ -253,7 +254,7 @@ msgstr ""
 msgid "where ``<checkState>`` must be one of the following:"
 msgstr ""
 
-#: ../../../command/message.rst:149
+#: ../../../command/message.rst:148
 msgid "``CHECK_START``"
 msgstr ""
 
@@ -261,7 +262,7 @@ msgstr ""
 msgid "Record a concise message about the check about to be performed."
 msgstr ""
 
-#: ../../../command/message.rst:152
+#: ../../../command/message.rst:151
 msgid "``CHECK_PASS``"
 msgstr ""
 
@@ -269,7 +270,7 @@ msgstr ""
 msgid "Record a successful result for a check."
 msgstr ""
 
-#: ../../../command/message.rst:155
+#: ../../../command/message.rst:154
 msgid "``CHECK_FAIL``"
 msgstr ""
 

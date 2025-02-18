@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -112,7 +113,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:50
+#: ../../../../Modules/FindImageMagick.cmake:49
 msgid "``ImageMagick::Magick++``"
 msgstr ""
 
@@ -120,7 +121,7 @@ msgstr ""
 msgid "ImageMagick C++ API, if found."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:53
+#: ../../../../Modules/FindImageMagick.cmake:52
 msgid "``ImageMagick::MagickWand``"
 msgstr ""
 
@@ -128,7 +129,7 @@ msgstr ""
 msgid "ImageMagick MagickWand C API, if found."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:57
+#: ../../../../Modules/FindImageMagick.cmake:55
 msgid "``ImageMagick::MagickCore``"
 msgstr ""
 
@@ -140,7 +141,7 @@ msgstr ""
 msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:63
+#: ../../../../Modules/FindImageMagick.cmake:62
 msgid "``ImageMagick_FOUND``"
 msgstr ""
 
@@ -148,7 +149,7 @@ msgstr ""
 msgid "TRUE if all components are found."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:66
+#: ../../../../Modules/FindImageMagick.cmake:65
 msgid "``ImageMagick_EXECUTABLE_DIR``"
 msgstr ""
 
@@ -156,7 +157,7 @@ msgstr ""
 msgid "Full path to executables directory."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:69
+#: ../../../../Modules/FindImageMagick.cmake:68
 msgid "``ImageMagick_INCLUDE_DIRS``"
 msgstr ""
 
@@ -164,7 +165,7 @@ msgstr ""
 msgid "Full paths to all include dirs."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:72
+#: ../../../../Modules/FindImageMagick.cmake:71
 msgid "``ImageMagick_LIBRARIES``"
 msgstr ""
 
@@ -172,7 +173,7 @@ msgstr ""
 msgid "Full paths to all libraries."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:75
+#: ../../../../Modules/FindImageMagick.cmake:74
 msgid "``ImageMagick_COMPILE_OPTIONS``"
 msgstr ""
 
@@ -180,7 +181,7 @@ msgstr ""
 msgid "Compile options of all libraries."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:79
+#: ../../../../Modules/FindImageMagick.cmake:77
 msgid "``ImageMagick_VERSION_STRING``"
 msgstr ""
 
@@ -190,7 +191,7 @@ msgid ""
 "versions like 5.2.3."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:82
+#: ../../../../Modules/FindImageMagick.cmake:81
 msgid "``ImageMagick_<component>_FOUND``"
 msgstr ""
 
@@ -198,7 +199,7 @@ msgstr ""
 msgid "TRUE if <component> is found."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:85
+#: ../../../../Modules/FindImageMagick.cmake:84
 msgid "``ImageMagick_<component>_EXECUTABLE``"
 msgstr ""
 
@@ -206,7 +207,7 @@ msgstr ""
 msgid "Full path to <component> executable."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:88
+#: ../../../../Modules/FindImageMagick.cmake:87
 msgid "``ImageMagick_<component>_INCLUDE_DIRS``"
 msgstr ""
 
@@ -214,7 +215,7 @@ msgstr ""
 msgid "Full path to <component> include dirs."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:93
+#: ../../../../Modules/FindImageMagick.cmake:90
 msgid "``ImageMagick_<component>_COMPILE_OPTIONS``"
 msgstr ""
 
@@ -222,7 +223,7 @@ msgstr ""
 msgid "Compile options of <component>."
 msgstr ""
 
-#: ../../../../Modules/FindImageMagick.cmake:97
+#: ../../../../Modules/FindImageMagick.cmake:95
 msgid "``ImageMagick_<component>_LIBRARIES``"
 msgstr ""
 
