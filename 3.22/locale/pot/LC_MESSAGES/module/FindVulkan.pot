@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,7 +36,7 @@ msgid ""
 "This module defines :prop_tgt:`IMPORTED` targets if Vulkan has been found:"
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:19
+#: ../../../../Modules/FindVulkan.cmake:18
 msgid "``Vulkan::Vulkan``"
 msgstr ""
 
@@ -43,7 +44,7 @@ msgstr ""
 msgid "The main Vulkan library."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:24
+#: ../../../../Modules/FindVulkan.cmake:21
 msgid "``Vulkan::glslc``"
 msgstr ""
 
@@ -51,7 +52,7 @@ msgstr ""
 msgid "The GLSLC SPIR-V compiler, if it has been found."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:31
+#: ../../../../Modules/FindVulkan.cmake:26
 msgid "``Vulkan::Headers``"
 msgstr ""
 
@@ -62,7 +63,7 @@ msgid ""
 "Vulkan library dynamically."
 msgstr ""
 
-#: ../../../../Modules/FindVulkan.cmake:37
+#: ../../../../Modules/FindVulkan.cmake:33
 msgid "``Vulkan::glslangValidator``"
 msgstr ""
 

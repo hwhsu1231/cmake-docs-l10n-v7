@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -53,7 +54,7 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:2
+#: ../../../manual/OPTIONS_BUILD.txt:1
 msgid "``-S <path-to-source>``"
 msgstr ""
 
@@ -61,7 +62,7 @@ msgstr ""
 msgid "Path to root directory of the CMake project to build."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:7
+#: ../../../manual/OPTIONS_BUILD.txt:4
 msgid "``-B <path-to-build>``"
 msgstr ""
 
@@ -73,7 +74,7 @@ msgstr ""
 msgid "If the directory doesn't already exist CMake will make it."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:22
+#: ../../../manual/OPTIONS_BUILD.txt:9
 msgid "``-C <initial-cache>``"
 msgstr ""
 
@@ -98,7 +99,7 @@ msgid ""
 "within the script evaluate to the top-level source and build tree."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:42
+#: ../../../manual/OPTIONS_BUILD.txt:24
 msgid "``-D <var>:<type>=<value>, -D <var>=<value>``"
 msgstr ""
 
@@ -131,7 +132,7 @@ msgid ""
 "<type>=<value>`` or ``-D<var>=<value>``."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:52
+#: ../../../manual/OPTIONS_BUILD.txt:44
 msgid "``-U <globbing_expr>``"
 msgstr ""
 
@@ -151,7 +152,7 @@ msgstr ""
 msgid "Use with care, you can make your ``CMakeCache.txt`` non-working."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:63
+#: ../../../manual/OPTIONS_BUILD.txt:54
 msgid "``-G <generator-name>``"
 msgstr ""
 
@@ -172,7 +173,7 @@ msgid ""
 "variable and otherwise falls back to a builtin default selection."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:70
+#: ../../../manual/OPTIONS_BUILD.txt:65
 msgid "``-T <toolset-spec>``"
 msgstr ""
 
@@ -187,7 +188,7 @@ msgid ""
 "`CMAKE_GENERATOR_TOOLSET` variable for details."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:77
+#: ../../../manual/OPTIONS_BUILD.txt:72
 msgid "``-A <platform-name>``"
 msgstr ""
 
@@ -202,7 +203,7 @@ msgid ""
 "`CMAKE_GENERATOR_PLATFORM` variable for details."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:81
+#: ../../../manual/OPTIONS_BUILD.txt:79
 msgid "``--toolchain <path-to-file>``"
 msgstr ""
 
@@ -212,7 +213,7 @@ msgid ""
 "`CMAKE_TOOLCHAIN_FILE` variable."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:85
+#: ../../../manual/OPTIONS_BUILD.txt:83
 msgid "``--install-prefix <directory>``"
 msgstr ""
 
@@ -222,7 +223,7 @@ msgid ""
 "`CMAKE_INSTALL_PREFIX` variable. Must be an absolute path."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:92
+#: ../../../manual/OPTIONS_BUILD.txt:87
 msgid "``-Wno-dev``"
 msgstr ""
 
@@ -236,7 +237,7 @@ msgid ""
 "files. By default this will also turn off deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:98
+#: ../../../manual/OPTIONS_BUILD.txt:94
 msgid "``-Wdev``"
 msgstr ""
 
@@ -250,7 +251,7 @@ msgid ""
 "files. By default this will also turn on deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:104
+#: ../../../manual/OPTIONS_BUILD.txt:100
 msgid "``-Werror=dev``"
 msgstr ""
 
@@ -264,7 +265,7 @@ msgid ""
 "errors. By default this will also turn on deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:110
+#: ../../../manual/OPTIONS_BUILD.txt:106
 msgid "``-Wno-error=dev``"
 msgstr ""
 
@@ -278,7 +279,7 @@ msgid ""
 "not errors. By default this will also turn off deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:116
+#: ../../../manual/OPTIONS_BUILD.txt:112
 msgid "``-Wdeprecated``"
 msgstr ""
 
@@ -292,7 +293,7 @@ msgid ""
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:122
+#: ../../../manual/OPTIONS_BUILD.txt:118
 msgid "``-Wno-deprecated``"
 msgstr ""
 
@@ -306,7 +307,7 @@ msgid ""
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:128
+#: ../../../manual/OPTIONS_BUILD.txt:124
 msgid "``-Werror=deprecated``"
 msgstr ""
 
@@ -320,7 +321,7 @@ msgid ""
 "for the author of the ``CMakeLists.txt`` files, errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:134
+#: ../../../manual/OPTIONS_BUILD.txt:130
 msgid "``-Wno-error=deprecated``"
 msgstr ""
 
@@ -334,7 +335,7 @@ msgid ""
 "for the author of the ``CMakeLists.txt`` files, not errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:6
+#: ../../../manual/OPTIONS_HELP.txt:3
 msgid "``--help,-help,-usage,-h,-H,/?``"
 msgstr ""
 
@@ -346,7 +347,7 @@ msgstr ""
 msgid "Usage describes the basic command line interface and its options."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:12
+#: ../../../manual/OPTIONS_HELP.txt:8
 msgid "``--version,-version,/V [<f>]``"
 msgstr ""
 
@@ -358,7 +359,7 @@ msgstr ""
 msgid "If a file is specified, the version is written into it. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:18
+#: ../../../manual/OPTIONS_HELP.txt:14
 msgid "``--help-full [<f>]``"
 msgstr ""
 
@@ -370,7 +371,7 @@ msgstr ""
 msgid "All manuals are printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:24
+#: ../../../manual/OPTIONS_HELP.txt:20
 msgid "``--help-manual <man> [<f>]``"
 msgstr ""
 
@@ -382,7 +383,7 @@ msgstr ""
 msgid "The specified manual is printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:31
+#: ../../../manual/OPTIONS_HELP.txt:26
 msgid "``--help-manual-list [<f>]``"
 msgstr ""
 
@@ -396,7 +397,7 @@ msgid ""
 "``--help-manual`` option followed by a manual name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:38
+#: ../../../manual/OPTIONS_HELP.txt:33
 msgid "``--help-command <cmd> [<f>]``"
 msgstr ""
 
@@ -410,7 +411,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:45
+#: ../../../manual/OPTIONS_HELP.txt:40
 msgid "``--help-command-list [<f>]``"
 msgstr ""
 
@@ -424,7 +425,7 @@ msgid ""
 "``--help-command`` option followed by a command name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:52
+#: ../../../manual/OPTIONS_HELP.txt:47
 msgid "``--help-commands [<f>]``"
 msgstr ""
 
@@ -438,7 +439,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:59
+#: ../../../manual/OPTIONS_HELP.txt:54
 msgid "``--help-module <mod> [<f>]``"
 msgstr ""
 
@@ -452,7 +453,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:66
+#: ../../../manual/OPTIONS_HELP.txt:61
 msgid "``--help-module-list [<f>]``"
 msgstr ""
 
@@ -466,7 +467,7 @@ msgid ""
 "``--help-module`` option followed by a module name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:73
+#: ../../../manual/OPTIONS_HELP.txt:68
 msgid "``--help-modules [<f>]``"
 msgstr ""
 
@@ -480,7 +481,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:80
+#: ../../../manual/OPTIONS_HELP.txt:75
 msgid "``--help-policy <cmp> [<f>]``"
 msgstr ""
 
@@ -494,7 +495,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:87
+#: ../../../manual/OPTIONS_HELP.txt:82
 msgid "``--help-policy-list [<f>]``"
 msgstr ""
 
@@ -508,7 +509,7 @@ msgid ""
 "``--help-policy`` option followed by a policy name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:94
+#: ../../../manual/OPTIONS_HELP.txt:89
 msgid "``--help-policies [<f>]``"
 msgstr ""
 
@@ -522,7 +523,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:101
+#: ../../../manual/OPTIONS_HELP.txt:96
 msgid "``--help-property <prop> [<f>]``"
 msgstr ""
 
@@ -536,7 +537,7 @@ msgid ""
 "in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:108
+#: ../../../manual/OPTIONS_HELP.txt:103
 msgid "``--help-property-list [<f>]``"
 msgstr ""
 
@@ -550,7 +551,7 @@ msgid ""
 "``--help-property`` option followed by a property name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:115
+#: ../../../manual/OPTIONS_HELP.txt:110
 msgid "``--help-properties [<f>]``"
 msgstr ""
 
@@ -564,7 +565,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:122
+#: ../../../manual/OPTIONS_HELP.txt:117
 msgid "``--help-variable <var> [<f>]``"
 msgstr ""
 
@@ -578,7 +579,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:129
+#: ../../../manual/OPTIONS_HELP.txt:124
 msgid "``--help-variable-list [<f>]``"
 msgstr ""
 
@@ -592,7 +593,7 @@ msgid ""
 "``--help-variable`` option followed by a variable name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:136
+#: ../../../manual/OPTIONS_HELP.txt:131
 msgid "``--help-variables [<f>]``"
 msgstr ""
 
@@ -614,7 +615,7 @@ msgstr ""
 msgid "The following resources are available to get help using CMake:"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:6
+#: ../../../manual/LINKS.txt:3
 msgid "Home Page"
 msgstr ""
 
@@ -626,7 +627,7 @@ msgstr ""
 msgid "The primary starting point for learning about CMake."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:12
+#: ../../../manual/LINKS.txt:8
 msgid "Online Documentation and Community Resources"
 msgstr ""
 
@@ -640,7 +641,7 @@ msgid ""
 "this web page."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:17
+#: ../../../manual/LINKS.txt:14
 msgid "Discourse Forum"
 msgstr ""
 

@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.22\n"
+"Project-Id-Version: CMake 3.22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -100,7 +101,7 @@ msgid ""
 "``cuda_compile_fatbin()``, ``cuda_compile_cubin()`` or ``cuda_wrap_srcs()``:"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:66
+#: ../../../../Modules/FindCUDA.cmake:61
 msgid "``CUDA_64_BIT_DEVICE_CODE`` (Default: host bit size)"
 msgstr ""
 
@@ -113,7 +114,7 @@ msgid ""
 "yourself, you can mix bit sizes between device and host."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:83
+#: ../../../../Modules/FindCUDA.cmake:68
 msgid "``CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE`` (Default: ``ON``)"
 msgstr ""
 
@@ -139,7 +140,7 @@ msgid ""
 "off for the user, but no good solution could be found."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:88
+#: ../../../../Modules/FindCUDA.cmake:85
 msgid "``CUDA_BUILD_CUBIN`` (Default: ``OFF``)"
 msgstr ""
 
@@ -150,7 +151,7 @@ msgid ""
 "usage is printed during build."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:92
+#: ../../../../Modules/FindCUDA.cmake:90
 msgid "``CUDA_BUILD_EMULATION`` (Default: ``OFF`` for device mode)"
 msgstr ""
 
@@ -160,7 +161,7 @@ msgid ""
 "files when ``CUDA_BUILD_EMULATION`` is ``TRUE``."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:101
+#: ../../../../Modules/FindCUDA.cmake:94
 msgid "``CUDA_LINK_LIBRARIES_KEYWORD`` (Default: ``\"\"``)"
 msgstr ""
 
@@ -174,7 +175,7 @@ msgid ""
 "mixed."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:107
+#: ../../../../Modules/FindCUDA.cmake:103
 msgid ""
 "``CUDA_GENERATED_OUTPUT_DIR`` (Default: :variable:`CMAKE_CURRENT_BINARY_DIR`)"
 msgstr ""
@@ -187,7 +188,7 @@ msgid ""
 "CMakeFiles``."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:110
+#: ../../../../Modules/FindCUDA.cmake:109
 msgid "``CUDA_HOST_COMPILATION_CPP`` (Default: ``ON``)"
 msgstr ""
 
@@ -195,7 +196,7 @@ msgstr ""
 msgid "Set to ``OFF`` for C compilation of host code."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:122
+#: ../../../../Modules/FindCUDA.cmake:112
 msgid "``CUDA_HOST_COMPILER`` (Default: ``CMAKE_C_COMPILER``)"
 msgstr ""
 
@@ -215,7 +216,7 @@ msgid ""
 "the default."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:130
+#: ../../../../Modules/FindCUDA.cmake:124
 msgid "``CUDA_NVCC_FLAGS``, ``CUDA_NVCC_FLAGS_<CONFIG>``"
 msgstr ""
 
@@ -231,7 +232,7 @@ msgid ""
 "generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:141
+#: ../../../../Modules/FindCUDA.cmake:132
 msgid "``CUDA_PROPAGATE_HOST_FLAGS`` (Default: ``ON``)"
 msgstr ""
 
@@ -249,7 +250,7 @@ msgid ""
 "affected by this flag."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:148
+#: ../../../../Modules/FindCUDA.cmake:143
 msgid "``CUDA_SEPARABLE_COMPILATION`` (Default: ``OFF``)"
 msgstr ""
 
@@ -262,7 +263,7 @@ msgid ""
 "``cuda_link_separable_compilation_objects()`` should be called."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:157
+#: ../../../../Modules/FindCUDA.cmake:150
 msgid "``CUDA_SOURCE_PROPERTY_FORMAT``"
 msgstr ""
 
@@ -275,7 +276,7 @@ msgid ""
 "set_source_files_properties on how to set this property."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:164
+#: ../../../../Modules/FindCUDA.cmake:159
 msgid "``CUDA_USE_STATIC_CUDA_RUNTIME`` (Default: ``ON``)"
 msgstr ""
 
@@ -286,7 +287,7 @@ msgid ""
 "option, then it will be silently disabled."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:170
+#: ../../../../Modules/FindCUDA.cmake:166
 msgid "``CUDA_VERBOSE_BUILD`` (Default: ``OFF``)"
 msgstr ""
 
@@ -615,7 +616,7 @@ msgstr ""
 msgid "The script defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:382
+#: ../../../../Modules/FindCUDA.cmake:381
 msgid "``CUDA_VERSION_MAJOR``"
 msgstr ""
 
@@ -623,7 +624,7 @@ msgstr ""
 msgid "The major version of cuda as reported by nvcc."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:385
+#: ../../../../Modules/FindCUDA.cmake:384
 msgid "``CUDA_VERSION_MINOR``"
 msgstr ""
 
@@ -631,7 +632,7 @@ msgstr ""
 msgid "The minor version."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:388
+#: ../../../../Modules/FindCUDA.cmake:387
 msgid "``CUDA_VERSION``, ``CUDA_VERSION_STRING``"
 msgstr ""
 
@@ -639,7 +640,7 @@ msgstr ""
 msgid "Full version in the ``X.Y`` format."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:392
+#: ../../../../Modules/FindCUDA.cmake:390
 msgid "``CUDA_HAS_FP16``"
 msgstr ""
 
@@ -647,7 +648,7 @@ msgstr ""
 msgid "Whether a short float (``float16``, ``fp16``) is supported."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:395
+#: ../../../../Modules/FindCUDA.cmake:394
 msgid "``CUDA_TOOLKIT_ROOT_DIR``"
 msgstr ""
 
@@ -655,7 +656,7 @@ msgstr ""
 msgid "Path to the CUDA Toolkit (defined if not set)."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:403
+#: ../../../../Modules/FindCUDA.cmake:397
 msgid "``CUDA_SDK_ROOT_DIR``"
 msgstr ""
 
@@ -669,7 +670,7 @@ msgid ""
 "to locate headers or libraries, if you so choose (at your own risk)."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:407
+#: ../../../../Modules/FindCUDA.cmake:405
 msgid "``CUDA_INCLUDE_DIRS``"
 msgstr ""
 
@@ -679,7 +680,7 @@ msgid ""
 "``cuda_add_executable()`` and ``cuda_add_library()``."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:410
+#: ../../../../Modules/FindCUDA.cmake:409
 msgid "``CUDA_LIBRARIES``"
 msgstr ""
 
@@ -687,7 +688,7 @@ msgstr ""
 msgid "Cuda RT library."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:414
+#: ../../../../Modules/FindCUDA.cmake:412
 msgid "``CUDA_CUFFT_LIBRARIES``"
 msgstr ""
 
@@ -697,7 +698,7 @@ msgid ""
 "``cuda_add_cufft_to_target()`` macro)"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:418
+#: ../../../../Modules/FindCUDA.cmake:416
 msgid "``CUDA_CUBLAS_LIBRARIES``"
 msgstr ""
 
@@ -707,7 +708,7 @@ msgid ""
 "``cuda_add_cublas_to_target()`` macro)."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:422
+#: ../../../../Modules/FindCUDA.cmake:420
 msgid "``CUDA_cudart_static_LIBRARY``"
 msgstr ""
 
@@ -717,7 +718,7 @@ msgid ""
 "5.5+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:426
+#: ../../../../Modules/FindCUDA.cmake:424
 msgid "``CUDA_cudadevrt_LIBRARY``"
 msgstr ""
 
@@ -725,7 +726,7 @@ msgstr ""
 msgid "Device runtime library.  Required for separable compilation."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:430
+#: ../../../../Modules/FindCUDA.cmake:428
 msgid "``CUDA_cupti_LIBRARY``"
 msgstr ""
 
@@ -734,7 +735,7 @@ msgid ""
 "CUDA Profiling Tools Interface library. Only available for CUDA version 4.0+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:434
+#: ../../../../Modules/FindCUDA.cmake:432
 msgid "``CUDA_curand_LIBRARY``"
 msgstr ""
 
@@ -743,7 +744,7 @@ msgid ""
 "CUDA Random Number Generation library. Only available for CUDA version 3.2+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:439
+#: ../../../../Modules/FindCUDA.cmake:436
 msgid "``CUDA_cusolver_LIBRARY``"
 msgstr ""
 
@@ -751,7 +752,7 @@ msgstr ""
 msgid "CUDA Direct Solver library. Only available for CUDA version 7.0+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:443
+#: ../../../../Modules/FindCUDA.cmake:441
 msgid "``CUDA_cusparse_LIBRARY``"
 msgstr ""
 
@@ -759,7 +760,7 @@ msgstr ""
 msgid "CUDA Sparse Matrix library. Only available for CUDA version 3.2+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:447
+#: ../../../../Modules/FindCUDA.cmake:445
 msgid "``CUDA_npp_LIBRARY``"
 msgstr ""
 
@@ -768,7 +769,7 @@ msgid ""
 "NVIDIA Performance Primitives lib. Only available for CUDA version 4.0+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:451
+#: ../../../../Modules/FindCUDA.cmake:449
 msgid "``CUDA_nppc_LIBRARY``"
 msgstr ""
 
@@ -778,7 +779,7 @@ msgid ""
 "5.5+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:455
+#: ../../../../Modules/FindCUDA.cmake:453
 msgid "``CUDA_nppi_LIBRARY``"
 msgstr ""
 
@@ -788,7 +789,7 @@ msgid ""
 "CUDA version 5.5 - 8.0."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:459
+#: ../../../../Modules/FindCUDA.cmake:457
 msgid "``CUDA_nppial_LIBRARY``"
 msgstr ""
 
@@ -806,11 +807,11 @@ msgid ""
 "CUDA version 9.0."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:463
+#: ../../../../Modules/FindCUDA.cmake:461
 msgid "``CUDA_nppicc_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:468
+#: ../../../../Modules/FindCUDA.cmake:465
 msgid "``CUDA_nppicom_LIBRARY``"
 msgstr ""
 
@@ -820,35 +821,35 @@ msgid ""
 "CUDA version 9.0 - 10.2. Replaced by nvjpeg."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:472
+#: ../../../../Modules/FindCUDA.cmake:470
 msgid "``CUDA_nppidei_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:476
+#: ../../../../Modules/FindCUDA.cmake:474
 msgid "``CUDA_nppif_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:480
+#: ../../../../Modules/FindCUDA.cmake:478
 msgid "``CUDA_nppig_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:484
+#: ../../../../Modules/FindCUDA.cmake:482
 msgid "``CUDA_nppim_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:488
+#: ../../../../Modules/FindCUDA.cmake:486
 msgid "``CUDA_nppist_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:492
+#: ../../../../Modules/FindCUDA.cmake:490
 msgid "``CUDA_nppisu_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:496
+#: ../../../../Modules/FindCUDA.cmake:494
 msgid "``CUDA_nppitc_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:500
+#: ../../../../Modules/FindCUDA.cmake:498
 msgid "``CUDA_npps_LIBRARY``"
 msgstr ""
 
@@ -858,7 +859,7 @@ msgid ""
 "CUDA version 5.5+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:505
+#: ../../../../Modules/FindCUDA.cmake:502
 msgid "``CUDA_nvcuvenc_LIBRARY``"
 msgstr ""
 
@@ -868,7 +869,7 @@ msgid ""
 "only."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:510
+#: ../../../../Modules/FindCUDA.cmake:507
 msgid "``CUDA_nvcuvid_LIBRARY``"
 msgstr ""
 
@@ -878,7 +879,7 @@ msgid ""
 "only."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:515
+#: ../../../../Modules/FindCUDA.cmake:512
 msgid "``CUDA_nvToolsExt_LIBRARY``"
 msgstr ""
 
@@ -886,7 +887,7 @@ msgstr ""
 msgid "NVIDA CUDA Tools Extension library. Available for CUDA version 5+."
 msgstr ""
 
-#: ../../../../Modules/FindCUDA.cmake:2172
+#: ../../../../Modules/FindCUDA.cmake:517
 msgid "``CUDA_OpenCL_LIBRARY``"
 msgstr ""
 
