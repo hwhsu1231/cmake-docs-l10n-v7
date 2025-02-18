@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -112,7 +113,7 @@ msgid ""
 "The files which should be installed.  This is used by ``install_jar()``."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:68
+#: ../../../../Modules/UseJava.cmake:67
 msgid "``JNI_SYMLINK``"
 msgstr ""
 
@@ -130,7 +131,7 @@ msgstr ""
 msgid "The location of the jar file so that you can include it."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:74
+#: ../../../../Modules/UseJava.cmake:72
 msgid "``CLASSDIR``"
 msgstr ""
 
@@ -550,7 +551,7 @@ msgstr ""
 msgid "Both signatures share same options."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:398
+#: ../../../../Modules/UseJava.cmake:397
 msgid "``CLASSES <class>...``"
 msgstr ""
 
@@ -558,7 +559,7 @@ msgstr ""
 msgid "Specifies Java classes used to generate headers."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:402
+#: ../../../../Modules/UseJava.cmake:400
 msgid "``CLASSPATH <classpath>...``"
 msgstr ""
 
@@ -568,7 +569,7 @@ msgid ""
 "targets created by command add_jar can be used."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:405
+#: ../../../../Modules/UseJava.cmake:404
 msgid "``DEPENDS <depend>...``"
 msgstr ""
 
@@ -576,7 +577,7 @@ msgstr ""
 msgid "Targets on which the javah target depends."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:409
+#: ../../../../Modules/UseJava.cmake:407
 msgid "``OUTPUT_NAME <path>``"
 msgstr ""
 
@@ -586,7 +587,7 @@ msgid ""
 "``CLASSES`` into ``<path>``.  Same behavior as option ``-o`` of javah tool."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:1505
+#: ../../../../Modules/UseJava.cmake:411
 msgid "``OUTPUT_DIR <path>``"
 msgstr ""
 

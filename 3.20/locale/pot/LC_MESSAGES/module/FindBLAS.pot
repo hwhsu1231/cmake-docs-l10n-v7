@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,7 +46,7 @@ msgstr ""
 msgid "The following variables may be set to influence this module's behavior:"
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:23
+#: ../../../../Modules/FindBLAS.cmake:22
 msgid "``BLA_STATIC``"
 msgstr ""
 
@@ -53,7 +54,7 @@ msgstr ""
 msgid "if ``ON`` use static linkage"
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:80
+#: ../../../../Modules/FindBLAS.cmake:25
 msgid "``BLA_VENDOR``"
 msgstr ""
 
@@ -215,7 +216,7 @@ msgstr ""
 msgid "Elbrus Math Library support (``EML``, ``EML_mt``)."
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:83
+#: ../../../../Modules/FindBLAS.cmake:82
 msgid "``BLA_F95``"
 msgstr ""
 
@@ -223,7 +224,7 @@ msgstr ""
 msgid "if ``ON`` tries to find the BLAS95 interfaces"
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:89
+#: ../../../../Modules/FindBLAS.cmake:85
 msgid "``BLA_PREFER_PKGCONFIG``"
 msgstr ""
 
@@ -241,7 +242,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` target:"
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:100
+#: ../../../../Modules/FindBLAS.cmake:98
 msgid "``BLAS::BLAS``"
 msgstr ""
 
@@ -273,7 +274,7 @@ msgstr ""
 msgid "uncached list of required linker flags (excluding ``-l`` and ``-L``)."
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:112
+#: ../../../../Modules/FindBLAS.cmake:111
 msgid "``BLAS_LIBRARIES``"
 msgstr ""
 
@@ -283,7 +284,7 @@ msgid ""
 "BLAS (may be empty if compiler implicitly links BLAS)"
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:115
+#: ../../../../Modules/FindBLAS.cmake:114
 msgid "``BLAS95_LIBRARIES``"
 msgstr ""
 
@@ -293,7 +294,7 @@ msgid ""
 "BLAS95 interface"
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:118
+#: ../../../../Modules/FindBLAS.cmake:117
 msgid "``BLAS95_FOUND``"
 msgstr ""
 
@@ -321,7 +322,7 @@ msgstr ""
 msgid "Hints"
 msgstr ""
 
-#: ../../../../Modules/FindBLAS.cmake:1057
+#: ../../../../Modules/FindBLAS.cmake:135
 msgid "``MKLROOT``"
 msgstr ""
 

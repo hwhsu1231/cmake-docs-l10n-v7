@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,7 +76,7 @@ msgid ""
 "This command should be called after :command:`cpack_add_component` command."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:51
+#: ../../../../Modules/CPackIFW.cmake:49
 msgid "``COMMON``"
 msgstr ""
 
@@ -85,7 +86,7 @@ msgid ""
 "to which it belongs."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:57
+#: ../../../../Modules/CPackIFW.cmake:53
 msgid "``ESSENTIAL``"
 msgstr ""
 
@@ -95,7 +96,7 @@ msgid ""
 "updated."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:64 ../../../../Modules/CPackIFW.cmake:202
+#: ../../../../Modules/CPackIFW.cmake:59 ../../../../Modules/CPackIFW.cmake:198
 msgid "``VIRTUAL``"
 msgstr ""
 
@@ -106,7 +107,7 @@ msgid ""
 "command."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:71 ../../../../Modules/CPackIFW.cmake:207
+#: ../../../../Modules/CPackIFW.cmake:66 ../../../../Modules/CPackIFW.cmake:204
 msgid "``FORCED_INSTALLATION``"
 msgstr ""
 
@@ -116,7 +117,7 @@ msgid ""
 "the ``REQUIRED`` option from the :command:`cpack_add_component` command."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:76 ../../../../Modules/CPackIFW.cmake:213
+#: ../../../../Modules/CPackIFW.cmake:73 ../../../../Modules/CPackIFW.cmake:209
 msgid "``REQUIRES_ADMIN_RIGHTS``"
 msgstr ""
 
@@ -125,7 +126,7 @@ msgid ""
 "set it if the component needs to be installed with elevated permissions."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:80 ../../../../Modules/CPackIFW.cmake:217
+#: ../../../../Modules/CPackIFW.cmake:78 ../../../../Modules/CPackIFW.cmake:215
 msgid "``NAME``"
 msgstr ""
 
@@ -135,7 +136,7 @@ msgid ""
 "used origin component name."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:86 ../../../../Modules/CPackIFW.cmake:223
+#: ../../../../Modules/CPackIFW.cmake:82 ../../../../Modules/CPackIFW.cmake:219
 #: ../../../../Modules/CPackIFW.cmake:333
 #: ../../../../Modules/CPackIFW.cmake:370
 msgid "``DISPLAY_NAME``"
@@ -147,7 +148,7 @@ msgid ""
 "command."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:92 ../../../../Modules/CPackIFW.cmake:229
+#: ../../../../Modules/CPackIFW.cmake:88 ../../../../Modules/CPackIFW.cmake:225
 msgid "``DESCRIPTION``"
 msgstr ""
 
@@ -157,7 +158,7 @@ msgid ""
 "`cpack_add_component` command."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:98 ../../../../Modules/CPackIFW.cmake:235
+#: ../../../../Modules/CPackIFW.cmake:94 ../../../../Modules/CPackIFW.cmake:231
 msgid "``UPDATE_TEXT``"
 msgstr ""
 
@@ -167,8 +168,8 @@ msgid ""
 "component."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:102
-#: ../../../../Modules/CPackIFW.cmake:239
+#: ../../../../Modules/CPackIFW.cmake:100
+#: ../../../../Modules/CPackIFW.cmake:237
 msgid "``VERSION``"
 msgstr ""
 
@@ -177,8 +178,8 @@ msgid ""
 "is version of component. By default used :variable:`CPACK_PACKAGE_VERSION`."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:107
-#: ../../../../Modules/CPackIFW.cmake:244
+#: ../../../../Modules/CPackIFW.cmake:104
+#: ../../../../Modules/CPackIFW.cmake:241
 msgid "``RELEASE_DATE``"
 msgstr ""
 
@@ -187,8 +188,8 @@ msgstr ""
 msgid "keep empty to auto generate."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:111
-#: ../../../../Modules/CPackIFW.cmake:248
+#: ../../../../Modules/CPackIFW.cmake:109
+#: ../../../../Modules/CPackIFW.cmake:246
 msgid "``SCRIPT``"
 msgstr ""
 
@@ -196,8 +197,8 @@ msgstr ""
 msgid "is a relative or absolute path to operations script for this component."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:116
-#: ../../../../Modules/CPackIFW.cmake:251
+#: ../../../../Modules/CPackIFW.cmake:113
+#: ../../../../Modules/CPackIFW.cmake:250
 msgid "``SORTING_PRIORITY``"
 msgstr ""
 
@@ -205,8 +206,8 @@ msgstr ""
 msgid "is priority of the component in the tree."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:120
-#: ../../../../Modules/CPackIFW.cmake:255
+#: ../../../../Modules/CPackIFW.cmake:118
+#: ../../../../Modules/CPackIFW.cmake:253
 msgid "``PRIORITY``"
 msgstr ""
 
@@ -215,8 +216,8 @@ msgstr ""
 msgid "Old name for ``SORTING_PRIORITY``."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:126
-#: ../../../../Modules/CPackIFW.cmake:261
+#: ../../../../Modules/CPackIFW.cmake:122
+#: ../../../../Modules/CPackIFW.cmake:257
 msgid "``DEPENDS``, ``DEPENDENCIES``"
 msgstr ""
 
@@ -226,8 +227,8 @@ msgid ""
 "list of dependency component or component group identifiers in QtIFW style."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:132
-#: ../../../../Modules/CPackIFW.cmake:267
+#: ../../../../Modules/CPackIFW.cmake:128
+#: ../../../../Modules/CPackIFW.cmake:263
 msgid "``AUTO_DEPEND_ON``"
 msgstr ""
 
@@ -237,8 +238,8 @@ msgid ""
 "component has an automatic dependency on."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:136
-#: ../../../../Modules/CPackIFW.cmake:271
+#: ../../../../Modules/CPackIFW.cmake:134
+#: ../../../../Modules/CPackIFW.cmake:269
 msgid "``LICENSES``"
 msgstr ""
 
@@ -248,8 +249,8 @@ msgid ""
 "You can specify more then one license."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:144
-#: ../../../../Modules/CPackIFW.cmake:280
+#: ../../../../Modules/CPackIFW.cmake:138
+#: ../../../../Modules/CPackIFW.cmake:273
 msgid "``DEFAULT``"
 msgstr ""
 
@@ -260,8 +261,8 @@ msgid ""
 "forget add the file of the script as a value of the ``SCRIPT`` option)."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:149
-#: ../../../../Modules/CPackIFW.cmake:285
+#: ../../../../Modules/CPackIFW.cmake:146
+#: ../../../../Modules/CPackIFW.cmake:282
 msgid "``USER_INTERFACES``"
 msgstr ""
 
@@ -270,8 +271,8 @@ msgstr ""
 msgid "is a list of <file_path> ('.ui' files) representing pages to load."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:154
-#: ../../../../Modules/CPackIFW.cmake:290
+#: ../../../../Modules/CPackIFW.cmake:151
+#: ../../../../Modules/CPackIFW.cmake:287
 msgid "``TRANSLATIONS``"
 msgstr ""
 
@@ -281,8 +282,8 @@ msgid ""
 "is a list of <file_path> ('.qm' files) representing translations to load."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:159
-#: ../../../../Modules/CPackIFW.cmake:295
+#: ../../../../Modules/CPackIFW.cmake:156
+#: ../../../../Modules/CPackIFW.cmake:292
 msgid "``REPLACES``"
 msgstr ""
 
@@ -291,8 +292,8 @@ msgstr ""
 msgid "list of identifiers of component or component group to replace."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:166
-#: ../../../../Modules/CPackIFW.cmake:302
+#: ../../../../Modules/CPackIFW.cmake:161
+#: ../../../../Modules/CPackIFW.cmake:297
 msgid "``CHECKABLE``"
 msgstr ""
 
@@ -430,7 +431,7 @@ msgid ""
 "`CPACK_IFW_REPOSITORIES_ALL`."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:322
+#: ../../../../Modules/CPackIFW.cmake:321
 msgid "``DISABLED``"
 msgstr ""
 
@@ -438,8 +439,8 @@ msgstr ""
 msgid "if set, then the repository will be disabled by default."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:325
-#: ../../../../Modules/CPackIFW.cmake:356
+#: ../../../../Modules/CPackIFW.cmake:324
+#: ../../../../Modules/CPackIFW.cmake:355
 msgid "``URL``"
 msgstr ""
 
@@ -448,8 +449,8 @@ msgstr ""
 msgid "is points to a list of available components."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:328
-#: ../../../../Modules/CPackIFW.cmake:365
+#: ../../../../Modules/CPackIFW.cmake:327
+#: ../../../../Modules/CPackIFW.cmake:364
 msgid "``USERNAME``"
 msgstr ""
 
@@ -458,8 +459,8 @@ msgstr ""
 msgid "is used as user on a protected repository."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:331
-#: ../../../../Modules/CPackIFW.cmake:368
+#: ../../../../Modules/CPackIFW.cmake:330
+#: ../../../../Modules/CPackIFW.cmake:367
 msgid "``PASSWORD``"
 msgstr ""
 
@@ -487,7 +488,7 @@ msgid ""
 "                    [DISPLAY_NAME <display_name>])"
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:359
+#: ../../../../Modules/CPackIFW.cmake:358
 msgid "``OLD_URL``"
 msgstr ""
 
@@ -495,7 +496,7 @@ msgstr ""
 msgid "is points to a list that will replaced."
 msgstr ""
 
-#: ../../../../Modules/CPackIFW.cmake:362
+#: ../../../../Modules/CPackIFW.cmake:361
 msgid "``NEW_URL``"
 msgstr ""
 
