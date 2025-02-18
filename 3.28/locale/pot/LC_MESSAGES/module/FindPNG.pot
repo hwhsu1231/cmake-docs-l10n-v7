@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.28\n"
+"Project-Id-Version: CMake 3.28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:27+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` target:"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:18
+#: ../../../../Modules/FindPNG.cmake:17
 msgid "``PNG::PNG``"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr ""
 msgid "the libraries to link against to use PNG."
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:30
+#: ../../../../Modules/FindPNG.cmake:29
 msgid "``PNG_DEFINITIONS``"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr ""
 msgid "If false, do not try to use PNG."
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:35
+#: ../../../../Modules/FindPNG.cmake:34
 msgid "``PNG_VERSION_STRING``"
 msgstr ""
 
@@ -107,7 +107,7 @@ msgstr ""
 msgid "where to find the PNG library."
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:45
+#: ../../../../Modules/FindPNG.cmake:44
 msgid "``PNG_INCLUDE_DIR``"
 msgstr ""
 

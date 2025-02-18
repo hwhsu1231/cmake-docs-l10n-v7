@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.28\n"
+"Project-Id-Version: CMake 3.28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:27+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgid ""
 "be one of the following:"
 msgstr ""
 
-#: ../../../command/get_property.rst:29
+#: ../../../command/get_property.rst:28
 msgid "``GLOBAL``"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Scope is unique and does not accept a name."
 msgstr ""
 
-#: ../../../command/get_property.rst:39
+#: ../../../command/get_property.rst:31
 msgid "``DIRECTORY``"
 msgstr ""
 
@@ -77,7 +77,7 @@ msgstr ""
 msgid "``<dir>`` may reference a binary directory."
 msgstr ""
 
-#: ../../../command/get_property.rst:43
+#: ../../../command/get_property.rst:41
 msgid "``TARGET``"
 msgstr ""
 
@@ -87,7 +87,7 @@ msgid ""
 "`get_target_property` command."
 msgstr ""
 
-#: ../../../command/get_property.rst:66
+#: ../../../command/get_property.rst:45
 msgid "``SOURCE``"
 msgstr ""
 
@@ -102,7 +102,7 @@ msgid ""
 "Directory scope can be overridden with one of the following sub-options:"
 msgstr ""
 
-#: ../../../command/get_property.rst:60 ../../../command/get_property.rst:84
+#: ../../../command/get_property.rst:52 ../../../command/get_property.rst:80
 msgid "``DIRECTORY <dir>``"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgid ""
 "source directory."
 msgstr ""
 
-#: ../../../command/get_property.rst:63
+#: ../../../command/get_property.rst:62
 msgid "``TARGET_DIRECTORY <target>``"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 msgid "See also the :command:`get_source_file_property` command."
 msgstr ""
 
-#: ../../../command/get_property.rst:71
+#: ../../../command/get_property.rst:68
 msgid "``INSTALL``"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Scope must name one installed file path."
 msgstr ""
 
-#: ../../../command/get_property.rst:85
+#: ../../../command/get_property.rst:73
 msgid "``TEST``"
 msgstr ""
 
@@ -160,7 +160,7 @@ msgid ""
 "directory. ``<dir>`` may reference a binary directory."
 msgstr ""
 
-#: ../../../command/get_property.rst:88
+#: ../../../command/get_property.rst:87
 msgid "``CACHE``"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgstr ""
 msgid "Scope must name one cache entry."
 msgstr ""
 
-#: ../../../command/get_property.rst:91
+#: ../../../command/get_property.rst:90
 msgid "``VARIABLE``"
 msgstr ""
 

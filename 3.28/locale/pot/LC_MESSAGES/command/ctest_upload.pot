@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.28\n"
+"Project-Id-Version: CMake 3.28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:27+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/ctest_upload.rst:14
+#: ../../../command/ctest_upload.rst:12
 msgid "``FILES <file>...``"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgid ""
 "dashboard server."
 msgstr ""
 
-#: ../../../command/ctest_upload.rst:20
+#: ../../../command/ctest_upload.rst:16
 msgid "``QUIET``"
 msgstr ""
 
@@ -54,7 +54,7 @@ msgid ""
 "the console otherwise."
 msgstr ""
 
-#: ../../../command/ctest_upload.rst:25
+#: ../../../command/ctest_upload.rst:22
 msgid "``CAPTURE_CMAKE_ERROR <result-var>``"
 msgstr ""
 

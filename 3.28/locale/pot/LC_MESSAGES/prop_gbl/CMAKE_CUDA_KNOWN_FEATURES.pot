@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.28\n"
+"Project-Id-Version: CMake 3.28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:27+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "The features known to this version of CMake are:"
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:20
+#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:19
 msgid "``cuda_std_03``"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Compiler mode is at least CUDA/C++ 03."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:23
+#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:22
 msgid "``cuda_std_11``"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Compiler mode is at least CUDA/C++ 11."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:26
+#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:25
 msgid "``cuda_std_14``"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Compiler mode is at least CUDA/C++ 14."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:29
+#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:28
 msgid "``cuda_std_17``"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Compiler mode is at least CUDA/C++ 17."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:32
+#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:31
 msgid "``cuda_std_20``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Compiler mode is at least CUDA/C++ 20."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:37
+#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:34
 msgid "``cuda_std_23``"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Compiler mode is at least CUDA/C++ 23."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:42
+#: ../../../prop_gbl/CMAKE_CUDA_KNOWN_FEATURES.rst:39
 msgid "``cuda_std_26``"
 msgstr ""
 

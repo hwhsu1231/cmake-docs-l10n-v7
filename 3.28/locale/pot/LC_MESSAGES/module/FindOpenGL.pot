@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.28\n"
+"Project-Id-Version: CMake 3.28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:27+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 msgid "This module respects several optional COMPONENTS:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:24
+#: ../../../../Modules/FindOpenGL.cmake:23
 msgid "``EGL``"
 msgstr ""
 
@@ -51,7 +51,7 @@ msgid ""
 "system."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:27
+#: ../../../../Modules/FindOpenGL.cmake:26
 msgid "``GLX``"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgid ""
 "An extension to X that interfaces OpenGL, OpenGL ES with X window system."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:30
+#: ../../../../Modules/FindOpenGL.cmake:29
 msgid "``OpenGL``"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "The cross platform API for 3D graphics."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:35
+#: ../../../../Modules/FindOpenGL.cmake:32
 msgid "``GLES2``"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "A subset of OpenGL API for embedded systems with limited capabilities."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:40
+#: ../../../../Modules/FindOpenGL.cmake:37
 msgid "``GLES3``"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgid ""
 "Defined to the platform-specific OpenGL libraries if the system has OpenGL."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:52
+#: ../../../../Modules/FindOpenGL.cmake:51
 msgid "``OpenGL::GLU``"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 msgid "Defined if the system has EGL."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:65
+#: ../../../../Modules/FindOpenGL.cmake:63
 #: ../../../../Modules/FindOpenGL.cmake:89
 msgid "``OpenGL::GLES2``"
 msgstr ""
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Defined if the system has GLES2."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:70
+#: ../../../../Modules/FindOpenGL.cmake:67
 #: ../../../../Modules/FindOpenGL.cmake:91
 msgid "``OpenGL::GLES3``"
 msgstr ""
@@ -230,7 +230,7 @@ msgstr ""
 msgid "Path to the EGL include directory."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:100
+#: ../../../../Modules/FindOpenGL.cmake:97
 msgid "``OPENGL_LIBRARIES``"
 msgstr ""
 
@@ -286,7 +286,7 @@ msgstr ""
 msgid "Path to the GLVND 'OpenGL' library"
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:119
+#: ../../../../Modules/FindOpenGL.cmake:118
 msgid "``OPENGL_gl_LIBRARY``"
 msgstr ""
 
@@ -296,7 +296,7 @@ msgid ""
 "targets."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:123
+#: ../../../../Modules/FindOpenGL.cmake:121
 msgid "``OPENGL_gles2_LIBRARY``"
 msgstr ""
 
@@ -304,7 +304,7 @@ msgstr ""
 msgid "Path to the OpenGL GLES2 library."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:128
+#: ../../../../Modules/FindOpenGL.cmake:125
 msgid "``OPENGL_gles3_LIBRARY``"
 msgstr ""
 
@@ -344,7 +344,7 @@ msgid ""
 "value may be one of:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:164
+#: ../../../../Modules/FindOpenGL.cmake:157
 msgid "``GLVND``"
 msgstr ""
 
@@ -360,7 +360,7 @@ msgid ""
 "no components are requested (since components correspond to GLVND libraries)."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:167
+#: ../../../../Modules/FindOpenGL.cmake:166
 msgid "``LEGACY``"
 msgstr ""
 
