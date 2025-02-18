@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -191,7 +192,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/try_compile.rst:153
+#: ../../../command/try_compile.rst:148
 msgid "``CMAKE_FLAGS <flags>...``"
 msgstr ""
 
@@ -203,7 +204,7 @@ msgid ""
 "``LINK_DIRECTORIES``, and ``LINK_LIBRARIES`` are used."
 msgstr ""
 
-#: ../../../command/try_compile.rst:157
+#: ../../../command/try_compile.rst:155
 msgid "``COMPILE_DEFINITIONS <defs>...``"
 msgstr ""
 
@@ -213,7 +214,7 @@ msgid ""
 "the generated test project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:160
+#: ../../../command/try_compile.rst:159
 msgid "``COPY_FILE <fileName>``"
 msgstr ""
 
@@ -222,7 +223,7 @@ msgid ""
 "Copy the built executable or static library to the given ``<fileName>``."
 msgstr ""
 
-#: ../../../command/try_compile.rst:164
+#: ../../../command/try_compile.rst:162
 msgid "``COPY_FILE_ERROR <var>``"
 msgstr ""
 
@@ -232,7 +233,7 @@ msgid ""
 "encountered while trying to copy the file."
 msgstr ""
 
-#: ../../../command/try_compile.rst:172
+#: ../../../command/try_compile.rst:166
 msgid "``LINK_LIBRARIES <libs>...``"
 msgstr ""
 
@@ -249,7 +250,7 @@ msgid ""
 "``CMAKE_FLAGS`` option will be ignored."
 msgstr ""
 
-#: ../../../command/try_compile.rst:179
+#: ../../../command/try_compile.rst:174
 msgid "``LINK_OPTIONS <options>...``"
 msgstr ""
 
@@ -260,7 +261,7 @@ msgid ""
 "project, depending on the :variable:`CMAKE_TRY_COMPILE_TARGET_TYPE` variable."
 msgstr ""
 
-#: ../../../command/try_compile.rst:185
+#: ../../../command/try_compile.rst:181
 msgid "``LOG_DESCRIPTION <text>``"
 msgstr ""
 
@@ -270,7 +271,7 @@ msgid ""
 "recorded in the :manual:`cmake-configure-log(7)` entry."
 msgstr ""
 
-#: ../../../command/try_compile.rst:205
+#: ../../../command/try_compile.rst:187
 msgid "``NO_CACHE``"
 msgstr ""
 
@@ -301,7 +302,7 @@ msgid ""
 "avoid leaking the intermediate result variable into the cache."
 msgstr ""
 
-#: ../../../command/try_compile.rst:210
+#: ../../../command/try_compile.rst:207
 msgid "``NO_LOG``"
 msgstr ""
 
@@ -309,7 +310,7 @@ msgstr ""
 msgid "Do not record a :manual:`cmake-configure-log(7)` entry for this call."
 msgstr ""
 
-#: ../../../command/try_compile.rst:213
+#: ../../../command/try_compile.rst:212
 msgid "``OUTPUT_VARIABLE <var>``"
 msgstr ""
 
@@ -317,7 +318,7 @@ msgstr ""
 msgid "Store the output from the build process in the given variable."
 msgstr ""
 
-#: ../../../command/try_compile.rst:223
+#: ../../../command/try_compile.rst:215
 msgid "``SOURCE_FROM_CONTENT <name> <content>``"
 msgstr ""
 
@@ -333,7 +334,7 @@ msgstr ""
 msgid "``SOURCE_FROM_CONTENT`` may be specified multiple times."
 msgstr ""
 
-#: ../../../command/try_compile.rst:233
+#: ../../../command/try_compile.rst:225
 msgid "``SOURCE_FROM_FILE <name> <path>``"
 msgstr ""
 
@@ -347,7 +348,7 @@ msgid ""
 "specified ``<name>`` is not allowed to contain path components."
 msgstr ""
 
-#: ../../../command/try_compile.rst:245
+#: ../../../command/try_compile.rst:235
 msgid "``SOURCE_FROM_VAR <name> <var>``"
 msgstr ""
 
@@ -365,7 +366,7 @@ msgstr ""
 msgid "``SOURCE_FROM_VAR`` may be specified multiple times."
 msgstr ""
 
-#: ../../../command/try_compile.rst:252
+#: ../../../command/try_compile.rst:247
 msgid "``<LANG>_STANDARD <std>``"
 msgstr ""
 
@@ -376,7 +377,7 @@ msgid ""
 "target property of the generated project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:260
+#: ../../../command/try_compile.rst:254
 msgid "``<LANG>_STANDARD_REQUIRED <bool>``"
 msgstr ""
 
@@ -388,7 +389,7 @@ msgid ""
 "property of the generated project."
 msgstr ""
 
-#: ../../../command/try_compile.rst:267
+#: ../../../command/try_compile.rst:262
 msgid "``<LANG>_EXTENSIONS <bool>``"
 msgstr ""
 

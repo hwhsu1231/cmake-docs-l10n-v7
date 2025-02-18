@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,7 +45,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:25
+#: ../../../../Modules/FindTIFF.cmake:24
 msgid "``TIFF::TIFF``"
 msgstr ""
 
@@ -52,7 +53,7 @@ msgstr ""
 msgid "The TIFF library, if found."
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:32
+#: ../../../../Modules/FindTIFF.cmake:27
 msgid "``TIFF::CXX``"
 msgstr ""
 
@@ -92,7 +93,7 @@ msgstr ""
 msgid "``TIFF_INCLUDE_DIRS``"
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:46
+#: ../../../../Modules/FindTIFF.cmake:45
 msgid "``TIFF_LIBRARIES``"
 msgstr ""
 
@@ -132,7 +133,7 @@ msgstr ""
 msgid "the path to the TIFFXX library for release configurations"
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:62
+#: ../../../../Modules/FindTIFF.cmake:61
 msgid "``TIFFXX_LIBRARY_DEBUG``"
 msgstr ""
 

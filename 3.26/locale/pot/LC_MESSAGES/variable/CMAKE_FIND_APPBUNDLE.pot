@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.26\n"
+"Project-Id-Version: CMake 3.26\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +34,7 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../../variable/CMAKE_FIND_APPBUNDLE.rst:15
+#: ../../../variable/CMAKE_FIND_APPBUNDLE.rst:13
 msgid "``FIRST``"
 msgstr ""
 
@@ -43,7 +44,7 @@ msgid ""
 "default on Darwin."
 msgstr ""
 
-#: ../../../variable/CMAKE_FIND_APPBUNDLE.rst:18
+#: ../../../variable/CMAKE_FIND_APPBUNDLE.rst:17
 msgid "``LAST``"
 msgstr ""
 
@@ -51,7 +52,7 @@ msgstr ""
 msgid "Try to find application bundles after standard programs."
 msgstr ""
 
-#: ../../../variable/CMAKE_FIND_APPBUNDLE.rst:21
+#: ../../../variable/CMAKE_FIND_APPBUNDLE.rst:20
 msgid "``ONLY``"
 msgstr ""
 
