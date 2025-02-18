@@ -84,7 +84,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
           submodules: false
-      - name: Get the Submodule List from .gitmodules
+      - name: Get SUBMODULE_ARRAY from .gitmodules
         id: gsl
         uses: hwhsu1231/ci-sphinx/.github/actions/get-submodule-array-from-gitmodules-file@main
         with:
