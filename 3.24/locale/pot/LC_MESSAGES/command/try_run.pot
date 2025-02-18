@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.24\n"
+"Project-Id-Version: CMake 3.24\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:28+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/try_run.rst:40
+#: ../../../command/try_run.rst:35
 msgid "``CMAKE_FLAGS <flags>...``"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgid ""
 "``LINK_DIRECTORIES``, and ``LINK_LIBRARIES`` are used."
 msgstr ""
 
-#: ../../../command/try_run.rst:44
+#: ../../../command/try_run.rst:42
 msgid "``COMPILE_DEFINITIONS <defs>...``"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgid ""
 "the generated test project."
 msgstr ""
 
-#: ../../../command/try_run.rst:47
+#: ../../../command/try_run.rst:46
 msgid "``COMPILE_OUTPUT_VARIABLE <var>``"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Report the compile step build output in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:57
+#: ../../../command/try_run.rst:49
 msgid "``LINK_LIBRARIES <libs>...``"
 msgstr ""
 
@@ -108,7 +108,7 @@ msgid ""
 "``CMAKE_FLAGS`` option will be ignored."
 msgstr ""
 
-#: ../../../command/try_run.rst:63
+#: ../../../command/try_run.rst:59
 msgid "``LINK_OPTIONS <options>...``"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgid ""
 "generated project."
 msgstr ""
 
-#: ../../../command/try_run.rst:68
+#: ../../../command/try_run.rst:65
 msgid "``OUTPUT_VARIABLE <var>``"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgid ""
 "``COMPILE_OUTPUT_VARIABLE`` and ``RUN_OUTPUT_VARIABLE`` instead."
 msgstr ""
 
-#: ../../../command/try_run.rst:71
+#: ../../../command/try_run.rst:70
 msgid "``RUN_OUTPUT_VARIABLE <var>``"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Report the output from running the executable in a given variable."
 msgstr ""
 
-#: ../../../command/try_run.rst:77
+#: ../../../command/try_run.rst:73
 msgid "``WORKING_DIRECTORY <var>``"
 msgstr ""
 
@@ -179,7 +179,7 @@ msgid ""
 "it had been run on its actual target platform. These cache entries are:"
 msgstr ""
 
-#: ../../../command/try_run.rst:104
+#: ../../../command/try_run.rst:103
 msgid "``<runResultVar>``"
 msgstr ""
 
@@ -187,7 +187,7 @@ msgstr ""
 msgid "Exit code if the executable were to be run on the target platform."
 msgstr ""
 
-#: ../../../command/try_run.rst:109
+#: ../../../command/try_run.rst:106
 msgid "``<runResultVar>__TRYRUN_OUTPUT``"
 msgstr ""
 

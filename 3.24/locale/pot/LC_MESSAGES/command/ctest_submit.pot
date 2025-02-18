@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.24\n"
+"Project-Id-Version: CMake 3.24\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:28+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:39
+#: ../../../command/ctest_submit.rst:24
 msgid "``PARTS <part>...``"
 msgstr ""
 
@@ -74,7 +74,7 @@ msgid ""
 "Done       = Build is complete, in Done.xml"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:43
+#: ../../../command/ctest_submit.rst:41
 msgid "``FILES <file>...``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgid ""
 "file must exist at the time of the call."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:49
+#: ../../../command/ctest_submit.rst:45
 msgid "``SUBMIT_URL <url>``"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgid ""
 "to.  If not given, the :variable:`CTEST_SUBMIT_URL` variable is used."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:55
+#: ../../../command/ctest_submit.rst:51
 msgid "``BUILD_ID <result-var>``"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgid ""
 "CDash."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:69
+#: ../../../command/ctest_submit.rst:57
 msgid "``HTTPHEADER <HTTP-header>``"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "This suboption can be repeated several times for multiple headers."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:72
+#: ../../../command/ctest_submit.rst:71
 msgid "``RETRY_COUNT <count>``"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Specify how many times to retry a timed-out submission."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:76
+#: ../../../command/ctest_submit.rst:74
 msgid "``RETRY_DELAY <delay>``"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgid ""
 "attempting to re-submit."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:80
+#: ../../../command/ctest_submit.rst:78
 msgid "``RETURN_VALUE <result-var>``"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgid ""
 "failure."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:86
+#: ../../../command/ctest_submit.rst:82
 msgid "``CAPTURE_CMAKE_ERROR <result-var>``"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgid ""
 "the command and prevent ctest from returning non-zero if an error occurs."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:92
+#: ../../../command/ctest_submit.rst:88
 msgid "``QUIET``"
 msgstr ""
 
