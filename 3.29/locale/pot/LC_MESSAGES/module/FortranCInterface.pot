@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Variables that indicate if the mangling is found:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:19
+#: ../../../../Modules/FortranCInterface.cmake:18
 msgid "``FortranCInterface_GLOBAL_FOUND``"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Global subroutines and functions."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:22
+#: ../../../../Modules/FortranCInterface.cmake:21
 msgid "``FortranCInterface_MODULE_FOUND``"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgid ""
 "use the `Module Functions`_ below."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:29
+#: ../../../../Modules/FortranCInterface.cmake:28
 msgid "``FortranCInterface_GLOBAL_PREFIX``"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 msgid "Prefix for a global symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:32
+#: ../../../../Modules/FortranCInterface.cmake:31
 msgid "``FortranCInterface_GLOBAL_SUFFIX``"
 msgstr ""
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Suffix for a global symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:36
+#: ../../../../Modules/FortranCInterface.cmake:34
 msgid "``FortranCInterface_GLOBAL_CASE``"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgid ""
 "``LOWER``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:39
+#: ../../../../Modules/FortranCInterface.cmake:38
 msgid "``FortranCInterface_GLOBAL__PREFIX``"
 msgstr ""
 
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Prefix for a global symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:42
+#: ../../../../Modules/FortranCInterface.cmake:41
 msgid "``FortranCInterface_GLOBAL__SUFFIX``"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Suffix for a global symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:46
+#: ../../../../Modules/FortranCInterface.cmake:44
 msgid "``FortranCInterface_GLOBAL__CASE``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgid ""
 "``LOWER``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:49
+#: ../../../../Modules/FortranCInterface.cmake:48
 msgid "``FortranCInterface_MODULE_PREFIX``"
 msgstr ""
 
@@ -122,7 +122,7 @@ msgstr ""
 msgid "Prefix for a module symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:53
+#: ../../../../Modules/FortranCInterface.cmake:51
 msgid "``FortranCInterface_MODULE_MIDDLE``"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgid ""
 "name of the module and the name of the symbol."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:56
+#: ../../../../Modules/FortranCInterface.cmake:55
 msgid "``FortranCInterface_MODULE_SUFFIX``"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Suffix for a module symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:60
+#: ../../../../Modules/FortranCInterface.cmake:58
 msgid "``FortranCInterface_MODULE_CASE``"
 msgstr ""
 
@@ -150,7 +150,7 @@ msgid ""
 "``LOWER``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:63
+#: ../../../../Modules/FortranCInterface.cmake:62
 msgid "``FortranCInterface_MODULE__PREFIX``"
 msgstr ""
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "Prefix for a module symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:67
+#: ../../../../Modules/FortranCInterface.cmake:65
 msgid "``FortranCInterface_MODULE__MIDDLE``"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgid ""
 "of the module and the name of the symbol."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:70
+#: ../../../../Modules/FortranCInterface.cmake:69
 msgid "``FortranCInterface_MODULE__SUFFIX``"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgstr ""
 msgid "Suffix for a module symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:74
+#: ../../../../Modules/FortranCInterface.cmake:72
 msgid "``FortranCInterface_MODULE__CASE``"
 msgstr ""
 
@@ -246,7 +246,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:110
+#: ../../../../Modules/FortranCInterface.cmake:108
 msgid "``MACRO_NAMESPACE``"
 msgstr ""
 
@@ -256,7 +256,7 @@ msgid ""
 "``<macro-ns>``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:119
+#: ../../../../Modules/FortranCInterface.cmake:112
 msgid "``SYMBOLS``"
 msgstr ""
 
@@ -276,7 +276,7 @@ msgid ""
 "is created, and a warning is displayed."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:122
+#: ../../../../Modules/FortranCInterface.cmake:121
 msgid "``SYMBOL_NAMESPACE``"
 msgstr ""
 

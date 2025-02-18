@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 msgid "The module provides :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenACC.cmake:25
+#: ../../../../Modules/FindOpenACC.cmake:24
 msgid "``OpenACC::OpenACC_<lang>``"
 msgstr ""
 
@@ -57,7 +57,7 @@ msgstr ""
 msgid "The module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenACC.cmake:35
+#: ../../../../Modules/FindOpenACC.cmake:32
 msgid "``OpenACC_FOUND``"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgstr ""
 msgid "OpenACC compiler flags for ``<lang>``, separated by spaces."
 msgstr ""
 
-#: ../../../../Modules/FindOpenACC.cmake:48
+#: ../../../../Modules/FindOpenACC.cmake:44
 msgid "``OpenACC_<lang>_OPTIONS``"
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr ""
 msgid "Minor version of OpenACC implemented by the ``<lang>`` compiler."
 msgstr ""
 
-#: ../../../../Modules/FindOpenACC.cmake:59
+#: ../../../../Modules/FindOpenACC.cmake:58
 msgid "``OpenACC_<lang>_VERSION``"
 msgstr ""
 
