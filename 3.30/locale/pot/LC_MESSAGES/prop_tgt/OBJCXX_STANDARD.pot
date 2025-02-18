@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Supported values are:"
 msgstr ""
 
-#: ../../../prop_tgt/OBJCXX_STANDARD.rst:15
+#: ../../../prop_tgt/OBJCXX_STANDARD.rst:14
 msgid "``98``"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Objective C++98"
 msgstr ""
 
-#: ../../../prop_tgt/OBJCXX_STANDARD.rst:18
+#: ../../../prop_tgt/OBJCXX_STANDARD.rst:17
 msgid "``11``"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Objective C++11"
 msgstr ""
 
-#: ../../../prop_tgt/OBJCXX_STANDARD.rst:21
+#: ../../../prop_tgt/OBJCXX_STANDARD.rst:20
 msgid "``14``"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Objective C++14"
 msgstr ""
 
-#: ../../../prop_tgt/OBJCXX_STANDARD.rst:24
+#: ../../../prop_tgt/OBJCXX_STANDARD.rst:23
 msgid "``17``"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Objective C++17"
 msgstr ""
 
-#: ../../../prop_tgt/OBJCXX_STANDARD.rst:27
+#: ../../../prop_tgt/OBJCXX_STANDARD.rst:26
 msgid "``20``"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Objective C++20"
 msgstr ""
 
-#: ../../../prop_tgt/OBJCXX_STANDARD.rst:32
+#: ../../../prop_tgt/OBJCXX_STANDARD.rst:29
 msgid "``23``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Objective C++23"
 msgstr ""
 
-#: ../../../prop_tgt/OBJCXX_STANDARD.rst:38
+#: ../../../prop_tgt/OBJCXX_STANDARD.rst:34
 msgid "``26``"
 msgstr ""
 

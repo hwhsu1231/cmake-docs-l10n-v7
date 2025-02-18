@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:57
+#: ../../../command/add_custom_command.rst:45
 msgid "``APPEND``"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgid ""
 "currently ignored when APPEND is given, but may be used in the future."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:93
+#: ../../../command/add_custom_command.rst:59
 msgid "``BYPRODUCTS``"
 msgstr ""
 
@@ -153,7 +153,7 @@ msgid ""
 "policy :policy:`CMP0154`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:142
+#: ../../../command/add_custom_command.rst:95
 msgid "``COMMAND``"
 msgstr ""
 
@@ -236,7 +236,7 @@ msgid ""
 "dependencies."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:150
+#: ../../../command/add_custom_command.rst:144
 msgid "``COMMENT``"
 msgstr ""
 
@@ -251,7 +251,7 @@ msgid ""
 "generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:194
+#: ../../../command/add_custom_command.rst:152
 msgid "``DEPENDS``"
 msgstr ""
 
@@ -324,7 +324,7 @@ msgid ""
 "generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:204
+#: ../../../command/add_custom_command.rst:196
 msgid "``COMMAND_EXPAND_LISTS``"
 msgstr ""
 
@@ -336,7 +336,7 @@ msgid ""
 "foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly expanded."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:219
+#: ../../../command/add_custom_command.rst:206
 msgid "``IMPLICIT_DEPENDS``"
 msgstr ""
 
@@ -356,7 +356,7 @@ msgstr ""
 msgid "This option cannot be specified at the same time as ``DEPFILE`` option."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:228
+#: ../../../command/add_custom_command.rst:221
 msgid "``JOB_POOL``"
 msgstr ""
 
@@ -368,7 +368,7 @@ msgid ""
 "ninja at build time."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:239
+#: ../../../command/add_custom_command.rst:230
 msgid "``JOB_SERVER_AWARE``"
 msgstr ""
 
@@ -387,7 +387,7 @@ msgstr ""
 msgid "This option is silently ignored by other generators."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:250
+#: ../../../command/add_custom_command.rst:243
 msgid "``MAIN_DEPENDENCY``"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgid ""
 "dependency which gets silently overwritten by a custom command specification."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:287
+#: ../../../command/add_custom_command.rst:252
 msgid "``OUTPUT``"
 msgstr ""
 
@@ -461,7 +461,7 @@ msgid ""
 "generator:`Borland Makefiles` generator."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:294
+#: ../../../command/add_custom_command.rst:289
 msgid "``USES_TERMINAL``"
 msgstr ""
 
@@ -472,7 +472,7 @@ msgid ""
 "``console`` :prop_gbl:`pool <JOB_POOLS>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:304
+#: ../../../command/add_custom_command.rst:296
 msgid "``VERBATIM``"
 msgstr ""
 
@@ -487,7 +487,7 @@ msgid ""
 "specific special characters."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:313
+#: ../../../command/add_custom_command.rst:306
 msgid "``WORKING_DIRECTORY``"
 msgstr ""
 
@@ -504,7 +504,7 @@ msgid ""
 "<cmake-generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:394
+#: ../../../command/add_custom_command.rst:315
 msgid "``DEPFILE``"
 msgstr ""
 
@@ -526,6 +526,14 @@ msgid ""
 "The formal syntax, as specified using `BNF <https://en.wikipedia.org/wiki/"
 "Backus%E2%80%93Naur_form>`_ notation with the regular extensions, is the "
 "following:"
+msgstr ""
+
+#: ../../../command/add_custom_command.rst:329
+msgid "\\begin{small}"
+msgstr ""
+
+#: ../../../command/add_custom_command.rst:351
+msgid "\\end{small}"
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:357
@@ -763,7 +771,7 @@ msgid ""
 "specified:"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:535
+#: ../../../command/add_custom_command.rst:530
 msgid "``PRE_BUILD``"
 msgstr ""
 
@@ -777,7 +785,7 @@ msgid ""
 "Visual Studio generator is being used."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:540
+#: ../../../command/add_custom_command.rst:537
 msgid "``PRE_LINK``"
 msgstr ""
 
@@ -788,7 +796,7 @@ msgid ""
 "defined for targets created by the :command:`add_custom_target` command."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:543
+#: ../../../command/add_custom_command.rst:542
 msgid "``POST_BUILD``"
 msgstr ""
 

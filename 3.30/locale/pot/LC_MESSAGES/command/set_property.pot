@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid ""
 "must be one of the following:"
 msgstr ""
 
-#: ../../../command/set_property.rst:27
+#: ../../../command/set_property.rst:26
 msgid "``GLOBAL``"
 msgstr ""
 
@@ -59,7 +59,7 @@ msgstr ""
 msgid "Scope is unique and does not accept a name."
 msgstr ""
 
-#: ../../../command/set_property.rst:36
+#: ../../../command/set_property.rst:29
 msgid "``DIRECTORY``"
 msgstr ""
 
@@ -75,7 +75,7 @@ msgstr ""
 msgid "``<dir>`` may reference a binary directory."
 msgstr ""
 
-#: ../../../command/set_property.rst:42
+#: ../../../command/set_property.rst:38
 msgid "``TARGET``"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgstr ""
 msgid ":ref:`Alias Targets` do not support setting target properties."
 msgstr ""
 
-#: ../../../command/set_property.rst:67
+#: ../../../command/set_property.rst:44
 msgid "``SOURCE``"
 msgstr ""
 
@@ -106,7 +106,7 @@ msgid ""
 "following sub-options:"
 msgstr ""
 
-#: ../../../command/set_property.rst:60
+#: ../../../command/set_property.rst:52
 msgid "``DIRECTORY <dirs>...``"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgstr ""
 msgid "``<dirs>`` may reference a binary directory."
 msgstr ""
 
-#: ../../../command/set_property.rst:64
+#: ../../../command/set_property.rst:62
 msgid "``TARGET_DIRECTORY <targets>...``"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 msgid "See also the :command:`set_source_files_properties` command."
 msgstr ""
 
-#: ../../../command/set_property.rst:85
+#: ../../../command/set_property.rst:69
 msgid "``INSTALL``"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgid ""
 "where the given paths are relative to the installation prefix."
 msgstr ""
 
-#: ../../../command/set_property.rst:104
+#: ../../../command/set_property.rst:87
 msgid "``TEST``"
 msgstr ""
 
@@ -194,7 +194,7 @@ msgid ""
 "option:"
 msgstr ""
 
-#: ../../../command/set_property.rst:103
+#: ../../../command/set_property.rst:99
 msgid "``DIRECTORY <dir>``"
 msgstr ""
 
@@ -207,7 +207,7 @@ msgid ""
 "``<dir>`` may reference a binary directory."
 msgstr ""
 
-#: ../../../command/set_property.rst:107
+#: ../../../command/set_property.rst:106
 msgid "``CACHE``"
 msgstr ""
 

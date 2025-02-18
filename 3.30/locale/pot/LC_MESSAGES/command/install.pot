@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid ""
 "specify them.  The common options are:"
 msgstr ""
 
-#: ../../../command/install.rst:68
+#: ../../../command/install.rst:48
 msgid "``DESTINATION <dir>``"
 msgstr ""
 
@@ -112,7 +112,7 @@ msgid ""
 "used verbatim."
 msgstr ""
 
-#: ../../../command/install.rst:80
+#: ../../../command/install.rst:70
 msgid "``PERMISSIONS <permission>...``"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgid ""
 "accumulated for each kind of artifact."
 msgstr ""
 
-#: ../../../command/install.rst:89
+#: ../../../command/install.rst:82
 msgid "``CONFIGURATIONS <config>...``"
 msgstr ""
 
@@ -151,7 +151,7 @@ msgid ""
 "accumulated for each kind of artifact."
 msgstr ""
 
-#: ../../../command/install.rst:99
+#: ../../../command/install.rst:91
 msgid "``COMPONENT <component>``"
 msgstr ""
 
@@ -167,7 +167,7 @@ msgid ""
 "`CMAKE_INSTALL_DEFAULT_COMPONENT_NAME` variable."
 msgstr ""
 
-#: ../../../command/install.rst:105
+#: ../../../command/install.rst:101
 msgid "``EXCLUDE_FROM_ALL``"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgid ""
 "installed as part of a component-specific installation"
 msgstr ""
 
-#: ../../../command/install.rst:110
+#: ../../../command/install.rst:107
 msgid "``RENAME <name>``"
 msgstr ""
 
@@ -188,7 +188,7 @@ msgid ""
 "command."
 msgstr ""
 
-#: ../../../command/install.rst:114
+#: ../../../command/install.rst:112
 msgid "``OPTIONAL``"
 msgstr ""
 
@@ -260,7 +260,7 @@ msgid ""
 "Artifacts` of the specified artifact kind:"
 msgstr ""
 
-#: ../../../command/install.rst:179 ../../../command/install.rst:274
+#: ../../../command/install.rst:167 ../../../command/install.rst:274
 msgid "``ARCHIVE``"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgid ""
 "below)."
 msgstr ""
 
-#: ../../../command/install.rst:187 ../../../command/install.rst:273
+#: ../../../command/install.rst:181 ../../../command/install.rst:273
 msgid "``LIBRARY``"
 msgstr ""
 
@@ -310,7 +310,7 @@ msgstr ""
 msgid "on macOS when marked as ``FRAMEWORK`` (see below)."
 msgstr ""
 
-#: ../../../command/install.rst:195 ../../../command/install.rst:272
+#: ../../../command/install.rst:189 ../../../command/install.rst:272
 msgid "``RUNTIME``"
 msgstr ""
 
@@ -326,7 +326,7 @@ msgid ""
 "accompanying import libraries are of kind ``ARCHIVE``)."
 msgstr ""
 
-#: ../../../command/install.rst:200
+#: ../../../command/install.rst:197
 msgid "``OBJECTS``"
 msgstr ""
 
@@ -334,7 +334,7 @@ msgstr ""
 msgid "Object files associated with *object libraries*."
 msgstr ""
 
-#: ../../../command/install.rst:204
+#: ../../../command/install.rst:202
 msgid "``FRAMEWORK``"
 msgstr ""
 
@@ -344,7 +344,7 @@ msgid ""
 "treated as ``FRAMEWORK`` targets on macOS."
 msgstr ""
 
-#: ../../../command/install.rst:208
+#: ../../../command/install.rst:206
 msgid "``BUNDLE``"
 msgstr ""
 
@@ -354,7 +354,7 @@ msgid ""
 "as ``BUNDLE`` targets on macOS."
 msgstr ""
 
-#: ../../../command/install.rst:216 ../../../command/install.rst:276
+#: ../../../command/install.rst:210 ../../../command/install.rst:276
 msgid "``PUBLIC_HEADER``"
 msgstr ""
 
@@ -368,7 +368,7 @@ msgid ""
 "prop_tgt:`PUBLIC_HEADER` for details."
 msgstr ""
 
-#: ../../../command/install.rst:220 ../../../command/install.rst:275
+#: ../../../command/install.rst:218 ../../../command/install.rst:275
 msgid "``PRIVATE_HEADER``"
 msgstr ""
 
@@ -378,7 +378,7 @@ msgid ""
 "prop_tgt:`PRIVATE_HEADER` for details."
 msgstr ""
 
-#: ../../../command/install.rst:224
+#: ../../../command/install.rst:222
 msgid "``RESOURCE``"
 msgstr ""
 
@@ -388,7 +388,7 @@ msgid ""
 "files. See :prop_tgt:`RESOURCE` for details."
 msgstr ""
 
-#: ../../../command/install.rst:235
+#: ../../../command/install.rst:226
 msgid "``FILE_SET <set-name>``"
 msgstr ""
 
@@ -403,7 +403,7 @@ msgid ""
 "to ``myproj/here.h`` below the destination."
 msgstr ""
 
-#: ../../../command/install.rst:244
+#: ../../../command/install.rst:237
 msgid "``CXX_MODULES_BMI``"
 msgstr ""
 
@@ -535,7 +535,7 @@ msgid ""
 "the following additional arguments:"
 msgstr ""
 
-#: ../../../command/install.rst:337
+#: ../../../command/install.rst:307
 msgid "``NAMELINK_COMPONENT``"
 msgstr ""
 
@@ -587,7 +587,7 @@ msgid ""
 "details on creating versioned shared libraries."
 msgstr ""
 
-#: ../../../command/install.rst:353
+#: ../../../command/install.rst:339
 msgid "``NAMELINK_ONLY``"
 msgstr ""
 
@@ -607,7 +607,7 @@ msgid ""
 "namelink, but ``COMPONENT`` should generally be preferred."
 msgstr ""
 
-#: ../../../command/install.rst:371
+#: ../../../command/install.rst:355
 msgid "``NAMELINK_SKIP``"
 msgstr ""
 
@@ -635,7 +635,7 @@ msgid ""
 "options at the top level:"
 msgstr ""
 
-#: ../../../command/install.rst:387
+#: ../../../command/install.rst:376
 msgid "``EXPORT``"
 msgstr ""
 
@@ -656,7 +656,7 @@ msgid ""
 "in the export."
 msgstr ""
 
-#: ../../../command/install.rst:394
+#: ../../../command/install.rst:389
 msgid "``INCLUDES DESTINATION``"
 msgstr ""
 
@@ -669,7 +669,7 @@ msgid ""
 "`$<INSTALL_PREFIX>`."
 msgstr ""
 
-#: ../../../command/install.rst:405
+#: ../../../command/install.rst:396
 msgid "``RUNTIME_DEPENDENCY_SET <set-name>``"
 msgstr ""
 
@@ -686,7 +686,7 @@ msgid ""
 "This keyword and the ``RUNTIME_DEPENDENCIES`` keyword are mutually exclusive."
 msgstr ""
 
-#: ../../../command/install.rst:437
+#: ../../../command/install.rst:407
 msgid "``RUNTIME_DEPENDENCIES <arg>...``"
 msgstr ""
 
@@ -1321,7 +1321,7 @@ msgid ""
 "defines required to use the libraries."
 msgstr ""
 
-#: ../../../command/install.rst:853
+#: ../../../command/install.rst:846
 msgid "``CXX_MODULES_DIRECTORY``"
 msgstr ""
 
@@ -1334,7 +1334,7 @@ msgid ""
 "targets in the export set will support being imported in consuming targets."
 msgstr ""
 
-#: ../../../command/install.rst:883
+#: ../../../command/install.rst:855
 msgid "``EXPORT_PACKAGE_DEPENDENCIES``"
 msgstr ""
 
@@ -1657,7 +1657,7 @@ msgid ""
 "`cmake -P`. This script accepts several variables:"
 msgstr ""
 
-#: ../../../command/install.rst:1082
+#: ../../../command/install.rst:1079
 msgid "``COMPONENT``"
 msgstr ""
 
@@ -1668,7 +1668,7 @@ msgid ""
 "component, run ``cmake -DCOMPONENT=Development -P cmake_install.cmake``."
 msgstr ""
 
-#: ../../../command/install.rst:1087
+#: ../../../command/install.rst:1084
 msgid "``BUILD_TYPE``"
 msgstr ""
 
@@ -1679,7 +1679,7 @@ msgid ""
 "``cmake -DBUILD_TYPE=Debug -P cmake_install.cmake``."
 msgstr ""
 
-#: ../../../command/install.rst:1091
+#: ../../../command/install.rst:1089
 msgid "``DESTDIR``"
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid ""
 "use by CMake.  The possible values are:"
 msgstr ""
 
-#: ../../../variable/CMAKE_XCODE_BUILD_SYSTEM.rst:16
+#: ../../../variable/CMAKE_XCODE_BUILD_SYSTEM.rst:13
 msgid "``1``"
 msgstr ""
 
@@ -43,7 +43,7 @@ msgid ""
 "or below and supported up to Xcode 13.x."
 msgstr ""
 
-#: ../../../variable/CMAKE_XCODE_BUILD_SYSTEM.rst:21
+#: ../../../variable/CMAKE_XCODE_BUILD_SYSTEM.rst:18
 msgid "``12``"
 msgstr ""
 

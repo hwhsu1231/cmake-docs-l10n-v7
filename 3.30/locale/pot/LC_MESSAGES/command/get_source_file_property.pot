@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid ""
 "Directory scope can be overridden with one of the following sub-options:"
 msgstr ""
 
-#: ../../../command/get_source_file_property.rst:30
+#: ../../../command/get_source_file_property.rst:25
 msgid "``DIRECTORY <dir>``"
 msgstr ""
 
@@ -67,7 +67,7 @@ msgid ""
 "current source directory."
 msgstr ""
 
-#: ../../../command/get_source_file_property.rst:33
+#: ../../../command/get_source_file_property.rst:32
 msgid "``TARGET_DIRECTORY <target>``"
 msgstr ""
 

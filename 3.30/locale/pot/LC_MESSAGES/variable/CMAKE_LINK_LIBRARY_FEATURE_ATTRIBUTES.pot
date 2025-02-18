@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.30\n"
+"Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:18+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr ""
 msgid "The following attributes are supported:"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:46
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:38
 msgid "``LIBRARY_TYPE=<library-type-list>``"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgid ""
 "developer warning and the feature will be ignored."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:55
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:48
 msgid "``OVERRIDE=<feature-list>``"
 msgstr ""
 
@@ -108,7 +108,7 @@ msgstr ""
 msgid "If this attribute is not specified, the default is an empty list."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:71
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:57
 msgid "``DEDUPLICATION=YES|NO|DEFAULT``"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Specify the de-duplication strategy for a library using this feature."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:62
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:60
 msgid "``YES``"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgid ""
 "normally apply is ignored."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:66
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:64
 msgid "``NO``"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgid ""
 "normally apply is ignored."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:69
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:68
 msgid "``DEFAULT``"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 msgid "This feature is only meaningful for static libraries."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:94
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:91
 msgid "``OVERRIDE=DEFAULT``"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgid ""
 "freely."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:99
+#: ../../../variable/CMAKE_LINK_LIBRARY_FEATURE_ATTRIBUTES.rst:96
 msgid "``DEDUPLICATION=YES``"
 msgstr ""
 
