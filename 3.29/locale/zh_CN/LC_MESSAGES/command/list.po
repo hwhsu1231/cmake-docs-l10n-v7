@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,7 +225,7 @@ msgid ""
 "`string` command.  ``<ACTION>`` must be one of the following:"
 msgstr ""
 
-#: ../../../command/list.rst:214
+#: ../../../command/list.rst:209
 msgid ""
 ":command:`APPEND <string(APPEND)>`, :command:`PREPEND <string(PREPEND)>`"
 msgstr ""
@@ -234,7 +234,7 @@ msgstr ""
 msgid "Append, prepend specified value to each element of the list."
 msgstr ""
 
-#: ../../../command/list.rst:221
+#: ../../../command/list.rst:216
 msgid ""
 ":command:`TOLOWER <string(TOLOWER)>`, :command:`TOUPPER <string(TOUPPER)>`"
 msgstr ""
@@ -243,7 +243,7 @@ msgstr ""
 msgid "Convert each element of the list to lower, upper characters."
 msgstr ""
 
-#: ../../../command/list.rst:228
+#: ../../../command/list.rst:223
 msgid ":command:`STRIP <string(STRIP)>`"
 msgstr ""
 
@@ -251,7 +251,7 @@ msgstr ""
 msgid "Remove leading and trailing spaces from each element of the list."
 msgstr ""
 
-#: ../../../command/list.rst:237
+#: ../../../command/list.rst:230
 msgid ":command:`GENEX_STRIP <string(GENEX_STRIP)>`"
 msgstr ""
 
@@ -261,7 +261,7 @@ msgid ""
 "from each element of the list."
 msgstr ""
 
-#: ../../../command/list.rst:247
+#: ../../../command/list.rst:239
 msgid ":command:`REPLACE <string(REGEX REPLACE)>`:"
 msgstr ""
 
@@ -279,7 +279,7 @@ msgid ""
 "``<SELECTOR>`` must be one of the following:"
 msgstr ""
 
-#: ../../../command/list.rst:258
+#: ../../../command/list.rst:253
 msgid "``AT``"
 msgstr ""
 
@@ -291,7 +291,7 @@ msgstr ""
 msgid "list(TRANSFORM <list> <ACTION> AT <index> [<index> ...] ...)"
 msgstr ""
 
-#: ../../../command/list.rst:266
+#: ../../../command/list.rst:260
 msgid "``FOR``"
 msgstr ""
 
@@ -305,7 +305,7 @@ msgstr ""
 msgid "list(TRANSFORM <list> <ACTION> FOR <start> <stop> [<step>] ...)"
 msgstr ""
 
-#: ../../../command/list.rst:273
+#: ../../../command/list.rst:268
 msgid "``REGEX``"
 msgstr ""
 
@@ -345,7 +345,7 @@ msgid ""
 "``<compare>`` option should be one of:"
 msgstr ""
 
-#: ../../../command/list.rst:301
+#: ../../../command/list.rst:299
 msgid "``STRING``"
 msgstr ""
 
@@ -355,7 +355,7 @@ msgid ""
 "``COMPARE`` option is not given."
 msgstr ""
 
-#: ../../../command/list.rst:304
+#: ../../../command/list.rst:303
 msgid "``FILE_BASENAME``"
 msgstr ""
 
@@ -363,7 +363,7 @@ msgstr ""
 msgid "Sorts a list of pathnames of files by their basenames."
 msgstr ""
 
-#: ../../../command/list.rst:313
+#: ../../../command/list.rst:306
 msgid "``NATURAL``"
 msgstr ""
 
@@ -382,7 +382,7 @@ msgid ""
 "mode.  The ``<case>`` option should be one of:"
 msgstr ""
 
-#: ../../../command/list.rst:320
+#: ../../../command/list.rst:318
 msgid "``SENSITIVE``"
 msgstr ""
 
@@ -392,7 +392,7 @@ msgid ""
 "behavior if the ``CASE`` option is not given."
 msgstr ""
 
-#: ../../../command/list.rst:324
+#: ../../../command/list.rst:322
 msgid "``INSENSITIVE``"
 msgstr ""
 
@@ -408,7 +408,7 @@ msgid ""
 "``<order>`` option should be one of:"
 msgstr ""
 
-#: ../../../command/list.rst:331
+#: ../../../command/list.rst:329
 msgid "``ASCENDING``"
 msgstr ""
 

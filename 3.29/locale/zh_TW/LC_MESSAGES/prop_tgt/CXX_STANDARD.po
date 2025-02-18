@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Supported values are:"
 msgstr ""
 
-#: ../../../prop_tgt/CXX_STANDARD.rst:17
+#: ../../../prop_tgt/CXX_STANDARD.rst:16
 msgid "``98``"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgstr ""
 msgid "C++98"
 msgstr ""
 
-#: ../../../prop_tgt/CXX_STANDARD.rst:20
+#: ../../../prop_tgt/CXX_STANDARD.rst:19
 msgid "``11``"
 msgstr ""
 
@@ -54,7 +54,7 @@ msgstr ""
 msgid "C++11"
 msgstr ""
 
-#: ../../../prop_tgt/CXX_STANDARD.rst:23
+#: ../../../prop_tgt/CXX_STANDARD.rst:22
 msgid "``14``"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgstr ""
 msgid "C++14"
 msgstr ""
 
-#: ../../../prop_tgt/CXX_STANDARD.rst:28
+#: ../../../prop_tgt/CXX_STANDARD.rst:25
 msgid "``17``"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 msgid "C++17"
 msgstr ""
 
-#: ../../../prop_tgt/CXX_STANDARD.rst:33
+#: ../../../prop_tgt/CXX_STANDARD.rst:30
 msgid "``20``"
 msgstr ""
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "C++20"
 msgstr ""
 
-#: ../../../prop_tgt/CXX_STANDARD.rst:38
+#: ../../../prop_tgt/CXX_STANDARD.rst:35
 msgid "``23``"
 msgstr ""
 
@@ -86,7 +86,7 @@ msgstr ""
 msgid "C++23"
 msgstr ""
 
-#: ../../../prop_tgt/CXX_STANDARD.rst:44
+#: ../../../prop_tgt/CXX_STANDARD.rst:40
 msgid "``26``"
 msgstr ""
 

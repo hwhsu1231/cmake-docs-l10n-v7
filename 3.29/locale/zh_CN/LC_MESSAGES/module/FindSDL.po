@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` target:"
 msgstr ""
 
-#: ../../../../Modules/FindSDL.cmake:19
+#: ../../../../Modules/FindSDL.cmake:18
 msgid "``SDL::SDL``"
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr ""
 msgid "SDL minor version"
 msgstr ""
 
-#: ../../../../Modules/FindSDL.cmake:39
+#: ../../../../Modules/FindSDL.cmake:38
 msgid "``SDL_VERSION_PATCH``"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid "``SDL_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindSDL.cmake:54
+#: ../../../../Modules/FindSDL.cmake:52
 msgid "``SDL_LIBRARY``"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "This module responds to the flag:"
 msgstr ""
 
-#: ../../../../Modules/FindSDL.cmake:67
+#: ../../../../Modules/FindSDL.cmake:61
 msgid "``SDL_BUILDING_LIBRARY``"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "These variables are obsolete and provided for backwards compatibility:"
 msgstr ""
 
-#: ../../../../Modules/FindSDL.cmake:79
+#: ../../../../Modules/FindSDL.cmake:76
 msgid "``SDL_VERSION_STRING``"
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/export.rst:45
+#: ../../../command/export.rst:44
 msgid "``NAMESPACE <namespace>``"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgid ""
 "Prepend the ``<namespace>`` string to all target names written to the file."
 msgstr ""
 
-#: ../../../command/export.rst:49
+#: ../../../command/export.rst:47
 msgid "``APPEND``"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid ""
 "incrementally export multiple targets to the same file."
 msgstr ""
 
-#: ../../../command/export.rst:55
+#: ../../../command/export.rst:51
 msgid "``EXPORT_LINK_INTERFACE_LIBRARIES``"
 msgstr ""
 
@@ -107,7 +107,7 @@ msgid ""
 "versions older than 2.8.12."
 msgstr ""
 
-#: ../../../command/export.rst:62
+#: ../../../command/export.rst:57
 msgid "``CXX_MODULES_DIRECTORY <directory>``"
 msgstr ""
 
@@ -187,7 +187,7 @@ msgid ""
 "the :command:`install(TARGETS)` command."
 msgstr ""
 
-#: ../../../command/export.rst:128
+#: ../../../command/export.rst:122
 msgid "``EXPORT_PACKAGE_DEPENDENCIES``"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "Configure the parameters of an export. The arguments are as follows:"
 msgstr ""
 
-#: ../../../command/export.rst:213
+#: ../../../command/export.rst:184
 msgid "``PACKAGE_DEPENDENCY <dep>``"
 msgstr ""
 
@@ -271,7 +271,7 @@ msgid ""
 "This argument accepts the following additional arguments:"
 msgstr ""
 
-#: ../../../command/export.rst:209
+#: ../../../command/export.rst:195
 msgid "``ENABLED``"
 msgstr ""
 
@@ -281,7 +281,7 @@ msgid ""
 "following values:"
 msgstr ""
 
-#: ../../../command/export.rst:202
+#: ../../../command/export.rst:199
 msgid "``<bool-true>``"
 msgstr ""
 
@@ -292,7 +292,7 @@ msgid ""
 "command:`find_dependency` calls to the export."
 msgstr ""
 
-#: ../../../command/export.rst:206
+#: ../../../command/export.rst:204
 msgid "``<bool-false>``"
 msgstr ""
 
@@ -302,7 +302,7 @@ msgid ""
 "even if an exported target depends on it."
 msgstr ""
 
-#: ../../../command/export.rst:209
+#: ../../../command/export.rst:208
 msgid "``AUTO``"
 msgstr ""
 
@@ -310,7 +310,7 @@ msgstr ""
 msgid "Only export the dependency if an exported target depends on it."
 msgstr ""
 
-#: ../../../command/export.rst:213
+#: ../../../command/export.rst:211
 msgid "``EXTRA_ARGS <args>``"
 msgstr ""
 
@@ -320,7 +320,7 @@ msgid ""
 "``REQUIRED`` argument."
 msgstr ""
 
-#: ../../../command/export.rst:222
+#: ../../../command/export.rst:215
 msgid "``TARGET <target>``"
 msgstr ""
 
@@ -330,7 +330,7 @@ msgid ""
 "following additional arguments:"
 msgstr ""
 
-#: ../../../command/export.rst:222
+#: ../../../command/export.rst:219
 msgid "``XCFRAMEWORK_LOCATION``"
 msgstr ""
 

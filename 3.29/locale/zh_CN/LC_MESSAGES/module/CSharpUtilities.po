@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,10 +81,10 @@ msgstr ""
 msgid "csharp_set_windows_forms_properties([<file1> [<file2> [...]]])"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:42
-#: ../../../../Modules/CSharpUtilities.cmake:74
-#: ../../../../Modules/CSharpUtilities.cmake:111
-#: ../../../../Modules/CSharpUtilities.cmake:137
+#: ../../../../Modules/CSharpUtilities.cmake:39
+#: ../../../../Modules/CSharpUtilities.cmake:71
+#: ../../../../Modules/CSharpUtilities.cmake:108
+#: ../../../../Modules/CSharpUtilities.cmake:135
 msgid "``<fileN>``"
 msgstr ""
 
@@ -103,7 +103,7 @@ msgid ""
 "is found, the :prop_sf:`VS_CSHARP_<tagname>` properties are set as follows:"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:50
+#: ../../../../Modules/CSharpUtilities.cmake:49
 msgid "for the **.cs** file:"
 msgstr ""
 
@@ -111,7 +111,7 @@ msgstr ""
 msgid "VS_CSHARP_SubType \"Form\""
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:55
+#: ../../../../Modules/CSharpUtilities.cmake:52
 msgid "for the **.Designer.cs** file (if it exists):"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 msgid "VS_CSHARP_AutoGen \"\"(delete tag if previously defined)"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:59
+#: ../../../../Modules/CSharpUtilities.cmake:57
 msgid "for the **.resx** file (if it exists):"
 msgstr ""
 
@@ -169,7 +169,7 @@ msgid ""
 "matched file:"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:85
+#: ../../../../Modules/CSharpUtilities.cmake:82
 msgid "if match is **.resx** file:"
 msgstr ""
 
@@ -186,11 +186,11 @@ msgstr ""
 msgid "VS_CSHARP_DependentUpon <resx-filename>"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:88
+#: ../../../../Modules/CSharpUtilities.cmake:87
 msgid "if match is **.cs** file:"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:92
+#: ../../../../Modules/CSharpUtilities.cmake:90
 msgid "if match is **.settings** file:"
 msgstr ""
 
@@ -254,7 +254,7 @@ msgstr ""
 msgid "csharp_get_filename_keys(OUT [<file1> [<file2> [...]]])"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:133
+#: ../../../../Modules/CSharpUtilities.cmake:132
 msgid "``OUT``"
 msgstr ""
 
@@ -301,7 +301,7 @@ msgstr ""
 msgid "csharp_get_filename_key_base(BASE KEY)"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:166
+#: ../../../../Modules/CSharpUtilities.cmake:165
 msgid "``BASE``"
 msgstr ""
 
@@ -309,7 +309,7 @@ msgstr ""
 msgid "Name of the variable with the computed \"base\" of ``KEY``."
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:169
+#: ../../../../Modules/CSharpUtilities.cmake:168
 msgid "``KEY``"
 msgstr ""
 
@@ -329,7 +329,7 @@ msgstr ""
 msgid "csharp_get_dependentupon_name(NAME FILE)"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:180
+#: ../../../../Modules/CSharpUtilities.cmake:179
 msgid "``NAME``"
 msgstr ""
 
@@ -337,7 +337,7 @@ msgstr ""
 msgid "Name of the variable with the result value"
 msgstr ""
 
-#: ../../../../Modules/CSharpUtilities.cmake:183
+#: ../../../../Modules/CSharpUtilities.cmake:182
 msgid "``FILE``"
 msgstr ""
 

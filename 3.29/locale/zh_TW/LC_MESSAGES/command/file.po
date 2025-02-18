@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgid ""
 "(``\\r``, CR) characters are ignored.  The options are:"
 msgstr ""
 
-#: ../../../command/file.rst:90
+#: ../../../command/file.rst:89
 msgid "``LENGTH_MAXIMUM <max-len>``"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Consider only strings of at most a given length."
 msgstr ""
 
-#: ../../../command/file.rst:93
+#: ../../../command/file.rst:92
 msgid "``LENGTH_MINIMUM <min-len>``"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Consider only strings of at least a given length."
 msgstr ""
 
-#: ../../../command/file.rst:96
+#: ../../../command/file.rst:95
 msgid "``LIMIT_COUNT <max-num>``"
 msgstr ""
 
@@ -141,7 +141,7 @@ msgstr ""
 msgid "Limit the number of distinct strings to be extracted."
 msgstr ""
 
-#: ../../../command/file.rst:99
+#: ../../../command/file.rst:98
 msgid "``LIMIT_INPUT <max-in>``"
 msgstr ""
 
@@ -149,7 +149,7 @@ msgstr ""
 msgid "Limit the number of input bytes to read from the file."
 msgstr ""
 
-#: ../../../command/file.rst:102
+#: ../../../command/file.rst:101
 msgid "``LIMIT_OUTPUT <max-out>``"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "Limit the number of total bytes to store in the ``<variable>``."
 msgstr ""
 
-#: ../../../command/file.rst:106
+#: ../../../command/file.rst:104
 msgid "``NEWLINE_CONSUME``"
 msgstr ""
 
@@ -167,7 +167,7 @@ msgid ""
 "terminating at them."
 msgstr ""
 
-#: ../../../command/file.rst:110
+#: ../../../command/file.rst:108
 msgid "``NO_HEX_CONVERSION``"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgid ""
 "while reading unless this option is given."
 msgstr ""
 
-#: ../../../command/file.rst:119
+#: ../../../command/file.rst:112
 msgid "``REGEX <regex>``"
 msgstr ""
 
@@ -194,7 +194,7 @@ msgid ""
 "policy :policy:`CMP0159`."
 msgstr ""
 
-#: ../../../command/file.rst:128
+#: ../../../command/file.rst:121
 msgid "``ENCODING <encoding-type>``"
 msgstr ""
 
@@ -291,7 +291,7 @@ msgstr ""
 msgid "The arguments are as follows:"
 msgstr ""
 
-#: ../../../command/file.rst:203
+#: ../../../command/file.rst:202
 msgid "``RESOLVED_DEPENDENCIES_VAR <deps_var>``"
 msgstr ""
 
@@ -300,7 +300,7 @@ msgid ""
 "Name of the variable in which to store the list of resolved dependencies."
 msgstr ""
 
-#: ../../../command/file.rst:208
+#: ../../../command/file.rst:205
 msgid "``UNRESOLVED_DEPENDENCIES_VAR <unresolved_deps_var>``"
 msgstr ""
 
@@ -311,7 +311,7 @@ msgid ""
 "dependencies, an error is issued."
 msgstr ""
 
-#: ../../../command/file.rst:216
+#: ../../../command/file.rst:210
 msgid "``CONFLICTING_DEPENDENCIES_PREFIX <conflicting_deps_prefix>``"
 msgstr ""
 
@@ -325,7 +325,7 @@ msgid ""
 "``<conflicting_deps_prefix>_<filename>``."
 msgstr ""
 
-#: ../../../command/file.rst:224
+#: ../../../command/file.rst:218
 msgid "``EXECUTABLES <executable_files>...``"
 msgstr ""
 
@@ -339,7 +339,7 @@ msgid ""
 "``SHARED``) here will result in undefined behavior."
 msgstr ""
 
-#: ../../../command/file.rst:231
+#: ../../../command/file.rst:226
 msgid "``LIBRARIES <library_files>...``"
 msgstr ""
 
@@ -351,7 +351,7 @@ msgid ""
 "libraries, or executables here will result in undefined behavior."
 msgstr ""
 
-#: ../../../command/file.rst:239
+#: ../../../command/file.rst:233
 msgid "``MODULES <module_files>...``"
 msgstr ""
 
@@ -365,7 +365,7 @@ msgid ""
 "will result in undefined behavior."
 msgstr ""
 
-#: ../../../command/file.rst:250
+#: ../../../command/file.rst:241
 msgid "``DIRECTORIES <directories>...``"
 msgstr ""
 
@@ -382,7 +382,7 @@ msgid ""
 "argument has no effect."
 msgstr ""
 
-#: ../../../command/file.rst:259
+#: ../../../command/file.rst:252
 msgid "``BUNDLE_EXECUTABLE <bundle_executable_file>``"
 msgstr ""
 
@@ -403,7 +403,7 @@ msgid ""
 "to be resolved. See below for a full description of how they work."
 msgstr ""
 
-#: ../../../command/file.rst:266
+#: ../../../command/file.rst:264
 msgid "``PRE_INCLUDE_REGEXES <regexes>...``"
 msgstr ""
 
@@ -413,7 +413,7 @@ msgid ""
 "resolved dependencies."
 msgstr ""
 
-#: ../../../command/file.rst:270
+#: ../../../command/file.rst:268
 msgid "``PRE_EXCLUDE_REGEXES <regexes>...``"
 msgstr ""
 
@@ -423,7 +423,7 @@ msgid ""
 "resolved dependencies."
 msgstr ""
 
-#: ../../../command/file.rst:274
+#: ../../../command/file.rst:272
 msgid "``POST_INCLUDE_REGEXES <regexes>...``"
 msgstr ""
 
@@ -433,7 +433,7 @@ msgid ""
 "dependencies."
 msgstr ""
 
-#: ../../../command/file.rst:278
+#: ../../../command/file.rst:276
 msgid "``POST_EXCLUDE_REGEXES <regexes>...``"
 msgstr ""
 
@@ -443,7 +443,7 @@ msgid ""
 "dependencies."
 msgstr ""
 
-#: ../../../command/file.rst:285
+#: ../../../command/file.rst:280
 msgid "``POST_INCLUDE_FILES <files>...``"
 msgstr ""
 
@@ -453,7 +453,7 @@ msgid ""
 "dependencies. Symlinks are resolved when attempting to match these filenames."
 msgstr ""
 
-#: ../../../command/file.rst:292
+#: ../../../command/file.rst:287
 msgid "``POST_EXCLUDE_FILES <files>...``"
 msgstr ""
 
@@ -822,7 +822,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/file.rst:531
+#: ../../../command/file.rst:528
 msgid "``CONDITION <condition>``"
 msgstr ""
 
@@ -833,7 +833,7 @@ msgid ""
 "evaluating generator expressions."
 msgstr ""
 
-#: ../../../command/file.rst:534 ../../../command/file.rst:626
+#: ../../../command/file.rst:533 ../../../command/file.rst:624
 msgid "``CONTENT <content>``"
 msgstr ""
 
@@ -841,7 +841,7 @@ msgstr ""
 msgid "Use the content given explicitly as input."
 msgstr ""
 
-#: ../../../command/file.rst:541
+#: ../../../command/file.rst:536
 msgid "``INPUT <input-file>``"
 msgstr ""
 
@@ -855,7 +855,7 @@ msgid ""
 "`CMAKE_CURRENT_SOURCE_DIR`.  See policy :policy:`CMP0070`."
 msgstr ""
 
-#: ../../../command/file.rst:553 ../../../command/file.rst:622
+#: ../../../command/file.rst:543 ../../../command/file.rst:619
 msgid "``OUTPUT <output-file>``"
 msgstr ""
 
@@ -875,7 +875,7 @@ msgid ""
 "policy:`CMP0070`."
 msgstr ""
 
-#: ../../../command/file.rst:561
+#: ../../../command/file.rst:555
 msgid "``TARGET <target>``"
 msgstr ""
 
@@ -886,7 +886,7 @@ msgid ""
 "genex:`$<TARGET_PROPERTY:prop>`)."
 msgstr ""
 
-#: ../../../command/file.rst:567
+#: ../../../command/file.rst:563
 msgid "``NO_SOURCE_PERMISSIONS``"
 msgstr ""
 
@@ -896,7 +896,7 @@ msgid ""
 "r--)."
 msgstr ""
 
-#: ../../../command/file.rst:578
+#: ../../../command/file.rst:569
 msgid "``USE_SOURCE_PERMISSIONS``"
 msgstr ""
 
@@ -911,7 +911,7 @@ msgid ""
 "option without ``INPUT``."
 msgstr ""
 
-#: ../../../command/file.rst:583
+#: ../../../command/file.rst:580
 msgid "``FILE_PERMISSIONS <permissions>...``"
 msgstr ""
 
@@ -919,7 +919,7 @@ msgstr ""
 msgid "Use the specified permissions for the generated file."
 msgstr ""
 
-#: ../../../command/file.rst:590 ../../../command/file.rst:637
+#: ../../../command/file.rst:585 ../../../command/file.rst:635
 msgid "``NEWLINE_STYLE <style>``"
 msgstr ""
 
@@ -972,7 +972,7 @@ msgid ""
 "generator expressions."
 msgstr ""
 
-#: ../../../command/file.rst:629
+#: ../../../command/file.rst:628
 msgid "``ESCAPE_QUOTES``"
 msgstr ""
 
@@ -980,7 +980,7 @@ msgstr ""
 msgid "Escape any substituted quotes with backslashes (C-style)."
 msgstr ""
 
-#: ../../../command/file.rst:633
+#: ../../../command/file.rst:631
 msgid "``@ONLY``"
 msgstr ""
 
@@ -1127,7 +1127,7 @@ msgid ""
 "``<newname>``, replacing the destination atomically."
 msgstr ""
 
-#: ../../../command/file.rst:742 ../../../command/file.rst:768
+#: ../../../command/file.rst:737 ../../../command/file.rst:765
 msgid "``RESULT <result>``"
 msgstr ""
 
@@ -1137,7 +1137,7 @@ msgid ""
 "If ``RESULT`` is not specified and the operation fails, an error is emitted."
 msgstr ""
 
-#: ../../../command/file.rst:748
+#: ../../../command/file.rst:744
 msgid "``NO_REPLACE``"
 msgstr ""
 
@@ -1162,7 +1162,7 @@ msgid ""
 "is emitted."
 msgstr ""
 
-#: ../../../command/file.rst:773
+#: ../../../command/file.rst:770
 msgid "``ONLY_IF_DIFFERENT``"
 msgstr ""
 
@@ -1173,7 +1173,7 @@ msgid ""
 "``<newname>``'s timestamp)."
 msgstr ""
 
-#: ../../../command/file.rst:781
+#: ../../../command/file.rst:775
 msgid "``INPUT_MAY_BE_RECENT``"
 msgstr ""
 
@@ -1365,7 +1365,7 @@ msgstr ""
 msgid "Valid combination of keywords are:"
 msgstr ""
 
-#: ../../../command/file.rst:933
+#: ../../../command/file.rst:932
 msgid "``PERMISSIONS``"
 msgstr ""
 
@@ -1373,7 +1373,7 @@ msgstr ""
 msgid "All items are changed."
 msgstr ""
 
-#: ../../../command/file.rst:936
+#: ../../../command/file.rst:935
 msgid "``FILE_PERMISSIONS``"
 msgstr ""
 
@@ -1381,7 +1381,7 @@ msgstr ""
 msgid "Only files are changed."
 msgstr ""
 
-#: ../../../command/file.rst:939
+#: ../../../command/file.rst:938
 msgid "``DIRECTORY_PERMISSIONS``"
 msgstr ""
 
@@ -1389,7 +1389,7 @@ msgstr ""
 msgid "Only directories are changed."
 msgstr ""
 
-#: ../../../command/file.rst:942
+#: ../../../command/file.rst:941
 msgid "``PERMISSIONS`` and ``FILE_PERMISSIONS``"
 msgstr ""
 
@@ -1397,7 +1397,7 @@ msgstr ""
 msgid "``FILE_PERMISSIONS`` overrides ``PERMISSIONS`` for files."
 msgstr ""
 
-#: ../../../command/file.rst:945
+#: ../../../command/file.rst:944
 msgid "``PERMISSIONS`` and ``DIRECTORY_PERMISSIONS``"
 msgstr ""
 
@@ -1405,7 +1405,7 @@ msgstr ""
 msgid "``DIRECTORY_PERMISSIONS`` overrides ``PERMISSIONS`` for directories."
 msgstr ""
 
-#: ../../../command/file.rst:948
+#: ../../../command/file.rst:947
 msgid "``FILE_PERMISSIONS`` and ``DIRECTORY_PERMISSIONS``"
 msgstr ""
 
@@ -1431,7 +1431,7 @@ msgid ""
 "resolved.  The options are:"
 msgstr ""
 
-#: ../../../command/file.rst:977
+#: ../../../command/file.rst:974
 msgid "``BASE_DIRECTORY <dir>``"
 msgstr ""
 
@@ -1442,7 +1442,7 @@ msgid ""
 "default base directory will be :variable:`CMAKE_CURRENT_SOURCE_DIR`."
 msgstr ""
 
-#: ../../../command/file.rst:987
+#: ../../../command/file.rst:979
 msgid "``EXPAND_TILDE``"
 msgstr ""
 
@@ -1511,7 +1511,7 @@ msgstr ""
 msgid "Options to both ``DOWNLOAD`` and ``UPLOAD`` are:"
 msgstr ""
 
-#: ../../../command/file.rst:1035
+#: ../../../command/file.rst:1034
 msgid "``INACTIVITY_TIMEOUT <seconds>``"
 msgstr ""
 
@@ -1519,7 +1519,7 @@ msgstr ""
 msgid "Terminate the operation after a period of inactivity."
 msgstr ""
 
-#: ../../../command/file.rst:1038
+#: ../../../command/file.rst:1037
 msgid "``LOG <variable>``"
 msgstr ""
 
@@ -1527,7 +1527,7 @@ msgstr ""
 msgid "Store a human-readable log of the operation in a variable."
 msgstr ""
 
-#: ../../../command/file.rst:1042
+#: ../../../command/file.rst:1040
 msgid "``SHOW_PROGRESS``"
 msgstr ""
 
@@ -1537,7 +1537,7 @@ msgid ""
 "complete."
 msgstr ""
 
-#: ../../../command/file.rst:1049
+#: ../../../command/file.rst:1044
 msgid "``STATUS <variable>``"
 msgstr ""
 
@@ -1549,7 +1549,7 @@ msgid ""
 "error. A ``0`` numeric error means no error in the operation."
 msgstr ""
 
-#: ../../../command/file.rst:1052
+#: ../../../command/file.rst:1051
 msgid "``TIMEOUT <seconds>``"
 msgstr ""
 
@@ -1557,7 +1557,7 @@ msgstr ""
 msgid "Terminate the operation after a given total time has elapsed."
 msgstr ""
 
-#: ../../../command/file.rst:1057
+#: ../../../command/file.rst:1054
 msgid "``USERPWD <username>:<password>``"
 msgstr ""
 
@@ -1565,7 +1565,7 @@ msgstr ""
 msgid "Set username and password for operation."
 msgstr ""
 
-#: ../../../command/file.rst:1069
+#: ../../../command/file.rst:1059
 msgid "``HTTPHEADER <HTTP-header>``"
 msgstr ""
 
@@ -1582,7 +1582,7 @@ msgid ""
 "     HTTPHEADER \"UserAgent: Mozilla/5.0\")"
 msgstr ""
 
-#: ../../../command/file.rst:1090
+#: ../../../command/file.rst:1071
 msgid "``NETRC <level>``"
 msgstr ""
 
@@ -1597,7 +1597,7 @@ msgstr ""
 msgid "Valid levels are:"
 msgstr ""
 
-#: ../../../command/file.rst:1082
+#: ../../../command/file.rst:1080
 msgid "``IGNORED``"
 msgstr ""
 
@@ -1605,7 +1605,7 @@ msgstr ""
 msgid "The .netrc file is ignored. This is the default."
 msgstr ""
 
-#: ../../../command/file.rst:1087
+#: ../../../command/file.rst:1084
 msgid "``OPTIONAL``"
 msgstr ""
 
@@ -1616,7 +1616,7 @@ msgid ""
 "URL."
 msgstr ""
 
-#: ../../../command/file.rst:1090
+#: ../../../command/file.rst:1089
 msgid "``REQUIRED``"
 msgstr ""
 
@@ -1624,7 +1624,7 @@ msgstr ""
 msgid "The .netrc file is required, and information in the URL is ignored."
 msgstr ""
 
-#: ../../../command/file.rst:1098
+#: ../../../command/file.rst:1092
 msgid "``NETRC_FILE <file>``"
 msgstr ""
 
@@ -1636,7 +1636,7 @@ msgid ""
 "used instead."
 msgstr ""
 
-#: ../../../command/file.rst:1106
+#: ../../../command/file.rst:1100
 msgid "``TLS_VERIFY <ON|OFF>``"
 msgstr ""
 
@@ -1651,7 +1651,7 @@ msgstr ""
 msgid "Added support to ``file(UPLOAD)``."
 msgstr ""
 
-#: ../../../command/file.rst:1114
+#: ../../../command/file.rst:1108
 msgid "``TLS_CAINFO <file>``"
 msgstr ""
 
@@ -1673,7 +1673,7 @@ msgstr ""
 msgid "Additional options to ``DOWNLOAD`` are:"
 msgstr ""
 
-#: ../../../command/file.rst:1129
+#: ../../../command/file.rst:1122
 msgid "``EXPECTED_HASH <algorithm>=<value>``"
 msgstr ""
 
@@ -1688,7 +1688,7 @@ msgid ""
 "is not given a ``<file>``."
 msgstr ""
 
-#: ../../../command/file.rst:1133
+#: ../../../command/file.rst:1131
 msgid "``EXPECTED_MD5 <value>``"
 msgstr ""
 
@@ -1698,7 +1698,7 @@ msgid ""
 "specify this if ``DOWNLOAD`` is not given a ``<file>``."
 msgstr ""
 
-#: ../../../command/file.rst:1139
+#: ../../../command/file.rst:1135
 msgid "``RANGE_START <value>``"
 msgstr ""
 
@@ -1708,7 +1708,7 @@ msgid ""
 "download up to the specified ``RANGE_END``."
 msgstr ""
 
-#: ../../../command/file.rst:1145
+#: ../../../command/file.rst:1141
 msgid "``RANGE_END <value>``"
 msgstr ""
 

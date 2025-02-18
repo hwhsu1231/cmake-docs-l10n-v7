@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:33
+#: ../../../command/add_custom_target.rst:30
 msgid "``ALL``"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgid ""
 "that it will be run every time (the command cannot be called ``ALL``)."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:69
+#: ../../../command/add_custom_target.rst:35
 msgid "``BYPRODUCTS``"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgid ""
 "`CMP0154`."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:112
+#: ../../../command/add_custom_target.rst:71
 msgid "``COMMAND``"
 msgstr ""
 
@@ -192,7 +192,7 @@ msgid ""
 "will be created."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:120
+#: ../../../command/add_custom_target.rst:114
 msgid "``COMMENT``"
 msgstr ""
 
@@ -207,7 +207,7 @@ msgid ""
 "generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:134
+#: ../../../command/add_custom_target.rst:122
 msgid "``DEPENDS``"
 msgstr ""
 
@@ -231,7 +231,7 @@ msgid ""
 "targets."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:144
+#: ../../../command/add_custom_target.rst:136
 msgid "``COMMAND_EXPAND_LISTS``"
 msgstr ""
 
@@ -243,7 +243,7 @@ msgid ""
 "foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly expanded."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:153
+#: ../../../command/add_custom_target.rst:146
 msgid "``JOB_POOL``"
 msgstr ""
 
@@ -255,7 +255,7 @@ msgid ""
 "ninja at build time."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:164
+#: ../../../command/add_custom_target.rst:155
 msgid "``JOB_SERVER_AWARE``"
 msgstr ""
 
@@ -274,7 +274,7 @@ msgstr ""
 msgid "This option is silently ignored by other generators."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:171
+#: ../../../command/add_custom_target.rst:168
 msgid "``SOURCES``"
 msgstr ""
 
@@ -285,7 +285,7 @@ msgid ""
 "editing even if they have no build rules."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:181
+#: ../../../command/add_custom_target.rst:173
 msgid "``VERBATIM``"
 msgstr ""
 
@@ -300,7 +300,7 @@ msgid ""
 "specific special characters."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:188
+#: ../../../command/add_custom_target.rst:183
 msgid "``USES_TERMINAL``"
 msgstr ""
 
@@ -311,7 +311,7 @@ msgid ""
 "``console`` :prop_gbl:`pool <JOB_POOLS>`."
 msgstr ""
 
-#: ../../../command/add_custom_target.rst:197
+#: ../../../command/add_custom_target.rst:190
 msgid "``WORKING_DIRECTORY``"
 msgstr ""
 

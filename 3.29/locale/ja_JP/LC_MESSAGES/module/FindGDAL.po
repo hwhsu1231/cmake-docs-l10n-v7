@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,7 @@ msgstr ""
 msgid "Libraries to link to GDAL."
 msgstr ""
 
-#: ../../../../Modules/FindGDAL.cmake:31
+#: ../../../../Modules/FindGDAL.cmake:29
 msgid "``GDAL_VERSION``"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid "The libgdal library file."
 msgstr ""
 
-#: ../../../../Modules/FindGDAL.cmake:41
+#: ../../../../Modules/FindGDAL.cmake:40
 msgid "``GDAL_INCLUDE_DIR``"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "The following variables may be set to modify the search strategy:"
 msgstr ""
 
-#: ../../../../Modules/FindGDAL.cmake:53
+#: ../../../../Modules/FindGDAL.cmake:51
 msgid "``FindGDAL_SKIP_GDAL_CONFIG``"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgid ""
 "(which do not) in the same environment."
 msgstr ""
 
-#: ../../../../Modules/FindGDAL.cmake:199
+#: ../../../../Modules/FindGDAL.cmake:55
 msgid "``GDAL_ADDITIONAL_LIBRARY_VERSIONS``"
 msgstr ""
 

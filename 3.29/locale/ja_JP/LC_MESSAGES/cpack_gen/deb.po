@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,7 +162,7 @@ msgstr ""
 msgid "This may be set to:"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:83
+#: ../../../cpack_gen/deb.rst:74
 msgid "``DEB-DEFAULT``"
 msgstr ""
 
@@ -185,7 +185,7 @@ msgid ""
 "variables in a manner that will prevent such errors."
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:91
+#: ../../../cpack_gen/deb.rst:85
 msgid "``<file-name>[.deb]``"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgid ""
 "end in ``.deb`` or ``.ipk``.  Previously the suffix was required."
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:96
+#: ../../../cpack_gen/deb.rst:93
 msgid "``<file-name>.ipk``"
 msgstr ""
 
@@ -420,7 +420,7 @@ msgstr ""
 msgid "The compression used for creating the Debian package."
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:277 ../../../cpack_gen/deb.rst:291
+#: ../../../cpack_gen/deb.rst:277 ../../../cpack_gen/deb.rst:290
 msgid "``gzip``"
 msgstr ""
 
@@ -428,7 +428,7 @@ msgstr ""
 msgid "Possible values are:"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:282
+#: ../../../cpack_gen/deb.rst:281
 msgid "``lzma``"
 msgstr ""
 
@@ -436,7 +436,7 @@ msgstr ""
 msgid "Lempel–Ziv–Markov chain algorithm"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:285
+#: ../../../cpack_gen/deb.rst:284
 msgid "``xz``"
 msgstr ""
 
@@ -444,7 +444,7 @@ msgstr ""
 msgid "XZ Utils compression"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:288
+#: ../../../cpack_gen/deb.rst:287
 msgid "``bzip2``"
 msgstr ""
 
@@ -456,7 +456,7 @@ msgstr ""
 msgid "GNU Gzip compression"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:295
+#: ../../../cpack_gen/deb.rst:293
 msgid "``zstd``"
 msgstr ""
 

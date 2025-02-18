@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -188,6 +188,10 @@ msgid ""
 "`add_library`. This looks like the following line:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:99
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:103
 msgid "TODO 1: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -196,11 +200,22 @@ msgstr ""
 msgid "add_library(MathFunctions MathFunctions.cxx mysqrt.cxx)"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:109 Library.rst:127
+#: Library.rst:144 Library.rst:166 Library.rst:183 Library.rst:200
+#: Library.rst:306 Library.rst:330 Library.rst:353 Library.rst:370
+#: Library.rst:386 Library.rst:414 Library.rst:432 Library.rst:449
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:113
 msgid ""
 "To make use of the new library we will add an :command:`add_subdirectory` "
 "call in the top-level ``CMakeLists.txt`` file so that the library will get "
 "built."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:117
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:121
@@ -217,6 +232,10 @@ msgid ""
 "command:`target_link_libraries`."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:134
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:138
 msgid "TODO 3: CMakeLists.txt"
 msgstr ""
@@ -231,6 +250,10 @@ msgid ""
 "existing :command:`target_include_directories` call to add the "
 "``MathFunctions`` subdirectory as an include directory so that the "
 "``MathFunctions.h`` header file can be found."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:153
+msgid "<details><summary>TODO 4: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:157
@@ -250,6 +273,10 @@ msgid ""
 "Now let's use our library. In ``tutorial.cxx``, include ``MathFunctions.h``:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:172
+msgid "<details><summary>TODO 5: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:176
 msgid "TODO 5: tutorial.cxx"
 msgstr ""
@@ -263,6 +290,10 @@ msgstr ""
 #: ../../../guide/tutorial/Adding a Library.rst:187
 msgid ""
 "Lastly, replace ``sqrt`` with the wrapper function ``mathfunctions::sqrt``."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:189
+msgid "<details><summary>TODO 6: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:193
@@ -395,6 +426,10 @@ msgid ""
 "changed by the user."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:295
+msgid "<details><summary>TODO 7: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:299
 msgid "TODO 7: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -415,6 +450,10 @@ msgid ""
 "Inside the :command:`if` block, put the :command:"
 "`target_compile_definitions` command with the compile definition "
 "``USE_MYMATH``."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:318
+msgid "<details><summary>TODO 8: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:322
@@ -442,6 +481,10 @@ msgid ""
 "function is used:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:342
+msgid "<details><summary>TODO 9: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:346
 msgid "TODO 9: MathFunctions/MathFunctions.cxx"
 msgstr ""
@@ -457,6 +500,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:357
 msgid "Next, we need to include ``mysqrt.h`` if ``USE_MYMATH`` is defined."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:359
+msgid "<details><summary>TODO 10: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:363
@@ -475,6 +522,10 @@ msgstr ""
 #: ../../../guide/tutorial/Adding a Library.rst:374
 msgid ""
 "Finally, we need to include ``cmath`` now that we are using ``std::sqrt``."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:376
+msgid "<details><summary>TODO 11: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:380
@@ -507,6 +558,10 @@ msgid ""
 "that has sources ``mysqrt.cxx``."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:403
+msgid "<details><summary>TODO 12: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:407
 msgid "TODO 12 : MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -530,6 +585,10 @@ msgid ""
 "enabled."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:421
+msgid "<details><summary>TODO 13: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:425
 msgid "TODO 13 : MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -544,6 +603,10 @@ msgstr ""
 msgid ""
 "Finally, we can remove ``mysqrt.cxx`` from our ``MathFunctions`` library "
 "source list because it will be pulled in when ``SqrtLibrary`` is included."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:439
+msgid "<details><summary>TODO 14: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:443

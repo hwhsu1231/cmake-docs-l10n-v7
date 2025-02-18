@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.29\n"
+"Project-Id-Version: CMake 3.29\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-01 08:17+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "The parameters are as follows:"
 msgstr ""
 
-#: ../../../command/ctest_start.rst:19
+#: ../../../command/ctest_start.rst:17
 msgid "``<model>``"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgid ""
 "``Nightly``. This parameter is required unless ``APPEND`` is specified."
 msgstr ""
 
-#: ../../../command/ctest_start.rst:23
+#: ../../../command/ctest_start.rst:21
 msgid "``<source>``"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgid ""
 "`CTEST_SOURCE_DIRECTORY` is used instead."
 msgstr ""
 
-#: ../../../command/ctest_start.rst:27
+#: ../../../command/ctest_start.rst:25
 msgid "``<binary>``"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgid ""
 "`CTEST_BINARY_DIRECTORY` is used instead."
 msgstr ""
 
-#: ../../../command/ctest_start.rst:36
+#: ../../../command/ctest_start.rst:29
 msgid "``GROUP <group>``"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgid ""
 "behavior is unchanged."
 msgstr ""
 
-#: ../../../command/ctest_start.rst:59
+#: ../../../command/ctest_start.rst:38
 msgid "``APPEND``"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgid ""
 "model and group will be used."
 msgstr ""
 
-#: ../../../command/ctest_start.rst:65
+#: ../../../command/ctest_start.rst:61
 msgid "``QUIET``"
 msgstr ""
 
