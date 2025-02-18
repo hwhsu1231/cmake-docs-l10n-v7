@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -287,7 +288,7 @@ msgstr ""
 msgid "The ``<type>`` must be one of:"
 msgstr ""
 
-#: ../../../command/add_library.rst:220
+#: ../../../command/add_library.rst:191
 msgid "``STATIC``, ``SHARED``, ``MODULE``, ``UNKNOWN``"
 msgstr ""
 
@@ -334,7 +335,7 @@ msgid ""
 "static library and a DLL's import library both have the same file extension."
 msgstr ""
 
-#: ../../../command/add_library.rst:227
+#: ../../../command/add_library.rst:222
 msgid "``OBJECT``"
 msgstr ""
 
@@ -347,7 +348,7 @@ msgid ""
 "``INTERFACE_*`` properties."
 msgstr ""
 
-#: ../../../command/add_library.rst:231
+#: ../../../command/add_library.rst:229
 msgid "``INTERFACE``"
 msgstr ""
 

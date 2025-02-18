@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,7 +56,7 @@ msgid ""
 "standard."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:28
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:27
 msgid "``cxx_std_98``"
 msgstr ""
 
@@ -63,7 +64,7 @@ msgstr ""
 msgid "Compiler mode is at least C++ 98."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:31
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:30
 msgid "``cxx_std_11``"
 msgstr ""
 
@@ -71,7 +72,7 @@ msgstr ""
 msgid "Compiler mode is at least C++ 11."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:34
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:33
 msgid "``cxx_std_14``"
 msgstr ""
 
@@ -79,7 +80,7 @@ msgstr ""
 msgid "Compiler mode is at least C++ 14."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:37
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:36
 msgid "``cxx_std_17``"
 msgstr ""
 
@@ -87,7 +88,7 @@ msgstr ""
 msgid "Compiler mode is at least C++ 17."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:42
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:39
 msgid "``cxx_std_20``"
 msgstr ""
 
@@ -95,7 +96,7 @@ msgstr ""
 msgid "Compiler mode is at least C++ 20."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:47
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:44
 msgid "``cxx_std_23``"
 msgstr ""
 
@@ -103,7 +104,7 @@ msgstr ""
 msgid "Compiler mode is at least C++ 23."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:52
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:49
 msgid "``cxx_std_26``"
 msgstr ""
 
@@ -144,7 +145,7 @@ msgstr ""
 msgid "Individual features from C++ 98"
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:74
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:72
 msgid "``cxx_template_template_parameters``"
 msgstr ""
 
@@ -156,7 +157,7 @@ msgstr ""
 msgid "Individual features from C++ 11"
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:82
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:79
 msgid "``cxx_alias_templates``"
 msgstr ""
 
@@ -164,7 +165,7 @@ msgstr ""
 msgid "Template aliases, as defined in N2258_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:87
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:84
 msgid "``cxx_alignas``"
 msgstr ""
 
@@ -172,7 +173,7 @@ msgstr ""
 msgid "Alignment control ``alignas``, as defined in N2341_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:92
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:89
 msgid "``cxx_alignof``"
 msgstr ""
 
@@ -180,7 +181,7 @@ msgstr ""
 msgid "Alignment control ``alignof``, as defined in N2341_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:97
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:94
 msgid "``cxx_attributes``"
 msgstr ""
 
@@ -188,7 +189,7 @@ msgstr ""
 msgid "Generic attributes, as defined in N2761_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:102
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:99
 msgid "``cxx_auto_type``"
 msgstr ""
 
@@ -196,7 +197,7 @@ msgstr ""
 msgid "Automatic type deduction, as defined in N1984_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:108
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:104
 msgid "``cxx_constexpr``"
 msgstr ""
 
@@ -204,7 +205,7 @@ msgstr ""
 msgid "Constant expressions, as defined in N2235_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:113
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:110
 msgid "``cxx_decltype_incomplete_return_types``"
 msgstr ""
 
@@ -212,7 +213,7 @@ msgstr ""
 msgid "Decltype on incomplete return types, as defined in N3276_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:118
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:115
 msgid "``cxx_decltype``"
 msgstr ""
 
@@ -220,7 +221,7 @@ msgstr ""
 msgid "Decltype, as defined in N2343_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:123
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:120
 msgid "``cxx_default_function_template_args``"
 msgstr ""
 
@@ -228,7 +229,7 @@ msgstr ""
 msgid "Default template arguments for function templates, as defined in DR226_"
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:128
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:125
 msgid "``cxx_defaulted_functions``"
 msgstr ""
 
@@ -236,7 +237,7 @@ msgstr ""
 msgid "Defaulted functions, as defined in N2346_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:133
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:130
 msgid "``cxx_defaulted_move_initializers``"
 msgstr ""
 
@@ -244,7 +245,7 @@ msgstr ""
 msgid "Defaulted move initializers, as defined in N3053_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:138
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:135
 msgid "``cxx_delegating_constructors``"
 msgstr ""
 
@@ -252,7 +253,7 @@ msgstr ""
 msgid "Delegating constructors, as defined in N1986_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:143
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:140
 msgid "``cxx_deleted_functions``"
 msgstr ""
 
@@ -260,7 +261,7 @@ msgstr ""
 msgid "Deleted functions, as defined in N2346_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:148
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:145
 msgid "``cxx_enum_forward_declarations``"
 msgstr ""
 
@@ -268,7 +269,7 @@ msgstr ""
 msgid "Enum forward declarations, as defined in N2764_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:153
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:150
 msgid "``cxx_explicit_conversions``"
 msgstr ""
 
@@ -276,7 +277,7 @@ msgstr ""
 msgid "Explicit conversion operators, as defined in N2437_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:158
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:155
 msgid "``cxx_extended_friend_declarations``"
 msgstr ""
 
@@ -284,7 +285,7 @@ msgstr ""
 msgid "Extended friend declarations, as defined in N1791_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:163
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:160
 msgid "``cxx_extern_templates``"
 msgstr ""
 
@@ -292,7 +293,7 @@ msgstr ""
 msgid "Extern templates, as defined in N1987_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:170
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:165
 msgid "``cxx_final``"
 msgstr ""
 
@@ -301,7 +302,7 @@ msgid ""
 "Override control ``final`` keyword, as defined in N2928_, N3206_ and N3272_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:175
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:172
 msgid "``cxx_func_identifier``"
 msgstr ""
 
@@ -309,7 +310,7 @@ msgstr ""
 msgid "Predefined ``__func__`` identifier, as defined in N2340_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:180
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:177
 msgid "``cxx_generalized_initializers``"
 msgstr ""
 
@@ -317,7 +318,7 @@ msgstr ""
 msgid "Initializer lists, as defined in N2672_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:185
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:182
 msgid "``cxx_inheriting_constructors``"
 msgstr ""
 
@@ -325,7 +326,7 @@ msgstr ""
 msgid "Inheriting constructors, as defined in N2540_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:190
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:187
 msgid "``cxx_inline_namespaces``"
 msgstr ""
 
@@ -333,7 +334,7 @@ msgstr ""
 msgid "Inline namespaces, as defined in N2535_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:195
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:192
 msgid "``cxx_lambdas``"
 msgstr ""
 
@@ -341,7 +342,7 @@ msgstr ""
 msgid "Lambda functions, as defined in N2927_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:200
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:197
 msgid "``cxx_local_type_template_args``"
 msgstr ""
 
@@ -349,7 +350,7 @@ msgstr ""
 msgid "Local and unnamed types as template arguments, as defined in N2657_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:205
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:202
 msgid "``cxx_long_long_type``"
 msgstr ""
 
@@ -357,7 +358,7 @@ msgstr ""
 msgid "``long long`` type, as defined in N1811_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:210
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:207
 msgid "``cxx_noexcept``"
 msgstr ""
 
@@ -365,7 +366,7 @@ msgstr ""
 msgid "Exception specifications, as defined in N3050_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:215
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:212
 msgid "``cxx_nonstatic_member_init``"
 msgstr ""
 
@@ -373,7 +374,7 @@ msgstr ""
 msgid "Non-static data member initialization, as defined in N2756_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:220
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:217
 msgid "``cxx_nullptr``"
 msgstr ""
 
@@ -381,7 +382,7 @@ msgstr ""
 msgid "Null pointer, as defined in N2431_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:228
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:222
 msgid "``cxx_override``"
 msgstr ""
 
@@ -391,7 +392,7 @@ msgid ""
 "N3272_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:233
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:230
 msgid "``cxx_range_for``"
 msgstr ""
 
@@ -399,7 +400,7 @@ msgstr ""
 msgid "Range-based for, as defined in N2930_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:238
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:235
 msgid "``cxx_raw_string_literals``"
 msgstr ""
 
@@ -407,7 +408,7 @@ msgstr ""
 msgid "Raw string literals, as defined in N2442_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:243
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:240
 msgid "``cxx_reference_qualified_functions``"
 msgstr ""
 
@@ -415,7 +416,7 @@ msgstr ""
 msgid "Reference qualified functions, as defined in N2439_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:248
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:245
 msgid "``cxx_right_angle_brackets``"
 msgstr ""
 
@@ -423,7 +424,7 @@ msgstr ""
 msgid "Right angle bracket parsing, as defined in N1757_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:253
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:250
 msgid "``cxx_rvalue_references``"
 msgstr ""
 
@@ -431,7 +432,7 @@ msgstr ""
 msgid "R-value references, as defined in N2118_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:258
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:255
 msgid "``cxx_sizeof_member``"
 msgstr ""
 
@@ -439,7 +440,7 @@ msgstr ""
 msgid "Size of non-static data members, as defined in N2253_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:263
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:260
 msgid "``cxx_static_assert``"
 msgstr ""
 
@@ -447,7 +448,7 @@ msgstr ""
 msgid "Static assert, as defined in N1720_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:268
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:265
 msgid "``cxx_strong_enums``"
 msgstr ""
 
@@ -455,7 +456,7 @@ msgstr ""
 msgid "Strongly typed enums, as defined in N2347_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:273
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:270
 msgid "``cxx_thread_local``"
 msgstr ""
 
@@ -463,7 +464,7 @@ msgstr ""
 msgid "Thread-local variables, as defined in N2659_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:278
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:275
 msgid "``cxx_trailing_return_types``"
 msgstr ""
 
@@ -471,7 +472,7 @@ msgstr ""
 msgid "Automatic function return type, as defined in N2541_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:283
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:280
 msgid "``cxx_unicode_literals``"
 msgstr ""
 
@@ -479,7 +480,7 @@ msgstr ""
 msgid "Unicode string literals, as defined in N2442_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:288
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:285
 msgid "``cxx_uniform_initialization``"
 msgstr ""
 
@@ -487,7 +488,7 @@ msgstr ""
 msgid "Uniform initialization, as defined in N2640_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:293
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:290
 msgid "``cxx_unrestricted_unions``"
 msgstr ""
 
@@ -495,7 +496,7 @@ msgstr ""
 msgid "Unrestricted unions, as defined in N2544_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:298
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:295
 msgid "``cxx_user_literals``"
 msgstr ""
 
@@ -503,7 +504,7 @@ msgstr ""
 msgid "User-defined literals, as defined in N2765_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:303
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:300
 msgid "``cxx_variadic_macros``"
 msgstr ""
 
@@ -511,7 +512,7 @@ msgstr ""
 msgid "Variadic macros, as defined in N1653_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:309
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:305
 msgid "``cxx_variadic_templates``"
 msgstr ""
 
@@ -523,7 +524,7 @@ msgstr ""
 msgid "Individual features from C++ 14"
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:317
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:314
 msgid "``cxx_aggregate_default_initializers``"
 msgstr ""
 
@@ -531,7 +532,7 @@ msgstr ""
 msgid "Aggregate default initializers, as defined in N3605_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:322
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:319
 msgid "``cxx_attribute_deprecated``"
 msgstr ""
 
@@ -539,7 +540,7 @@ msgstr ""
 msgid "``[[deprecated]]`` attribute, as defined in N3760_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:327
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:324
 msgid "``cxx_binary_literals``"
 msgstr ""
 
@@ -547,7 +548,7 @@ msgstr ""
 msgid "Binary literals, as defined in N3472_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:332
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:329
 msgid "``cxx_contextual_conversions``"
 msgstr ""
 
@@ -555,7 +556,7 @@ msgstr ""
 msgid "Contextual conversions, as defined in N3323_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:337
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:334
 msgid "``cxx_decltype_auto``"
 msgstr ""
 
@@ -563,7 +564,7 @@ msgstr ""
 msgid "``decltype(auto)`` semantics, as defined in N3638_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:342
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:339
 msgid "``cxx_digit_separators``"
 msgstr ""
 
@@ -571,7 +572,7 @@ msgstr ""
 msgid "Digit separators, as defined in N3781_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:347
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:344
 msgid "``cxx_generic_lambdas``"
 msgstr ""
 
@@ -579,7 +580,7 @@ msgstr ""
 msgid "Generic lambdas, as defined in N3649_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:352
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:349
 msgid "``cxx_lambda_init_captures``"
 msgstr ""
 
@@ -587,7 +588,7 @@ msgstr ""
 msgid "Initialized lambda captures, as defined in N3648_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:357
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:354
 msgid "``cxx_relaxed_constexpr``"
 msgstr ""
 
@@ -595,7 +596,7 @@ msgstr ""
 msgid "Relaxed constexpr, as defined in N3652_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:362
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:359
 msgid "``cxx_return_type_deduction``"
 msgstr ""
 
@@ -603,7 +604,7 @@ msgstr ""
 msgid "Return type deduction on normal functions, as defined in N3386_."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:366
+#: ../../../prop_gbl/CMAKE_CXX_KNOWN_FEATURES.rst:364
 msgid "``cxx_variable_templates``"
 msgstr ""
 

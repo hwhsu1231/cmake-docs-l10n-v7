@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -47,7 +48,7 @@ msgstr ""
 msgid "High level meta features indicating C standard support"
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:24
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:23
 msgid "``c_std_90``"
 msgstr ""
 
@@ -55,7 +56,7 @@ msgstr ""
 msgid "Compiler mode is at least C 90."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:27
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:26
 msgid "``c_std_99``"
 msgstr ""
 
@@ -63,7 +64,7 @@ msgstr ""
 msgid "Compiler mode is at least C 99."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:30
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:29
 msgid "``c_std_11``"
 msgstr ""
 
@@ -71,7 +72,7 @@ msgstr ""
 msgid "Compiler mode is at least C 11."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:35
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:32
 msgid "``c_std_17``"
 msgstr ""
 
@@ -79,7 +80,7 @@ msgstr ""
 msgid "Compiler mode is at least C 17."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:40
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:37
 msgid "``c_std_23``"
 msgstr ""
 
@@ -100,7 +101,7 @@ msgstr ""
 msgid "Low level individual compile features"
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:48
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:47
 msgid "``c_function_prototypes``"
 msgstr ""
 
@@ -108,7 +109,7 @@ msgstr ""
 msgid "Function prototypes, as defined in ``ISO/IEC 9899:1990``."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:51
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:50
 msgid "``c_restrict``"
 msgstr ""
 
@@ -116,7 +117,7 @@ msgstr ""
 msgid "``restrict`` keyword, as defined in ``ISO/IEC 9899:1999``."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:54
+#: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:53
 msgid "``c_static_assert``"
 msgstr ""
 
