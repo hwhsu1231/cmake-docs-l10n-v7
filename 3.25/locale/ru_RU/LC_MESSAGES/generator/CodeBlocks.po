@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "This \"extra\" generator may be specified as:"
 msgstr ""
 
-#: ../../../generator/CodeBlocks.rst:22
+#: ../../../generator/CodeBlocks.rst:21
 msgid "``CodeBlocks - MinGW Makefiles``"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Generate with :generator:`MinGW Makefiles`."
 msgstr ""
 
-#: ../../../generator/CodeBlocks.rst:25
+#: ../../../generator/CodeBlocks.rst:24
 msgid "``CodeBlocks - NMake Makefiles``"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Generate with :generator:`NMake Makefiles`."
 msgstr ""
 
-#: ../../../generator/CodeBlocks.rst:29
+#: ../../../generator/CodeBlocks.rst:27
 msgid "``CodeBlocks - NMake Makefiles JOM``"
 msgstr ""
 
@@ -69,7 +69,7 @@ msgstr ""
 msgid "Generate with :generator:`NMake Makefiles JOM`."
 msgstr ""
 
-#: ../../../generator/CodeBlocks.rst:32
+#: ../../../generator/CodeBlocks.rst:31
 msgid "``CodeBlocks - Ninja``"
 msgstr ""
 

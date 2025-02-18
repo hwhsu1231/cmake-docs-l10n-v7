@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 "three options:"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:19
+#: ../../../../Modules/FindFLTK.cmake:18
 msgid "``FLTK_SKIP_OPENGL``"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Set to true to disable searching for the FLTK GL library"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:22
+#: ../../../../Modules/FindFLTK.cmake:21
 msgid "``FLTK_SKIP_FORMS``"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Set to true to disable searching for the FLTK Forms library"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:25
+#: ../../../../Modules/FindFLTK.cmake:24
 msgid "``FLTK_SKIP_IMAGES``"
 msgstr ""
 
@@ -66,7 +66,7 @@ msgid ""
 "FLTK is composed also by a binary tool. You can set the following option:"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:30
+#: ../../../../Modules/FindFLTK.cmake:29
 msgid "``FLTK_SKIP_FLUID``"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgstr ""
 msgid "The following variables will be defined:"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:38
+#: ../../../../Modules/FindFLTK.cmake:37
 msgid "``FLTK_FOUND``"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr ""
 msgid "True if all components not skipped were found"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:41
+#: ../../../../Modules/FindFLTK.cmake:40
 msgid "``FLTK_INCLUDE_DIR``"
 msgstr ""
 
@@ -98,7 +98,7 @@ msgstr ""
 msgid "Path to the include directory for FLTK header files"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:44
+#: ../../../../Modules/FindFLTK.cmake:43
 msgid "``FLTK_LIBRARIES``"
 msgstr ""
 
@@ -106,7 +106,7 @@ msgstr ""
 msgid "List of the FLTK libraries found"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:47
+#: ../../../../Modules/FindFLTK.cmake:46
 msgid "``FLTK_FLUID_EXECUTABLE``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Path to the FLUID binary tool"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:50
+#: ../../../../Modules/FindFLTK.cmake:49
 msgid "``FLTK_WRAP_UI``"
 msgstr ""
 
@@ -130,7 +130,7 @@ msgstr ""
 msgid "The following cache variables are also available to set or use:"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:58
+#: ../../../../Modules/FindFLTK.cmake:57
 msgid "``FLTK_BASE_LIBRARY_RELEASE``"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 msgid "The FLTK base library (optimized)"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:61
+#: ../../../../Modules/FindFLTK.cmake:60
 msgid "``FLTK_BASE_LIBRARY_DEBUG``"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgstr ""
 msgid "The FLTK base library (debug)"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:64
+#: ../../../../Modules/FindFLTK.cmake:63
 msgid "``FLTK_GL_LIBRARY_RELEASE``"
 msgstr ""
 
@@ -154,7 +154,7 @@ msgstr ""
 msgid "The FLTK GL library (optimized)"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:67
+#: ../../../../Modules/FindFLTK.cmake:66
 msgid "``FLTK_GL_LIBRARY_DEBUG``"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr ""
 msgid "The FLTK GL library (debug)"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:70
+#: ../../../../Modules/FindFLTK.cmake:69
 msgid "``FLTK_FORMS_LIBRARY_RELEASE``"
 msgstr ""
 
@@ -170,7 +170,7 @@ msgstr ""
 msgid "The FLTK Forms library (optimized)"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:73
+#: ../../../../Modules/FindFLTK.cmake:72
 msgid "``FLTK_FORMS_LIBRARY_DEBUG``"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "The FLTK Forms library (debug)"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:76
+#: ../../../../Modules/FindFLTK.cmake:75
 msgid "``FLTK_IMAGES_LIBRARY_RELEASE``"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "The FLTK Images protobuf library (optimized)"
 msgstr ""
 
-#: ../../../../Modules/FindFLTK.cmake:79
+#: ../../../../Modules/FindFLTK.cmake:78
 msgid "``FLTK_IMAGES_LIBRARY_DEBUG``"
 msgstr ""
 

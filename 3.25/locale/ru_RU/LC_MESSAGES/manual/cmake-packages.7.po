@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -322,7 +322,7 @@ msgid ""
 "the following variables:"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:202
+#: ../../../manual/cmake-packages.7.rst:201
 msgid "``PACKAGE_FIND_NAME``"
 msgstr ""
 
@@ -330,7 +330,7 @@ msgstr ""
 msgid "The ``<PackageName>``"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:205
+#: ../../../manual/cmake-packages.7.rst:204
 msgid "``PACKAGE_FIND_VERSION``"
 msgstr ""
 
@@ -338,7 +338,7 @@ msgstr ""
 msgid "Full requested version string"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:208
+#: ../../../manual/cmake-packages.7.rst:207
 msgid "``PACKAGE_FIND_VERSION_MAJOR``"
 msgstr ""
 
@@ -346,7 +346,7 @@ msgstr ""
 msgid "Major version if requested, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:211
+#: ../../../manual/cmake-packages.7.rst:210
 msgid "``PACKAGE_FIND_VERSION_MINOR``"
 msgstr ""
 
@@ -354,7 +354,7 @@ msgstr ""
 msgid "Minor version if requested, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:214
+#: ../../../manual/cmake-packages.7.rst:213
 msgid "``PACKAGE_FIND_VERSION_PATCH``"
 msgstr ""
 
@@ -362,7 +362,7 @@ msgstr ""
 msgid "Patch version if requested, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:217
+#: ../../../manual/cmake-packages.7.rst:216
 msgid "``PACKAGE_FIND_VERSION_TWEAK``"
 msgstr ""
 
@@ -370,7 +370,7 @@ msgstr ""
 msgid "Tweak version if requested, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:220
+#: ../../../manual/cmake-packages.7.rst:219
 msgid "``PACKAGE_FIND_VERSION_COUNT``"
 msgstr ""
 
@@ -386,7 +386,7 @@ msgid ""
 "with results:"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:227
+#: ../../../manual/cmake-packages.7.rst:226
 msgid "``PACKAGE_VERSION``"
 msgstr ""
 
@@ -395,7 +395,7 @@ msgstr ""
 msgid "Full provided version string"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:230
+#: ../../../manual/cmake-packages.7.rst:229
 msgid "``PACKAGE_VERSION_EXACT``"
 msgstr ""
 
@@ -403,7 +403,7 @@ msgstr ""
 msgid "True if version is exact match"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:233
+#: ../../../manual/cmake-packages.7.rst:232
 msgid "``PACKAGE_VERSION_COMPATIBLE``"
 msgstr ""
 
@@ -411,7 +411,7 @@ msgstr ""
 msgid "True if version is compatible"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:236
+#: ../../../manual/cmake-packages.7.rst:235
 msgid "``PACKAGE_VERSION_UNSUITABLE``"
 msgstr ""
 
@@ -429,11 +429,11 @@ msgid ""
 "variables for use by the project:"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:246
+#: ../../../manual/cmake-packages.7.rst:245
 msgid "``<PackageName>_VERSION``"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:249
+#: ../../../manual/cmake-packages.7.rst:248
 msgid "``<PackageName>_VERSION_MAJOR``"
 msgstr ""
 
@@ -441,7 +441,7 @@ msgstr ""
 msgid "Major version if provided, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:252
+#: ../../../manual/cmake-packages.7.rst:251
 msgid "``<PackageName>_VERSION_MINOR``"
 msgstr ""
 
@@ -449,7 +449,7 @@ msgstr ""
 msgid "Minor version if provided, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:255
+#: ../../../manual/cmake-packages.7.rst:254
 msgid "``<PackageName>_VERSION_PATCH``"
 msgstr ""
 
@@ -457,7 +457,7 @@ msgstr ""
 msgid "Patch version if provided, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:258
+#: ../../../manual/cmake-packages.7.rst:257
 msgid "``<PackageName>_VERSION_TWEAK``"
 msgstr ""
 
@@ -465,7 +465,7 @@ msgstr ""
 msgid "Tweak version if provided, else 0"
 msgstr ""
 
-#: ../../../manual/cmake-packages.7.rst:261
+#: ../../../manual/cmake-packages.7.rst:260
 msgid "``<PackageName>_VERSION_COUNT``"
 msgstr ""
 

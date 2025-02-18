@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgid ""
 "behavior:"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:92
+#: ../../../../Modules/FindMatlab.cmake:88
 msgid ":variable:`Matlab_ROOT <<PackageName>_ROOT>`"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgid ""
 "installation."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:95
+#: ../../../../Modules/FindMatlab.cmake:94
 msgid ":variable:`Matlab_ROOT_DIR`"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "The root of the Matlab installation."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:98
+#: ../../../../Modules/FindMatlab.cmake:97
 msgid ":variable:`MATLAB_FIND_DEBUG`"
 msgstr ""
 
@@ -194,7 +194,7 @@ msgstr ""
 msgid "outputs debug information"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:102
+#: ../../../../Modules/FindMatlab.cmake:100
 msgid ":variable:`MATLAB_ADDITIONAL_VERSIONS`"
 msgstr ""
 
@@ -212,7 +212,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:112
+#: ../../../../Modules/FindMatlab.cmake:111
 msgid "``Matlab::mex``"
 msgstr ""
 
@@ -220,7 +220,7 @@ msgstr ""
 msgid "The ``mex`` library, always available."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:115
+#: ../../../../Modules/FindMatlab.cmake:114
 msgid "``Matlab::mx``"
 msgstr ""
 
@@ -228,7 +228,7 @@ msgstr ""
 msgid "The mx library of Matlab (arrays), always available."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:119
+#: ../../../../Modules/FindMatlab.cmake:117
 msgid "``Matlab::eng``"
 msgstr ""
 
@@ -238,7 +238,7 @@ msgid ""
 "requested."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:123
+#: ../../../../Modules/FindMatlab.cmake:121
 msgid "``Matlab::mat``"
 msgstr ""
 
@@ -248,7 +248,7 @@ msgid ""
 "requested."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:126
+#: ../../../../Modules/FindMatlab.cmake:125
 msgid "``Matlab::MatlabEngine``"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Matlab C++ engine library, always available for R2018a and newer."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:129
+#: ../../../../Modules/FindMatlab.cmake:128
 msgid "``Matlab::MatlabDataArray``"
 msgstr ""
 
@@ -274,7 +274,7 @@ msgstr ""
 msgid "Result variables"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:138
+#: ../../../../Modules/FindMatlab.cmake:137
 msgid "``Matlab_FOUND``"
 msgstr ""
 
@@ -284,8 +284,8 @@ msgid ""
 "variable below are defined if Matlab is found."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:141
-#: ../../../../Modules/FindMatlab.cmake:184
+#: ../../../../Modules/FindMatlab.cmake:140
+#: ../../../../Modules/FindMatlab.cmake:182
 msgid "``Matlab_ROOT_DIR``"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgid ""
 "module."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:144
+#: ../../../../Modules/FindMatlab.cmake:143
 msgid "``Matlab_MAIN_PROGRAM``"
 msgstr ""
 
@@ -329,7 +329,7 @@ msgstr ""
 msgid "mx library of Matlab (arrays), always available."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:153
+#: ../../../../Modules/FindMatlab.cmake:152
 msgid "``Matlab_ENG_LIBRARY``"
 msgstr ""
 
@@ -339,7 +339,7 @@ msgid ""
 "requested."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:156
+#: ../../../../Modules/FindMatlab.cmake:155
 msgid "``Matlab_MAT_LIBRARY``"
 msgstr ""
 
@@ -349,11 +349,11 @@ msgid ""
 "requested."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:160
+#: ../../../../Modules/FindMatlab.cmake:158
 msgid "``Matlab_ENGINE_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:164
+#: ../../../../Modules/FindMatlab.cmake:162
 msgid "``Matlab_DATAARRAY_LIBRARY``"
 msgstr ""
 
@@ -365,7 +365,7 @@ msgstr ""
 msgid "the whole set of libraries of Matlab"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:169
+#: ../../../../Modules/FindMatlab.cmake:168
 msgid "``Matlab_MEX_COMPILER``"
 msgstr ""
 
@@ -375,7 +375,7 @@ msgid ""
 "component ``MEX_COMPILER`` is requested."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:175
+#: ../../../../Modules/FindMatlab.cmake:171
 msgid "``Matlab_MCC_COMPILER``"
 msgstr ""
 
@@ -416,7 +416,7 @@ msgstr ""
 msgid "returns the version from the release name"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:192
+#: ../../../../Modules/FindMatlab.cmake:191
 msgid ":command:`matlab_get_release_name_from_version`"
 msgstr ""
 
@@ -444,7 +444,7 @@ msgstr ""
 msgid "adds a Matlab unit test file as a test to the project."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:202
+#: ../../../../Modules/FindMatlab.cmake:201
 msgid ":command:`matlab_extract_all_installed_versions_from_registry`"
 msgstr ""
 
@@ -454,7 +454,7 @@ msgid ""
 "part of the registry parsed is dependent on the host processor"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:206
+#: ../../../../Modules/FindMatlab.cmake:204
 msgid ":command:`matlab_get_all_valid_matlab_roots_from_registry`"
 msgstr ""
 
@@ -465,7 +465,7 @@ msgid ""
 "useful for the searching all possible Matlab installation."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:209
+#: ../../../../Modules/FindMatlab.cmake:208
 msgid ":command:`matlab_get_mex_suffix`"
 msgstr ""
 
@@ -475,7 +475,7 @@ msgid ""
 "dependent)"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:214
+#: ../../../../Modules/FindMatlab.cmake:211
 msgid ":command:`matlab_get_version_from_matlab_run`"
 msgstr ""
 
@@ -489,7 +489,7 @@ msgstr ""
 msgid "Known issues"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:232
+#: ../../../../Modules/FindMatlab.cmake:219
 msgid "**Symbol clash in a MEX target**"
 msgstr ""
 
@@ -513,7 +513,7 @@ msgid ""
 "ALL``."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:241
+#: ../../../../Modules/FindMatlab.cmake:234
 msgid "**Tests using GPU resources**"
 msgstr ""
 
@@ -744,7 +744,7 @@ msgstr ""
 msgid "name of the unittest in ctest."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:937
+#: ../../../../Modules/FindMatlab.cmake:936
 msgid "``UNITTEST_FILE``"
 msgstr ""
 
@@ -754,7 +754,7 @@ msgid ""
 "path."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:942
+#: ../../../../Modules/FindMatlab.cmake:939
 msgid "``CUSTOM_TEST_COMMAND``"
 msgstr ""
 
@@ -766,7 +766,7 @@ msgid ""
 "extension."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:946
+#: ../../../../Modules/FindMatlab.cmake:944
 msgid "``UNITTEST_PRECOMMAND``"
 msgstr ""
 
@@ -776,7 +776,7 @@ msgid ""
 "device initialization based on CMake variables)."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:949
+#: ../../../../Modules/FindMatlab.cmake:948
 msgid "``TIMEOUT``"
 msgstr ""
 
@@ -786,7 +786,7 @@ msgid ""
 "may hang."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:952
+#: ../../../../Modules/FindMatlab.cmake:951
 msgid "``ADDITIONAL_PATH``"
 msgstr ""
 
@@ -795,7 +795,7 @@ msgid ""
 "a list of paths to add to the Matlab path prior to running the unit test."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:956
+#: ../../../../Modules/FindMatlab.cmake:954
 msgid "``MATLAB_ADDITIONAL_STARTUP_OPTIONS``"
 msgstr ""
 
@@ -805,7 +805,7 @@ msgid ""
 "nosplash -nodesktop -nodisplay`` are always added."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:959
+#: ../../../../Modules/FindMatlab.cmake:958
 msgid "``TEST_ARGS``"
 msgstr ""
 
@@ -815,7 +815,7 @@ msgid ""
 "to the default options (eg. \"CONFIGURATIONS Release\")"
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:962
+#: ../../../../Modules/FindMatlab.cmake:961
 msgid "``NO_UNITTEST_FRAMEWORK``"
 msgstr ""
 
@@ -825,7 +825,7 @@ msgid ""
 "Matlab (available for versions >= R2013a)."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:967
+#: ../../../../Modules/FindMatlab.cmake:964
 msgid "``WORKING_DIRECTORY``"
 msgstr ""
 
@@ -874,7 +874,7 @@ msgstr ""
 msgid "list of source files."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1051
+#: ../../../../Modules/FindMatlab.cmake:1049
 msgid "``LINK_TO``"
 msgstr ""
 
@@ -885,7 +885,7 @@ msgid ""
 "option is passed."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1055
+#: ../../../../Modules/FindMatlab.cmake:1053
 msgid "``OUTPUT_NAME``"
 msgstr ""
 
@@ -895,7 +895,7 @@ msgid ""
 "target without any prefix and with ``Matlab_MEX_EXTENSION`` suffix."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1061
+#: ../../../../Modules/FindMatlab.cmake:1057
 msgid "``DOCUMENTATION``"
 msgstr ""
 
@@ -908,7 +908,7 @@ msgid ""
 "the documentation contained in this file."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1071
+#: ../../../../Modules/FindMatlab.cmake:1063
 msgid "``R2017b`` or ``R2018a``"
 msgstr ""
 
@@ -922,7 +922,7 @@ msgid ""
 "``R2017b``."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1077
+#: ../../../../Modules/FindMatlab.cmake:1073
 msgid "``MODULE`` or ``SHARED``"
 msgstr ""
 
@@ -930,7 +930,7 @@ msgstr ""
 msgid "May be given to specify the type of library to be created."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1082
+#: ../../../../Modules/FindMatlab.cmake:1079
 msgid "``EXECUTABLE``"
 msgstr ""
 
@@ -940,7 +940,7 @@ msgid ""
 "given explicitly, the type is ``SHARED``."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1086
+#: ../../../../Modules/FindMatlab.cmake:1084
 msgid "``EXCLUDE_FROM_ALL``"
 msgstr ""
 
@@ -950,7 +950,7 @@ msgid ""
 "forwarded to :command:`add_library` or :command:`add_executable` commands."
 msgstr ""
 
-#: ../../../../Modules/FindMatlab.cmake:1093
+#: ../../../../Modules/FindMatlab.cmake:1088
 msgid "``NO_IMPLICIT_LINK_TO_MATLAB_LIBRARIES``"
 msgstr ""
 

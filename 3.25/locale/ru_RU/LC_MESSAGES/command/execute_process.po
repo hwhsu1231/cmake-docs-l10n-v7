@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Options:"
 msgstr ""
 
-#: ../../../command/execute_process.rst:55
+#: ../../../command/execute_process.rst:37
 msgid "``COMMAND``"
 msgstr ""
 
@@ -102,7 +102,7 @@ msgid ""
 "command:`execute_process` calls with a single ``COMMAND`` argument."
 msgstr ""
 
-#: ../../../command/execute_process.rst:59
+#: ../../../command/execute_process.rst:57
 msgid "``WORKING_DIRECTORY``"
 msgstr ""
 
@@ -112,7 +112,7 @@ msgid ""
 "child processes."
 msgstr ""
 
-#: ../../../command/execute_process.rst:64
+#: ../../../command/execute_process.rst:61
 msgid "``TIMEOUT``"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgid ""
 "to a string mentioning the \"timeout\"."
 msgstr ""
 
-#: ../../../command/execute_process.rst:69
+#: ../../../command/execute_process.rst:66
 msgid "``RESULT_VARIABLE``"
 msgstr ""
 
@@ -134,7 +134,7 @@ msgid ""
 "error condition."
 msgstr ""
 
-#: ../../../command/execute_process.rst:77
+#: ../../../command/execute_process.rst:71
 msgid "``RESULTS_VARIABLE <variable>``"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgid ""
 "corresponding child or a string describing an error condition."
 msgstr ""
 
-#: ../../../command/execute_process.rst:82
+#: ../../../command/execute_process.rst:79
 msgid "``OUTPUT_VARIABLE``, ``ERROR_VARIABLE``"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgid ""
 "pipes their output will be merged in the order produced."
 msgstr ""
 
-#: ../../../command/execute_process.rst:91
+#: ../../../command/execute_process.rst:84
 msgid "``INPUT_FILE, OUTPUT_FILE``, ``ERROR_FILE``"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgid ""
 "both."
 msgstr ""
 
-#: ../../../command/execute_process.rst:94
+#: ../../../command/execute_process.rst:93
 msgid "``OUTPUT_QUIET``, ``ERROR_QUIET``"
 msgstr ""
 
@@ -182,7 +182,7 @@ msgstr ""
 msgid "The standard output or standard error results will be quietly ignored."
 msgstr ""
 
-#: ../../../command/execute_process.rst:102
+#: ../../../command/execute_process.rst:96
 msgid "``COMMAND_ECHO <where>``"
 msgstr ""
 
@@ -194,7 +194,7 @@ msgid ""
 "default behavior when this option is not present."
 msgstr ""
 
-#: ../../../command/execute_process.rst:127
+#: ../../../command/execute_process.rst:104
 msgid "``ENCODING <name>``"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgid ""
 "Ignored on other platforms. Valid encoding names are:"
 msgstr ""
 
-#: ../../../command/execute_process.rst:113
+#: ../../../command/execute_process.rst:111
 msgid "``NONE``"
 msgstr ""
 
@@ -214,7 +214,7 @@ msgid ""
 "same way as CMake's internal encoding (UTF-8). This is the default."
 msgstr ""
 
-#: ../../../command/execute_process.rst:116
+#: ../../../command/execute_process.rst:115
 msgid "``AUTO``"
 msgstr ""
 
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Use the original equipment manufacturer (OEM) code page."
 msgstr ""
 
-#: ../../../command/execute_process.rst:127
+#: ../../../command/execute_process.rst:122
 msgid "``UTF8`` or ``UTF-8``"
 msgstr ""
 
@@ -254,7 +254,7 @@ msgid ""
 "ietf.org/rfc/rfc3629>`_ naming convention."
 msgstr ""
 
-#: ../../../command/execute_process.rst:138
+#: ../../../command/execute_process.rst:129
 msgid "``ECHO_OUTPUT_VARIABLE``, ``ECHO_ERROR_VARIABLE``"
 msgstr ""
 
@@ -274,7 +274,7 @@ msgstr ""
 msgid "This is analogous to the ``tee`` Unix command."
 msgstr ""
 
-#: ../../../command/execute_process.rst:153
+#: ../../../command/execute_process.rst:140
 msgid "``COMMAND_ERROR_IS_FATAL <ANY|LAST>``"
 msgstr ""
 

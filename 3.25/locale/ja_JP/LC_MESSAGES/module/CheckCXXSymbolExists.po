@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 msgid "a :ref:`;-list <CMake Language Lists>` of macros to define (-DFOO=bar)."
 msgstr ""
 
-#: ../../../../Modules/CheckCXXSymbolExists.cmake:49
+#: ../../../../Modules/CheckCXXSymbolExists.cmake:48
 msgid "``CMAKE_REQUIRED_INCLUDES``"
 msgstr ""
 
@@ -92,7 +92,7 @@ msgid ""
 "compiler."
 msgstr ""
 
-#: ../../../../Modules/CheckCXXSymbolExists.cmake:52
+#: ../../../../Modules/CheckCXXSymbolExists.cmake:51
 msgid "``CMAKE_REQUIRED_LINK_OPTIONS``"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgid ""
 "a :ref:`;-list <CMake Language Lists>` of options to add to the link command."
 msgstr ""
 
-#: ../../../../Modules/CheckCXXSymbolExists.cmake:55
+#: ../../../../Modules/CheckCXXSymbolExists.cmake:54
 msgid "``CMAKE_REQUIRED_LIBRARIES``"
 msgstr ""
 
@@ -111,7 +111,7 @@ msgid ""
 "command. See policy :policy:`CMP0075`."
 msgstr ""
 
-#: ../../../../Modules/CheckCXXSymbolExists.cmake:59
+#: ../../../../Modules/CheckCXXSymbolExists.cmake:57
 msgid "``CMAKE_REQUIRED_QUIET``"
 msgstr ""
 

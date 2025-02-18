@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "<value> <current_list_file> <stack>)``"
 msgstr ""
 
-#: ../../../command/variable_watch.rst:18
+#: ../../../command/variable_watch.rst:17
 msgid "``<variable>``"
 msgstr ""
 
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Name of the variable being accessed."
 msgstr ""
 
-#: ../../../command/variable_watch.rst:25
+#: ../../../command/variable_watch.rst:20
 msgid "``<access>``"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgid ""
 "unset."
 msgstr ""
 
-#: ../../../command/variable_watch.rst:29
+#: ../../../command/variable_watch.rst:27
 msgid "``<value>``"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgid ""
 "value of the variable.  On removal, the value is empty."
 msgstr ""
 
-#: ../../../command/variable_watch.rst:32
+#: ../../../command/variable_watch.rst:31
 msgid "``<current_list_file>``"
 msgstr ""
 
@@ -81,7 +81,7 @@ msgstr ""
 msgid "Full path to the file doing the access."
 msgstr ""
 
-#: ../../../command/variable_watch.rst:37
+#: ../../../command/variable_watch.rst:34
 msgid "``<stack>``"
 msgstr ""
 

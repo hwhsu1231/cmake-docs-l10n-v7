@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr ""
 msgid "This module defines the :prop_tgt:`IMPORTED` target:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenAL.cmake:40
+#: ../../../../Modules/FindOpenAL.cmake:39
 msgid "``OpenAL::OpenAL``"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Path to the OpenAL library"
 msgstr ""
 
-#: ../../../../Modules/FindOpenAL.cmake:122
+#: ../../../../Modules/FindOpenAL.cmake:53
 msgid "``OPENAL_VERSION_STRING``"
 msgstr ""
 

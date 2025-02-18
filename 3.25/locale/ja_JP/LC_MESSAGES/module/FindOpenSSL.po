@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr ""
 msgid "The OpenSSL ``crypto`` library, if found."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSSL.cmake:47
+#: ../../../../Modules/FindOpenSSL.cmake:39
 msgid "``OpenSSL::applink``"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgstr ""
 msgid "This module will set the following variables in your project:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSSL.cmake:69
+#: ../../../../Modules/FindOpenSSL.cmake:68
 msgid "``OPENSSL_FOUND``"
 msgstr ""
 
@@ -183,7 +183,7 @@ msgstr ""
 msgid "This is set to ``$major.$minor.$revision$patch`` (e.g. ``0.9.8s``)."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSSL.cmake:88
+#: ../../../../Modules/FindOpenSSL.cmake:85
 msgid "``OPENSSL_APPLINK_SOURCE``"
 msgstr ""
 
@@ -202,7 +202,7 @@ msgstr ""
 msgid "The following variables may be set to control search behavior:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSSL.cmake:96
+#: ../../../../Modules/FindOpenSSL.cmake:95
 msgid "``OPENSSL_ROOT_DIR``"
 msgstr ""
 
@@ -210,7 +210,7 @@ msgstr ""
 msgid "Set to the root directory of an OpenSSL installation."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSSL.cmake:101
+#: ../../../../Modules/FindOpenSSL.cmake:98
 msgid "``OPENSSL_USE_STATIC_LIBS``"
 msgstr ""
 
@@ -218,7 +218,7 @@ msgstr ""
 msgid "Set to ``TRUE`` to look for static libraries."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSSL.cmake:106
+#: ../../../../Modules/FindOpenSSL.cmake:103
 msgid "``OPENSSL_MSVC_STATIC_RT``"
 msgstr ""
 
@@ -226,7 +226,7 @@ msgstr ""
 msgid "Set to ``TRUE`` to choose the MT version of the lib."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSSL.cmake:721
+#: ../../../../Modules/FindOpenSSL.cmake:108
 msgid "``ENV{PKG_CONFIG_PATH}``"
 msgstr ""
 

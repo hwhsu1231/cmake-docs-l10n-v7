@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Supported values are:"
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:15
+#: ../../../prop_tgt/CUDA_STANDARD.rst:14
 msgid "``98``"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgstr ""
 msgid "CUDA C++98. Note that this maps to the same as ``03`` internally."
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:18
+#: ../../../prop_tgt/CUDA_STANDARD.rst:17
 msgid "``03``"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "CUDA C++03"
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:21
+#: ../../../prop_tgt/CUDA_STANDARD.rst:20
 msgid "``11``"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgstr ""
 msgid "CUDA C++11"
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:25
+#: ../../../prop_tgt/CUDA_STANDARD.rst:23
 msgid "``14``"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgid ""
 "CMake 3.9 was the first version to include support for any compiler."
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:29
+#: ../../../prop_tgt/CUDA_STANDARD.rst:27
 msgid "``17``"
 msgstr ""
 
@@ -81,7 +81,7 @@ msgid ""
 "CMake 3.18 was the first version to include support for any compiler."
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:35
+#: ../../../prop_tgt/CUDA_STANDARD.rst:31
 msgid "``20``"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgid ""
 "CMake 3.18 was the first version to include support for any compiler."
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:40
+#: ../../../prop_tgt/CUDA_STANDARD.rst:37
 msgid "``23``"
 msgstr ""
 
@@ -99,7 +99,7 @@ msgstr ""
 msgid "CUDA C++23"
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_STANDARD.rst:46
+#: ../../../prop_tgt/CUDA_STANDARD.rst:42
 msgid "``26``"
 msgstr ""
 

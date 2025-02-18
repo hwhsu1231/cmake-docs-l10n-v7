@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -175,6 +175,10 @@ msgid ""
 "`target_include_directories` with the ``INTERFACE`` keyword, as follows:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:94
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:98
 msgid "TODO 1: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -187,11 +191,20 @@ msgid ""
 "\n"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:105
+#: Library.rst:124 Library.rst:140
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:109
 msgid ""
 "Now that we've specified usage requirements for ``MathFunctions`` we can "
 "safely remove our uses of the ``EXTRA_INCLUDES`` variable from the top-level "
 "``CMakeLists.txt``, here:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:113
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:117
@@ -209,6 +222,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:128
 msgid "And here:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:130
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:134

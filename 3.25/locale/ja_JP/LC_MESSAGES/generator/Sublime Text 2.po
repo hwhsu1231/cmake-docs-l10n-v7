@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "This \"extra\" generator may be specified as:"
 msgstr ""
 
-#: ../../../generator/Sublime Text 2.rst:16
+#: ../../../generator/Sublime Text 2.rst:15
 msgid "``Sublime Text 2 - MinGW Makefiles``"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Generate with :generator:`MinGW Makefiles`."
 msgstr ""
 
-#: ../../../generator/Sublime Text 2.rst:19
+#: ../../../generator/Sublime Text 2.rst:18
 msgid "``Sublime Text 2 - NMake Makefiles``"
 msgstr ""
 
@@ -55,7 +55,7 @@ msgstr ""
 msgid "Generate with :generator:`NMake Makefiles`."
 msgstr ""
 
-#: ../../../generator/Sublime Text 2.rst:22
+#: ../../../generator/Sublime Text 2.rst:21
 msgid "``Sublime Text 2 - Ninja``"
 msgstr ""
 

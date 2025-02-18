@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,6 +213,10 @@ msgid ""
 "``cxx_std_11``."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:115
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:119
 msgid "TODO 1: CMakeLists.txt"
 msgstr ""
@@ -224,12 +228,22 @@ msgid ""
 "\n"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:126
+#: Expressions.rst:146 Expressions.rst:163 Expressions.rst:241
+#: Expressions.rst:261 Expressions.rst:284 Expressions.rst:304
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:130
 msgid ""
 "Finally, with our interface library set up, we need to link our executable "
 "``Target`` and our ``MathFunctions`` library to our new "
 "``tutorial_compiler_flags`` library. Respectively, the code will look like "
 "this:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:135
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:139
@@ -245,6 +259,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:150
 msgid "and this:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:152
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:156
@@ -337,6 +355,10 @@ msgid ""
 "version ``3.15``:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:231
+msgid "<details><summary>TODO 4: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:235
 msgid "TODO 4: CMakeLists.txt"
 msgstr ""
@@ -353,6 +375,10 @@ msgid ""
 "since warning flags vary based on the compiler we use. This is done with the "
 "``COMPILE_LANG_AND_ID`` generator expression. We set the result in the "
 "variables ``gcc_like_cxx`` and ``msvc_cxx`` as follows:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:250
+msgid "<details><summary>TODO 5: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:254
@@ -375,6 +401,10 @@ msgid ""
 "our interface library."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:271
+msgid "<details><summary>TODO 6: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:275
 msgid "TODO 6: CMakeLists.txt"
 msgstr ""
@@ -394,6 +424,10 @@ msgid ""
 "this, we wrap our flags in a generator expression using the "
 "``BUILD_INTERFACE`` condition. The resulting full code looks like the "
 "following:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding Generator Expressions.rst:293
+msgid "<details><summary>TODO 7: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:297
