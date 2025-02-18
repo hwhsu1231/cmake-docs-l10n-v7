@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -82,7 +83,7 @@ msgstr ""
 msgid "this will be used as the first argument for add_test()"
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:58
+#: ../../../../Modules/FindSquish.cmake:57
 msgid "``AUT targetName``"
 msgstr ""
 
@@ -92,7 +93,7 @@ msgid ""
 "which will be tested."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:63
+#: ../../../../Modules/FindSquish.cmake:60
 msgid "``SUITE suiteName``"
 msgstr ""
 
@@ -104,7 +105,7 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:66
+#: ../../../../Modules/FindSquish.cmake:65
 msgid "``TEST squishTestName``"
 msgstr ""
 
@@ -132,7 +133,7 @@ msgid ""
 "test."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:75
+#: ../../../../Modules/FindSquish.cmake:72
 msgid "``POST_COMMAND command``"
 msgstr ""
 

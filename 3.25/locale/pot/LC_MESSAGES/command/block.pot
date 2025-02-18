@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +41,7 @@ msgid ""
 "the scopes created by the ``block()`` command are removed."
 msgstr ""
 
-#: ../../../command/block.rst:33
+#: ../../../command/block.rst:19
 msgid "``SCOPE_FOR``"
 msgstr ""
 
@@ -48,7 +49,7 @@ msgstr ""
 msgid "Specify which scopes must be created."
 msgstr ""
 
-#: ../../../command/block.rst:24
+#: ../../../command/block.rst:22
 msgid "``POLICIES``"
 msgstr ""
 
@@ -58,7 +59,7 @@ msgid ""
 "`cmake_policy(PUSH)`."
 msgstr ""
 
-#: ../../../command/block.rst:27
+#: ../../../command/block.rst:26
 msgid "``VARIABLES``"
 msgstr ""
 
@@ -74,7 +75,7 @@ msgstr ""
 msgid "block(SCOPE_FOR VARIABLES POLICIES)"
 msgstr ""
 
-#: ../../../command/block.rst:54
+#: ../../../command/block.rst:35
 msgid "``PROPAGATE``"
 msgstr ""
 

@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -78,7 +79,7 @@ msgstr ""
 msgid "The following values are allowed for ``CMAKE_INSTALL_MODE``:"
 msgstr ""
 
-#: ../../../envvar/CMAKE_INSTALL_MODE.rst:36
+#: ../../../envvar/CMAKE_INSTALL_MODE.rst:35
 msgid "``COPY``, empty or unset"
 msgstr ""
 
@@ -86,7 +87,7 @@ msgstr ""
 msgid "Duplicate the file at its destination.  This is the default behavior."
 msgstr ""
 
-#: ../../../envvar/CMAKE_INSTALL_MODE.rst:40
+#: ../../../envvar/CMAKE_INSTALL_MODE.rst:38
 msgid "``ABS_SYMLINK``"
 msgstr ""
 
@@ -96,7 +97,7 @@ msgid ""
 "Halt with an error if the link cannot be created."
 msgstr ""
 
-#: ../../../envvar/CMAKE_INSTALL_MODE.rst:44
+#: ../../../envvar/CMAKE_INSTALL_MODE.rst:42
 msgid "``ABS_SYMLINK_OR_COPY``"
 msgstr ""
 
@@ -106,7 +107,7 @@ msgid ""
 "couldn't be created."
 msgstr ""
 
-#: ../../../envvar/CMAKE_INSTALL_MODE.rst:48
+#: ../../../envvar/CMAKE_INSTALL_MODE.rst:46
 msgid "``REL_SYMLINK``"
 msgstr ""
 
@@ -116,7 +117,7 @@ msgid ""
 "Halt with an error if the link cannot be created."
 msgstr ""
 
-#: ../../../envvar/CMAKE_INSTALL_MODE.rst:52
+#: ../../../envvar/CMAKE_INSTALL_MODE.rst:50
 msgid "``REL_SYMLINK_OR_COPY``"
 msgstr ""
 
@@ -126,7 +127,7 @@ msgid ""
 "couldn't be created."
 msgstr ""
 
-#: ../../../envvar/CMAKE_INSTALL_MODE.rst:57
+#: ../../../envvar/CMAKE_INSTALL_MODE.rst:54
 msgid "``SYMLINK``"
 msgstr ""
 
@@ -137,7 +138,7 @@ msgid ""
 "error if the link cannot be created."
 msgstr ""
 
-#: ../../../envvar/CMAKE_INSTALL_MODE.rst:61
+#: ../../../envvar/CMAKE_INSTALL_MODE.rst:59
 msgid "``SYMLINK_OR_COPY``"
 msgstr ""
 

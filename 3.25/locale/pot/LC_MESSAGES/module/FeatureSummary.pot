@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -183,7 +184,7 @@ msgstr ""
 msgid "the list of all packages which have been found"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:236
+#: ../../../../Modules/FeatureSummary.cmake:235
 msgid "``PACKAGES_NOT_FOUND``"
 msgstr ""
 
@@ -206,7 +207,7 @@ msgstr ""
 msgid "only those packages which have been found which have the type <TYPE>"
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:245
+#: ../../../../Modules/FeatureSummary.cmake:244
 msgid "``<TYPE>_PACKAGES_NOT_FOUND``"
 msgstr ""
 
@@ -331,7 +332,7 @@ msgid ""
 "by the find_package() command."
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:489
+#: ../../../../Modules/FeatureSummary.cmake:487
 msgid "``URL <url>``"
 msgstr ""
 
@@ -341,7 +342,7 @@ msgid ""
 "this is set already directly in the Find-module."
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:493
+#: ../../../../Modules/FeatureSummary.cmake:491
 msgid "``DESCRIPTION <description>``"
 msgstr ""
 
@@ -351,7 +352,7 @@ msgid ""
 "is set already directly in the Find-module."
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:514
+#: ../../../../Modules/FeatureSummary.cmake:495
 msgid "``TYPE <type>``"
 msgstr ""
 
@@ -377,7 +378,7 @@ msgid ""
 "`FeatureSummary_PKG_TYPES` global property."
 msgstr ""
 
-#: ../../../../Modules/FeatureSummary.cmake:523
+#: ../../../../Modules/FeatureSummary.cmake:516
 msgid "``PURPOSE <purpose>``"
 msgstr ""
 

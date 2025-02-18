@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -77,7 +78,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:57
+#: ../../../command/add_custom_command.rst:45
 msgid "``APPEND``"
 msgstr ""
 
@@ -102,7 +103,7 @@ msgid ""
 "currently ignored when APPEND is given, but may be used in the future."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:88
+#: ../../../command/add_custom_command.rst:59
 msgid "``BYPRODUCTS``"
 msgstr ""
 
@@ -144,7 +145,7 @@ msgid ""
 "expressions <Target-Dependent Queries>` are not permitted."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:137
+#: ../../../command/add_custom_command.rst:90
 msgid "``COMMAND``"
 msgstr ""
 
@@ -227,7 +228,7 @@ msgid ""
 "dependencies."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:141
+#: ../../../command/add_custom_command.rst:139
 msgid "``COMMENT``"
 msgstr ""
 
@@ -236,7 +237,7 @@ msgid ""
 "Display the given message before the commands are executed at build time."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:185
+#: ../../../command/add_custom_command.rst:143
 msgid "``DEPENDS``"
 msgstr ""
 
@@ -309,7 +310,7 @@ msgid ""
 "generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:195
+#: ../../../command/add_custom_command.rst:187
 msgid "``COMMAND_EXPAND_LISTS``"
 msgstr ""
 
@@ -321,7 +322,7 @@ msgid ""
 "foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly expanded."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:210
+#: ../../../command/add_custom_command.rst:197
 msgid "``IMPLICIT_DEPENDS``"
 msgstr ""
 
@@ -341,7 +342,7 @@ msgstr ""
 msgid "This option cannot be specified at the same time as ``DEPFILE`` option."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:219
+#: ../../../command/add_custom_command.rst:212
 msgid "``JOB_POOL``"
 msgstr ""
 
@@ -353,7 +354,7 @@ msgid ""
 "ninja at build time."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:228
+#: ../../../command/add_custom_command.rst:221
 msgid "``MAIN_DEPENDENCY``"
 msgstr ""
 
@@ -367,7 +368,7 @@ msgid ""
 "dependency which gets silently overwritten by a custom command specification."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:245
+#: ../../../command/add_custom_command.rst:230
 msgid "``OUTPUT``"
 msgstr ""
 
@@ -389,7 +390,7 @@ msgid ""
 "expressions <Target-Dependent Queries>` are not permitted."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:252
+#: ../../../command/add_custom_command.rst:247
 msgid "``USES_TERMINAL``"
 msgstr ""
 
@@ -400,7 +401,7 @@ msgid ""
 "``console`` :prop_gbl:`pool <JOB_POOLS>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:262
+#: ../../../command/add_custom_command.rst:254
 msgid "``VERBATIM``"
 msgstr ""
 
@@ -415,7 +416,7 @@ msgid ""
 "specific special characters."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:271
+#: ../../../command/add_custom_command.rst:264
 msgid "``WORKING_DIRECTORY``"
 msgstr ""
 
@@ -432,7 +433,7 @@ msgid ""
 "<cmake-generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:347
+#: ../../../command/add_custom_command.rst:273
 msgid "``DEPFILE``"
 msgstr ""
 
@@ -454,6 +455,14 @@ msgid ""
 "The formal syntax, as specified using `BNF <https://en.wikipedia.org/wiki/"
 "Backus%E2%80%93Naur_form>`_ notation with the regular extensions, is the "
 "following:"
+msgstr ""
+
+#: ../../../command/add_custom_command.rst:287
+msgid "\\begin{small}"
+msgstr ""
+
+#: ../../../command/add_custom_command.rst:309
+msgid "\\end{small}"
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:315
@@ -596,7 +605,7 @@ msgid ""
 "specified:"
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:420
+#: ../../../command/add_custom_command.rst:418
 msgid "``PRE_BUILD``"
 msgstr ""
 
@@ -607,7 +616,7 @@ msgid ""
 "commands."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:425
+#: ../../../command/add_custom_command.rst:422
 msgid "``PRE_LINK``"
 msgstr ""
 
@@ -618,7 +627,7 @@ msgid ""
 "defined for targets created by the :command:`add_custom_target` command."
 msgstr ""
 
-#: ../../../command/add_custom_command.rst:428
+#: ../../../command/add_custom_command.rst:427
 msgid "``POST_BUILD``"
 msgstr ""
 

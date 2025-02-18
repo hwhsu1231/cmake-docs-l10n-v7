@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.25\n"
+"Project-Id-Version: CMake 3.25\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -185,6 +186,10 @@ msgid ""
 "`add_library`. This looks like the following line:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:97
+msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:101
 msgid "TODO 1: MathFunctions/CMakeLists.txt"
 msgstr ""
@@ -195,11 +200,22 @@ msgid ""
 "\n"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:107 Library.rst:125
+#: Library.rst:142 Library.rst:164 Library.rst:180 Library.rst:196
+#: Library.rst:298 Library.rst:336 Library.rst:358 Library.rst:375
+#: Library.rst:397 Library.rst:415 Library.rst:432 Library.rst:457
+msgid "</details>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:111
 msgid ""
 "To make use of the new library we will add an :command:`add_subdirectory` "
 "call in the top-level ``CMakeLists.txt`` file so that the library will get "
 "built."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:115
+msgid "<details><summary>TODO 2: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:119
@@ -216,6 +232,10 @@ msgid ""
 "command:`target_link_libraries`."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:132
+msgid "<details><summary>TODO 3: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:136
 msgid "TODO 3: CMakeLists.txt"
 msgstr ""
@@ -230,6 +250,10 @@ msgid ""
 "command:`target_include_directories` to add the ``MathFunctions`` "
 "subdirectory as an include directory so that the ``MathFunctions.h`` header "
 "file can be found."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:151
+msgid "<details><summary>TODO 4: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:155
@@ -249,6 +273,10 @@ msgid ""
 "Now let's use our library. In ``tutorial.cxx``, include ``MathFunctions.h``:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:170
+msgid "<details><summary>TODO 5: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:174
 msgid "TODO 5 : tutorial.cxx"
 msgstr ""
@@ -259,6 +287,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:184
 msgid "Lastly, replace ``sqrt`` with our library function ``mysqrt``."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:186
+msgid "<details><summary>TODO 6: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:190
@@ -384,6 +416,10 @@ msgid ""
 "changed by the user."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:287
+msgid "<details><summary>TODO 7: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:291
 msgid "TODO 7: CMakeLists.txt"
 msgstr ""
@@ -433,6 +469,10 @@ msgstr ""
 msgid "The top-level CMakeLists.txt file will now look like the following:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:325
+msgid "<details><summary>TODO 8: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:329
 msgid "TODO 8: CMakeLists.txt"
 msgstr ""
@@ -460,6 +500,10 @@ msgid ""
 "names with ``EXTRA_LIBS``. This looks like the following:"
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:347
+msgid "<details><summary>TODO 9: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:351
 msgid "TODO 9: CMakeLists.txt"
 msgstr ""
@@ -475,6 +519,10 @@ msgstr ""
 msgid ""
 "Then, we do the same thing with :command:`target_include_directories` and "
 "``EXTRA_INCLUDES``."
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:365
+msgid "<details><summary>TODO 10: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:369
@@ -502,6 +550,10 @@ msgid ""
 "``USE_MYMATH`` is defined."
 msgstr ""
 
+#: ../../../guide/tutorial/Adding a Library.rst:386
+msgid "<details><summary>TODO 11: Click to show/hide answer</summary>"
+msgstr ""
+
 #: ../../../guide/tutorial/Adding a Library.rst:390
 msgid "TODO 11 : tutorial.cxx"
 msgstr ""
@@ -518,6 +570,10 @@ msgstr ""
 msgid ""
 "Then, in the same file, we make ``USE_MYMATH`` control which square root "
 "function is used:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:404
+msgid "<details><summary>TODO 12: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:408
@@ -538,6 +594,10 @@ msgstr ""
 msgid ""
 "Since the source code now requires ``USE_MYMATH`` we can add it to "
 "``TutorialConfig.h.in`` with the following line:"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:422
+msgid "<details><summary>TODO 13: Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:426
@@ -566,6 +626,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:446
 msgid "Answer"
+msgstr ""
+
+#: ../../../guide/tutorial/Adding a Library.rst:448
+msgid "<details><summary>Click to show/hide answer</summary>"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:452
