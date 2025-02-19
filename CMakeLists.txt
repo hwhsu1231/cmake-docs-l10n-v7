@@ -80,7 +80,7 @@ set(GETTEXT_ADDITIONAL_TARGETS "index,literal-block,raw"
     # Passed to sphinx-build as -Dgettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_additional_targets for details.
 
-set(REMOTE_URL_OF_L10N "https://github.com/hwhsu1231/cmake-docs-l10n-v7.git"
+set(REMOTE_URL_OF_L10N "https://github.com/hwhsu1231/cmake-docs-l10n.git"
     CACHE STRING "The remote URL of the 'l10n' repository.")
 
 set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"

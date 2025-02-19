@@ -41,10 +41,10 @@ const _ALL_VERSIONS = [
   ["3.0", "3.0"],
 ];
 const _ALL_PROJECTS = [
-  ["Crowdin", "https://org-test.crowdin.com/cmake-docs-l10n"],
-  ["GitHub", "https://github.com/hwhsu1231/cmake-docs-l10n-v7"],
-  ["GitCode", "https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7"],
-  ["GitFlic", "https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7"],
+  ["Crowdin", "https://ltdorgtest.crowdin.com/cmake-docs-l10n"],
+  ["GitHub",  "https://github.com/hwhsu1231/cmake-docs-l10n"],
+  ["GitCode", "https://gitcode.com/hwhsu1231/cmake-docs-l10n"],
+  ["GitFlic", "https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n"],
 ];
 
 const _is_file_uri = (uri) => uri.startsWith("file:/");
