@@ -51,44 +51,44 @@ Introduction
 </a></h2>
 
 <div align="center">
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/stargazers" title="GitHub Stars" target="_blank">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/network/members" title="GitHub Forks" target="_blank">
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/network/members" title="GitHub Forks" target="_blank">
+    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/graphs/contributors" title="GitHub Contributors" target="_blank">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/graphs/contributors" title="GitHub Contributors" target="_blank">
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" title="GitHub Repo Size" target="_blank">
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n" title="GitHub Repo Size" target="_blank">
+    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n?logo=github&style=flat&color=blue" />
   </a><br />
   <!-- Newline -->
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
-    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
+    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank">
-    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
+    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
   </a><br />
   <!-- Newline -->
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/stargazers" title="GitHub Stars" target="_blank">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/network/members" title="GitHub Forks" target="_blank">
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/network/members" title="GitHub Forks" target="_blank">
+    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/graphs/contributors" title="GitHub Contributors" target="_blank">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/graphs/contributors" title="GitHub Contributors" target="_blank">
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" title="GitHub Repo Size" target="_blank">
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=blue" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n" title="GitHub Repo Size" target="_blank">
+    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/hwhsu1231/cmake-docs-l10n?logo=github&style=flat&color=blue" />
   </a><br />
   
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" title="GitHub Open Issues" target="_blank">
-    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n-v7.svg?logo=github&style=flat&color=brightgreen" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
+    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/hwhsu1231/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
   </a>
-  <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/pulls" title="GitHub Open Pull Requests" target="_blank">
-    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n-v7?logo=github&style=flat&color=brightgreen" />
+  <a href="https://github.com/hwhsu1231/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
+    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/hwhsu1231/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
   </a><br />
   
   <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
@@ -126,11 +126,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Main</th>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/issues" target="_blank">Link</a>
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/issues" target="_blank">Link</a>
         </td>
       </tr>
       <!-- Mirror -->
@@ -138,7 +138,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <th rowspan="7" align="center" style="text-align: center; vertical-align: middle;">Mirror</th>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitCode</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitcode.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
@@ -146,7 +146,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitflic.ru/project/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
@@ -154,7 +154,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitLab</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitlab.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
@@ -162,7 +162,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Gitee</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitee.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
@@ -170,7 +170,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Gitea</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://gitea.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
@@ -178,7 +178,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">AtomGit</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://atomgit.com/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
@@ -186,7 +186,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <tr>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Codeberg</th>
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n-v7" target="_blank">cmake-docs-l10n</a>
+          <a href="https://codeberg.org/hwhsu1231/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
@@ -209,8 +209,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
     <tbody>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml" >
-            <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
+            <img alt="ci-sphinx-update-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
@@ -219,8 +219,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml" >
-            <img alt="ci-gettext-update-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" >
+            <img alt="ci-gettext-update-po" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
@@ -229,8 +229,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml">
-            <img alt="ci-gettext-compend-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-gettext-compend-po.yml">
+            <img alt="ci-gettext-compend-po" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
@@ -239,8 +239,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-statistic-po.yml">
-            <img alt="ci-gettext-statistic-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-gettext-statistic-po.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-gettext-statistic-po.yml">
+            <img alt="ci-gettext-statistic-po" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-gettext-statistic-po.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
@@ -249,56 +249,56 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml">
-            <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-push-pot.yml">
+            <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Push <code>.pot</code> files to TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml">
-            <img alt="ci-tmscli-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-pull-po.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-pull-po.yml">
+            <img alt="ci-tmscli-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-pull-po.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml">
-            <img alt="ci-tmscli-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-tmscli-readme.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-readme.yml">
+            <img alt="ci-tmscli-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-readme.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Push README sources to and pull its translations from TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml">
-            <img alt="ci-deploy-gh-pages" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml">
+            <img alt="ci-deploy-gh-pages" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Deploy the built documents to <code>gh-pages</code> branch.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml">
-            <img alt="ci-deploy-po-version" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
+            <img alt="ci-deploy-po-version" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-license-year.yml">
-            <img alt="ci-update-license-year" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-license-year.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml">
+            <img alt="ci-update-license-year" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update LICENSE file to the latest year.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml">
-            <img alt="ci-update-submodule" src="https://github.com/hwhsu1231/cmake-docs-l10n-v7/actions/workflows/ci-update-submodule.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml">
+            <img alt="ci-update-submodule" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update each of the submodules to their latest commit.</td>
@@ -393,19 +393,19 @@ You can preview translations in GitHub Pages:
       <tr>
         <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
         <td align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/master">master</a>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/latest">latest</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n/zh-cn/master">master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n/zh-cn/latest">latest</a>
           <span>…</span>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-cn/3.0">3.0</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n/zh-cn/3.0">3.0</a>
         </td>
       </tr>
       <tr>
         <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
         <td align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/master">master</a>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/latest">latest</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n/zh-tw/master">master</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n/zh-tw/latest">latest</a>
           <span>…</span>
-          <a href="https://hwhsu1231.github.io/cmake-docs-l10n-v7/zh-tw/3.0">3.0</a>
+          <a href="https://hwhsu1231.github.io/cmake-docs-l10n/zh-tw/3.0">3.0</a>
         </td>
       </tr>
     </tbody>
@@ -420,7 +420,7 @@ Licenses
 
 All the script files (<code>CMakeLists.txt</code> and <code>.cmake</code> files) and workflow files (<code>.yml</code> files inside <code>.github/workflows/</code> directory) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
 
-All the translation files (<code>.po</code> and <code>.pot</code> files inside the <a href="https://github.com/hwhsu1231/cmake-docs-l10n-v7/tree/l10n">l10n</a> branch) are owned by the upstream, and are subject to its copyright and license.
+All the translation files (<code>.po</code> and <code>.pot</code> files inside the <a href="https://github.com/hwhsu1231/cmake-docs-l10n/tree/l10n">l10n</a> branch) are owned by the upstream, and are subject to its copyright and license.
 
 <h2 id="translation-disclaimer"><a href="#table-of-contents">
 Translation Disclaimer
@@ -565,7 +565,7 @@ Contributors List
 Code Contributors
 </a></h3>
 
-<img alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=hwhsu1231/cmake-docs-l10n-v7&no_bot=true">
+<img alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=hwhsu1231/cmake-docs-l10n&no_bot=true">
 
 <h3 id="financial-contributors"><a href="#table-of-contents">
 Financial Contributors
