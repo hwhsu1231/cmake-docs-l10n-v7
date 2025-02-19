@@ -14,27 +14,7 @@ jobs:
   precondition:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Secrets
-        shell: bash
-        run: |
-          REQUIRED_SECRETS_EXIST=true
-          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
-            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
-            REQUIRED_SECRETS_EXIST=false
-          fi
-          if [[ "${REQUIRED_SECRETS_EXIST}" == "false" ]]; then
-            echo "Error: Some secrets are missing." >&2
-            exit 1
-          fi
-      - name: Check Variables
-        shell: bash
-        run: |
-          REQUIRED_VARIABLES_EXIST=true
-          if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
-            echo "Error: Some variables are missing." >&2
-            exit 1
-          fi
-      - name: Print Contexts/Inputs
+      - name: Print Contexts/Inputs/Variables/Secrets
         shell: bash
         run: |
           echo "[Contexts]"
@@ -52,6 +32,29 @@ jobs:
           echo "github.event.pull_request.merged = ${{ github.event.pull_request.merged }}"
           echo "github.event.pull_request.labels.*.name = ${{ toJson(github.event.pull_request.labels.*.name) }}"
           echo "[Inputs]"
+          echo "[Variables]"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+      - name: Check Required Variables
+        shell: bash
+        run: |
+          REQUIRED_VARIABLES_EXIST=true
+          if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
+            echo "Error: Some variables are missing." >&2
+            exit 1
+          fi
+      - name: Check Required Secrets
+        shell: bash
+        run: |
+          REQUIRED_SECRETS_EXIST=true
+          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
+            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
+            REQUIRED_SECRETS_EXIST=false
+          fi
+          if [[ "${REQUIRED_SECRETS_EXIST}" == "false" ]]; then
+            echo "Error: Some secrets are missing." >&2
+            exit 1
+          fi
 
   caller:
     needs: [ 'precondition' ]
