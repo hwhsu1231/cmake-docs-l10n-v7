@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.28\n"
+"Project-Id-Version: CMake 3.28\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:27+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/export.rst:44
+#: ../../../command/export.rst:43
 msgid "``NAMESPACE <namespace>``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgid ""
 "Prepend the ``<namespace>`` string to all target names written to the file."
 msgstr ""
 
-#: ../../../command/export.rst:48
+#: ../../../command/export.rst:46
 msgid "``APPEND``"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgid ""
 "incrementally export multiple targets to the same file."
 msgstr ""
 
-#: ../../../command/export.rst:54
+#: ../../../command/export.rst:50
 msgid "``EXPORT_LINK_INTERFACE_LIBRARIES``"
 msgstr ""
 
@@ -106,7 +106,7 @@ msgid ""
 "versions older than 2.8.12."
 msgstr ""
 
-#: ../../../command/export.rst:61
+#: ../../../command/export.rst:56
 msgid "``CXX_MODULES_DIRECTORY <directory>``"
 msgstr ""
 
