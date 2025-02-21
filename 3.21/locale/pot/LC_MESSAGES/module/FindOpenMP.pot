@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.21\n"
+"Project-Id-Version: CMake 3.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -51,7 +52,7 @@ msgid ""
 "Depending on the enabled components the following variables will be set:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:30
+#: ../../../../Modules/FindOpenMP.cmake:28
 msgid "``OpenMP_FOUND``"
 msgstr ""
 
@@ -62,7 +63,7 @@ msgid ""
 "all enabled languages were detected."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:34
+#: ../../../../Modules/FindOpenMP.cmake:32
 msgid "``OpenMP_VERSION``"
 msgstr ""
 
@@ -94,7 +95,7 @@ msgstr ""
 msgid "OpenMP compiler flags for ``<lang>``, separated by spaces."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:45
+#: ../../../../Modules/FindOpenMP.cmake:43
 msgid "``OpenMP_<lang>_INCLUDE_DIRS``"
 msgstr ""
 
@@ -129,7 +130,7 @@ msgid ""
 "Location of the individual libraries needed for OpenMP support in ``<lang>``."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:55
+#: ../../../../Modules/FindOpenMP.cmake:54
 msgid "``OpenMP_<lang>_LIBRARIES``"
 msgstr ""
 
@@ -142,7 +143,7 @@ msgstr ""
 msgid "Additionally, the module provides :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:60
+#: ../../../../Modules/FindOpenMP.cmake:59
 msgid "``OpenMP::OpenMP_<lang>``"
 msgstr ""
 
@@ -162,7 +163,7 @@ msgstr ""
 msgid "Boolean indicating if OpenMP is accessible through ``omp_lib.h``."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:67
+#: ../../../../Modules/FindOpenMP.cmake:66
 msgid "``OpenMP_Fortran_HAVE_OMPLIB_MODULE``"
 msgstr ""
 
@@ -176,7 +177,7 @@ msgstr ""
 msgid "The module will also try to provide the OpenMP version variables:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:73
+#: ../../../../Modules/FindOpenMP.cmake:71
 msgid "``OpenMP_<lang>_SPEC_DATE``"
 msgstr ""
 
@@ -201,7 +202,7 @@ msgstr ""
 msgid "Minor version of OpenMP implemented by the ``<lang>`` compiler."
 msgstr ""
 
-#: ../../../../Modules/FindOpenMP.cmake:80
+#: ../../../../Modules/FindOpenMP.cmake:79
 msgid "``OpenMP_<lang>_VERSION``"
 msgstr ""
 

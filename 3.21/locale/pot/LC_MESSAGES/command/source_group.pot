@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.21\n"
+"Project-Id-Version: CMake 3.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,7 +45,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/source_group.rst:25
+#: ../../../command/source_group.rst:19
 msgid "``TREE``"
 msgstr ""
 
@@ -56,7 +57,7 @@ msgid ""
 "files will be cut to be relative to ``<root>``."
 msgstr ""
 
-#: ../../../command/source_group.rst:31
+#: ../../../command/source_group.rst:27
 msgid "``PREFIX``"
 msgstr ""
 
@@ -66,7 +67,7 @@ msgid ""
 "in ``<prefix>`` source groups."
 msgstr ""
 
-#: ../../../command/source_group.rst:36
+#: ../../../command/source_group.rst:33
 msgid "``FILES``"
 msgstr ""
 
@@ -76,7 +77,7 @@ msgid ""
 "Relative paths are interpreted with respect to the current source directory."
 msgstr ""
 
-#: ../../../command/source_group.rst:40
+#: ../../../command/source_group.rst:38
 msgid "``REGULAR_EXPRESSION``"
 msgstr ""
 

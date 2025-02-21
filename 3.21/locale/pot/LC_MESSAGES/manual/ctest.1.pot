@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.21\n"
+"Project-Id-Version: CMake 3.21\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,7 +56,7 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:37
+#: ../../../manual/ctest.1.rst:33
 msgid "``--preset <preset>``, ``--preset=<preset>``"
 msgstr ""
 
@@ -67,7 +68,7 @@ msgid ""
 "more details."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:41
+#: ../../../manual/ctest.1.rst:39
 msgid "``--list-presets``"
 msgstr ""
 
@@ -77,7 +78,7 @@ msgid ""
 "CMake preset files."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:49
+#: ../../../manual/ctest.1.rst:43
 msgid "``-C <cfg>, --build-config <cfg>``"
 msgstr ""
 
@@ -92,7 +93,7 @@ msgid ""
 "tested.  Example configurations are ``Debug`` and ``Release``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:62
+#: ../../../manual/ctest.1.rst:51
 msgid "``--progress``"
 msgstr ""
 
@@ -116,7 +117,7 @@ msgid ""
 "`CTEST_PROGRESS_OUTPUT`."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:68
+#: ../../../manual/ctest.1.rst:64
 msgid "``-V,--verbose``"
 msgstr ""
 
@@ -130,7 +131,7 @@ msgid ""
 "displayed.  This option will show all test output."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:74
+#: ../../../manual/ctest.1.rst:70
 msgid "``-VV,--extra-verbose``"
 msgstr ""
 
@@ -144,7 +145,7 @@ msgid ""
 "displayed.  This option will show even more test output."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:80
+#: ../../../manual/ctest.1.rst:76
 msgid "``--debug``"
 msgstr ""
 
@@ -158,7 +159,7 @@ msgid ""
 "for debugging dashboard problems."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:85
+#: ../../../manual/ctest.1.rst:82
 msgid "``--output-on-failure``"
 msgstr ""
 
@@ -169,7 +170,7 @@ msgid ""
 "environment variable"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:88
+#: ../../../manual/ctest.1.rst:87
 msgid "``--stop-on-failure``"
 msgstr ""
 
@@ -177,7 +178,7 @@ msgstr ""
 msgid "Stop running the tests when the first failure happens."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:95
+#: ../../../manual/ctest.1.rst:90
 msgid "``-F``"
 msgstr ""
 
@@ -192,7 +193,7 @@ msgid ""
 "effect."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:106
+#: ../../../manual/ctest.1.rst:97
 msgid "``-j <jobs>, --parallel <jobs>``"
 msgstr ""
 
@@ -217,7 +218,7 @@ msgstr ""
 msgid "See `Label and Subproject Summary`_."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:115
+#: ../../../manual/ctest.1.rst:108
 msgid "``--resource-spec-file <file>``"
 msgstr ""
 
@@ -234,7 +235,7 @@ msgid ""
 "``ResourceSpecFile`` option of the `CTest Test Step`_."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:122
+#: ../../../manual/ctest.1.rst:117
 msgid "``--test-load <level>``"
 msgstr ""
 
@@ -250,7 +251,7 @@ msgid ""
 "option of the `CTest Test Step`_."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:130
+#: ../../../manual/ctest.1.rst:124
 msgid "``-Q,--quiet``"
 msgstr ""
 
@@ -266,7 +267,7 @@ msgid ""
 "is specified."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:135
+#: ../../../manual/ctest.1.rst:132
 msgid "``-O <file>, --output-log <file>``"
 msgstr ""
 
@@ -279,7 +280,7 @@ msgid ""
 "This option tells CTest to write all its output to a ``<file>`` log file."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:143
+#: ../../../manual/ctest.1.rst:137
 msgid "``--output-junit <file>``"
 msgstr ""
 
@@ -295,7 +296,7 @@ msgid ""
 "with the :command:`ctest_test` command instead."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:160
+#: ../../../manual/ctest.1.rst:145
 msgid "``-N,--show-only[=<format>]``"
 msgstr ""
 
@@ -313,7 +314,7 @@ msgstr ""
 msgid "``<format>`` can be one of the following values."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:156
+#: ../../../manual/ctest.1.rst:154
 msgid "``human``"
 msgstr ""
 
@@ -323,7 +324,7 @@ msgid ""
 "default."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:160
+#: ../../../manual/ctest.1.rst:158
 msgid "``json-v1``"
 msgstr ""
 
@@ -332,7 +333,7 @@ msgid ""
 "Dump the test information in JSON format. See `Show as JSON Object Model`_."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:170
+#: ../../../manual/ctest.1.rst:162
 msgid "``-L <regex>, --label-regex <regex>``"
 msgstr ""
 
@@ -351,7 +352,7 @@ msgid ""
 "`Label Matching`_."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:176
+#: ../../../manual/ctest.1.rst:172
 msgid "``-R <regex>, --tests-regex <regex>``"
 msgstr ""
 
@@ -365,7 +366,7 @@ msgid ""
 "regular expression."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:182
+#: ../../../manual/ctest.1.rst:178
 msgid "``-E <regex>, --exclude-regex <regex>``"
 msgstr ""
 
@@ -379,7 +380,7 @@ msgid ""
 "regular expression."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:191
+#: ../../../manual/ctest.1.rst:184
 msgid "``-LE <regex>, --label-exclude <regex>``"
 msgstr ""
 
@@ -396,7 +397,7 @@ msgid ""
 "relationship).  See `Label Matching`_."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:202
+#: ../../../manual/ctest.1.rst:193
 msgid "``-FA <regex>, --fixture-exclude-any <regex>``"
 msgstr ""
 
@@ -416,7 +417,7 @@ msgid ""
 "setup tests that fail."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:205
+#: ../../../manual/ctest.1.rst:204
 msgid "``-FS <regex>, --fixture-exclude-setup <regex>``"
 msgstr ""
 
@@ -424,7 +425,7 @@ msgstr ""
 msgid "Same as ``-FA`` except only matching setup tests are excluded."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:208
+#: ../../../manual/ctest.1.rst:207
 msgid "``-FC <regex>, --fixture-exclude-cleanup <regex>``"
 msgstr ""
 
@@ -432,7 +433,7 @@ msgstr ""
 msgid "Same as ``-FA`` except only matching cleanup tests are excluded."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:219
+#: ../../../manual/ctest.1.rst:210
 msgid "``-D <dashboard>, --dashboard <dashboard>``"
 msgstr ""
 
@@ -455,7 +456,7 @@ msgstr ""
 msgid "See `Dashboard Client`_."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:227
+#: ../../../manual/ctest.1.rst:221
 msgid "``-D <var>:<type>=<value>``"
 msgstr ""
 
@@ -471,7 +472,7 @@ msgid ""
 "match any of the known dashboard types."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:236
+#: ../../../manual/ctest.1.rst:229
 msgid "``-M <model>, --test-model <model>``"
 msgstr ""
 
@@ -486,7 +487,7 @@ msgid ""
 "``-T`` is similar to ``-D``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:246
+#: ../../../manual/ctest.1.rst:238
 msgid "``-T <action>, --test-action <action>``"
 msgstr ""
 
@@ -502,7 +503,7 @@ msgid ""
 "D``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:257
+#: ../../../manual/ctest.1.rst:248
 msgid "``-S <script>, --script <script>``"
 msgstr ""
 
@@ -519,7 +520,7 @@ msgid ""
 "appropriate options."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:267
+#: ../../../manual/ctest.1.rst:259
 msgid "``-SP <script>, --script-new-process <script>``"
 msgstr ""
 
@@ -531,7 +532,7 @@ msgid ""
 "impact other ``-S`` scripts."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:276
+#: ../../../manual/ctest.1.rst:269
 msgid "``-I [Start,End,Stride,test#,test#|Test file], --tests-information``"
 msgstr ""
 
@@ -548,7 +549,7 @@ msgid ""
 "contains the same syntax as the command line."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:282
+#: ../../../manual/ctest.1.rst:278
 msgid "``-U, --union``"
 msgstr ""
 
@@ -562,7 +563,7 @@ msgid ""
 "tests are run.  By specifying ``-U`` the union of tests is run instead."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:292
+#: ../../../manual/ctest.1.rst:284
 msgid "``--rerun-failed``"
 msgstr ""
 
@@ -580,7 +581,7 @@ msgid ""
 "set of tests that most recently failed (if any)."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:311
+#: ../../../manual/ctest.1.rst:294
 msgid "``--repeat <mode>:<n>``"
 msgstr ""
 
@@ -590,7 +591,7 @@ msgid ""
 "modes are:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:300
+#: ../../../manual/ctest.1.rst:298
 msgid "``until-fail``"
 msgstr ""
 
@@ -600,7 +601,7 @@ msgid ""
 "This is useful in finding sporadic failures in test cases."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:305
+#: ../../../manual/ctest.1.rst:302
 msgid "``until-pass``"
 msgstr ""
 
@@ -611,7 +612,7 @@ msgid ""
 "in test cases."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:311
+#: ../../../manual/ctest.1.rst:307
 msgid "``after-timeout``"
 msgstr ""
 
@@ -622,7 +623,7 @@ msgid ""
 "cases on busy machines."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:314
+#: ../../../manual/ctest.1.rst:313
 msgid "``--repeat-until-fail <n>``"
 msgstr ""
 
@@ -630,7 +631,7 @@ msgstr ""
 msgid "Equivalent to ``--repeat until-fail:<n>``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:321
+#: ../../../manual/ctest.1.rst:316
 msgid "``--max-width <width>``"
 msgstr ""
 
@@ -645,7 +646,7 @@ msgid ""
 "very annoying."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:333
+#: ../../../manual/ctest.1.rst:323
 msgid "``--interactive-debug-mode [0|1]``"
 msgstr ""
 
@@ -668,7 +669,7 @@ msgid ""
 "processes, all system debug popup windows are always blocked."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:342
+#: ../../../manual/ctest.1.rst:335
 msgid "``--no-label-summary``"
 msgstr ""
 
@@ -683,7 +684,7 @@ msgid ""
 "extra is printed."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:351
+#: ../../../manual/ctest.1.rst:344
 msgid "``--no-subproject-summary``"
 msgstr ""
 
@@ -706,7 +707,7 @@ msgstr ""
 msgid "``--test-dir <dir>`` Specify the directory in which to look for tests."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:360
+#: ../../../manual/ctest.1.rst:359
 msgid "``--test-output-size-passed <size>``"
 msgstr ""
 
@@ -714,7 +715,7 @@ msgstr ""
 msgid "Limit the output for passed tests to ``<size>`` bytes."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:363
+#: ../../../manual/ctest.1.rst:362
 msgid "``--test-output-size-failed <size>``"
 msgstr ""
 
@@ -722,7 +723,7 @@ msgstr ""
 msgid "Limit the output for failed tests to ``<size>`` bytes."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:369
+#: ../../../manual/ctest.1.rst:365
 msgid "``--overwrite``"
 msgstr ""
 
@@ -736,7 +737,7 @@ msgid ""
 "option will overwrite the configuration option."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:376
+#: ../../../manual/ctest.1.rst:371
 msgid "``--force-new-ctest-process``"
 msgstr ""
 
@@ -751,7 +752,7 @@ msgid ""
 "child CTest processes."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:382
+#: ../../../manual/ctest.1.rst:378
 msgid "``--schedule-random``"
 msgstr ""
 
@@ -765,7 +766,7 @@ msgid ""
 "detect implicit dependencies in a test suite."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:386
+#: ../../../manual/ctest.1.rst:384
 msgid "``--submit-index``"
 msgstr ""
 
@@ -773,7 +774,7 @@ msgstr ""
 msgid "Legacy option for old Dart2 dashboard server feature. Do not use."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:393
+#: ../../../manual/ctest.1.rst:388
 msgid "``--timeout <seconds>``"
 msgstr ""
 
@@ -787,7 +788,7 @@ msgid ""
 "a timeout set on them via the :prop_test:`TIMEOUT` property."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:400
+#: ../../../manual/ctest.1.rst:395
 msgid "``--stop-time <time>``"
 msgstr ""
 
@@ -802,7 +803,7 @@ msgid ""
 "accepted.  Local time is assumed if no timezone is specified."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:406
+#: ../../../manual/ctest.1.rst:402
 msgid "``--print-labels``"
 msgstr ""
 
@@ -816,7 +817,7 @@ msgid ""
 "labels associated with the test set."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:414
+#: ../../../manual/ctest.1.rst:408
 msgid "``--no-tests=<[error|ignore]>``"
 msgstr ""
 
@@ -832,7 +833,7 @@ msgid ""
 "were found or by ignoring it."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:6
+#: ../../../manual/OPTIONS_HELP.txt:3
 msgid "``--help,-help,-usage,-h,-H,/?``"
 msgstr ""
 
@@ -844,7 +845,7 @@ msgstr ""
 msgid "Usage describes the basic command line interface and its options."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:12
+#: ../../../manual/OPTIONS_HELP.txt:8
 msgid "``--version,-version,/V [<f>]``"
 msgstr ""
 
@@ -856,7 +857,7 @@ msgstr ""
 msgid "If a file is specified, the version is written into it. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:18
+#: ../../../manual/OPTIONS_HELP.txt:14
 msgid "``--help-full [<f>]``"
 msgstr ""
 
@@ -868,7 +869,7 @@ msgstr ""
 msgid "All manuals are printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:24
+#: ../../../manual/OPTIONS_HELP.txt:20
 msgid "``--help-manual <man> [<f>]``"
 msgstr ""
 
@@ -880,7 +881,7 @@ msgstr ""
 msgid "The specified manual is printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:31
+#: ../../../manual/OPTIONS_HELP.txt:26
 msgid "``--help-manual-list [<f>]``"
 msgstr ""
 
@@ -894,7 +895,7 @@ msgid ""
 "``--help-manual`` option followed by a manual name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:38
+#: ../../../manual/OPTIONS_HELP.txt:33
 msgid "``--help-command <cmd> [<f>]``"
 msgstr ""
 
@@ -908,7 +909,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:45
+#: ../../../manual/OPTIONS_HELP.txt:40
 msgid "``--help-command-list [<f>]``"
 msgstr ""
 
@@ -922,7 +923,7 @@ msgid ""
 "``--help-command`` option followed by a command name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:52
+#: ../../../manual/OPTIONS_HELP.txt:47
 msgid "``--help-commands [<f>]``"
 msgstr ""
 
@@ -936,7 +937,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:59
+#: ../../../manual/OPTIONS_HELP.txt:54
 msgid "``--help-module <mod> [<f>]``"
 msgstr ""
 
@@ -950,7 +951,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:66
+#: ../../../manual/OPTIONS_HELP.txt:61
 msgid "``--help-module-list [<f>]``"
 msgstr ""
 
@@ -964,7 +965,7 @@ msgid ""
 "``--help-module`` option followed by a module name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:73
+#: ../../../manual/OPTIONS_HELP.txt:68
 msgid "``--help-modules [<f>]``"
 msgstr ""
 
@@ -978,7 +979,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:80
+#: ../../../manual/OPTIONS_HELP.txt:75
 msgid "``--help-policy <cmp> [<f>]``"
 msgstr ""
 
@@ -992,7 +993,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:87
+#: ../../../manual/OPTIONS_HELP.txt:82
 msgid "``--help-policy-list [<f>]``"
 msgstr ""
 
@@ -1006,7 +1007,7 @@ msgid ""
 "``--help-policy`` option followed by a policy name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:94
+#: ../../../manual/OPTIONS_HELP.txt:89
 msgid "``--help-policies [<f>]``"
 msgstr ""
 
@@ -1020,7 +1021,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:101
+#: ../../../manual/OPTIONS_HELP.txt:96
 msgid "``--help-property <prop> [<f>]``"
 msgstr ""
 
@@ -1034,7 +1035,7 @@ msgid ""
 "in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:108
+#: ../../../manual/OPTIONS_HELP.txt:103
 msgid "``--help-property-list [<f>]``"
 msgstr ""
 
@@ -1048,7 +1049,7 @@ msgid ""
 "``--help-property`` option followed by a property name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:115
+#: ../../../manual/OPTIONS_HELP.txt:110
 msgid "``--help-properties [<f>]``"
 msgstr ""
 
@@ -1062,7 +1063,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:122
+#: ../../../manual/OPTIONS_HELP.txt:117
 msgid "``--help-variable <var> [<f>]``"
 msgstr ""
 
@@ -1076,7 +1077,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:129
+#: ../../../manual/OPTIONS_HELP.txt:124
 msgid "``--help-variable-list [<f>]``"
 msgstr ""
 
@@ -1090,7 +1091,7 @@ msgid ""
 "``--help-variable`` option followed by a variable name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:136
+#: ../../../manual/OPTIONS_HELP.txt:131
 msgid "``--help-variables [<f>]``"
 msgstr ""
 
@@ -1278,7 +1279,7 @@ msgid ""
 "Other options that affect this mode include:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:524
+#: ../../../manual/ctest.1.rst:521
 msgid "``--build-target``"
 msgstr ""
 
@@ -1290,7 +1291,7 @@ msgstr ""
 msgid "If left out the ``all`` target is built."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:529
+#: ../../../manual/ctest.1.rst:526
 msgid "``--build-nocmake``"
 msgstr ""
 
@@ -1302,7 +1303,7 @@ msgstr ""
 msgid "Skip the cmake step."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:534
+#: ../../../manual/ctest.1.rst:531
 msgid "``--build-run-dir``"
 msgstr ""
 
@@ -1314,7 +1315,7 @@ msgstr ""
 msgid "Directory where programs will be after it has been compiled."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:537
+#: ../../../manual/ctest.1.rst:536
 msgid "``--build-two-config``"
 msgstr ""
 
@@ -1322,7 +1323,7 @@ msgstr ""
 msgid "Run CMake twice."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:540
+#: ../../../manual/ctest.1.rst:539
 msgid "``--build-exe-dir``"
 msgstr ""
 
@@ -1330,7 +1331,7 @@ msgstr ""
 msgid "Specify the directory for the executable."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:543
+#: ../../../manual/ctest.1.rst:542
 msgid "``--build-generator``"
 msgstr ""
 
@@ -1339,7 +1340,7 @@ msgid ""
 "Specify the generator to use. See the :manual:`cmake-generators(7)` manual."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:546
+#: ../../../manual/ctest.1.rst:545
 msgid "``--build-generator-platform``"
 msgstr ""
 
@@ -1347,7 +1348,7 @@ msgstr ""
 msgid "Specify the generator-specific platform."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:549
+#: ../../../manual/ctest.1.rst:548
 msgid "``--build-generator-toolset``"
 msgstr ""
 
@@ -1355,7 +1356,7 @@ msgstr ""
 msgid "Specify the generator-specific toolset."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:552
+#: ../../../manual/ctest.1.rst:551
 msgid "``--build-project``"
 msgstr ""
 
@@ -1363,7 +1364,7 @@ msgstr ""
 msgid "Specify the name of the project to build."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:556
+#: ../../../manual/ctest.1.rst:554
 msgid "``--build-makeprogram``"
 msgstr ""
 
@@ -1373,7 +1374,7 @@ msgid ""
 "building the project. Only applicable for Make and Ninja based generators."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:559
+#: ../../../manual/ctest.1.rst:558
 msgid "``--build-noclean``"
 msgstr ""
 
@@ -1381,7 +1382,7 @@ msgstr ""
 msgid "Skip the make clean step."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:563
+#: ../../../manual/ctest.1.rst:561
 msgid "``--build-config-sample``"
 msgstr ""
 
@@ -1391,7 +1392,7 @@ msgid ""
 "used.  e.g.  ``Debug``, ``Release`` etc."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:569
+#: ../../../manual/ctest.1.rst:565
 msgid "``--build-options``"
 msgstr ""
 
@@ -1403,7 +1404,7 @@ msgid ""
 "with the possible exception of ``--test-command``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:574
+#: ../../../manual/ctest.1.rst:571
 msgid "``--test-command``"
 msgstr ""
 
@@ -1414,7 +1415,7 @@ msgid ""
 "command line, so it must be the last option given."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:577
+#: ../../../manual/ctest.1.rst:576
 msgid "``--test-timeout``"
 msgstr ""
 
@@ -1445,7 +1446,7 @@ msgstr ""
 msgid "Options for Dashboard Client include:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:603
+#: ../../../manual/ctest.1.rst:594
 msgid "``--group <group>``"
 msgstr ""
 
@@ -1466,7 +1467,7 @@ msgid ""
 "behavior is unchanged."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:609
+#: ../../../manual/ctest.1.rst:605
 msgid "``-A <file>, --add-notes <file>``"
 msgstr ""
 
@@ -1479,7 +1480,7 @@ msgid ""
 "This option tells CTest to include a notes file when submitting dashboard."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:614
+#: ../../../manual/ctest.1.rst:611
 msgid "``--tomorrow-tag``"
 msgstr ""
 
@@ -1491,7 +1492,7 @@ msgstr ""
 msgid "This is useful if the build will not finish in one day."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:619
+#: ../../../manual/ctest.1.rst:616
 msgid "``--extra-submit <file>[;<file>]``"
 msgstr ""
 
@@ -1503,7 +1504,7 @@ msgstr ""
 msgid "This option will submit extra files to the dashboard."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:625
+#: ../../../manual/ctest.1.rst:621
 msgid "``--http1.0``"
 msgstr ""
 
@@ -1517,7 +1518,7 @@ msgid ""
 "dashboard, instead of `HTTP 1.1`."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:632
+#: ../../../manual/ctest.1.rst:627
 msgid "``--no-compress-output``"
 msgstr ""
 
@@ -1542,7 +1543,7 @@ msgid ""
 "run as a dashboard client:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:643
+#: ../../../manual/ctest.1.rst:640
 msgid "``Start``"
 msgstr ""
 
@@ -1552,7 +1553,7 @@ msgid ""
 "following steps. See the `CTest Start Step`_ section below."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:648
+#: ../../../manual/ctest.1.rst:645
 msgid "``Update``"
 msgstr ""
 
@@ -1563,7 +1564,7 @@ msgid ""
 "Step`_ section below."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:653
+#: ../../../manual/ctest.1.rst:650
 msgid "``Configure``"
 msgstr ""
 
@@ -1573,7 +1574,7 @@ msgid ""
 "configuration output log. See the `CTest Configure Step`_ section below."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:658
+#: ../../../manual/ctest.1.rst:655
 msgid "``Build``"
 msgstr ""
 
@@ -1584,7 +1585,7 @@ msgid ""
 "section below."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:664
+#: ../../../manual/ctest.1.rst:660
 msgid "``Test``"
 msgstr ""
 
@@ -1595,7 +1596,7 @@ msgid ""
 "See the `CTest Test Step`_ section below."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:669
+#: ../../../manual/ctest.1.rst:666
 msgid "``Coverage``"
 msgstr ""
 
@@ -1605,7 +1606,7 @@ msgid ""
 "recording its output. See the `CTest Coverage Step`_ section below."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:674
+#: ../../../manual/ctest.1.rst:671
 msgid "``MemCheck``"
 msgstr ""
 
@@ -1616,7 +1617,7 @@ msgid ""
 "Step`_ section below."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:679
+#: ../../../manual/ctest.1.rst:676
 msgid "``Submit``"
 msgstr ""
 
@@ -1634,7 +1635,7 @@ msgstr ""
 msgid "CTest defines three modes of operation as a dashboard client:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:690
+#: ../../../manual/ctest.1.rst:686
 msgid "``Nightly``"
 msgstr ""
 
@@ -1646,7 +1647,7 @@ msgid ""
 "the ``Update`` step reports no changes to the source tree."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:696
+#: ../../../manual/ctest.1.rst:692
 msgid "``Continuous``"
 msgstr ""
 
@@ -1658,7 +1659,7 @@ msgid ""
 "``Update`` step if it reports no changes to the source tree."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:701
+#: ../../../manual/ctest.1.rst:698
 msgid "``Experimental``"
 msgstr ""
 
@@ -1781,7 +1782,7 @@ msgstr ""
 msgid "Configuration settings include:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:778
+#: ../../../manual/ctest.1.rst:774
 msgid "``BuildDirectory``"
 msgstr ""
 
@@ -1797,7 +1798,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: :variable:`PROJECT_BINARY_DIR`"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:784
+#: ../../../manual/ctest.1.rst:780
 msgid "``SourceDirectory``"
 msgstr ""
 
@@ -1827,7 +1828,7 @@ msgstr ""
 msgid "Configuration settings to specify the version control tool include:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:800
+#: ../../../manual/ctest.1.rst:796
 msgid "``BZRCommand``"
 msgstr ""
 
@@ -1845,7 +1846,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: none"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:806
+#: ../../../manual/ctest.1.rst:802
 msgid "``BZRUpdateOptions``"
 msgstr ""
 
@@ -1857,7 +1858,7 @@ msgstr ""
 msgid "`CTest Script`_ variable: :variable:`CTEST_BZR_UPDATE_OPTIONS`"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:812
+#: ../../../manual/ctest.1.rst:808
 msgid "``CVSCommand``"
 msgstr ""
 
@@ -1873,7 +1874,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CVSCOMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:818
+#: ../../../manual/ctest.1.rst:814
 msgid "``CVSUpdateOptions``"
 msgstr ""
 
@@ -1889,7 +1890,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CVS_UPDATE_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:829
+#: ../../../manual/ctest.1.rst:820
 msgid "``GITCommand``"
 msgstr ""
 
@@ -1913,7 +1914,7 @@ msgid ""
 "a different approach."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:835
+#: ../../../manual/ctest.1.rst:831
 msgid "``GITInitSubmodules``"
 msgstr ""
 
@@ -1929,7 +1930,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_GIT_INIT_SUBMODULES``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:843
+#: ../../../manual/ctest.1.rst:837
 msgid "``GITUpdateCustom``"
 msgstr ""
 
@@ -1948,7 +1949,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_GIT_UPDATE_CUSTOM``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:849
+#: ../../../manual/ctest.1.rst:845
 msgid "``GITUpdateOptions``"
 msgstr ""
 
@@ -1964,7 +1965,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``GIT_UPDATE_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:855
+#: ../../../manual/ctest.1.rst:851
 msgid "``HGCommand``"
 msgstr ""
 
@@ -1976,7 +1977,7 @@ msgstr ""
 msgid "`CTest Script`_ variable: :variable:`CTEST_HG_COMMAND`"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:861
+#: ../../../manual/ctest.1.rst:857
 msgid "``HGUpdateOptions``"
 msgstr ""
 
@@ -1988,7 +1989,7 @@ msgstr ""
 msgid "`CTest Script`_ variable: :variable:`CTEST_HG_UPDATE_OPTIONS`"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:867
+#: ../../../manual/ctest.1.rst:863
 msgid "``P4Client``"
 msgstr ""
 
@@ -2004,7 +2005,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_P4_CLIENT``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:873
+#: ../../../manual/ctest.1.rst:869
 msgid "``P4Command``"
 msgstr ""
 
@@ -2020,7 +2021,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``P4COMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:879
+#: ../../../manual/ctest.1.rst:875
 msgid "``P4Options``"
 msgstr ""
 
@@ -2036,7 +2037,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_P4_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:887
+#: ../../../manual/ctest.1.rst:881
 msgid "``P4UpdateCustom``"
 msgstr ""
 
@@ -2059,7 +2060,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_P4_UPDATE_CUSTOM``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:893
+#: ../../../manual/ctest.1.rst:889
 msgid "``P4UpdateOptions``"
 msgstr ""
 
@@ -2075,7 +2076,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_P4_UPDATE_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:899
+#: ../../../manual/ctest.1.rst:895
 msgid "``SVNCommand``"
 msgstr ""
 
@@ -2092,7 +2093,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``SVNCOMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:905
+#: ../../../manual/ctest.1.rst:901
 msgid "``SVNOptions``"
 msgstr ""
 
@@ -2108,7 +2109,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_SVN_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:911
+#: ../../../manual/ctest.1.rst:907
 msgid "``SVNUpdateOptions``"
 msgstr ""
 
@@ -2124,7 +2125,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``SVN_UPDATE_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:919
+#: ../../../manual/ctest.1.rst:913
 msgid "``UpdateCommand``"
 msgstr ""
 
@@ -2144,7 +2145,7 @@ msgid ""
 "``<vcs>``, else ``UPDATE_COMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:926
+#: ../../../manual/ctest.1.rst:921
 msgid "``UpdateOptions``"
 msgstr ""
 
@@ -2162,7 +2163,7 @@ msgid ""
 "``UPDATE_TYPE`` is ``<vcs>``, else ``UPDATE_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:936
+#: ../../../manual/ctest.1.rst:928
 msgid "``UpdateType``"
 msgstr ""
 
@@ -2183,7 +2184,7 @@ msgid ""
 "``CTEST_UPDATE_TYPE``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:945
+#: ../../../manual/ctest.1.rst:940
 msgid "``UpdateVersionOnly``"
 msgstr ""
 
@@ -2198,7 +2199,7 @@ msgstr ""
 msgid "`CTest Script`_ variable: :variable:`CTEST_UPDATE_VERSION_ONLY`"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:958
+#: ../../../manual/ctest.1.rst:949
 msgid "``UpdateVersionOverride``"
 msgstr ""
 
@@ -2223,7 +2224,7 @@ msgstr ""
 msgid "Additional configuration settings include:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:972
+#: ../../../manual/ctest.1.rst:962
 msgid "``NightlyStartTime``"
 msgstr ""
 
@@ -2256,7 +2257,7 @@ msgid ""
 "Arguments to the command may specify some of the step settings."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:991
+#: ../../../manual/ctest.1.rst:984
 msgid "``ConfigureCommand``"
 msgstr ""
 
@@ -2276,8 +2277,8 @@ msgid ""
 "variable:`PROJECT_SOURCE_DIR`"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1001 ../../../manual/ctest.1.rst:1033
-#: ../../../manual/ctest.1.rst:1087
+#: ../../../manual/ctest.1.rst:993 ../../../manual/ctest.1.rst:1025
+#: ../../../manual/ctest.1.rst:1079
 msgid "``LabelsForSubprojects``"
 msgstr ""
 
@@ -2309,7 +2310,7 @@ msgid ""
 "Arguments to the command may specify some of the step settings."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1023
+#: ../../../manual/ctest.1.rst:1013
 msgid "``DefaultCTestConfigurationType``"
 msgstr ""
 
@@ -2332,7 +2333,7 @@ msgid ""
 "initialized by the :envvar:`CMAKE_CONFIG_TYPE` environment variable"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1042
+#: ../../../manual/ctest.1.rst:1035
 msgid "``MakeCommand``"
 msgstr ""
 
@@ -2352,7 +2353,7 @@ msgid ""
 "command:`build_command` command"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1058
+#: ../../../manual/ctest.1.rst:1044
 msgid "``UseLaunchers``"
 msgstr ""
 
@@ -2387,7 +2388,7 @@ msgid ""
 "Arguments to the command may specify some of the step settings."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1077
+#: ../../../manual/ctest.1.rst:1070
 msgid "``ResourceSpecFile``"
 msgstr ""
 
@@ -2409,7 +2410,7 @@ msgstr ""
 msgid "See :ref:`ctest-resource-allocation` for more information."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1094
+#: ../../../manual/ctest.1.rst:1089
 msgid "``TestLoad``"
 msgstr ""
 
@@ -2421,7 +2422,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_TEST_LOAD``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1101
+#: ../../../manual/ctest.1.rst:1096
 msgid "``TimeOut``"
 msgstr ""
 
@@ -2455,7 +2456,7 @@ msgid ""
 "Arguments to the command may specify some of the step settings."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1121
+#: ../../../manual/ctest.1.rst:1115
 msgid "``CoverageCommand``"
 msgstr ""
 
@@ -2473,7 +2474,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``COVERAGE_COMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1129
+#: ../../../manual/ctest.1.rst:1123
 msgid "``CoverageExtraFlags``"
 msgstr ""
 
@@ -2503,7 +2504,7 @@ msgid ""
 "Arguments to the command may specify some of the step settings."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1146
+#: ../../../manual/ctest.1.rst:1141
 msgid "``MemoryCheckCommand``"
 msgstr ""
 
@@ -2521,7 +2522,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``MEMORYCHECK_COMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1153
+#: ../../../manual/ctest.1.rst:1148
 msgid "``MemoryCheckCommandOptions``"
 msgstr ""
 
@@ -2539,7 +2540,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``MEMORYCHECK_COMMAND_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1159
+#: ../../../manual/ctest.1.rst:1155
 msgid "``MemoryCheckType``"
 msgstr ""
 
@@ -2555,7 +2556,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``MEMORYCHECK_TYPE``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1165
+#: ../../../manual/ctest.1.rst:1161
 msgid "``MemoryCheckSanitizerOptions``"
 msgstr ""
 
@@ -2573,7 +2574,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``MEMORYCHECK_SANITIZER_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1173
+#: ../../../manual/ctest.1.rst:1167
 msgid "``MemoryCheckSuppressionFile``"
 msgstr ""
 
@@ -2592,7 +2593,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``MEMORYCHECK_SUPPRESSIONS_FILE``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1182
+#: ../../../manual/ctest.1.rst:1177
 msgid "``BoundsCheckerCommand``"
 msgstr ""
 
@@ -2602,7 +2603,7 @@ msgid ""
 "with Bounds Checker."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1189
+#: ../../../manual/ctest.1.rst:1184
 msgid "``PurifyCommand``"
 msgstr ""
 
@@ -2616,7 +2617,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``PURIFYCOMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1196
+#: ../../../manual/ctest.1.rst:1191
 msgid "``ValgrindCommand``"
 msgstr ""
 
@@ -2630,7 +2631,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``VALGRIND_COMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1203
+#: ../../../manual/ctest.1.rst:1198
 msgid "``ValgrindCommandOptions``"
 msgstr ""
 
@@ -2644,7 +2645,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``VALGRIND_COMMAND_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1210
+#: ../../../manual/ctest.1.rst:1205
 msgid "``DrMemoryCommand``"
 msgstr ""
 
@@ -2658,7 +2659,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``DRMEMORY_COMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1217
+#: ../../../manual/ctest.1.rst:1212
 msgid "``DrMemoryCommandOptions``"
 msgstr ""
 
@@ -2672,7 +2673,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``DRMEMORY_COMMAND_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1224
+#: ../../../manual/ctest.1.rst:1219
 msgid "``CudaSanitizerCommand``"
 msgstr ""
 
@@ -2686,7 +2687,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CUDA_SANITIZER_COMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1231
+#: ../../../manual/ctest.1.rst:1226
 msgid "``CudaSanitizerCommandOptions``"
 msgstr ""
 
@@ -2710,7 +2711,7 @@ msgid ""
 "Arguments to the command may specify some of the step settings."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1248
+#: ../../../manual/ctest.1.rst:1243
 msgid "``BuildName``"
 msgstr ""
 
@@ -2728,7 +2729,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``BUILDNAME``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1254
+#: ../../../manual/ctest.1.rst:1250
 msgid "``CDashVersion``"
 msgstr ""
 
@@ -2745,7 +2746,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_CDASH_VERSION``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1261
+#: ../../../manual/ctest.1.rst:1256
 msgid "``CTestSubmitRetryCount``"
 msgstr ""
 
@@ -2763,7 +2764,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_SUBMIT_RETRY_COUNT``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1268
+#: ../../../manual/ctest.1.rst:1263
 msgid "``CTestSubmitRetryDelay``"
 msgstr ""
 
@@ -2781,7 +2782,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_SUBMIT_RETRY_DELAY``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1277
+#: ../../../manual/ctest.1.rst:1270
 msgid "``CurlOptions``"
 msgstr ""
 
@@ -2800,7 +2801,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_CURL_OPTIONS``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1286
+#: ../../../manual/ctest.1.rst:1279
 msgid "``DropLocation``"
 msgstr ""
 
@@ -2823,7 +2824,7 @@ msgid ""
 "``CTEST_DROP_LOCATION``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1295
+#: ../../../manual/ctest.1.rst:1288
 msgid "``DropMethod``"
 msgstr ""
 
@@ -2837,7 +2838,7 @@ msgid ""
 "``CTEST_DROP_METHOD``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1304
+#: ../../../manual/ctest.1.rst:1297
 msgid "``DropSite``"
 msgstr ""
 
@@ -2851,7 +2852,7 @@ msgid ""
 "``CTEST_DROP_SITE``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1313
+#: ../../../manual/ctest.1.rst:1306
 msgid "``DropSitePassword``"
 msgstr ""
 
@@ -2865,7 +2866,7 @@ msgid ""
 "``CTEST_DROP_SITE_PASWORD``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1322
+#: ../../../manual/ctest.1.rst:1315
 msgid "``DropSiteUser``"
 msgstr ""
 
@@ -2879,7 +2880,7 @@ msgid ""
 "``CTEST_DROP_SITE_USER``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1328
+#: ../../../manual/ctest.1.rst:1324
 msgid "``IsCDash``"
 msgstr ""
 
@@ -2891,7 +2892,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``CTEST_DROP_SITE_CDASH``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1334
+#: ../../../manual/ctest.1.rst:1330
 msgid "``ScpCommand``"
 msgstr ""
 
@@ -2903,7 +2904,7 @@ msgstr ""
 msgid ":module:`CTest` module variable: ``SCPCOMMAND``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1342
+#: ../../../manual/ctest.1.rst:1336
 msgid "``Site``"
 msgstr ""
 
@@ -2923,7 +2924,7 @@ msgid ""
 "`site_name` command"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1350
+#: ../../../manual/ctest.1.rst:1344
 msgid "``SubmitURL``"
 msgstr ""
 
@@ -2943,7 +2944,7 @@ msgid ""
 "``CTEST_SUBMIT_URL``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1357
+#: ../../../manual/ctest.1.rst:1352
 msgid "``TriggerSite``"
 msgstr ""
 
@@ -2968,7 +2969,7 @@ msgid ""
 "is defined as follows:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1369
+#: ../../../manual/ctest.1.rst:1368
 msgid "``kind``"
 msgstr ""
 
@@ -2976,7 +2977,7 @@ msgstr ""
 msgid "The string \"ctestInfo\"."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1377 ../../../manual/ctest.1.rst:1553
+#: ../../../manual/ctest.1.rst:1371 ../../../manual/ctest.1.rst:1550
 msgid "``version``"
 msgstr ""
 
@@ -2992,7 +2993,7 @@ msgstr ""
 msgid "A non-negative integer specifying the major version component."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1377
+#: ../../../manual/ctest.1.rst:1376
 msgid "``minor``"
 msgstr ""
 
@@ -3000,7 +3001,7 @@ msgstr ""
 msgid "A non-negative integer specifying the minor version component."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1398
+#: ../../../manual/ctest.1.rst:1379
 msgid "``backtraceGraph``"
 msgstr ""
 
@@ -3025,7 +3026,7 @@ msgstr ""
 msgid "List of file names."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1398
+#: ../../../manual/ctest.1.rst:1387
 msgid "``nodes``"
 msgstr ""
 
@@ -3033,7 +3034,7 @@ msgstr ""
 msgid "List of node JSON objects with members:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1390 ../../../manual/ctest.1.rst:1410
+#: ../../../manual/ctest.1.rst:1390 ../../../manual/ctest.1.rst:1409
 msgid "``command``"
 msgstr ""
 
@@ -3057,7 +3058,7 @@ msgstr ""
 msgid "Line number in the file where the backtrace was added."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1398
+#: ../../../manual/ctest.1.rst:1396
 msgid "``parent``"
 msgstr ""
 
@@ -3067,7 +3068,7 @@ msgid ""
 "parent in the graph."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1416
+#: ../../../manual/ctest.1.rst:1400
 msgid "``tests``"
 msgstr ""
 
@@ -3085,7 +3086,7 @@ msgstr ""
 msgid "Test name."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1407
+#: ../../../manual/ctest.1.rst:1406
 msgid "``config``"
 msgstr ""
 
@@ -3107,7 +3108,7 @@ msgstr ""
 msgid "Index into the ``nodes`` member of the ``backtraceGraph``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1416
+#: ../../../manual/ctest.1.rst:1414
 msgid "``properties``"
 msgstr ""
 
@@ -3292,7 +3293,7 @@ msgid ""
 "Any other value is an error."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1595
+#: ../../../manual/ctest.1.rst:1555
 msgid "``local``"
 msgstr ""
 
@@ -3329,7 +3330,7 @@ msgid ""
 "objects have the following members:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1589
+#: ../../../manual/ctest.1.rst:1577
 msgid "``id``"
 msgstr ""
 
@@ -3355,7 +3356,7 @@ msgid ""
 "up any IDs you want to meet your own requirements."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1595
+#: ../../../manual/ctest.1.rst:1591
 msgid "``slots``"
 msgstr ""
 
@@ -3499,7 +3500,7 @@ msgstr ""
 msgid "The following resources are available to get help using CMake:"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:6
+#: ../../../manual/LINKS.txt:3
 msgid "Home Page"
 msgstr ""
 
@@ -3511,7 +3512,7 @@ msgstr ""
 msgid "The primary starting point for learning about CMake."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:12
+#: ../../../manual/LINKS.txt:8
 msgid "Online Documentation and Community Resources"
 msgstr ""
 
@@ -3525,7 +3526,7 @@ msgid ""
 "this web page."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:17
+#: ../../../manual/LINKS.txt:14
 msgid "Discourse Forum"
 msgstr ""
 
