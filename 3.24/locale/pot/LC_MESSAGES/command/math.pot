@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.24\n"
+"Project-Id-Version: CMake 3.24\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:28+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Hexadecimal notation as in C code, i. e. starting with \"0x\"."
 msgstr ""
 
-#: ../../../command/math.rst:30
+#: ../../../command/math.rst:29
 msgid "``DECIMAL``"
 msgstr ""
 

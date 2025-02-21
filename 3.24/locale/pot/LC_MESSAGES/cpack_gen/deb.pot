@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.24\n"
+"Project-Id-Version: CMake 3.24\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:28+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -413,7 +413,7 @@ msgstr ""
 msgid "Possible values are:"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:278
+#: ../../../cpack_gen/deb.rst:277
 msgid "``lzma``"
 msgstr ""
 
@@ -421,7 +421,7 @@ msgstr ""
 msgid "Lempel–Ziv–Markov chain algorithm"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:281
+#: ../../../cpack_gen/deb.rst:280
 msgid "``xz``"
 msgstr ""
 
@@ -429,7 +429,7 @@ msgstr ""
 msgid "XZ Utils compression"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:284
+#: ../../../cpack_gen/deb.rst:283
 msgid "``bzip2``"
 msgstr ""
 
@@ -437,7 +437,7 @@ msgstr ""
 msgid "bzip2 Burrows–Wheeler algorithm"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:287
+#: ../../../cpack_gen/deb.rst:286
 msgid "``gzip``"
 msgstr ""
 
@@ -445,7 +445,7 @@ msgstr ""
 msgid "GNU Gzip compression"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:291
+#: ../../../cpack_gen/deb.rst:289
 msgid "``zstd``"
 msgstr ""
 

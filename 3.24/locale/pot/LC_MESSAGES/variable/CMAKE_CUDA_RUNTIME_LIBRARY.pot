@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.24\n"
+"Project-Id-Version: CMake 3.24\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:28+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "The allowed case insensitive values are:"
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_RUNTIME_LIBRARY-VALUES.txt:2
+#: ../../../prop_tgt/CUDA_RUNTIME_LIBRARY-VALUES.txt:1
 msgid "``None``"
 msgstr ""
 
@@ -42,7 +42,7 @@ msgid ""
 "library."
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_RUNTIME_LIBRARY-VALUES.txt:5
+#: ../../../prop_tgt/CUDA_RUNTIME_LIBRARY-VALUES.txt:4
 msgid "``Shared``"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgid ""
 "linked CUDA runtime library."
 msgstr ""
 
-#: ../../../prop_tgt/CUDA_RUNTIME_LIBRARY-VALUES.txt:9
+#: ../../../prop_tgt/CUDA_RUNTIME_LIBRARY-VALUES.txt:7
 msgid "``Static``"
 msgstr ""
 

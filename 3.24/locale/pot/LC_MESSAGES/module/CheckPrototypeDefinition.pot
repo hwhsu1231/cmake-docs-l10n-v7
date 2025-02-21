@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.24\n"
+"Project-Id-Version: CMake 3.24\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 07:28+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 msgid "list of include directories."
 msgstr ""
 
-#: ../../../../Modules/CheckPrototypeDefinition.cmake:45
+#: ../../../../Modules/CheckPrototypeDefinition.cmake:44
 msgid "``CMAKE_REQUIRED_LINK_OPTIONS``"
 msgstr ""
 
@@ -98,7 +98,7 @@ msgstr ""
 msgid "list of libraries to link."
 msgstr ""
 
-#: ../../../../Modules/CheckPrototypeDefinition.cmake:131
+#: ../../../../Modules/CheckPrototypeDefinition.cmake:49
 msgid "``CMAKE_REQUIRED_QUIET``"
 msgstr ""
 
