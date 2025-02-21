@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,7 +73,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/project.rst:59
+#: ../../../command/project.rst:39
 msgid "``VERSION <version>``"
 msgstr ""
 
@@ -118,7 +119,7 @@ msgid ""
 "`CMAKE_PROJECT_VERSION`."
 msgstr ""
 
-#: ../../../command/project.rst:72
+#: ../../../command/project.rst:61
 msgid "``DESCRIPTION <project-description-string>``"
 msgstr ""
 
@@ -143,7 +144,7 @@ msgid ""
 "`CMAKE_PROJECT_DESCRIPTION`."
 msgstr ""
 
-#: ../../../command/project.rst:83
+#: ../../../command/project.rst:74
 msgid "``HOMEPAGE_URL <url-string>``"
 msgstr ""
 
@@ -164,7 +165,7 @@ msgid ""
 "`CMAKE_PROJECT_HOMEPAGE_URL`."
 msgstr ""
 
-#: ../../../command/project.rst:97
+#: ../../../command/project.rst:85
 msgid "``LANGUAGES <language-name>...``"
 msgstr ""
 

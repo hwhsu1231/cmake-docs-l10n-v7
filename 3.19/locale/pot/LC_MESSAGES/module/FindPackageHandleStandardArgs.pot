@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,7 +73,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:51
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:48
 msgid "``(DEFAULT_MSG|<custom-failure-message>)``"
 msgstr ""
 
@@ -83,7 +84,7 @@ msgid ""
 "Not valid in the full signature."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:57
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:53
 msgid "``FOUND_VAR <result-var>``"
 msgstr ""
 
@@ -95,7 +96,7 @@ msgid ""
 "variables of both names are always set for compatibility."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:65
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:59
 msgid "``REQUIRED_VARS <required-var>...``"
 msgstr ""
 
@@ -108,7 +109,7 @@ msgid ""
 "is mandatory if ``HANDLE_COMPONENTS`` is not specified."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:74
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:67
 msgid "``VERSION_VAR <version-var>``"
 msgstr ""
 
@@ -122,8 +123,8 @@ msgid ""
 "both if the version is ok or not."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:79
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:183
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:76
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:180
 msgid "``HANDLE_VERSION_RANGE``"
 msgstr ""
 
@@ -135,7 +136,7 @@ msgid ""
 "specified."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:87
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:81
 msgid "``HANDLE_COMPONENTS``"
 msgstr ""
 
@@ -148,7 +149,7 @@ msgid ""
 "``OPTIONAL_COMPONENTS`` option of :command:`find_package`) are missing."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:94
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:89
 msgid "``CONFIG_MODE``"
 msgstr ""
 
@@ -160,7 +161,7 @@ msgid ""
 "whether the package configuration file was found."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:98
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:96
 msgid "``REASON_FAILURE_MESSAGE <reason-failure-message>``"
 msgstr ""
 
@@ -170,7 +171,7 @@ msgid ""
 "appended to the default generated message."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:102
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:100
 msgid "``FAIL_MESSAGE <custom-failure-message>``"
 msgstr ""
 
@@ -180,7 +181,7 @@ msgid ""
 "message.  Not recommended."
 msgstr ""
 
-#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:107
+#: ../../../../Modules/FindPackageHandleStandardArgs.cmake:104
 msgid "``NAME_MISMATCHED``"
 msgstr ""
 

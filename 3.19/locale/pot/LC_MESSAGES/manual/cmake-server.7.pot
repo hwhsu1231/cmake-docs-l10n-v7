@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -742,8 +743,8 @@ msgstr ""
 msgid "contains the name of the configuration. The name may be empty."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:460
-#: ../../../manual/cmake-server.7.rst:620
+#: ../../../manual/cmake-server.7.rst:459
+#: ../../../manual/cmake-server.7.rst:619
 msgid "\"projects\""
 msgstr ""
 
@@ -768,7 +769,7 @@ msgstr ""
 msgid "contains the (sub-)projects name."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:469
+#: ../../../manual/cmake-server.7.rst:468
 msgid "\"minimumCMakeVersion\""
 msgstr ""
 
@@ -806,7 +807,7 @@ msgstr ""
 msgid "contains the current build directory."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:478
+#: ../../../manual/cmake-server.7.rst:477
 msgid "\"targets\""
 msgstr ""
 
@@ -827,7 +828,7 @@ msgstr ""
 msgid "contains the name of the target."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:488
+#: ../../../manual/cmake-server.7.rst:486
 msgid "\"type\""
 msgstr ""
 
@@ -871,7 +872,7 @@ msgid ""
 "full path to the destination directories defined by target install rules."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:504
+#: ../../../manual/cmake-server.7.rst:502
 msgid "\"artifacts\""
 msgstr ""
 
@@ -889,7 +890,7 @@ msgstr ""
 msgid "contains the language of the linker used to produce the artifact."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:509
+#: ../../../manual/cmake-server.7.rst:508
 msgid "\"linkLibraries\""
 msgstr ""
 
@@ -899,7 +900,7 @@ msgid ""
 "native shell format."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:512
+#: ../../../manual/cmake-server.7.rst:511
 msgid "\"linkFlags\""
 msgstr ""
 
@@ -909,7 +910,7 @@ msgid ""
 "system's native shell format."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:515
+#: ../../../manual/cmake-server.7.rst:514
 msgid "\"linkLanguageFlags\""
 msgstr ""
 
@@ -919,7 +920,7 @@ msgid ""
 "encoded in the system's native shell format."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:518
+#: ../../../manual/cmake-server.7.rst:517
 msgid "\"frameworkPath\""
 msgstr ""
 
@@ -929,7 +930,7 @@ msgid ""
 "system's native shell format."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:521
+#: ../../../manual/cmake-server.7.rst:520
 msgid "\"linkPath\""
 msgstr ""
 
@@ -947,7 +948,7 @@ msgstr ""
 msgid "with the sysroot path."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:526
+#: ../../../manual/cmake-server.7.rst:525
 msgid "\"fileGroups\""
 msgstr ""
 
@@ -971,7 +972,7 @@ msgstr ""
 msgid "contains the programming language used by all files in the group."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:536
+#: ../../../manual/cmake-server.7.rst:534
 msgid "\"compileFlags\""
 msgstr ""
 
@@ -982,7 +983,7 @@ msgid ""
 "shell format."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:541
+#: ../../../manual/cmake-server.7.rst:538
 msgid "\"includePath\""
 msgstr ""
 
@@ -994,7 +995,7 @@ msgid ""
 "is encoded in the system's native shell format."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:544
+#: ../../../manual/cmake-server.7.rst:543
 msgid "\"defines\""
 msgstr ""
 
@@ -1004,7 +1005,7 @@ msgid ""
 "value is encoded in the system's native shell format."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:547
+#: ../../../manual/cmake-server.7.rst:546
 msgid "\"sources\""
 msgstr ""
 
@@ -1094,7 +1095,7 @@ msgid ""
 "It will list the complete project test structure as it is known to cmake."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:629
+#: ../../../manual/cmake-server.7.rst:628
 msgid "\"ctestInfo\""
 msgstr ""
 
@@ -1122,7 +1123,7 @@ msgstr ""
 msgid "contains the test command."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:638
+#: ../../../manual/cmake-server.7.rst:637
 msgid "\"properties\""
 msgstr ""
 
@@ -1142,7 +1143,7 @@ msgstr ""
 msgid "contains the test property key."
 msgstr ""
 
-#: ../../../manual/cmake-server.7.rst:646
+#: ../../../manual/cmake-server.7.rst:644
 msgid "\"value\""
 msgstr ""
 

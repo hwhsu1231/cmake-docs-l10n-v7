@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -151,7 +152,7 @@ msgid ""
 "macros, functions and imported targets."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:100
+#: ../../../manual/cmake-developer.7.rst:98
 msgid "``Xxx_INCLUDE_DIRS``"
 msgstr ""
 
@@ -161,7 +162,7 @@ msgid ""
 "client code.  This should not be a cache entry."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:104
+#: ../../../manual/cmake-developer.7.rst:102
 msgid "``Xxx_LIBRARIES``"
 msgstr ""
 
@@ -171,7 +172,7 @@ msgid ""
 "This should not be a cache entry."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:109
+#: ../../../manual/cmake-developer.7.rst:106
 msgid "``Xxx_DEFINITIONS``"
 msgstr ""
 
@@ -182,7 +183,7 @@ msgid ""
 "to decide whether to ``#include <jpeg.h>``"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:112
+#: ../../../manual/cmake-developer.7.rst:111
 msgid "``Xxx_EXECUTABLE``"
 msgstr ""
 
@@ -190,7 +191,7 @@ msgstr ""
 msgid "Where to find the Xxx tool."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:115
+#: ../../../manual/cmake-developer.7.rst:114
 msgid "``Xxx_Yyy_EXECUTABLE``"
 msgstr ""
 
@@ -198,7 +199,7 @@ msgstr ""
 msgid "Where to find the Yyy tool that comes with Xxx."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:119
+#: ../../../manual/cmake-developer.7.rst:117
 msgid "``Xxx_LIBRARY_DIRS``"
 msgstr ""
 
@@ -208,7 +209,7 @@ msgid ""
 "use by client code.  This should not be a cache entry."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:122
+#: ../../../manual/cmake-developer.7.rst:121
 msgid "``Xxx_ROOT_DIR``"
 msgstr ""
 
@@ -216,7 +217,7 @@ msgstr ""
 msgid "Where to find the base directory of Xxx."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:125
+#: ../../../manual/cmake-developer.7.rst:124
 msgid "``Xxx_VERSION_Yy``"
 msgstr ""
 
@@ -224,7 +225,7 @@ msgstr ""
 msgid "Expect Version Yy if true. Make sure at most one of these is ever true."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:128
+#: ../../../manual/cmake-developer.7.rst:127
 msgid "``Xxx_WRAP_Yy``"
 msgstr ""
 
@@ -232,7 +233,7 @@ msgstr ""
 msgid "If False, do not try to use the relevant CMake wrapping command."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:131
+#: ../../../manual/cmake-developer.7.rst:130
 msgid "``Xxx_Yy_FOUND``"
 msgstr ""
 
@@ -240,7 +241,7 @@ msgstr ""
 msgid "If False, optional Yy part of Xxx system is not available."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:135
+#: ../../../manual/cmake-developer.7.rst:133
 msgid "``Xxx_FOUND``"
 msgstr ""
 
@@ -249,7 +250,7 @@ msgid ""
 "Set to false, or undefined, if we haven't found, or don't want to use Xxx."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:142
+#: ../../../manual/cmake-developer.7.rst:137
 msgid "``Xxx_NOT_FOUND_MESSAGE``"
 msgstr ""
 
@@ -261,7 +262,7 @@ msgid ""
 "about the problem."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:148
+#: ../../../manual/cmake-developer.7.rst:144
 msgid "``Xxx_RUNTIME_LIBRARY_DIRS``"
 msgstr ""
 
@@ -273,7 +274,7 @@ msgid ""
 "should not be a cache entry."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:152
+#: ../../../manual/cmake-developer.7.rst:150
 msgid "``Xxx_VERSION``"
 msgstr ""
 
@@ -283,7 +284,7 @@ msgid ""
 "existing modules provide ``Xxx_VERSION_STRING`` instead."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:155
+#: ../../../manual/cmake-developer.7.rst:154
 msgid "``Xxx_VERSION_MAJOR``"
 msgstr ""
 
@@ -291,7 +292,7 @@ msgstr ""
 msgid "The major version of the package found, if any."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:158
+#: ../../../manual/cmake-developer.7.rst:157
 msgid "``Xxx_VERSION_MINOR``"
 msgstr ""
 
@@ -299,7 +300,7 @@ msgstr ""
 msgid "The minor version of the package found, if any."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:161
+#: ../../../manual/cmake-developer.7.rst:160
 msgid "``Xxx_VERSION_PATCH``"
 msgstr ""
 
@@ -314,7 +315,7 @@ msgid ""
 "find modules (like entering the path to a library manually)"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:169
+#: ../../../manual/cmake-developer.7.rst:167
 msgid "``Xxx_LIBRARY``"
 msgstr ""
 
@@ -324,7 +325,7 @@ msgid ""
 "example)."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:173
+#: ../../../manual/cmake-developer.7.rst:171
 msgid "``Xxx_Yy_LIBRARY``"
 msgstr ""
 
@@ -334,7 +335,7 @@ msgid ""
 "be required to use Xxx."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:176
+#: ../../../manual/cmake-developer.7.rst:175
 msgid "``Xxx_INCLUDE_DIR``"
 msgstr ""
 
@@ -342,7 +343,7 @@ msgstr ""
 msgid "Where to find headers for using the Xxx library."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:179
+#: ../../../manual/cmake-developer.7.rst:178
 msgid "``Xxx_Yy_INCLUDE_DIR``"
 msgstr ""
 

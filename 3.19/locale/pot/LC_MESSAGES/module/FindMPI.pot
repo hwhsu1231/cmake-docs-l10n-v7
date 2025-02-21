@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.19\n"
+"Project-Id-Version: CMake 3.19\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:24+0000\n"
+"POT-Creation-Date: 2025-02-18 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,7 +51,7 @@ msgid ""
 "Depending on the enabled components the following variables will be set:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:28
+#: ../../../../Modules/FindMPI.cmake:26
 msgid "``MPI_FOUND``"
 msgstr ""
 
@@ -62,7 +63,7 @@ msgid ""
 "affect this variable."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:32
+#: ../../../../Modules/FindMPI.cmake:30
 msgid "``MPI_VERSION``"
 msgstr ""
 
@@ -78,7 +79,7 @@ msgid ""
 "where ``<lang>`` is one of C, CXX, or Fortran:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:38
+#: ../../../../Modules/FindMPI.cmake:37
 msgid "``MPI_<lang>_FOUND``"
 msgstr ""
 
@@ -132,7 +133,7 @@ msgstr ""
 msgid "Linker flags for MPI programs."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:51
+#: ../../../../Modules/FindMPI.cmake:50
 msgid "``MPI_<lang>_LIBRARIES``"
 msgstr ""
 
@@ -144,7 +145,7 @@ msgstr ""
 msgid "Additionally, the following :prop_tgt:`IMPORTED` targets are defined:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:56
+#: ../../../../Modules/FindMPI.cmake:55
 msgid "``MPI::MPI_<lang>``"
 msgstr ""
 
@@ -186,7 +187,7 @@ msgid ""
 "and higher only)."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:67
+#: ../../../../Modules/FindMPI.cmake:66
 msgid "``MPI_Fortran_HAVE_F08_MODULE``"
 msgstr ""
 
@@ -221,7 +222,7 @@ msgid ""
 "Minor version of MPI implemented for ``<lang>`` by the MPI distribution."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:77
+#: ../../../../Modules/FindMPI.cmake:76
 msgid "``MPI_<lang>_VERSION``"
 msgstr ""
 
@@ -258,7 +259,7 @@ msgid ""
 "on."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:89
+#: ../../../../Modules/FindMPI.cmake:88
 msgid "``MPIEXEC_MAX_NUMPROCS``"
 msgstr ""
 
@@ -276,7 +277,7 @@ msgstr ""
 msgid "Flags to pass to ``mpiexec`` directly before the executable to run."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:94
+#: ../../../../Modules/FindMPI.cmake:93
 msgid "``MPIEXEC_POSTFLAGS``"
 msgstr ""
 
@@ -344,7 +345,7 @@ msgid ""
 "Environment variable to specify the base directory of the MPI installation."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:117
+#: ../../../../Modules/FindMPI.cmake:116
 msgid "``ENV{I_MPI_ROOT}``"
 msgstr ""
 
@@ -358,7 +359,7 @@ msgstr ""
 msgid "Search for the specified compiler wrapper and use it."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:125
+#: ../../../../Modules/FindMPI.cmake:123
 msgid "``MPI_<lang>_COMPILER_FLAGS``"
 msgstr ""
 
@@ -369,7 +370,7 @@ msgid ""
 "flag is passed and this variable may be used to obtain them."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:128
+#: ../../../../Modules/FindMPI.cmake:127
 msgid "``MPI_COMPILER_FLAGS``"
 msgstr ""
 
@@ -379,7 +380,7 @@ msgid ""
 "flag has been given. Empty by default."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:132
+#: ../../../../Modules/FindMPI.cmake:130
 msgid "``MPI_EXECUTABLE_SUFFIX``"
 msgstr ""
 
@@ -395,7 +396,7 @@ msgid ""
 "In order to control the guessing step, the following variable may be set:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:139
+#: ../../../../Modules/FindMPI.cmake:136
 msgid "``MPI_GUESS_LIBRARY_NAME``"
 msgstr ""
 
@@ -412,7 +413,7 @@ msgid ""
 "Each of the search steps may be skipped with the following control variables:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:144
+#: ../../../../Modules/FindMPI.cmake:143
 msgid "``MPI_ASSUME_NO_BUILTIN_MPI``"
 msgstr ""
 
@@ -430,7 +431,7 @@ msgstr ""
 msgid "If true, no compiler wrapper will be searched for."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:149
+#: ../../../../Modules/FindMPI.cmake:148
 msgid "``MPI_SKIP_GUESSING``"
 msgstr ""
 
@@ -444,7 +445,7 @@ msgid ""
 "behavior:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:156
+#: ../../../../Modules/FindMPI.cmake:153
 msgid "``MPI_CXX_SKIP_MPICXX``"
 msgstr ""
 
@@ -482,7 +483,7 @@ msgid ""
 "following variables. For C and CXX:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:174
+#: ../../../../Modules/FindMPI.cmake:173
 msgid "``MPI_<lang>_HEADER_DIR``"
 msgstr ""
 
@@ -502,7 +503,7 @@ msgstr ""
 msgid "Location of the Fortran 77 header ``mpif.h``, if it exists."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:181
+#: ../../../../Modules/FindMPI.cmake:180
 msgid "``MPI_Fortran_MODULE_DIR``"
 msgstr ""
 
@@ -532,7 +533,7 @@ msgstr ""
 msgid "Path variables for include folders referred to by ``<include_name>``."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:190
+#: ../../../../Modules/FindMPI.cmake:189
 msgid "``MPI_<lang>_ADDITIONAL_INCLUDE_VARS``"
 msgstr ""
 
@@ -556,7 +557,7 @@ msgstr ""
 msgid "The location of a library called ``<lib_name>`` for use with MPI."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:197
+#: ../../../../Modules/FindMPI.cmake:196
 msgid "``MPI_<lang>_LIB_NAMES``"
 msgstr ""
 
@@ -614,7 +615,7 @@ msgid ""
 "performed:"
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:228
+#: ../../../../Modules/FindMPI.cmake:225
 msgid "``MPI_DETERMINE_Fortran_CAPABILITIES``"
 msgstr ""
 
@@ -627,7 +628,7 @@ msgid ""
 "``F77_HEADER``, ``F90_MODULE`` and ``F08_MODULE``."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:234
+#: ../../../../Modules/FindMPI.cmake:230
 msgid "``MPI_DETERMINE_LIBRARY_VERSION``"
 msgstr ""
 
@@ -685,7 +686,7 @@ msgid ""
 "use ``MPI_<lang>_ADDITIONAL_INCLUDE_DIRS`` instead."
 msgstr ""
 
-#: ../../../../Modules/FindMPI.cmake:1792
+#: ../../../../Modules/FindMPI.cmake:255
 msgid "``MPIEXEC``"
 msgstr ""
 
