@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.23\n"
+"Project-Id-Version: CMake 3.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -80,7 +81,7 @@ msgstr ""
 msgid "This module will set the following variables in your project:"
 msgstr ""
 
-#: ../../../../Modules/FindEnvModules.cmake:58
+#: ../../../../Modules/FindEnvModules.cmake:57
 msgid "``EnvModules_FOUND``"
 msgstr ""
 
@@ -96,7 +97,7 @@ msgstr ""
 msgid "The following cache variable will be set:"
 msgstr ""
 
-#: ../../../../Modules/FindEnvModules.cmake:67
+#: ../../../../Modules/FindEnvModules.cmake:65
 msgid "``EnvModules_COMMAND``"
 msgstr ""
 
@@ -110,7 +111,7 @@ msgstr ""
 msgid "Environment Variables"
 msgstr ""
 
-#: ../../../../Modules/FindEnvModules.cmake:74
+#: ../../../../Modules/FindEnvModules.cmake:72
 msgid "``ENV{MODULESHOME}``"
 msgstr ""
 
@@ -148,7 +149,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../../Modules/FindEnvModules.cmake:99
+#: ../../../../Modules/FindEnvModules.cmake:97
 msgid "``cmd arg1 ... argN``"
 msgstr ""
 
@@ -158,8 +159,8 @@ msgid ""
 "directly to the module command in your shell environment."
 msgstr ""
 
-#: ../../../../Modules/FindEnvModules.cmake:102
-#: ../../../../Modules/FindEnvModules.cmake:122
+#: ../../../../Modules/FindEnvModules.cmake:101
+#: ../../../../Modules/FindEnvModules.cmake:121
 msgid "``OUTPUT_VARIABLE <out-var>``"
 msgstr ""
 

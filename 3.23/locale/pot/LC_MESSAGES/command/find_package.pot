@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.23\n"
+"Project-Id-Version: CMake 3.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,7 +39,7 @@ msgstr ""
 msgid "The command has two very distinct ways of conducting the search:"
 msgstr ""
 
-#: ../../../command/find_package.rst:34
+#: ../../../command/find_package.rst:16
 msgid "**Module mode**"
 msgstr ""
 
@@ -70,7 +71,7 @@ msgid ""
 "Signature>`."
 msgstr ""
 
-#: ../../../command/find_package.rst:55
+#: ../../../command/find_package.rst:36
 msgid "**Config mode**"
 msgstr ""
 
@@ -612,7 +613,7 @@ msgid ""
 "a per-call basis using options:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:22
+#: ../../../command/FIND_XXX_ROOT.txt:21
 msgid "``CMAKE_FIND_ROOT_PATH_BOTH``"
 msgstr ""
 
@@ -620,7 +621,7 @@ msgstr ""
 msgid "Search in the order described above."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:25
+#: ../../../command/FIND_XXX_ROOT.txt:24
 msgid "``NO_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
@@ -628,7 +629,7 @@ msgstr ""
 msgid "Do not use the :variable:`CMAKE_FIND_ROOT_PATH` variable."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:29
+#: ../../../command/FIND_XXX_ROOT.txt:27
 msgid "``ONLY_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
@@ -765,7 +766,7 @@ msgstr ""
 msgid "Tweak version if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:440
+#: ../../../command/find_package.rst:439
 msgid "``PACKAGE_FIND_VERSION_COUNT``"
 msgstr ""
 
@@ -791,7 +792,7 @@ msgstr ""
 msgid "Full requested version range string"
 msgstr ""
 
-#: ../../../command/find_package.rst:452
+#: ../../../command/find_package.rst:450
 msgid "``PACKAGE_FIND_VERSION_RANGE_MIN``"
 msgstr ""
 
@@ -802,7 +803,7 @@ msgid ""
 "is ``INCLUDE``."
 msgstr ""
 
-#: ../../../command/find_package.rst:457
+#: ../../../command/find_package.rst:454
 msgid "``PACKAGE_FIND_VERSION_RANGE_MAX``"
 msgstr ""
 
@@ -853,7 +854,7 @@ msgstr ""
 msgid "Tweak version of the lower end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:470
+#: ../../../command/find_package.rst:469
 msgid "``PACKAGE_FIND_VERSION_MIN_COUNT``"
 msgstr ""
 
@@ -901,7 +902,7 @@ msgstr ""
 msgid "Tweak version of the upper end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:483
+#: ../../../command/find_package.rst:482
 msgid "``PACKAGE_FIND_VERSION_MAX_COUNT``"
 msgstr ""
 
@@ -946,7 +947,7 @@ msgstr ""
 msgid "True if version is compatible"
 msgstr ""
 
-#: ../../../command/find_package.rst:499
+#: ../../../command/find_package.rst:498
 msgid "``PACKAGE_VERSION_UNSUITABLE``"
 msgstr ""
 
@@ -998,7 +999,7 @@ msgstr ""
 msgid "Tweak version if provided, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:517
+#: ../../../command/find_package.rst:516
 msgid "``<PackageName>_VERSION_COUNT``"
 msgstr ""
 
@@ -1104,7 +1105,7 @@ msgstr ""
 msgid "List of specified components (required and optional)"
 msgstr ""
 
-#: ../../../command/find_package.rst:568
+#: ../../../command/find_package.rst:566
 msgid "``<PackageName>_FIND_REQUIRED_<c>``"
 msgstr ""
 
@@ -1117,7 +1118,7 @@ msgstr ""
 msgid "``<PackageName>_FIND_VERSION_RANGE``"
 msgstr ""
 
-#: ../../../command/find_package.rst:579
+#: ../../../command/find_package.rst:578
 msgid "``<PackageName>_FIND_VERSION_RANGE_MIN``"
 msgstr ""
 
@@ -1127,7 +1128,7 @@ msgid ""
 "or excluded.  Currently, ``INCLUDE`` is the only supported value."
 msgstr ""
 
-#: ../../../command/find_package.rst:584
+#: ../../../command/find_package.rst:581
 msgid "``<PackageName>_FIND_VERSION_RANGE_MAX``"
 msgstr ""
 
@@ -1158,7 +1159,7 @@ msgstr ""
 msgid "``<PackageName>_FIND_VERSION_MIN_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:597
+#: ../../../command/find_package.rst:596
 msgid "``<PackageName>_FIND_VERSION_MIN_COUNT``"
 msgstr ""
 
@@ -1182,7 +1183,7 @@ msgstr ""
 msgid "``<PackageName>_FIND_VERSION_MAX_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:610
+#: ../../../command/find_package.rst:609
 msgid "``<PackageName>_FIND_VERSION_MAX_COUNT``"
 msgstr ""
 

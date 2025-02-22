@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.23\n"
+"Project-Id-Version: CMake 3.23\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 10:23+0000\n"
+"POT-Creation-Date: 2025-02-18 18:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,7 +74,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/export.rst:43
+#: ../../../command/export.rst:42
 msgid "``NAMESPACE <namespace>``"
 msgstr ""
 
@@ -82,7 +83,7 @@ msgid ""
 "Prepend the ``<namespace>`` string to all target names written to the file."
 msgstr ""
 
-#: ../../../command/export.rst:47
+#: ../../../command/export.rst:45
 msgid "``APPEND``"
 msgstr ""
 
@@ -92,7 +93,7 @@ msgid ""
 "incrementally export multiple targets to the same file."
 msgstr ""
 
-#: ../../../command/export.rst:53
+#: ../../../command/export.rst:49
 msgid "``EXPORT_LINK_INTERFACE_LIBRARIES``"
 msgstr ""
 
