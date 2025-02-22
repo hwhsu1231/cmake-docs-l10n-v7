@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 04:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -72,7 +73,7 @@ msgstr ""
 msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:45
+#: ../../../../Modules/FindBoost.cmake:44
 msgid "``Boost_FOUND``"
 msgstr ""
 
@@ -80,7 +81,7 @@ msgstr ""
 msgid "True if headers and requested libraries were found."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:48
+#: ../../../../Modules/FindBoost.cmake:47
 msgid "``Boost_INCLUDE_DIRS``"
 msgstr ""
 
@@ -88,7 +89,7 @@ msgstr ""
 msgid "Boost include directories."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:51
+#: ../../../../Modules/FindBoost.cmake:50
 msgid "``Boost_LIBRARY_DIRS``"
 msgstr ""
 
@@ -96,7 +97,7 @@ msgstr ""
 msgid "Link directories for Boost libraries."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:54
+#: ../../../../Modules/FindBoost.cmake:53
 msgid "``Boost_LIBRARIES``"
 msgstr ""
 
@@ -104,7 +105,7 @@ msgstr ""
 msgid "Boost component libraries to be linked."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:57
+#: ../../../../Modules/FindBoost.cmake:56
 msgid "``Boost_<COMPONENT>_FOUND``"
 msgstr ""
 
@@ -114,7 +115,7 @@ msgid ""
 "case)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:61
+#: ../../../../Modules/FindBoost.cmake:59
 msgid "``Boost_<COMPONENT>_LIBRARY``"
 msgstr ""
 
@@ -124,7 +125,7 @@ msgid ""
 "`target_link_libraries` debug/optimized keywords)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:64
+#: ../../../../Modules/FindBoost.cmake:63
 msgid "``Boost_VERSION_MACRO``"
 msgstr ""
 
@@ -132,7 +133,7 @@ msgstr ""
 msgid "``BOOST_VERSION`` value from ``boost/version.hpp``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:67
+#: ../../../../Modules/FindBoost.cmake:66
 msgid "``Boost_VERSION_STRING``"
 msgstr ""
 
@@ -140,7 +141,7 @@ msgstr ""
 msgid "Boost version number in ``X.Y.Z`` format."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:75
+#: ../../../../Modules/FindBoost.cmake:69
 msgid "``Boost_VERSION``"
 msgstr ""
 
@@ -156,7 +157,7 @@ msgid ""
 "`CMP0093`."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:78
+#: ../../../../Modules/FindBoost.cmake:77
 msgid "``Boost_LIB_VERSION``"
 msgstr ""
 
@@ -164,7 +165,7 @@ msgstr ""
 msgid "Version string appended to library filenames."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:81
+#: ../../../../Modules/FindBoost.cmake:80
 msgid "``Boost_VERSION_MAJOR``, ``Boost_MAJOR_VERSION``"
 msgstr ""
 
@@ -172,7 +173,7 @@ msgstr ""
 msgid "Boost major version number (``X`` in ``X.Y.Z``)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:84
+#: ../../../../Modules/FindBoost.cmake:83
 msgid "``Boost_VERSION_MINOR``, ``Boost_MINOR_VERSION``"
 msgstr ""
 
@@ -180,7 +181,7 @@ msgstr ""
 msgid "Boost minor version number (``Y`` in ``X.Y.Z``)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:87
+#: ../../../../Modules/FindBoost.cmake:86
 msgid "``Boost_VERSION_PATCH``, ``Boost_SUBMINOR_VERSION``"
 msgstr ""
 
@@ -188,7 +189,7 @@ msgstr ""
 msgid "Boost subminor version number (``Z`` in ``X.Y.Z``)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:90
+#: ../../../../Modules/FindBoost.cmake:89
 msgid "``Boost_VERSION_COUNT``"
 msgstr ""
 
@@ -196,7 +197,7 @@ msgstr ""
 msgid "Amount of version components (3)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:95
+#: ../../../../Modules/FindBoost.cmake:92
 msgid "``Boost_LIB_DIAGNOSTIC_DEFINITIONS`` (Windows-specific)"
 msgstr ""
 
@@ -218,7 +219,7 @@ msgstr ""
 msgid "Search results are saved persistently in CMake cache entries:"
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:106
+#: ../../../../Modules/FindBoost.cmake:105
 msgid "``Boost_INCLUDE_DIR``"
 msgstr ""
 
@@ -226,7 +227,7 @@ msgstr ""
 msgid "Directory containing Boost headers."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:109
+#: ../../../../Modules/FindBoost.cmake:108
 msgid "``Boost_LIBRARY_DIR_RELEASE``"
 msgstr ""
 
@@ -234,7 +235,7 @@ msgstr ""
 msgid "Directory containing release Boost libraries."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:112
+#: ../../../../Modules/FindBoost.cmake:111
 msgid "``Boost_LIBRARY_DIR_DEBUG``"
 msgstr ""
 
@@ -242,7 +243,7 @@ msgstr ""
 msgid "Directory containing debug Boost libraries."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:115
+#: ../../../../Modules/FindBoost.cmake:114
 msgid "``Boost_<COMPONENT>_LIBRARY_DEBUG``"
 msgstr ""
 
@@ -250,7 +251,7 @@ msgstr ""
 msgid "Component ``<COMPONENT>`` library debug variant."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:118
+#: ../../../../Modules/FindBoost.cmake:117
 msgid "``Boost_<COMPONENT>_LIBRARY_RELEASE``"
 msgstr ""
 
@@ -272,7 +273,7 @@ msgstr ""
 msgid "This module reads hints about search locations from variables:"
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:130
+#: ../../../../Modules/FindBoost.cmake:129
 msgid "``BOOST_ROOT``, ``BOOSTROOT``"
 msgstr ""
 
@@ -280,7 +281,7 @@ msgstr ""
 msgid "Preferred installation prefix."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:133
+#: ../../../../Modules/FindBoost.cmake:132
 msgid "``BOOST_INCLUDEDIR``"
 msgstr ""
 
@@ -288,7 +289,7 @@ msgstr ""
 msgid "Preferred include directory e.g. ``<prefix>/include``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:136
+#: ../../../../Modules/FindBoost.cmake:135
 msgid "``BOOST_LIBRARYDIR``"
 msgstr ""
 
@@ -296,7 +297,7 @@ msgstr ""
 msgid "Preferred library directory e.g. ``<prefix>/lib``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:140
+#: ../../../../Modules/FindBoost.cmake:138
 msgid "``Boost_NO_SYSTEM_PATHS``"
 msgstr ""
 
@@ -306,7 +307,7 @@ msgid ""
 "variables. Default is ``OFF``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:144
+#: ../../../../Modules/FindBoost.cmake:142
 msgid "``Boost_ADDITIONAL_VERSIONS``"
 msgstr ""
 
@@ -350,7 +351,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:173
+#: ../../../../Modules/FindBoost.cmake:172
 msgid "``Boost::boost``"
 msgstr ""
 
@@ -358,7 +359,7 @@ msgstr ""
 msgid "Target for header-only dependencies. (Boost include directory)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:177
+#: ../../../../Modules/FindBoost.cmake:175
 msgid "``Boost::headers``"
 msgstr ""
 
@@ -366,7 +367,7 @@ msgstr ""
 msgid "Alias for ``Boost::boost``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:181
+#: ../../../../Modules/FindBoost.cmake:179
 msgid "``Boost::<component>``"
 msgstr ""
 
@@ -376,7 +377,7 @@ msgid ""
 "``<component>`` name is lower-case."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:185
+#: ../../../../Modules/FindBoost.cmake:183
 msgid "``Boost::diagnostic_definitions``"
 msgstr ""
 
@@ -386,7 +387,7 @@ msgid ""
 "linking during compilation (adds ``-DBOOST_LIB_DIAGNOSTIC``)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:189
+#: ../../../../Modules/FindBoost.cmake:187
 msgid "``Boost::disable_autolinking``"
 msgstr ""
 
@@ -396,7 +397,7 @@ msgid ""
 "DBOOST_ALL_NO_LIB``)."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:193
+#: ../../../../Modules/FindBoost.cmake:191
 msgid "``Boost::dynamic_linking``"
 msgstr ""
 
@@ -434,7 +435,7 @@ msgid ""
 "projects may tell this module which variant to find by setting variables:"
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:218
+#: ../../../../Modules/FindBoost.cmake:214
 msgid "``Boost_USE_DEBUG_LIBS``"
 msgstr ""
 
@@ -444,7 +445,7 @@ msgid ""
 "libraries.  Default is ``ON``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:224
+#: ../../../../Modules/FindBoost.cmake:220
 msgid "``Boost_USE_RELEASE_LIBS``"
 msgstr ""
 
@@ -454,7 +455,7 @@ msgid ""
 "libraries.  Default is ``ON``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:228
+#: ../../../../Modules/FindBoost.cmake:226
 msgid "``Boost_USE_MULTITHREADED``"
 msgstr ""
 
@@ -464,7 +465,7 @@ msgid ""
 "``ON``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:231
+#: ../../../../Modules/FindBoost.cmake:230
 msgid "``Boost_USE_STATIC_LIBS``"
 msgstr ""
 
@@ -473,7 +474,7 @@ msgid ""
 "Set to ON to force the use of the static libraries.  Default is ``OFF``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:235
+#: ../../../../Modules/FindBoost.cmake:233
 msgid "``Boost_USE_STATIC_RUNTIME``"
 msgstr ""
 
@@ -483,7 +484,7 @@ msgid ""
 "statically to the C++ runtime (\"s\" tag).  Default is platform dependent."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:239
+#: ../../../../Modules/FindBoost.cmake:237
 msgid "``Boost_USE_DEBUG_RUNTIME``"
 msgstr ""
 
@@ -493,7 +494,7 @@ msgid ""
 "MS debug C++ runtime (\"g\" tag).  Default is ``ON``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:243
+#: ../../../../Modules/FindBoost.cmake:241
 msgid "``Boost_USE_DEBUG_PYTHON``"
 msgstr ""
 
@@ -503,7 +504,7 @@ msgid ""
 "tag).  Default is ``OFF``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:247
+#: ../../../../Modules/FindBoost.cmake:245
 msgid "``Boost_USE_STLPORT``"
 msgstr ""
 
@@ -513,7 +514,7 @@ msgid ""
 "``OFF``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:251
+#: ../../../../Modules/FindBoost.cmake:249
 msgid "``Boost_USE_STLPORT_DEPRECATED_NATIVE_IOSTREAMS``"
 msgstr ""
 
@@ -523,7 +524,7 @@ msgid ""
 "iostreams\" (\"n\" tag).  Default is ``OFF``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:259
+#: ../../../../Modules/FindBoost.cmake:253
 msgid "``Boost_COMPILER``"
 msgstr ""
 
@@ -539,7 +540,7 @@ msgid ""
 "decreasing order of preference."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:266
+#: ../../../../Modules/FindBoost.cmake:261
 msgid "``Boost_LIB_PREFIX``"
 msgstr ""
 
@@ -550,7 +551,7 @@ msgid ""
 "know the prefix by default."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:272
+#: ../../../../Modules/FindBoost.cmake:268
 msgid "``Boost_ARCHITECTURE``"
 msgstr ""
 
@@ -560,7 +561,7 @@ msgid ""
 "auto-computed for the C++ compiler in use."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:276
+#: ../../../../Modules/FindBoost.cmake:274
 msgid "``Boost_THREADAPI``"
 msgstr ""
 
@@ -570,7 +571,7 @@ msgid ""
 "``win32``.  Names with and without this suffix will both be tried."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:280
+#: ../../../../Modules/FindBoost.cmake:278
 msgid "``Boost_NAMESPACE``"
 msgstr ""
 
@@ -584,7 +585,7 @@ msgstr ""
 msgid "Other variables one may set to control this module are:"
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:286
+#: ../../../../Modules/FindBoost.cmake:284
 msgid "``Boost_DEBUG``"
 msgstr ""
 
@@ -594,7 +595,7 @@ msgid ""
 "before filing any bug report."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:293
+#: ../../../../Modules/FindBoost.cmake:288
 msgid "``Boost_REALPATH``"
 msgstr ""
 
@@ -607,7 +608,7 @@ msgid ""
 "user needs this information."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:297
+#: ../../../../Modules/FindBoost.cmake:295
 msgid "``Boost_LIBRARY_DIR``"
 msgstr ""
 
@@ -617,7 +618,7 @@ msgid ""
 "``Boost_LIBRARY_DIR_DEBUG``."
 msgstr ""
 
-#: ../../../../Modules/FindBoost.cmake:303
+#: ../../../../Modules/FindBoost.cmake:299
 msgid "``Boost_NO_WARN_NEW_VERSIONS``"
 msgstr ""
 

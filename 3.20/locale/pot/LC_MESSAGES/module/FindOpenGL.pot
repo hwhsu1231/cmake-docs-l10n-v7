@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 04:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -59,7 +60,7 @@ msgid ""
 "Defined to the platform-specific OpenGL libraries if the system has OpenGL."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:34
+#: ../../../../Modules/FindOpenGL.cmake:33
 msgid "``OpenGL::GLU``"
 msgstr ""
 
@@ -88,7 +89,7 @@ msgid ""
 "Defined if the system has OpenGL Extension to the X Window System (GLX)."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:44
+#: ../../../../Modules/FindOpenGL.cmake:43
 msgid "``OpenGL::EGL``"
 msgstr ""
 
@@ -168,7 +169,7 @@ msgstr ""
 msgid "Path to the EGL include directory."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:70
+#: ../../../../Modules/FindOpenGL.cmake:67
 msgid "``OPENGL_LIBRARIES``"
 msgstr ""
 
@@ -224,7 +225,7 @@ msgstr ""
 msgid "Path to the GLVND 'OpenGL' library"
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:90
+#: ../../../../Modules/FindOpenGL.cmake:88
 msgid "``OPENGL_gl_LIBRARY``"
 msgstr ""
 
@@ -266,7 +267,7 @@ msgid ""
 "value may be one of:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:126
+#: ../../../../Modules/FindOpenGL.cmake:119
 msgid "``GLVND``"
 msgstr ""
 
@@ -282,7 +283,7 @@ msgid ""
 "no components are requeted (since components correspond to GLVND libraries)."
 msgstr ""
 
-#: ../../../../Modules/FindOpenGL.cmake:129
+#: ../../../../Modules/FindOpenGL.cmake:128
 msgid "``LEGACY``"
 msgstr ""
 

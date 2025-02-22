@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 04:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,7 +46,7 @@ msgstr ""
 msgid "The following variables may be set to influence this module's behavior:"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:23
+#: ../../../../Modules/FindLAPACK.cmake:22
 msgid "``BLA_STATIC``"
 msgstr ""
 
@@ -53,7 +54,7 @@ msgstr ""
 msgid "if ``ON`` use static linkage"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:70
+#: ../../../../Modules/FindLAPACK.cmake:25
 msgid "``BLA_VENDOR``"
 msgstr ""
 
@@ -175,7 +176,7 @@ msgstr ""
 msgid "Elbrus Math Library support (``EML``, ``EML_mt``)."
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:73
+#: ../../../../Modules/FindLAPACK.cmake:72
 msgid "``BLA_F95``"
 msgstr ""
 
@@ -183,7 +184,7 @@ msgstr ""
 msgid "if ``ON`` tries to find the BLAS95/LAPACK95 interfaces"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:79
+#: ../../../../Modules/FindLAPACK.cmake:75
 msgid "``BLA_PREFER_PKGCONFIG``"
 msgstr ""
 
@@ -201,7 +202,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` target:"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:89
+#: ../../../../Modules/FindLAPACK.cmake:88
 msgid "``LAPACK::LAPACK``"
 msgstr ""
 
@@ -233,7 +234,7 @@ msgstr ""
 msgid "uncached list of required linker flags (excluding ``-l`` and ``-L``)."
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:101
+#: ../../../../Modules/FindLAPACK.cmake:100
 msgid "``LAPACK_LIBRARIES``"
 msgstr ""
 
@@ -243,7 +244,7 @@ msgid ""
 "LAPACK"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:104
+#: ../../../../Modules/FindLAPACK.cmake:103
 msgid "``LAPACK95_LIBRARIES``"
 msgstr ""
 
@@ -253,7 +254,7 @@ msgid ""
 "LAPACK95"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:107
+#: ../../../../Modules/FindLAPACK.cmake:106
 msgid "``LAPACK95_FOUND``"
 msgstr ""
 

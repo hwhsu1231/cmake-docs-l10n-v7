@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 04:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -297,7 +298,7 @@ msgstr ""
 msgid "Tweak version if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:191
+#: ../../../command/find_package.rst:190
 msgid "``PACKAGE_FIND_VERSION_COUNT``"
 msgstr ""
 
@@ -323,7 +324,7 @@ msgstr ""
 msgid "Full requested version range string"
 msgstr ""
 
-#: ../../../command/find_package.rst:203
+#: ../../../command/find_package.rst:201
 msgid "``PACKAGE_FIND_VERSION_RANGE_MIN``"
 msgstr ""
 
@@ -334,7 +335,7 @@ msgid ""
 "is ``INCLUDE``."
 msgstr ""
 
-#: ../../../command/find_package.rst:208
+#: ../../../command/find_package.rst:205
 msgid "``PACKAGE_FIND_VERSION_RANGE_MAX``"
 msgstr ""
 
@@ -385,7 +386,7 @@ msgstr ""
 msgid "Tweak version of the lower end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:221
+#: ../../../command/find_package.rst:220
 msgid "``PACKAGE_FIND_VERSION_MIN_COUNT``"
 msgstr ""
 
@@ -433,7 +434,7 @@ msgstr ""
 msgid "Tweak version of the upper end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:234
+#: ../../../command/find_package.rst:233
 msgid "``PACKAGE_FIND_VERSION_MAX_COUNT``"
 msgstr ""
 
@@ -478,7 +479,7 @@ msgstr ""
 msgid "True if version is compatible"
 msgstr ""
 
-#: ../../../command/find_package.rst:250
+#: ../../../command/find_package.rst:249
 msgid "``PACKAGE_VERSION_UNSUITABLE``"
 msgstr ""
 
@@ -530,7 +531,7 @@ msgstr ""
 msgid "Tweak version if provided, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:268
+#: ../../../command/find_package.rst:267
 msgid "``<PackageName>_VERSION_COUNT``"
 msgstr ""
 
@@ -844,7 +845,7 @@ msgid ""
 "a per-call basis using options:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:22
+#: ../../../command/FIND_XXX_ROOT.txt:21
 msgid "``CMAKE_FIND_ROOT_PATH_BOTH``"
 msgstr ""
 
@@ -852,7 +853,7 @@ msgstr ""
 msgid "Search in the order described above."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:25
+#: ../../../command/FIND_XXX_ROOT.txt:24
 msgid "``NO_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
@@ -860,7 +861,7 @@ msgstr ""
 msgid "Do not use the :variable:`CMAKE_FIND_ROOT_PATH` variable."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:29
+#: ../../../command/FIND_XXX_ROOT.txt:27
 msgid "``ONLY_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
@@ -978,7 +979,7 @@ msgstr ""
 msgid "List of requested components"
 msgstr ""
 
-#: ../../../command/find_package.rst:485
+#: ../../../command/find_package.rst:483
 msgid "``<PackageName>_FIND_REQUIRED_<c>``"
 msgstr ""
 
@@ -991,7 +992,7 @@ msgstr ""
 msgid "``<PackageName>_FIND_VERSION_RANGE``"
 msgstr ""
 
-#: ../../../command/find_package.rst:496
+#: ../../../command/find_package.rst:495
 msgid "``<PackageName>_FIND_VERSION_RANGE_MIN``"
 msgstr ""
 
@@ -1001,7 +1002,7 @@ msgid ""
 "or excluded.  Currently, ``INCLUDE`` is the only supported value."
 msgstr ""
 
-#: ../../../command/find_package.rst:501
+#: ../../../command/find_package.rst:498
 msgid "``<PackageName>_FIND_VERSION_RANGE_MAX``"
 msgstr ""
 
@@ -1032,7 +1033,7 @@ msgstr ""
 msgid "``<PackageName>_FIND_VERSION_MIN_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:514
+#: ../../../command/find_package.rst:513
 msgid "``<PackageName>_FIND_VERSION_MIN_COUNT``"
 msgstr ""
 
@@ -1056,7 +1057,7 @@ msgstr ""
 msgid "``<PackageName>_FIND_VERSION_MAX_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:527
+#: ../../../command/find_package.rst:526
 msgid "``<PackageName>_FIND_VERSION_MAX_COUNT``"
 msgstr ""
 
