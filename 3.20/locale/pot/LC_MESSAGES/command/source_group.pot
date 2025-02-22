@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 03:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,7 +39,7 @@ msgid ""
 "intended to set up file tabs in Visual Studio. The options are:"
 msgstr ""
 
-#: ../../../command/source_group.rst:22
+#: ../../../command/source_group.rst:16
 msgid "``TREE``"
 msgstr ""
 
@@ -50,7 +51,7 @@ msgid ""
 "files will be cut to be relative to ``<root>``."
 msgstr ""
 
-#: ../../../command/source_group.rst:28
+#: ../../../command/source_group.rst:24
 msgid "``PREFIX``"
 msgstr ""
 
@@ -60,7 +61,7 @@ msgid ""
 "in ``<prefix>`` source groups."
 msgstr ""
 
-#: ../../../command/source_group.rst:33
+#: ../../../command/source_group.rst:30
 msgid "``FILES``"
 msgstr ""
 
@@ -70,7 +71,7 @@ msgid ""
 "Relative paths are interpreted with respect to the current source directory."
 msgstr ""
 
-#: ../../../command/source_group.rst:37
+#: ../../../command/source_group.rst:35
 msgid "``REGULAR_EXPRESSION``"
 msgstr ""
 

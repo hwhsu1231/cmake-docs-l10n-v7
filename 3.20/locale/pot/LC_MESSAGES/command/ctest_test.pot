@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 03:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -60,7 +61,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/ctest_test.rst:38
+#: ../../../command/ctest_test.rst:36
 msgid "``BUILD <build-dir>``"
 msgstr ""
 
@@ -70,7 +71,7 @@ msgid ""
 "`CTEST_BINARY_DIRECTORY` variable is used."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:45
+#: ../../../command/ctest_test.rst:40
 msgid "``APPEND``"
 msgstr ""
 
@@ -82,7 +83,7 @@ msgid ""
 "appended to a ``.xml`` file produced by a previous call to this command."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:48
+#: ../../../command/ctest_test.rst:47
 msgid "``START <start-number>``"
 msgstr ""
 
@@ -90,7 +91,7 @@ msgstr ""
 msgid "Specify the beginning of a range of test numbers."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:51
+#: ../../../command/ctest_test.rst:50
 msgid "``END <end-number>``"
 msgstr ""
 
@@ -98,7 +99,7 @@ msgstr ""
 msgid "Specify the end of a range of test numbers."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:54
+#: ../../../command/ctest_test.rst:53
 msgid "``STRIDE <stride-number>``"
 msgstr ""
 
@@ -106,7 +107,7 @@ msgstr ""
 msgid "Specify the stride by which to step across a range of test numbers."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:57
+#: ../../../command/ctest_test.rst:56
 msgid "``EXCLUDE <exclude-regex>``"
 msgstr ""
 
@@ -114,7 +115,7 @@ msgstr ""
 msgid "Specify a regular expression matching test names to exclude."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:61
+#: ../../../command/ctest_test.rst:59
 msgid "``INCLUDE <include-regex>``"
 msgstr ""
 
@@ -124,7 +125,7 @@ msgid ""
 "matching this expression are excluded."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:64
+#: ../../../command/ctest_test.rst:63
 msgid "``EXCLUDE_LABEL <label-exclude-regex>``"
 msgstr ""
 
@@ -132,7 +133,7 @@ msgstr ""
 msgid "Specify a regular expression matching test labels to exclude."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:68
+#: ../../../command/ctest_test.rst:66
 msgid "``INCLUDE_LABEL <label-include-regex>``"
 msgstr ""
 
@@ -142,7 +143,7 @@ msgid ""
 "matching this expression are excluded."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:78
+#: ../../../command/ctest_test.rst:70
 msgid "``EXCLUDE_FIXTURE <regex>``"
 msgstr ""
 
@@ -156,7 +157,7 @@ msgid ""
 "setup tests that fail."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:83
+#: ../../../command/ctest_test.rst:80
 msgid "``EXCLUDE_FIXTURE_SETUP <regex>``"
 msgstr ""
 
@@ -165,7 +166,7 @@ msgid ""
 "Same as ``EXCLUDE_FIXTURE`` except only matching setup tests are excluded."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:88
+#: ../../../command/ctest_test.rst:85
 msgid "``EXCLUDE_FIXTURE_CLEANUP <regex>``"
 msgstr ""
 
@@ -174,7 +175,7 @@ msgid ""
 "Same as ``EXCLUDE_FIXTURE`` except only matching cleanup tests are excluded."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:92
+#: ../../../command/ctest_test.rst:90
 msgid "``PARALLEL_LEVEL <level>``"
 msgstr ""
 
@@ -184,7 +185,7 @@ msgid ""
 "parallel."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:99
+#: ../../../command/ctest_test.rst:94
 msgid "``RESOURCE_SPEC_FILE <file>``"
 msgstr ""
 
@@ -194,7 +195,7 @@ msgid ""
 "file>`. See :ref:`ctest-resource-allocation` for more information."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:108
+#: ../../../command/ctest_test.rst:101
 msgid "``TEST_LOAD <threshold>``"
 msgstr ""
 
@@ -207,7 +208,7 @@ msgid ""
 "``TestLoad`` setting in the :ref:`CTest Test Step`."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:129
+#: ../../../command/ctest_test.rst:110
 msgid "``REPEAT <mode>:<n>``"
 msgstr ""
 
@@ -217,7 +218,7 @@ msgid ""
 "modes are:"
 msgstr ""
 
-#: ../../../command/ctest_test.rst:118
+#: ../../../command/ctest_test.rst:116
 msgid "``UNTIL_FAIL``"
 msgstr ""
 
@@ -227,7 +228,7 @@ msgid ""
 "This is useful in finding sporadic failures in test cases."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:123
+#: ../../../command/ctest_test.rst:120
 msgid "``UNTIL_PASS``"
 msgstr ""
 
@@ -238,7 +239,7 @@ msgid ""
 "in test cases."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:129
+#: ../../../command/ctest_test.rst:125
 msgid "``AFTER_TIMEOUT``"
 msgstr ""
 
@@ -249,7 +250,7 @@ msgid ""
 "cases on busy machines."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:133
+#: ../../../command/ctest_test.rst:131
 msgid "``SCHEDULE_RANDOM <ON|OFF>``"
 msgstr ""
 
@@ -259,7 +260,7 @@ msgid ""
 "test dependencies."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:138
+#: ../../../command/ctest_test.rst:135
 msgid "``STOP_ON_FAILURE``"
 msgstr ""
 
@@ -267,7 +268,7 @@ msgstr ""
 msgid "Stop the execution of the tests once one has failed."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:141
+#: ../../../command/ctest_test.rst:140
 msgid "``STOP_TIME <time-of-day>``"
 msgstr ""
 
@@ -275,7 +276,7 @@ msgstr ""
 msgid "Specify a time of day at which the tests should all stop running."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:145
+#: ../../../command/ctest_test.rst:143
 msgid "``RETURN_VALUE <result-var>``"
 msgstr ""
 
@@ -285,7 +286,7 @@ msgid ""
 "zero if anything went wrong."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:151
+#: ../../../command/ctest_test.rst:147
 msgid "``CAPTURE_CMAKE_ERROR <result-var>``"
 msgstr ""
 
@@ -295,7 +296,7 @@ msgid ""
 "the command and prevent ctest from returning non-zero if an error occurs."
 msgstr ""
 
-#: ../../../command/ctest_test.rst:159
+#: ../../../command/ctest_test.rst:153
 msgid "``QUIET``"
 msgstr ""
 
