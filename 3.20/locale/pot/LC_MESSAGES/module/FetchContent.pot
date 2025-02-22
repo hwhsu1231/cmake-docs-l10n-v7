@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 04:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -299,7 +300,7 @@ msgid ""
 "performed using details saved from a :command:`FetchContent_Declare` call:"
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:239
+#: ../../../../Modules/FetchContent.cmake:229
 msgid "``FETCHCONTENT_BASE_DIR``"
 msgstr ""
 
@@ -317,7 +318,7 @@ msgid ""
 "problems on Windows."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:246
+#: ../../../../Modules/FetchContent.cmake:241
 msgid "``FETCHCONTENT_QUIET``"
 msgstr ""
 
@@ -330,7 +331,7 @@ msgid ""
 "diagnose which content population is causing the issue."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:255
+#: ../../../../Modules/FetchContent.cmake:248
 msgid "``FETCHCONTENT_FULLY_DISCONNECTED``"
 msgstr ""
 
@@ -345,7 +346,7 @@ msgid ""
 "the configure stage.  It is ``OFF`` by default."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:264
+#: ../../../../Modules/FetchContent.cmake:257
 msgid "``FETCHCONTENT_UPDATES_DISCONNECTED``"
 msgstr ""
 
@@ -367,7 +368,7 @@ msgid ""
 "``<name>``):"
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:280
+#: ../../../../Modules/FetchContent.cmake:270
 msgid "``FETCHCONTENT_SOURCE_DIR_<ucName>``"
 msgstr ""
 
@@ -385,7 +386,7 @@ msgid ""
 "the project."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:289
+#: ../../../../Modules/FetchContent.cmake:282
 msgid "``FETCHCONTENT_UPDATES_DISCONNECTED_<ucName>``"
 msgstr ""
 
@@ -472,7 +473,7 @@ msgid ""
 "slightly modified from how :command:`ExternalProject_Add` treats them."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:340
+#: ../../../../Modules/FetchContent.cmake:334
 msgid "``QUIET``"
 msgstr ""
 
@@ -486,7 +487,7 @@ msgid ""
 "content details are provided directly."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:349
+#: ../../../../Modules/FetchContent.cmake:342
 msgid "``SUBBUILD_DIR``"
 msgstr ""
 
@@ -501,7 +502,7 @@ msgid ""
 "the :command:`FetchContent_MakeAvailable` command."
 msgstr ""
 
-#: ../../../../Modules/FetchContent.cmake:358
+#: ../../../../Modules/FetchContent.cmake:351
 msgid "``SOURCE_DIR``, ``BINARY_DIR``"
 msgstr ""
 

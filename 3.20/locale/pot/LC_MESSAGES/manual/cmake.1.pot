@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 04:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -113,7 +114,7 @@ msgstr ""
 msgid "To generate a buildsystem with CMake, the following must be selected:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:82
+#: ../../../manual/cmake.1.rst:77
 msgid "Source Tree"
 msgstr ""
 
@@ -126,7 +127,7 @@ msgid ""
 "dependencies as described in the :manual:`cmake-buildsystem(7)` manual."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:94
+#: ../../../manual/cmake.1.rst:84
 msgid "Build Tree"
 msgstr ""
 
@@ -146,7 +147,7 @@ msgid ""
 "supported, but discouraged."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:106
+#: ../../../manual/cmake.1.rst:96
 msgid "Generator"
 msgstr ""
 
@@ -177,7 +178,7 @@ msgid ""
 "and build trees and generate a buildsystem:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:127
+#: ../../../manual/cmake.1.rst:116
 msgid "``cmake [<options>] <path-to-source>``"
 msgstr ""
 
@@ -196,7 +197,7 @@ msgid ""
 "$ cmake ../src"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:139
+#: ../../../manual/cmake.1.rst:129
 msgid "``cmake [<options>] <path-to-existing-build>``"
 msgstr ""
 
@@ -214,7 +215,7 @@ msgid ""
 "$ cmake ."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:150
+#: ../../../manual/cmake.1.rst:141
 msgid "``cmake [<options>] -S <path-to-source> -B <path-to-build>``"
 msgstr ""
 
@@ -259,7 +260,7 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:2
+#: ../../../manual/OPTIONS_BUILD.txt:1
 msgid "``-S <path-to-source>``"
 msgstr ""
 
@@ -267,7 +268,7 @@ msgstr ""
 msgid "Path to root directory of the CMake project to build."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:7
+#: ../../../manual/OPTIONS_BUILD.txt:4
 msgid "``-B <path-to-build>``"
 msgstr ""
 
@@ -279,7 +280,7 @@ msgstr ""
 msgid "If the directory doesn't already exist CMake will make it."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:22
+#: ../../../manual/OPTIONS_BUILD.txt:9
 msgid "``-C <initial-cache>``"
 msgstr ""
 
@@ -304,7 +305,7 @@ msgid ""
 "within the script evaluate to the top-level source and build tree."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:42
+#: ../../../manual/OPTIONS_BUILD.txt:24
 msgid "``-D <var>:<type>=<value>, -D <var>=<value>``"
 msgstr ""
 
@@ -337,7 +338,7 @@ msgid ""
 "<type>=<value>`` or ``-D<var>=<value>``."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:52
+#: ../../../manual/OPTIONS_BUILD.txt:44
 msgid "``-U <globbing_expr>``"
 msgstr ""
 
@@ -357,7 +358,7 @@ msgstr ""
 msgid "Use with care, you can make your ``CMakeCache.txt`` non-working."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:63
+#: ../../../manual/OPTIONS_BUILD.txt:54
 msgid "``-G <generator-name>``"
 msgstr ""
 
@@ -378,7 +379,7 @@ msgid ""
 "variable and otherwise falls back to a builtin default selection."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:70
+#: ../../../manual/OPTIONS_BUILD.txt:65
 msgid "``-T <toolset-spec>``"
 msgstr ""
 
@@ -393,7 +394,7 @@ msgid ""
 "`CMAKE_GENERATOR_TOOLSET` variable for details."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:77
+#: ../../../manual/OPTIONS_BUILD.txt:72
 msgid "``-A <platform-name>``"
 msgstr ""
 
@@ -408,7 +409,7 @@ msgid ""
 "`CMAKE_GENERATOR_PLATFORM` variable for details."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:84
+#: ../../../manual/OPTIONS_BUILD.txt:79
 msgid "``-Wno-dev``"
 msgstr ""
 
@@ -422,7 +423,7 @@ msgid ""
 "files. By default this will also turn off deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:90
+#: ../../../manual/OPTIONS_BUILD.txt:86
 msgid "``-Wdev``"
 msgstr ""
 
@@ -436,7 +437,7 @@ msgid ""
 "files. By default this will also turn on deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:96
+#: ../../../manual/OPTIONS_BUILD.txt:92
 msgid "``-Werror=dev``"
 msgstr ""
 
@@ -450,7 +451,7 @@ msgid ""
 "errors. By default this will also turn on deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:102
+#: ../../../manual/OPTIONS_BUILD.txt:98
 msgid "``-Wno-error=dev``"
 msgstr ""
 
@@ -464,7 +465,7 @@ msgid ""
 "not errors. By default this will also turn off deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:108
+#: ../../../manual/OPTIONS_BUILD.txt:104
 msgid "``-Wdeprecated``"
 msgstr ""
 
@@ -478,7 +479,7 @@ msgid ""
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:114
+#: ../../../manual/OPTIONS_BUILD.txt:110
 msgid "``-Wno-deprecated``"
 msgstr ""
 
@@ -492,7 +493,7 @@ msgid ""
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:120
+#: ../../../manual/OPTIONS_BUILD.txt:116
 msgid "``-Werror=deprecated``"
 msgstr ""
 
@@ -506,7 +507,7 @@ msgid ""
 "for the author of the ``CMakeLists.txt`` files, errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:126
+#: ../../../manual/OPTIONS_BUILD.txt:122
 msgid "``-Wno-error=deprecated``"
 msgstr ""
 
@@ -520,7 +521,7 @@ msgid ""
 "for the author of the ``CMakeLists.txt`` files, not errors."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:182
+#: ../../../manual/cmake.1.rst:173
 msgid "``-L[A][H]``"
 msgstr ""
 
@@ -539,7 +540,7 @@ msgid ""
 "display help for each variable."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:188
+#: ../../../manual/cmake.1.rst:184
 msgid "``-N``"
 msgstr ""
 
@@ -551,7 +552,7 @@ msgstr ""
 msgid "Only load the cache.  Do not actually run configure and generate steps."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:195
+#: ../../../manual/cmake.1.rst:190
 msgid "``--graphviz=[file]``"
 msgstr ""
 
@@ -568,7 +569,7 @@ msgid ""
 "`CMakeGraphVizOptions` for more details."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:202
+#: ../../../manual/cmake.1.rst:197
 msgid "``--system-information [file]``"
 msgstr ""
 
@@ -583,7 +584,7 @@ msgid ""
 "such as the cache, log files etc."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:216
+#: ../../../manual/cmake.1.rst:204
 msgid "``--log-level=<ERROR|WARNING|NOTICE|STATUS|VERBOSE|DEBUG|TRACE>``"
 msgstr ""
 
@@ -611,7 +612,7 @@ msgid ""
 "synonym for this option."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:226
+#: ../../../manual/cmake.1.rst:218
 msgid "``--log-context``"
 msgstr ""
 
@@ -629,7 +630,7 @@ msgid ""
 "line option is given, :variable:`CMAKE_MESSAGE_CONTEXT_SHOW` is ignored."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:237
+#: ../../../manual/cmake.1.rst:228
 msgid "``--debug-trycompile``"
 msgstr ""
 
@@ -648,7 +649,7 @@ msgid ""
 "option is best used for one try-compile at a time, and only when debugging."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:243
+#: ../../../manual/cmake.1.rst:239
 msgid "``--debug-output``"
 msgstr ""
 
@@ -662,7 +663,7 @@ msgid ""
 "`message(SEND_ERROR)` calls."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:251
+#: ../../../manual/cmake.1.rst:245
 msgid "``--debug-find``"
 msgstr ""
 
@@ -678,7 +679,7 @@ msgid ""
 "the project."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:256
+#: ../../../manual/cmake.1.rst:253
 msgid "``--trace``"
 msgstr ""
 
@@ -690,7 +691,7 @@ msgstr ""
 msgid "Print a trace of all calls made and from where."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:261
+#: ../../../manual/cmake.1.rst:258
 msgid "``--trace-expand``"
 msgstr ""
 
@@ -698,7 +699,7 @@ msgstr ""
 msgid "Like ``--trace``, but with variables expanded."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:334
+#: ../../../manual/cmake.1.rst:263
 msgid "``--trace-format=<format>``"
 msgstr ""
 
@@ -710,7 +711,7 @@ msgstr ""
 msgid "``<format>`` can be one of the following values."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:270
+#: ../../../manual/cmake.1.rst:268
 msgid "``human``"
 msgstr ""
 
@@ -720,7 +721,7 @@ msgid ""
 "format."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:334
+#: ../../../manual/cmake.1.rst:272
 msgid "``json-v1``"
 msgstr ""
 
@@ -751,7 +752,7 @@ msgstr ""
 msgid "The members are:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:294
+#: ../../../manual/cmake.1.rst:292
 msgid "``file``"
 msgstr ""
 
@@ -759,7 +760,7 @@ msgstr ""
 msgid "The full path to the CMake source file where the function was called."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:297
+#: ../../../manual/cmake.1.rst:296
 msgid "``line``"
 msgstr ""
 
@@ -767,7 +768,7 @@ msgstr ""
 msgid "The line in ``file`` of the function call."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:302
+#: ../../../manual/cmake.1.rst:299
 msgid "``defer``"
 msgstr ""
 
@@ -778,7 +779,7 @@ msgid ""
 "containing the deferred call ``<id>``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:305
+#: ../../../manual/cmake.1.rst:304
 msgid "``cmd``"
 msgstr ""
 
@@ -786,7 +787,7 @@ msgstr ""
 msgid "The name of the function that was called."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:308
+#: ../../../manual/cmake.1.rst:307
 msgid "``args``"
 msgstr ""
 
@@ -794,7 +795,7 @@ msgstr ""
 msgid "A string list of all function parameters."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:311
+#: ../../../manual/cmake.1.rst:310
 msgid "``time``"
 msgstr ""
 
@@ -802,7 +803,7 @@ msgstr ""
 msgid "Timestamp (seconds since epoch) of the function call."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:314
+#: ../../../manual/cmake.1.rst:313
 msgid "``frame``"
 msgstr ""
 
@@ -826,8 +827,8 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:334 ../../../manual/cmake.1.rst:566
-#: ../../../manual/cmake.1.rst:596
+#: ../../../manual/cmake.1.rst:332 ../../../manual/cmake.1.rst:552
+#: ../../../manual/cmake.1.rst:593
 msgid "``version``"
 msgstr ""
 
@@ -837,7 +838,7 @@ msgid ""
 "components following semantic version conventions."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:339
+#: ../../../manual/cmake.1.rst:336
 msgid "``--trace-source=<file>``"
 msgstr ""
 
@@ -849,7 +850,7 @@ msgstr ""
 msgid "Multiple options are allowed."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:342
+#: ../../../manual/cmake.1.rst:341
 msgid "``--trace-redirect=<file>``"
 msgstr ""
 
@@ -859,7 +860,7 @@ msgid ""
 "stderr."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:347
+#: ../../../manual/cmake.1.rst:344
 msgid "``--warn-uninitialized``"
 msgstr ""
 
@@ -871,7 +872,7 @@ msgstr ""
 msgid "Print a warning when an uninitialized variable is used."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:352
+#: ../../../manual/cmake.1.rst:349
 msgid "``--warn-unused-vars``"
 msgstr ""
 
@@ -882,7 +883,7 @@ msgid ""
 "In CMake 3.19 and above the option has been removed."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:358
+#: ../../../manual/cmake.1.rst:354
 msgid "``--no-warn-unused-cli``"
 msgstr ""
 
@@ -895,7 +896,7 @@ msgid ""
 "Don't find variables that are declared on the command line, but not used."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:365
+#: ../../../manual/cmake.1.rst:360
 msgid "``--check-system-vars``"
 msgstr ""
 
@@ -910,7 +911,7 @@ msgid ""
 "tells CMake to warn about other files as well."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:368
+#: ../../../manual/cmake.1.rst:367
 msgid "``--profiling-output=<path>``"
 msgstr ""
 
@@ -919,7 +920,7 @@ msgid ""
 "Used in conjunction with ``--profiling-format`` to output to a given path."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:379
+#: ../../../manual/cmake.1.rst:370
 msgid "``--profiling-format=<file>``"
 msgstr ""
 
@@ -941,7 +942,7 @@ msgid ""
 "using a plugin for a tool like Trace Compass."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:395 ../../../manual/cmake.1.rst:424
+#: ../../../manual/cmake.1.rst:381 ../../../manual/cmake.1.rst:420
 msgid "``--preset <preset>``, ``--preset=<preset>``"
 msgstr ""
 
@@ -966,7 +967,7 @@ msgid ""
 "with a ``-D`` argument, the value ``2`` is preferred."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:399
+#: ../../../manual/cmake.1.rst:397
 msgid "``--list-presets, --list-presets=<[configure | build | test | all]>``"
 msgstr ""
 
@@ -999,7 +1000,7 @@ msgid ""
 "following options:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:418
+#: ../../../manual/cmake.1.rst:416
 msgid "``--build <dir>``"
 msgstr ""
 
@@ -1017,7 +1018,7 @@ msgid ""
 "more details."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:428
+#: ../../../manual/cmake.1.rst:426
 msgid "``--list-presets``"
 msgstr ""
 
@@ -1027,7 +1028,7 @@ msgid ""
 "contain CMake preset files."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:438
+#: ../../../manual/cmake.1.rst:430
 msgid "``--parallel [<jobs>], -j [<jobs>]``"
 msgstr ""
 
@@ -1049,7 +1050,7 @@ msgid ""
 "value of ``1`` can be used to limit to a single job."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:442
+#: ../../../manual/cmake.1.rst:440
 msgid "``--target <tgt>..., -t <tgt>...``"
 msgstr ""
 
@@ -1059,7 +1060,7 @@ msgid ""
 "given, separated by spaces."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:445 ../../../manual/cmake.1.rst:485
+#: ../../../manual/cmake.1.rst:444 ../../../manual/cmake.1.rst:484
 msgid "``--config <cfg>``"
 msgstr ""
 
@@ -1067,7 +1068,7 @@ msgstr ""
 msgid "For multi-configuration tools, choose configuration ``<cfg>``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:449
+#: ../../../manual/cmake.1.rst:447
 msgid "``--clean-first``"
 msgstr ""
 
@@ -1077,7 +1078,7 @@ msgid ""
 "clean``.)"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:452
+#: ../../../manual/cmake.1.rst:451
 msgid "``--use-stderr``"
 msgstr ""
 
@@ -1085,7 +1086,7 @@ msgstr ""
 msgid "Ignored.  Behavior is default in CMake >= 3.0."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:460
+#: ../../../manual/cmake.1.rst:454
 msgid "``--verbose, -v``"
 msgstr ""
 
@@ -1101,7 +1102,7 @@ msgid ""
 "variable:`CMAKE_VERBOSE_MAKEFILE` cached variable is set."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:463 ../../../manual/cmake.1.rst:781
+#: ../../../manual/cmake.1.rst:462 ../../../manual/cmake.1.rst:778
 msgid "``--``"
 msgstr ""
 
@@ -1133,7 +1134,7 @@ msgid ""
 "the generated build system or the native build tool. The options are:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:482
+#: ../../../manual/cmake.1.rst:481
 msgid "``--install <dir>``"
 msgstr ""
 
@@ -1146,7 +1147,7 @@ msgstr ""
 msgid "For multi-configuration generators, choose configuration ``<cfg>``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:488
+#: ../../../manual/cmake.1.rst:487
 msgid "``--component <comp>``"
 msgstr ""
 
@@ -1154,7 +1155,7 @@ msgstr ""
 msgid "Component-based install. Only install component ``<comp>``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:491
+#: ../../../manual/cmake.1.rst:490
 msgid "``--default-directory-permissions <permissions>``"
 msgstr ""
 
@@ -1164,7 +1165,7 @@ msgid ""
 "o=rx>``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:494
+#: ../../../manual/cmake.1.rst:493
 msgid "``--prefix <prefix>``"
 msgstr ""
 
@@ -1172,7 +1173,7 @@ msgstr ""
 msgid "Override the installation prefix, :variable:`CMAKE_INSTALL_PREFIX`."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:497
+#: ../../../manual/cmake.1.rst:496
 msgid "``--strip``"
 msgstr ""
 
@@ -1180,7 +1181,7 @@ msgstr ""
 msgid "Strip before installing."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:502
+#: ../../../manual/cmake.1.rst:499
 msgid "``-v, --verbose``"
 msgstr ""
 
@@ -1254,7 +1255,7 @@ msgid ""
 "commands are:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:600
+#: ../../../manual/cmake.1.rst:548
 msgid "``capabilities``"
 msgstr ""
 
@@ -1308,7 +1309,7 @@ msgstr ""
 msgid "The cmake version suffix string."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:566
+#: ../../../manual/cmake.1.rst:565
 msgid "``isDirty``"
 msgstr ""
 
@@ -1316,7 +1317,7 @@ msgstr ""
 msgid "A bool that is set if the cmake build is from a dirty tree."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:580
+#: ../../../manual/cmake.1.rst:568
 msgid "``generators``"
 msgstr ""
 
@@ -1350,7 +1351,7 @@ msgstr ""
 msgid "``true`` if the generator supports platforms and ``false`` otherwise."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:580
+#: ../../../manual/cmake.1.rst:578
 msgid "``extraGenerators``"
 msgstr ""
 
@@ -1360,7 +1361,7 @@ msgid ""
 "generator."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:596
+#: ../../../manual/cmake.1.rst:582
 msgid "``fileApi``"
 msgstr ""
 
@@ -1370,7 +1371,7 @@ msgid ""
 "available.  The value is a JSON object with one member:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:596
+#: ../../../manual/cmake.1.rst:586
 msgid "``requests``"
 msgstr ""
 
@@ -1380,7 +1381,7 @@ msgid ""
 "request is a JSON object with members:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:591
+#: ../../../manual/cmake.1.rst:590
 msgid "``kind``"
 msgstr ""
 
@@ -1394,7 +1395,7 @@ msgid ""
 "``minor`` members specifying non-negative integer version components."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:600
+#: ../../../manual/cmake.1.rst:598
 msgid "``serverMode``"
 msgstr ""
 
@@ -1404,7 +1405,7 @@ msgid ""
 "since CMake 3.20."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:603
+#: ../../../manual/cmake.1.rst:602
 msgid "``cat <files>...``"
 msgstr ""
 
@@ -1412,7 +1413,7 @@ msgstr ""
 msgid "Concatenate files and print on the standard output."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:606
+#: ../../../manual/cmake.1.rst:605
 msgid "``chdir <dir> <cmd> [<arg>...]``"
 msgstr ""
 
@@ -1420,7 +1421,7 @@ msgstr ""
 msgid "Change the current working directory and run a command."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:612
+#: ../../../manual/cmake.1.rst:608
 msgid "``compare_files [--ignore-eol] <file1> <file2>``"
 msgstr ""
 
@@ -1432,7 +1433,7 @@ msgid ""
 "ignores LF/CRLF differences."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:619
+#: ../../../manual/cmake.1.rst:614
 msgid "``copy <file>... <destination>``"
 msgstr ""
 
@@ -1444,7 +1445,7 @@ msgid ""
 "means it does not copy symlinks, but the files or directories it point to."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:624
+#: ../../../manual/cmake.1.rst:621
 msgid "``copy_directory <dir>... <destination>``"
 msgstr ""
 
@@ -1455,7 +1456,7 @@ msgid ""
 "``copy_directory`` does follow symlinks."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:631
+#: ../../../manual/cmake.1.rst:626
 msgid "``copy_if_different <file>... <destination>``"
 msgstr ""
 
@@ -1466,7 +1467,7 @@ msgid ""
 "directory and it must exist. ``copy_if_different`` does follow symlinks."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:637
+#: ../../../manual/cmake.1.rst:633
 msgid "``create_symlink <old> <new>``"
 msgstr ""
 
@@ -1480,7 +1481,7 @@ msgid ""
 "beforehand."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:644
+#: ../../../manual/cmake.1.rst:639
 msgid "``create_hardlink <old> <new>``"
 msgstr ""
 
@@ -1494,7 +1495,7 @@ msgid ""
 "``<old>`` has to exist beforehand."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:647
+#: ../../../manual/cmake.1.rst:646
 msgid "``echo [<string>...]``"
 msgstr ""
 
@@ -1502,7 +1503,7 @@ msgstr ""
 msgid "Displays arguments as text."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:650
+#: ../../../manual/cmake.1.rst:649
 msgid "``echo_append [<string>...]``"
 msgstr ""
 
@@ -1510,7 +1511,7 @@ msgstr ""
 msgid "Displays arguments as text but no new line."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:653
+#: ../../../manual/cmake.1.rst:652
 msgid "``env [--unset=NAME]... [NAME=VALUE]... COMMAND [ARG]...``"
 msgstr ""
 
@@ -1518,7 +1519,7 @@ msgstr ""
 msgid "Run command in a modified environment."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:656
+#: ../../../manual/cmake.1.rst:655
 msgid "``environment``"
 msgstr ""
 
@@ -1526,7 +1527,7 @@ msgstr ""
 msgid "Display the current environment variables."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:659
+#: ../../../manual/cmake.1.rst:658
 msgid "``false``"
 msgstr ""
 
@@ -1534,7 +1535,7 @@ msgstr ""
 msgid "Do nothing, with an exit code of 1."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:664
+#: ../../../manual/cmake.1.rst:661
 msgid "``make_directory <dir>...``"
 msgstr ""
 
@@ -1544,7 +1545,7 @@ msgid ""
 "If a directory already exists it will be silently ignored."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:670
+#: ../../../manual/cmake.1.rst:666
 msgid "``md5sum <file>...``"
 msgstr ""
 
@@ -1558,7 +1559,7 @@ msgid ""
 "052f86c15bbde68af55c7f7b340ab639  file2.txt"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:676
+#: ../../../manual/cmake.1.rst:672
 msgid "``sha1sum <file>...``"
 msgstr ""
 
@@ -1572,7 +1573,7 @@ msgid ""
 "1df4c8f318665f9a5f2ed38f55adadb7ef9f559c  file2.txt"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:682
+#: ../../../manual/cmake.1.rst:678
 msgid "``sha224sum <file>...``"
 msgstr ""
 
@@ -1586,7 +1587,7 @@ msgid ""
 "6dfbe55f4d2edc5fe5c9197bca51ceaaf824e48eba0cc453088aee24  file2.txt"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:688
+#: ../../../manual/cmake.1.rst:684
 msgid "``sha256sum <file>...``"
 msgstr ""
 
@@ -1600,7 +1601,7 @@ msgid ""
 "15b682ead6c12dedb1baf91231e1e89cfc7974b3787c1e2e01b986bffadae0ea  file2.txt"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:694
+#: ../../../manual/cmake.1.rst:690
 msgid "``sha384sum <file>...``"
 msgstr ""
 
@@ -1616,7 +1617,7 @@ msgid ""
 "file2.txt"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:700
+#: ../../../manual/cmake.1.rst:696
 msgid "``sha512sum <file>...``"
 msgstr ""
 
@@ -1632,7 +1633,7 @@ msgid ""
 "file2.txt"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:713
+#: ../../../manual/cmake.1.rst:702
 msgid "``remove [-f] <file>...``"
 msgstr ""
 
@@ -1652,7 +1653,7 @@ msgid ""
 "without breaking backwards compatibility. Use ``rm`` instead."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:721
+#: ../../../manual/cmake.1.rst:715
 msgid "``remove_directory <dir>...``"
 msgstr ""
 
@@ -1663,7 +1664,7 @@ msgid ""
 "directory, just the symlink will be removed. Use ``rm`` instead."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:725
+#: ../../../manual/cmake.1.rst:723
 msgid "``rename <oldname> <newname>``"
 msgstr ""
 
@@ -1673,7 +1674,7 @@ msgid ""
 "name already exists, then it will be silently replaced."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:733
+#: ../../../manual/cmake.1.rst:727
 msgid "``rm [-rRf] <file> <dir>...``"
 msgstr ""
 
@@ -1686,7 +1687,7 @@ msgid ""
 "zero exit code (i.e. success) in such situations instead."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:736
+#: ../../../manual/cmake.1.rst:735
 msgid "``server``"
 msgstr ""
 
@@ -1694,7 +1695,7 @@ msgstr ""
 msgid "Launch :manual:`cmake-server(7)` mode."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:739
+#: ../../../manual/cmake.1.rst:738
 msgid "``sleep <number>...``"
 msgstr ""
 
@@ -1702,7 +1703,7 @@ msgstr ""
 msgid "Sleep for given number of seconds."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:781
+#: ../../../manual/cmake.1.rst:741
 msgid "``tar [cxt][vf][zjJ] file.tar [<options>] [--] [<pathname>...]``"
 msgstr ""
 
@@ -1710,7 +1711,7 @@ msgstr ""
 msgid "Create or extract a tar or zip archive.  Options are:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:745
+#: ../../../manual/cmake.1.rst:744
 msgid "``c``"
 msgstr ""
 
@@ -1720,7 +1721,7 @@ msgid ""
 "``<pathname>...`` argument is mandatory."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:751
+#: ../../../manual/cmake.1.rst:747
 msgid "``x``"
 msgstr ""
 
@@ -1732,7 +1733,7 @@ msgid ""
 "as printed by list (``-t``)."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:755
+#: ../../../manual/cmake.1.rst:753
 msgid "``t``"
 msgstr ""
 
@@ -1782,7 +1783,7 @@ msgstr ""
 msgid "Compress the resulting archive with Zstandard."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:770
+#: ../../../manual/cmake.1.rst:767
 msgid "``--files-from=<file>``"
 msgstr ""
 
@@ -1793,7 +1794,7 @@ msgid ""
 "whose names start in ``-``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:774
+#: ../../../manual/cmake.1.rst:772
 msgid "``--format=<format>``"
 msgstr ""
 
@@ -1818,7 +1819,7 @@ msgid ""
 "even if they start with ``-``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:784
+#: ../../../manual/cmake.1.rst:783
 msgid "``time <command> [<args>...]``"
 msgstr ""
 
@@ -1826,7 +1827,7 @@ msgstr ""
 msgid "Run command and display elapsed time."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:788
+#: ../../../manual/cmake.1.rst:786
 msgid "``touch <file>...``"
 msgstr ""
 
@@ -1836,7 +1837,7 @@ msgid ""
 "changing ``<file>`` access and modification times."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:792
+#: ../../../manual/cmake.1.rst:790
 msgid "``touch_nocreate <file>...``"
 msgstr ""
 
@@ -1846,7 +1847,7 @@ msgid ""
 "will be silently ignored."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:795
+#: ../../../manual/cmake.1.rst:794
 msgid "``true``"
 msgstr ""
 
@@ -1862,7 +1863,7 @@ msgstr ""
 msgid "The following ``cmake -E`` commands are available only on Windows:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:803
+#: ../../../manual/cmake.1.rst:802
 msgid "``delete_regv <key>``"
 msgstr ""
 
@@ -1870,7 +1871,7 @@ msgstr ""
 msgid "Delete Windows registry value."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:807
+#: ../../../manual/cmake.1.rst:805
 msgid "``env_vs8_wince <sdkname>``"
 msgstr ""
 
@@ -1880,7 +1881,7 @@ msgid ""
 "SDK installed in VS2005."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:811
+#: ../../../manual/cmake.1.rst:809
 msgid "``env_vs9_wince <sdkname>``"
 msgstr ""
 
@@ -1890,7 +1891,7 @@ msgid ""
 "SDK installed in VS2008."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:815
+#: ../../../manual/cmake.1.rst:813
 msgid "``write_regv <key> <value>``"
 msgstr ""
 
@@ -1940,7 +1941,7 @@ msgstr ""
 msgid "with one of the following options:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:6
+#: ../../../manual/OPTIONS_HELP.txt:3
 msgid "``--help,-help,-usage,-h,-H,/?``"
 msgstr ""
 
@@ -1952,7 +1953,7 @@ msgstr ""
 msgid "Usage describes the basic command line interface and its options."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:12
+#: ../../../manual/OPTIONS_HELP.txt:8
 msgid "``--version,-version,/V [<f>]``"
 msgstr ""
 
@@ -1964,7 +1965,7 @@ msgstr ""
 msgid "If a file is specified, the version is written into it. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:18
+#: ../../../manual/OPTIONS_HELP.txt:14
 msgid "``--help-full [<f>]``"
 msgstr ""
 
@@ -1976,7 +1977,7 @@ msgstr ""
 msgid "All manuals are printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:24
+#: ../../../manual/OPTIONS_HELP.txt:20
 msgid "``--help-manual <man> [<f>]``"
 msgstr ""
 
@@ -1988,7 +1989,7 @@ msgstr ""
 msgid "The specified manual is printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:31
+#: ../../../manual/OPTIONS_HELP.txt:26
 msgid "``--help-manual-list [<f>]``"
 msgstr ""
 
@@ -2002,7 +2003,7 @@ msgid ""
 "``--help-manual`` option followed by a manual name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:38
+#: ../../../manual/OPTIONS_HELP.txt:33
 msgid "``--help-command <cmd> [<f>]``"
 msgstr ""
 
@@ -2016,7 +2017,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:45
+#: ../../../manual/OPTIONS_HELP.txt:40
 msgid "``--help-command-list [<f>]``"
 msgstr ""
 
@@ -2030,7 +2031,7 @@ msgid ""
 "``--help-command`` option followed by a command name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:52
+#: ../../../manual/OPTIONS_HELP.txt:47
 msgid "``--help-commands [<f>]``"
 msgstr ""
 
@@ -2044,7 +2045,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:59
+#: ../../../manual/OPTIONS_HELP.txt:54
 msgid "``--help-module <mod> [<f>]``"
 msgstr ""
 
@@ -2058,7 +2059,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:66
+#: ../../../manual/OPTIONS_HELP.txt:61
 msgid "``--help-module-list [<f>]``"
 msgstr ""
 
@@ -2072,7 +2073,7 @@ msgid ""
 "``--help-module`` option followed by a module name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:73
+#: ../../../manual/OPTIONS_HELP.txt:68
 msgid "``--help-modules [<f>]``"
 msgstr ""
 
@@ -2086,7 +2087,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:80
+#: ../../../manual/OPTIONS_HELP.txt:75
 msgid "``--help-policy <cmp> [<f>]``"
 msgstr ""
 
@@ -2100,7 +2101,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:87
+#: ../../../manual/OPTIONS_HELP.txt:82
 msgid "``--help-policy-list [<f>]``"
 msgstr ""
 
@@ -2114,7 +2115,7 @@ msgid ""
 "``--help-policy`` option followed by a policy name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:94
+#: ../../../manual/OPTIONS_HELP.txt:89
 msgid "``--help-policies [<f>]``"
 msgstr ""
 
@@ -2128,7 +2129,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:101
+#: ../../../manual/OPTIONS_HELP.txt:96
 msgid "``--help-property <prop> [<f>]``"
 msgstr ""
 
@@ -2142,7 +2143,7 @@ msgid ""
 "in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:108
+#: ../../../manual/OPTIONS_HELP.txt:103
 msgid "``--help-property-list [<f>]``"
 msgstr ""
 
@@ -2156,7 +2157,7 @@ msgid ""
 "``--help-property`` option followed by a property name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:115
+#: ../../../manual/OPTIONS_HELP.txt:110
 msgid "``--help-properties [<f>]``"
 msgstr ""
 
@@ -2170,7 +2171,7 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:122
+#: ../../../manual/OPTIONS_HELP.txt:117
 msgid "``--help-variable <var> [<f>]``"
 msgstr ""
 
@@ -2184,7 +2185,7 @@ msgid ""
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:129
+#: ../../../manual/OPTIONS_HELP.txt:124
 msgid "``--help-variable-list [<f>]``"
 msgstr ""
 
@@ -2198,7 +2199,7 @@ msgid ""
 "``--help-variable`` option followed by a variable name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:136
+#: ../../../manual/OPTIONS_HELP.txt:131
 msgid "``--help-variables [<f>]``"
 msgstr ""
 
@@ -2228,7 +2229,7 @@ msgstr ""
 msgid "The following resources are available to get help using CMake:"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:6
+#: ../../../manual/LINKS.txt:3
 msgid "Home Page"
 msgstr ""
 
@@ -2240,7 +2241,7 @@ msgstr ""
 msgid "The primary starting point for learning about CMake."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:12
+#: ../../../manual/LINKS.txt:8
 msgid "Online Documentation and Community Resources"
 msgstr ""
 
@@ -2254,7 +2255,7 @@ msgid ""
 "this web page."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:17
+#: ../../../manual/LINKS.txt:14
 msgid "Discourse Forum"
 msgstr ""
 

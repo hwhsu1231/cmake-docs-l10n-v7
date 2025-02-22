@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake v3.20\n"
+"Project-Id-Version: CMake 3.20\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-12 06:45+0000\n"
+"POT-Creation-Date: 2025-02-22 04:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +37,7 @@ msgstr ""
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:20
+#: ../../../../Modules/FindGTest.cmake:19
 msgid "``GTest::gtest``"
 msgstr ""
 
@@ -47,7 +48,7 @@ msgid ""
 "automatically"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:23
+#: ../../../../Modules/FindGTest.cmake:22
 msgid "``GTest::gtest_main``"
 msgstr ""
 
@@ -62,11 +63,11 @@ msgid ""
 "deprecated :prop_tgt:`IMPORTED` targets (available since 3.5):"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:30
+#: ../../../../Modules/FindGTest.cmake:29
 msgid "``GTest::GTest``"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:34
+#: ../../../../Modules/FindGTest.cmake:32
 msgid "``GTest::Main``"
 msgstr ""
 
@@ -86,7 +87,7 @@ msgstr ""
 msgid "Found the Google Testing framework"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:44
+#: ../../../../Modules/FindGTest.cmake:43
 msgid "``GTEST_INCLUDE_DIRS``"
 msgstr ""
 
@@ -100,7 +101,7 @@ msgid ""
 "debug/optimized keywords when a debugging library is found."
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:50
+#: ../../../../Modules/FindGTest.cmake:49
 msgid "``GTEST_LIBRARIES``"
 msgstr ""
 
@@ -118,7 +119,7 @@ msgstr ""
 msgid "The Google Test ``gtest_main`` library"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:55
+#: ../../../../Modules/FindGTest.cmake:54
 msgid "``GTEST_BOTH_LIBRARIES``"
 msgstr ""
 
@@ -134,7 +135,7 @@ msgstr ""
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:63
+#: ../../../../Modules/FindGTest.cmake:62
 msgid "``GTEST_ROOT``"
 msgstr ""
 
@@ -144,7 +145,7 @@ msgid ""
 "environment variable)"
 msgstr ""
 
-#: ../../../../Modules/FindGTest.cmake:68
+#: ../../../../Modules/FindGTest.cmake:65
 msgid "``GTEST_MSVC_SEARCH``"
 msgstr ""
 
