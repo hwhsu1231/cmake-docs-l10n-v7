@@ -38,21 +38,21 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
     get_json_value_by_dot_notation(
         IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
-        IN_DOT_NOTATION   ".${_LANGUAGE}.tmscli"
-        OUT_JSON_VALUE    _LANGUAGE_TMSCLI)
+        IN_DOT_NOTATION   ".${_LANGUAGE}.crowdin"
+        OUT_JSON_VALUE    _LANGUAGE_CROWDIN)
 
 
-    message(STATUS "Preparing to pull '${_LANGUAGE_TMSCLI}' translations for '${VERSION}' version from Crowdin...")
-    set(TMSCLI_PO_DIR   "${PROJ_L10N_VERSION_TMSCLI_DIR}/${_LANGUAGE}")
+    message(STATUS "Preparing to download '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from Crowdin...")
+    set(CROWDIN_PO_DIR   "${PROJ_L10N_VERSION_CROWDIN_DIR}/${_LANGUAGE}")
     set(COMPEND_PO_FILE "${PROJ_L10N_VERSION_COMPEND_DIR}/${_LANGUAGE}.po")
     set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
     set(LOCALE_POT_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")
     remove_cmake_message_indent()
     message("")
     message("_LANGUAGE            = ${_LANGUAGE}")
-    message("_LANGUAGE_TMSCLI     = ${_LANGUAGE_TMSCLI}")
-    message("TMS_CONFIG_FILE_PATH = ${TMS_CONFIG_FILE_PATH}")
-    message("TMSCLI_PO_DIR        = ${TMSCLI_PO_DIR}")
+    message("_LANGUAGE_CROWDIN    = ${_LANGUAGE_CROWDIN}")
+    message("CROWDIN_YML_PATH = ${CROWDIN_YML_PATH}")
+    message("CROWDIN_PO_DIR       = ${CROWDIN_PO_DIR}")
     message("COMPEND_PO_FILE      = ${COMPEND_PO_FILE}")
     message("LOCALE_PO_DIR        = ${LOCALE_PO_DIR}")
     message("LOCALE_POT_DIR       = ${LOCALE_POT_DIR}")
@@ -60,14 +60,14 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Pulling '${_LANGUAGE_TMSCLI}' translations for '${VERSION}' version from Crowdin...")
+    message(STATUS "Downloading '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from Crowdin...")
     remove_cmake_message_indent()
     message("")
     execute_process(
-        COMMAND ${Crowdin_EXECUTABLE} download
-                --language=${_LANGUAGE_TMSCLI}
+        COMMAND ${Crowdin_EXECUTABLE} download translations
+                --language=${_LANGUAGE_CROWDIN}
                 --branch=${VERSION}
-                --config=${TMS_CONFIG_FILE_PATH}
+                --config=${CROWDIN_YML_PATH}
                 --export-only-approved
                 --no-progress
                 --verbose
@@ -84,7 +84,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message("")
     concat_po_from_locale_to_compendium(
         IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}"
-        IN_LOCALE_PO_DIR     "${TMSCLI_PO_DIR}"
+        IN_LOCALE_PO_DIR     "${CROWDIN_PO_DIR}"
         IN_COMPEND_PO_FILE   "${COMPEND_PO_FILE}")
     message("")
     restore_cmake_message_indent()
@@ -97,7 +97,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         IN_LANGUAGE               "${_LANGUAGE}"
         IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}"
         IN_SRC_COMPEND_PO_FILE    "${COMPEND_PO_FILE}"
-        IN_SRC_LOCALE_PO_DIR      "${TMSCLI_PO_DIR}"
+        IN_SRC_LOCALE_PO_DIR      "${CROWDIN_PO_DIR}"
         IN_DST_LOCALE_PO_DIR      "${LOCALE_PO_DIR}"
         IN_DST_LOCALE_POT_DIR     "${LOCALE_POT_DIR}")
     message("")

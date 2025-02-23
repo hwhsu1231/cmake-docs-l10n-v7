@@ -118,7 +118,7 @@ set(PROJ_OUT_BUILDER_DIR            "${PROJ_OUT_DIR}/${SPHINX_BUILDER}")
 set(PROJ_L10N_DIR                   "${PROJ_SOURCE_DIR}/l10n")
 set(PROJ_L10N_VERSION_DIR           "${PROJ_L10N_DIR}/${VERSION}")
 set(PROJ_L10N_VERSION_LOCALE_DIR    "${PROJ_L10N_VERSION_DIR}/locale")
-set(PROJ_L10N_VERSION_TMSCLI_DIR    "${PROJ_L10N_VERSION_DIR}/.tmscli")
+set(PROJ_L10N_VERSION_CROWDIN_DIR   "${PROJ_L10N_VERSION_DIR}/.crowdin")
 set(PROJ_L10N_VERSION_COMPEND_DIR   "${PROJ_L10N_VERSION_DIR}/.compend")
 
 #[============================================================[
@@ -129,7 +129,7 @@ set(LANGUAGES_JSON_PATH             "${PROJ_SOURCE_DIR}/languages.json")
 set(PREV_PACKAGES_TXT_PATH          "${PROJ_CONDA_DIR}/prev/packages.txt")
 set(PREV_REFERENCE_TXT_PATH         "${PROJ_CONDA_DIR}/prev/reference.txt")
 set(REFERENCES_JSON_PATH            "${PROJ_L10N_VERSION_DIR}/references.json")
-set(TMS_CONFIG_FILE_PATH            "${PROJ_L10N_VERSION_DIR}/crowdin.yml")
+set(CROWDIN_YML_PATH                "${PROJ_L10N_VERSION_DIR}/crowdin.yml")
 set(STATISTIC_TXT_PATH              "${PROJ_L10N_VERSION_DIR}/statistic.txt")
 
 #[============================================================[
@@ -325,12 +325,12 @@ init_references_json_file(
     IN_LANGUAGE         "${LANGUAGE_LIST}")
 
 #[============================================================[
-  Initialize ${TMS_CONFIG_FILE_PATH}.
+  Initialize ${CROWDIN_YML_PATH}.
 #]============================================================]
 
 file(COPY_FILE
     "${PROJ_CMAKE_TEMPLATES_DIR}/crowdin.yml"
-    "${TMS_CONFIG_FILE_PATH}")
+    "${CROWDIN_YML_PATH}")
 
 #[============================================================[
 # Print Information.
@@ -376,14 +376,14 @@ message(STATUS "PROJ_OUT_BUILDER_DIR            = ${PROJ_OUT_BUILDER_DIR}")
 message(STATUS "PROJ_L10N_DIR                   = ${PROJ_L10N_DIR}")
 message(STATUS "PROJ_L10N_VERSION_DIR           = ${PROJ_L10N_VERSION_DIR}")
 message(STATUS "PROJ_L10N_VERSION_LOCALE_DIR    = ${PROJ_L10N_VERSION_LOCALE_DIR}")
-message(STATUS "PROJ_L10N_VERSION_TMSCLI_DIR    = ${PROJ_L10N_VERSION_TMSCLI_DIR}")
+message(STATUS "PROJ_L10N_VERSION_CROWDIN_DIR    = ${PROJ_L10N_VERSION_CROWDIN_DIR}")
 message(STATUS "PROJ_L10N_VERSION_COMPEND_DIR   = ${PROJ_L10N_VERSION_COMPEND_DIR}")
 message(STATUS "---------- Configuration Files ----------")
 message(STATUS "LANGUAGES_JSON_PATH             = ${LANGUAGES_JSON_PATH}")
 message(STATUS "PREV_PACKAGES_TXT_PATH          = ${PREV_PACKAGES_TXT_PATH}")
 message(STATUS "PREV_REFERENCE_TXT_PATH         = ${PREV_REFERENCE_TXT_PATH}")
 message(STATUS "REFERENCES_JSON_PATH            = ${REFERENCES_JSON_PATH}")
-message(STATUS "TMS_CONFIG_FILE_PATH            = ${TMS_CONFIG_FILE_PATH}")
+message(STATUS "CROWDIN_YML_PATH                = ${CROWDIN_YML_PATH}")
 message(STATUS "STATISTIC_TXT_PATH              = ${STATISTIC_TXT_PATH}")
 message(STATUS "---------- Other Variables ----------")
 message(STATUS "TMPLS_TO_SOURCE_DIR             = ${TMPLS_TO_SOURCE_DIR}")
@@ -473,14 +473,14 @@ set(SCRIPT_MODE_CACHE
     -D PROJ_L10N_DIR=${PROJ_L10N_DIR}
     -D PROJ_L10N_VERSION_DIR=${PROJ_L10N_VERSION_DIR}
     -D PROJ_L10N_VERSION_LOCALE_DIR=${PROJ_L10N_VERSION_LOCALE_DIR}
-    -D PROJ_L10N_VERSION_TMSCLI_DIR=${PROJ_L10N_VERSION_TMSCLI_DIR}
+    -D PROJ_L10N_VERSION_CROWDIN_DIR=${PROJ_L10N_VERSION_CROWDIN_DIR}
     -D PROJ_L10N_VERSION_COMPEND_DIR=${PROJ_L10N_VERSION_COMPEND_DIR}
     # [Configuration Files]
     -D LANGUAGES_JSON_PATH=${LANGUAGES_JSON_PATH}
     -D PREV_PACKAGES_TXT_PATH=${PREV_PACKAGES_TXT_PATH}
     -D PREV_REFERENCE_TXT_PATH=${PREV_REFERENCE_TXT_PATH}
     -D REFERENCES_JSON_PATH=${REFERENCES_JSON_PATH}
-    -D TMS_CONFIG_FILE_PATH=${TMS_CONFIG_FILE_PATH}
+    -D CROWDIN_YML_PATH=${CROWDIN_YML_PATH}
     -D STATISTIC_TXT_PATH=${STATISTIC_TXT_PATH}
     # [Other Variables]
     -D TMPLS_TO_SOURCE_DIR=${TMPLS_TO_SOURCE_DIR}
@@ -543,16 +543,16 @@ add_custom_target(gettext_compend_po
             -P ${PROJ_CMAKE_SCRIPTS_DIR}/gettext_compend_po.cmake
     VERBATIM)
 
-add_custom_target(tmscli_push_pot
+add_custom_target(crowdin_upload_pot
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/tmscli_push_pot.cmake
+            -P ${PROJ_CMAKE_SCRIPTS_DIR}/crowdin_upload_pot.cmake
     VERBATIM)
 
-add_custom_target(tmscli_pull_po
+add_custom_target(crowdin_download_po
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/tmscli_pull_po.cmake
+            -P ${PROJ_CMAKE_SCRIPTS_DIR}/crowdin_download_po.cmake
     VERBATIM)
 
 add_custom_target(create_rtd_symlinks

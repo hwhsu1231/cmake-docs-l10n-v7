@@ -12,6 +12,6 @@ CMakeUserPresets.json
 # Non-essential project-related directories and files.
 .venv
 .conda
-.tmscli
+.crowdin
 .compend
 /l10n

@@ -23,13 +23,13 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Pushing sources for '${VERSION}' version to TMS...")
+message(STATUS "Uploding sources for '${VERSION}' version to Crowdin...")
 remove_cmake_message_indent()
 message("")
 execute_process(
     COMMAND ${Crowdin_EXECUTABLE} upload sources
             --branch=${VERSION}
-            --config=${TMS_CONFIG_FILE_PATH}
+            --config=${CROWDIN_YML_PATH}
             --no-progress
             --verbose
     WORKING_DIRECTORY ${PROJ_L10N_VERSION_DIR}
