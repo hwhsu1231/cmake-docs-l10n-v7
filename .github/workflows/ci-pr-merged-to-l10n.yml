@@ -57,31 +57,13 @@ jobs:
             exit 1
           fi
 
-  # caller:
-  #   needs: [ 'precondition' ]
-  #   # Beware of https://stackoverflow.com/a/62199280/16265240
-  #   if: ${{ ( ( github.event_name == 'pull_request' ) &&
-  #             ( github.event.pull_request.merged == true ) &&
-  #             ( contains(github.event.pull_request.labels.*.name, 'gettext') ||
-  #               contains(github.event.pull_request.labels.*.name, 'tmscli') ) ) }}
-  #   uses: hwhsu1231/ci-sphinx/.github/workflows/use-pr-merged-to-l10n.yml@main
-  #   with:
-  #     RUNNER: 'ubuntu-latest'
-  #     PR_TITLE: ${{ github.event.pull_request.title }}
-  #     GETTEXT: ${{ contains(github.event.pull_request.labels.*.name, 'gettext') }}
-  #     TMSCLI: ${{ contains(github.event.pull_request.labels.*.name, 'tmscli') }}
-  #     CALLER_JOB: 'caller'
-  #     ENABLE_JOB: true
-  #   secrets:
-  #     ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
-
   dispatch:
     needs: [ 'precondition' ]
     # Beware of https://stackoverflow.com/a/62199280/16265240
     if: ${{ ( ( github.event_name == 'pull_request' ) &&
               ( github.event.pull_request.merged == true ) &&
               ( contains(github.event.pull_request.labels.*.name, 'gettext') ||
-                contains(github.event.pull_request.labels.*.name, 'tmscli') ) ) }}
+                contains(github.event.pull_request.labels.*.name, 'crowdin') ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
       - name: Get VERSION from the Pull Request Title
@@ -101,5 +83,5 @@ jobs:
               "VERSION" : "${{ steps.gvprt.outputs.VERSION }}",
               "LANGUAGE" : "all",
               "GETTEXT" : "${{ contains(github.event.pull_request.labels.*.name, 'gettext') }}",
-              "TMSCLI" : "${{ contains(github.event.pull_request.labels.*.name, 'tmscli') }}"
+              "CROWDIN" : "${{ contains(github.event.pull_request.labels.*.name, 'crowdin') }}"
             }
