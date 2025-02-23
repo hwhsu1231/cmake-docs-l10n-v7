@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.
 # See accompanying file LICENSE.txt for details.
 
-name: ci-tmscli-pull-po
+name: ci-crowdin-pull-po
 
 on:
   # Triggers the workflow based on a schedule.
@@ -152,7 +152,7 @@ jobs:
           type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
           version: ${{ inputs.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP || steps.gos.outputs.VERSION_GROUP }}
-          version-filter: 'tmscli'
+          version-filter: 'crowdin'
       - name: Get LANGUAGE_ARRAY from languages.json
         id: glal
         uses: hwhsu1231/ci-sphinx/.github/actions/get-language-array-from-languages-file@main
@@ -177,7 +177,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}-${{ matrix.LANGUAGE }}
       cancel-in-progress: true
-    uses: hwhsu1231/ci-sphinx/.github/workflows/use-tmscli-pull-po.yml@main
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-pull-po.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}

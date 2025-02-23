@@ -249,24 +249,24 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-push-pot.yml">
-            <img alt="ci-tmscli-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-push-pot.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-crowdin-push-pot.yml">
+            <img alt="ci-crowdin-push-pot" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-crowdin-push-pot.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Push <code>.pot</code> files to TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-pull-po.yml">
-            <img alt="ci-tmscli-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-pull-po.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-crowdin-pull-po.yml">
+            <img alt="ci-crowdin-pull-po" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-crowdin-pull-po.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Pull <code>.pot</code> files from TMS by its CLI tool.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-readme.yml">
-            <img alt="ci-tmscli-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-tmscli-readme.yml/badge.svg" />
+          <a href="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml">
+            <img alt="ci-crowdin-readme" src="https://github.com/hwhsu1231/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml/badge.svg" />
           </a>
         </td>
         <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Push README sources to and pull its translations from TMS by its CLI tool.</td>

@@ -71,16 +71,16 @@ jobs:
           echo "steps.filter.outputs.readme_count   = ${{ steps.filter.outputs.readme_count }}"
           echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
 
-  check-tmscli-readme:
+  check-crowdin-readme:
     needs: [ 'before-check' ]
-    uses: hwhsu1231/ci-sphinx/.github/workflows/use-tmscli-readme.yml@main
+    uses: hwhsu1231/ci-sphinx/.github/workflows/use-crowdin-readme.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
       VERSION: 'check'
       LANGUAGE: 'all'
       LANGUAGE_SOURCE: 'en_US'
-      CALLER_JOB: 'check-tmscli-readme'
+      CALLER_JOB: 'check-crowdin-readme'
       ENABLE_JOB: ${{ needs.before-check.outputs.README_CHANGE == 'true' }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
