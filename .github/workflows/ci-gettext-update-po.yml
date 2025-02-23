@@ -64,7 +64,7 @@ jobs:
           echo "github.event.client_payload.VERSION = ${{ github.event.client_payload.VERSION }}"
           echo "github.event.client_payload.LANGUAGE = ${{ github.event.client_payload.LANGUAGE }}"
           echo "github.event.client_payload.GETTEXT = ${{ github.event.client_payload.GETTEXT }}"
-          echo "github.event.client_payload.TMSCLI = ${{ github.event.client_payload.TMSCLI }}"
+          echo "github.event.client_payload.CROWDIN = ${{ github.event.client_payload.CROWDIN }}"
           echo "[Inputs]"
           echo "inputs.TYPE = ${{ inputs.TYPE }}"
           echo "inputs.VERSION = ${{ inputs.VERSION }}"
