@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,66 +48,90 @@ msgid ""
 "Sets ``<var>`` to a component of ``<FileName>``, where ``<mode>`` is one of:"
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:25
-msgid ""
-"DIRECTORY = Directory without file name\n"
-"NAME      = File name without directory\n"
-"EXT       = File name longest extension (.b.c from d/a.b.c)\n"
-"NAME_WE   = File name with neither the directory nor the longest extension\n"
-"LAST_EXT  = File name last extension (.c from d/a.b.c)\n"
-"NAME_WLE  = File name with neither the directory nor the last extension\n"
-"PATH      = Legacy alias for DIRECTORY (use for CMake <= 2.8.11)"
+#: ../../../command/get_filename_component.rst:23
+msgid "``DIRECTORY`` - directory without file name."
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:33
+#: ../../../command/get_filename_component.rst:24
+msgid "``NAME``      - file name without directory."
+msgstr ""
+
+#: ../../../command/get_filename_component.rst:25
+msgid ""
+"``EXT``       - file name longest extension (``.b.c`` from ``d/a.b.c``)."
+msgstr ""
+
+#: ../../../command/get_filename_component.rst:26
+msgid ""
+"``NAME_WE``   - file name with neither the directory nor the longest "
+"extension."
+msgstr ""
+
+#: ../../../command/get_filename_component.rst:27
+msgid "``LAST_EXT``  - file name last extension (``.c`` from ``d/a.b.c``)."
+msgstr ""
+
+#: ../../../command/get_filename_component.rst:28
+msgid ""
+"``NAME_WLE``  - file name with neither the directory nor the last extension."
+msgstr ""
+
+#: ../../../command/get_filename_component.rst:29
+msgid ""
+"``PATH``      - legacy alias for ``DIRECTORY`` (use for CMake <= 2.8.11)."
+msgstr ""
+
+#: ../../../command/get_filename_component.rst:31
 msgid "Added the ``LAST_EXT`` and ``NAME_WLE`` modes."
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:36
+#: ../../../command/get_filename_component.rst:34
 msgid ""
 "Paths are returned with forward slashes and have no trailing slashes. If the "
 "optional ``CACHE`` argument is specified, the result variable is added to "
 "the cache."
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:40
+#: ../../../command/get_filename_component.rst:38
 msgid ""
 "get_filename_component(<var> <FileName> <mode> [BASE_DIR <dir>] [CACHE])"
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:46
+#: ../../../command/get_filename_component.rst:44
 msgid ""
 "Sets ``<var>`` to the absolute path of ``<FileName>``, where ``<mode>`` is "
 "one of:"
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:51
-msgid ""
-"ABSOLUTE  = Full path to file\n"
-"REALPATH  = Full path to existing file with symlinks resolved"
+#: ../../../command/get_filename_component.rst:47
+msgid "``ABSOLUTE`` - full path to file."
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:54
+#: ../../../command/get_filename_component.rst:48
+msgid "``REALPATH`` - full path to existing file with symlinks resolved."
+msgstr ""
+
+#: ../../../command/get_filename_component.rst:50
 msgid ""
 "If the provided ``<FileName>`` is a relative path, it is evaluated relative "
 "to the given base directory ``<dir>``.  If no base directory is provided, "
 "the default base directory will be :variable:`CMAKE_CURRENT_SOURCE_DIR`."
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:59
+#: ../../../command/get_filename_component.rst:55
 msgid ""
 "Paths are returned with forward slashes and have no trailing slashes.  If "
 "the optional ``CACHE`` argument is specified, the result variable is added "
 "to the cache."
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:63
+#: ../../../command/get_filename_component.rst:59
 msgid ""
 "get_filename_component(<var> <FileName> PROGRAM [PROGRAM_ARGS <arg_var>] "
 "[CACHE])"
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:67
+#: ../../../command/get_filename_component.rst:63
 msgid ""
 "The program in ``<FileName>`` will be found in the system search path or "
 "left as a full path.  If ``PROGRAM_ARGS`` is present with ``PROGRAM``, then "
@@ -116,10 +140,10 @@ msgid ""
 "a program name from its arguments in a command line string."
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:74
+#: ../../../command/get_filename_component.rst:70
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/get_filename_component.rst:76
+#: ../../../command/get_filename_component.rst:72
 msgid ":command:`cmake_path`"
 msgstr ""

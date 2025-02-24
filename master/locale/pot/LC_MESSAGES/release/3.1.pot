@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -563,7 +563,7 @@ msgid ""
 "In CMake 3.0 the :command:`target_link_libraries` command accidentally began "
 "allowing unquoted arguments to use :manual:`generator expressions <cmake-"
 "generator-expressions(7)>` containing a (``;`` separated) list within them.  "
-"For example::"
+"For example:"
 msgstr ""
 
 #: ../../../release/3.1.rst:341
@@ -572,54 +572,54 @@ msgid ""
 "target_link_libraries(A PUBLIC $<BUILD_INTERFACE:${libs}>)"
 msgstr ""
 
-#: ../../../release/3.1.rst:344
-msgid "This is equivalent to writing::"
-msgstr ""
-
 #: ../../../release/3.1.rst:346
-msgid "target_link_libraries(A PUBLIC $<BUILD_INTERFACE:B C>)"
+msgid "This is equivalent to writing:"
 msgstr ""
 
 #: ../../../release/3.1.rst:348
-msgid ""
-"and was never intended to work.  It did not work in CMake 2.8.12. Such "
-"generator expressions should be in quoted arguments::"
+msgid "target_link_libraries(A PUBLIC $<BUILD_INTERFACE:B C>)"
 msgstr ""
 
-#: ../../../release/3.1.rst:351
+#: ../../../release/3.1.rst:352
+msgid ""
+"and was never intended to work.  It did not work in CMake 2.8.12. Such "
+"generator expressions should be in quoted arguments:"
+msgstr ""
+
+#: ../../../release/3.1.rst:355
 msgid ""
 "set(libs B C)\n"
 "target_link_libraries(A PUBLIC \"$<BUILD_INTERFACE:${libs}>\")"
 msgstr ""
 
-#: ../../../release/3.1.rst:354
+#: ../../../release/3.1.rst:360
 msgid "CMake 3.1 again requires the quotes for this to work correctly."
 msgstr ""
 
-#: ../../../release/3.1.rst:356
+#: ../../../release/3.1.rst:362
 msgid ""
 "Prior to CMake 3.1 the Makefile generators did not escape ``#`` correctly "
 "inside make variable assignments used in generated makefiles, causing them "
-"to be treated as comments.  This made code like::"
+"to be treated as comments.  This made code like:"
 msgstr ""
 
-#: ../../../release/3.1.rst:361
+#: ../../../release/3.1.rst:367
 msgid "add_compile_options(-Wno-#pragma-messages)"
 msgstr ""
 
-#: ../../../release/3.1.rst:363
+#: ../../../release/3.1.rst:371
 msgid ""
 "not work in Makefile generators, but work in other generators. Now it is "
 "escaped correctly, making the behavior consistent across generators.  "
 "However, some projects may have tried to workaround the original bug with "
-"code like::"
+"code like:"
 msgstr ""
 
-#: ../../../release/3.1.rst:368
+#: ../../../release/3.1.rst:376
 msgid "set(CMAKE_C_FLAGS \"${CMAKE_C_FLAGS} -Wno-\\\\#pragma-messages\")"
 msgstr ""
 
-#: ../../../release/3.1.rst:370
+#: ../../../release/3.1.rst:380
 msgid ""
 "This added the needed escape for Makefile generators but also caused other "
 "generators to pass ``-Wno-\\#pragma-messages`` to the shell, which would "
@@ -629,7 +629,7 @@ msgid ""
 "value to make the workaround version-specific too."
 msgstr ""
 
-#: ../../../release/3.1.rst:378
+#: ../../../release/3.1.rst:388
 msgid ""
 "Callbacks established by the :command:`variable_watch` command will no "
 "longer receive the ``ALLOWED_UNKNOWN_READ_ACCESS`` access type when the "
@@ -638,64 +638,64 @@ msgid ""
 "``UNKNOWN_READ_ACCESS``."
 msgstr ""
 
-#: ../../../release/3.1.rst:384
+#: ../../../release/3.1.rst:394
 msgid ""
 "The :module:`CMakeDetermineVSServicePack` module now warns that it is "
 "deprecated and should not longer be used.  Use the :variable:"
 "`CMAKE_<LANG>_COMPILER_VERSION` variable instead."
 msgstr ""
 
-#: ../../../release/3.1.rst:388
+#: ../../../release/3.1.rst:398
 msgid ""
 "The :module:`FindITK` module has been removed altogether. It was a thin-"
 "wrapper around ``find_package(ITK ... NO_MODULE)``. This produces much "
 "clearer error messages when ITK is not found."
 msgstr ""
 
-#: ../../../release/3.1.rst:392
+#: ../../../release/3.1.rst:402
 msgid ""
 "The :module:`FindVTK` module has been removed altogether. It was a thin-"
 "wrapper around ``find_package(VTK ... NO_MODULE)``. This produces much "
 "clearer error messages when VTK is not found."
 msgstr ""
 
-#: ../../../release/3.1.rst:396
+#: ../../../release/3.1.rst:406
 msgid ""
 "The module also provided compatibility support for finding VTK 4.0. This "
 "capability has been dropped."
 msgstr ""
 
-#: ../../../release/3.1.rst:400
+#: ../../../release/3.1.rst:410
 msgid "Other Changes"
 msgstr ""
 
-#: ../../../release/3.1.rst:402
+#: ../../../release/3.1.rst:412
 msgid ""
 "The :manual:`cmake-gui(1)` learned to capture output from child processes "
 "started by the :command:`execute_process` command and display it in the "
 "output window."
 msgstr ""
 
-#: ../../../release/3.1.rst:406
+#: ../../../release/3.1.rst:416
 msgid ""
 "The :manual:`cmake-language(7)` internal implementation of generator "
 "expression and list expansion parsers have been optimized and shows non-"
 "trivial speedup on large projects."
 msgstr ""
 
-#: ../../../release/3.1.rst:410
+#: ../../../release/3.1.rst:420
 msgid ""
 "The Makefile generators learned to use response files with GNU tools on "
 "Windows to pass library directories and names to the linker."
 msgstr ""
 
-#: ../../../release/3.1.rst:413
+#: ../../../release/3.1.rst:423
 msgid ""
 "When generating linker command-lines, CMake now avoids repeating items "
 "corresponding to SHARED library targets."
 msgstr ""
 
-#: ../../../release/3.1.rst:416
+#: ../../../release/3.1.rst:426
 msgid ""
 "Support for the Open Watcom compiler has been overhauled. The :variable:"
 "`CMAKE_<LANG>_COMPILER_ID` is now ``OpenWatcom``, and the :variable:"
@@ -704,7 +704,7 @@ msgid ""
 "number by 11."
 msgstr ""
 
-#: ../../../release/3.1.rst:423
+#: ../../../release/3.1.rst:433
 msgid ""
 "The ``cmake-mode.el`` major Emacs editing mode no longer treats ``_`` as "
 "part of words, making it more consistent with other major modes."

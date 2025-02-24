@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,7 @@ msgid ""
 "FIND_PACKAGE command) as such:"
 msgstr ""
 
-#: ../../../../Modules/FindwxWidgets.cmake:63
+#: ../../../../Modules/FindwxWidgets.cmake:61
 msgid "set(wxWidgets_CONFIG_OPTIONS --toolkit=base --prefix=/usr)"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Sample usage:"
 msgstr ""
 
-#: ../../../../Modules/FindwxWidgets.cmake:98
+#: ../../../../Modules/FindwxWidgets.cmake:96
 msgid ""
 "# Note that for MinGW users the order of libs is important!\n"
 "find_package(wxWidgets COMPONENTS gl core base OPTIONAL_COMPONENTS net)\n"
@@ -148,7 +148,7 @@ msgstr ""
 msgid "If wxWidgets is required (i.e., not an optional part):"
 msgstr ""
 
-#: ../../../../Modules/FindwxWidgets.cmake:112
+#: ../../../../Modules/FindwxWidgets.cmake:110
 msgid ""
 "find_package(wxWidgets REQUIRED gl core base OPTIONAL_COMPONENTS net)\n"
 "include(${wxWidgets_USE_FILE})\n"
@@ -157,14 +157,14 @@ msgid ""
 msgstr ""
 
 #: ../../../../Modules/FindwxWidgets.cmake:118
-msgid "Imported targets"
+msgid "Imported Targets"
 msgstr ""
 
 #: ../../../../Modules/FindwxWidgets.cmake:122
 msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
-#: ../../../../Modules/FindwxWidgets.cmake:1245
+#: ../../../../Modules/FindwxWidgets.cmake:124
 msgid "``wxWidgets::wxWidgets``"
 msgstr ""
 

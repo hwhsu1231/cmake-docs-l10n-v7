@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,66 +49,103 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:39
+#: ../../../command/ctest_submit.rst:24
 msgid "``PARTS <part>...``"
 msgstr ""
 
 #: ../../../command/ctest_submit.rst:25
-msgid "Specify a subset of parts to submit.  Valid part names are::"
+msgid "Specify a subset of parts to submit.  Valid part names are:"
 msgstr ""
 
 #: ../../../command/ctest_submit.rst:27
-msgid ""
-"Start      = nothing\n"
-"Update     = ctest_update results, in Update.xml\n"
-"Configure  = ctest_configure results, in Configure.xml\n"
-"Build      = ctest_build results, in Build.xml\n"
-"Test       = ctest_test results, in Test.xml\n"
-"Coverage   = ctest_coverage results, in Coverage.xml\n"
-"MemCheck   = ctest_memcheck results, in DynamicAnalysis.xml and\n"
-"             DynamicAnalysis-Test.xml\n"
-"Notes      = Files listed by CTEST_NOTES_FILES, in Notes.xml\n"
-"ExtraFiles = Files listed by CTEST_EXTRA_SUBMIT_FILES\n"
-"Upload     = Files prepared for upload by ctest_upload(), in Upload.xml\n"
-"Submit     = nothing\n"
-"Done       = Build is complete, in Done.xml"
+msgid "``Start`` - nothing."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:43
-msgid "``FILES <file>...``"
+#: ../../../command/ctest_submit.rst:28
+msgid "``Update`` - :command:`ctest_update` results, in ``Update.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:29
+msgid ""
+"``Configure`` - :command:`ctest_configure` results, in ``Configure.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:30
+msgid "``Build`` - :command:`ctest_build` results, in ``Build.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:31
+msgid "``Test`` - :command:`ctest_test` results, in ``Test.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:32
+msgid "``Coverage`` - :command:`ctest_coverage` results, in ``Coverage.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:33
+msgid ""
+"``MemCheck`` - :command:`ctest_memcheck` results, in ``DynamicAnalysis.xml`` "
+"and ``DynamicAnalysis-Test.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:35
+msgid ""
+"``Notes`` - Files listed by :variable:`CTEST_NOTES_FILES`, in ``Notes.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:36
+msgid "``ExtraFiles`` - Files listed by :variable:`CTEST_EXTRA_SUBMIT_FILES`."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:37
+msgid ""
+"``Upload`` - Files prepared for upload by :command:`ctest_upload`, in "
+"``Upload.xml``."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:39
+msgid "``Submit`` - nothing."
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:40
+msgid "``Done`` - Build is complete, in ``Done.xml``."
 msgstr ""
 
 #: ../../../command/ctest_submit.rst:42
+msgid "``FILES <file>...``"
+msgstr ""
+
+#: ../../../command/ctest_submit.rst:43
 msgid ""
 "Specify an explicit list of specific files to be submitted. Each individual "
 "file must exist at the time of the call."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:49
+#: ../../../command/ctest_submit.rst:46
 msgid "``SUBMIT_URL <url>``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:48
+#: ../../../command/ctest_submit.rst:49
 msgid ""
 "The ``http`` or ``https`` URL of the dashboard server to send the submission "
 "to.  If not given, the :variable:`CTEST_SUBMIT_URL` variable is used."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:55
+#: ../../../command/ctest_submit.rst:52
 msgid "``BUILD_ID <result-var>``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:54
+#: ../../../command/ctest_submit.rst:55
 msgid ""
 "Store in the ``<result-var>`` variable the ID assigned to this build by "
 "CDash."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:69
+#: ../../../command/ctest_submit.rst:58
 msgid "``HTTPHEADER <HTTP-header>``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:60
+#: ../../../command/ctest_submit.rst:61
 msgid ""
 "Specify HTTP header to be included in the request to CDash during "
 "submission. For example, CDash can be configured to only accept submissions "
@@ -116,11 +153,11 @@ msgid ""
 "in your header:"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:65
+#: ../../../command/ctest_submit.rst:66
 msgid "ctest_submit(HTTPHEADER \"Authorization: Bearer <auth-token>\")"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:69
+#: ../../../command/ctest_submit.rst:70
 msgid "This suboption can be repeated several times for multiple headers."
 msgstr ""
 
@@ -128,55 +165,55 @@ msgstr ""
 msgid "``RETRY_COUNT <count>``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:72
+#: ../../../command/ctest_submit.rst:73
 msgid "Specify how many times to retry a timed-out submission."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:76
+#: ../../../command/ctest_submit.rst:75
 msgid "``RETRY_DELAY <delay>``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:75
+#: ../../../command/ctest_submit.rst:76
 msgid ""
 "Specify how long (in seconds) to wait after a timed-out submission before "
 "attempting to re-submit."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:80
+#: ../../../command/ctest_submit.rst:79
 msgid "``RETURN_VALUE <result-var>``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:79
+#: ../../../command/ctest_submit.rst:80
 msgid ""
 "Store in the ``<result-var>`` variable ``0`` for success and non-zero on "
 "failure."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:86
+#: ../../../command/ctest_submit.rst:83
 msgid "``CAPTURE_CMAKE_ERROR <result-var>``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:85
+#: ../../../command/ctest_submit.rst:86
 msgid ""
 "Store in the ``<result-var>`` variable -1 if there are any errors running "
 "the command and prevent ctest from returning non-zero if an error occurs."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:92
+#: ../../../command/ctest_submit.rst:89
 msgid "``QUIET``"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:91
+#: ../../../command/ctest_submit.rst:92
 msgid ""
 "Suppress all non-error messages that would have otherwise been printed to "
 "the console."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:95
+#: ../../../command/ctest_submit.rst:96
 msgid "Submit to CDash Upload API"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:99
+#: ../../../command/ctest_submit.rst:100
 msgid ""
 "ctest_submit(CDASH_UPLOAD <file> [CDASH_UPLOAD_TYPE <type>]\n"
 "             [SUBMIT_URL <url>]\n"
@@ -188,7 +225,7 @@ msgid ""
 "             [QUIET])"
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:110
+#: ../../../command/ctest_submit.rst:111
 msgid ""
 "This second signature is used to upload files to CDash via the CDash file "
 "upload API. The API first sends a request to upload to CDash along with a "
@@ -197,26 +234,26 @@ msgid ""
 "CDash which handler to use to process the data."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:116
+#: ../../../command/ctest_submit.rst:117
 msgid "This signature interprets options in the same way as the first one."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:118
+#: ../../../command/ctest_submit.rst:119
 msgid "Added the ``RETRY_COUNT``, ``RETRY_DELAY``, ``QUIET`` options."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:121
+#: ../../../command/ctest_submit.rst:122
 msgid "Added the ``HTTPHEADER`` option."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:124
+#: ../../../command/ctest_submit.rst:125
 msgid "Added the ``RETURN_VALUE`` option."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:127
+#: ../../../command/ctest_submit.rst:128
 msgid "Added the ``SUBMIT_URL`` option."
 msgstr ""
 
-#: ../../../command/ctest_submit.rst:130
+#: ../../../command/ctest_submit.rst:131
 msgid "Added the ``BUILD_ID`` option."
 msgstr ""

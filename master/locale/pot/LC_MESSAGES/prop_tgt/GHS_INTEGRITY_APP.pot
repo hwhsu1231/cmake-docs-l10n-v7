@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,13 +24,13 @@ msgstr ""
 #: ../../../prop_tgt/GHS_INTEGRITY_APP.rst:6
 msgid ""
 "``ON`` / ``OFF`` boolean to determine if an executable target should be "
-"treated as an `Integrity Application`."
+"treated as an ``Integrity Application``."
 msgstr ""
 
 #: ../../../prop_tgt/GHS_INTEGRITY_APP.rst:9
 msgid ""
 "If no value is set and if a ``.int`` file is added as a source file to the "
-"executable target it will be treated as an `Integrity Application`."
+"executable target it will be treated as an ``Integrity Application``."
 msgstr ""
 
 #: ../../../prop_tgt/GHS_INTEGRITY_APP.rst:12

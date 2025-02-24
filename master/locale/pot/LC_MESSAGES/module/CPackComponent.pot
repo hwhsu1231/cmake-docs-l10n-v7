@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid ""
 "list. The :command:`get_cmake_property` command can be used to obtain the "
 "``COMPONENTS`` property, then the :command:`list(REMOVE_ITEM)` command can "
 "be used to remove the unwanted ones. For example, to use all defined "
-"components except ``foo`` and ``bar``::"
+"components except ``foo`` and ``bar``:"
 msgstr ""
 
 #: ../../../../Modules/CPackComponent.cmake:52
@@ -94,11 +94,11 @@ msgid ""
 "list(REMOVE_ITEM CPACK_COMPONENTS_ALL \"foo\" \"bar\")"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:57
+#: ../../../../Modules/CPackComponent.cmake:59
 msgid "Enable/Disable component install for CPack generator <GENNAME>."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:59
+#: ../../../../Modules/CPackComponent.cmake:61
 msgid ""
 "Each CPack Generator (RPM, DEB, ARCHIVE, NSIS, DMG, etc...) has a legacy "
 "default behavior.  e.g.  RPM builds monolithic whereas NSIS builds "
@@ -106,69 +106,69 @@ msgid ""
 "0/1 or OFF/ON."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:66
+#: ../../../../Modules/CPackComponent.cmake:68
 msgid ""
 "Specify how components are grouped for multi-package component-aware CPack "
 "generators."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:69
+#: ../../../../Modules/CPackComponent.cmake:71
 msgid ""
 "Some generators like RPM or ARCHIVE (TGZ, ZIP, ...) may generate several "
 "packages files when there are components, depending on the value of this "
 "variable:"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:73
+#: ../../../../Modules/CPackComponent.cmake:75
 msgid "ONE_PER_GROUP (default): create one package per component group"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:74
+#: ../../../../Modules/CPackComponent.cmake:76
 msgid "IGNORE : create one package per component (ignore the groups)"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:75
+#: ../../../../Modules/CPackComponent.cmake:77
 msgid ""
 "ALL_COMPONENTS_IN_ONE : create a single package with all requested components"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:80
+#: ../../../../Modules/CPackComponent.cmake:82
 msgid "The name to be displayed for a component."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:84
+#: ../../../../Modules/CPackComponent.cmake:86
 msgid "The description of a component."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:88
+#: ../../../../Modules/CPackComponent.cmake:90
 msgid "The group of a component."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:92
+#: ../../../../Modules/CPackComponent.cmake:94
 msgid "The dependencies (list of components) on which this component depends."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:96
+#: ../../../../Modules/CPackComponent.cmake:98
 msgid "True if this component is hidden from the user."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:100
+#: ../../../../Modules/CPackComponent.cmake:102
 msgid "True if this component is required."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:104
+#: ../../../../Modules/CPackComponent.cmake:106
 msgid "True if this component is not selected to be installed by default."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:107
+#: ../../../../Modules/CPackComponent.cmake:109
 msgid "Commands"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:110
+#: ../../../../Modules/CPackComponent.cmake:112
 msgid "Add component"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:114
+#: ../../../../Modules/CPackComponent.cmake:116
 msgid "Describe an installation component."
 msgstr ""
 
@@ -186,7 +186,7 @@ msgid ""
 "                    [PLIST filename])"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:129
+#: ../../../../Modules/CPackComponent.cmake:131
 msgid ""
 "``compname`` is the name of an installation component, as defined by the "
 "``COMPONENT`` argument of one or more CMake :command:`install` commands. "
@@ -195,13 +195,13 @@ msgid ""
 "component to a component group."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:135
+#: ../../../../Modules/CPackComponent.cmake:137
 msgid ""
 "DISPLAY_NAME is the displayed name of the component, used in graphical "
 "installers to display the component name.  This value can be any string."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:139
+#: ../../../../Modules/CPackComponent.cmake:141
 msgid ""
 "DESCRIPTION is an extended description of the component, used in graphical "
 "installers to give the user additional information about the component.  "
@@ -209,28 +209,28 @@ msgid ""
 "Typically, these descriptions should be no more than a few lines long."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:145
+#: ../../../../Modules/CPackComponent.cmake:147
 msgid ""
 "HIDDEN indicates that this component will be hidden in the graphical "
 "installer, so that the user cannot directly change whether it is installed "
 "or not."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:149
+#: ../../../../Modules/CPackComponent.cmake:151
 msgid ""
 "REQUIRED indicates that this component is required, and therefore will "
 "always be installed.  It will be visible in the graphical installer, but it "
 "cannot be unselected.  (Typically, required components are shown grayed out)."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:154
+#: ../../../../Modules/CPackComponent.cmake:156
 msgid ""
 "DISABLED indicates that this component should be disabled (unselected) by "
 "default.  The user is free to select this component for installation, unless "
 "it is also HIDDEN."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:158
+#: ../../../../Modules/CPackComponent.cmake:160
 msgid ""
 "DEPENDS lists the components on which this component depends.  If this "
 "component is selected, then each of the components listed must also be "
@@ -238,7 +238,7 @@ msgid ""
 "itself, so that users cannot install inconsistent sets of components."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:163
+#: ../../../../Modules/CPackComponent.cmake:165
 msgid ""
 "GROUP names the component group of which this component is a part.  If not "
 "provided, the component will be a standalone component, not part of any "
@@ -246,7 +246,7 @@ msgid ""
 "cpack_add_component_group command, detailed below."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:168
+#: ../../../../Modules/CPackComponent.cmake:170
 msgid ""
 "INSTALL_TYPES lists the installation types of which this component is a "
 "part.  When one of these installations types is selected, this component "
@@ -254,14 +254,14 @@ msgid ""
 "cpack_add_install_type command, detailed below."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:173
+#: ../../../../Modules/CPackComponent.cmake:175
 msgid ""
 "DOWNLOADED indicates that this component should be downloaded on-the-fly by "
 "the installer, rather than packaged in with the installer itself.  For more "
 "information, see the cpack_configure_downloads command."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:178
+#: ../../../../Modules/CPackComponent.cmake:180
 msgid ""
 "ARCHIVE_FILE provides a name for the archive file created by CPack to be "
 "used for downloaded components.  If not supplied, CPack will create a file "
@@ -269,17 +269,17 @@ msgid ""
 "component.  See cpack_configure_downloads for more information."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:183
+#: ../../../../Modules/CPackComponent.cmake:185
 msgid ""
 "PLIST gives a filename that is passed to pkgbuild with the ``--component-"
 "plist`` argument when using the productbuild generator."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:187
+#: ../../../../Modules/CPackComponent.cmake:189
 msgid "Add component group"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:191
+#: ../../../../Modules/CPackComponent.cmake:193
 msgid "Describes a group of related CPack installation components."
 msgstr ""
 
@@ -293,7 +293,7 @@ msgid ""
 "                         [BOLD_TITLE])"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:204
+#: ../../../../Modules/CPackComponent.cmake:206
 msgid ""
 "The cpack_add_component_group describes a group of installation components, "
 "which will be placed together within the listing of options.  Typically, "
@@ -305,14 +305,14 @@ msgid ""
 "The name of the group must not conflict with the name of any component."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:215
+#: ../../../../Modules/CPackComponent.cmake:217
 msgid ""
 "DISPLAY_NAME is the displayed name of the component group, used in graphical "
 "installers to display the component group name.  This value can be any "
 "string."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:219
+#: ../../../../Modules/CPackComponent.cmake:221
 msgid ""
 "DESCRIPTION is an extended description of the component group, used in "
 "graphical installers to give the user additional information about the "
@@ -321,31 +321,31 @@ msgid ""
 "more than a few lines long."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:225
+#: ../../../../Modules/CPackComponent.cmake:227
 msgid ""
 "PARENT_GROUP, if supplied, names the parent group of this group. Parent "
 "groups are used to establish a hierarchy of groups, providing an arbitrary "
 "hierarchy of groups."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:229
+#: ../../../../Modules/CPackComponent.cmake:231
 msgid ""
 "EXPANDED indicates that, by default, the group should show up as "
 "\"expanded\", so that the user immediately sees all of the components within "
 "the group.  Otherwise, the group will initially show up as a single entry."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:234
+#: ../../../../Modules/CPackComponent.cmake:236
 msgid ""
 "BOLD_TITLE indicates that the group title should appear in bold, to call the "
 "user's attention to the group."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:238
+#: ../../../../Modules/CPackComponent.cmake:240
 msgid "Add installation type"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:242
+#: ../../../../Modules/CPackComponent.cmake:244
 msgid ""
 "Add a new installation type containing a set of predefined component "
 "selections to the graphical installer."
@@ -357,7 +357,7 @@ msgid ""
 "                       [DISPLAY_NAME name])"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:252
+#: ../../../../Modules/CPackComponent.cmake:254
 msgid ""
 "The cpack_add_install_type command identifies a set of preselected "
 "components that represents a common use case for an application.  For "
@@ -368,18 +368,18 @@ msgid ""
 "cpack_add_component."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:260
+#: ../../../../Modules/CPackComponent.cmake:262
 msgid ""
 "DISPLAY_NAME is the displayed name of the install type, which will typically "
 "show up in a drop-down box within a graphical installer. This value can be "
 "any string."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:265
+#: ../../../../Modules/CPackComponent.cmake:267
 msgid "Configure downloads"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:269
+#: ../../../../Modules/CPackComponent.cmake:271
 msgid ""
 "Configure CPack to download selected components on-the-fly as part of the "
 "installation process."
@@ -393,7 +393,7 @@ msgid ""
 "                          [ADD_REMOVE|NO_ADD_REMOVE])"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:281
+#: ../../../../Modules/CPackComponent.cmake:283
 msgid ""
 "The cpack_configure_downloads command configures installation-time downloads "
 "of selected components.  For each downloadable component, CPack will create "
@@ -409,24 +409,24 @@ msgid ""
 "components functionality requires the ZipDLL plug-in for NSIS, available at:"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:297
+#: ../../../../Modules/CPackComponent.cmake:299
 msgid "http://nsis.sourceforge.net/ZipDLL_plug-in"
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:299
+#: ../../../../Modules/CPackComponent.cmake:301
 msgid ""
 "On macOS, installers that download components on-the-fly can only be built "
 "and installed on system using macOS 10.5 or later."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:302
+#: ../../../../Modules/CPackComponent.cmake:304
 msgid ""
 "The site argument is a URL where the archives for downloadable components "
 "will reside, e.g., https://cmake.org/files/v3.25/ All of the archives "
 "produced by CPack should be uploaded to that location."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:307
+#: ../../../../Modules/CPackComponent.cmake:309
 msgid ""
 "UPLOAD_DIRECTORY is the local directory where CPack will create the various "
 "archives for each of the components.  The contents of this directory should "
@@ -435,7 +435,7 @@ msgid ""
 "binary directory to store the generated archives."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:314
+#: ../../../../Modules/CPackComponent.cmake:316
 msgid ""
 "The ALL flag indicates that all components be downloaded.  Otherwise, only "
 "those components explicitly marked as DOWNLOADED or that have a specified "
@@ -443,7 +443,7 @@ msgid ""
 "ADD_REMOVE (unless NO_ADD_REMOVE is specified)."
 msgstr ""
 
-#: ../../../../Modules/CPackComponent.cmake:319
+#: ../../../../Modules/CPackComponent.cmake:321
 msgid ""
 "ADD_REMOVE indicates that CPack should install a copy of the installer that "
 "can be called from Windows' Add/Remove Programs dialog (via the \"Modify\" "

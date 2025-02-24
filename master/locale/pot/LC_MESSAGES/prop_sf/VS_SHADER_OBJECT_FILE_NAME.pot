@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "VS_SHADER_OBJECT_FILE_NAME"
 msgstr ""
 
-#: ../../../prop_sf/VS_SHADER_OBJECT_FILE_NAME.rst:6
+#: ../../../prop_sf/VS_SHADER_OBJECT_FILE_NAME.rst:9
 msgid ""
 "Specifies a file name for the compiled shader object file for an ``.hlsl`` "
 "source file.  This adds the ``-Fo`` flag to the command line for the "

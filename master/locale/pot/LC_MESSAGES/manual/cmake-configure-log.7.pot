@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,14 +41,14 @@ msgstr ""
 
 #: ../../../manual/cmake-configure-log.7.rst:23
 msgid ""
-"For human use, this version of CMake writes the configure log to the file::"
+"For human use, this version of CMake writes the configure log to the file:"
 msgstr ""
 
 #: ../../../manual/cmake-configure-log.7.rst:25
 msgid "${CMAKE_BINARY_DIR}/CMakeFiles/CMakeConfigureLog.yaml"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:27
+#: ../../../manual/cmake-configure-log.7.rst:29
 msgid ""
 "However, the *location and name of the log file may change* in future "
 "versions of CMake.  Tools that read the configure log should get its "
@@ -57,15 +57,15 @@ msgid ""
 "details."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:34
+#: ../../../manual/cmake-configure-log.7.rst:36
 msgid "Log Structure"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:36
+#: ../../../manual/cmake-configure-log.7.rst:38
 msgid "The configure log is designed to be both machine- and human-readable."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:38
+#: ../../../manual/cmake-configure-log.7.rst:40
 msgid ""
 "The log file is a YAML document stream containing zero or more YAML "
 "documents separated by document markers.  Each document begins with a ``---"
@@ -74,7 +74,7 @@ msgid ""
 "normally, ends with a ``...`` document marker line:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:44
+#: ../../../manual/cmake-configure-log.7.rst:46
 msgid ""
 "---\n"
 "events:\n"
@@ -87,32 +87,32 @@ msgid ""
 "..."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:56
+#: ../../../manual/cmake-configure-log.7.rst:58
 msgid ""
 "A new document is appended to the log every time CMake configures the build "
 "tree and logs new events."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:59
+#: ../../../manual/cmake-configure-log.7.rst:61
 msgid "The keys of each document root mapping are:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:64
+#: ../../../manual/cmake-configure-log.7.rst:63
 msgid "``events``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:62
+#: ../../../manual/cmake-configure-log.7.rst:64
 msgid ""
 "A YAML block sequence of nodes corresponding to events logged during one "
 "CMake \"configure\" step.  Each event is a YAML node containing one of the "
 "`Event Kinds`_ documented below."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:67
+#: ../../../manual/cmake-configure-log.7.rst:69
 msgid "Log Versioning"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:69
+#: ../../../manual/cmake-configure-log.7.rst:71
 msgid ""
 "Each of the `Event Kinds`_ is versioned independently.  The set of keys an "
 "event's log entry provides is specific to its major version. When an event "
@@ -120,23 +120,23 @@ msgid ""
 "version of CMake is always written to the log."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:74
+#: ../../../manual/cmake-configure-log.7.rst:76
 msgid ""
 "Tools reading the configure log must ignore event kinds and versions they do "
 "not understand:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:77
+#: ../../../manual/cmake-configure-log.7.rst:79
 msgid "A future version of CMake may introduce a new event kind or version."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:79
+#: ../../../manual/cmake-configure-log.7.rst:81
 msgid ""
 "If an existing build tree is re-configured with a different version of "
 "CMake, the log may contain different versions of the same event kind."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:82
+#: ../../../manual/cmake-configure-log.7.rst:84
 msgid ""
 "If :manual:`cmake-file-api(7)` queries request one or more :ref:"
 "`configureLog <file-api configureLog>` object versions, the log may contain "
@@ -144,7 +144,7 @@ msgid ""
 "event kind."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:87
+#: ../../../manual/cmake-configure-log.7.rst:89
 msgid ""
 "IDEs should write a :manual:`cmake-file-api(7)` query requesting a specific :"
 "ref:`configureLog <file-api configureLog>` object version, before running "
@@ -152,11 +152,11 @@ msgid ""
 "reply."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:93
+#: ../../../manual/cmake-configure-log.7.rst:95
 msgid "Text Block Encoding"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:95
+#: ../../../manual/cmake-configure-log.7.rst:97
 msgid ""
 "In order to make the log human-readable, text blocks are always represented "
 "using YAML literal block scalars (``|``). Since literal block scalars do not "
@@ -164,23 +164,23 @@ msgid ""
 "the application layer:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:100
+#: ../../../manual/cmake-configure-log.7.rst:102
 msgid "``\\\\`` encodes a backslash."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:101
+#: ../../../manual/cmake-configure-log.7.rst:103
 msgid "``\\xXX`` encodes a byte using two hexadecimal digits, ``XX``."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:106
+#: ../../../manual/cmake-configure-log.7.rst:108
 msgid "Event Kinds"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:108
+#: ../../../manual/cmake-configure-log.7.rst:110
 msgid "Every event kind is represented by a YAML mapping of the form:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:110
+#: ../../../manual/cmake-configure-log.7.rst:112
 msgid ""
 "kind: \"<kind>-v<major>\"\n"
 "backtrace:\n"
@@ -190,34 +190,34 @@ msgid ""
 "#...event-specific keys..."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:119
+#: ../../../manual/cmake-configure-log.7.rst:121
 msgid "The keys common to all events are:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:122
+#: ../../../manual/cmake-configure-log.7.rst:123
 msgid "``kind``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:122
+#: ../../../manual/cmake-configure-log.7.rst:124
 msgid "A string identifying the event kind and major version."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:128
+#: ../../../manual/cmake-configure-log.7.rst:126
 msgid "``backtrace``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:125
+#: ../../../manual/cmake-configure-log.7.rst:127
 msgid ""
 "A YAML block sequence reporting the call stack of CMake source locations at "
 "which the event occurred, from most-recent to least-recent.  Each node is a "
 "string specifying one location formatted as ``<file>:<line> (<function>)``."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:135
+#: ../../../manual/cmake-configure-log.7.rst:132
 msgid "``checks``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:131
+#: ../../../manual/cmake-configure-log.7.rst:133
 msgid ""
 "An optional key that is present when the event occurred with at least one "
 "pending :command:`message(CHECK_START)`.  Its value is a YAML block sequence "
@@ -225,33 +225,33 @@ msgid ""
 "Each node is a string containing a pending check message."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:137
+#: ../../../manual/cmake-configure-log.7.rst:139
 msgid ""
 "Additional mapping keys are specific to each (versioned) event kind, "
 "described below."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:143
+#: ../../../manual/cmake-configure-log.7.rst:145
 msgid "Event Kind ``message``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:145
+#: ../../../manual/cmake-configure-log.7.rst:147
 msgid "The :command:`message(CONFIGURE_LOG)` command logs ``message`` events."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:147
+#: ../../../manual/cmake-configure-log.7.rst:149
 msgid "There is only one ``message`` event major version, version 1."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:152
+#: ../../../manual/cmake-configure-log.7.rst:154
 msgid "``message-v1`` Event"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:154
+#: ../../../manual/cmake-configure-log.7.rst:156
 msgid "A ``message-v1`` event is a YAML mapping:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:156
+#: ../../../manual/cmake-configure-log.7.rst:158
 msgid ""
 "kind: \"message-v1\"\n"
 "backtrace:\n"
@@ -262,7 +262,7 @@ msgid ""
 "  # ..."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:166
+#: ../../../manual/cmake-configure-log.7.rst:168
 msgid "The keys specific to ``message-v1`` mappings are:"
 msgstr ""
 
@@ -270,33 +270,33 @@ msgstr ""
 msgid "``message``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:169
+#: ../../../manual/cmake-configure-log.7.rst:171
 msgid ""
 "A YAML literal block scalar containing the message text, represented using "
 "our `Text Block Encoding`_."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:175
+#: ../../../manual/cmake-configure-log.7.rst:177
 msgid "Event Kind ``try_compile``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:177
+#: ../../../manual/cmake-configure-log.7.rst:179
 msgid "The :command:`try_compile` command logs ``try_compile`` events."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:179
+#: ../../../manual/cmake-configure-log.7.rst:181
 msgid "There is only one ``try_compile`` event major version, version 1."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:184
+#: ../../../manual/cmake-configure-log.7.rst:186
 msgid "``try_compile-v1`` Event"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:186
+#: ../../../manual/cmake-configure-log.7.rst:188
 msgid "A ``try_compile-v1`` event is a YAML mapping:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:188
+#: ../../../manual/cmake-configure-log.7.rst:190
 msgid ""
 "kind: \"try_compile-v1\"\n"
 "backtrace:\n"
@@ -317,7 +317,7 @@ msgid ""
 "  exitCode: 0"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:208
+#: ../../../manual/cmake-configure-log.7.rst:210
 msgid "The keys specific to ``try_compile-v1`` mappings are:"
 msgstr ""
 
@@ -325,17 +325,17 @@ msgstr ""
 msgid "``description``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:211
+#: ../../../manual/cmake-configure-log.7.rst:213
 msgid ""
 "An optional key that is present when the ``LOG_DESCRIPTION <text>`` option "
 "was used.  Its value is a string containing the description ``<text>``."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:226
+#: ../../../manual/cmake-configure-log.7.rst:216
 msgid "``directories``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:215
+#: ../../../manual/cmake-configure-log.7.rst:217
 msgid ""
 "A mapping describing the directories associated with the compilation "
 "attempt.  It has the following keys:"
@@ -345,27 +345,27 @@ msgstr ""
 msgid "``source``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:219
+#: ../../../manual/cmake-configure-log.7.rst:221
 msgid ""
 "String specifying the source directory of the :command:`try_compile` project."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:226
+#: ../../../manual/cmake-configure-log.7.rst:224
 msgid "``binary``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:223
+#: ../../../manual/cmake-configure-log.7.rst:225
 msgid ""
 "String specifying the binary directory of the :command:`try_compile` "
 "project. For non-project invocations, this is often the same as the source "
 "directory."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:232
+#: ../../../manual/cmake-configure-log.7.rst:230
 msgid "``cmakeVariables``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:229
+#: ../../../manual/cmake-configure-log.7.rst:231
 msgid ""
 "An optional key that is present when CMake propagates variables into the "
 "test project, either automatically or due to the :variable:"
@@ -373,11 +373,11 @@ msgid ""
 "variable names to their values."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:253
+#: ../../../manual/cmake-configure-log.7.rst:236
 msgid "``buildResult``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:235
+#: ../../../manual/cmake-configure-log.7.rst:237
 msgid ""
 "A mapping describing the result of compiling the test code. It has the "
 "following keys:"
@@ -388,7 +388,7 @@ msgstr ""
 msgid "``variable``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:239
+#: ../../../manual/cmake-configure-log.7.rst:241
 msgid ""
 "A string specifying the name of the CMake variable storing the result of "
 "trying to build the test project."
@@ -399,19 +399,19 @@ msgstr ""
 msgid "``cached``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:243
-#: ../../../manual/cmake-configure-log.7.rst:309
+#: ../../../manual/cmake-configure-log.7.rst:245
+#: ../../../manual/cmake-configure-log.7.rst:311
 msgid ""
 "A boolean indicating whether the above result ``variable`` is stored in the "
 "CMake cache."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:249
-#: ../../../manual/cmake-configure-log.7.rst:319
+#: ../../../manual/cmake-configure-log.7.rst:248
+#: ../../../manual/cmake-configure-log.7.rst:314
 msgid "``stdout``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:247
+#: ../../../manual/cmake-configure-log.7.rst:249
 msgid ""
 "A YAML literal block scalar containing the output from building the test "
 "project, represented using our `Text Block Encoding`_. This contains build "
@@ -423,33 +423,33 @@ msgstr ""
 msgid "``exitCode``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:252
+#: ../../../manual/cmake-configure-log.7.rst:254
 msgid ""
 "An integer specifying the build tool exit code from trying to build the test "
 "project."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:258
+#: ../../../manual/cmake-configure-log.7.rst:260
 msgid "Event Kind ``try_run``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:260
+#: ../../../manual/cmake-configure-log.7.rst:262
 msgid "The :command:`try_run` command logs ``try_run`` events."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:262
+#: ../../../manual/cmake-configure-log.7.rst:264
 msgid "There is only one ``try_run`` event major version, version 1."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:267
+#: ../../../manual/cmake-configure-log.7.rst:269
 msgid "``try_run-v1`` Event"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:269
+#: ../../../manual/cmake-configure-log.7.rst:271
 msgid "A ``try_run-v1`` event is a YAML mapping:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:271
+#: ../../../manual/cmake-configure-log.7.rst:273
 msgid ""
 "kind: \"try_run-v1\"\n"
 "backtrace:\n"
@@ -476,47 +476,47 @@ msgid ""
 "  exitCode: 0"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:297
+#: ../../../manual/cmake-configure-log.7.rst:299
 msgid ""
 "The keys specific to ``try_run-v1`` mappings include those documented by the "
 "`try_compile-v1 event`_, plus:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:333
+#: ../../../manual/cmake-configure-log.7.rst:302
 msgid "``runResult``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:301
+#: ../../../manual/cmake-configure-log.7.rst:303
 msgid ""
 "A mapping describing the result of running the test code. It has the "
 "following keys:"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:305
+#: ../../../manual/cmake-configure-log.7.rst:307
 msgid ""
 "A string specifying the name of the CMake variable storing the result of "
 "trying to run the test executable."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:313
+#: ../../../manual/cmake-configure-log.7.rst:315
 msgid ""
 "An optional key that is present when the test project built successfully. "
 "Its value is a YAML literal block scalar containing output from running the "
 "test executable, represented using our `Text Block Encoding`_."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:317
+#: ../../../manual/cmake-configure-log.7.rst:319
 msgid ""
 "If ``RUN_OUTPUT_VARIABLE`` was used, stdout and stderr are captured "
 "together, so this will contain both.  Otherwise, this will contain only the "
 "stdout output."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:329
+#: ../../../manual/cmake-configure-log.7.rst:323
 msgid "``stderr``"
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:322
+#: ../../../manual/cmake-configure-log.7.rst:324
 msgid ""
 "An optional key that is present when the test project built successfully and "
 "the ``RUN_OUTPUT_VARIABLE`` option was not used. Its value is a YAML literal "
@@ -524,14 +524,14 @@ msgid ""
 "using our `Text Block Encoding`_."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:327
+#: ../../../manual/cmake-configure-log.7.rst:329
 msgid ""
 "If ``RUN_OUTPUT_VARIABLE`` was used, stdout and stderr are captured together "
 "in the ``stdout`` key, and this key will not be present. Otherwise, this "
 "will contain the stderr output."
 msgstr ""
 
-#: ../../../manual/cmake-configure-log.7.rst:332
+#: ../../../manual/cmake-configure-log.7.rst:334
 msgid ""
 "An optional key that is present when the test project built successfully. "
 "Its value is an integer specifying the exit code, or a string containing an "

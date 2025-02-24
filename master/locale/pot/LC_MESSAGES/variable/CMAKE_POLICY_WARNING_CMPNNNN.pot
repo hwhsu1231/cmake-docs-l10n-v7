@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,32 +31,32 @@ msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:9
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0025`` controls the warning for policy :policy:"
-"`CMP0025`."
+"``CMAKE_POLICY_WARNING_CMP0025`` controlled the warning for policy :policy:"
+"`CMP0025` in CMake versions before 4.0."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:11
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0047`` controls the warning for policy :policy:"
-"`CMP0047`."
+"``CMAKE_POLICY_WARNING_CMP0047`` controlled the warning for policy :policy:"
+"`CMP0047` in CMake versions before 4.0."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:13
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0056`` controls the warning for policy :policy:"
-"`CMP0056`."
+"``CMAKE_POLICY_WARNING_CMP0056`` controlled the warning for policy :policy:"
+"`CMP0056` in CMake versions before 4.0."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:15
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0060`` controls the warning for policy :policy:"
-"`CMP0060`."
+"``CMAKE_POLICY_WARNING_CMP0060`` controlled the warning for policy :policy:"
+"`CMP0060` in CMake versions before 4.0."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:17
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0065`` controls the warning for policy :policy:"
-"`CMP0065`."
+"``CMAKE_POLICY_WARNING_CMP0065`` controlled the warning for policy :policy:"
+"`CMP0065` in CMake versions before 4.0."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:19

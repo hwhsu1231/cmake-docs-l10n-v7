@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgid ""
 "tracking and populating the dependency. This will force the dependency's "
 "download, update, and patch steps to be re-executed. The directory used for "
 "downloads is not affected by :option:`cmake --fresh`, so any previously "
-"downloaded files for the ``URL`` download method can still be re-used."
+"downloaded files for the ``URL`` download method can still be reused."
 msgstr ""
 
 #: ../../../policy/CMP0168.rst:40

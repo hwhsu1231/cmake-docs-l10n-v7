@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,32 +21,39 @@ msgstr ""
 msgid "CMP0041"
 msgstr ""
 
-#: ../../../policy/CMP0041.rst:4
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0041.rst:7
 msgid "Error on relative include with generator expression."
 msgstr ""
 
-#: ../../../policy/CMP0041.rst:6
+#: ../../../policy/CMP0041.rst:9
 msgid ""
 "Diagnostics in CMake 2.8.12 and lower silently ignored an entry in the :"
 "prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` of a target if it contained a "
 "generator expression at any position."
 msgstr ""
 
-#: ../../../policy/CMP0041.rst:10
+#: ../../../policy/CMP0041.rst:13
 msgid ""
 "The path entries in that target property should not be relative. High-level "
 "API should ensure that by adding either a source directory or a install "
 "directory prefix, as appropriate."
 msgstr ""
 
-#: ../../../policy/CMP0041.rst:14
+#: ../../../policy/CMP0041.rst:17
 msgid ""
 "As an additional diagnostic, the :prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` "
 "generated on an :prop_tgt:`IMPORTED` target for the install location should "
 "not contain paths in the source directory or the build directory."
 msgstr ""
 
-#: ../../../policy/CMP0041.rst:18
+#: ../../../policy/CMP0041.rst:21
 msgid ""
 "The ``OLD`` behavior for this policy is to ignore relative path entries if "
 "they contain a generator expression. The ``NEW`` behavior for this policy is "
@@ -54,16 +61,10 @@ msgid ""
 "the path is relative."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

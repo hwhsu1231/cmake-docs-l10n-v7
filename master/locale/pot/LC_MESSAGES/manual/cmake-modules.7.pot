@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,21 +36,21 @@ msgstr ""
 msgid "These modules are loaded using the :command:`include` command."
 msgstr ""
 
-#: ../../../manual/cmake-modules.7.rst:99
+#: ../../../manual/cmake-modules.7.rst:98
 msgid "Find Modules"
 msgstr ""
 
-#: ../../../manual/cmake-modules.7.rst:101
+#: ../../../manual/cmake-modules.7.rst:100
 msgid ""
 "These modules search for third-party software. They are normally called "
 "through the :command:`find_package` command."
 msgstr ""
 
-#: ../../../manual/cmake-modules.7.rst:260
+#: ../../../manual/cmake-modules.7.rst:259
 msgid "Deprecated Modules"
 msgstr ""
 
-#: ../../../manual/cmake-modules.7.rst:263
+#: ../../../manual/cmake-modules.7.rst:262
 msgid "Deprecated Utility Modules"
 msgstr ""
 

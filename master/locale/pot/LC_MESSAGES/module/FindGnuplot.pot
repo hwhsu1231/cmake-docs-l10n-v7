@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,20 +22,37 @@ msgid "FindGnuplot"
 msgstr ""
 
 #: ../../../../Modules/FindGnuplot.cmake:8
-msgid "this module looks for gnuplot"
+msgid "This module looks for gnuplot."
 msgstr ""
 
-#: ../../../../Modules/FindGnuplot.cmake:12
-msgid "Once done this will define"
+#: ../../../../Modules/FindGnuplot.cmake:11
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:13
+msgid "``GNUPLOT_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:14
+msgid "System has Gnuplot."
 msgstr ""
 
 #: ../../../../Modules/FindGnuplot.cmake:16
-msgid ""
-"GNUPLOT_FOUND - system has Gnuplot\n"
-"GNUPLOT_EXECUTABLE - the Gnuplot executable\n"
-"GNUPLOT_VERSION_STRING - the version of Gnuplot found (since CMake 2.8.8)"
+msgid "``GNUPLOT_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:17
+msgid "The Gnuplot executable."
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:19
+msgid "``GNUPLOT_VERSION_STRING``"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:20
+msgid "The version of Gnuplot found."
 msgstr ""
 
 #: ../../../../Modules/FindGnuplot.cmake:22
-msgid "GNUPLOT_VERSION_STRING will not work for old versions like 3.7.1."
+msgid "Version string detection will not work for old versions like 3.7.1."
 msgstr ""

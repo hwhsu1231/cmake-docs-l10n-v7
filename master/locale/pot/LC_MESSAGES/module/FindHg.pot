@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "defined:"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:23
+#: ../../../../Modules/FindHg.cmake:21
 msgid "HG_WC_INFO(<dir> <var-prefix>)"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgstr ""
 msgid "Example usage:"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:37
+#: ../../../../Modules/FindHg.cmake:35
 msgid ""
 "find_package(Hg)\n"
 "if(HG_FOUND)\n"

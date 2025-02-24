@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,22 +34,22 @@ msgid ""
 msgstr ""
 
 #: ../../../../Modules/FindLua51.cmake:17
-msgid "Note that the expected include convention is::"
+msgid "Note that the expected include convention is:"
 msgstr ""
 
 #: ../../../../Modules/FindLua51.cmake:19
 msgid "#include \"lua.h\""
 msgstr ""
 
-#: ../../../../Modules/FindLua51.cmake:21
-msgid "and not::"
-msgstr ""
-
 #: ../../../../Modules/FindLua51.cmake:23
-msgid "#include <lua/lua.h>"
+msgid "and not:"
 msgstr ""
 
 #: ../../../../Modules/FindLua51.cmake:25
+msgid "#include <lua/lua.h>"
+msgstr ""
+
+#: ../../../../Modules/FindLua51.cmake:29
 msgid ""
 "This is because, the lua location is not standardized and may exist in "
 "locations other than lua/"

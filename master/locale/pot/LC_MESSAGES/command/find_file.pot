@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,8 @@ msgid ""
 "|FIND_XXX| (\n"
 "          <VAR>\n"
 "          name | |NAMES|\n"
-"          [HINTS [path | ENV var]... ]\n"
-"          [PATHS [path | ENV var]... ]\n"
+"          [HINTS [path | ENV var]...]\n"
+"          [PATHS [path | ENV var]...]\n"
 "          [REGISTRY_VIEW (64|32|64_32|32_64|HOST|TARGET|BOTH)]\n"
 "          [PATH_SUFFIXES suffix1 [suffix2 ...]]\n"
 "          [VALIDATOR function]\n"
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Options include:"
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:49
+#: ../../../command/FIND_XXX.txt:43
 msgid "``NAMES``"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgid ""
 "packages can be found before those provided by distributions."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:59
+#: ../../../command/FIND_XXX.txt:51
 msgid "``HINTS``, ``PATHS``"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgid ""
 "Registry>`. Such specifications will be ignored on all other platforms."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:64
+#: ../../../command/FIND_XXX.txt:61
 msgid "``REGISTRY_VIEW``"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgid ""
 "default view when the policy is ``OLD``."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:9
+#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:7
 msgid "``64``"
 msgstr ""
 
@@ -128,7 +128,7 @@ msgid ""
 "``/REGISTRY-NOTFOUND``."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:12
+#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:11
 msgid "``32``"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgstr ""
 msgid "Query the 32-bit registry."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:15
+#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:14
 msgid "``64_32``"
 msgstr ""
 
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Query both views (``64`` and ``32``) and generate a path for each."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:18
+#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:17
 msgid "``32_64``"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Query both views (``32`` and ``64``) and generate a path for each."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:22
+#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:20
 msgid "``HOST``"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgid ""
 "Windows and ``32`` on 32-bit Windows."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:27
+#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:24
 msgid "``TARGET``"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgid ""
 "`CMAKE_SIZEOF_VOID_P` variable. If not defined, fall back to ``HOST`` view."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:41
+#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:29
 msgid "``BOTH``"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr ""
 msgid "32-bit: ``32``"
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:68
+#: ../../../command/FIND_XXX.txt:66
 msgid "``PATH_SUFFIXES``"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgid ""
 "otherwise considered."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:93
+#: ../../../command/FIND_XXX.txt:70
 msgid "``VALIDATOR``"
 msgstr ""
 
@@ -248,7 +248,7 @@ msgid ""
 "validation function."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:96
+#: ../../../command/FIND_XXX.txt:95
 msgid "``DOC``"
 msgstr ""
 
@@ -256,7 +256,7 @@ msgstr ""
 msgid "Specify the documentation string for the ``<VAR>`` cache entry."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:112
+#: ../../../command/FIND_XXX.txt:98
 msgid "``NO_CACHE``"
 msgstr ""
 
@@ -278,7 +278,7 @@ msgid ""
 "cost of repeated configure steps."
 msgstr ""
 
-#: ../../../command/FIND_XXX.txt:119
+#: ../../../command/FIND_XXX.txt:114
 msgid "``REQUIRED``"
 msgstr ""
 
@@ -499,7 +499,7 @@ msgid ""
 "a per-call basis using options:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:22
+#: ../../../command/FIND_XXX_ROOT.txt:21
 msgid "``CMAKE_FIND_ROOT_PATH_BOTH``"
 msgstr ""
 
@@ -507,7 +507,7 @@ msgstr ""
 msgid "Search in the order described above."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:25
+#: ../../../command/FIND_XXX_ROOT.txt:24
 msgid "``NO_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
@@ -515,7 +515,7 @@ msgstr ""
 msgid "Do not use the :variable:`CMAKE_FIND_ROOT_PATH` variable."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:29
+#: ../../../command/FIND_XXX_ROOT.txt:27
 msgid "``ONLY_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 

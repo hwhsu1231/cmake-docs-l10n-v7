@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,6 +159,8 @@ msgid ""
 "X11_Xmu_FOUND,            X11::Xmu\n"
 "X11_Xpm_INCLUDE_PATH,            X11_Xpm_LIB,            "
 "X11_Xpm_FOUND,            X11::Xpm\n"
+"X11_Xpresent_INCLUDE_PATH,       X11_Xpresent_LIB,       "
+"X11_Xpresent_FOUND,       X11::Xpresent\n"
 "X11_Xtst_INCLUDE_PATH,           X11_Xtst_LIB,           "
 "X11_Xtst_FOUND,           X11::Xtst\n"
 "X11_Xrandr_INCLUDE_PATH,         X11_Xrandr_LIB,         "
@@ -184,7 +186,7 @@ msgid ""
 "X11_Xaw_FOUND             X11::Xaw"
 msgstr ""
 
-#: ../../../../Modules/FindX11.cmake:98
+#: ../../../../Modules/FindX11.cmake:99
 msgid ""
 "Renamed ``Xxf86misc``, ``X11_Xxf86misc``, ``X11_Xxf86vm``, ``X11_xkbfile``, "
 "``X11_Xtst``, and ``X11_Xss`` libraries to match their file names. "
@@ -192,25 +194,25 @@ msgid ""
 "compatibility."
 msgstr ""
 
-#: ../../../../Modules/FindX11.cmake:104
+#: ../../../../Modules/FindX11.cmake:105
 msgid "Added the ``X11_Xext_INCLUDE_PATH`` variable."
 msgstr ""
 
-#: ../../../../Modules/FindX11.cmake:107
+#: ../../../../Modules/FindX11.cmake:108
 msgid ""
 "Added the ``xcb``, ``X11-xcb``, ``xcb-icccm``, ``xcb-xkb``, ``xkbcommon``, "
 "and ``xkbcommon-X11`` libraries."
 msgstr ""
 
-#: ../../../../Modules/FindX11.cmake:111
+#: ../../../../Modules/FindX11.cmake:112
 msgid "Added the ``Xaw``, ``xcb_util``, and ``xcb_xfixes`` libraries."
 msgstr ""
 
-#: ../../../../Modules/FindX11.cmake:114
+#: ../../../../Modules/FindX11.cmake:115
 msgid "Added the ``xcb_randr``, ``xcb_xtext``, and ``xcb_keysyms`` libraries."
 msgstr ""
 
-#: ../../../../Modules/FindX11.cmake:117
+#: ../../../../Modules/FindX11.cmake:118
 msgid ""
 "Added the ``xcb_composite``, ``xcb_cursor``, ``xcb_damage``, ``xcb_dpms``, "
 "``xcb_dri2``, ``xcb_dri3``, ``xcb_errors``, ``xcb_ewmh``, ``xcb_glx``, "
@@ -220,7 +222,7 @@ msgid ""
 "``xcb_xinput``, ``xcb_xrm``, ``xcb_xvmc``, and ``xcb_xv`` libraries."
 msgstr ""
 
-#: ../../../../Modules/FindX11.cmake:125
+#: ../../../../Modules/FindX11.cmake:126
 msgid ""
 "Added coverage of double buffer extension (variables "
 "``X11_Xdbe_INCLUDE_PATH`` and ``X11_Xdbe_FOUND``)."

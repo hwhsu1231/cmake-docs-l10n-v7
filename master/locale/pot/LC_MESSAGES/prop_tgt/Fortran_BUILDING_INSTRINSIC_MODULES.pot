@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,22 +22,11 @@ msgid "Fortran_BUILDING_INSTRINSIC_MODULES"
 msgstr ""
 
 #: ../../../prop_tgt/Fortran_BUILDING_INSTRINSIC_MODULES.rst:6
-msgid ""
-"Instructs the CMake Fortran preprocessor that the target is building Fortran "
-"intrinsics for building a Fortran compiler."
+msgid "Please use the :prop_tgt:`Fortran_BUILDING_INTRINSIC_MODULES` instead."
 msgstr ""
 
-#: ../../../prop_tgt/Fortran_BUILDING_INSTRINSIC_MODULES.rst:9
+#: ../../../prop_tgt/Fortran_BUILDING_INSTRINSIC_MODULES.rst:10
 msgid ""
-"This property is off by default and should be turned only on projects that "
-"build a Fortran compiler. It should not be turned on for projects that use a "
-"Fortran compiler."
-msgstr ""
-
-#: ../../../prop_tgt/Fortran_BUILDING_INSTRINSIC_MODULES.rst:13
-msgid ""
-"Turning this property on will correctly add dependencies for building "
-"Fortran intrinsic modules whereas turning the property off will ignore "
-"Fortran intrinsic modules in the dependency graph as they are supplied by "
-"the compiler itself."
+"A misspelled variant of the :prop_tgt:`Fortran_BUILDING_INTRINSIC_MODULES` "
+"target property."
 msgstr ""

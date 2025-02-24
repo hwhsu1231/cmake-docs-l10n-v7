@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: ../../../release/3.11.rst:130
 msgid ""
-"The :module:`CheckIncludeFiles` module :command:`CHECK_INCLUDE_FILES` "
+"The :module:`CheckIncludeFiles` module :command:`check_include_files` "
 "command gained a ``LANGUAGE`` option to specify whether to check using the "
 "``C`` or ``CXX`` compiler."
 msgstr ""
@@ -279,7 +279,7 @@ msgstr ""
 
 #: ../../../release/3.11.rst:164
 msgid ""
-"The :module:`GenerateExportHeader` module ``GENERATE_EXPORT_HEADER`` command "
+"The :module:`GenerateExportHeader` module ``generate_export_header`` command "
 "gained an ``INCLUDE_GUARD_NAME`` option to change the name of the include "
 "guard symbol written to the generated export header. Additionally, it now "
 "adds a comment after the closing ``#endif`` on the generated export header's "

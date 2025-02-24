@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,7 +107,7 @@ msgid ""
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:66
-#: ../../../manual/cmake-toolchains.7.rst:160
+#: ../../../manual/cmake-toolchains.7.rst:155
 msgid ":variable:`CMAKE_<LANG>_COMPILER`"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "The version of the compiler."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:75
+#: ../../../manual/cmake-toolchains.7.rst:72
 msgid ":variable:`CMAKE_<LANG>_FLAGS`"
 msgstr ""
 
@@ -230,8 +230,8 @@ msgid "Where:"
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:145
-#: ../../../manual/cmake-toolchains.7.rst:410
-#: ../../../manual/cmake-toolchains.7.rst:494
+#: ../../../manual/cmake-toolchains.7.rst:408
+#: ../../../manual/cmake-toolchains.7.rst:492
 msgid ":variable:`CMAKE_SYSTEM_NAME`"
 msgstr ""
 
@@ -255,7 +255,7 @@ msgstr ""
 msgid "is optional, and may be specified if a sysroot is available."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:153
+#: ../../../manual/cmake-toolchains.7.rst:151
 msgid ":variable:`CMAKE_STAGING_PREFIX`"
 msgstr ""
 
@@ -639,8 +639,8 @@ msgid ""
 "Set to ``Android``.  Must be specified to enable cross compiling for Android."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:420
-#: ../../../manual/cmake-toolchains.7.rst:515
+#: ../../../manual/cmake-toolchains.7.rst:412
+#: ../../../manual/cmake-toolchains.7.rst:514
 msgid ":variable:`CMAKE_SYSTEM_VERSION`"
 msgstr ""
 
@@ -666,8 +666,8 @@ msgstr ""
 msgid "Otherwise, the latest API level available in the NDK is used."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:429
-#: ../../../manual/cmake-toolchains.7.rst:518
+#: ../../../manual/cmake-toolchains.7.rst:422
+#: ../../../manual/cmake-toolchains.7.rst:517
 msgid ":variable:`CMAKE_ANDROID_ARCH_ABI`"
 msgstr ""
 
@@ -681,7 +681,7 @@ msgid ""
 "variables."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:434
+#: ../../../manual/cmake-toolchains.7.rst:431
 msgid ":variable:`CMAKE_ANDROID_NDK`"
 msgstr ""
 
@@ -692,7 +692,7 @@ msgid ""
 "`above <Cross Compiling for Android>`."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:439
+#: ../../../manual/cmake-toolchains.7.rst:436
 msgid ":variable:`CMAKE_ANDROID_NDK_DEPRECATED_HEADERS`"
 msgstr ""
 
@@ -703,7 +703,7 @@ msgid ""
 "using a NDK that does not provide unified headers."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:445
+#: ../../../manual/cmake-toolchains.7.rst:441
 msgid ":variable:`CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION`"
 msgstr ""
 
@@ -715,7 +715,7 @@ msgid ""
 "GCC toolchain."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:449
+#: ../../../manual/cmake-toolchains.7.rst:447
 msgid ":variable:`CMAKE_ANDROID_STL_TYPE`"
 msgstr ""
 
@@ -730,8 +730,8 @@ msgstr ""
 msgid "The following variables will be computed and provided automatically:"
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:454
-#: ../../../manual/cmake-toolchains.7.rst:521
+#: ../../../manual/cmake-toolchains.7.rst:453
+#: ../../../manual/cmake-toolchains.7.rst:520
 msgid ":variable:`CMAKE_<LANG>_ANDROID_TOOLCHAIN_PREFIX`"
 msgstr ""
 
@@ -739,8 +739,8 @@ msgstr ""
 msgid "The absolute path prefix to the binutils in the NDK toolchain."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:458
-#: ../../../manual/cmake-toolchains.7.rst:524
+#: ../../../manual/cmake-toolchains.7.rst:456
+#: ../../../manual/cmake-toolchains.7.rst:523
 msgid ":variable:`CMAKE_<LANG>_ANDROID_TOOLCHAIN_SUFFIX`"
 msgstr ""
 
@@ -794,7 +794,7 @@ msgid ""
 "variables:"
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:501
+#: ../../../manual/cmake-toolchains.7.rst:496
 msgid ":variable:`CMAKE_ANDROID_STANDALONE_TOOLCHAIN`"
 msgstr ""
 
@@ -806,7 +806,7 @@ msgid ""
 "`above <Cross Compiling for Android>`."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:506
+#: ../../../manual/cmake-toolchains.7.rst:503
 msgid ":variable:`CMAKE_ANDROID_ARM_MODE`"
 msgstr ""
 
@@ -817,7 +817,7 @@ msgid ""
 "details."
 msgstr ""
 
-#: ../../../manual/cmake-toolchains.7.rst:510
+#: ../../../manual/cmake-toolchains.7.rst:508
 msgid ":variable:`CMAKE_ANDROID_ARM_NEON`"
 msgstr ""
 

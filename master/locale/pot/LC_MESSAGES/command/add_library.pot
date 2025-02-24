@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-20 06:53+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr ""
 msgid "The optional ``<type>`` specifies the type of library to be created:"
 msgstr ""
 
-#: ../../../command/add_library.rst:24
+#: ../../../command/add_library.rst:22
 msgid "``STATIC``"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgid ""
 "use when linking other targets."
 msgstr ""
 
-#: ../../../command/add_library.rst:29
+#: ../../../command/add_library.rst:26
 msgid "``SHARED``"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgid ""
 "linked by other targets and loaded at runtime."
 msgstr ""
 
-#: ../../../command/add_library.rst:34
+#: ../../../command/add_library.rst:31
 msgid "``MODULE``"
 msgstr ""
 
@@ -85,7 +85,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../command/add_library.rst:42 ../../../command/add_library.rst:188
+#: ../../../command/add_library.rst:41 ../../../command/add_library.rst:186
 msgid "``EXCLUDE_FROM_ALL``"
 msgstr ""
 
@@ -318,7 +318,7 @@ msgstr ""
 msgid "The ``<type>`` must be one of:"
 msgstr ""
 
-#: ../../../command/add_library.rst:246
+#: ../../../command/add_library.rst:215
 msgid "``STATIC``, ``SHARED``, ``MODULE``, ``UNKNOWN``"
 msgstr ""
 
@@ -365,7 +365,7 @@ msgid ""
 "static library and a DLL's import library both have the same file extension."
 msgstr ""
 
-#: ../../../command/add_library.rst:254
+#: ../../../command/add_library.rst:248
 msgid "``OBJECT``"
 msgstr ""
 
@@ -378,7 +378,7 @@ msgid ""
 "``INTERFACE_*`` properties."
 msgstr ""
 
-#: ../../../command/add_library.rst:258
+#: ../../../command/add_library.rst:256
 msgid "``INTERFACE``"
 msgstr ""
 

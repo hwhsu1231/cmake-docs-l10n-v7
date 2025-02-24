@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 msgid ""
 "A header file ``my_class.hpp`` uses a custom macro ``JSON_FILE_MACRO`` which "
 "is defined in an other header ``macros.hpp``. We want the ``moc`` file of "
-"``my_class.hpp`` to depend on the file name argument of ``JSON_FILE_MACRO``::"
+"``my_class.hpp`` to depend on the file name argument of ``JSON_FILE_MACRO``:"
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:46
@@ -102,39 +102,39 @@ msgid ""
 "};"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:54
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:56
 msgid ""
 "In ``CMakeLists.txt`` we add a filter to :variable:"
-"`CMAKE_AUTOMOC_DEPEND_FILTERS` like this::"
+"`CMAKE_AUTOMOC_DEPEND_FILTERS` like this:"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:57
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:59
 msgid ""
-"list( APPEND CMAKE_AUTOMOC_DEPEND_FILTERS\n"
+"list(APPEND CMAKE_AUTOMOC_DEPEND_FILTERS\n"
 "  \"JSON_FILE_MACRO\"\n"
 "  \"[\\n][ \\t]*JSON_FILE_MACRO[ \\t]*\\\\([ \\t]*\\\"([^\\\"]+)\\\"\"\n"
 ")"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:62
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:66
 msgid ""
 "We assume ``info.json`` is a plain (not :prop_sf:`GENERATED`) file that is "
 "listed in the target's source.  Therefore we do not need to add it to :"
 "prop_tgt:`AUTOGEN_TARGET_DEPENDS`."
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:67
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:71
 msgid "Example 2"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:69
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:73
 msgid ""
 "In the target ``my_target`` a header file ``complex_class.hpp`` uses a "
 "custom macro ``JSON_BASED_CLASS`` which is defined in an other header "
-"``macros.hpp``::"
+"``macros.hpp``:"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:73
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:77
 msgid ""
 "// macros.hpp\n"
 "...\n"
@@ -148,7 +148,7 @@ msgid ""
 "..."
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:86
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:90
 msgid ""
 "// complex_class.hpp\n"
 "#pragma once\n"
@@ -156,24 +156,24 @@ msgid ""
 "// end of file"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:91
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:97
 msgid ""
 "Since ``complex_class.hpp`` doesn't contain a ``Q_OBJECT`` macro it would be "
 "ignored by :prop_tgt:`AUTOMOC`.  We change this by adding "
-"``JSON_BASED_CLASS`` to :variable:`CMAKE_AUTOMOC_MACRO_NAMES`::"
-msgstr ""
-
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:95
-msgid "list(APPEND CMAKE_AUTOMOC_MACRO_NAMES \"JSON_BASED_CLASS\")"
-msgstr ""
-
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:97
-msgid ""
-"We want the ``moc`` file of ``complex_class.hpp`` to depend on ``meta."
-"json``.  So we add a filter to :variable:`CMAKE_AUTOMOC_DEPEND_FILTERS`::"
+"``JSON_BASED_CLASS`` to :variable:`CMAKE_AUTOMOC_MACRO_NAMES`:"
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:101
+msgid "list(APPEND CMAKE_AUTOMOC_MACRO_NAMES \"JSON_BASED_CLASS\")"
+msgstr ""
+
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:105
+msgid ""
+"We want the ``moc`` file of ``complex_class.hpp`` to depend on ``meta."
+"json``.  So we add a filter to :variable:`CMAKE_AUTOMOC_DEPEND_FILTERS`:"
+msgstr ""
+
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:109
 msgid ""
 "list(APPEND CMAKE_AUTOMOC_DEPEND_FILTERS\n"
 "  \"JSON_BASED_CLASS\"\n"
@@ -182,13 +182,13 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:106
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:116
 msgid ""
 "Additionally we assume ``meta.json`` is :prop_sf:`GENERATED` which is why we "
-"have to add it to :prop_tgt:`AUTOGEN_TARGET_DEPENDS`::"
+"have to add it to :prop_tgt:`AUTOGEN_TARGET_DEPENDS`:"
 msgstr ""
 
-#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:109
+#: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:119
 msgid ""
 "set_property(TARGET my_target APPEND PROPERTY AUTOGEN_TARGET_DEPENDS \"meta."
 "json\")"

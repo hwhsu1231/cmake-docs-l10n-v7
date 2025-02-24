@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgstr ""
 #: ../../../../Modules/ExternalData.cmake:49
 msgid ""
 "The ``ExternalData_Expand_Arguments`` function evaluates ``DATA{}`` "
-"references in its arguments and constructs a new list of arguments::"
+"references in its arguments and constructs a new list of arguments:"
 msgstr ""
 
 #: ../../../../Modules/ExternalData.cmake:52
@@ -88,19 +88,19 @@ msgid ""
 "  )"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:58
+#: ../../../../Modules/ExternalData.cmake:60
 msgid ""
 "It replaces each ``DATA{}`` reference in an argument with the full path of a "
 "real data file on disk that will exist after the ``<target>`` builds."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:63
+#: ../../../../Modules/ExternalData.cmake:65
 msgid ""
 "The ``ExternalData_Add_Test`` function wraps around the CMake :command:"
-"`add_test` command but supports ``DATA{}`` references in its arguments::"
+"`add_test` command but supports ``DATA{}`` references in its arguments:"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:67
+#: ../../../../Modules/ExternalData.cmake:69
 msgid ""
 "ExternalData_Add_Test(\n"
 "  <target>   # Name of data management target\n"
@@ -108,13 +108,13 @@ msgid ""
 "  )"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:72
+#: ../../../../Modules/ExternalData.cmake:76
 msgid ""
 "It passes its arguments through ``ExternalData_Expand_Arguments`` and then "
 "invokes the :command:`add_test` command using the results."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:75
+#: ../../../../Modules/ExternalData.cmake:79
 msgid ""
 "If the arguments after ``<target>`` define a test with an executable that is "
 "a CMake target, empty values in the :prop_tgt:`TEST_LAUNCHER` and :prop_tgt:"
@@ -122,13 +122,13 @@ msgid ""
 "policy :policy:`CMP0178`."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:83
+#: ../../../../Modules/ExternalData.cmake:87
 msgid ""
 "The ``ExternalData_Add_Target`` function creates a custom target to manage "
-"local instances of data files stored externally::"
+"local instances of data files stored externally:"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:86
+#: ../../../../Modules/ExternalData.cmake:90
 msgid ""
 "ExternalData_Add_Target(\n"
 "  <target>                  # Name of data management target\n"
@@ -136,7 +136,7 @@ msgid ""
 "  )"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:91
+#: ../../../../Modules/ExternalData.cmake:97
 msgid ""
 "It creates custom commands in the target as necessary to make data files "
 "available for each ``DATA{}`` reference previously evaluated by other "
@@ -146,7 +146,7 @@ msgid ""
 "``ExternalData_OBJECT_STORES`` variable."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:99
+#: ../../../../Modules/ExternalData.cmake:105
 msgid ""
 "The ``SHOW_PROGRESS`` argument may be passed to suppress progress "
 "information during the download of objects. If not provided, it defaults to "
@@ -154,24 +154,24 @@ msgid ""
 "generators and ``ON`` otherwise."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:105
+#: ../../../../Modules/ExternalData.cmake:111
 msgid ""
 "Typically only one target is needed to manage all external data within a "
 "project.  Call this function once at the end of configuration after all data "
 "references have been processed."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:110
+#: ../../../../Modules/ExternalData.cmake:116
 msgid "Module Variables"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:112
+#: ../../../../Modules/ExternalData.cmake:118
 msgid ""
 "The following variables configure behavior.  They should be set before "
 "calling any of the functions provided by this module."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:117
+#: ../../../../Modules/ExternalData.cmake:123
 msgid ""
 "The ``ExternalData_BINARY_ROOT`` variable may be set to the directory to "
 "hold the real data files named by expanded ``DATA{}`` references.  The "
@@ -179,14 +179,21 @@ msgid ""
 "content links under ``ExternalData_SOURCE_ROOT``."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:126
+#: ../../../../Modules/ExternalData.cmake:132
 msgid ""
 "Specify a full path to a ``.cmake`` custom fetch script identified by "
 "``<key>`` in entries of the ``ExternalData_URL_TEMPLATES`` list. See `Custom "
 "Fetch Scripts`_."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:132
+#: ../../../../Modules/ExternalData.cmake:140
+msgid ""
+"The ``ExternalData_HTTPHEADERS`` variable may be used to supply a list of "
+"headers, each element containing one header with the form ``Key: Value``. "
+"See the :command:`file(DOWNLOAD)` command's ``HTTPHEADER`` option."
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:146
 msgid ""
 "The ``ExternalData_LINK_CONTENT`` variable may be set to the name of a "
 "supported hash algorithm to enable automatic conversion of real data files "
@@ -199,7 +206,7 @@ msgid ""
 "URL template."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:146
+#: ../../../../Modules/ExternalData.cmake:160
 msgid ""
 "The real data files named by expanded ``DATA{}`` references may be made "
 "available under ``ExternalData_BINARY_ROOT`` using symbolic links on some "
@@ -207,7 +214,7 @@ msgid ""
 "use of symbolic links and enable use of copies instead."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:153
+#: ../../../../Modules/ExternalData.cmake:167
 msgid ""
 "The ``ExternalData_OBJECT_STORES`` variable may be set to a list of local "
 "directories that store objects using the layout ``<dir>/%(algo)/%(hash)``. "
@@ -217,11 +224,11 @@ msgid ""
 "specified the default is a location inside the build tree."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:167
+#: ../../../../Modules/ExternalData.cmake:181
 msgid "See `Referencing File Series`_."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:171
+#: ../../../../Modules/ExternalData.cmake:185
 msgid ""
 "The ``ExternalData_SOURCE_ROOT`` variable may be set to the highest source "
 "directory containing any path named by a ``DATA{}`` reference.  The default "
@@ -230,21 +237,21 @@ msgid ""
 "distribution (e.g.  they come together in one tarball)."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:179
+#: ../../../../Modules/ExternalData.cmake:193
 msgid ""
 "The ``ExternalData_TIMEOUT_ABSOLUTE`` variable sets the download absolute "
 "timeout, in seconds, with a default of ``300`` seconds. Set to ``0`` to "
 "disable enforcement."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:185
+#: ../../../../Modules/ExternalData.cmake:199
 msgid ""
 "The ``ExternalData_TIMEOUT_INACTIVITY`` variable sets the download "
 "inactivity timeout, in seconds, with a default of ``60`` seconds. Set to "
 "``0`` to disable enforcement."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:193
+#: ../../../../Modules/ExternalData.cmake:207
 msgid ""
 "Specify a custom URL component to be substituted for URL template "
 "placeholders of the form ``%(algo:<key>)``, where ``<key>`` is a valid C "
@@ -253,7 +260,7 @@ msgid ""
 "for any ``<key>``."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:201
+#: ../../../../Modules/ExternalData.cmake:215
 msgid ""
 "The ``ExternalData_URL_TEMPLATES`` may be set to provide a list of URL "
 "templates using the placeholders ``%(algo)`` and ``%(hash)`` in each "
@@ -264,15 +271,15 @@ msgid ""
 "remote URLs."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:210
+#: ../../../../Modules/ExternalData.cmake:224
 msgid "Referencing Files"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:213
+#: ../../../../Modules/ExternalData.cmake:227
 msgid "Referencing Single Files"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:215
+#: ../../../../Modules/ExternalData.cmake:229
 msgid ""
 "The ``DATA{}`` syntax is literal and the ``<name>`` is a full or relative "
 "path within the source tree.  The source tree must contain either a real "
@@ -283,7 +290,7 @@ msgid ""
 "file containing its MD5 sum."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:223
+#: ../../../../Modules/ExternalData.cmake:237
 msgid ""
 "Multiple content links of the same name with different hash algorithms are "
 "supported (e.g. ``img.png.sha256`` and ``img.png.sha1``) so long as they all "
@@ -291,11 +298,11 @@ msgid ""
 "sources indexed by different hash algorithms."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:230
+#: ../../../../Modules/ExternalData.cmake:244
 msgid "Referencing File Series"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:232
+#: ../../../../Modules/ExternalData.cmake:246
 msgid ""
 "The ``DATA{}`` syntax can be told to fetch a file series using the form "
 "``DATA{<name>,:}``, where the ``:`` is literal.  If the source tree contains "
@@ -306,47 +313,63 @@ msgid ""
 "series names ending with ``#.ext``, ``_#.ext``, ``.#.ext``, or ``-#.ext`` "
 "where ``#`` is a sequence of decimal digits and ``.ext`` is any single "
 "extension.  Configure it with a regex that parses ``<number>`` and "
-"``<suffix>`` parts from the end of ``<name>``::"
-msgstr ""
-
-#: ../../../../Modules/ExternalData.cmake:243
-msgid "ExternalData_SERIES_PARSE = regex of the form (<number>)(<suffix>)$"
-msgstr ""
-
-#: ../../../../Modules/ExternalData.cmake:245
-msgid "For more complicated cases set::"
-msgstr ""
-
-#: ../../../../Modules/ExternalData.cmake:247
-msgid ""
-"ExternalData_SERIES_PARSE = regex with at least two () groups\n"
-"ExternalData_SERIES_PARSE_PREFIX = <prefix> regex group number, if any\n"
-"ExternalData_SERIES_PARSE_NUMBER = <number> regex group number\n"
-"ExternalData_SERIES_PARSE_SUFFIX = <suffix> regex group number"
-msgstr ""
-
-#: ../../../../Modules/ExternalData.cmake:252
-msgid ""
-"Configure series number matching with a regex that matches the ``<number>`` "
-"part of series members named ``<prefix><number><suffix>``::"
-msgstr ""
-
-#: ../../../../Modules/ExternalData.cmake:255
-msgid ""
-"ExternalData_SERIES_MATCH = regex matching <number> in all series members"
+"``<suffix>`` parts from the end of ``<name>``:"
 msgstr ""
 
 #: ../../../../Modules/ExternalData.cmake:257
+msgid ""
+"``ExternalData_SERIES_PARSE`` - regex of the form ``(<number>)(<suffix>)$``."
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:259
+msgid "For more complicated cases set:"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:261
+msgid "``ExternalData_SERIES_PARSE`` - regex with at least two ``()`` groups."
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:262
+msgid ""
+"``ExternalData_SERIES_PARSE_PREFIX`` - regex group number of the "
+"``<prefix>``, if any."
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:263
+msgid ""
+"``ExternalData_SERIES_PARSE_NUMBER`` - regex group number of the "
+"``<number>``."
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:264
+msgid ""
+"``ExternalData_SERIES_PARSE_SUFFIX`` - regex group number of the "
+"``<suffix>``."
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:266
+msgid ""
+"Configure series number matching with a regex that matches the ``<number>`` "
+"part of series members named ``<prefix><number><suffix>``:"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:269
+msgid ""
+"``ExternalData_SERIES_MATCH`` - regex matching ``<number>`` in all series "
+"members"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:272
 msgid ""
 "Note that the ``<suffix>`` of a series does not include a hash-algorithm "
 "extension."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:261
+#: ../../../../Modules/ExternalData.cmake:276
 msgid "Referencing Associated Files"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:263
+#: ../../../../Modules/ExternalData.cmake:278
 msgid ""
 "The ``DATA{}`` syntax can alternatively match files associated with the "
 "named file and contained in the same directory.  Associated files may be "
@@ -356,23 +379,23 @@ msgid ""
 "arguments::"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:270
+#: ../../../../Modules/ExternalData.cmake:285
 msgid ""
 "DATA{MyData/MyInput.mhd,MyInput.img}                   # File pair\n"
 "DATA{MyData/MyFrames00.png,REGEX:MyFrames[0-9]+\\\\.png} # Series"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:273
+#: ../../../../Modules/ExternalData.cmake:288
 msgid ""
 "will pass ``MyInput.mha`` and ``MyFrames00.png`` on the command line but "
 "ensure that the associated files are present next to them."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:277
+#: ../../../../Modules/ExternalData.cmake:292
 msgid "Referencing Directories"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:279
+#: ../../../../Modules/ExternalData.cmake:294
 msgid ""
 "The ``DATA{}`` syntax may reference a directory using a trailing slash and a "
 "list of associated files.  The form ``DATA{<name>/,<opt1>,<opt2>,...}`` adds "
@@ -383,51 +406,149 @@ msgid ""
 "content link in the ``MyDataDir`` source directory."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:288
+#: ../../../../Modules/ExternalData.cmake:303
 msgid ""
 "In order to match associated files in subdirectories, specify a ``RECURSE:`` "
 "option, e.g. ``DATA{MyDataDir/,RECURSE:,REGEX:.*}``."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:293
+#: ../../../../Modules/ExternalData.cmake:308
 msgid "Hash Algorithms"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:295
-msgid "The following hash algorithms are supported::"
-msgstr ""
-
-#: ../../../../Modules/ExternalData.cmake:297
-msgid ""
-"%(algo)     <ext>     Description\n"
-"-------     -----     -----------\n"
-"MD5         .md5      Message-Digest Algorithm 5, RFC 1321\n"
-"SHA1        .sha1     US Secure Hash Algorithm 1, RFC 3174\n"
-"SHA224      .sha224   US Secure Hash Algorithms, RFC 4634\n"
-"SHA256      .sha256   US Secure Hash Algorithms, RFC 4634\n"
-"SHA384      .sha384   US Secure Hash Algorithms, RFC 4634\n"
-"SHA512      .sha512   US Secure Hash Algorithms, RFC 4634\n"
-"SHA3_224    .sha3-224 Keccak SHA-3\n"
-"SHA3_256    .sha3-256 Keccak SHA-3\n"
-"SHA3_384    .sha3-384 Keccak SHA-3\n"
-"SHA3_512    .sha3-512 Keccak SHA-3"
-msgstr ""
-
 #: ../../../../Modules/ExternalData.cmake:310
-msgid "Added the ``SHA3_*`` hash algorithms."
+msgid "The following hash algorithms are supported:"
 msgstr ""
 
 #: ../../../../Modules/ExternalData.cmake:313
+msgid "%(algo)"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:313
+msgid "<ext>"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:313
+msgid "Description"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:315
+msgid "``MD5``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:315
+msgid "``.md5``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:315
+msgid "Message-Digest Algorithm 5, RFC 1321"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:316
+msgid "``SHA1``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:316
+msgid "``.sha1``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:316
+msgid "US Secure Hash Algorithm 1, RFC 3174"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:317
+msgid "``SHA224``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:317
+msgid "``.sha224``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:317
+#: ../../../../Modules/ExternalData.cmake:318
+#: ../../../../Modules/ExternalData.cmake:319
+#: ../../../../Modules/ExternalData.cmake:320
+msgid "US Secure Hash Algorithms, RFC 4634"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:318
+msgid "``SHA256``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:318
+msgid "``.sha256``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:319
+msgid "``SHA384``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:319
+msgid "``.sha384``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:320
+msgid "``SHA512``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:320
+msgid "``.sha512``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:321
+msgid "``SHA3_224``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:321
+msgid "``.sha3-224``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:321
+#: ../../../../Modules/ExternalData.cmake:322
+#: ../../../../Modules/ExternalData.cmake:323
+#: ../../../../Modules/ExternalData.cmake:324
+msgid "Keccak SHA-3"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:322
+msgid "``SHA3_256``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:322
+msgid "``.sha3-256``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:323
+msgid "``SHA3_384``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:323
+msgid "``.sha3-384``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:324
+msgid "``SHA3_512``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:324
+msgid "``.sha3-512``"
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:327
+msgid "Added the ``SHA3_*`` hash algorithms."
+msgstr ""
+
+#: ../../../../Modules/ExternalData.cmake:330
 msgid ""
 "Note that the hashes are used only for unique data identification and "
 "download verification."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:319
+#: ../../../../Modules/ExternalData.cmake:336
 msgid "Custom Fetch Scripts"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:323
+#: ../../../../Modules/ExternalData.cmake:340
 msgid ""
 "When a data file must be fetched from one of the URL templates specified in "
 "the ``ExternalData_URL_TEMPLATES`` variable, it is normally downloaded using "
@@ -441,27 +562,27 @@ msgid ""
 "fetch, and provided with the following variables:"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:337
+#: ../../../../Modules/ExternalData.cmake:354
 msgid ""
 "When a custom fetch script is loaded, this variable is set to the location "
 "part of the URL, which will contain the substituted hash algorithm name and "
 "content hash value."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:343
+#: ../../../../Modules/ExternalData.cmake:360
 msgid ""
 "When a custom fetch script is loaded, this variable is set to the full path "
 "to a file in which the script must store the fetched content.  The name of "
 "the file is unspecified and should not be interpreted in any way."
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:348
+#: ../../../../Modules/ExternalData.cmake:365
 msgid ""
 "The custom fetch script is expected to store fetched content in the file or "
 "set a variable:"
 msgstr ""
 
-#: ../../../../Modules/ExternalData.cmake:353
+#: ../../../../Modules/ExternalData.cmake:370
 msgid ""
 "When a custom fetch script fails to fetch the requested content, it must set "
 "this variable to a short one-line message describing the reason for failure."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Packaging is performed using the following tools:"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:32
+#: ../../../cpack_gen/wix.rst:26
 msgid "``wix build``"
 msgstr ""
 
@@ -145,7 +145,7 @@ msgstr ""
 msgid "WiX Toolset v3"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:83
+#: ../../../cpack_gen/wix.rst:77
 msgid "``candle``"
 msgstr ""
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid ":variable:`CPACK_WIX_CANDLE_EXTRA_FLAGS <CPACK_WIX_<TOOL>_EXTRA_FLAGS>`"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:91
+#: ../../../cpack_gen/wix.rst:85
 msgid "``light``"
 msgstr ""
 
@@ -210,7 +210,7 @@ msgid ""
 "The value must be one of"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:116
+#: ../../../cpack_gen/wix.rst:115
 msgid "``4``"
 msgstr ""
 
@@ -382,7 +382,7 @@ msgid ""
 "simply provide the name of the culture.  If you specify more than one "
 "culture identifier in a comma or semicolon delimited list, the first one "
 "that is found will be used.  You can find a list of supported languages at: "
-"https://wixtoolset.org/docs/v3/wixui/wixui_localization/"
+"https://docs.firegiant.com/wix3/wixui/wixui_localization/"
 msgstr ""
 
 #: ../../../cpack_gen/wix.rst:229
@@ -659,7 +659,7 @@ msgid ""
 "necessary for using WiX extensions. Each declaration should be in the form "
 "name=url, where name is the plain namespace without the usual xmlns: prefix "
 "and url is an unquoted namespace url. A list of commonly known WiX schemata "
-"can be found here: https://wixtoolset.org/docs/v3/xsd/"
+"can be found here: https://docs.firegiant.com/wix3/xsd/"
 msgstr ""
 
 #: ../../../cpack_gen/wix.rst:436
@@ -685,7 +685,7 @@ msgid ""
 "installer:"
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:461
+#: ../../../cpack_gen/wix.rst:456
 msgid "``perMachine``"
 msgstr ""
 
@@ -700,7 +700,7 @@ msgstr ""
 msgid "This is the default.  See policy :policy:`CMP0172`."
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:464
+#: ../../../cpack_gen/wix.rst:463
 msgid "``perUser``"
 msgstr ""
 
@@ -708,7 +708,7 @@ msgstr ""
 msgid "Not yet supported. This is reserved for future use."
 msgstr ""
 
-#: ../../../cpack_gen/wix.rst:487
+#: ../../../cpack_gen/wix.rst:466
 msgid "``NONE``"
 msgstr ""
 
@@ -741,5 +741,5 @@ msgid ""
 msgstr ""
 
 #: ../../../cpack_gen/wix.rst:489
-msgid "See https://wixtoolset.org/docs/v3/xsd/wix/package/"
+msgid "See https://docs.firegiant.com/wix3/xsd/wix/package/"
 msgstr ""

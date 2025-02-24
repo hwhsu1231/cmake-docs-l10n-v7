@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,18 @@ msgstr ""
 msgid "CMP0053"
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:6
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0053.rst:9
 msgid "Simplify variable reference and escape sequence evaluation."
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:8
+#: ../../../policy/CMP0053.rst:11
 msgid ""
 "CMake 3.1 introduced a much faster implementation of evaluation of the :ref:"
 "`Variable References` and :ref:`Escape Sequences` documented in the :manual:"
@@ -34,14 +41,14 @@ msgid ""
 "the behavior.  Specifically:"
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:14
+#: ../../../policy/CMP0053.rst:17
 msgid ""
 "Expansion of ``@VAR@`` reference syntax defined by the :command:"
 "`configure_file` and :command:`string(CONFIGURE)` commands is no longer "
 "performed in other contexts."
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:18
+#: ../../../policy/CMP0053.rst:21
 msgid ""
 "Literal ``${VAR}`` reference syntax may contain only alphanumeric characters "
 "(``A-Z``, ``a-z``, ``0-9``) and the characters ``_``, ``.``, ``/``, ``-``, "
@@ -52,19 +59,19 @@ msgid ""
 "may still be referenced indirectly, e.g."
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:28
+#: ../../../policy/CMP0053.rst:31
 msgid ""
 "set(varname \"otherwise & disallowed $ characters\")\n"
 "message(\"${${varname}}\")"
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:33
+#: ../../../policy/CMP0053.rst:36
 msgid ""
 "The setting of policy :policy:`CMP0010` is not considered, so improper "
 "variable reference syntax is always an error."
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:36
+#: ../../../policy/CMP0053.rst:39
 msgid ""
 "More characters are allowed to be escaped in variable names. Previously, "
 "only ``()#\" \\@^`` were valid characters to escape. Now any non-"
@@ -73,23 +80,17 @@ msgid ""
 "the :manual:`cmake-language(7)` manual."
 msgstr ""
 
-#: ../../../policy/CMP0053.rst:43
+#: ../../../policy/CMP0053.rst:46
 msgid ""
 "The ``OLD`` behavior for this policy is to honor the legacy behavior for "
 "variable references and escape sequences.  The ``NEW`` behavior is to use "
 "the simpler variable expansion and escape sequence evaluation rules."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

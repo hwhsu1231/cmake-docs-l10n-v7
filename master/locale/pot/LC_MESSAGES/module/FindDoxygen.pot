@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 "This module looks for Doxygen and some optional tools it supports:"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:12
+#: ../../../../Modules/FindDoxygen.cmake:11
 msgid "``dot``"
 msgstr ""
 
@@ -37,7 +37,7 @@ msgid ""
 "graphs."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:15
+#: ../../../../Modules/FindDoxygen.cmake:14
 msgid "``mscgen``"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgid ""
 "by Doxygen's ``\\msc`` and ``\\mscfile`` commands."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:19
+#: ../../../../Modules/FindDoxygen.cmake:17
 msgid "``dia``"
 msgstr ""
 
@@ -83,7 +83,11 @@ msgstr ""
 msgid "The version reported by ``doxygen --version``."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:42
+#: ../../../../Modules/FindDoxygen.cmake:43
+msgid "Imported Targets"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:47
 msgid ""
 "The module defines ``IMPORTED`` targets for Doxygen and each component "
 "found. These can be used as part of custom commands, etc. and should be "
@@ -93,19 +97,27 @@ msgid ""
 "only be defined if that component was requested):"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:52
-msgid ""
-"Doxygen::doxygen\n"
-"Doxygen::dot\n"
-"Doxygen::mscgen\n"
-"Doxygen::dia"
+#: ../../../../Modules/FindDoxygen.cmake:54
+msgid "``Doxygen::doxygen``"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:59
+#: ../../../../Modules/FindDoxygen.cmake:55
+msgid "``Doxygen::dot``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:56
+msgid "``Doxygen::mscgen``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:57
+msgid "``Doxygen::dia``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:60
 msgid "Functions"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:65
+#: ../../../../Modules/FindDoxygen.cmake:66
 msgid ""
 "This function is intended as a convenience for adding a target for "
 "generating documentation with Doxygen. It aims to provide sensible defaults "
@@ -115,7 +127,7 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:74
+#: ../../../../Modules/FindDoxygen.cmake:73
 msgid ""
 "doxygen_add_docs(targetName\n"
 "    [filesOrDirs...]\n"
@@ -126,7 +138,7 @@ msgid ""
 "    [CONFIG_FILE filename])"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:82
+#: ../../../../Modules/FindDoxygen.cmake:83
 msgid ""
 "The function constructs a ``Doxyfile`` and defines a custom target that runs "
 "Doxygen on that generated file. The listed files and directories are used as "
@@ -135,7 +147,7 @@ msgid ""
 "the custom target so they will show up in an IDE project's source list."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:88
+#: ../../../../Modules/FindDoxygen.cmake:89
 msgid ""
 "So that relative input paths work as expected, by default the working "
 "directory of the Doxygen command will be the current source directory (i.e. :"
@@ -147,25 +159,25 @@ msgid ""
 "manual/config.html>`_ for details)."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:97
+#: ../../../../Modules/FindDoxygen.cmake:98
 msgid ""
 "If provided, the optional ``comment`` will be passed as the ``COMMENT`` for "
 "the :command:`add_custom_target` command used to create the custom target "
 "internally."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:101
+#: ../../../../Modules/FindDoxygen.cmake:102
 msgid ""
 "If ``CONFIG_FILE`` is set, the given file provided with full-path will be "
 "used as doxygen configuration file"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:105
+#: ../../../../Modules/FindDoxygen.cmake:106
 msgid ""
 "If ``ALL`` is set, the target will be added to the default build target."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:108
+#: ../../../../Modules/FindDoxygen.cmake:109
 msgid ""
 "If ``USE_STAMP_FILE`` is set, the custom command defined by this function "
 "will create a stamp file with the name ``<targetName>.stamp`` in the current "
@@ -180,7 +192,7 @@ msgid ""
 "built regardless of whether anything listed in ``<filesOrDirs>`` has changed."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:121
+#: ../../../../Modules/FindDoxygen.cmake:122
 msgid ""
 "The contents of the generated ``Doxyfile`` can be customized by setting "
 "CMake variables before calling ``doxygen_add_docs()``. Any variable with a "
@@ -190,7 +202,7 @@ msgid ""
 "full list of supported configuration options."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:128
+#: ../../../../Modules/FindDoxygen.cmake:129
 msgid ""
 "Some of Doxygen's defaults are overridden to provide more appropriate "
 "behavior for a CMake project. Each of the following will be explicitly set "
@@ -198,49 +210,49 @@ msgid ""
 "called (with some exceptions noted):"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:135
+#: ../../../../Modules/FindDoxygen.cmake:136
 msgid ""
 "Set to ``YES`` if the ``dot`` component was requested and it was found, "
 "``NO`` otherwise. Any existing value of ``DOXYGEN_HAVE_DOT`` is ignored."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:140
+#: ../../../../Modules/FindDoxygen.cmake:141
 msgid ""
 "Set to ``YES`` by this module (note that this requires a ``dot`` version "
 "newer than 1.8.10). This option is only meaningful if ``DOXYGEN_HAVE_DOT`` "
 "is also set to ``YES``."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:146
+#: ../../../../Modules/FindDoxygen.cmake:147
 msgid "Set to ``NO`` by this module."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:150
+#: ../../../../Modules/FindDoxygen.cmake:151
 msgid ""
 "For Visual Studio based generators, this is set to the form recognized by "
 "the Visual Studio IDE: ``$file($line) : $text``. For all other generators, "
 "Doxygen's default value is not overridden."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:156
+#: ../../../../Modules/FindDoxygen.cmake:157
 msgid ""
 "Populated with the name of the current project (i.e. :variable:"
 "`PROJECT_NAME`)."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:161
+#: ../../../../Modules/FindDoxygen.cmake:162
 msgid ""
 "Populated with the version of the current project (i.e. :variable:"
 "`PROJECT_VERSION`)."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:166
+#: ../../../../Modules/FindDoxygen.cmake:167
 msgid ""
 "Populated with the description of the current project (i.e. :variable:"
 "`PROJECT_DESCRIPTION`)."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:171
+#: ../../../../Modules/FindDoxygen.cmake:172
 msgid ""
 "Projects should not set this variable. It will be populated with the set of "
 "files and directories passed to ``doxygen_add_docs()``, thereby providing "
@@ -250,11 +262,11 @@ msgid ""
 "ignored and a warning will be issued."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:180
+#: ../../../../Modules/FindDoxygen.cmake:181
 msgid "Set to ``YES`` by this module."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:184
+#: ../../../../Modules/FindDoxygen.cmake:185
 msgid ""
 "If the set of inputs includes directories, this variable will specify "
 "patterns used to exclude files from them. The following patterns are added "
@@ -264,7 +276,7 @@ msgid ""
 "replacing them:"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:193
+#: ../../../../Modules/FindDoxygen.cmake:194
 msgid ""
 "*/.git/*\n"
 "*/.svn/*\n"
@@ -276,7 +288,7 @@ msgid ""
 "CMakeCache.txt"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:204
+#: ../../../../Modules/FindDoxygen.cmake:205
 msgid ""
 "Set to :variable:`CMAKE_CURRENT_BINARY_DIR` by this module. Note that if the "
 "project provides its own value for this and it is a relative path, it will "
@@ -287,13 +299,13 @@ msgid ""
 "executing the doxygen commands."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:212
+#: ../../../../Modules/FindDoxygen.cmake:213
 msgid ""
 "To change any of these defaults or override any other Doxygen config option, "
 "set relevant variables before calling ``doxygen_add_docs()``. For example:"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:215
+#: ../../../../Modules/FindDoxygen.cmake:216
 msgid ""
 "set(DOXYGEN_GENERATE_HTML NO)\n"
 "set(DOXYGEN_GENERATE_MAN YES)\n"
@@ -305,7 +317,7 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:226
+#: ../../../../Modules/FindDoxygen.cmake:227
 msgid ""
 "A number of Doxygen config options accept lists of values, but Doxygen "
 "requires them to be separated by whitespace. CMake variables hold lists as a "
@@ -316,101 +328,333 @@ msgid ""
 "``DOXYGEN_<name>`` for the Doxygen settings specified here."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:236
-msgid ""
-"ABBREVIATE_BRIEF\n"
-"ALIASES\n"
-"CITE_BIB_FILES\n"
-"DIAFILE_DIRS\n"
-"DOTFILE_DIRS\n"
-"DOT_FONTPATH\n"
-"ENABLED_SECTIONS\n"
-"EXAMPLE_PATH\n"
-"EXAMPLE_PATTERNS\n"
-"EXCLUDE\n"
-"EXCLUDE_PATTERNS\n"
-"EXCLUDE_SYMBOLS\n"
-"EXPAND_AS_DEFINED\n"
-"EXTENSION_MAPPING\n"
-"EXTRA_PACKAGES\n"
-"EXTRA_SEARCH_MAPPINGS\n"
-"FILE_PATTERNS\n"
-"FILTER_PATTERNS\n"
-"FILTER_SOURCE_PATTERNS\n"
-"HTML_EXTRA_FILES\n"
-"HTML_EXTRA_STYLESHEET\n"
-"IGNORE_PREFIX\n"
-"IMAGE_PATH\n"
-"INCLUDE_FILE_PATTERNS\n"
-"INCLUDE_PATH\n"
-"INPUT\n"
-"LATEX_EXTRA_FILES\n"
-"LATEX_EXTRA_STYLESHEET\n"
-"MATHJAX_EXTENSIONS\n"
-"MSCFILE_DIRS\n"
-"PLANTUML_INCLUDE_PATH\n"
-"PREDEFINED\n"
-"QHP_CUST_FILTER_ATTRS\n"
-"QHP_SECT_FILTER_ATTRS\n"
-"STRIP_FROM_INC_PATH\n"
-"STRIP_FROM_PATH\n"
-"TAGFILES\n"
-"TCL_SUBST"
+#: ../../../../Modules/FindDoxygen.cmake:237
+msgid "``ABBREVIATE_BRIEF``"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:275
+#: ../../../../Modules/FindDoxygen.cmake:238
+msgid "``ALIASES``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:239
+msgid "``CITE_BIB_FILES``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:240
+msgid "``DIAFILE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:241
+msgid "``DOTFILE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:242
+msgid "``DOT_FONTPATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:243
+msgid "``ENABLED_SECTIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:244
+msgid "``EXAMPLE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:245
+msgid "``EXAMPLE_PATTERNS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:246
+msgid "``EXCLUDE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:247
+msgid "``EXCLUDE_PATTERNS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:248
+msgid "``EXCLUDE_SYMBOLS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:249
+msgid "``EXPAND_AS_DEFINED``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:250
+msgid "``EXTENSION_MAPPING``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:251
+msgid "``EXTRA_PACKAGES``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:252
+msgid "``EXTRA_SEARCH_MAPPINGS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:253
+msgid "``FILE_PATTERNS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:254
+msgid "``FILTER_PATTERNS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:255
+msgid "``FILTER_SOURCE_PATTERNS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:256
+msgid "``HTML_EXTRA_FILES``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:257
+msgid "``HTML_EXTRA_STYLESHEET``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:258
+msgid "``IGNORE_PREFIX``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:259
+msgid "``IMAGE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:260
+msgid "``INCLUDE_FILE_PATTERNS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:261
+msgid "``INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:262
+msgid "``INPUT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:263
+msgid "``LATEX_EXTRA_FILES``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:264
+msgid "``LATEX_EXTRA_STYLESHEET``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:265
+msgid "``MATHJAX_EXTENSIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:266
+msgid "``MSCFILE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:267
+msgid "``PLANTUML_INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:268
+msgid "``PREDEFINED``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:269
+msgid "``QHP_CUST_FILTER_ATTRS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:270
+msgid "``QHP_SECT_FILTER_ATTRS``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:271
+msgid "``STRIP_FROM_INC_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:272
+msgid "``STRIP_FROM_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:273
+msgid "``TAGFILES``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:274
+msgid "``TCL_SUBST``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:276
 msgid ""
 "The following single value Doxygen options will be quoted automatically if "
 "they contain at least one space:"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:280
-msgid ""
-"CHM_FILE\n"
-"DIA_PATH\n"
-"DOCBOOK_OUTPUT\n"
-"DOCSET_FEEDNAME\n"
-"DOCSET_PUBLISHER_NAME\n"
-"DOT_FONTNAME\n"
-"DOT_PATH\n"
-"EXTERNAL_SEARCH_ID\n"
-"FILE_VERSION_FILTER\n"
-"GENERATE_TAGFILE\n"
-"HHC_LOCATION\n"
-"HTML_FOOTER\n"
-"HTML_HEADER\n"
-"HTML_OUTPUT\n"
-"HTML_STYLESHEET\n"
-"INPUT_FILTER\n"
-"LATEX_FOOTER\n"
-"LATEX_HEADER\n"
-"LATEX_OUTPUT\n"
-"LAYOUT_FILE\n"
-"MAN_OUTPUT\n"
-"MAN_SUBDIR\n"
-"MATHJAX_CODEFILE\n"
-"MSCGEN_PATH\n"
-"OUTPUT_DIRECTORY\n"
-"PERL_PATH\n"
-"PLANTUML_JAR_PATH\n"
-"PROJECT_BRIEF\n"
-"PROJECT_LOGO\n"
-"PROJECT_NAME\n"
-"QCH_FILE\n"
-"QHG_LOCATION\n"
-"QHP_CUST_FILTER_NAME\n"
-"QHP_VIRTUAL_FOLDER\n"
-"RTF_EXTENSIONS_FILE\n"
-"RTF_OUTPUT\n"
-"RTF_STYLESHEET_FILE\n"
-"SEARCHDATA_FILE\n"
-"USE_MDFILE_AS_MAINPAGE\n"
-"WARN_FORMAT\n"
-"WARN_LOGFILE\n"
-"XML_OUTPUT"
+#: ../../../../Modules/FindDoxygen.cmake:281
+msgid "``CHM_FILE``"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:323
+#: ../../../../Modules/FindDoxygen.cmake:282
+msgid "``DIA_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:283
+msgid "``DOCBOOK_OUTPUT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:284
+msgid "``DOCSET_FEEDNAME``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:285
+msgid "``DOCSET_PUBLISHER_NAME``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:286
+msgid "``DOT_FONTNAME``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:287
+msgid "``DOT_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:288
+msgid "``EXTERNAL_SEARCH_ID``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:289
+msgid "``FILE_VERSION_FILTER``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:290
+msgid "``GENERATE_TAGFILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:291
+msgid "``HHC_LOCATION``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:292
+msgid "``HTML_FOOTER``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:293
+msgid "``HTML_HEADER``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:294
+msgid "``HTML_OUTPUT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:295
+msgid "``HTML_STYLESHEET``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:296
+msgid "``INPUT_FILTER``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:297
+msgid "``LATEX_FOOTER``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:298
+msgid "``LATEX_HEADER``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:299
+msgid "``LATEX_OUTPUT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:300
+msgid "``LAYOUT_FILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:301
+msgid "``MAN_OUTPUT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:302
+msgid "``MAN_SUBDIR``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:303
+msgid "``MATHJAX_CODEFILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:304
+msgid "``MSCGEN_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:305
+msgid "``OUTPUT_DIRECTORY``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:306
+msgid "``PERL_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:307
+msgid "``PLANTUML_JAR_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:308
+msgid "``PROJECT_BRIEF``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:309
+msgid "``PROJECT_LOGO``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:310
+msgid "``PROJECT_NAME``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:311
+msgid "``QCH_FILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:312
+msgid "``QHG_LOCATION``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:313
+msgid "``QHP_CUST_FILTER_NAME``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:314
+msgid "``QHP_VIRTUAL_FOLDER``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:315
+msgid "``RTF_EXTENSIONS_FILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:316
+msgid "``RTF_OUTPUT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:317
+msgid "``RTF_STYLESHEET_FILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:318
+msgid "``SEARCHDATA_FILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:319
+msgid "``USE_MDFILE_AS_MAINPAGE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:320
+msgid "``WARN_FORMAT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:321
+msgid "``WARN_LOGFILE``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:322
+msgid "``XML_OUTPUT``"
+msgstr ""
+
+#: ../../../../Modules/FindDoxygen.cmake:324
 msgid ""
 "There are situations where it may be undesirable for a particular config "
 "option to be automatically quoted by ``doxygen_add_docs()``, such as "
@@ -426,7 +670,7 @@ msgid ""
 "Argument>` can also be used to make working with embedded quotes easier):"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:337
+#: ../../../../Modules/FindDoxygen.cmake:338
 msgid ""
 "set(DOXYGEN_PROJECT_BRIEF \"String with spaces\")\n"
 "set(DOXYGEN_ALIASES\n"
@@ -436,45 +680,45 @@ msgid ""
 "set(DOXYGEN_VERBATIM_VARS DOXYGEN_ALIASES)"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:346
+#: ../../../../Modules/FindDoxygen.cmake:347
 msgid "The resultant ``Doxyfile`` will contain the following lines:"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:348
+#: ../../../../Modules/FindDoxygen.cmake:349
 msgid ""
 "PROJECT_BRIEF = \"String with spaces\"\n"
 "ALIASES       = somealias=\"@some_command param\" anotherAlias=@foobar"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:355
+#: ../../../../Modules/FindDoxygen.cmake:356
 msgid "Deprecated Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:359
+#: ../../../../Modules/FindDoxygen.cmake:360
 msgid ""
 "For compatibility with previous versions of CMake, the following variables "
 "are also defined but they are deprecated and should no longer be used:"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:364
+#: ../../../../Modules/FindDoxygen.cmake:365
 msgid ""
 "The path to the ``doxygen`` command. If projects need to refer to the "
 "``doxygen`` executable directly, they should use the ``Doxygen::doxygen`` "
 "import target instead."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:370
+#: ../../../../Modules/FindDoxygen.cmake:371
 msgid "True if the ``dot`` executable was found."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:374
+#: ../../../../Modules/FindDoxygen.cmake:375
 msgid ""
 "The path to the ``dot`` command. If projects need to refer to the ``dot`` "
 "executable directly, they should use the ``Doxygen::dot`` import target "
 "instead."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:380
+#: ../../../../Modules/FindDoxygen.cmake:381
 msgid ""
 "The path to the directory containing the ``dot`` executable as reported in "
 "``DOXYGEN_DOT_EXECUTABLE``. The path may have forward slashes even on "
@@ -486,11 +730,11 @@ msgid ""
 "path for a Doxygen configuration file."
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:391
+#: ../../../../Modules/FindDoxygen.cmake:392
 msgid "Deprecated Hint Variables"
 msgstr ""
 
-#: ../../../../Modules/FindDoxygen.cmake:397
+#: ../../../../Modules/FindDoxygen.cmake:398
 msgid ""
 "This variable has no effect for the component form of ``find_package``. In "
 "backward compatibility mode (i.e. without components list) it prevents the "

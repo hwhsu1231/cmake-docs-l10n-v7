@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,14 +21,14 @@ msgstr ""
 msgid "SquishTestScript"
 msgstr ""
 
-#: ../../../../Modules/SquishTestScript.cmake:12
+#: ../../../../Modules/SquishTestScript.cmake:9
 msgid ""
 "This script launches a GUI test using Squish.  You should not call the "
 "script directly; instead, you should access it via the SQUISH_ADD_TEST macro "
 "that is defined in FindSquish.cmake."
 msgstr ""
 
-#: ../../../../Modules/SquishTestScript.cmake:16
+#: ../../../../Modules/SquishTestScript.cmake:13
 msgid ""
 "This script starts the Squish server, launches the test on the client, and "
 "finally stops the squish server.  If any of these steps fail (including if "

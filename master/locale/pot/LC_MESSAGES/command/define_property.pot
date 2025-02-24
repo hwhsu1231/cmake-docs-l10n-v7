@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,37 +50,55 @@ msgid ""
 "be used.  It must be one of the following:"
 msgstr ""
 
-#: ../../../command/define_property.rst:26
-msgid ""
-"GLOBAL    = associated with the global namespace\n"
-"DIRECTORY = associated with one directory\n"
-"TARGET    = associated with one target\n"
-"SOURCE    = associated with one source file\n"
-"TEST      = associated with a test named with add_test\n"
-"VARIABLE  = documents a CMake language variable\n"
-"CACHED_VARIABLE = documents a CMake cache variable"
+#: ../../../command/define_property.rst:24
+msgid "``GLOBAL``          - associated with the global namespace."
 msgstr ""
 
-#: ../../../command/define_property.rst:34
+#: ../../../command/define_property.rst:25
+msgid "``DIRECTORY``       - associated with one directory."
+msgstr ""
+
+#: ../../../command/define_property.rst:26
+msgid "``TARGET``          - associated with one target."
+msgstr ""
+
+#: ../../../command/define_property.rst:27
+msgid "``SOURCE``          - associated with one source file."
+msgstr ""
+
+#: ../../../command/define_property.rst:28
+msgid ""
+"``TEST``            - associated with a test named with :command:`add_test`."
+msgstr ""
+
+#: ../../../command/define_property.rst:29
+msgid "``VARIABLE``        - documents a CMake language variable."
+msgstr ""
+
+#: ../../../command/define_property.rst:30
+msgid "``CACHED_VARIABLE`` - documents a CMake cache variable."
+msgstr ""
+
+#: ../../../command/define_property.rst:32
 msgid ""
 "Note that unlike :command:`set_property` and :command:`get_property` no "
 "actual scope needs to be given; only the kind of scope is important."
 msgstr ""
 
-#: ../../../command/define_property.rst:37
+#: ../../../command/define_property.rst:35
 msgid ""
 "The required ``PROPERTY`` option is immediately followed by the name of the "
 "property being defined."
 msgstr ""
 
-#: ../../../command/define_property.rst:40
+#: ../../../command/define_property.rst:38
 msgid ""
 "If the ``INHERITED`` option is given, then the :command:`get_property` "
 "command will chain up to the next higher scope when the requested property "
 "is not set in the scope given to the command."
 msgstr ""
 
-#: ../../../command/define_property.rst:44
+#: ../../../command/define_property.rst:42
 msgid ""
 "``DIRECTORY`` scope chains to its parent directory's scope, continuing the "
 "walk up parent directories until a directory has the property set or there "
@@ -88,13 +106,13 @@ msgid ""
 "chains to the ``GLOBAL`` scope."
 msgstr ""
 
-#: ../../../command/define_property.rst:48
+#: ../../../command/define_property.rst:46
 msgid ""
 "``TARGET``, ``SOURCE`` and ``TEST`` properties chain to ``DIRECTORY`` scope, "
 "including further chaining up the directories, etc. as needed."
 msgstr ""
 
-#: ../../../command/define_property.rst:51
+#: ../../../command/define_property.rst:49
 msgid ""
 "Note that this scope chaining behavior only applies to calls to :command:"
 "`get_property`, :command:`get_directory_property`, :command:"
@@ -105,7 +123,7 @@ msgid ""
 "the contents to append to."
 msgstr ""
 
-#: ../../../command/define_property.rst:59
+#: ../../../command/define_property.rst:57
 msgid ""
 "The ``BRIEF_DOCS`` and ``FULL_DOCS`` options are followed by strings to be "
 "associated with the property as its brief and full documentation. CMake does "
@@ -113,11 +131,11 @@ msgid ""
 "corresponding options to the :command:`get_property` command."
 msgstr ""
 
-#: ../../../command/define_property.rst:66
+#: ../../../command/define_property.rst:64
 msgid "The ``BRIEF_DOCS`` and ``FULL_DOCS`` options are optional."
 msgstr ""
 
-#: ../../../command/define_property.rst:70
+#: ../../../command/define_property.rst:68
 msgid ""
 "The ``INITIALIZE_FROM_VARIABLE`` option specifies a variable from which the "
 "property should be initialized. It can only be used with target properties. "
@@ -127,11 +145,11 @@ msgid ""
 "to the project."
 msgstr ""
 
-#: ../../../command/define_property.rst:78
+#: ../../../command/define_property.rst:76
 msgid "Property Redefinition"
 msgstr ""
 
-#: ../../../command/define_property.rst:80
+#: ../../../command/define_property.rst:78
 msgid ""
 "Once a property is defined for a particular type of scope, it cannot be "
 "redefined. Attempts to redefine an existing property by calling :command:"
@@ -140,14 +158,14 @@ msgid ""
 "scope is valid."
 msgstr ""
 
-#: ../../../command/define_property.rst:86
+#: ../../../command/define_property.rst:84
 msgid ""
 ":command:`get_property` can be used to determine whether a property is "
 "already defined for a particular kind of scope, and if so, to examine its "
 "definition. For example:"
 msgstr ""
 
-#: ../../../command/define_property.rst:90
+#: ../../../command/define_property.rst:88
 msgid ""
 "# Initial definition\n"
 "define_property(TARGET PROPERTY MY_NEW_PROP\n"
@@ -171,14 +189,14 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../command/define_property.rst:114
+#: ../../../command/define_property.rst:112
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/define_property.rst:116
+#: ../../../command/define_property.rst:114
 msgid ":command:`get_property`"
 msgstr ""
 
-#: ../../../command/define_property.rst:117
+#: ../../../command/define_property.rst:115
 msgid ":command:`set_property`"
 msgstr ""

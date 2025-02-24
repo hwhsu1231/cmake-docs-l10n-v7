@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,15 +39,7 @@ msgid ""
 "cmCOMMAND_NAME.  If found, it is loaded as a module and the command is added "
 "to the set of available CMake commands.  Usually, :command:`try_compile` is "
 "used before this command to compile the module.  If the command is "
-"successfully loaded a variable named"
-msgstr ""
-
-#: ../../../command/load_command.rst:18
-msgid "CMAKE_LOADED_COMMAND_<COMMAND_NAME>"
-msgstr ""
-
-#: ../../../command/load_command.rst:22
-msgid ""
+"successfully loaded a variable named ``CMAKE_LOADED_COMMAND_<COMMAND_NAME>`` "
 "will be set to the full path of the module that was loaded.  Otherwise the "
 "variable will not be set."
 msgstr ""

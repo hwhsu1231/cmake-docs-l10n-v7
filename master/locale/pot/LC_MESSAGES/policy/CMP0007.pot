@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,18 @@ msgstr ""
 msgid "CMP0007"
 msgstr ""
 
-#: ../../../policy/CMP0007.rst:4
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0007.rst:7
 msgid "list command no longer ignores empty elements."
 msgstr ""
 
-#: ../../../policy/CMP0007.rst:6
+#: ../../../policy/CMP0007.rst:9
 msgid ""
 "This policy determines whether the list command will ignore empty elements "
 "in the list.  CMake 2.4 and below list commands ignored all empty elements "
@@ -35,16 +42,10 @@ msgid ""
 "list."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

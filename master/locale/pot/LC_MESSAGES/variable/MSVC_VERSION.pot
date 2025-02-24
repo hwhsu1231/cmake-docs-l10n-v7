@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,26 +29,114 @@ msgid ""
 msgstr ""
 
 #: ../../../variable/MSVC_VERSION.rst:9
-msgid "Known version numbers are::"
+msgid "Known version numbers are:"
 msgstr ""
 
-#: ../../../variable/MSVC_VERSION.rst:11
-msgid ""
-"1200      = VS  6.0\n"
-"1300      = VS  7.0\n"
-"1310      = VS  7.1\n"
-"1400      = VS  8.0 (v80 toolset)\n"
-"1500      = VS  9.0 (v90 toolset)\n"
-"1600      = VS 10.0 (v100 toolset)\n"
-"1700      = VS 11.0 (v110 toolset)\n"
-"1800      = VS 12.0 (v120 toolset)\n"
-"1900      = VS 14.0 (v140 toolset)\n"
-"1910-1919 = VS 15.0 (v141 toolset)\n"
-"1920-1929 = VS 16.0 (v142 toolset)\n"
-"1930-1949 = VS 17.0 (v143 toolset)"
+#: ../../../variable/MSVC_VERSION.rst:15
+msgid "Value"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:15
+msgid "Version"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:17
+msgid "1200"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:17
+msgid "VS  6.0"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:18
+msgid "1300"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:18
+msgid "VS  7.0"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:19
+msgid "1310"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:19
+msgid "VS  7.1"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:20
+msgid "1400"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:20
+msgid "VS  8.0 (v80 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:21
+msgid "1500"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:21
+msgid "VS  9.0 (v90 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:22
+msgid "1600"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:22
+msgid "VS 10.0 (v100 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:23
+msgid "1700"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:23
+msgid "VS 11.0 (v110 toolset)"
 msgstr ""
 
 #: ../../../variable/MSVC_VERSION.rst:24
+msgid "1800"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:24
+msgid "VS 12.0 (v120 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:25
+msgid "1900"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:25
+msgid "VS 14.0 (v140 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:26
+msgid "1910-1919"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:26
+msgid "VS 15.0 (v141 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:27
+msgid "1920-1929"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:27
+msgid "VS 16.0 (v142 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:28
+msgid "1930-1949"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:28
+msgid "VS 17.0 (v143 toolset)"
+msgstr ""
+
+#: ../../../variable/MSVC_VERSION.rst:31
 msgid ""
 "See also the  :variable:`CMAKE_<LANG>_COMPILER_VERSION` and :variable:"
 "`MSVC_TOOLSET_VERSION` variable."

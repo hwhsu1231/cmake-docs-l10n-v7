@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,20 +65,58 @@ msgid ""
 "sequences to the value.  Your work-around may break in a future version of "
 "CMake that has improved escape support.  Instead consider defining the macro "
 "in a (configured) header file.  Then report the limitation.  Known "
-"limitations include::"
+"limitations include:"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:10
-msgid ""
-"#          - broken almost everywhere\n"
-";          - broken in VS IDE 7.0 and Borland Makefiles\n"
-",          - broken in VS IDE\n"
-"%          - broken in some cases in NMake\n"
-"& |        - broken in some cases on MinGW\n"
-"^ < > \\\"   - broken in most Make tools on Windows"
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:11
+msgid "``#``"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:17
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:11
+msgid "Broken almost everywhere."
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:12
+msgid "``;``"
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:12
+msgid "Broken in VS IDE 7.0 and Borland Makefiles."
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:13
+msgid "``,``"
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:13
+msgid "Broken in VS IDE."
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:14
+msgid "``%``"
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:14
+msgid "Broken in some cases in NMake."
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:15
+msgid "``& |``"
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:15
+msgid "Broken in some cases on MinGW."
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:16
+msgid "``^ < > \\ \"``"
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:16
+msgid "Broken in most Make tools on Windows."
+msgstr ""
+
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:19
 msgid ""
 "CMake does not reject these values outright because they do work in some "
 "cases.  Use with caution."

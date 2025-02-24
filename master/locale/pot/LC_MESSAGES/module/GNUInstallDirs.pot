@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,7 @@ msgstr ""
 msgid "modifiable single-machine data (``var``)"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:62
+#: ../../../../Modules/GNUInstallDirs.cmake:61
 msgid "``RUNSTATEDIR``"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgstr ""
 msgid "run-time variable data (``LOCALSTATEDIR/run``)"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:67
+#: ../../../../Modules/GNUInstallDirs.cmake:64
 msgid "``LIBDIR``"
 msgstr ""
 
@@ -212,7 +212,7 @@ msgstr ""
 msgid "man documentation (``DATAROOTDIR/man``)"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:84
+#: ../../../../Modules/GNUInstallDirs.cmake:83
 msgid "``DOCDIR``"
 msgstr ""
 
@@ -287,7 +287,7 @@ msgstr ""
 msgid "Macros"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:136
+#: ../../../../Modules/GNUInstallDirs.cmake:134
 msgid "GNUInstallDirs_get_absolute_install_dir(absvar var dirname)"
 msgstr ""
 

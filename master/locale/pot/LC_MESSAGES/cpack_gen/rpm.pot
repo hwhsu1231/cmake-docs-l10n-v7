@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../cpack_gen/rpm.rst:25
 msgid ""
-"`<COMPONENT>` part of variables is preferred to be in upper case (e.g. if "
+"``<COMPONENT>`` part of variables is preferred to be in upper case (e.g. if "
 "component is named ``foo`` then use :variable:`!CPACK_RPM_FOO_XXXX` variable "
 "name format) as is with other :variable:`!CPACK_<COMPONENT>_XXXX` variables. "
 "For the purposes of back compatibility (CMake/CPack version 3.5 and lower) "
@@ -185,7 +185,7 @@ msgstr ""
 msgid "This may be set to:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:90
+#: ../../../cpack_gen/rpm.rst:89
 msgid "``RPM-DEFAULT``"
 msgstr ""
 
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Tell ``rpmbuild`` to automatically generate the package file name."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:98
+#: ../../../cpack_gen/rpm.rst:92
 msgid "``<file-name>[.rpm]``"
 msgstr ""
 
@@ -385,7 +385,7 @@ msgstr ""
 msgid "Possible values are:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:255
+#: ../../../cpack_gen/rpm.rst:254
 msgid "``lzma``"
 msgstr ""
 
@@ -393,7 +393,7 @@ msgstr ""
 msgid "Lempel–Ziv–Markov chain algorithm"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:258
+#: ../../../cpack_gen/rpm.rst:257
 msgid "``xz``"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr ""
 msgid "XZ Utils compression"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:261
+#: ../../../cpack_gen/rpm.rst:260
 msgid "``bzip2``"
 msgstr ""
 
@@ -409,7 +409,7 @@ msgstr ""
 msgid "bzip2 Burrows–Wheeler algorithm"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:264
+#: ../../../cpack_gen/rpm.rst:263
 msgid "``gzip``"
 msgstr ""
 
@@ -417,7 +417,7 @@ msgstr ""
 msgid "GNU Gzip compression"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:268
+#: ../../../cpack_gen/rpm.rst:266
 msgid "``zstd``"
 msgstr ""
 
@@ -683,7 +683,7 @@ msgstr ""
 msgid ""
 "May be set by the user in order to specify a USER binary spec file to be "
 "used by the CPack RPM generator instead of generating the file. The "
-"specified file will be processed by configure_file( @ONLY)."
+"specified file will be processed by configure_file(@ONLY)."
 msgstr ""
 
 #: ../../../cpack_gen/rpm.rst:533
@@ -782,7 +782,7 @@ msgstr ""
 msgid "list of path to be excluded."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:641 ../../../cpack_gen/rpm.rst:948
+#: ../../../cpack_gen/rpm.rst:630 ../../../cpack_gen/rpm.rst:945
 msgid "The following paths are excluded by default:"
 msgstr ""
 
@@ -909,7 +909,7 @@ msgid ""
 "paths."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:734
+#: ../../../cpack_gen/rpm.rst:723
 msgid ""
 "Regular expressions that are added by default were taken from ``brp-"
 "compress`` RPM macro:"

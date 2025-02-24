@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,20 +32,65 @@ msgid ""
 "the widget type.  Valid ``TYPE`` values are:"
 msgstr ""
 
-#: ../../../prop_cache/TYPE.rst:12
-msgid ""
-"BOOL          = Boolean ON/OFF value.\n"
-"PATH          = Path to a directory.\n"
-"FILEPATH      = Path to a file.\n"
-"STRING        = Generic string value.\n"
-"INTERNAL      = Do not present in GUI at all.\n"
-"STATIC        = Value managed by CMake, do not change.\n"
-"UNINITIALIZED = Type not yet specified."
+#: ../../../prop_cache/TYPE.rst:14
+msgid "``BOOL``"
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:14
+msgid "Boolean ON/OFF value."
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:15
+msgid "``PATH``"
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:15
+msgid "Path to a directory."
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:16
+msgid "``FILEPATH``"
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:16
+msgid "Path to a file."
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:17
+msgid "``STRING``"
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:17
+msgid "Generic string value."
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:18
+msgid "``INTERNAL``"
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:18
+msgid "Do not present in GUI at all."
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:19
+msgid "``STATIC``"
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:19
+msgid "Value managed by CMake, do not change."
 msgstr ""
 
 #: ../../../prop_cache/TYPE.rst:20
+msgid "``UNINITIALIZED``"
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:20
+msgid "Type not yet specified."
+msgstr ""
+
+#: ../../../prop_cache/TYPE.rst:23
 msgid ""
 "Generally the ``TYPE`` of a cache entry should be set by the command which "
-"creates it ( :command:`set`, :command:`option`, :command:`find_library`, "
+"creates it (:command:`set`, :command:`option`, :command:`find_library`, "
 "etc.)."
 msgstr ""

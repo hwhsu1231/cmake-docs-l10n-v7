@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,12 +21,19 @@ msgstr ""
 msgid "CMP0037"
 msgstr ""
 
-#: ../../../policy/CMP0037.rst:4
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0037.rst:7
 msgid ""
 "Target names should not be reserved and should match a validity pattern."
 msgstr ""
 
-#: ../../../policy/CMP0037.rst:6
+#: ../../../policy/CMP0037.rst:9
 msgid ""
 "CMake 2.8.12 and lower allowed creating targets using :command:"
 "`add_library`, :command:`add_executable` and :command:`add_custom_target` "
@@ -35,7 +42,7 @@ msgid ""
 "names to match a restricted pattern."
 msgstr ""
 
-#: ../../../policy/CMP0037.rst:12
+#: ../../../policy/CMP0037.rst:15
 msgid ""
 "Target names may contain upper and lower case letters, numbers, the "
 "underscore character (``_``), dot(``.``), plus(``+``) and minus(``-``). As a "
@@ -43,13 +50,13 @@ msgid ""
 "colons."
 msgstr ""
 
-#: ../../../policy/CMP0037.rst:17
+#: ../../../policy/CMP0037.rst:20
 msgid ""
 "Target names reserved by one or more CMake generators are not allowed. Among "
 "others these include ``all``, ``clean``, ``help``, and ``install``."
 msgstr ""
 
-#: ../../../policy/CMP0037.rst:20
+#: ../../../policy/CMP0037.rst:23
 msgid ""
 "Target names associated with optional features, such as ``test`` and "
 "``package``, may also be reserved.  CMake 3.10 and below always reserve "
@@ -58,7 +65,7 @@ msgid ""
 "modules)."
 msgstr ""
 
-#: ../../../policy/CMP0037.rst:25
+#: ../../../policy/CMP0037.rst:28
 msgid ""
 "The ``OLD`` behavior for this policy is to allow creating targets with "
 "reserved names or which do not match the validity pattern. The ``NEW`` "
@@ -66,16 +73,10 @@ msgid ""
 "with an invalid target name."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

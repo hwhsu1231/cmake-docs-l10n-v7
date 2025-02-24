@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 #: ../../../../Modules/GoogleTest.cmake:40
 msgid ""
 "Automatically add tests with CTest by scanning source code for Google Test "
-"macros::"
+"macros:"
 msgstr ""
 
 #: ../../../../Modules/GoogleTest.cmake:43
@@ -84,7 +84,7 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:53
+#: ../../../../Modules/GoogleTest.cmake:55
 msgid ""
 "``gtest_add_tests`` attempts to identify tests by scanning source files. "
 "Although this is generally effective, it uses only a basic regular "
@@ -97,91 +97,91 @@ msgid ""
 "properties on tests, and always works in a cross-compiling environment."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:63
-#: ../../../../Modules/GoogleTest.cmake:193
+#: ../../../../Modules/GoogleTest.cmake:65
+#: ../../../../Modules/GoogleTest.cmake:199
 msgid "The options are:"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:68
+#: ../../../../Modules/GoogleTest.cmake:67
 msgid "``TARGET target``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:66
-#: ../../../../Modules/GoogleTest.cmake:196
+#: ../../../../Modules/GoogleTest.cmake:68
+#: ../../../../Modules/GoogleTest.cmake:202
 msgid ""
 "Specifies the Google Test executable, which must be a known CMake executable "
 "target.  CMake will substitute the location of the built executable when "
 "running the test."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:73
+#: ../../../../Modules/GoogleTest.cmake:72
 msgid "``SOURCES src1...``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:71
+#: ../../../../Modules/GoogleTest.cmake:73
 msgid ""
 "When provided, only the listed files will be scanned for test cases.  If "
 "this option is not given, the :prop_tgt:`SOURCES` property of the specified "
 "``target`` will be used to obtain the list of sources."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:79
-#: ../../../../Modules/GoogleTest.cmake:204
+#: ../../../../Modules/GoogleTest.cmake:77
+#: ../../../../Modules/GoogleTest.cmake:206
 msgid "``EXTRA_ARGS args...``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:76
-#: ../../../../Modules/GoogleTest.cmake:201
+#: ../../../../Modules/GoogleTest.cmake:78
+#: ../../../../Modules/GoogleTest.cmake:207
 msgid "Any extra arguments to pass on the command line to each test case."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:78
-#: ../../../../Modules/GoogleTest.cmake:203
+#: ../../../../Modules/GoogleTest.cmake:80
+#: ../../../../Modules/GoogleTest.cmake:209
 msgid "Empty values in ``args...`` are preserved, see :policy:`CMP0178`."
 msgstr ""
 
 #: ../../../../Modules/GoogleTest.cmake:83
-#: ../../../../Modules/GoogleTest.cmake:208
+#: ../../../../Modules/GoogleTest.cmake:212
 msgid "``WORKING_DIRECTORY dir``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:82
-#: ../../../../Modules/GoogleTest.cmake:207
+#: ../../../../Modules/GoogleTest.cmake:84
+#: ../../../../Modules/GoogleTest.cmake:213
 msgid ""
 "Specifies the directory in which to run the discovered test cases.  If this "
 "option is not provided, the current binary directory is used."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:88
-#: ../../../../Modules/GoogleTest.cmake:214
+#: ../../../../Modules/GoogleTest.cmake:87
+#: ../../../../Modules/GoogleTest.cmake:216
 msgid "``TEST_PREFIX prefix``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:86
+#: ../../../../Modules/GoogleTest.cmake:88
 msgid ""
 "Specifies a ``prefix`` to be prepended to the name of each discovered test "
 "case.  This can be useful when the same source files are being used in "
 "multiple calls to ``gtest_add_test()`` but with different ``EXTRA_ARGS``."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:93
-#: ../../../../Modules/GoogleTest.cmake:219
+#: ../../../../Modules/GoogleTest.cmake:92
+#: ../../../../Modules/GoogleTest.cmake:222
 msgid "``TEST_SUFFIX suffix``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:91
-#: ../../../../Modules/GoogleTest.cmake:217
+#: ../../../../Modules/GoogleTest.cmake:93
+#: ../../../../Modules/GoogleTest.cmake:223
 msgid ""
 "Similar to ``TEST_PREFIX`` except the ``suffix`` is appended to the name of "
 "every discovered test case.  Both ``TEST_PREFIX`` and ``TEST_SUFFIX`` may be "
 "specified."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:100
+#: ../../../../Modules/GoogleTest.cmake:97
 msgid "``SKIP_DEPENDENCY``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:96
+#: ../../../../Modules/GoogleTest.cmake:98
 msgid ""
 "Normally, the function creates a dependency which will cause CMake to be re-"
 "run if any of the sources being scanned are changed.  This is to ensure that "
@@ -190,30 +190,30 @@ msgid ""
 "be used to prevent the dependency from being added."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:105
+#: ../../../../Modules/GoogleTest.cmake:104
 msgid "``TEST_LIST outVar``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:103
+#: ../../../../Modules/GoogleTest.cmake:105
 msgid ""
 "The variable named by ``outVar`` will be populated in the calling scope with "
 "the list of discovered test cases.  This allows the caller to do things like "
 "manipulate test properties of the discovered tests."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:107
-#: ../../../../Modules/GoogleTest.cmake:313
+#: ../../../../Modules/GoogleTest.cmake:109
+#: ../../../../Modules/GoogleTest.cmake:319
 msgid ""
 "Empty values in the :prop_tgt:`TEST_LAUNCHER` and :prop_tgt:"
 "`CROSSCOMPILING_EMULATOR` target properties are preserved, see policy :"
 "policy:`CMP0178`."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:112
+#: ../../../../Modules/GoogleTest.cmake:114
 msgid "Usage example:"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:114
+#: ../../../../Modules/GoogleTest.cmake:116
 msgid ""
 "include(GoogleTest)\n"
 "add_executable(FooTest FooUnitTest.cxx)\n"
@@ -230,45 +230,45 @@ msgid ""
 "set_tests_properties(${withArgsTests} PROPERTIES TIMEOUT 20)"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:130
-msgid "For backward compatibility, the following form is also supported::"
-msgstr ""
-
 #: ../../../../Modules/GoogleTest.cmake:132
-msgid "gtest_add_tests(exe args files...)"
+msgid "For backward compatibility, the following form is also supported:"
 msgstr ""
 
 #: ../../../../Modules/GoogleTest.cmake:134
-msgid "``exe``"
-msgstr ""
-
-#: ../../../../Modules/GoogleTest.cmake:135
-msgid "The path to the test executable or the name of a CMake target."
+msgid "gtest_add_tests(exe args files...)"
 msgstr ""
 
 #: ../../../../Modules/GoogleTest.cmake:138
+msgid "``exe``"
+msgstr ""
+
+#: ../../../../Modules/GoogleTest.cmake:139
+msgid "The path to the test executable or the name of a CMake target."
+msgstr ""
+
+#: ../../../../Modules/GoogleTest.cmake:140
 msgid "``args``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:137
+#: ../../../../Modules/GoogleTest.cmake:141
 msgid ""
 "A ;-list of extra arguments to be passed to executable.  The entire list "
 "must be passed as a single argument.  Enclose it in quotes, or pass ``\"\"`` "
 "for no arguments."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:143
+#: ../../../../Modules/GoogleTest.cmake:144
 msgid "``files...``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:141
+#: ../../../../Modules/GoogleTest.cmake:145
 msgid ""
 "A list of source files to search for tests and test fixtures. Alternatively, "
 "use ``AUTO`` to specify that ``exe`` is the name of a CMake executable "
 "target whose sources should be scanned."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:145
+#: ../../../../Modules/GoogleTest.cmake:149
 msgid ""
 "include(GoogleTest)\n"
 "set(FooTestArgs --foo 1 --bar 2)\n"
@@ -276,13 +276,13 @@ msgid ""
 "gtest_add_tests(FooTest \"${FooTestArgs}\" AUTO)"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:154
+#: ../../../../Modules/GoogleTest.cmake:158
 msgid ""
 "Automatically add tests with CTest by querying the compiled test executable "
-"for available tests::"
+"for available tests:"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:157
+#: ../../../../Modules/GoogleTest.cmake:161
 msgid ""
 "gtest_discover_tests(target\n"
 "                     [EXTRA_ARGS args...]\n"
@@ -300,7 +300,7 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:174
+#: ../../../../Modules/GoogleTest.cmake:180
 msgid ""
 "``gtest_discover_tests()`` sets up a post-build or pre-test command on the "
 "test executable that generates the list of tests by parsing the output from "
@@ -313,7 +313,7 @@ msgid ""
 "properly set in order to function in a cross-compiling environment."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:184
+#: ../../../../Modules/GoogleTest.cmake:190
 msgid ""
 "Additionally, setting properties on tests is somewhat less convenient, since "
 "the tests are not available at CMake time.  Additional test properties may "
@@ -325,11 +325,11 @@ msgid ""
 "below for further discussion and limitations)."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:198
+#: ../../../../Modules/GoogleTest.cmake:201
 msgid "``target``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:211
+#: ../../../../Modules/GoogleTest.cmake:217
 msgid ""
 "Specifies a ``prefix`` to be prepended to the name of each discovered test "
 "case.  This can be useful when the same test executable is being used in "
@@ -337,11 +337,11 @@ msgid ""
 "``EXTRA_ARGS``."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:228
+#: ../../../../Modules/GoogleTest.cmake:227
 msgid "``TEST_FILTER expr``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:224
+#: ../../../../Modules/GoogleTest.cmake:230
 msgid ""
 "Filter expression to pass as a ``--gtest_filter`` argument during test "
 "discovery.  Note that the expression is a wildcard-based format that matches "
@@ -350,11 +350,11 @@ msgid ""
 "printed test names that :program:`ctest` uses."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:234
+#: ../../../../Modules/GoogleTest.cmake:236
 msgid "``NO_PRETTY_TYPES``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:231
+#: ../../../../Modules/GoogleTest.cmake:237
 msgid ""
 "By default, the type index of type-parameterized tests is replaced by the "
 "actual type name in the CTest test name.  If this behavior is undesirable (e."
@@ -362,11 +362,11 @@ msgid ""
 "behavior."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:240
+#: ../../../../Modules/GoogleTest.cmake:242
 msgid "``NO_PRETTY_VALUES``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:237
+#: ../../../../Modules/GoogleTest.cmake:243
 msgid ""
 "By default, the value index of value-parameterized tests is replaced by the "
 "actual value in the CTest test name.  If this behavior is undesirable (e.g. "
@@ -374,21 +374,21 @@ msgid ""
 "behavior."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:244
+#: ../../../../Modules/GoogleTest.cmake:248
 msgid "``PROPERTIES name1 value1...``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:243
+#: ../../../../Modules/GoogleTest.cmake:249
 msgid ""
 "Specifies additional properties to be set on all tests discovered by this "
 "invocation of ``gtest_discover_tests()``."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:255
+#: ../../../../Modules/GoogleTest.cmake:252
 msgid "``TEST_LIST var``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:247
+#: ../../../../Modules/GoogleTest.cmake:253
 msgid ""
 "Make the list of tests available in the variable ``var``, rather than the "
 "default ``<target>_TESTS``.  This can be useful when the same test "
@@ -396,18 +396,18 @@ msgid ""
 "Note that this variable is only available in CTest."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:252
+#: ../../../../Modules/GoogleTest.cmake:258
 msgid ""
 "Due to a limitation of CMake's parsing rules, any test with a square bracket "
 "in its name will be omitted from the list of tests stored in this variable.  "
 "Such tests will still be defined and executed by ``ctest`` as normal though."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:275
+#: ../../../../Modules/GoogleTest.cmake:263
 msgid "``DISCOVERY_TIMEOUT num``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:260
+#: ../../../../Modules/GoogleTest.cmake:266
 msgid ""
 "Specifies how long (in seconds) CMake will wait for the test to enumerate "
 "available tests.  If the test takes longer than this, discovery (and your "
@@ -417,7 +417,7 @@ msgid ""
 "command:`execute_process`."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:269
+#: ../../../../Modules/GoogleTest.cmake:275
 msgid ""
 "In CMake versions 3.10.1 and 3.10.2, this option was called ``TIMEOUT``. "
 "This clashed with the ``TIMEOUT`` test property, which is one of the common "
@@ -428,11 +428,11 @@ msgid ""
 "been preserved."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:284
+#: ../../../../Modules/GoogleTest.cmake:283
 msgid "``XML_OUTPUT_DIR dir``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:280
+#: ../../../../Modules/GoogleTest.cmake:286
 msgid ""
 "If specified, the parameter is passed along with ``--gtest_output=xml:`` to "
 "test executable. The actual file name is the same as the test target, "
@@ -441,11 +441,11 @@ msgid ""
 "when using parallel test execution."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:302
+#: ../../../../Modules/GoogleTest.cmake:292
 msgid "``DISCOVERY_MODE``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:289
+#: ../../../../Modules/GoogleTest.cmake:295
 msgid ""
 "Provides greater control over when ``gtest_discover_tests()`` performs test "
 "discovery. By default, ``POST_BUILD`` sets up a post-build command to "
@@ -456,7 +456,7 @@ msgid ""
 "better chance at finding appropriate runtime dependencies."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:298
+#: ../../../../Modules/GoogleTest.cmake:304
 msgid ""
 "``DISCOVERY_MODE`` defaults to the value of the "
 "``CMAKE_GTEST_DISCOVER_TESTS_DISCOVERY_MODE`` variable if it is not passed "
@@ -465,16 +465,16 @@ msgid ""
 "modify each call site."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:307
+#: ../../../../Modules/GoogleTest.cmake:310
 msgid "``DISCOVERY_EXTRA_ARGS args...``"
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:307
+#: ../../../../Modules/GoogleTest.cmake:313
 msgid ""
 "Any extra arguments to pass on the command line for the discovery command."
 msgstr ""
 
-#: ../../../../Modules/GoogleTest.cmake:309
+#: ../../../../Modules/GoogleTest.cmake:315
 msgid ""
 "The :prop_tgt:`TEST_LAUNCHER` target property is honored during test "
 "discovery and test execution."
