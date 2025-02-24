@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-31 17:45+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "The options are:"
 msgstr ""
 
-#: ../../../../Modules/CheckStructHasMember.cmake:27
+#: ../../../../Modules/CheckStructHasMember.cmake:25
 msgid "``LANGUAGE <language>``"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgid ""
 "way the check is run:"
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_FLAGS.txt:6
+#: ../../../module/CMAKE_REQUIRED_FLAGS.txt:1
 msgid "``CMAKE_REQUIRED_FLAGS``"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgid ""
 "compiler command before the contents of ``CMAKE_REQUIRED_FLAGS``."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_DEFINITIONS.txt:4
+#: ../../../module/CMAKE_REQUIRED_DEFINITIONS.txt:1
 msgid "``CMAKE_REQUIRED_DEFINITIONS``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgid ""
 "``<resultVar>`` will also be added automatically."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_INCLUDES.txt:4
+#: ../../../module/CMAKE_REQUIRED_INCLUDES.txt:1
 msgid "``CMAKE_REQUIRED_INCLUDES``"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid ""
 "the :prop_dir:`INCLUDE_DIRECTORIES` directory property will be ignored."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LINK_OPTIONS.txt:5
+#: ../../../module/CMAKE_REQUIRED_LINK_OPTIONS.txt:1
 msgid "``CMAKE_REQUIRED_LINK_OPTIONS``"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgid ""
 "(see :command:`try_compile` for further details)."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LIBRARIES.txt:5
+#: ../../../module/CMAKE_REQUIRED_LIBRARIES.txt:1
 msgid "``CMAKE_REQUIRED_LIBRARIES``"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgid ""
 "further details)."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LINK_DIRECTORIES.txt:5
+#: ../../../module/CMAKE_REQUIRED_LINK_DIRECTORIES.txt:1
 msgid "``CMAKE_REQUIRED_LINK_DIRECTORIES``"
 msgstr ""
 
@@ -127,7 +127,7 @@ msgid ""
 "the linker (see :command:`try_compile` for further details)."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_QUIET.txt:5
+#: ../../../module/CMAKE_REQUIRED_QUIET.txt:1
 msgid "``CMAKE_REQUIRED_QUIET``"
 msgstr ""
 

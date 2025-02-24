@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,19 +21,26 @@ msgstr ""
 msgid "CMP0008"
 msgstr ""
 
-#: ../../../policy/CMP0008.rst:4
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0008.rst:7
 msgid "Libraries linked by full-path must have a valid library file name."
 msgstr ""
 
-#: ../../../policy/CMP0008.rst:6
+#: ../../../policy/CMP0008.rst:9
 msgid "In CMake 2.4 and below it is possible to write code like"
 msgstr ""
 
-#: ../../../policy/CMP0008.rst:10
+#: ../../../policy/CMP0008.rst:11
 msgid "target_link_libraries(myexe /full/path/to/somelib)"
 msgstr ""
 
-#: ../../../policy/CMP0008.rst:12
+#: ../../../policy/CMP0008.rst:15
 msgid ""
 "where ``somelib`` is supposed to be a valid library file name such as "
 "``libsomelib.a`` or ``somelib.lib``.  For Makefile generators this produces "
@@ -48,7 +55,7 @@ msgid ""
 "does not name a valid library file."
 msgstr ""
 
-#: ../../../policy/CMP0008.rst:25
+#: ../../../policy/CMP0008.rst:28
 msgid ""
 "This policy determines what to do with full paths that do not appear to name "
 "a valid library file.  The ``OLD`` behavior for this policy is to split the "
@@ -57,16 +64,10 @@ msgid ""
 "the native build tool unchanged."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/DEPRECATED.txt:2
-msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

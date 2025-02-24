@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,18 @@ msgstr ""
 msgid "CMP0058"
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:6
+#: ../../../policy/REMOVED_PROLOGUE.txt:2
+msgid ""
+"The ``OLD`` behavior of this policy was removed in CMake version |"
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
+"command:`cmake_minimum_required` or :command:`cmake_policy`."
+msgstr ""
+
+#: ../../../policy/CMP0058.rst:9
 msgid "Ninja requires custom command byproducts to be explicit."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:8
+#: ../../../policy/CMP0058.rst:11
 msgid ""
 "When an intermediate file generated during the build is consumed by an "
 "expensive operation or a large tree of dependents, one may reduce the work "
@@ -37,7 +44,7 @@ msgid ""
 "rule's *witness* and the generated file as a rule's *byproduct*."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:18
+#: ../../../policy/CMP0058.rst:21
 msgid ""
 "Byproducts may not be listed as outputs because their timestamps are allowed "
 "to be older than the inputs.  No build tools (like ``make``) that existed "
@@ -46,7 +53,7 @@ msgid ""
 "byproducts undeclared in the rules that generate them.  For example:"
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:25
+#: ../../../policy/CMP0058.rst:28
 msgid ""
 "add_custom_command(\n"
 "  OUTPUT witness.txt\n"
@@ -66,7 +73,7 @@ msgid ""
 "add_dependencies(Consumer Provider)"
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:44
+#: ../../../policy/CMP0058.rst:47
 msgid ""
 "This works well for all generators except :generator:`Ninja`. The Ninja "
 "build tool sees a rule listing ``byproduct.txt`` as a dependency and no rule "
@@ -77,7 +84,7 @@ msgid ""
 "details on why Ninja works this way."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:55
+#: ../../../policy/CMP0058.rst:58
 msgid ""
 "Instead of leaving byproducts undeclared in the rules that generate them, "
 "Ninja expects byproducts to be listed along with other outputs. Such rules "
@@ -87,7 +94,7 @@ msgid ""
 "unnecessarily."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:62
+#: ../../../policy/CMP0058.rst:65
 msgid ""
 "Since the above approach does not tell CMake what custom command generates "
 "``byproduct.txt``, the Ninja generator does not have enough information to "
@@ -101,18 +108,18 @@ msgid ""
 "are generated as byproducts of custom commands."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:75
+#: ../../../policy/CMP0058.rst:78
 msgid "Introducing Byproducts"
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:77
+#: ../../../policy/CMP0058.rst:80
 msgid ""
 "CMake 3.2 introduced the ``BYPRODUCTS`` option to the :command:"
 "`add_custom_command` and :command:`add_custom_target` commands.  This option "
 "allows byproducts to be specified explicitly:"
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:81
+#: ../../../policy/CMP0058.rst:84
 msgid ""
 "add_custom_command(\n"
 "  OUTPUT witness.txt\n"
@@ -123,14 +130,14 @@ msgid ""
 "..."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:91
+#: ../../../policy/CMP0058.rst:94
 msgid ""
 "The ``BYPRODUCTS`` option is used by the :generator:`Ninja` generator to "
 "list byproducts among the outputs of the custom commands that generate them, "
 "and is ignored by other generators."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:95
+#: ../../../policy/CMP0058.rst:98
 msgid ""
 "CMake 3.3 and above prefer to require projects to specify custom command "
 "byproducts explicitly so that it can avoid using the ``phony`` rule "
@@ -138,7 +145,7 @@ msgid ""
 "compatibility with existing projects that still need the workaround."
 msgstr ""
 
-#: ../../../policy/CMP0058.rst:101
+#: ../../../policy/CMP0058.rst:104
 msgid ""
 "This policy has no effect on generators other than :generator:`Ninja`. The "
 "``OLD`` behavior for this policy is to generate Ninja ``phony`` rules for "
@@ -147,22 +154,16 @@ msgid ""
 "custom command ``BYPRODUCTS`` explicitly."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
-msgid ""
-"This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
-msgstr ""
-
-#: ../../../policy/CMP0058.rst:112
+#: ../../../policy/CMP0058.rst:110
 msgid ""
 "The policy setting must be in scope at the end of the top-level ``CMakeLists."
 "txt`` file of the project and has global effect."
 msgstr ""
 
-#: ../../../policy/DEPRECATED.txt:2
+#: ../../../policy/REMOVED_EPILOGUE.txt:1
 msgid ""
-"The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
-"policies(7)>` and may be removed in a future version of CMake."
+"This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
+"Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
+"set by :command:`cmake_policy` or :command:`cmake_minimum_required`. If it "
+"was not set, CMake |WARNED_OR_DID_NOT_WARN|, and used ``OLD`` behavior."
 msgstr ""

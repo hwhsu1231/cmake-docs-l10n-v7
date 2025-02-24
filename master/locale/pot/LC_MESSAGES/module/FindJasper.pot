@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,10 @@ msgid "Find the Jasper JPEG2000 library."
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:11
-msgid "IMPORTED Targets"
+msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:14
+#: ../../../../Modules/FindJasper.cmake:13
 msgid "``Jasper::Jasper``"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "system has Jasper"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:25
+#: ../../../../Modules/FindJasper.cmake:23
 msgid "``JASPER_INCLUDE_DIRS``"
 msgstr ""
 
@@ -69,7 +69,7 @@ msgstr ""
 msgid "the libraries needed to use Jasper"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:30
+#: ../../../../Modules/FindJasper.cmake:29
 msgid "``JASPER_VERSION_STRING``"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 msgid "where to find the Jasper library (optimized)."
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:95
+#: ../../../../Modules/FindJasper.cmake:41
 msgid "``JASPER_LIBARRY_DEBUG``"
 msgstr ""
 

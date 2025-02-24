@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid ""
 "The ``VISIBILITY_INLINES_HIDDEN`` property determines whether a flag for "
 "hiding symbols for inline functions, such as ``-fvisibility-inlines-"
 "hidden``, should be used when invoking the compiler.  This property affects "
-"compilation in sources of all types of targets (subject to policy :policy:"
-"`CMP0063`)."
+"compilation in sources of all types of targets.  See policy :policy:"
+"`CMP0063`."
 msgstr ""
 
 #: ../../../prop_tgt/VISIBILITY_INLINES_HIDDEN.rst:11

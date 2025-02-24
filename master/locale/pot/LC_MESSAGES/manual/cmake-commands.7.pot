@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,27 +33,27 @@ msgstr ""
 msgid "These commands are always available."
 msgstr ""
 
-#: ../../../manual/cmake-commands.7.rst:71
+#: ../../../manual/cmake-commands.7.rst:72
 msgid "Project Commands"
 msgstr ""
 
-#: ../../../manual/cmake-commands.7.rst:73
+#: ../../../manual/cmake-commands.7.rst:74
 msgid "These commands are available only in CMake projects."
 msgstr ""
 
-#: ../../../manual/cmake-commands.7.rst:129
+#: ../../../manual/cmake-commands.7.rst:130
 msgid "CTest Commands"
 msgstr ""
 
-#: ../../../manual/cmake-commands.7.rst:131
+#: ../../../manual/cmake-commands.7.rst:132
 msgid "These commands are available only in CTest scripts."
 msgstr ""
 
-#: ../../../manual/cmake-commands.7.rst:151
+#: ../../../manual/cmake-commands.7.rst:152
 msgid "Deprecated Commands"
 msgstr ""
 
-#: ../../../manual/cmake-commands.7.rst:153
+#: ../../../manual/cmake-commands.7.rst:154
 msgid ""
 "These commands are deprecated and are only made available to maintain "
 "backward compatibility.  The documentation of each command states the CMake "

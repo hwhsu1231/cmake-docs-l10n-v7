@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,7 +100,7 @@ msgstr ""
 msgid "The ``<type>`` must be specified as one of:"
 msgstr ""
 
-#: ../../../command/set.rst:59
+#: ../../../command/set.rst:57
 msgid "``BOOL``"
 msgstr ""
 
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Boolean ``ON/OFF`` value. :manual:`cmake-gui(1)` offers a checkbox."
 msgstr ""
 
-#: ../../../command/set.rst:63
+#: ../../../command/set.rst:61
 msgid "``FILEPATH``"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Path to a file on disk. :manual:`cmake-gui(1)` offers a file dialog."
 msgstr ""
 
-#: ../../../command/set.rst:67
+#: ../../../command/set.rst:65
 msgid "``PATH``"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgid ""
 "Path to a directory on disk. :manual:`cmake-gui(1)` offers a file dialog."
 msgstr ""
 
-#: ../../../command/set.rst:72
+#: ../../../command/set.rst:69
 msgid "``STRING``"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgid ""
 "selection if the :prop_cache:`STRINGS` cache entry property is set."
 msgstr ""
 
-#: ../../../command/set.rst:78
+#: ../../../command/set.rst:74
 msgid "``INTERNAL``"
 msgstr ""
 

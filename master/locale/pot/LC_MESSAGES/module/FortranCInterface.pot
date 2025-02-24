@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Variables that indicate if the mangling is found:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:19
+#: ../../../../Modules/FortranCInterface.cmake:18
 msgid "``FortranCInterface_GLOBAL_FOUND``"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Global subroutines and functions."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:22
+#: ../../../../Modules/FortranCInterface.cmake:21
 msgid "``FortranCInterface_MODULE_FOUND``"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgid ""
 "use the `Module Functions`_ below."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:29
+#: ../../../../Modules/FortranCInterface.cmake:28
 msgid "``FortranCInterface_GLOBAL_PREFIX``"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 msgid "Prefix for a global symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:32
+#: ../../../../Modules/FortranCInterface.cmake:31
 msgid "``FortranCInterface_GLOBAL_SUFFIX``"
 msgstr ""
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Suffix for a global symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:36
+#: ../../../../Modules/FortranCInterface.cmake:34
 msgid "``FortranCInterface_GLOBAL_CASE``"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgid ""
 "``LOWER``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:39
+#: ../../../../Modules/FortranCInterface.cmake:38
 msgid "``FortranCInterface_GLOBAL__PREFIX``"
 msgstr ""
 
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Prefix for a global symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:42
+#: ../../../../Modules/FortranCInterface.cmake:41
 msgid "``FortranCInterface_GLOBAL__SUFFIX``"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Suffix for a global symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:46
+#: ../../../../Modules/FortranCInterface.cmake:44
 msgid "``FortranCInterface_GLOBAL__CASE``"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgid ""
 "``LOWER``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:49
+#: ../../../../Modules/FortranCInterface.cmake:48
 msgid "``FortranCInterface_MODULE_PREFIX``"
 msgstr ""
 
@@ -122,7 +122,7 @@ msgstr ""
 msgid "Prefix for a module symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:53
+#: ../../../../Modules/FortranCInterface.cmake:51
 msgid "``FortranCInterface_MODULE_MIDDLE``"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgid ""
 "name of the module and the name of the symbol."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:56
+#: ../../../../Modules/FortranCInterface.cmake:55
 msgid "``FortranCInterface_MODULE_SUFFIX``"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Suffix for a module symbol without an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:60
+#: ../../../../Modules/FortranCInterface.cmake:58
 msgid "``FortranCInterface_MODULE_CASE``"
 msgstr ""
 
@@ -150,7 +150,7 @@ msgid ""
 "``LOWER``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:63
+#: ../../../../Modules/FortranCInterface.cmake:62
 msgid "``FortranCInterface_MODULE__PREFIX``"
 msgstr ""
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "Prefix for a module symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:67
+#: ../../../../Modules/FortranCInterface.cmake:65
 msgid "``FortranCInterface_MODULE__MIDDLE``"
 msgstr ""
 
@@ -168,7 +168,7 @@ msgid ""
 "of the module and the name of the symbol."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:70
+#: ../../../../Modules/FortranCInterface.cmake:69
 msgid "``FortranCInterface_MODULE__SUFFIX``"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgstr ""
 msgid "Suffix for a module symbol with an underscore."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:74
+#: ../../../../Modules/FortranCInterface.cmake:72
 msgid "``FortranCInterface_MODULE__CASE``"
 msgstr ""
 
@@ -193,7 +193,7 @@ msgstr ""
 #: ../../../../Modules/FortranCInterface.cmake:81
 msgid ""
 "The ``FortranCInterface_HEADER`` function is provided to generate a C header "
-"file containing macros to mangle symbol names::"
+"file containing macros to mangle symbol names:"
 msgstr ""
 
 #: ../../../../Modules/FortranCInterface.cmake:84
@@ -204,11 +204,11 @@ msgid ""
 "                         [SYMBOLS [<module>:]<function> ...])"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:89
-msgid "It generates in ``<file>`` definitions of the following macros::"
+#: ../../../../Modules/FortranCInterface.cmake:91
+msgid "It generates in ``<file>`` definitions of the following macros:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:91
+#: ../../../../Modules/FortranCInterface.cmake:93
 msgid ""
 "#define FortranCInterface_GLOBAL (name,NAME) ...\n"
 "#define FortranCInterface_GLOBAL_(name,NAME) ...\n"
@@ -216,87 +216,87 @@ msgid ""
 "#define FortranCInterface_MODULE_(mod,name, MOD,NAME) ..."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:96
+#: ../../../../Modules/FortranCInterface.cmake:100
 msgid "These macros mangle four categories of Fortran symbols, respectively:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:98
+#: ../../../../Modules/FortranCInterface.cmake:102
 msgid "Global symbols without '_': ``call mysub()``"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:99
+#: ../../../../Modules/FortranCInterface.cmake:103
 msgid "Global symbols with '_'   : ``call my_sub()``"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:100
+#: ../../../../Modules/FortranCInterface.cmake:104
 msgid "Module symbols without '_': ``use mymod; call mysub()``"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:101
+#: ../../../../Modules/FortranCInterface.cmake:105
 msgid "Module symbols with '_'   : ``use mymod; call my_sub()``"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:103
+#: ../../../../Modules/FortranCInterface.cmake:107
 msgid ""
 "If mangling for a category is not known, its macro is left undefined. All "
 "macros require raw names in both lower case and upper case."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:106
+#: ../../../../Modules/FortranCInterface.cmake:110
 msgid "The options are:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:110
+#: ../../../../Modules/FortranCInterface.cmake:112
 msgid "``MACRO_NAMESPACE``"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:109
+#: ../../../../Modules/FortranCInterface.cmake:113
 msgid ""
 "Replace the default ``FortranCInterface_`` prefix with a given namespace "
 "``<macro-ns>``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:119
+#: ../../../../Modules/FortranCInterface.cmake:116
 msgid "``SYMBOLS``"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:113
+#: ../../../../Modules/FortranCInterface.cmake:117
 msgid "List symbols to mangle automatically with C preprocessor definitions::"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:115
+#: ../../../../Modules/FortranCInterface.cmake:119
 msgid ""
 "<function>          ==> #define <ns><function> ...\n"
 "<module>:<function> ==> #define <ns><module>_<function> ..."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:118
+#: ../../../../Modules/FortranCInterface.cmake:122
 msgid ""
 "If the mangling for some symbol is not known then no preprocessor definition "
 "is created, and a warning is displayed."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:122
+#: ../../../../Modules/FortranCInterface.cmake:125
 msgid "``SYMBOL_NAMESPACE``"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:122
+#: ../../../../Modules/FortranCInterface.cmake:126
 msgid ""
 "Prefix all preprocessor definitions generated by the ``SYMBOLS`` option with "
 "a given namespace ``<ns>``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:127
+#: ../../../../Modules/FortranCInterface.cmake:131
 msgid ""
 "The ``FortranCInterface_VERIFY`` function is provided to verify that the "
-"Fortran and C/C++ compilers work together::"
+"Fortran and C/C++ compilers work together:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:130
+#: ../../../../Modules/FortranCInterface.cmake:134
 msgid "FortranCInterface_VERIFY([CXX] [QUIET])"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:132
+#: ../../../../Modules/FortranCInterface.cmake:138
 msgid ""
 "It tests whether a simple test executable using Fortran and C (and C++ when "
 "the CXX option is given) compiles and links successfully.  The result is "
@@ -308,23 +308,23 @@ msgid ""
 "the ``Release`` configuration."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:142
+#: ../../../../Modules/FortranCInterface.cmake:148
 msgid "Example Usage"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:144
+#: ../../../../Modules/FortranCInterface.cmake:150
 msgid ""
 "include(FortranCInterface)\n"
 "FortranCInterface_HEADER(FC.h MACRO_NAMESPACE \"FC_\")"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:149
+#: ../../../../Modules/FortranCInterface.cmake:155
 msgid ""
 "This creates a \"FC.h\" header that defines mangling macros ``FC_GLOBAL()``, "
 "``FC_GLOBAL_()``, ``FC_MODULE()``, and ``FC_MODULE_()``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:152
+#: ../../../../Modules/FortranCInterface.cmake:158
 msgid ""
 "include(FortranCInterface)\n"
 "FortranCInterface_HEADER(FCMangle.h\n"
@@ -333,38 +333,38 @@ msgid ""
 "                         SYMBOLS mysub mymod:my_sub)"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:160
+#: ../../../../Modules/FortranCInterface.cmake:166
 msgid ""
 "This creates a \"FCMangle.h\" header that defines the same ``FC_*()`` "
 "mangling macros as the previous example plus preprocessor symbols "
 "``FC_mysub`` and ``FC_mymod_my_sub``."
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:165
+#: ../../../../Modules/FortranCInterface.cmake:171
 msgid "Additional Manglings"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:167
+#: ../../../../Modules/FortranCInterface.cmake:173
 msgid ""
 "FortranCInterface is aware of possible ``GLOBAL`` and ``MODULE`` manglings "
 "for many Fortran compilers, but it also provides an interface to specify new "
 "possible manglings.  Set the variables::"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:171
+#: ../../../../Modules/FortranCInterface.cmake:177
 msgid ""
 "FortranCInterface_GLOBAL_SYMBOLS\n"
 "FortranCInterface_MODULE_SYMBOLS"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:174
+#: ../../../../Modules/FortranCInterface.cmake:180
 msgid ""
 "before including FortranCInterface to specify manglings of the symbols "
 "``MySub``, ``My_Sub``, ``MyModule:MySub``, and ``My_Module:My_Sub``. For "
 "example, the code:"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:178
+#: ../../../../Modules/FortranCInterface.cmake:184
 msgid ""
 "set(FortranCInterface_GLOBAL_SYMBOLS mysub_ my_sub__ MYSUB_)\n"
 "  #                                  ^^^^^  ^^^^^^   ^^^^^\n"
@@ -374,7 +374,7 @@ msgid ""
 "include(FortranCInterface)"
 msgstr ""
 
-#: ../../../../Modules/FortranCInterface.cmake:187
+#: ../../../../Modules/FortranCInterface.cmake:193
 msgid ""
 "tells FortranCInterface to try given ``GLOBAL`` and ``MODULE`` manglings. "
 "(The carets point at raw symbol names for clarity in this example but are "

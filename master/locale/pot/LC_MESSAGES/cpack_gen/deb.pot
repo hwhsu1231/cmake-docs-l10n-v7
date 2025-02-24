@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,7 +162,7 @@ msgstr ""
 msgid "This may be set to:"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:83
+#: ../../../cpack_gen/deb.rst:74
 msgid "``DEB-DEFAULT``"
 msgstr ""
 
@@ -185,7 +185,7 @@ msgid ""
 "variables in a manner that will prevent such errors."
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:91
+#: ../../../cpack_gen/deb.rst:85
 msgid "``<file-name>[.deb]``"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgid ""
 "end in ``.deb`` or ``.ipk``.  Previously the suffix was required."
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:96
+#: ../../../cpack_gen/deb.rst:93
 msgid "``<file-name>.ipk``"
 msgstr ""
 
@@ -433,7 +433,7 @@ msgstr ""
 msgid "The compression used for creating the Debian package."
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:288 ../../../cpack_gen/deb.rst:302
+#: ../../../cpack_gen/deb.rst:288 ../../../cpack_gen/deb.rst:301
 msgid "``gzip``"
 msgstr ""
 
@@ -441,7 +441,7 @@ msgstr ""
 msgid "Possible values are:"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:293
+#: ../../../cpack_gen/deb.rst:292
 msgid "``lzma``"
 msgstr ""
 
@@ -449,7 +449,7 @@ msgstr ""
 msgid "Lempel–Ziv–Markov chain algorithm"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:296
+#: ../../../cpack_gen/deb.rst:295
 msgid "``xz``"
 msgstr ""
 
@@ -457,7 +457,7 @@ msgstr ""
 msgid "XZ Utils compression"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:299
+#: ../../../cpack_gen/deb.rst:298
 msgid "``bzip2``"
 msgstr ""
 
@@ -469,7 +469,7 @@ msgstr ""
 msgid "GNU Gzip compression"
 msgstr ""
 
-#: ../../../cpack_gen/deb.rst:306
+#: ../../../cpack_gen/deb.rst:304
 msgid "``zstd``"
 msgstr ""
 
@@ -577,10 +577,10 @@ msgstr ""
 
 #: ../../../cpack_gen/deb.rst:401
 msgid ""
-"Sets the `Pre-Depends` field of the Debian package. Like :variable:`Depends "
-"<CPACK_DEBIAN_PACKAGE_DEPENDS>`, except that it also forces ``dpkg`` to "
-"complete installation of the packages named before even starting the "
-"installation of the package which declares the pre-dependency."
+"Sets the ``Pre-Depends`` field of the Debian package. Like :variable:"
+"`Depends <CPACK_DEBIAN_PACKAGE_DEPENDS>`, except that it also forces "
+"``dpkg`` to complete installation of the packages named before even starting "
+"the installation of the package which declares the pre-dependency."
 msgstr ""
 
 #: ../../../cpack_gen/deb.rst:411
@@ -649,8 +649,8 @@ msgstr ""
 
 #: ../../../cpack_gen/deb.rst:465
 msgid ""
-"Sets the `Conflicts` field of the Debian package. When one binary package "
-"declares a conflict with another using a `Conflicts` field, ``dpkg`` will "
+"Sets the ``Conflicts`` field of the Debian package. When one binary package "
+"declares a conflict with another using a ``Conflicts`` field, ``dpkg`` will "
 "not allow them to be unpacked on the system at the same time."
 msgstr ""
 
@@ -681,8 +681,8 @@ msgstr ""
 
 #: ../../../cpack_gen/deb.rst:493
 msgid ""
-"Sets the `Provides` field of the Debian package. A virtual package is one "
-"which appears in the `Provides` control field of another package."
+"Sets the ``Provides`` field of the Debian package. A virtual package is one "
+"which appears in the ``Provides`` control field of another package."
 msgstr ""
 
 #: ../../../cpack_gen/deb.rst:501
@@ -703,7 +703,7 @@ msgstr ""
 
 #: ../../../cpack_gen/deb.rst:512
 msgid ""
-"Sets the `Replaces` field of the Debian package. Packages can declare in "
+"Sets the ``Replaces`` field of the Debian package. Packages can declare in "
 "their control file that they should overwrite files in certain other "
 "packages, or completely replace other packages."
 msgstr ""
@@ -739,8 +739,8 @@ msgstr ""
 
 #: ../../../cpack_gen/deb.rst:550
 msgid ""
-"Sets the `Suggests` field of the Debian package. Allows packages to declare "
-"a suggested package install grouping."
+"Sets the ``Suggests`` field of the Debian package. Allows packages to "
+"declare a suggested package install grouping."
 msgstr ""
 
 #: ../../../cpack_gen/deb.rst:557
@@ -860,7 +860,7 @@ msgstr ""
 
 #: ../../../cpack_gen/deb.rst:671
 msgid ""
-"Sets the `Multi-Arch` field of the Debian package. Packages can declare in "
+"Sets the ``Multi-Arch`` field of the Debian package. Packages can declare in "
 "their control file how they should handle situations, where packages for "
 "different architectures are being installed on the same machine."
 msgstr ""

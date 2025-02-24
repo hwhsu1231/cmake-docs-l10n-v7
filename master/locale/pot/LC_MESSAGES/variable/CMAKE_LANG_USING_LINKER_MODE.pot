@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgid ""
 "supported linker mode values are:"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:13
+#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:9
 msgid "``FLAG``"
 msgstr ""
 
@@ -40,7 +40,7 @@ msgid ""
 "``CMAKE_<LANG>_USING_LINKER_MODE`` is not set."
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:16
+#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:15
 msgid "``TOOL``"
 msgstr ""
 
@@ -48,4 +48,27 @@ msgstr ""
 msgid ""
 ":variable:`CMAKE_<LANG>_USING_LINKER_<TYPE>` holds the path to the linker "
 "tool."
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:21
+msgid "The variable must be set accordingly to how CMake manage the link step:"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:23
+msgid ""
+"value ``TOOL`` is expected and required when the linker is used directly for "
+"the link step."
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:25
+msgid ""
+"value ``FLAGS`` is expected or the variable not set when the compiler is "
+"used as driver for the link step."
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_USING_LINKER_MODE.rst:30
+msgid ""
+"This variable is no longer used. The type of information stored in the :"
+"variable:`CMAKE_<LANG>_USING_LINKER_<TYPE>` variable is determined by the :"
+"variable:`CMAKE_<LANG>_LINK_MODE` variable."
 msgstr ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "will convert lines of the form"
 msgstr ""
 
-#: ../../../prop_tgt/IMPLICIT_DEPENDS_INCLUDE_TRANSFORM.rst:22
+#: ../../../prop_tgt/IMPLICIT_DEPENDS_INCLUDE_TRANSFORM.rst:20
 msgid "#include MYDIR(myheader.h)"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "to"
 msgstr ""
 
-#: ../../../prop_tgt/IMPLICIT_DEPENDS_INCLUDE_TRANSFORM.rst:28
+#: ../../../prop_tgt/IMPLICIT_DEPENDS_INCLUDE_TRANSFORM.rst:26
 msgid "#include <mydir/myheader.h>"
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,7 +114,7 @@ msgid ""
 "endforeach()"
 msgstr ""
 
-#: ../../../command/foreach.rst:77 ../../../command/foreach.rst:121
+#: ../../../command/foreach.rst:77 ../../../command/foreach.rst:123
 msgid "yields::"
 msgstr ""
 
@@ -159,7 +159,7 @@ msgid ""
 "defined for the current iteration."
 msgstr ""
 
-#: ../../../command/foreach.rst:108
+#: ../../../command/foreach.rst:110
 msgid ""
 "list(APPEND English one two three four)\n"
 "list(APPEND Bahasa satu dua tiga)\n"
@@ -173,7 +173,7 @@ msgid ""
 "endforeach()"
 msgstr ""
 
-#: ../../../command/foreach.rst:123
+#: ../../../command/foreach.rst:125
 msgid ""
 "-- num_0=one, num_1=satu\n"
 "-- num_0=two, num_1=dua\n"
@@ -185,22 +185,22 @@ msgid ""
 "-- en=four, ba="
 msgstr ""
 
-#: ../../../command/foreach.rst:133
+#: ../../../command/foreach.rst:137
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/foreach.rst:135
+#: ../../../command/foreach.rst:139
 msgid ":command:`break`"
 msgstr ""
 
-#: ../../../command/foreach.rst:136
+#: ../../../command/foreach.rst:140
 msgid ":command:`continue`"
 msgstr ""
 
-#: ../../../command/foreach.rst:137
+#: ../../../command/foreach.rst:141
 msgid ":command:`endforeach`"
 msgstr ""
 
-#: ../../../command/foreach.rst:138
+#: ../../../command/foreach.rst:142
 msgid ":command:`while`"
 msgstr ""

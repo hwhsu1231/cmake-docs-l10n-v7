@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid "cmake_minimum_required(VERSION <min>[...<policy_max>] [FATAL_ERROR])"
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:10
-msgid "The optional ``<policy_max>`` version."
+msgid "The optional ``<policy_max>`` version behavior; ignored in older CMake."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:13
@@ -50,11 +50,10 @@ msgid ""
 "If the running version of CMake is lower than the ``<min>`` required version "
 "it will stop processing the project and report an error. The optional "
 "``<policy_max>`` version, if specified, must be at least the ``<min>`` "
-"version and affects policy settings as described in `Policy Settings`_. If "
-"the running version of CMake is older than 3.12, the extra ``...`` dots will "
-"be seen as version component separators, resulting in the ``...<max>`` part "
-"being ignored and preserving the pre-3.12 behavior of basing policies on "
-"``<min>``."
+"version and sets the `Policy Version`_. If the running version of CMake is "
+"older than 3.12, the extra ``...`` dots will be seen as version component "
+"separators, resulting in the ``...<max>`` part being ignored and preserving "
+"the pre-3.12 behavior of basing policies on ``<min>``."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:28
@@ -91,46 +90,59 @@ msgid ""
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:54
-msgid "Policy Settings"
+msgid "Policy Version"
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:56
+msgid "``cmake_minimum_required(VERSION <min>[...<max>])`` implicitly invokes"
+msgstr ""
+
+#: ../../../command/cmake_minimum_required.rst:58
+msgid "cmake_policy(VERSION <min>[...<max>])"
+msgstr ""
+
+#: ../../../command/POLICY_VERSION.txt:1
 msgid ""
-"The ``cmake_minimum_required(VERSION)`` command implicitly invokes the :"
-"command:`cmake_policy(VERSION)` command to specify that the current project "
-"code is written for the given range of CMake versions. All policies known to "
-"the running version of CMake and introduced in the ``<min>`` (or ``<max>``, "
-"if specified) version or earlier will be set to use ``NEW`` behavior.  All "
-"policies introduced in later versions will be unset.  This effectively "
+"This specifies that the current CMake code is written for the given range of "
+"CMake versions, ``<min>[...<max>]``. It sets the \"policy version\" to:"
+msgstr ""
+
+#: ../../../command/POLICY_VERSION.txt:4
+msgid "the range's ``<max>`` version, if specified, or to"
+msgstr ""
+
+#: ../../../command/POLICY_VERSION.txt:5
+msgid "the ``<min>`` version, or to"
+msgstr ""
+
+#: ../../../command/POLICY_VERSION.txt:6
+msgid ""
+"the value of the :variable:`CMAKE_POLICY_VERSION_MINIMUM` variable if it is "
+"higher than the other two versions."
+msgstr ""
+
+#: ../../../command/POLICY_VERSION.txt:9
+msgid ""
+"The policy version effectively requests behavior preferred as of a given "
+"CMake version and tells newer CMake versions to warn about their new "
+"policies. All policies known to the running version of CMake and introduced "
+"in that version or earlier will be set to use ``NEW`` behavior. All policies "
+"introduced in later versions will be unset (unless the :variable:"
+"`CMAKE_POLICY_DEFAULT_CMP<NNNN>` variable sets a default). This effectively "
 "requests behavior preferred as of a given CMake version and tells newer "
 "CMake versions to warn about their new policies."
 msgstr ""
 
-#: ../../../command/cmake_minimum_required.rst:66
-msgid ""
-"When a ``<min>`` version higher than 2.4 is specified the command implicitly "
-"invokes"
-msgstr ""
-
-#: ../../../command/cmake_minimum_required.rst:69
-msgid "cmake_policy(VERSION <min>[...<max>])"
-msgstr ""
-
-#: ../../../command/cmake_minimum_required.rst:73
-msgid ""
-"which sets CMake policies based on the range of versions specified. When a "
-"``<min>`` version 2.4 or lower is given the command implicitly invokes"
-msgstr ""
-
-#: ../../../command/cmake_minimum_required.rst:77
-msgid "cmake_policy(VERSION 2.4[...<max>])"
-msgstr ""
-
-#: ../../../command/cmake_minimum_required.rst:81
-msgid "which enables compatibility features for CMake 2.4 and lower."
-msgstr ""
-
 #: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:3
+msgid ""
+"Compatibility with versions of CMake older than 3.5 is removed. Calls to :"
+"command:`cmake_minimum_required(VERSION)` or :command:"
+"`cmake_policy(VERSION)` that do not specify at least 3.5 as their policy "
+"version (optionally via ``...<max>``) will produce an error in CMake 4.0 and "
+"above."
+msgstr ""
+
+#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:11
 msgid ""
 "Compatibility with versions of CMake older than 3.10 is deprecated. Calls "
 "to :command:`cmake_minimum_required(VERSION)` or :command:"
@@ -139,7 +151,7 @@ msgid ""
 "CMake 3.31 and above."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:11
+#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:19
 msgid ""
 "Compatibility with versions of CMake older than 3.5 is deprecated. Calls to :"
 "command:`cmake_minimum_required(VERSION)` or :command:"
@@ -148,7 +160,7 @@ msgid ""
 "CMake 3.27 and above."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:19
+#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:27
 msgid ""
 "Compatibility with versions of CMake older than 2.8.12 is deprecated. Calls "
 "to :command:`cmake_minimum_required(VERSION)` or :command:"
@@ -157,10 +169,10 @@ msgid ""
 "CMake 3.19 and above."
 msgstr ""
 
-#: ../../../command/cmake_minimum_required.rst:86
+#: ../../../command/cmake_minimum_required.rst:67
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/cmake_minimum_required.rst:88
+#: ../../../command/cmake_minimum_required.rst:69
 msgid ":command:`cmake_policy`"
 msgstr ""

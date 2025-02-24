@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,34 +160,34 @@ msgid ""
 "One may limit the effects of ``INTERFACE_LINK_LIBRARIES_DIRECT`` and "
 "``INTERFACE_LINK_LIBRARIES_DIRECT_EXCLUDE`` to a subset of dependent targets "
 "by using the :genex:`TARGET_PROPERTY` generator expression. For example, to "
-"limit the effects to executable targets, use an entry of the form::"
+"limit the effects to executable targets, use an entry of the form:"
 msgstr ""
 
 #: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:100
 msgid "\"$<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:...>\""
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:102
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:104
 msgid ""
 "Similarly, to limit the effects to specific targets, use an entry of the "
-"form::"
-msgstr ""
-
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:105
-msgid "\"$<$<BOOL:$<TARGET_PROPERTY:USE_IT>>:...>\""
+"form:"
 msgstr ""
 
 #: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:107
+msgid "\"$<$<BOOL:$<TARGET_PROPERTY:USE_IT>>:...>\""
+msgstr ""
+
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:111
 msgid ""
 "This entry will only affect targets that set their ``USE_IT`` target "
 "property to a true value."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:111
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:115
 msgid "Direct Link Dependency Ordering"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:113
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:117
 msgid ""
 "The list of direct link dependencies for a target is computed from an "
 "initial ordered list in its :prop_tgt:`LINK_LIBRARIES` target property. For "
@@ -200,7 +200,7 @@ msgid ""
 "that it explicitly specifies."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:123
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:127
 msgid ""
 "Once all direct link dependencies have been collected, items named by all of "
 "their :prop_tgt:`INTERFACE_LINK_LIBRARIES_DIRECT_EXCLUDE` usage requirements "
@@ -208,11 +208,11 @@ msgid ""
 "items that remain."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:129
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:133
 msgid "Example: Static Plugins"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:131
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:135
 msgid ""
 "Consider a static library ``Foo`` that provides a static plugin "
 "``FooPlugin`` to consuming application executables, where the implementation "
@@ -222,7 +222,7 @@ msgid ""
 "follows:"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:138
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:142
 msgid ""
 "# Core library used by other components.\n"
 "add_library(Core STATIC core.cpp)\n"
@@ -250,17 +250,17 @@ msgid ""
 "set_property(TARGET Foo PROPERTY INTERFACE_LINK_LIBRARIES_DIRECT_EXCLUDE Foo)"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:165
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:169
 msgid "An application ``app`` only needs to specify that it links to ``Foo``:"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:167
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:171
 msgid ""
 "add_executable(app main.cpp)\n"
 "target_link_libraries(app PRIVATE Foo)"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:172
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:176
 msgid ""
 "The ``INTERFACE_LINK_LIBRARIES_DIRECT`` target property on ``Foo`` tells "
 "CMake to pretend that ``app`` also links directly to ``FooPlugin``. The "
@@ -270,46 +270,46 @@ msgid ""
 "line for ``app`` will link the libraries in the following order:"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:180
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:231
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:184
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:235
 msgid ""
 "``FooPlugin`` as a direct link dependency of ``app`` (via ``Foo``'s usage "
 "requirements)."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:182
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:234
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:186
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:238
 msgid "``FooExtras`` as a dependency of ``FooPlugin``."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:183
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:187
 msgid "``Foo`` as a dependency of ``FooPlugin`` and ``FooExtras``."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:184
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:236
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:188
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:240
 msgid "``Core`` as a dependency of ``FooPlugin``, ``FooExtras``, and ``Foo``."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:186
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:190
 msgid ""
 "Note that without the ``INTERFACE_LINK_LIBRARIES_DIRECT_EXCLUDE`` target "
 "property, ``Foo`` would be linked twice: once as a direct dependency of "
 "``app``, and once as a dependency of ``FooPlugin``."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:191
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:195
 msgid "Example: Opt-In Static Plugins"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:193
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:197
 msgid ""
 "In the above `Example: Static Plugins`_, the ``app`` executable specifies "
 "that it links directly to ``Foo``.  In a real application, there might be an "
 "intermediate library:"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:197
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:201
 msgid ""
 "add_library(app_impl STATIC app_impl.cpp)\n"
 "target_link_libraries(app_impl PRIVATE Foo)\n"
@@ -318,7 +318,7 @@ msgid ""
 "target_link_libraries(app PRIVATE app_impl)"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:205
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:209
 msgid ""
 "In this case we do not want ``Foo``'s ``INTERFACE_LINK_LIBRARIES_DIRECT`` "
 "and ``INTERFACE_LINK_LIBRARIES_DIRECT_EXCLUDE`` target properties to affect "
@@ -326,7 +326,7 @@ msgid ""
 "property values to make their effects opt-in:"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:210
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:214
 msgid ""
 "# An app that links Foo should link Foo's plugin directly.\n"
 "set_property(TARGET Foo PROPERTY INTERFACE_LINK_LIBRARIES_DIRECT\n"
@@ -339,25 +339,25 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:222
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:226
 msgid "Now, the ``app`` executable can opt-in to get ``Foo``'s plugin(s):"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:224
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:228
 msgid "set_property(TARGET app PROPERTY FOO_STATIC_PLUGINS 1)"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:228
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:232
 msgid ""
 "The final link line for ``app`` will now link the libraries in the following "
 "order:"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:233
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:237
 msgid "``app_impl`` as a direct link dependency of ``app``."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:235
+#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.rst:239
 msgid ""
 "``Foo`` as a dependency of ``app_impl``, ``FooPlugin``, and ``FooExtras``."
 msgstr ""

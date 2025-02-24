@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,14 +31,38 @@ msgid ""
 "def``) file with all global symbols found in the input ``.obj`` files for a "
 "``SHARED`` library (or executable with :prop_tgt:`ENABLE_EXPORTS`) on "
 "Windows.  The module definition file will be passed to the linker causing "
-"all symbols to be exported from the ``.dll``. For global *data* symbols, "
-"``__declspec(dllimport)`` must still be used when compiling against the code "
-"in the ``.dll``.  All other function symbols will be automatically exported "
-"and imported by callers.  This simplifies porting projects to Windows by "
-"reducing the need for explicit ``dllexport`` markup, even in ``C++`` classes."
+"all symbols to be exported from the ``.dll``."
 msgstr ""
 
-#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:19
+#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:14
+msgid ""
+"This simplifies porting projects to Windows by reducing the need for "
+"explicit ``dllexport`` markup, even in ``C++`` classes.  Function symbols "
+"will be automatically exported and may be linked by callers. However, there "
+"are some cases when compiling code in a consumer may require explicit "
+"``dllimport`` markup:"
+msgstr ""
+
+#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:20
+msgid ""
+"Global *data* symbols must be explicitly marked with "
+"``__declspec(dllimport)`` in order to link to data in the ``.dll``."
+msgstr ""
+
+#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:23
+msgid ""
+"In cases that the compiler generates references to the virtual function "
+"table, such as in a delegating constructor of a class with virtual "
+"functions, the whole class must be marked with ``__declspec(dllimport)`` in "
+"order to link to the vftable in the ``.dll``."
+msgstr ""
+
+#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:28
+msgid ""
+"See the `MSVC Linker /EXPORT Option`_ for more information on data symbols."
+msgstr ""
+
+#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:32
 msgid ""
 "When this property is enabled, zero or more ``.def`` files may also be "
 "specified as source files of the target.  The exports named by these files "
@@ -48,7 +72,7 @@ msgid ""
 "but are added by the linker from dependencies (e.g. ``msvcrt.lib``)."
 msgstr ""
 
-#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:26
+#: ../../../prop_tgt/WINDOWS_EXPORT_ALL_SYMBOLS.rst:39
 msgid ""
 "This property is initialized by the value of the :variable:"
 "`CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS` variable if it is set when a target is "

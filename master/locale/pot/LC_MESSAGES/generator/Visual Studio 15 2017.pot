@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,34 +77,34 @@ msgstr ""
 msgid "``cmake -G \"Visual Studio 15 2017\" -A ARM64``"
 msgstr ""
 
-#: ../../../generator/Visual Studio 15 2017.rst:37
+#: ../../../generator/Visual Studio 15 2017.rst:39
 msgid ""
-"For compatibility with CMake versions prior to 3.1, one may specify a target "
-"platform name optionally at the end of the generator name. This is supported "
-"only for:"
+"Previously, for compatibility with CMake versions prior to 3.1, one could "
+"specify a target platform name optionally at the end of the generator name.  "
+"This has been removed. This was supported only for:"
 msgstr ""
 
-#: ../../../generator/Visual Studio 15 2017.rst:42
+#: ../../../generator/Visual Studio 15 2017.rst:44
 msgid "``Visual Studio 15 2017 Win64``"
 msgstr ""
 
-#: ../../../generator/Visual Studio 15 2017.rst:42
+#: ../../../generator/Visual Studio 15 2017.rst:45
 msgid "Specify target platform ``x64``."
 msgstr ""
 
-#: ../../../generator/Visual Studio 15 2017.rst:45
+#: ../../../generator/Visual Studio 15 2017.rst:47
 msgid "``Visual Studio 15 2017 ARM``"
 msgstr ""
 
-#: ../../../generator/Visual Studio 15 2017.rst:45
+#: ../../../generator/Visual Studio 15 2017.rst:48
 msgid "Specify target platform ``ARM``."
 msgstr ""
 
-#: ../../../generator/Visual Studio 15 2017.rst:48
+#: ../../../generator/Visual Studio 15 2017.rst:51
 msgid "Toolset Selection"
 msgstr ""
 
-#: ../../../generator/Visual Studio 15 2017.rst:50
+#: ../../../generator/Visual Studio 15 2017.rst:53
 msgid ""
 "The ``v141`` toolset that comes with Visual Studio 15 2017 is selected by "
 "default.  The :variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps "

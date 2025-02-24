@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,17 +21,38 @@ msgstr ""
 msgid "CMakeVerifyManifest"
 msgstr ""
 
-#: ../../../../Modules/CMakeVerifyManifest.cmake:10
-msgid "CMakeVerifyManifest.cmake"
+#: ../../../../Modules/CMakeVerifyManifest.cmake:8
+msgid ""
+"Use this script to verify that embedded manifests and side-by-side manifests "
+"for a project match."
 msgstr ""
 
-#: ../../../../Modules/CMakeVerifyManifest.cmake:12
+#: ../../../../Modules/CMakeVerifyManifest.cmake:11
 msgid ""
-"This script is used to verify that embedded manifests and side by side "
-"manifests for a project match.  To run this script, cd to a directory and "
-"run the script with cmake -P.  On the command line you can pass in versions "
-"that are OK even if not found in the .manifest files.  For example, cmake -"
-"Dallow_versions=8.0.50608.0 -PCmakeVerifyManifest.cmake could be used to "
-"allow an embedded manifest of 8.0.50608.0 to be used in a project even if "
-"that version was not found in the .manifest file."
+"This script first recursively globs ``*.manifest`` files from the current "
+"directory and creates a list of allowed version. Additional versions can be "
+"passed by setting ``allow_versions`` from the invocation command. Next, the "
+"script globs ``*.exe`` and ``*.dll`` files.  Each ``.exe`` and ``.dll`` file "
+"is scanned for embedded manifests and the versions of CRT are checked to be "
+"in the list of allowed version."
+msgstr ""
+
+#: ../../../../Modules/CMakeVerifyManifest.cmake:21
+msgid "Example"
+msgstr ""
+
+#: ../../../../Modules/CMakeVerifyManifest.cmake:23
+msgid ""
+"To run this script, navigate to a directory and run the script with ``cmake -"
+"P``."
+msgstr ""
+
+#: ../../../../Modules/CMakeVerifyManifest.cmake:28
+msgid "cmake -Dallow_versions=8.0.50608.0 -PCMakeVerifyManifest.cmake"
+msgstr ""
+
+#: ../../../../Modules/CMakeVerifyManifest.cmake:30
+msgid ""
+"This call allows an embedded manifest of 8.0.50608.0 to be used in a "
+"project, even if that version was not found in a ``.manifest`` file."
 msgstr ""

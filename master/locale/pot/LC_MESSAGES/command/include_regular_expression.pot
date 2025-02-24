@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,11 +34,11 @@ msgid ""
 "Sets the regular expressions used in dependency checking.  Only files "
 "matching ``regex_match`` will be traced as dependencies.  Only files "
 "matching ``regex_complain`` will generate warnings if they cannot be found "
-"(standard header paths are not searched).  The defaults are:"
+"(standard header paths are not searched)."
 msgstr ""
 
-#: ../../../command/include_regular_expression.rst:17
+#: ../../../command/include_regular_expression.rst:15
 msgid ""
-"regex_match    = \"^.*$\" (match everything)\n"
-"regex_complain = \"^$\" (match empty string only)"
+"The default for ``regex_match`` is ``\"^.*$\"`` (match everything). The "
+"default for ``regex_complain`` is ``\"^$\"`` (match empty string only)."
 msgstr ""

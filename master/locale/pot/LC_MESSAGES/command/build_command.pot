@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 #: ../../../command/build_command.rst:18
 msgid ""
 "<cmake> --build . [--config <config>] [--parallel <parallel>] [--target "
-"<target>...] [-- -i]"
+"<target>...]"
 msgstr ""
 
 #: ../../../command/build_command.rst:20
@@ -52,8 +52,9 @@ msgid ""
 "where ``<cmake>`` is the location of the :manual:`cmake(1)` command-line "
 "tool, and ``<config>``, ``<parallel>`` and ``<target>`` are the values "
 "provided to the ``CONFIGURATION``, ``PARALLEL_LEVEL`` and ``TARGET`` "
-"options, if any.  The trailing ``-- -i`` option is added for :ref:`Makefile "
-"Generators` if policy :policy:`CMP0061` is not set to ``NEW``."
+"options, if any.  In CMake versions prior to 4.0, a trailing ``-- -i`` "
+"option was added for :ref:`Makefile Generators` if policy :policy:`CMP0061` "
+"was not set to ``NEW``."
 msgstr ""
 
 #: ../../../command/build_command.rst:27

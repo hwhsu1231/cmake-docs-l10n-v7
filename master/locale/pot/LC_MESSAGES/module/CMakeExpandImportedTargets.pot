@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "during configuration."
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:25
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:23
 msgid ""
 "CMAKE_EXPAND_IMPORTED_TARGETS(<var> LIBRARIES lib1 lib2...libN\n"
 "                              [CONFIGURATION <config>])"
@@ -59,7 +59,7 @@ msgid ""
 "set, otherwise ${CMAKE_BUILD_TYPE}."
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:38
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:36
 msgid ""
 "cmake_expand_imported_targets(expandedLibs\n"
 "  LIBRARIES ${CMAKE_REQUIRED_LIBRARIES}\n"

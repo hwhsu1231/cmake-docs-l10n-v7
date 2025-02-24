@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,4 +31,10 @@ msgstr ""
 
 #: ../../../command/else.rst:10
 msgid "See the :command:`if` command."
+msgstr ""
+
+#: ../../../command/else.rst:12
+msgid ""
+"The optional ``<condition>`` argument is supported for backward "
+"compatibility only and is not evaluated."
 msgstr ""

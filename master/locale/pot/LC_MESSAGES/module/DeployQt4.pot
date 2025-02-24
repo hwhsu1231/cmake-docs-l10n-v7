@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgid ""
 "Also depends on BundleUtilities.cmake."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:29
+#: ../../../../Modules/DeployQt4.cmake:27
 msgid "write_qt4_conf(<qt_conf_dir> <qt_conf_contents>)"
 msgstr ""
 
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Writes a qt.conf file with the <qt_conf_contents> into <qt_conf_dir>."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:35
+#: ../../../../Modules/DeployQt4.cmake:33
 msgid "resolve_qt4_paths(<paths_var> [<executable_path>])"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgid ""
 "to the <executable_path> (if supplied) or the CMAKE_INSTALL_PREFIX."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:43
+#: ../../../../Modules/DeployQt4.cmake:41
 msgid ""
 "fixup_qt4_executable(<executable>\n"
 "  [<qtplugins> <libs> <dirs> <plugins_dir> <request_qt_conf>])"
@@ -113,7 +113,7 @@ msgid ""
 "<request_qt_conf> will force a qt.conf file to be written even if not needed."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:70
+#: ../../../../Modules/DeployQt4.cmake:68
 msgid ""
 "install_qt4_plugin_path(plugin executable copy installed_plugin_path_var\n"
 "                        <plugins_dir> <component> <configurations>)"
@@ -137,7 +137,7 @@ msgstr ""
 msgid "If <component> is set then anything installed will use this COMPONENT."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:85
+#: ../../../../Modules/DeployQt4.cmake:83
 msgid ""
 "install_qt4_plugin(plugin executable copy installed_plugin_path_var\n"
 "                   <plugins_dir> <component>)"
@@ -150,7 +150,7 @@ msgid ""
 "<installed_plugin_path_var>.  See documentation of INSTALL_QT4_PLUGIN_PATH."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:95
+#: ../../../../Modules/DeployQt4.cmake:93
 msgid ""
 "install_qt4_executable(<executable>\n"
 "  [<qtplugins> <libs> <dirs> <plugins_dir> <request_qt_conf> <component>])"

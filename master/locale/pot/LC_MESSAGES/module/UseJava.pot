@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "Creating And Installing JARs"
 msgstr ""
 
 #: ../../../../Modules/UseJava.cmake:42
-msgid "Creates a jar file containing java objects and, optionally, resources::"
+msgid "Creates a jar file containing java objects and, optionally, resources:"
 msgstr ""
 
 #: ../../../../Modules/UseJava.cmake:44
@@ -86,7 +86,7 @@ msgid ""
 "        )"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:57
+#: ../../../../Modules/UseJava.cmake:59
 msgid ""
 "This command creates a ``<target_name>.jar``.  It compiles the given "
 "``<source>`` files and adds the given ``<resource>`` files to the jar file.  "
@@ -94,44 +94,44 @@ msgid ""
 "only resource files are given then just a jar file is created."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:67
+#: ../../../../Modules/UseJava.cmake:65
 msgid "``SOURCES``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:64
+#: ../../../../Modules/UseJava.cmake:66
 msgid ""
 "Compiles the specified source files and adds the result in the jar file."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:66
+#: ../../../../Modules/UseJava.cmake:68
 msgid "Support for response files, prefixed by ``@``."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:95
+#: ../../../../Modules/UseJava.cmake:71
 msgid "``RESOURCES``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:72
+#: ../../../../Modules/UseJava.cmake:74
 msgid ""
 "Adds the named ``<resource>`` files to the jar by stripping the source file "
 "path and placing the file beneath ``<ns>`` within the jar."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:75
+#: ../../../../Modules/UseJava.cmake:77
 msgid "For example::"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:77
+#: ../../../../Modules/UseJava.cmake:79
 msgid "RESOURCES NAMESPACE \"/com/my/namespace\" \"a/path/to/resource.txt\""
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:79
+#: ../../../../Modules/UseJava.cmake:81
 msgid ""
 "results in a resource accessible via ``/com/my/namespace/resource.txt`` "
 "within the jar."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:82
+#: ../../../../Modules/UseJava.cmake:84
 msgid ""
 "Resources may be added without adjusting the namespace by adding them to the "
 "list of ``SOURCES`` (original behavior), in this case, resource paths must "
@@ -140,7 +140,7 @@ msgid ""
 "result in confusion."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:90
+#: ../../../../Modules/UseJava.cmake:92
 msgid ""
 "Adding resources via the ``SOURCES`` parameter relies upon a hard-coded list "
 "of file extensions which are tested to determine whether they compile (e.g. "
@@ -149,11 +149,11 @@ msgid ""
 "matching those file extensions use the ``RESOURCES`` parameter."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:102
+#: ../../../../Modules/UseJava.cmake:99
 msgid "``INCLUDE_JARS``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:98
+#: ../../../../Modules/UseJava.cmake:100
 msgid ""
 "The list of jars are added to the classpath when compiling the java sources "
 "and also to the dependencies of the target. ``INCLUDE_JARS`` also accepts "
@@ -162,64 +162,64 @@ msgid ""
 "version of this module)."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:105
+#: ../../../../Modules/UseJava.cmake:106
 msgid "``ENTRY_POINT``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:105
+#: ../../../../Modules/UseJava.cmake:107
 msgid "Defines an entry point in the jar file."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:116 ../../../../Modules/UseJava.cmake:545
+#: ../../../../Modules/UseJava.cmake:109 ../../../../Modules/UseJava.cmake:560
 msgid "``VERSION``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:108
+#: ../../../../Modules/UseJava.cmake:110
 msgid "Adds a version to the target output name."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:110
+#: ../../../../Modules/UseJava.cmake:112
 msgid ""
 "The following example will create a jar file with the name "
 "``shibboleet-1.2.0.jar`` and will create a symlink ``shibboleet.jar`` "
 "pointing to the jar with the version information."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:114
+#: ../../../../Modules/UseJava.cmake:116
 msgid "add_jar(shibboleet shibbotleet.java VERSION 1.2.0)"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:119
+#: ../../../../Modules/UseJava.cmake:120
 msgid "``MANIFEST``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:119
+#: ../../../../Modules/UseJava.cmake:121
 msgid "Defines a custom manifest for the jar."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:122 ../../../../Modules/UseJava.cmake:340
+#: ../../../../Modules/UseJava.cmake:123 ../../../../Modules/UseJava.cmake:345
 msgid "``OUTPUT_NAME``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:122
+#: ../../../../Modules/UseJava.cmake:124
 msgid "Specify a different output name for the target."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:126 ../../../../Modules/UseJava.cmake:344
+#: ../../../../Modules/UseJava.cmake:126 ../../../../Modules/UseJava.cmake:350
 msgid "``OUTPUT_DIR``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:125
+#: ../../../../Modules/UseJava.cmake:127
 msgid ""
 "Sets the directory where the jar file will be generated. If not specified, :"
 "variable:`CMAKE_CURRENT_BINARY_DIR` is used as the output directory."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:166
+#: ../../../../Modules/UseJava.cmake:130
 msgid "``GENERATE_NATIVE_HEADERS``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:131
+#: ../../../../Modules/UseJava.cmake:133
 msgid ""
 "Generates native header files for methods declared as native. These files "
 "provide the connective glue that allow your Java and C code to interact. An "
@@ -228,11 +228,11 @@ msgid ""
 "generated header files."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:137
+#: ../../../../Modules/UseJava.cmake:139
 msgid "This option requires, at least, version 1.8 of the JDK."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:139
+#: ../../../../Modules/UseJava.cmake:141
 msgid ""
 "For an optimum usage of this option, it is recommended to include module JNI "
 "before any call to ``add_jar()``. The produced target for native headers can "
@@ -240,7 +240,7 @@ msgid ""
 "`target_link_libraries` command."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:144
+#: ../../../../Modules/UseJava.cmake:146
 msgid ""
 "find_package(JNI)\n"
 "add_jar(foo foo.java GENERATE_NATIVE_HEADERS foo-native)\n"
@@ -248,20 +248,20 @@ msgid ""
 "target_link_libraries(bar PRIVATE foo-native)"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:151
+#: ../../../../Modules/UseJava.cmake:153
 msgid ""
 "``DESTINATION`` sub-option now supports the possibility to specify different "
 "output directories for ``BUILD`` and ``INSTALL`` steps. If ``BUILD`` "
 "directory is not specified, a default directory will be used."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:156
+#: ../../../../Modules/UseJava.cmake:158
 msgid ""
 "To export the interface target generated by ``GENERATE_NATIVE_HEADERS`` "
 "option, sub-option ``INSTALL`` of ``DESTINATION`` is required:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:159
+#: ../../../../Modules/UseJava.cmake:161
 msgid ""
 "add_jar(foo foo.java GENERATE_NATIVE_HEADERS foo-native\n"
 "                     DESTINATION INSTALL include)\n"
@@ -272,51 +272,51 @@ msgid ""
 "install(EXPORT native DESTINATION /to/export NAMESPACE foo)"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:168
+#: ../../../../Modules/UseJava.cmake:170
 msgid ""
 "Some variables can be set to customize the behavior of ``add_jar()`` as well "
 "as the java compiler:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:172
+#: ../../../../Modules/UseJava.cmake:173
 msgid "``CMAKE_JAVA_COMPILE_FLAGS``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:172
+#: ../../../../Modules/UseJava.cmake:174
 msgid "Specify additional flags to java compiler."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:175
+#: ../../../../Modules/UseJava.cmake:176
 msgid "``CMAKE_JAVA_INCLUDE_PATH``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:175
+#: ../../../../Modules/UseJava.cmake:177
 msgid "Specify additional paths to the class path."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:180
+#: ../../../../Modules/UseJava.cmake:179
 msgid "``CMAKE_JNI_TARGET``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:178
+#: ../../../../Modules/UseJava.cmake:180
 msgid ""
 "If the target is a JNI library, sets this boolean variable to ``TRUE`` to "
 "enable creation of a JNI symbolic link (see also :ref:`install_jni_symlink() "
 "<install_jni_symlink>`)."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:193
+#: ../../../../Modules/UseJava.cmake:184
 msgid "``CMAKE_JAR_CLASSES_PREFIX``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:183
+#: ../../../../Modules/UseJava.cmake:185
 msgid ""
 "If multiple jars should be produced from the same java source filetree, to "
 "prevent the accumulation of duplicate class files in subsequent jars, set/"
 "reset ``CMAKE_JAR_CLASSES_PREFIX`` prior to calling the ``add_jar()``:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:187
+#: ../../../../Modules/UseJava.cmake:189
 msgid ""
 "set(CMAKE_JAR_CLASSES_PREFIX com/redhat/foo)\n"
 "add_jar(foo foo.java)\n"
@@ -325,143 +325,143 @@ msgid ""
 "add_jar(bar bar.java)"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:195
+#: ../../../../Modules/UseJava.cmake:197
 msgid ""
 "The ``add_jar()`` function sets the following target properties on "
 "``<target_name>``:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:199
+#: ../../../../Modules/UseJava.cmake:200
 msgid "``INSTALL_FILES``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:199
+#: ../../../../Modules/UseJava.cmake:201
 msgid ""
 "The files which should be installed.  This is used by :ref:`install_jar() "
 "<install_jar>`."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:202
+#: ../../../../Modules/UseJava.cmake:203
 msgid "``JNI_SYMLINK``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:202
+#: ../../../../Modules/UseJava.cmake:204
 msgid ""
 "The JNI symlink which should be installed.  This is used by :ref:"
 "`install_jni_symlink() <install_jni_symlink>`."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:204
+#: ../../../../Modules/UseJava.cmake:206
 msgid "``JAR_FILE``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:205
+#: ../../../../Modules/UseJava.cmake:207
 msgid "The location of the jar file so that you can include it."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:207
+#: ../../../../Modules/UseJava.cmake:208
 msgid "``CLASSDIR``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:207
+#: ../../../../Modules/UseJava.cmake:209
 msgid ""
 "The directory where the class files can be found.  For example to use them "
 "with ``javah``."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:212
+#: ../../../../Modules/UseJava.cmake:211
 msgid "``NATIVE_HEADERS_DIRECTORY``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:212
+#: ../../../../Modules/UseJava.cmake:214
 msgid ""
 "The directory where native headers are generated. Defined when option "
 "``GENERATE_NATIVE_HEADERS`` is specified."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:219
-msgid "This command installs the jar file to the given destination::"
+#: ../../../../Modules/UseJava.cmake:221
+msgid "This command installs the jar file to the given destination:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:221
+#: ../../../../Modules/UseJava.cmake:223
 msgid ""
 "install_jar(<target_name> <destination>)\n"
 "install_jar(<target_name> DESTINATION <destination> [COMPONENT <component>])"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:224
+#: ../../../../Modules/UseJava.cmake:228
 msgid ""
 "This command installs the ``<target_name>`` file to the given "
 "``<destination>``.  It should be called in the same scope as :ref:`add_jar() "
 "<add_jar>` or it will fail."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:228 ../../../../Modules/UseJava.cmake:258
+#: ../../../../Modules/UseJava.cmake:232 ../../../../Modules/UseJava.cmake:264
 msgid "The second signature with ``DESTINATION`` and ``COMPONENT`` options."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:232 ../../../../Modules/UseJava.cmake:262
-#: ../../../../Modules/UseJava.cmake:381
+#: ../../../../Modules/UseJava.cmake:235 ../../../../Modules/UseJava.cmake:267
+#: ../../../../Modules/UseJava.cmake:390
 msgid "``DESTINATION``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:232 ../../../../Modules/UseJava.cmake:262
-#: ../../../../Modules/UseJava.cmake:381
+#: ../../../../Modules/UseJava.cmake:236 ../../../../Modules/UseJava.cmake:268
+#: ../../../../Modules/UseJava.cmake:391
 msgid "Specify the directory on disk to which a file will be installed."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:236 ../../../../Modules/UseJava.cmake:266
-#: ../../../../Modules/UseJava.cmake:384
+#: ../../../../Modules/UseJava.cmake:238 ../../../../Modules/UseJava.cmake:270
+#: ../../../../Modules/UseJava.cmake:393
 msgid "``COMPONENT``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:235 ../../../../Modules/UseJava.cmake:265
-#: ../../../../Modules/UseJava.cmake:384
+#: ../../../../Modules/UseJava.cmake:239 ../../../../Modules/UseJava.cmake:271
+#: ../../../../Modules/UseJava.cmake:394
 msgid ""
 "Specify an installation component name with which the install rule is "
 "associated, such as \"runtime\" or \"development\"."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:238
+#: ../../../../Modules/UseJava.cmake:242
 msgid ""
 "The ``install_jar()`` command sets the following target properties on "
 "``<target_name>``:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:242
+#: ../../../../Modules/UseJava.cmake:245
 msgid "``INSTALL_DESTINATION``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:242
+#: ../../../../Modules/UseJava.cmake:246
 msgid ""
 "Holds the ``<destination>`` as described above, and is used by :ref:"
 "`install_jar_exports() <install_jar_exports>`."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:249
+#: ../../../../Modules/UseJava.cmake:253
 msgid ""
-"Installs JNI symlinks for target generated by :ref:`add_jar() <add_jar>`::"
+"Installs JNI symlinks for target generated by :ref:`add_jar() <add_jar>`:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:251
+#: ../../../../Modules/UseJava.cmake:255
 msgid ""
 "install_jni_symlink(<target_name> <destination>)\n"
 "install_jni_symlink(<target_name> DESTINATION <destination> [COMPONENT "
 "<component>])"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:254
+#: ../../../../Modules/UseJava.cmake:260
 msgid ""
 "This command installs the ``<target_name>`` JNI symlinks to the given "
 "``<destination>``.  It should be called in the same scope as :ref:`add_jar() "
 "<add_jar>` or it will fail."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:268
+#: ../../../../Modules/UseJava.cmake:274
 msgid "Utilize the following commands to create a JNI symbolic link:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:270
+#: ../../../../Modules/UseJava.cmake:276
 msgid ""
 "set(CMAKE_JNI_TARGET TRUE)\n"
 "add_jar(shibboleet shibbotleet.java VERSION 1.2.0)\n"
@@ -469,15 +469,15 @@ msgid ""
 "install_jni_symlink(shibboleet ${JAVA_LIB_INSTALL_DIR})"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:278
+#: ../../../../Modules/UseJava.cmake:284
 msgid "Header Generation"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:286
-msgid "Generates C header files for java classes::"
+#: ../../../../Modules/UseJava.cmake:292
+msgid "Generates C header files for java classes:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:288
+#: ../../../../Modules/UseJava.cmake:294
 msgid ""
 "create_javah(TARGET <target> | GENERATED_FILES <VAR>\n"
 "             CLASSES <class>...\n"
@@ -487,7 +487,7 @@ msgid ""
 "             )"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:295
+#: ../../../../Modules/UseJava.cmake:303
 msgid ""
 "This command will no longer be supported starting with version 10 of the JDK "
 "due to the `suppression of javah tool <https://openjdk.org/jeps/313>`_. The :"
@@ -495,20 +495,20 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:301
+#: ../../../../Modules/UseJava.cmake:309
 msgid ""
 "Create C header files from java classes. These files provide the connective "
 "glue that allow your Java and C code to interact."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:304
+#: ../../../../Modules/UseJava.cmake:312
 msgid ""
 "There are two main signatures for ``create_javah()``.  The first signature "
 "returns generated files through variable specified by the "
 "``GENERATED_FILES`` option.  For example:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:308
+#: ../../../../Modules/UseJava.cmake:316
 msgid ""
 "create_javah(GENERATED_FILES files_headers\n"
 "  CLASSES org.cmake.HelloWorld\n"
@@ -516,13 +516,13 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:315
+#: ../../../../Modules/UseJava.cmake:323
 msgid ""
 "The second signature for ``create_javah()`` creates a target which "
 "encapsulates header files generation. E.g."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:318
+#: ../../../../Modules/UseJava.cmake:326
 msgid ""
 "create_javah(TARGET target_headers\n"
 "  CLASSES org.cmake.HelloWorld\n"
@@ -530,59 +530,59 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:325
+#: ../../../../Modules/UseJava.cmake:333
 msgid "Both signatures share same options."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:328
+#: ../../../../Modules/UseJava.cmake:335
 msgid "``CLASSES``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:328
+#: ../../../../Modules/UseJava.cmake:336
 msgid "Specifies Java classes used to generate headers."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:332 ../../../../Modules/UseJava.cmake:520
+#: ../../../../Modules/UseJava.cmake:338 ../../../../Modules/UseJava.cmake:534
 msgid "``CLASSPATH``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:331
+#: ../../../../Modules/UseJava.cmake:339
 msgid ""
 "Specifies various paths to look up classes. Here ``.class`` files, jar files "
 "or targets created by command add_jar can be used."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:335
+#: ../../../../Modules/UseJava.cmake:342
 msgid "``DEPENDS``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:335
+#: ../../../../Modules/UseJava.cmake:343
 msgid "Targets on which the javah target depends."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:338
+#: ../../../../Modules/UseJava.cmake:346
 msgid ""
 "Concatenates the resulting header files for all the classes listed by option "
 "``CLASSES`` into ``<path>``.  Same behavior as option ``-o`` of ``javah`` "
 "tool."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:343
+#: ../../../../Modules/UseJava.cmake:351
 msgid ""
 "Sets the directory where the header files will be generated.  Same behavior "
 "as option ``-d`` of ``javah`` tool.  If not specified, :variable:"
 "`CMAKE_CURRENT_BINARY_DIR` is used as the output directory."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:348
+#: ../../../../Modules/UseJava.cmake:356
 msgid "Exporting JAR Targets"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:356
-msgid "Installs a target export file::"
+#: ../../../../Modules/UseJava.cmake:364
+msgid "Installs a target export file:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:358
+#: ../../../../Modules/UseJava.cmake:366
 msgid ""
 "install_jar_exports(TARGETS <jars>...\n"
 "                    [NAMESPACE <namespace>]\n"
@@ -590,65 +590,65 @@ msgid ""
 "                    DESTINATION <destination> [COMPONENT <component>])"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:363
+#: ../../../../Modules/UseJava.cmake:373
 msgid ""
 "This command installs a target export file ``<filename>`` for the named jar "
 "targets to the given ``<destination>`` directory.  Its function is similar "
 "to that of :command:`install(EXPORT)`."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:368 ../../../../Modules/UseJava.cmake:403
+#: ../../../../Modules/UseJava.cmake:377 ../../../../Modules/UseJava.cmake:414
 msgid "``TARGETS``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:368 ../../../../Modules/UseJava.cmake:403
+#: ../../../../Modules/UseJava.cmake:378 ../../../../Modules/UseJava.cmake:415
 msgid "List of targets created by :ref:`add_jar() <add_jar>` command."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:374 ../../../../Modules/UseJava.cmake:409
+#: ../../../../Modules/UseJava.cmake:380 ../../../../Modules/UseJava.cmake:417
 msgid "``NAMESPACE``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:373 ../../../../Modules/UseJava.cmake:408
+#: ../../../../Modules/UseJava.cmake:383 ../../../../Modules/UseJava.cmake:420
 msgid ""
 "The ``<namespace>`` value will be prepend to the target names as they are "
 "written to the import file."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:378 ../../../../Modules/UseJava.cmake:411
+#: ../../../../Modules/UseJava.cmake:386 ../../../../Modules/UseJava.cmake:423
 msgid "``FILE``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:377 ../../../../Modules/UseJava.cmake:412
+#: ../../../../Modules/UseJava.cmake:387 ../../../../Modules/UseJava.cmake:424
 msgid "Specify name of the export file."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:393
-msgid "Writes a target export file::"
+#: ../../../../Modules/UseJava.cmake:403
+msgid "Writes a target export file:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:395
+#: ../../../../Modules/UseJava.cmake:405
 msgid ""
 "export_jars(TARGETS <jars>...\n"
 "            [NAMESPACE <namespace>]\n"
 "            FILE <filename>)"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:399
+#: ../../../../Modules/UseJava.cmake:411
 msgid ""
 "This command writes a target export file ``<filename>`` for the named "
 "``<jars>`` targets.  Its function is similar to that of :command:`export`."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:415
+#: ../../../../Modules/UseJava.cmake:427
 msgid "Finding JARs"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:421
-msgid "Finds the specified jar file::"
+#: ../../../../Modules/UseJava.cmake:433
+msgid "Finds the specified jar file:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:423
+#: ../../../../Modules/UseJava.cmake:435
 msgid ""
 "find_jar(<VAR>\n"
 "         <name> | NAMES <name1> [<name2>...]\n"
@@ -658,7 +658,7 @@ msgid ""
 "        )"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:430
+#: ../../../../Modules/UseJava.cmake:444
 msgid ""
 "This command is used to find a full path to the named jar.  A cache entry "
 "named by ``<VAR>`` is created to store the result of this command. If the "
@@ -668,49 +668,49 @@ msgid ""
 "attempted again next time ``find_jar()`` is invoked with the same variable."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:439
+#: ../../../../Modules/UseJava.cmake:452
 msgid "``NAMES``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:439
+#: ../../../../Modules/UseJava.cmake:453
 msgid "Specify one or more possible names for the jar file."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:443
+#: ../../../../Modules/UseJava.cmake:455
 msgid "``PATHS``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:442
+#: ../../../../Modules/UseJava.cmake:456
 msgid ""
 "Specify directories to search in addition to the default locations. The "
 "``ENV`` var sub-option reads paths from a system environment variable."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:446
+#: ../../../../Modules/UseJava.cmake:459
 msgid "``VERSIONS``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:446
+#: ../../../../Modules/UseJava.cmake:460
 msgid "Specify jar versions."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:448
+#: ../../../../Modules/UseJava.cmake:462
 msgid "``DOC``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:449
+#: ../../../../Modules/UseJava.cmake:463
 msgid "Specify the documentation string for the ``<VAR>`` cache entry."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:452
+#: ../../../../Modules/UseJava.cmake:466
 msgid "Creating Java Documentation"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:458
-msgid "Creates java documentation based on files and packages::"
+#: ../../../../Modules/UseJava.cmake:472
+msgid "Creates java documentation based on files and packages:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:460
+#: ../../../../Modules/UseJava.cmake:474
 msgid ""
 "create_javadoc(<VAR>\n"
 "               (PACKAGES <pkg1> [<pkg2>...] | FILES <file1> [<file2>...])\n"
@@ -725,18 +725,18 @@ msgid ""
 "               )"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:472
+#: ../../../../Modules/UseJava.cmake:488
 msgid ""
 "The ``create_javadoc()`` command can be used to create java documentation. "
 "There are two main signatures for ``create_javadoc()``."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:475
+#: ../../../../Modules/UseJava.cmake:491
 msgid ""
 "The first signature works with package names on a path with source files:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:477
+#: ../../../../Modules/UseJava.cmake:493
 msgid ""
 "create_javadoc(my_example_doc\n"
 "               PACKAGES com.example.foo com.example.bar\n"
@@ -750,12 +750,12 @@ msgid ""
 "              )"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:490
+#: ../../../../Modules/UseJava.cmake:506
 msgid ""
 "The second signature for ``create_javadoc()`` works on a given list of files:"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:492
+#: ../../../../Modules/UseJava.cmake:508
 msgid ""
 "create_javadoc(my_example_doc\n"
 "               FILES java/A.java java/B.java\n"
@@ -768,99 +768,99 @@ msgid ""
 "              )"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:504
+#: ../../../../Modules/UseJava.cmake:520
 msgid ""
 "Both signatures share most of the options. For more details please read the "
 "javadoc manpage."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:508
+#: ../../../../Modules/UseJava.cmake:523
 msgid "``PACKAGES``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:508
+#: ../../../../Modules/UseJava.cmake:524
 msgid "Specify java packages."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:512
+#: ../../../../Modules/UseJava.cmake:526
 msgid "``FILES``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:511
+#: ../../../../Modules/UseJava.cmake:527
 msgid ""
 "Specify java source files. If relative paths are specified, they are "
 "relative to :variable:`CMAKE_CURRENT_SOURCE_DIR`."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:516
+#: ../../../../Modules/UseJava.cmake:530
 msgid "``SOURCEPATH``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:515
+#: ../../../../Modules/UseJava.cmake:531
 msgid ""
 "Specify the directory where to look for packages. By default, :variable:"
 "`CMAKE_CURRENT_SOURCE_DIR` directory is used."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:519
+#: ../../../../Modules/UseJava.cmake:535
 msgid ""
 "Specify where to find user class files. Same behavior as option ``-"
 "classpath`` of ``javadoc`` tool."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:525
+#: ../../../../Modules/UseJava.cmake:538
 msgid "``INSTALLPATH``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:523
+#: ../../../../Modules/UseJava.cmake:539
 msgid ""
 "Specify where to install the java documentation. If you specified, the "
 "documentation will be installed to ``${CMAKE_INSTALL_PREFIX}/share/javadoc/"
 "<VAR>``."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:529
+#: ../../../../Modules/UseJava.cmake:543
 msgid "``DOCTITLE``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:528
+#: ../../../../Modules/UseJava.cmake:544
 msgid ""
 "Specify the title to place near the top of the overview summary file. Same "
 "behavior as option ``-doctitle`` of ``javadoc`` tool."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:533
+#: ../../../../Modules/UseJava.cmake:547
 msgid "``WINDOWTITLE``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:532
+#: ../../../../Modules/UseJava.cmake:548
 msgid ""
 "Specify the title to be placed in the HTML ``<title>`` tag. Same behavior as "
 "option ``-windowtitle`` of ``javadoc`` tool."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:537
+#: ../../../../Modules/UseJava.cmake:551
 msgid "``AUTHOR``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:536
+#: ../../../../Modules/UseJava.cmake:552
 msgid ""
 "When value ``TRUE`` is specified, includes the ``@author`` text in the "
 "generated docs. Same behavior as option  ``-author`` of ``javadoc`` tool."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:542
+#: ../../../../Modules/UseJava.cmake:555
 msgid "``USE``"
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:540
+#: ../../../../Modules/UseJava.cmake:556
 msgid ""
 "When value ``TRUE`` is specified, creates class and package usage pages. "
 "Includes one Use page for each documented class and package. Same behavior "
 "as option ``-use`` of ``javadoc`` tool."
 msgstr ""
 
-#: ../../../../Modules/UseJava.cmake:545
+#: ../../../../Modules/UseJava.cmake:561
 msgid ""
 "When value ``TRUE`` is specified, includes the version text in the generated "
 "docs. Same behavior as option ``-version`` of ``javadoc`` tool."

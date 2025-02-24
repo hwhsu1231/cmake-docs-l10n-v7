@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgid ""
 "for this (see :command:`find_library` CMake documentation)."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSceneGraph.cmake:48
+#: ../../../../Modules/FindOpenSceneGraph.cmake:47
 msgid "``<MODULE>_DIR``"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "``OSGDIR``"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSceneGraph.cmake:56
+#: ../../../../Modules/FindOpenSceneGraph.cmake:54
 msgid "``OSG_ROOT``"
 msgstr ""
 
@@ -119,14 +119,14 @@ msgstr ""
 msgid "================================== Example Usage:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSceneGraph.cmake:92
+#: ../../../../Modules/FindOpenSceneGraph.cmake:90
 msgid ""
 "find_package(OpenSceneGraph 2.0.0 REQUIRED osgDB osgUtil)\n"
 "    # libOpenThreads & libosg automatically searched\n"
 "include_directories(${OPENSCENEGRAPH_INCLUDE_DIRS})"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSceneGraph.cmake:100
+#: ../../../../Modules/FindOpenSceneGraph.cmake:98
 msgid ""
 "add_executable(foo foo.cc)\n"
 "target_link_libraries(foo ${OPENSCENEGRAPH_LIBRARIES})"

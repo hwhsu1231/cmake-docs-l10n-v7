@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgid ""
 "using Squish >= 4.x:"
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:46
+#: ../../../../Modules/FindSquish.cmake:44
 msgid ""
 "squish_add_test(cmakeTestName\n"
 "  AUT targetName SUITE suiteName TEST squishTestName\n"
@@ -83,7 +83,7 @@ msgstr ""
 msgid "this will be used as the first argument for add_test()"
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:58
+#: ../../../../Modules/FindSquish.cmake:57
 msgid "``AUT targetName``"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgid ""
 "which will be tested."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:63
+#: ../../../../Modules/FindSquish.cmake:60
 msgid "``SUITE suiteName``"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:66
+#: ../../../../Modules/FindSquish.cmake:65
 msgid "``TEST squishTestName``"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgid ""
 "test."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:75
+#: ../../../../Modules/FindSquish.cmake:72
 msgid "``POST_COMMAND command``"
 msgstr ""
 
@@ -141,7 +141,7 @@ msgstr ""
 msgid "same as PRE_COMMAND, but after the squish test has been executed."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:79
+#: ../../../../Modules/FindSquish.cmake:77
 msgid ""
 "enable_testing()\n"
 "find_package(Squish 6.5)\n"
@@ -159,14 +159,14 @@ msgid ""
 "For users of Squish version 3.x the macro squish_v3_add_test() is provided:"
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:98
+#: ../../../../Modules/FindSquish.cmake:96
 msgid ""
 "squish_v3_add_test(testName applicationUnderTest testCase envVars "
 "testWrapper)\n"
 "Use this macro to add a test using Squish 3.x."
 msgstr ""
 
-#: ../../../../Modules/FindSquish.cmake:105
+#: ../../../../Modules/FindSquish.cmake:103
 msgid ""
 "enable_testing()\n"
 "find_package(Squish 3.0)\n"

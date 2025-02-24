@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,23 @@ msgstr ""
 msgid "COMPILE_DEFINITIONS_<CONFIG>"
 msgstr ""
 
-#: ../../../prop_sf/COMPILE_DEFINITIONS_CONFIG.rst:4
-msgid "Ignored.  See CMake Policy :policy:`CMP0043`."
+#: ../../../prop_sf/COMPILE_DEFINITIONS_CONFIG.rst:6
+msgid ""
+"Prefer the :prop_sf:`COMPILE_DEFINITIONS` source-file property with :manual:"
+"`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../prop_sf/COMPILE_DEFINITIONS_CONFIG.rst:6
+#: ../../../prop_sf/COMPILE_DEFINITIONS_CONFIG.rst:9
 msgid "Per-configuration preprocessor definitions on a source file."
 msgstr ""
 
-#: ../../../prop_sf/COMPILE_DEFINITIONS_CONFIG.rst:8
+#: ../../../prop_sf/COMPILE_DEFINITIONS_CONFIG.rst:11
 msgid ""
-"This is the configuration-specific version of :prop_tgt:"
-"`COMPILE_DEFINITIONS`. Note that :generator:`Xcode` does not support per-"
-"configuration source file flags so this property will be ignored by the :"
-"generator:`Xcode` generator."
+"This is the configuration-specific version of :prop_sf:`COMPILE_DEFINITIONS`."
+msgstr ""
+
+#: ../../../prop_sf/COMPILE_DEFINITIONS_CONFIG.rst:13
+msgid ""
+"Note that :generator:`Xcode` does not support per-configuration source file "
+"flags so this property will be ignored by the :generator:`Xcode` generator."
 msgstr ""

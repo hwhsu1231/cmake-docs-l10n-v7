@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -255,7 +255,7 @@ msgid ""
 "substitution:"
 msgstr ""
 
-#: ../../../cpack_gen/productbuild.rst:227
+#: ../../../cpack_gen/productbuild.rst:224
 msgid "``CPACK_RESOURCE_FILE_LICENSE_NOPATH``"
 msgstr ""
 
@@ -266,7 +266,7 @@ msgid ""
 "``distribution.dist`` file."
 msgstr ""
 
-#: ../../../cpack_gen/productbuild.rst:232
+#: ../../../cpack_gen/productbuild.rst:229
 msgid "``CPACK_RESOURCE_FILE_README_NOPATH``"
 msgstr ""
 
@@ -277,7 +277,7 @@ msgid ""
 "``distribution.dist`` file."
 msgstr ""
 
-#: ../../../cpack_gen/productbuild.rst:237
+#: ../../../cpack_gen/productbuild.rst:234
 msgid "``CPACK_RESOURCE_FILE_WELCOME_NOPATH``"
 msgstr ""
 
@@ -288,7 +288,7 @@ msgid ""
 "``distribution.dist`` file."
 msgstr ""
 
-#: ../../../cpack_gen/productbuild.rst:243
+#: ../../../cpack_gen/productbuild.rst:239
 msgid "``CPACK_APPLE_PKG_INSTALLER_CONTENT``"
 msgstr ""
 
@@ -298,7 +298,7 @@ msgid ""
 "(including domain details), default backgrounds and the choices outline."
 msgstr ""
 
-#: ../../../cpack_gen/productbuild.rst:249
+#: ../../../cpack_gen/productbuild.rst:245
 msgid "``CPACK_PACKAGEMAKER_CHOICES``"
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CMake git-master\n"
+"Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-18 08:05+0000\n"
+"POT-Creation-Date: 2025-02-24 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,27 @@ msgid "EXCLUDE_FROM_DEFAULT_BUILD"
 msgstr ""
 
 #: ../../../prop_tgt/EXCLUDE_FROM_DEFAULT_BUILD.rst:4
-msgid "Exclude target from ``Build Solution``."
+msgid "Exclude a target from the solution build configuration."
 msgstr ""
 
 #: ../../../prop_tgt/EXCLUDE_FROM_DEFAULT_BUILD.rst:6
 msgid ""
 "This property is only used by Visual Studio generators. When set to "
-"``TRUE``, the target will not be built when you press ``Build Solution``."
+"``TRUE``, the target will be excluded from the build when the \"Build "
+"Solution\" command is run."
+msgstr ""
+
+#: ../../../prop_tgt/EXCLUDE_FROM_DEFAULT_BUILD.rst:10
+msgid ""
+"This property has a per-configuration version: :prop_tgt:"
+"`EXCLUDE_FROM_DEFAULT_BUILD_<CONFIG>`."
+msgstr ""
+
+#: ../../../prop_tgt/EXCLUDE_FROM_DEFAULT_BUILD.rst:14
+msgid ""
+"Solution build configurations do not take project dependencies into account. "
+"If a target is excluded, it will not be built, even if another target "
+"included in the configuration depends on it. This behavior differs from the "
+"CMake-generated ``ALL_BUILD`` target and the :prop_tgt:`EXCLUDE_FROM_ALL` "
+"property."
 msgstr ""
